@@ -1,0 +1,8 @@
+# Fill from each provider's pricing page on the day you build. Never guess.
+gemini_live:   {unit: "per 1M input tokens (audio/video)", usd: TODO, source_url: TODO, as_of: TODO}
+gemini_live_out: {unit: "per 1M output tokens (audio)", usd: TODO, source_url: TODO, as_of: TODO}
+gemini_flash_in:  {unit: "per 1M input tokens", usd: TODO, source_url: TODO, as_of: TODO}
+gemini_flash_out: {unit: "per 1M output tokens", usd: TODO, source_url: TODO, as_of: TODO}
+serpapi_search: {unit: "per search (your plan price / searches)", usd: TODO, source_url: "https://serpapi.com/pricing", as_of: TODO}
+ebay_browse:    {unit: "per call", usd: 0.0, source_url: "https://developer.ebay.com", as_of: TODO}
+modal_gpu_l4:   {unit: "per GPU-second", usd: TODO, source_url: "https://modal.com/pricing", as_of: TODO}

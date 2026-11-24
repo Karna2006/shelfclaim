@@ -1,0 +1,2 @@
+gt_id,title,author,country,source_type(new_shopping/used_ebay),procedure,source_name,url,price_local,currency,n_listings_considered,checked_at,notes
+g001,,,IN,new_shopping,"google.co.in Shopping; median of first matching physical offers",,,,INR,,,

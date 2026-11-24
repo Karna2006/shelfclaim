@@ -1,0 +1,38 @@
+capture:
+  blur_min: 80
+  glare_max_frac: 0.06
+  dark_mean: 50
+  bright_mean: 210
+  speed_max_dps: 60
+  text_px_min: 18
+cues:
+  window_s: 2
+  blurred_fraction: 0.40
+  min_gap_s: 6
+  same_type_gap_s: 15
+keyframes:
+  min_novelty: 0.15
+  recon_min: 40
+  recon_max: 80
+dedup:
+  eps_factor_thickness: 0.5
+  within_frame_iou: 0.80
+  within_frame_containment: 0.85
+  within_frame_center_factor: 0.30
+  within_frame_review_iou_min: 0.50
+identify:
+  tau_accept: 0.80
+  tau_review: 0.55
+  weights:
+    title: 0.55
+    author: 0.25
+    publisher: 0.10
+    legibility: 0.10
+measure:
+  height_range_cm: [8, 45]
+  thickness_range_cm: [0.3, 12]
+  methods_disagree_pct: 10
+room:
+  voxel_m: 0.02
+  manhattan_snap_deg: 8
+  min_conf_for_no_review: 0.5

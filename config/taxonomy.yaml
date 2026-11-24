@@ -1,0 +1,49 @@
+categories:
+  shelving:
+    query_template: "{material} bookcase {shelves} shelves {height_cm} cm"
+  desk:
+    query_template: "{material} desk {width_cm} cm"
+  table:
+    query_template: "{material} table {width_cm} cm"
+  chair:
+    query_template: "{material} chair"
+  sofa:
+    query_template: "{material} sofa {seats} seat"
+  cabinet:
+    query_template: "{material} cabinet {height_cm} cm"
+  lamp:
+    query_template: "{material} table lamp"
+  ceiling_light:
+    query_template: "ceiling light"
+  rug:
+    query_template: "{material} rug {width_cm}x{height_cm} cm"
+  curtain:
+    query_template: "curtain {width_cm}x{height_cm} cm"
+  framed_art:
+    query_template: "framed print {width_cm}x{height_cm} cm"
+  portrait:
+    query_template: "framed print {width_cm}x{height_cm} cm"
+  mirror:
+    query_template: "mirror {width_cm}x{height_cm} cm"
+  clock:
+    query_template: "wall clock"
+  coffee_machine:
+    query_template: "coffee machine"
+  kettle:
+    query_template: "electric kettle"
+  electronics_tv:
+    query_template: "television {size_in} inch"
+  electronics_audio:
+    query_template: "audio speaker"
+  computer:
+    query_template: "desktop computer"
+  plant:
+    query_template: "indoor plant"
+  vase:
+    query_template: "decorative vase"
+  sculpture:
+    query_template: "decorative sculpture"
+  decor_other:
+    query_template: "home decor"
+  other:
+    query_template: "household item"

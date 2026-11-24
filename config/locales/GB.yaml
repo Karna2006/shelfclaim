@@ -1,0 +1,13 @@
+country: GB
+currency: GBP
+shopping: {provider: serpapi, gl: uk, hl: en, google_domain: google.co.uk}
+used_market:
+  provider: ebay
+  marketplace: EBAY_GB
+  fallback_marketplace: null
+  books_category_id: "VERIFY"
+condition_assumed: "Used – Good"
+appraisal:
+  used_value_threshold: 50       # GBP
+  used_over_new_ratio: 1.5
+  min_year: 1950

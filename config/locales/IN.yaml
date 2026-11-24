@@ -1,0 +1,13 @@
+country: IN
+currency: INR
+shopping: {provider: serpapi, gl: in, hl: en, google_domain: google.co.in}
+used_market:
+  provider: ebay
+  marketplace: null              # no eBay India marketplace
+  fallback_marketplace: EBAY_GB  # converted + labelled
+  books_category_id: "VERIFY"    # check the Books category id for the fallback marketplace
+condition_assumed: "Used – Good"
+appraisal:
+  used_value_threshold: 5000     # INR
+  used_over_new_ratio: 1.5
+  min_year: 1950

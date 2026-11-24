@@ -1,0 +1,10 @@
+measure,value,unit,method,notes
+length,,m,"tape, floor level, avg of 2",
+width,,m,"tape, floor level, avg of 2",
+height,,m,"tape, 2 spots avg",
+floor_area,,m2,computed,
+perimeter,,m,computed,
+wall_area_gross,,m2,perimeter x height,
+shelved_wall_area,,m2,sum W x H of units against walls,
+door_1,,m x m,optional,
+window_1,,m x m,optional,

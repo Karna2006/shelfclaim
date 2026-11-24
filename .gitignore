@@ -1,0 +1,24 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+cache/
+sweeps/
+*.npz
+markers.pdf
+*.egg-info/
+dist/
+build/
+.coverage
+htmlcov/
+
+# local / not for repo
+*.docx
+Take-Home*.txt
+library-claim-agent-docs/
+library-claim-agent-docs.zip
+.vscode/
+*pytest-tmp*/
+.pytest-tmp/
