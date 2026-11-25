@@ -13,7 +13,7 @@ UI isn't scored. The brief says not to spend time on visual polish. The UI has e
 │                              │
 │        CAMERA PREVIEW        │  ← full-width video, 16:9 crop
 │  ┌──────────────┐            │
-│  │ QC: ● SHARP  │            │  ← QC pill: SHARP / BLURRY / GLARE / DARK / TOO FAST
+│  │ QC: ● SHARP  │            │  ← QC pill: SHARP / BLURRY / GLARE / DARK / BRIGHT / TOO FAST
 │  │ speed ▓▓░░░  │            │  ← speed bar (gyro °/s vs limit)
 │  └──────────────┘            │
 │  [cards: 0 ✓ 1 ✓ 2 –]        │  ← scale cards seen

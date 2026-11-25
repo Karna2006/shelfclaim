@@ -73,7 +73,7 @@ flowchart LR
 | Live bridge | `app/live/bridge.py` | Owns the Gemini Live session: connect with compression + resumption, forward audio/frames, run tool calls, inject monitor cues, handle GoAway and reconnect |
 | Live tools | `app/live/tools.py` | Tool declarations + handlers (locale, user statements, status, end sweep) |
 | Agent prompt | `app/live/prompt.py` | System instruction (sweep director persona, honesty rules) |
-| Capture server | `app/capture/server.py` | Receives hi-res frames + motion, saves to disk, timestamps, face-blur on save |
+| Capture server | `app/server/ws_capture.py` | Receives hi-res frames + motion, saves to disk, timestamps, face-blur on save |
 | Capture monitor | `app/capture/monitor.py`, `quality.py`, `coverage.py` | Per-frame quality, rolling windows, coverage map, cue generation with rate limits |
 | Keyframe selector | `app/capture/keyframes.py` | Chooses frames for detection (dense) and reconstruction (sparse, pose-diverse) |
 | Pipeline orchestrator | `app/pipeline/orchestrator.py` | Runs stages S1–S10 as an asyncio DAG, streaming S1/S5 during the sweep, timing + cost ledger |
@@ -91,7 +91,7 @@ flowchart LR
 
 Client-side gating: send a hi-res frame only if (a) ≥ 300 ms since the last one, and (b) the gyro rate is < 120 °/s (a frame mid-whip is useless). The server still scores what it gets.
 
-Every saved frame: `sweeps/<id>/frames/f_<seq:06d>_<ms_since_start:07d>.jpg` plus a row in `frames.jsonl` `{seq, t_ms, w, h, blur, glare, exposure, gyro_dps, gravity, sent_to_live:false}`. Faces are blurred before writing (OpenCV Haar/YuNet). The original is never stored.
+Every saved frame: `sweeps/<id>/frames/f_<seq:06d>_<ms_since_start:07d>.jpg` plus a row in `frames.jsonl` `{seq, t_ms, w, h, blur, glare, exposure, gyro_dps, gravity}`. Faces are blurred before writing with OpenCV's bundled Haar cascade. The original is never stored.
 
 ## 4. Capture monitor (the thing that makes the agent "direct" the sweep)
 
@@ -102,7 +102,7 @@ Every saved frame: `sweeps/<id>/frames/f_<seq:06d>_<ms_since_start:07d>.jpg` plu
 | `blur` | Variance of Laplacian on grayscale, downscaled to 960 px wide | blurred if < 80 |
 | `glare` | Fraction of pixels with V > 250 in HSV, in the central 80% | glare if > 6% |
 | `exposure` | Mean luminance | dark if < 50, bright if > 210 |
-| `speed` | Gyro magnitude (°/s) from DeviceMotion; fallback: phase-correlation shift between consecutive frames (px/frame) | too fast if > 60 °/s sustained 1 s |
+| `speed` | Gyro magnitude (°/s) from DeviceMotion | too fast if > 60 °/s sustained 1 s |
 | `text_px` (legibility proxy) | Median spine-text height in px from the most recent S1 detections on this region: spine box short side × 0.5. Updated asynchronously | too far if < 18 px |
 
 ### 4.2 Coverage map

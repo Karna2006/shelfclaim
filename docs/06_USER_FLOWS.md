@@ -88,14 +88,19 @@ Server → client:
 Client → server:
 | type | payload |
 |---|---|
-| hi-res frame | binary: 4-byte header length + JSON header `{seq, t_ms, w, h, motion:{gyro_dps, gravity:[x,y,z], alpha,beta,gamma}}` + JPEG bytes |
+| hi-res frame | binary: 4-byte unsigned big-endian header length + JSON header `{seq, t_ms, w, h, motion:{gyro_dps, gravity:[x,y,z], alpha,beta,gamma}}` + JPEG bytes |
 | `motion_only` | JSON `{type, t_ms, gyro_dps, gravity}` at 10 Hz (for speed even when frames are skipped) |
 
 Server → client:
 | type | fields |
 |---|---|
-| `qc` | `{seq, blur, glare, exposure, speed_dps, verdict:"ok"|"blurry"|"glare"|"dark"|"fast", markers:[ids]}` |
+| `qc` | `{seq, blur, glare, exposure, speed_dps, verdict:"ok"|"blurry"|"glare"|"dark"|"bright"|"fast", markers:[ids]}` |
 | `ack` | `{seq}` (client uses it for back-pressure: ≤ 3 un-acked frames in flight) |
+
+Verdict priority is `fast` > `blurry` > `glare` > `dark` > `bright` > `ok`.
+The `fast` verdict requires the configured capture speed threshold to be exceeded
+for the configured sustain window; brightness uses the configured dark and
+bright mean-luminance thresholds.
 
 ## 6. Developer flows (CLI)
 

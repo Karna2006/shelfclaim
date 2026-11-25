@@ -26,12 +26,12 @@ Parallel human track (not Codex): ground truth collection (`11`), accounts/keys,
 
 ## Phase 1 — Capture channel (phone → disk) (≈2 h)
 **Tier A**
-- `web/index.html`, `styles.css`, `js/camera.js` (getUserMedia 1920×1080 env camera, fallback 1280×720), `js/ws.js` (capture socket with back-pressure ≤ 3 in flight), `js/motion.js` (DeviceMotion; iOS permission on tap), wake lock.
+- `web/index.html`, `styles.css`, `js/camera.js` (getUserMedia 1920×1080 env camera, fallback 1280×720), `js/ws.js` (capture socket with back-pressure ≤ 3 in flight), `js/motion.js` (DeviceMotion; iOS permission on tap; Architecture §3 frame gating), wake lock.
 - Binary frame protocol (`06` §5.2), `app/server/ws_capture.py`, `app/capture/storage.py` (write JPEG + `frames.jsonl`), `faces.py` (blur faces on save), `markers.py` (ArUco detect per frame), `quality.py` (blur/glare/exposure).
 - `POST /api/sweeps`, `sweep.json` creation, device string.
 - `qc` messages back to the client, plus the QC pill and speed bar UI.
 
-**Tier B:** client-side gating by gyro rate. Adaptive JPEG quality on slow links.
+**Tier B:** adaptive JPEG quality on slow links.
 
 **Done when:** on your phone over HTTPS, a 60 s capture saves ≥ 100 frames at 1080p with correct `frames.jsonl`. The QC pill reacts when you shake the phone or point at a lamp. Markers are detected when a card is in view. Faces are blurred (test with a photo of a face on a screen).
 

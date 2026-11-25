@@ -21,7 +21,16 @@ class CaptureSettings(BaseModel):
     dark_mean: float = 50
     bright_mean: float = 210
     speed_max_dps: float = 60
+    speed_sustain_s: float = Field(default=1, gt=0)
     text_px_min: float = 18
+    frame_min_interval_ms: int = Field(default=300, ge=0)
+    frame_gyro_max_dps: float = Field(default=120, ge=0)
+    motion_sample_hz: int = Field(default=10, gt=0)
+    jpeg_quality: float = Field(default=0.85, ge=0, le=1)
+    max_inflight_frames: int = Field(default=3, gt=0)
+    max_buffered_frames: int = Field(default=20, gt=0)
+    reconnect_initial_ms: int = Field(default=250, gt=0)
+    reconnect_max_ms: int = Field(default=8000, gt=0)
 
 
 class CueSettings(BaseModel):

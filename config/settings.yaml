@@ -4,7 +4,16 @@ capture:
   dark_mean: 50
   bright_mean: 210
   speed_max_dps: 60
+  speed_sustain_s: 1
   text_px_min: 18
+  frame_min_interval_ms: 300
+  frame_gyro_max_dps: 120
+  motion_sample_hz: 10
+  jpeg_quality: 0.85
+  max_inflight_frames: 3
+  max_buffered_frames: 20
+  reconnect_initial_ms: 250
+  reconnect_max_ms: 8000
 cues:
   window_s: 2
   blurred_fraction: 0.40

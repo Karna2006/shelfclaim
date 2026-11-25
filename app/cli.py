@@ -12,6 +12,7 @@ from typing import Annotated
 import cv2
 import typer
 import uvicorn
+from app.capture.storage import list_frames
 from PIL import Image, ImageDraw, ImageFont
 
 app = typer.Typer(no_args_is_help=True, help="ShelfClaim development commands")
@@ -196,6 +197,18 @@ def make_markers(
 def replay(sweep: Path, until: str | None = None) -> None:
     del sweep, until
     typer.echo("not implemented in phase 0")
+
+
+@app.command("inspect-sweep")
+def inspect_sweep(sweep: Path) -> None:
+    """List stored frame paths and measured QC for a sweep."""
+    for record in list_frames(sweep):
+        typer.echo(
+            f"seq={record.seq} path={record.path} blur={record.blur} glare={record.glare} "
+            f"exposure={record.exposure} gyro_dps={record.gyro_dps} "
+            f"markers={[marker.id for marker in record.markers]} "
+            f"faces_blurred={record.faces_blurred}"
+        )
 
 
 @app.command()

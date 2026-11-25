@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0b0b0c" />
+    <title>ShelfClaim capture</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="sweep-screen">
+      <header class="topbar">
+        <strong>ShelfClaim</strong>
+        <span id="connection" class="connection" aria-live="polite">Ready</span>
+        <time id="timer">00:00</time>
+      </header>
+
+      <section class="camera-panel" aria-label="Camera preview">
+        <video id="preview" autoplay muted playsinline></video>
+        <canvas id="capture-canvas" hidden></canvas>
+        <div class="camera-overlay">
+          <span id="qc-pill" class="qc-pill" aria-live="polite">Waiting for camera</span>
+          <div class="speed-card">
+            <div class="speed-label"><span>Camera speed</span><span id="speed-value">—</span></div>
+            <div class="speed-track" role="progressbar" aria-label="Camera speed" aria-valuemin="0" aria-valuemax="60" aria-valuenow="0">
+              <span id="speed-fill"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="capture-status" aria-live="polite">
+        <p id="cards-seen">Cards seen: none</p>
+        <p id="message">Start a sweep when you are ready.</p>
+      </section>
+
+      <footer class="controls">
+        <button id="start-button" type="button">Start sweep</button>
+        <button id="stop-button" type="button" disabled>Finish sweep</button>
+      </footer>
+    </main>
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>
