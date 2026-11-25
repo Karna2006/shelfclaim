@@ -16,7 +16,7 @@ import numpy as np
 import yaml
 from app.capture.faces import blur_faces
 from app.capture.markers import detect_markers
-from app.capture.quality import QualityScores, Verdict, score_frame
+from app.capture.quality import QualityScores, Verdict, classify_verdict, score_frame
 from app.packet.models import Sweep
 from app.pipeline.artifacts import FrameRecord, MarkerObservation
 from app.settings import Settings
@@ -110,7 +110,7 @@ def save_frame(
 
     gyro_dps = header.motion.gyro_dps if header.motion is not None else None
     quality = score_frame(image, settings.config.capture, gyro_dps, fast_sustained)
-    markers, faces_blurred, jpeg_to_save = _redact_and_encode(image, jpeg_bytes, settings)
+    markers, face_boxes, jpeg_to_save = _redact_and_encode(image, jpeg_bytes, settings)
     frame_path.write_bytes(jpeg_to_save)
     record = FrameRecord(
         seq=seq,
@@ -122,9 +122,11 @@ def save_frame(
         glare=quality.glare,
         exposure=quality.exposure,
         gyro_dps=gyro_dps,
+        qc_verdict=quality.verdict,
         gravity=header.motion.gravity if header.motion is not None else None,
         markers=markers,
-        faces_blurred=faces_blurred,
+        face_boxes=face_boxes,
+        faces_blurred=len(face_boxes),
     )
     _append_record(sweep_dir / "frames.jsonl", record)
     return CaptureResult(record, quality)
@@ -165,11 +167,11 @@ def _decode_jpeg(jpeg_bytes: bytes, header: FrameHeader) -> np.ndarray:
 
 def _redact_and_encode(
     frame: np.ndarray, jpeg_bytes: bytes, settings: Settings
-) -> tuple[list[MarkerObservation], int, bytes]:
+) -> tuple[list[MarkerObservation], list[tuple[int, int, int, int, float | None]], bytes]:
     markers = detect_markers(frame, settings)
-    redacted, faces_blurred = blur_faces(frame)
-    if not faces_blurred:
-        return markers, faces_blurred, jpeg_bytes
+    redacted, face_boxes = blur_faces(frame, settings.config.capture)
+    if not face_boxes:
+        return markers, face_boxes, jpeg_bytes
 
     encoded_ok, encoded = cv2.imencode(
         ".jpg",
@@ -178,7 +180,7 @@ def _redact_and_encode(
     )
     if not encoded_ok:
         raise RuntimeError("could not encode the redacted frame")
-    return markers, faces_blurred, encoded.tobytes()
+    return markers, face_boxes, encoded.tobytes()
 
 
 def _append_record(manifest: Path, record: FrameRecord) -> None:
@@ -200,14 +202,11 @@ def _retry_result(record: FrameRecord, settings: Settings, fast_sustained: bool)
 
 def _verdict_from_record(record: FrameRecord, settings: Settings, fast_sustained: bool) -> Verdict:
     capture = settings.config.capture
-    if fast_sustained:
-        return "fast"
-    if record.blur is not None and record.blur < capture.blur_min:
-        return "blurry"
-    if record.glare is not None and record.glare > capture.glare_max_frac:
-        return "glare"
-    if record.exposure is not None and record.exposure < capture.dark_mean:
-        return "dark"
-    if record.exposure is not None and record.exposure > capture.bright_mean:
-        return "bright"
-    return "ok"
+    return classify_verdict(
+        record.blur,
+        record.glare,
+        record.exposure,
+        record.gyro_dps,
+        capture,
+        fast_sustained=fast_sustained,
+    )

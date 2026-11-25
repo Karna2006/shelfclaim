@@ -6,13 +6,18 @@ explicit phase stubs. Implements `docs/06_USER_FLOWS.md` §6 and Phase 0.
 
 from __future__ import annotations
 
+import asyncio
 from pathlib import Path
 from typing import Annotated
 
 import cv2
 import typer
 import uvicorn
+from app.capture.face_audit import create_face_contact_sheet
 from app.capture.storage import list_frames
+from app.capture.summary import summarize_frames
+from app.capture.yunet_model import download_yunet_model
+from app.settings import load_settings
 from PIL import Image, ImageDraw, ImageFont
 
 app = typer.Typer(no_args_is_help=True, help="ShelfClaim development commands")
@@ -202,13 +207,38 @@ def replay(sweep: Path, until: str | None = None) -> None:
 @app.command("inspect-sweep")
 def inspect_sweep(sweep: Path) -> None:
     """List stored frame paths and measured QC for a sweep."""
-    for record in list_frames(sweep):
+    records = list_frames(sweep)
+    for record in records:
         typer.echo(
             f"seq={record.seq} path={record.path} blur={record.blur} glare={record.glare} "
             f"exposure={record.exposure} gyro_dps={record.gyro_dps} "
             f"markers={[marker.id for marker in record.markers]} "
             f"faces_blurred={record.faces_blurred}"
         )
+    summary = summarize_frames(records, load_settings().config.capture)
+    percentages = " ".join(
+        f"{category}={summary.percentages[category]:.1f}%"
+        for category in ("ok", "blurry", "fast", "glare", "dark", "bright")
+    )
+    typer.echo(
+        f"Summary: frames={summary.frame_count} duration={summary.duration_s:.2f}s "
+        f"fps={summary.fps:.2f} {percentages} markers_seen={list(summary.markers_seen)} "
+        "(dark includes low_light_blur)"
+    )
+
+
+@app.command("inspect-faces")
+def inspect_faces(sweep: Path) -> None:
+    """Save a contact sheet showing detected face boxes for every frame."""
+    output = create_face_contact_sheet(sweep)
+    typer.echo(f"Face audit contact sheet saved to {output}")
+
+
+@app.command("download-yunet")
+def download_yunet() -> None:
+    """Download the checksum-pinned YuNet face detector model into models/."""
+    model_path = asyncio.run(download_yunet_model())
+    typer.echo(f"Verified YuNet model saved to {model_path}")
 
 
 @app.command()

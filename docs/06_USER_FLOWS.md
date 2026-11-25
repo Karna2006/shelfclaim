@@ -38,7 +38,7 @@ Agent readback numbers come **only** from the tool result (code-computed). The p
 | User doesn't confirm a country / names an unsupported country | Agent asks once more. If unsupported: "I can price in India or the UK right now. Which should I use?" `set_locale` returns `supported:false` for others |
 | No scale cards placed | Agent: "No problem, I'll estimate scale from the room. Dimensions will be marked lower confidence." `scale_method` reflects this. Room confidence ≤ 0.5. Review entry |
 | Glare on glossy spines | `GLARE` cue: "There's glare. Tilt the phone slightly down." |
-| Too dark | `TOO_DARK`: "It's a bit dark. Can you turn on a light?" |
+| Too dark or blur under dim light while steady | `TOO_DARK`: "It's a bit dark. Can you turn on a light?" The `low_light_blur` QC verdict is used when blur is below threshold, gyro is below `speed_max_dps`, and exposure is below `low_light_exposure_max`. |
 | User walks past a shelf unit without covering all rows | `ROW_MISSED` cue when they move to the next unit: "Go back to the shelf on your left, the bottom row was skipped." (re-capture within the same pass is allowed) |
 | User interrupts the agent mid-sentence | Barge-in (`START_OF_ACTIVITY_INTERRUPTS`). The agent stops and listens |
 | "That's a first edition" while pointing at a book | `record_user_statement(kind=first_edition, target_hint="this book", …)` resolved via the frame at that time → the book becomes `needs_appraisal` |
@@ -94,12 +94,14 @@ Client → server:
 Server → client:
 | type | fields |
 |---|---|
-| `qc` | `{seq, blur, glare, exposure, speed_dps, verdict:"ok"|"blurry"|"glare"|"dark"|"bright"|"fast", markers:[ids]}` |
+| `qc` | `{seq, blur, glare, exposure, speed_dps, verdict:"ok"|"blurry"|"low_light_blur"|"glare"|"dark"|"bright"|"fast", markers:[ids]}` |
 | `ack` | `{seq}` (client uses it for back-pressure: ≤ 3 un-acked frames in flight) |
 
-Verdict priority is `fast` > `blurry` > `glare` > `dark` > `bright` > `ok`.
+Verdict priority is `fast` > `low_light_blur` > `blurry` > `glare` > `dark` > `bright` > `ok`.
 The `fast` verdict requires the configured capture speed threshold to be exceeded
-for the configured sustain window; brightness uses the configured dark and
+for the configured sustain window. `low_light_blur` requires blur below
+`blur_min`, gyro below `speed_max_dps`, and exposure below the configurable
+`low_light_exposure_max` (default 85). Brightness uses the configured dark and
 bright mean-luminance thresholds.
 
 ## 6. Developer flows (CLI)
@@ -108,6 +110,7 @@ bright mean-luminance thresholds.
 |---|---|
 | `python -m app.cli serve [--port 8000]` | Run the server |
 | `python -m app.cli make-markers --ids 0 1 2 --size-mm 100 --out markers.pdf` | Printable scale cards (verify printed size with a ruler, then set `MARKER_SIZE_MM`) |
+| `python -m app.cli inspect-sweep sweeps/<id>` | List frame QC and print a summary with count, duration, FPS, verdict percentages, and marker IDs |
 | `python -m app.cli replay sweeps/<id> [--from s03] [--no-network]` | Re-run stages on saved frames. `--no-network` uses the cache only |
 | `python -m app.cli stage s06 --sweep <id>` | Run one stage |
 | `python -m app.cli reprice --sweep <id> --country GB --limit 10 --out docs/second_country.md` | Second-locale proof table |

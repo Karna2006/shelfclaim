@@ -258,7 +258,7 @@ class ClaimPacket(BaseModel):
 
 | File | Model | Key fields |
 |---|---|---|
-| `frames.jsonl` (root) | `FrameRecord` | `seq, t_ms, path, w, h, blur, glare, exposure, gyro_dps, gravity[3], markers:[{id,corners}], faces_blurred:int` |
+| `frames.jsonl` (root) | `FrameRecord` | `seq, t_ms, path, w, h, blur, glare, exposure, gyro_dps, qc_verdict, gravity[3], markers:[{id,corners}], face_boxes:[[x,y,w,h,score],...], faces_blurred:int` |
 | `events.jsonl` (root) | `Event` | `t_ms, type` ∈ {`cue_sent`, `tool_call`, `tool_result`, `transcript_user`, `transcript_agent`, `session_resumed`, `go_away`, `stage_started`, `stage_done`, `error`}, `payload` |
 | `user_statements.jsonl` (root) | `UserStatement` (pre-resolution) | as above, `resolved_to` empty |
 | `s00_keyframes.json` | `KeyframeSets` | `detection:[seq]`, `reconstruction:[seq]`, selection params |
@@ -272,6 +272,10 @@ class ClaimPacket(BaseModel):
 | `s08_items.json` | `ItemsDoc` | `items:[{item_id, category, member_dets[], center_world, dims, description, brand_model, material, is_artwork, price:ItemPriceQuote, status}]` |
 | `s09_room.json` | `RoomDoc` | everything in `Room` + `planes:{floor, ceiling, walls[]}`, `point_count`, `debug_png` |
 | `telemetry.json` | `TelemetryDoc` | `stages:{name:{start,end,duration_s}}`, `costs:[{provider, units, unit, unit_price, cost_usd}]`, `total_cost_usd`, `time_to_packet_s` |
+
+`face_boxes` uses pixel `x,y,width,height` coordinates in the original frame. `score` is the YuNet detector confidence; it is `null` for Haar fallback detections, which do not provide a confidence score. `faces_blurred` equals the number of recorded boxes.
+
+`qc_verdict` stores the exclusive capture-time quality reason: `ok`, `blurry`, `low_light_blur`, `glare`, `dark`, `bright`, or `fast`. It is optional when reading older sweep manifests.
 
 `PriceQuote` (shared): `{amount, currency, source, url, retrieved_at, converted, fx?, original_amount?, original_currency?, n_offers, offers_used:[{title,price,merchant,url}], query, provider, snapshot_path, price_status}`.
 
@@ -303,11 +307,17 @@ sweeps/<sweep_id>/
 `config/settings.yaml`: thresholds, all tunable, none of them facts about your room.
 ```yaml
 capture:
-  blur_min: 80
+  # Tuned on a Galaxy S24 FE during the 2026-11-26 field test.
+  blur_min: 200
+  low_light_exposure_max: 85
   glare_max_frac: 0.06
   dark_mean: 50
   bright_mean: 210
-  speed_max_dps: 60
+  speed_max_dps: 35
+  face_score_threshold: 0.85
+  haar_min_neighbors: 8
+  haar_min_size_fraction: 0.10
+  haar_scale_factor: 1.1
   text_px_min: 18
 cues:
   min_gap_s: 6

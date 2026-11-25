@@ -12,7 +12,7 @@ Rule: **boring, explainable, few moving parts.** Every choice below has a one-li
 | Offline vision (detection + spine transcription + item description) | **Gemini Flash** (`VISION_MODEL`, default `gemini-3.8-flash`) with structured JSON output and 0–1000 normalised bounding boxes | Cheap, fast, good OCR on crops. One provider, one key |
 | Metric 3D geometry | **MapAnything** (metric multi-view feed-forward reconstruction) on a serverless GPU (**Modal**). Fallback **VGGT-1B** (up-to-scale, scaled by markers) | Camera poses plus dense depth from ~40–80 frames in seconds. Metric output gives a second scale anchor |
 | Metric anchor | **OpenCV ArUco** (`cv2.aruco`) printed scale cards. Cross-checks: known shelf model dimensions, book-format priors | Deterministic and explainable. The brief explicitly allows reference objects and known shelf dimensions |
-| Classical CV | **OpenCV** (blur, glare, homography, face blur), **NumPy/SciPy**, **scikit-learn** (DBSCAN, RANSAC), **Shapely** (polygon area) | Standard, testable, no GPU |
+| Classical CV | **OpenCV** (blur, glare, homography, YuNet face detection with strict Haar fallback), **NumPy/SciPy**, **scikit-learn** (DBSCAN, RANSAC), **Shapely** (polygon area) | Standard, testable, no GPU |
 | Book catalogue | **Open Library** Search + Works + Editions API (no key); **Google Books API** (metadata/ISBN only) | Free, open, and editions carry publishers, ISBNs and physical dimensions |
 | New-price source | **SerpApi Google Shopping** (`gl` per country) behind a `ShoppingProvider` interface | Localised merchant prices with links (Amazon.in, Flipkart, Bookswagon… / UK retailers) |
 | Used-price source | **eBay Browse API** `item_summary/search`, marketplace per locale, `conditions:{USED}` | Real used listings with URLs. Official API |
@@ -64,7 +64,7 @@ GPU-side dependencies (MapAnything / VGGT, torch) live **only** in the Modal ima
 ## 3. Frontend
 
 - `web/index.html`, `web/app.js`, `web/audio-worklet.js`, `web/styles.css`. ES modules. No framework, no bundler.
-- APIs used: `getUserMedia` (camera `facingMode: "environment"`, ideal 1920×1080, fallback 1280×720), `AudioWorklet` (mic to PCM16 16 kHz), `AudioContext` playback at 24 kHz, `DeviceMotionEvent` and `DeviceOrientationEvent` (iOS needs `DeviceMotionEvent.requestPermission()` on a tap), `OffscreenCanvas`/`canvas.toBlob` for JPEG encoding, `navigator.wakeLock` (keeps the screen on during the sweep).
+- APIs used: `getUserMedia` (camera `facingMode: "environment"`, ideal 1920×1080 at 30 fps, fallback 1280×720 at 30 fps; request continuous focus and exposure when track capabilities allow), `AudioWorklet` (mic to PCM16 16 kHz), `AudioContext` playback at 24 kHz, `DeviceMotionEvent` and `DeviceOrientationEvent` (iOS needs `DeviceMotionEvent.requestPermission()` on a tap), `OffscreenCanvas`/`canvas.toBlob` for JPEG encoding, `navigator.wakeLock` (keeps the screen on during the sweep).
 - Two WebSockets: `/ws/live` (audio + low-res frames + agent events) and `/ws/capture` (hi-res JPEG binary frames + motion JSON). They're separate so a heavy frame upload never delays voice.
 
 ## 4. Models: who does what
@@ -80,6 +80,15 @@ GPU-side dependencies (MapAnything / VGGT, torch) live **only** in the Modal ima
 | Independent checker (stretch) | `CHECKER_MODEL` (a different model, for example Gemini Pro or another provider) | Random 15% of spine crops, blind | Transcription | Disagreements go to the review queue |
 
 **What never touches an LLM:** prices, totals, counts, dimensions, areas, FX, appraisal rules, confidence thresholds.
+
+### Face model setup
+
+The capture path uses OpenCV Zoo's YuNet `face_detection_yunet_2023mar.onnx` at a configured score threshold of `0.85`. Download it with `uv run python -m app.cli download-yunet`; the command verifies the pinned SHA-256 before writing to the gitignored `models/` directory. If the model is missing, capture falls back to OpenCV's bundled Haar cascade with strict minimum-size and neighbour settings.
+
+- Official OpenCV model revision: <https://huggingface.co/opencv/face_detection_yunet/tree/3cc26e7f1014a5ee5d74a42acee58bafc9d0a310>
+- Download URL: <https://huggingface.co/opencv/face_detection_yunet/resolve/3cc26e7f1014a5ee5d74a42acee58bafc9d0a310/face_detection_yunet_2023mar.onnx?download=true>
+- SHA-256: `8f2383e4dd3cfbb4553ea8718107fc0423210dc964f9f4280604804ed2552fa4`
+- Model license: MIT, as stated by the [official model card](https://huggingface.co/opencv/face_detection_yunet).
 
 ## 5. Data and storage constraints
 

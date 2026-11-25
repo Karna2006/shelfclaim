@@ -44,3 +44,18 @@ def test_bright_exposure_and_fast_priority_are_reported() -> None:
     assert bright.exposure > settings.bright_mean
     assert bright.verdict == "bright"
     assert fast.verdict == "fast"
+
+
+def test_low_light_blur_is_distinct_from_slow_capture_blur() -> None:
+    settings = Settings(_env_file=None).config.capture
+    dim_frame = np.full((240, 320, 3), 80, dtype=np.uint8)
+
+    low_light = score_frame(dim_frame, settings, gyro_dps=10)
+    no_motion_data = score_frame(dim_frame, settings)
+    fast = score_frame(dim_frame, settings, gyro_dps=40, fast_sustained=True)
+
+    assert low_light.blur < settings.blur_min
+    assert low_light.exposure < settings.low_light_exposure_max
+    assert low_light.verdict == "low_light_blur"
+    assert no_motion_data.verdict == "blurry"
+    assert fast.verdict == "fast"

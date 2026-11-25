@@ -1,10 +1,16 @@
 capture:
-  blur_min: 80
+  # Tuned on a Galaxy S24 FE during the 2026-11-26 field test.
+  blur_min: 200
+  low_light_exposure_max: 85
   glare_max_frac: 0.06
   dark_mean: 50
   bright_mean: 210
-  speed_max_dps: 60
+  speed_max_dps: 35
   speed_sustain_s: 1
+  face_score_threshold: 0.85
+  haar_min_neighbors: 8
+  haar_min_size_fraction: 0.10
+  haar_scale_factor: 1.1
   text_px_min: 18
   frame_min_interval_ms: 300
   frame_gyro_max_dps: 120

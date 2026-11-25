@@ -16,12 +16,17 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
 class CaptureSettings(BaseModel):
-    blur_min: float = 80
+    blur_min: float = 200
+    low_light_exposure_max: float = Field(default=85, gt=0, le=255)
     glare_max_frac: float = 0.06
     dark_mean: float = 50
     bright_mean: float = 210
-    speed_max_dps: float = 60
+    speed_max_dps: float = 35
     speed_sustain_s: float = Field(default=1, gt=0)
+    face_score_threshold: float = Field(default=0.85, ge=0, le=1)
+    haar_min_neighbors: int = Field(default=8, ge=8)
+    haar_min_size_fraction: float = Field(default=0.10, ge=0.10, le=1)
+    haar_scale_factor: float = Field(default=1.1, gt=1)
     text_px_min: float = 18
     frame_min_interval_ms: int = Field(default=300, ge=0)
     frame_gyro_max_dps: float = Field(default=120, ge=0)

@@ -1,0 +1,78 @@
+"""Fetch remote bytes for local setup tasks with a small SQLite response cache.
+
+Input is a source URL and cache path; output is its response body. Uses httpx,
+tenacity retries, a seven-day cache, and a ShelfClaim User-Agent.
+"""
+
+from __future__ import annotations
+
+import sqlite3
+from datetime import UTC, datetime, timedelta
+from pathlib import Path
+
+import httpx
+from tenacity import retry, retry_if_exception_type, stop_after_attempt, wait_exponential
+
+_USER_AGENT = "ShelfClaim/0.1 (local model setup)"
+_CACHE_TTL = timedelta(days=7)
+
+
+async def fetch_bytes(url: str, cache_path: Path = Path("cache/http_cache.sqlite")) -> bytes:
+    """Return cached response bytes or fetch and cache them."""
+    cached = _read_cache(url, cache_path)
+    if cached is not None:
+        return cached
+
+    response_body = await _fetch_remote(url)
+    _write_cache(url, response_body, cache_path)
+    return response_body
+
+
+@retry(
+    retry=retry_if_exception_type((httpx.TimeoutException, httpx.TransportError)),
+    wait=wait_exponential(multiplier=0.5, min=0.5, max=4),
+    stop=stop_after_attempt(3),
+    reraise=True,
+)
+async def _fetch_remote(url: str) -> bytes:
+    async with httpx.AsyncClient(
+        headers={"User-Agent": _USER_AGENT},
+        timeout=30,
+        follow_redirects=True,
+    ) as client:
+        response = await client.get(url)
+        response.raise_for_status()
+        return response.content
+
+
+def _read_cache(url: str, cache_path: Path) -> bytes | None:
+    if not cache_path.is_file():
+        return None
+    with sqlite3.connect(cache_path) as connection:
+        _create_cache_table(connection)
+        row = connection.execute(
+            "SELECT body, fetched_at FROM http_cache WHERE url = ?", (url,)
+        ).fetchone()
+    if row is None:
+        return None
+    fetched_at = datetime.fromisoformat(row[1])
+    if datetime.now(UTC) - fetched_at > _CACHE_TTL:
+        return None
+    return bytes(row[0])
+
+
+def _write_cache(url: str, body: bytes, cache_path: Path) -> None:
+    cache_path.parent.mkdir(parents=True, exist_ok=True)
+    with sqlite3.connect(cache_path) as connection:
+        _create_cache_table(connection)
+        connection.execute(
+            "INSERT OR REPLACE INTO http_cache (url, body, fetched_at) VALUES (?, ?, ?)",
+            (url, body, datetime.now(UTC).isoformat()),
+        )
+
+
+def _create_cache_table(connection: sqlite3.Connection) -> None:
+    connection.execute(
+        "CREATE TABLE IF NOT EXISTS http_cache "
+        "(url TEXT PRIMARY KEY, body BLOB NOT NULL, fetched_at TEXT NOT NULL)"
+    )

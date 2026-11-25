@@ -1,6 +1,7 @@
 const verdictText = {
   ok: "SHARP",
   blurry: "BLURRY",
+  low_light_blur: "LOW LIGHT",
   glare: "GLARE",
   dark: "DARK",
   bright: "BRIGHT",

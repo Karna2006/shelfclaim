@@ -13,7 +13,7 @@ import cv2
 import numpy as np
 from app.settings import CaptureSettings
 
-Verdict = Literal["ok", "blurry", "glare", "dark", "bright", "fast"]
+Verdict = Literal["ok", "blurry", "low_light_blur", "glare", "dark", "bright", "fast"]
 
 
 @dataclass(frozen=True)
@@ -53,17 +53,40 @@ def score_frame(
     glare = float(np.count_nonzero(value > 250) / value.size)
     exposure = float(cv2.mean(gray)[0])
 
-    if fast_sustained:
-        verdict: Verdict = "fast"
-    elif blur < settings.blur_min:
-        verdict = "blurry"
-    elif glare > settings.glare_max_frac:
-        verdict = "glare"
-    elif exposure < settings.dark_mean:
-        verdict = "dark"
-    elif exposure > settings.bright_mean:
-        verdict = "bright"
-    else:
-        verdict = "ok"
+    verdict = classify_verdict(
+        blur, glare, exposure, gyro_dps, settings, fast_sustained=fast_sustained
+    )
 
     return QualityScores(blur, glare, exposure, gyro_dps, verdict)
+
+
+def classify_verdict(
+    blur: float | None,
+    glare: float | None,
+    exposure: float | None,
+    gyro_dps: float | None,
+    settings: CaptureSettings,
+    *,
+    fast_sustained: bool = False,
+) -> Verdict:
+    """Assign one QC reason, prioritizing sustained motion and low-light blur."""
+    if fast_sustained:
+        return "fast"
+    is_blurry = blur is not None and blur < settings.blur_min
+    if (
+        is_blurry
+        and gyro_dps is not None
+        and gyro_dps < settings.speed_max_dps
+        and exposure is not None
+        and exposure < settings.low_light_exposure_max
+    ):
+        return "low_light_blur"
+    if is_blurry:
+        return "blurry"
+    if glare is not None and glare > settings.glare_max_frac:
+        return "glare"
+    if exposure is not None and exposure < settings.dark_mean:
+        return "dark"
+    if exposure is not None and exposure > settings.bright_mean:
+        return "bright"
+    return "ok"

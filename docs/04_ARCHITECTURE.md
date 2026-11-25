@@ -91,7 +91,7 @@ flowchart LR
 
 Client-side gating: send a hi-res frame only if (a) ≥ 300 ms since the last one, and (b) the gyro rate is < 120 °/s (a frame mid-whip is useless). The server still scores what it gets.
 
-Every saved frame: `sweeps/<id>/frames/f_<seq:06d>_<ms_since_start:07d>.jpg` plus a row in `frames.jsonl` `{seq, t_ms, w, h, blur, glare, exposure, gyro_dps, gravity}`. Faces are blurred before writing with OpenCV's bundled Haar cascade. The original is never stored.
+Every saved frame: `sweeps/<id>/frames/f_<seq:06d>_<ms_since_start:07d>.jpg` plus a row in `frames.jsonl` `{seq, t_ms, w, h, blur, glare, exposure, gyro_dps, gravity, face_boxes}`. YuNet detections at score ≥ 0.85 are blurred before writing. If the ONNX model is absent, the bundled Haar cascade is used with at least 8 neighbours and a minimum face size of 10% of the frame's short side. The detected boxes and YuNet scores are retained for audit; Haar scores are null. The original is never stored.
 
 ## 4. Capture monitor (the thing that makes the agent "direct" the sweep)
 
@@ -99,11 +99,13 @@ Every saved frame: `sweeps/<id>/frames/f_<seq:06d>_<ms_since_start:07d>.jpg` plu
 
 | Metric | Computation | Initial threshold (tune on your capture) |
 |---|---|---|
-| `blur` | Variance of Laplacian on grayscale, downscaled to 960 px wide | blurred if < 80 |
+| `blur` | Variance of Laplacian on grayscale, downscaled to 960 px wide | blurred if < 200 (Galaxy S24 FE field test, 2026-11-26) |
 | `glare` | Fraction of pixels with V > 250 in HSV, in the central 80% | glare if > 6% |
 | `exposure` | Mean luminance | dark if < 50, bright if > 210 |
-| `speed` | Gyro magnitude (°/s) from DeviceMotion | too fast if > 60 °/s sustained 1 s |
+| `speed` | Gyro magnitude (°/s) from DeviceMotion | too fast if > 35 °/s sustained 1 s (Galaxy S24 FE field test, 2026-11-26) |
 | `text_px` (legibility proxy) | Median spine-text height in px from the most recent S1 detections on this region: spine box short side × 0.5. Updated asynchronously | too far if < 18 px |
+
+When `blur < blur_min`, `gyro_dps < speed_max_dps`, and exposure is below the configurable `low_light_exposure_max` (default 85), the frame verdict is `low_light_blur`. This routes low-light softness to `TOO_DARK` rather than a camera-motion cue. Sustained fast motion keeps priority.
 
 ### 4.2 Coverage map
 Built from S1 detections streamed during the sweep:
@@ -113,7 +115,7 @@ Built from S1 detections streamed during the sweep:
 
 ### 4.3 Cue generation → voice
 Rolling 2-second windows produce candidate cues. Priority order:
-`TOO_FAST` > `BLURRY` > `GLARE` > `TOO_DARK` > `TOO_FAR` (text too small) > `ROW_MISSED` > `ART_QUESTION` > `NEED_CEILING` > `NEED_CORNERS` > `CARD_NOT_SEEN` > `PROGRESS` (positive feedback: "logged 12 books on shelf A").
+`TOO_FAST` > `TOO_DARK` (includes `low_light_blur`; say "turn on a light") > `BLURRY` > `GLARE` > `TOO_FAR` (text too small) > `ROW_MISSED` > `ART_QUESTION` > `NEED_CEILING` > `NEED_CORNERS` > `CARD_NOT_SEEN` > `PROGRESS` (positive feedback: "logged 12 books on shelf A").
 
 Rate limits: ≤ 1 cue per 6 s overall, the same cue type ≤ once per 15 s, never while the user is speaking (from Live input-transcription activity), and `PROGRESS` only when nothing else is pending.
 

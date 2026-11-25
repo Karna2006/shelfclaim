@@ -31,8 +31,12 @@ class FrameRecord(ArtifactModel):
     glare: float | None = None
     exposure: float | None = None
     gyro_dps: float | None = None
+    qc_verdict: (
+        Literal["ok", "blurry", "low_light_blur", "glare", "dark", "bright", "fast"] | None
+    ) = None
     gravity: tuple[float, float, float] | None = None
     markers: list[MarkerObservation] = Field(default_factory=list)
+    face_boxes: list[tuple[int, int, int, int, float | None]] = Field(default_factory=list)
     faces_blurred: int = Field(default=0, ge=0)
 
 
