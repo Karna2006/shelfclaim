@@ -159,6 +159,7 @@ class Item(BaseModel):
     dims_method: Literal["recon_points", "marker_plane", "none"] = "none"
     dims_confidence: float | None = None
     is_artwork: bool = False
+    print_confirmed_by: str | None = None    # user statement id; required to price artwork
     user_statements: list[str] = []
     excluded_reason: str | None = None
 
@@ -171,6 +172,9 @@ class Totals(BaseModel):
     books_used_value: float                  # (req)
     items_replacement_cost_low: float        # (req)
     items_replacement_cost_high: float       # (req)
+    books_priced_replacement_count: int      # included books with a replacement amount
+    books_priced_used_count: int              # included books with a used amount
+    items_priced_count: int                   # included items with a complete price or range
     excluded_from_totals: int                # (req) count of lines excluded (see assumptions)
     # additions
     books_needs_appraisal: int = 0
@@ -222,6 +226,8 @@ class ClaimPacket(BaseModel):
 - `status == "needs_appraisal"` ⇒ both amounts null, `price_status == "skipped_appraisal"`.
 - `status == "unidentified"` ⇒ `title == author == edition == isbn == ""` and `id_confidence == 0` (or the raw score kept under an extra field, never shown as identity).
 - Item `status == "range"` ⇒ `low ≤ high`. `priced` ⇒ low/high from matched offers of an exact brand/model query.
+- An artwork item may be priced only when `print_confirmed_by` names the user statement confirming it is a print; otherwise it must be `needs_appraisal` with null price bounds.
+- `model_count_hint` is diagnostic only. It never supplies packet counts or other packet values; when its relative difference from a non-zero `box_count` exceeds `review.row_count_disagreement_pct`, it may create only a `count_disagreement_row` review entry.
 - `Totals` must equal `compute_totals(books, items)`. The validation gate recomputes and compares.
 
 ### 1.2 Example (abbreviated)
@@ -240,7 +246,7 @@ class ClaimPacket(BaseModel):
              "dim_method":"marker_plane","spine_text_raw":"THE GOD OF SMALL THINGS | ARUNDHATI ROY | PENGUIN"}],
   "items": [],
   "totals": {"book_count":74,"books_identified":55,"books_unidentified":17,"shelf_run_m":3.9,"books_replacement_cost":21450.0,"books_used_value":13210.5,
-             "items_replacement_cost_low":38000.0,"items_replacement_cost_high":61500.0,"excluded_from_totals":23},
+             "items_replacement_cost_low":38000.0,"items_replacement_cost_high":61500.0,"books_priced_replacement_count":55,"books_priced_used_count":53,"items_priced_count":6,"excluded_from_totals":23},
   "review_queue": [{"ref_id":"b_0042","reason":"Spine unreadable in 3 views (legibility 0.21); logged as unidentified with dimensions","code":"unidentified_spine"}]
 }
 ```
@@ -256,7 +262,7 @@ class ClaimPacket(BaseModel):
 | `events.jsonl` (root) | `Event` | `t_ms, type` ∈ {`cue_sent`, `tool_call`, `tool_result`, `transcript_user`, `transcript_agent`, `session_resumed`, `go_away`, `stage_started`, `stage_done`, `error`}, `payload` |
 | `user_statements.jsonl` (root) | `UserStatement` (pre-resolution) | as above, `resolved_to` empty |
 | `s00_keyframes.json` | `KeyframeSets` | `detection:[seq]`, `reconstruction:[seq]`, selection params |
-| `s01_detections.json` | `DetectionsDoc` | `frames:{seq:[{det_id, cls, box_px:BBox, item_category, score?, merged_from:[det_id], flags:["possible_duplicate_box"]}]}`, `row_count_checks:[{seq,row_hint,model_count,box_count}]`; `merged_from` records suppressed same-frame duplicate IDs; borderline IoU pairs remain separate and carry `possible_duplicate_box` |
+| `s01_detections.json` | `DetectionsDoc` | `frames:{seq:[{det_id, cls, box_px:BBox, item_category, score?, merged_from:[det_id], flags:["possible_duplicate_box"]}]}`, `row_count_checks:[{seq,row_hint,model_count_hint,box_count}]`; `model_count_hint` is review-only and never changes a packet count; `merged_from` records suppressed same-frame duplicate IDs; borderline IoU pairs remain separate and carry `possible_duplicate_box` |
 | `s02_geometry.json` | `GeometryDoc` | `backend, model, frames:[{seq, K[3x3], T_world_cam[4x4], depth_path, conf_path}]`, `gravity`, `scale:{factor, anchors[], disagreement_pct, method}`, `status`, `error?` |
 | `s03_books_raw.json` | `BookClustersDoc` | `units:[{unit:"A", rows:[{row:1, z_min, z_max, axis[3]}]}]`, `books:[{book_id, unit,row,position, member_dets:[det_id], best_view:{seq,bbox}, alt_view?, center_world[3], count_method}]` |
 | `s04_measurements.json` | `MeasurementsDoc` | `books:{book_id:{height_cm,thickness_cm,method,alt?,flags[]}}`, `rows:{"A-1":{span_m}}`, `shelf_run_m`, `sum_thickness_m` |

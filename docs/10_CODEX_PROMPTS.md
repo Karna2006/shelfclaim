@@ -243,7 +243,7 @@ Plan:
 - app/packet/review.py (all reason codes listed in docs/04 S10.4, severity, evidence pointers).
 - app/packet/validate.py (every frame_ref/crop_ref/snapshot_path exists; price evidence; totals recompute equality; contract schema) → meta.validation; raise on failure.
 - s10_assemble.py: build ClaimPacket (books ordered by shelf then position; ids b_0001…), write crops/ with the bbox drawn, claim_packet.json, report.html.
-- app/packet/report.py + templates/report.html.j2: self-contained HTML (inline CSS, relative links), sections per docs/07 Screen 2, money via locale formatting, filter chips with tiny inline JS, room polygon SVG.
+- app/packet/report.py + templates/report.html.j2: self-contained HTML (inline CSS, relative links), sections per docs/07 Screen 2, money via locale formatting, filter chips with tiny inline JS, room polygon SVG. Show `books_priced_replacement_count`, `books_priced_used_count`, and `items_priced_count` beside their corresponding sums.
 - Real get_packet_summary (totals + review count + top 3 review reasons, from code) and a packet_ready event; the bridge sends the summary as a tool result with INTERRUPT scheduling so the agent reads it back.
 - Web: pipeline progress list + packet-ready card.
 Tests: the validation gate catches a missing frame, a price without url, and a totals mismatch; the statement resolver on fixture detections (portrait/print, bottom shelf right/exclude); the review queue for each reason code; report renders with an empty items list.

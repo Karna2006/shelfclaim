@@ -133,7 +133,7 @@ Parallel human track (not Codex): ground truth collection (`11`), accounts/keys,
 **Tier A**
 - `packet/resolve_statements.py` (frame + target_hint → lines/regions; exclusions).
 - `packet/review.py` (all reason codes from `04` S10), `packet/validate.py` (frame_ref exists, price evidence, totals recompute, schema), `s10_assemble.py`.
-- `packet/report.py` + `templates/report.html.j2` per `07` §1 Screen 2 (crops with bbox, links, method badges, review queue, methods, telemetry).
+- `packet/report.py` + `templates/report.html.j2` per `07` §1 Screen 2 (crops with bbox, links, method badges, review queue, methods, telemetry). Show `books_priced_replacement_count`, `books_priced_used_count`, and `items_priced_count` beside their corresponding totals.
 - `get_packet_summary` real implementation, `packet_ready` event, agent readback (INTERRUPT scheduling).
 - Tests: validation gate catches a missing frame, a price without url, and a totals mismatch.
 

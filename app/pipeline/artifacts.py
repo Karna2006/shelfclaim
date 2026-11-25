@@ -70,9 +70,11 @@ class Detection(ArtifactModel):
 
 
 class RowCountCheck(ArtifactModel):
+    model_config = ConfigDict(extra="forbid")
+
     seq: int
     row_hint: str
-    model_count: int = Field(ge=0)
+    model_count_hint: int = Field(ge=0)
     box_count: int = Field(ge=0)
 
 

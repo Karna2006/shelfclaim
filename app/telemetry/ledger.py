@@ -34,6 +34,7 @@ class Ledger:
         finally:
             ended = time.perf_counter()
             self._stages[name] = {
+                # Six decimal places preserve microsecond detail for short stages.
                 "duration_s": round(ended - started, 6),
                 "status": status,
             }

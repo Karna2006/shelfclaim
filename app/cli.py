@@ -90,6 +90,7 @@ def generate_marker_pdf(
 
 
 def _mm_to_px(value: float, dpi: int) -> int:
+    # Pillow's resolution is dots per inch, and one inch is exactly 25.4 mm.
     return round(value * dpi / 25.4)
 
 

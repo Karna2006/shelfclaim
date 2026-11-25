@@ -70,6 +70,10 @@ class RoomSettings(BaseModel):
     min_conf_for_no_review: float = 0.5
 
 
+class ReviewSettings(BaseModel):
+    row_count_disagreement_pct: float = Field(default=0.10, ge=0, le=1)
+
+
 class YamlSettings(BaseModel):
     """Thresholds and model rules from config/settings.yaml."""
 
@@ -82,6 +86,7 @@ class YamlSettings(BaseModel):
     identify: IdentifySettings = Field(default_factory=IdentifySettings)
     measure: MeasureSettings = Field(default_factory=MeasureSettings)
     room: RoomSettings = Field(default_factory=RoomSettings)
+    review: ReviewSettings = Field(default_factory=ReviewSettings)
 
 
 class Settings(BaseSettings):

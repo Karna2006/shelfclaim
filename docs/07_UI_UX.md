@@ -40,7 +40,7 @@ After `end_sweep`: the camera area is replaced by **pipeline progress** (one row
 
 Single scrolling page with a sticky left table of contents:
 1. **Header:** sweep id, date, device, duration, country/currency, time to packet, cost per sweep.
-2. **Totals cards** (4): books (count / identified / unidentified / appraisal), books value (replacement / used), items value (low–high), excluded lines. Each card has "how computed" tooltip text.
+2. **Totals cards** (4): books (count / identified / unidentified / appraisal), books value (replacement amount + priced count / used amount + priced count), items value (low–high + priced item count), excluded lines. Each card has "how computed" tooltip text.
 3. **Room:** dimensions table (m and ft), floor/wall/shelved areas (m² and ft²), `scale_method`, confidence, polygon SVG (plus item dots as a stretch goal), method notes.
 4. **Books table:** columns: thumb crop | ID | shelf-pos | status chip | title / author (or *"spine unreadable"* + raw text in grey) | H × T cm + method badge | replacement (amount, source link, date, converted badge) | used (amount, source link, condition) | confidence. Filter chips: All / Identified / Unidentified / Needs appraisal / In review. Clicking a row expands it: full frame with the bbox drawn, alternate views, transcription, catalogue link, the price offers used, a raw snapshot link.
 5. **Items table:** thumb | category | description | brand/model | W×H×D | status | low–high (source link) | confidence.

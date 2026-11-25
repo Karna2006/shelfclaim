@@ -7,6 +7,7 @@ __pycache__/
 cache/
 sweeps/
 *.npz
+*.ply
 markers.pdf
 *.egg-info/
 dist/

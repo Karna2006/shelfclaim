@@ -29,23 +29,23 @@ class Sweep(ContractModel):
 class ScaleAnchor(ContractModel):
     kind: Literal["aruco", "model_metric", "user_stated", "book_format_check"]
     detail: str
-    scale_factor: float | None
+    scale_factor: float | None = Field(gt=0)
     weight: float = Field(ge=0)
     frame_ref: str | None = None
 
 
 class Room(ContractModel):
-    length_m: float | None
-    width_m: float | None
-    height_m: float | None
-    floor_area_m2: float | None
-    wall_area_m2: float | None
-    shelved_wall_area_m2: float | None
+    length_m: float | None = Field(gt=0)
+    width_m: float | None = Field(gt=0)
+    height_m: float | None = Field(gt=0)
+    floor_area_m2: float | None = Field(gt=0)
+    wall_area_m2: float | None = Field(gt=0)
+    shelved_wall_area_m2: float | None = Field(gt=0)
     scale_method: str
     confidence: float = Field(ge=0, le=1)
-    floor_area_ft2: float | None = None
-    wall_area_ft2: float | None = None
-    shelved_wall_area_ft2: float | None = None
+    floor_area_ft2: float | None = Field(default=None, gt=0)
+    wall_area_ft2: float | None = Field(default=None, gt=0)
+    shelved_wall_area_ft2: float | None = Field(default=None, gt=0)
     shape: str | None = None
     polygon_m: list[tuple[float, float]] | None = None
     coverage_pct: float | None = Field(default=None, ge=0, le=1)
@@ -64,13 +64,13 @@ class FxInfo(ContractModel):
 
 
 class ReplacementCost(ContractModel):
-    amount: float | None
+    amount: float | None = Field(gt=0)
     source: str
     url: str
     retrieved_at: str
     converted: bool = False
     currency: str | None = None
-    original_amount: float | None = None
+    original_amount: float | None = Field(default=None, gt=0)
     original_currency: str | None = None
     fx: FxInfo | None = None
     n_offers: int | None = Field(default=None, ge=0)
@@ -79,6 +79,8 @@ class ReplacementCost(ContractModel):
 
     @model_validator(mode="after")
     def validate_evidence_and_fx(self) -> ReplacementCost:
+        if (self.price_status == "priced") != (self.amount is not None):
+            raise ValueError("priced status must match a present amount")
         if self.amount is not None and not all(
             value and value.strip()
             for value in (self.source, self.url, self.retrieved_at, self.snapshot_path)
@@ -90,14 +92,14 @@ class ReplacementCost(ContractModel):
 
 
 class UsedValue(ContractModel):
-    amount: float | None
+    amount: float | None = Field(gt=0)
     source: str
     url: str
     retrieved_at: str
     condition_assumed: str
     converted: bool = False
     currency: str | None = None
-    original_amount: float | None = None
+    original_amount: float | None = Field(default=None, gt=0)
     original_currency: str | None = None
     fx: FxInfo | None = None
     n_offers: int | None = Field(default=None, ge=0)
@@ -106,6 +108,8 @@ class UsedValue(ContractModel):
 
     @model_validator(mode="after")
     def validate_evidence_and_fx(self) -> UsedValue:
+        if (self.price_status == "priced") != (self.amount is not None):
+            raise ValueError("priced status must match a present amount")
         if self.amount is not None and not all(
             value and value.strip()
             for value in (self.source, self.url, self.retrieved_at, self.snapshot_path)
@@ -156,6 +160,11 @@ class Book(ContractModel):
 
     @model_validator(mode="after")
     def validate_status_integrity(self) -> Book:
+        # An accepted title needs a catalogue pointer so the packet cannot carry free-form guesses.
+        if self.status == "identified" and (
+            not self.title.strip() or not self.catalogue_ref or not self.catalogue_ref.strip()
+        ):
+            raise ValueError("identified books require a title and catalogue match reference")
         if self.status == "unidentified":
             if any((self.title, self.author, self.edition, self.isbn)) or self.id_confidence != 0:
                 raise ValueError(
@@ -173,8 +182,8 @@ class Book(ContractModel):
 
 
 class ItemReplacementCost(ContractModel):
-    low: float | None
-    high: float | None
+    low: float | None = Field(gt=0)
+    high: float | None = Field(gt=0)
     source: str
     url: str
     retrieved_at: str
@@ -221,11 +230,18 @@ class Item(ContractModel):
     dims_method: Literal["recon_points", "marker_plane", "none"] = "none"
     dims_confidence: float | None = Field(default=None, ge=0, le=1)
     is_artwork: bool = False
+    print_confirmed_by: str | None = None
     user_statements: list[str] = Field(default_factory=list)
     excluded_reason: str | None = None
 
     @model_validator(mode="after")
     def validate_status_integrity(self) -> Item:
+        if (
+            self.is_artwork
+            and self.status != "needs_appraisal"
+            and not (self.print_confirmed_by and self.print_confirmed_by.strip())
+        ):
+            raise ValueError("priced artwork requires a print-confirming user statement")
         if self.status == "needs_appraisal" and any(
             value is not None for value in (self.replacement_cost.low, self.replacement_cost.high)
         ):
@@ -246,6 +262,9 @@ class Totals(ContractModel):
     books_used_value: float = Field(ge=0)
     items_replacement_cost_low: float = Field(ge=0)
     items_replacement_cost_high: float = Field(ge=0)
+    books_priced_replacement_count: int = Field(ge=0)
+    books_priced_used_count: int = Field(ge=0)
+    items_priced_count: int = Field(ge=0)
     excluded_from_totals: int = Field(ge=0)
     books_needs_appraisal: int = Field(default=0, ge=0)
     items_needs_appraisal: int = Field(default=0, ge=0)

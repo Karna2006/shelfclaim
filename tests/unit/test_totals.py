@@ -11,13 +11,28 @@ from app.packet.models import (
 from app.packet.totals import compute_totals
 
 
-def _quote(amount: float | None, status: str = "priced") -> ReplacementCost:
+def _quote(
+    amount: float | None, status: str = "priced", *, converted: bool = False
+) -> ReplacementCost:
+    fx = (
+        FxInfo(
+            from_currency="GBP",
+            to_currency="INR",
+            rate=100.0,
+            rate_date="2026-11-24",
+            source="Frankfurter",
+            url="https://api.frankfurter.dev/rates?from=GBP&to=INR",
+        )
+        if converted
+        else None
+    )
     return ReplacementCost(
         amount=amount,
         source="Store" if amount is not None else "",
         url="https://store.example/item" if amount is not None else "",
         retrieved_at="2026-11-25T10:00:00Z" if amount is not None else "",
-        converted=False,
+        converted=converted,
+        fx=fx,
         snapshot_path="evidence/prices/book_new.json" if amount is not None else None,
         price_status=status,
     )
@@ -59,6 +74,7 @@ def _book(
     used: float | None = None,
     converted: bool = False,
     excluded_reason: str | None = None,
+    thickness_cm: float | None = 2.0,
 ) -> Book:
     appraisal = status == "needs_appraisal"
     return Book(
@@ -72,20 +88,29 @@ def _book(
         edition="",
         isbn="",
         spine_height_cm=20.0,
-        spine_thickness_cm=2.0,
+        spine_thickness_cm=thickness_cm,
         id_confidence=0.0 if status == "unidentified" else 0.8,
         replacement_cost=_quote(
             replacement,
             "skipped_appraisal"
             if appraisal
             else ("priced" if replacement is not None else "not_found"),
+            converted=converted,
         ),
         used_value=_used(used, converted=converted, appraisal=appraisal),
+        catalogue_ref=None if status == "unidentified" else "openlibrary:/works/OL1W",
         excluded_reason=excluded_reason,
     )
 
 
-def _item(item_id: str, low: float | None, high: float | None, *, appraisal: bool = False) -> Item:
+def _item(
+    item_id: str,
+    low: float | None,
+    high: float | None,
+    *,
+    appraisal: bool = False,
+    excluded_reason: str | None = None,
+) -> Item:
     return Item(
         id=item_id,
         category="lamp",
@@ -103,6 +128,7 @@ def _item(item_id: str, low: float | None, high: float | None, *, appraisal: boo
             snapshot_path=None if low is None else f"evidence/prices/{item_id}.json",
         ),
         confidence=0.8,
+        excluded_reason=excluded_reason,
     )
 
 
@@ -127,6 +153,9 @@ def test_totals_cover_null_appraisal_excluded_converted_and_ranges() -> None:
     assert totals.sum_thickness_m == 0.06
     assert totals.items_replacement_cost_low == 10.0
     assert totals.items_replacement_cost_high == 30.0
+    assert totals.books_priced_replacement_count == 2
+    assert totals.books_priced_used_count == 2
+    assert totals.items_priced_count == 1
     assert totals.items_needs_appraisal == 1
     assert totals.excluded_from_totals == 3
     assert set(totals.excluded_line_ids) == {"b_0002", "b_0004", "i_002"}
@@ -137,5 +166,35 @@ def test_null_prices_do_not_contribute_and_unknown_shelf_run_stays_null() -> Non
 
     assert totals.books_replacement_cost == 0.0
     assert totals.books_used_value == 0.0
+    assert totals.books_priced_replacement_count == 0
+    assert totals.books_priced_used_count == 0
+    assert totals.items_priced_count == 0
     assert totals.shelf_run_m is None
     assert totals.excluded_from_totals == 1
+
+
+def test_totals_preserve_unknown_thickness_exclusions_and_rounding() -> None:
+    book = _book(
+        "b_0001",
+        replacement=1.005,
+        used=2.345,
+        converted=True,
+        thickness_cm=None,
+    )
+    missing_new = _book("b_0002", used=3.0)
+    missing_used = _book("b_0003", replacement=4.0)
+    excluded_item = _item("i_001", 10.0, 20.0, excluded_reason="not_mine")
+
+    totals = compute_totals([book, missing_new, missing_used], [excluded_item], "INR")
+
+    assert totals.books_replacement_cost == 5.01
+    assert totals.books_used_value == 5.35
+    assert totals.books_priced_replacement_count == 2
+    assert totals.books_priced_used_count == 2
+    assert totals.items_priced_count == 0
+    assert totals.books_priced_converted == 1
+    assert totals.sum_thickness_m is None
+    assert totals.items_replacement_cost_low == 0.0
+    assert totals.items_replacement_cost_high == 0.0
+    assert totals.excluded_from_totals == 3
+    assert set(totals.excluded_line_ids) == {"b_0002", "b_0003", "i_001"}

@@ -18,6 +18,7 @@ _CENT = Decimal("0.01")
 def _money(value: float | None) -> Decimal:
     if value is None:
         return Decimal("0")
+    # Parsing the decimal text avoids carrying a float's binary approximation into cents.
     return Decimal(str(value))
 
 
@@ -27,6 +28,7 @@ def _rounded(value: Decimal) -> float:
 
 def _excluded_line_ids(books: Sequence[Book], items: Sequence[Item]) -> list[str]:
     """Return each line that is appraisal, excluded, or missing a required price."""
+    # The OR conditions produce one queue entry per line even when several reasons apply.
     excluded_ids = [
         book.id
         for book in books
@@ -65,10 +67,15 @@ def compute_totals(
     item_high = sum((_money(item.replacement_cost.high) for item in owned_items), Decimal("0"))
 
     excluded_ids = _excluded_line_ids(books, items)
-    thickness_m = sum(
-        (_money(book.spine_thickness_cm) / Decimal("100") for book in owned_books),
-        Decimal("0"),
-    )
+    # Convert measured centimetres to the packet's metre-based cross-check.
+    known_thicknesses = [
+        _money(book.spine_thickness_cm) / Decimal("100")
+        for book in owned_books
+        if book.spine_thickness_cm is not None
+    ]
+    thickness_m = sum(known_thicknesses, Decimal("0"))
+    # A partial or empty sum would look like a complete physical measurement.
+    complete_thickness_sum = bool(owned_books) and len(known_thicknesses) == len(owned_books)
     return Totals(
         book_count=len(owned_books),
         books_identified=sum(book.status == "identified" for book in owned_books),
@@ -78,13 +85,22 @@ def compute_totals(
         books_used_value=_rounded(used_total),
         items_replacement_cost_low=_rounded(item_low),
         items_replacement_cost_high=_rounded(item_high),
+        books_priced_replacement_count=sum(
+            book.replacement_cost.amount is not None for book in owned_books
+        ),
+        books_priced_used_count=sum(book.used_value.amount is not None for book in owned_books),
+        items_priced_count=sum(
+            item.replacement_cost.low is not None and item.replacement_cost.high is not None
+            for item in owned_items
+        ),
         excluded_from_totals=len(excluded_ids),
         books_needs_appraisal=sum(book.status == "needs_appraisal" for book in owned_books),
         items_needs_appraisal=sum(item.status == "needs_appraisal" for item in owned_items),
         excluded_line_ids=excluded_ids,
+        # Count each book once even when both of its prices were converted.
         books_priced_converted=sum(
             book.replacement_cost.converted or book.used_value.converted for book in owned_books
         ),
-        sum_thickness_m=float(thickness_m) if owned_books else None,
+        sum_thickness_m=float(thickness_m) if complete_thickness_sum else None,
         currency=currency,
     )

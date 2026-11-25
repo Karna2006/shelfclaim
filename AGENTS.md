@@ -17,7 +17,7 @@ If a doc and the code disagree, **stop and ask**. Don't silently pick one.
 
 ## 1. Integrity rules (non-negotiable; violating any is a bug)
 
-1. **No LLM ever produces a price, a total, a count, a dimension, an area, an FX rate or a confidence threshold.** These come from deterministic code operating on provider responses, geometry, or detections.
+1. **No LLM ever produces a price, a total, a packet count, a dimension, an area, an FX rate or a confidence threshold.** These come from deterministic code operating on provider responses, geometry, or detections. A model may produce diagnostic hints that only route items to the review queue; hints never become packet values.
 2. **Prices come only from parsed provider responses** (`app/pricing/providers/*`). Every price object must carry `source`, `url`, `retrieved_at`, `snapshot_path`. The raw response is saved under `evidence/prices/`.
 3. **Titles come only from catalogue matches of transcribed spine text** above a threshold. Vision prompts must tell the model to transcribe visible characters only and never complete titles from memory.
 4. **Unknown means null/empty.** Never write 0, "N/A", "Unknown" or a guess into a value field. Put the line in the review queue with a reason instead.
