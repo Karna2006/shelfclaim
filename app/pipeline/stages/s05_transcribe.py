@@ -14,9 +14,9 @@ import cv2
 from app.pipeline.artifacts import Event
 from app.pipeline.context import StageContext
 from app.telemetry.events import write_event
-from app.vision.local_ocr import LocalOcrTranscriber
+from app.vision.local_ocr import FrameOcrLine, LocalOcrTranscriber
 from app.vision.models import vision_model_chain
-from app.vision.schema import SpineTranscriptionResponse
+from app.vision.schema import SpineLine, SpineTranscription, SpineTranscriptionResponse
 from app.vision.transcription import CropInput, GeminiSpineTranscriber, SpineTranscriber
 
 
@@ -40,6 +40,10 @@ async def run(ctx: StageContext, *, max_books: int | None = None) -> Path:
         }
         for book in source_books
     }
+    transcriber_obj = ctx.clients.get("transcriber")
+    if transcriber_obj is None and ctx.settings.config.transcribe.backend == "local_ocr":
+        return await _run_frame_ocr(ctx, source_books, books)
+
     jobs = _make_crops(
         ctx.sweep_dir,
         {"books": source_books},
@@ -49,7 +53,6 @@ async def run(ctx: StageContext, *, max_books: int | None = None) -> Path:
         output = ctx.sweep_dir / "s05_transcriptions.json"
         output.write_text(json.dumps({"books": books}, indent=2) + "\n", encoding="utf-8")
         return output
-    transcriber_obj = ctx.clients.get("transcriber")
     transcriber = cast(SpineTranscriber | None, transcriber_obj)
     local_ocr = None
     if transcriber is None and ctx.settings.config.transcribe.backend == "local_ocr":
@@ -93,6 +96,132 @@ async def run(ctx: StageContext, *, max_books: int | None = None) -> Path:
     output = ctx.sweep_dir / "s05_transcriptions.json"
     output.write_text(json.dumps({"books": books}, indent=2) + "\n", encoding="utf-8")
     return output
+
+
+async def _run_frame_ocr(
+    ctx: StageContext, source_books: list[dict[str, Any]], books: dict[str, dict[str, Any]]
+) -> Path:
+    """Read each selected full frame once per rotation, then assign lines spatially."""
+    transcriber = LocalOcrTranscriber(ctx.settings.config.transcribe.confidence_min)
+    by_frame: dict[str, list[dict[str, Any]]] = {}
+    for book in source_books:
+        frame_ref = str(book.get("best_view", {}).get("frame_ref", ""))
+        if frame_ref:
+            by_frame.setdefault(frame_ref, []).append(book)
+
+    for frame_ref, frame_books in by_frame.items():
+        image = cv2.imread(str(ctx.sweep_dir / frame_ref))
+        if image is None:
+            continue
+        include_upright = any(
+            _is_flat(float(book["best_view"]["bbox"].get("angle_deg", 90))) for book in frame_books
+        )
+        lines = await transcriber.transcribe_frame(image, include_upright=include_upright)
+        assigned = _assign_lines_to_spines(lines, frame_books)
+        for book in frame_books:
+            book_id = book["book_id"]
+            own_lines = sorted(assigned.get(book_id, []), key=lambda line: line.center[1])
+            spine_lines = [SpineLine(text=line.text) for line in own_lines]
+            confidence = (
+                sum(line.confidence for line in own_lines) / len(own_lines) if own_lines else 0
+            )
+            view = SpineTranscription(
+                crop_id=f"{book_id}_frame",
+                readable=bool(own_lines),
+                orientation="frame_ocr",
+                lines=spine_lines,
+                legibility=confidence,
+            ).model_dump(mode="json")
+            view["seq"] = book["best_view"].get("seq")
+            view["frame_ref"] = frame_ref
+            raw_text = " | ".join(line.text for line in own_lines)
+            books[book_id] = {
+                "views": [view],
+                "consensus_text": raw_text,
+                "legibility": confidence,
+                "spine_text_raw": raw_text,
+            }
+
+    await _fallback_empty_books(ctx, source_books, books)
+    output = ctx.sweep_dir / "s05_transcriptions.json"
+    output.write_text(json.dumps({"books": books}, indent=2) + "\n", encoding="utf-8")
+    return output
+
+
+def _assign_lines_to_spines(
+    lines: list[FrameOcrLine], books: list[dict[str, Any]]
+) -> dict[str, list[FrameOcrLine]]:
+    """Assign each text center to one containing spine, resolving overlap by x distance."""
+    assigned: dict[str, list[FrameOcrLine]] = {book["book_id"]: [] for book in books}
+    boxes = []
+    for book in books:
+        bbox = book["best_view"]["bbox"]
+        boxes.append(
+            (
+                book["book_id"],
+                float(bbox["x"]),
+                float(bbox["y"]),
+                float(bbox["w"]),
+                float(bbox["h"]),
+                float(bbox["x"]) + float(bbox["w"]) / 2,
+            )
+        )
+    for line in lines:
+        center_x, center_y = line.center
+        containing = [
+            box
+            for box in boxes
+            if box[1] <= center_x <= box[1] + box[3] and box[2] <= center_y <= box[2] + box[4]
+        ]
+        if containing:
+            selected = min(containing, key=lambda box: (abs(box[5] - center_x), box[0]))
+            assigned[selected[0]].append(line)
+    return assigned
+
+
+async def _fallback_empty_books(
+    ctx: StageContext, source_books: list[dict[str, Any]], books: dict[str, dict[str, Any]]
+) -> None:
+    """Use the configured Gemini fallback only for books with no local frame text."""
+    config = ctx.settings.config.transcribe
+    if not config.gemini_fallback_if_empty or ctx.settings.google_api_key is None:
+        return
+    empty_ids = {book_id for book_id, result in books.items() if not result["spine_text_raw"]}
+    fallback_books = [book for book in source_books if book["book_id"] in empty_ids]
+    crops = _make_crops(ctx.sweep_dir, {"books": fallback_books}, config.crop_horizontal_shrink)
+    if not crops:
+        return
+    gemini = GeminiSpineTranscriber(ctx.settings)
+    try:
+        response = await _transcribe_with_fallback(gemini, crops, ctx.settings.vision_model)
+    except Exception as exc:
+        write_event(
+            ctx.sweep_dir,
+            Event(
+                t_ms=0,
+                type="transcription_unavailable",
+                payload={"reason": type(exc).__name__, "backend": "gemini_fallback"},
+            ),
+        )
+        return
+    finally:
+        await gemini.close()
+    for result in response.results:
+        if not result.lines:
+            continue
+        book_id = result.crop_id.removesuffix("_local")
+        raw_text = " | ".join(line.text for line in result.lines)
+        books[book_id] = {
+            "views": [result.model_dump(mode="json")],
+            "consensus_text": raw_text,
+            "legibility": result.legibility,
+            "spine_text_raw": raw_text,
+        }
+
+
+def _is_flat(angle_deg: float) -> bool:
+    angle = angle_deg % 180
+    return min(angle, 180 - angle) < 45
 
 
 async def _transcribe_batch(

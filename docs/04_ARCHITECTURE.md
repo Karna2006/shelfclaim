@@ -192,8 +192,8 @@ Sanity: height outside [8, 45] cm or thickness outside [0.3, 12] cm → keep the
 Output `s04_measurements.json`.
 
 ### S5 — Transcribe spines (`vision/transcribe.py`) *(starts during the sweep for stable clusters)*
-- Use `config/settings.yaml` `transcribe.backend` (`local_ocr` by default, optional `gemini`). Shrink each spine box horizontally by 10% before cropping from its best-view frame; upscale so the short side is ≥ 96 px.
-- RapidOCR with CPU ONNX Runtime tries 0°, 90°, and 270° rotations; flat books also try 180°. Keep the rotation with the highest mean confidence and reject lines below 0.5. Gemini may transcribe only crops with no local OCR lines, when the fallback flag is enabled, a key is configured, and quota is known to be available. Quota errors leave the crop unreadable without blocking S5.
+- Use `config/settings.yaml` `transcribe.backend` (`local_ocr` by default, optional `gemini`). Local OCR runs once on each best-view frame at 90° and 270°; frames containing flat spines also run at 0°. Map OCR quadrilaterals back to frame coordinates and keep lines with confidence ≥ 0.5.
+- Assign each line by its center to a containing spine box; if boxes overlap, choose the nearest box center-x. Drop lines outside all spine boxes and order each spine's text top-to-bottom. Gemini remains an optional fallback only for books without local OCR text when enabled, keyed, and available.
 - Output schema remains `{"crop_id","readable":bool,"orientation":"rotate_0deg|rotate_90deg|rotate_180deg|rotate_270deg","lines":[{"text","kind_guess":"title|author|publisher|other"}],"legibility":0-1}`. Gemini prompts still require visible characters only and prohibit completing titles from memory.
 - The configured catalogue thresholds remain unchanged. Merged or weak text stays `unidentified`; no title is inferred from OCR alone.
 - **Validation guard:** reject any line > 80 characters, or lines containing text that also appears in your prompt examples (a prompt-leak check).
@@ -201,7 +201,7 @@ Output `s04_measurements.json`.
 
 ### S6 — Identify (`identify/`)
 1. **Query build:** title candidate = longest `title`-kind line (or the longest line). Author = `author`-kind line. Publisher = `publisher`-kind line.
-2. **Candidates:** Open Library `search.json?title=…&author=…&fields=key,title,author_name,first_publish_year,edition_key,publisher,isbn&limit=8`, plus Google Books `q=intitle:…+inauthor:…` (maxResults 8). Merge by normalised title + author.
+2. **Candidates:** Search Open Library first using the book's own title/author lines, then the longest line alone and longest line with a person-name line as author. Use Google Books only when Open Library returns no candidates and no 429 has occurred in the last 60 seconds. Merge by normalised title + author.
 3. **Features per candidate:** `title_sim` (rapidfuzz `token_set_ratio` on normalised strings), `author_sim` (surname match + token ratio), `publisher_sim`, `legibility`, `margin` (top-1 minus top-2 score), `n_views_agree`.
 4. **Score:** `raw = 0.55·title + 0.25·author + 0.10·publisher + 0.10·legibility`, minus a penalty if `margin < 0.05`. **Calibrate** `id_confidence = sigmoid(a·raw + b)`, fitted on your ground truth in Phase 9 (logistic regression on features). Until then, use the uncalibrated score and say so.
 5. **Decision:** `id_confidence ≥ τ_accept` (start 0.80) → `identified`. `τ_review ≤ conf < τ_accept` → `identified` + review entry "low ID confidence". Below `τ_review` (start 0.55) → `unidentified`: title/author/edition/isbn **empty**, raw spine text kept. Pick `τ_accept` on ground truth so that confidently-wrong ≤ 2% (a margin under the 3% bar).

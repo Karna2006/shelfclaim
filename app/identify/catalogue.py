@@ -6,10 +6,13 @@ with source keys; candidate text is never accepted without deterministic scoring
 
 from __future__ import annotations
 
+import asyncio
 import json
+import time
 from typing import Protocol
 from urllib.parse import urlencode
 
+import httpx
 from app.net.http import fetch_bytes
 from app.settings import Settings
 
@@ -17,17 +20,48 @@ from app.settings import Settings
 class CatalogueClient(Protocol):
     async def search(self, title: str, author: str) -> list[dict[str, object]]: ...
 
+    async def search_open_library(self, title: str, author: str) -> list[dict[str, object]]: ...
+
+    async def search_google_books(self, title: str, author: str) -> list[dict[str, object]]: ...
+
 
 class OpenLibraryGoogleBooks:
     """Query Open Library and Google Books; SQLite URL caching is shared by both."""
 
     def __init__(self, settings: Settings) -> None:
         self.settings = settings
+        self._last_429_at: float | None = None
+        self._google_lock = asyncio.Lock()
 
     async def search(self, title: str, author: str) -> list[dict[str, object]]:
-        candidates = await self._open_library(title, author)
-        candidates.extend(await self._google_books(title, author))
-        return candidates
+        candidates = await self.search_open_library(title, author)
+        if candidates or self._recent_429():
+            return candidates
+        return await self.search_google_books(title, author)
+
+    async def search_open_library(self, title: str, author: str) -> list[dict[str, object]]:
+        try:
+            return await self._open_library(title, author)
+        except httpx.HTTPStatusError as exc:
+            self._remember_429(exc)
+            raise
+
+    async def search_google_books(self, title: str, author: str) -> list[dict[str, object]]:
+        async with self._google_lock:
+            if self._recent_429():
+                return []
+            try:
+                return await self._google_books(title, author)
+            except httpx.HTTPStatusError as exc:
+                self._remember_429(exc)
+                raise
+
+    def _recent_429(self) -> bool:
+        return self._last_429_at is not None and time.monotonic() - self._last_429_at < 60
+
+    def _remember_429(self, error: httpx.HTTPStatusError) -> None:
+        if error.response.status_code == 429:
+            self._last_429_at = time.monotonic()
 
     async def _open_library(self, title: str, author: str) -> list[dict[str, object]]:
         query = urlencode({"title": title, "author": author, "limit": 8})

@@ -9,6 +9,7 @@ import pytest
 from app.pipeline.context import StageContext
 from app.pipeline.stages import s05_transcribe
 from app.pipeline.stages.s05_transcribe import (
+    _assign_lines_to_spines,
     _make_crops,
     _transcribe_batch,
     _transcribe_with_fallback,
@@ -16,6 +17,7 @@ from app.pipeline.stages.s05_transcribe import (
 )
 from app.settings import Settings, YamlSettings
 from app.telemetry.ledger import Ledger
+from app.vision.local_ocr import FrameOcrLine
 from app.vision.schema import SpineLine, SpineTranscription, SpineTranscriptionResponse
 from app.vision.transcription import CropInput
 from pydantic import SecretStr
@@ -167,6 +169,32 @@ def test_book_crop_shrinks_box_width_and_uses_best_view(tmp_path) -> None:
     decoded = cv2.imdecode(np.frombuffer(crops[0].image_bytes, dtype=np.uint8), cv2.IMREAD_COLOR)
     assert decoded.shape[1] == 108
     assert crops[0].angle_deg == 90
+
+
+def test_overlapping_spines_receive_only_lines_whose_centers_belong_to_them() -> None:
+    books = [
+        {
+            "book_id": "b_0001",
+            "best_view": {"bbox": {"x": 10, "y": 10, "w": 50, "h": 60}},
+        },
+        {
+            "book_id": "b_0002",
+            "best_view": {"bbox": {"x": 30, "y": 10, "w": 50, "h": 60}},
+        },
+    ]
+    lines = [
+        FrameOcrLine("FIRST SPINE", 0.9, 18, 20, 14, 8),
+        FrameOcrLine("SECOND SPINE", 0.92, 59, 35, 14, 8),
+        FrameOcrLine("OVERLAP NEAR SECOND", 0.88, 46, 50, 8, 8),
+    ]
+
+    assigned = _assign_lines_to_spines(lines, books)
+
+    assert [line.text for line in assigned["b_0001"]] == ["FIRST SPINE"]
+    assert [line.text for line in assigned["b_0002"]] == [
+        "SECOND SPINE",
+        "OVERLAP NEAR SECOND",
+    ]
 
 
 @pytest.mark.asyncio

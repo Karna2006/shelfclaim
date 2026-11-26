@@ -1,11 +1,17 @@
 from __future__ import annotations
 
 import json
+import time
 
 import httpx
 import pytest
+from app.identify.catalogue import OpenLibraryGoogleBooks
 from app.pipeline.context import StageContext
-from app.pipeline.stages.s06_identify import normalize_catalogue_text, run
+from app.pipeline.stages.s06_identify import (
+    _search_candidates,
+    normalize_catalogue_text,
+    run,
+)
 from app.settings import Settings, YamlSettings
 from app.telemetry.ledger import Ledger
 
@@ -109,6 +115,89 @@ async def test_catalogue_http_quota_error_leaves_book_unidentified(tmp_path) -> 
     book = json.loads(output.read_text(encoding="utf-8"))["books"]["b_0001"]
     assert book["status"] == "unidentified"
     assert (book["title"], book["authors"]) == ("", [])
+
+
+@pytest.mark.asyncio
+async def test_open_library_queries_precede_google_books_fallback() -> None:
+    class OrderedCatalogue:
+        def __init__(self) -> None:
+            self.calls: list[tuple[str, str, str]] = []
+
+        async def search_open_library(self, title: str, author: str):
+            self.calls.append(("openlibrary", title, author))
+            return []
+
+        async def search_google_books(self, title: str, author: str):
+            self.calls.append(("google_books", title, author))
+            return [{"source": "google_books", "key": "gb1", "title": title}]
+
+    catalogue = OrderedCatalogue()
+    transcription = {
+        "views": [
+            {
+                "lines": [
+                    {"text": "DEEP WORK", "kind_guess": "other"},
+                    {"text": "Cal Newport", "kind_guess": "other"},
+                ]
+            }
+        ]
+    }
+
+    results = await _search_candidates(catalogue, "DEEP WORK", "Cal Newport", transcription)
+
+    assert [call[0] for call in catalogue.calls] == [
+        "openlibrary",
+        "openlibrary",
+        "google_books",
+    ]
+    assert catalogue.calls[0][1:] == ("DEEP WORK", "Cal Newport")
+    assert catalogue.calls[1][1:] == ("DEEP WORK", "")
+    assert results[0]["source"] == "google_books"
+
+
+@pytest.mark.asyncio
+async def test_open_library_429_prevents_google_books_fallback() -> None:
+    class RateLimitedCatalogue:
+        google_called = False
+
+        async def search_open_library(self, title: str, author: str):
+            del title, author
+            request = httpx.Request("GET", "https://openlibrary.org")
+            response = httpx.Response(429, request=request)
+            raise httpx.HTTPStatusError("rate limited", request=request, response=response)
+
+        async def search_google_books(self, title: str, author: str):
+            del title, author
+            self.google_called = True
+            return []
+
+    catalogue = RateLimitedCatalogue()
+    results = await _search_candidates(catalogue, "DEEP WORK", "", {"spine_text_raw": "DEEP WORK"})
+
+    assert results == []
+    assert not catalogue.google_called
+
+
+@pytest.mark.asyncio
+async def test_recent_google_books_429_suppresses_requests_for_one_minute(monkeypatch) -> None:
+    catalogue = OpenLibraryGoogleBooks(Settings(config=YamlSettings(), _env_file=None))
+    calls = 0
+
+    async def fake_google_books(title: str, author: str):
+        nonlocal calls
+        del title, author
+        calls += 1
+        return []
+
+    monkeypatch.setattr(catalogue, "_google_books", fake_google_books)
+    catalogue._last_429_at = time.monotonic()
+
+    assert await catalogue.search_google_books("TITLE", "AUTHOR") == []
+    assert calls == 0
+
+    catalogue._last_429_at = time.monotonic() - 61
+    assert await catalogue.search_google_books("TITLE", "AUTHOR") == []
+    assert calls == 1
 
 
 @pytest.mark.asyncio

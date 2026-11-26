@@ -49,3 +49,36 @@ async def test_flat_books_try_four_rotations_including_180() -> None:
     await transcriber.transcribe([CropInput("flat_local", _crop(0).image_bytes, 180)])
 
     assert len(engine.shapes) == 4
+
+
+@pytest.mark.asyncio
+async def test_frame_ocr_maps_rotated_boxes_back_and_deduplicates() -> None:
+    class FrameEngine:
+        def __init__(self) -> None:
+            self.calls = 0
+
+        def __call__(self, image: np.ndarray) -> SimpleNamespace:
+            del image
+            boxes = (
+                [[[60, 10], [80, 10], [80, 30], [60, 30]]],
+                [[[40, 50], [60, 50], [60, 70], [40, 70]]],
+                [[[10, 40], [30, 40], [30, 60], [10, 60]]],
+            )[self.calls]
+            confidence = (0.8, 0.9, 0.75)[self.calls]
+            self.calls += 1
+            return SimpleNamespace(
+                boxes=np.asarray(boxes), txts=("FRAME TITLE",), scores=(confidence,)
+            )
+
+    engine = FrameEngine()
+    transcriber = LocalOcrTranscriber(engine=engine)
+
+    lines = await transcriber.transcribe_frame(
+        np.full((120, 80, 3), 100, dtype=np.uint8), include_upright=True
+    )
+
+    assert engine.calls == 3
+    assert len(lines) == 1
+    assert lines[0].text == "FRAME TITLE"
+    assert lines[0].confidence == pytest.approx(0.9)
+    assert (lines[0].x, lines[0].y, lines[0].w, lines[0].h) == pytest.approx((10, 40, 20, 20))
