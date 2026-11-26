@@ -97,6 +97,8 @@ def replay(
         _print_s06_books(sweep, limit_books)
     elif until == "s07":
         _print_s07_prices(sweep)
+    elif (until or "s10") == "s10":
+        _print_s10_summary(sweep)
 
 
 def _print_detection_keyframe_stats(sweep: Path) -> None:
@@ -200,6 +202,17 @@ def _price_value(quote: dict[str, Any]) -> str:
     if amount is None:
         return "—"
     return f"{amount} {quote.get('currency') or ''}".strip()
+
+
+def _print_s10_summary(sweep: Path) -> None:
+    packet = json.loads((sweep / "claim_packet.json").read_text(encoding="utf-8"))
+    telemetry = json.loads((sweep / "telemetry.json").read_text(encoding="utf-8"))
+    validation = packet.get("meta", {}).get("validation", {})
+    typer.echo(f"Validation: {'PASS' if validation.get('passed') else 'FAIL'}")
+    typer.echo(f"Report: {sweep / 'report.html'}")
+    typer.echo("Totals: " + json.dumps(packet.get("totals", {}), sort_keys=True))
+    typer.echo(f"Review queue: {len(packet.get('review_queue', []))}")
+    typer.echo(f"Time to packet: {telemetry.get('time_to_packet_s', 'n/a')} s")
 
 
 @app.command("debug-boxes")
