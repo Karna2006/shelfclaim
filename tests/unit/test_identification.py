@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 
+import httpx
 import pytest
 from app.pipeline.context import StageContext
 from app.pipeline.stages.s06_identify import normalize_catalogue_text, run
@@ -68,6 +69,46 @@ async def test_missing_transcription_is_explicitly_unidentified(tmp_path) -> Non
     assert book["status"] == "unidentified"
     assert (book["title"], book["authors"], book["edition"], book["isbn"]) == ("", [], "", "")
     assert book["spine_text_raw"] == ""
+
+
+@pytest.mark.asyncio
+async def test_catalogue_http_quota_error_leaves_book_unidentified(tmp_path) -> None:
+    class QuotaLimitedCatalogue:
+        async def search(self, title: str, author: str) -> list[dict[str, object]]:
+            del title, author
+            request = httpx.Request("GET", "https://catalogue.invalid")
+            response = httpx.Response(429, request=request)
+            raise httpx.HTTPStatusError("quota exhausted", request=request, response=response)
+
+    (tmp_path / "s03_books_raw.json").write_text(
+        json.dumps({"books": [{"book_id": "b_0001"}]}), encoding="utf-8"
+    )
+    (tmp_path / "s05_transcriptions.json").write_text(
+        json.dumps(
+            {
+                "books": {
+                    "b_0001": {
+                        "spine_text_raw": "VISIBLE FRAGMENT",
+                        "legibility": 0.9,
+                        "views": [{"lines": [{"kind_guess": "other", "text": "VISIBLE FRAGMENT"}]}],
+                    }
+                }
+            }
+        ),
+        encoding="utf-8",
+    )
+    context = StageContext(
+        tmp_path,
+        Settings(config=YamlSettings(), _env_file=None),
+        Ledger(),
+        {"catalogue": QuotaLimitedCatalogue()},
+    )
+
+    output = await run(context)
+
+    book = json.loads(output.read_text(encoding="utf-8"))["books"]["b_0001"]
+    assert book["status"] == "unidentified"
+    assert (book["title"], book["authors"]) == ("", [])
 
 
 @pytest.mark.asyncio

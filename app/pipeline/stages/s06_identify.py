@@ -13,6 +13,7 @@ import unicodedata
 from pathlib import Path
 from typing import Any, cast
 
+import httpx
 from app.identify.catalogue import CatalogueClient, OpenLibraryGoogleBooks
 from app.pipeline.context import StageContext
 from rapidfuzz import fuzz
@@ -50,7 +51,7 @@ async def run(ctx: StageContext, *, max_books: int | None = None) -> Path:
             async with semaphore:
                 try:
                     candidates = await catalogue.search(title, author)
-                except (OSError, ValueError, TimeoutError):
+                except (httpx.HTTPError, OSError, ValueError, TimeoutError):
                     candidates = []
         candidates = [
             candidate
