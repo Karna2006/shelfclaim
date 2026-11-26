@@ -19,6 +19,9 @@ def test_two_pass_prompts_are_registered_and_specific() -> None:
 def test_vision_detection_default_matches_bakeoff_winner() -> None:
     assert YamlSettings().vision.detection_method == "full_frame"
     assert YamlSettings().vision.detection_model == "gemini-3.5-flash-lite"
+    assert not YamlSettings().vision.detection_model_fallbacks
+    assert YamlSettings().keyframes.detection_max_frames == 10
+    assert YamlSettings().transcribe.backend == "local_ocr"
 
 
 class FlakyDetector:

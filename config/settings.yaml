@@ -29,7 +29,7 @@ cues:
 keyframes:
   min_novelty: 0.15
   detection_interval_s: 1.5
-  detection_max_frames: 60
+  detection_max_frames: 10
   recon_min: 40
   recon_max: 80
 dedup:
@@ -63,6 +63,13 @@ vision:
   # Bake-off on Galaxy S24 FE sweep sw_20261126_225839_2007 favored full-frame detection.
   detection_method: full_frame
   detection_model: gemini-3.5-flash-lite
+  detection_model_fallbacks: false
+transcribe:
+  backend: local_ocr
+  confidence_min: 0.5
+  crop_horizontal_shrink: 0.10
+  # Enable only when Gemini vision quota is known to be available.
+  gemini_fallback_if_empty: false
 agent:
   timeout_s: 20
   debounce_ms: 800

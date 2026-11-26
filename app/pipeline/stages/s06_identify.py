@@ -42,6 +42,9 @@ async def run(ctx: StageContext, *, max_books: int | None = None) -> Path:
         book_id: str, transcription: dict[str, Any]
     ) -> tuple[str, dict[str, Any], dict[str, str] | None]:
         title, author, publisher = _transcribed_fields(transcription)
+        unclassified_text = not title
+        if unclassified_text:
+            title = str(transcription.get("spine_text_raw", "")).strip()
         candidates = []
         if title:
             async with semaphore:
@@ -62,12 +65,17 @@ async def run(ctx: StageContext, *, max_books: int | None = None) -> Path:
                 float(transcription.get("legibility", 0)),
                 candidate,
                 ctx.settings.config.identify.weights,
+                strict_title=unclassified_text,
             )
             for candidate in candidates
         ]
         scored.sort(key=lambda candidate: candidate["score"], reverse=True)
         top = scored[0] if scored else None
         matched_enough = top is not None and top["score"] >= ctx.settings.config.identify.tau_review
+        if unclassified_text and top is not None:
+            matched_enough = matched_enough and (
+                top["features"]["title"] >= ctx.settings.config.identify.tau_accept
+            )
         status = "identified" if matched_enough else "unidentified"
         result = {
             "status": status,
@@ -150,6 +158,8 @@ def _score_candidate(
     legibility: float,
     candidate: dict[str, object],
     weights: dict[str, float],
+    *,
+    strict_title: bool = False,
 ) -> dict[str, Any]:
     candidate_title = str(candidate.get("title", ""))
     candidate_authors = candidate.get("authors", [])
@@ -160,10 +170,9 @@ def _score_candidate(
     )
     publishers = candidate.get("publishers", [])
     publisher_text = " ".join(publishers) if isinstance(publishers, list) else str(publishers)
+    title_match = fuzz.ratio if strict_title else fuzz.token_set_ratio
     title_score = (
-        fuzz.token_set_ratio(
-            normalize_catalogue_text(title), normalize_catalogue_text(candidate_title)
-        )
+        title_match(normalize_catalogue_text(title), normalize_catalogue_text(candidate_title))
         / 100
     )
     author_score = (

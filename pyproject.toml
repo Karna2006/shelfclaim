@@ -24,6 +24,8 @@ dependencies = [
   "rich>=13.7",
   "pillow>=10.3",
   "python-multipart>=0.0.9",
+  "rapidocr>=3.10.0",
+  "onnxruntime>=1.32.0",
 ]
 
 [project.optional-dependencies]
@@ -36,6 +38,11 @@ asyncio_default_fixture_loop_scope = "function"
 testpaths = ["tests"]
 pythonpath = ["."]
 addopts = "--basetemp=.pytest-tmp"
+
+[tool.uv]
+exclude-dependencies = [
+  { package = { name = "rapidocr", version = "3.10.0" }, dependencies = ["opencv-python-headless"] },
+]
 
 [tool.ruff]
 line-length = 100

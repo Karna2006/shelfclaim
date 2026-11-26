@@ -20,6 +20,7 @@ from google.genai import types
 class CropInput:
     crop_id: str
     image_bytes: bytes
+    angle_deg: float = 90
 
 
 class SpineTranscriber(Protocol):

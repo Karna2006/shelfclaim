@@ -9,7 +9,8 @@ Rule: **boring, explainable, few moving parts.** Every choice below has a one-li
 | Client | **Single-page vanilla HTML + JS + CSS** (no build step), served by FastAPI | Nothing to install. Runs in mobile Chrome/Safari. Visual polish isn't scored |
 | Server | **Python 3.12, FastAPI + Uvicorn**, WebSockets | Same as the reference, so its bridge pattern is easy to adapt. Async I/O for many API calls |
 | Live voice + vision | **Free browser speech cascade**: Web Speech API + browser `speechSynthesis`; `AGENT_MODEL` (`gemini-3.1-flash-lite`) via `google-genai` function calling | Avoids Gemini Live billing. Only final transcripts and selected low-resolution frames reach the server; raw microphone audio stays in the browser |
-| Offline vision (detection + spine transcription + item description) | **Gemini Flash** (`VISION_MODEL`, default `gemini-3.5-flash-lite`) with structured JSON output and 0–1000 normalised bounding boxes | Cheap, fast, good OCR on crops. One provider, one key |
+| Offline vision detection | **Gemini Flash** (`gemini-3.5-flash-lite`, at most 10 keyframes per sweep) with structured JSON output and 0–1000 normalised bounding boxes | Limits free-tier calls while retaining the tested detector |
+| Spine transcription | **RapidOCR + ONNX Runtime CPU** locally by default; optional Gemini fallback only for empty local results | OCR does not depend on Gemini quota; catalogue matching still rejects weak text |
 | Metric 3D geometry | **MapAnything** (metric multi-view feed-forward reconstruction) on a serverless GPU (**Modal**). Fallback **VGGT-1B** (up-to-scale, scaled by markers) | Camera poses plus dense depth from ~40–80 frames in seconds. Metric output gives a second scale anchor |
 | Metric anchor | **OpenCV ArUco** (`cv2.aruco`) printed scale cards. Cross-checks: known shelf model dimensions, book-format priors | Deterministic and explainable. The brief explicitly allows reference objects and known shelf dimensions |
 | Classical CV | **OpenCV** (blur, glare, homography, YuNet face detection with strict Haar fallback), **NumPy/SciPy**, **scikit-learn** (DBSCAN, RANSAC), **Shapely** (polygon area) | Standard, testable, no GPU |
@@ -39,6 +40,8 @@ dependencies = [
   "httpx>=0.27",
   "tenacity>=8.3",
   "opencv-contrib-python-headless>=4.10",
+  "rapidocr>=3.10",
+  "onnxruntime>=1.17",
   "numpy>=1.26",
   "scipy>=1.13",
   "scikit-learn>=1.5",

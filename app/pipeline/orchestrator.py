@@ -37,6 +37,7 @@ async def run_pipeline(
     sweep_dir: Path,
     settings: Settings,
     *,
+    from_stage: str = "s01",
     until: str = "s10",
     price_limit: int = 10,
     max_keyframes: int | None = None,
@@ -45,8 +46,12 @@ async def run_pipeline(
     clients: dict[str, object] | None = None,
 ) -> Path:
     """Run each stage once in order and update latency telemetry after completion."""
+    if from_stage not in _ORDER:
+        raise ValueError(f"Unsupported starting stage: {from_stage}")
     if until not in _ORDER:
         raise ValueError(f"Unsupported pipeline stage: {until}")
+    if _ORDER.index(from_stage) > _ORDER.index(until):
+        raise ValueError("Starting stage must not follow the ending stage")
     if max_keyframes is not None and max_keyframes < 1:
         raise ValueError("max_keyframes must be positive")
     if max_books is not None and max_books < 1:
@@ -67,8 +72,8 @@ async def run_pipeline(
         "s09": s09_room.run,
         "s10": s10_assemble.run,
     }
-    stages = list(_ORDER[: _ORDER.index(until) + 1])
-    if until != "s01" and (sweep_dir / "s01_detections.json").is_file():
+    stages = list(_ORDER[_ORDER.index(from_stage) : _ORDER.index(until) + 1])
+    if from_stage == "s01" and until != "s01" and (sweep_dir / "s01_detections.json").is_file():
         stages.remove("s01")
     for stage in stages:
         write_event(

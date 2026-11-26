@@ -80,14 +80,15 @@ def make_markers(
 def replay(
     sweep: Path,
     until: str | None = None,
+    from_stage: str = typer.Option("s01", "--from-stage"),
     frame_seqs: str | None = typer.Option(None, "--frame-seqs"),
     max_keyframes: Annotated[int | None, typer.Option("--max-keyframes", min=1, max=60)] = None,
     limit_books: Annotated[int | None, typer.Option("--limit-books", min=1, max=1000)] = None,
     limit: Annotated[int, typer.Option("--limit", min=0, max=40)] = 10,
 ) -> None:
     """Run the sweep pipeline through S1, S3, S6, S7, or the final packet stage."""
-    if until not in {None, "s01", "s03", "s06", "s07", "s10"}:
-        raise typer.BadParameter("until must be s01, s03, s06, s07, or s10")
+    if until not in {None, "s01", "s03", "s05", "s06", "s07", "s10"}:
+        raise typer.BadParameter("until must be s01, s03, s05, s06, s07, or s10")
     try:
         selected_seqs = (
             tuple(int(value.strip()) for value in frame_seqs.split(",") if value.strip())
@@ -102,6 +103,7 @@ def replay(
             run_pipeline(
                 sweep,
                 settings,
+                from_stage=from_stage,
                 until=until or "s10",
                 max_keyframes=max_keyframes,
                 frame_seqs=selected_seqs,

@@ -146,7 +146,13 @@ async def _detect_with_retry(
     total_request_s = 0.0
     failures: list[str] = []
     async with semaphore:
-        for model in vision_model_chain(settings.vision_model):
+        primary = settings.config.vision.detection_model
+        model_chain = (
+            vision_model_chain(primary)
+            if settings.config.vision.detection_model_fallbacks
+            else (primary,)
+        )
+        for model in model_chain:
             retry = limiter.settings_for(model)
             attempt = 0
             while True:

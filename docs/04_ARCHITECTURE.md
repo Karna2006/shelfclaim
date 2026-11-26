@@ -152,7 +152,7 @@ Each stage: input = previous stage JSON files + frames. Output = `sweeps/<id>/st
 - **Reconstruction set:** 40–80 frames spread through the sweep. Greedy selection maximises gyro-integrated yaw/pitch diversity and sharpness. Always include every frame where a scale card was detected.
 
 ### S1 — Detection (`vision/detect.py`) *(streams during the sweep)*
-- Gemini Flash, one call per keyframe, JSON schema output:
+- Gemini 3.5 Flash Lite, at most 10 keyframes per sweep, JSON schema output:
   `{"objects":[{"cls":"book_spine|book_stack|shelf_unit|shelf_board|item","box_2d":[ymin,xmin,ymax,xmax],"angle_deg":0-180,"item_category":"…","note":"…"}]}`.
 - Boxes are 0–1000 normalised; convert to pixels. For long thin spines, ask for **rotated** boxes via `angle_deg` and validate (clip to the image, min side ≥ 6 px).
 - Prompt: "List EVERY book spine individually, including thin ones, books lying flat and books in stacks. Do not read titles. Do not merge adjacent books."
@@ -192,10 +192,10 @@ Sanity: height outside [8, 45] cm or thickness outside [0.3, 12] cm → keep the
 Output `s04_measurements.json`.
 
 ### S5 — Transcribe spines (`vision/transcribe.py`) *(starts during the sweep for stable clusters)*
-- Crop the rotated box with 8% padding and rotate upright. Vertical spines get both 90° and 270° rotations in the same request; the model reports which is readable. Upscale so the short side is ≥ 96 px.
-- Batch ≤ 12 crops per call. Schema: `{"crop_id","readable":bool,"orientation":"cw|ccw|upright","lines":[{"text","kind_guess":"title|author|publisher|other"}],"legibility":0-1}`.
-- Prompt rules: "Copy only the characters you can see. If a word is partially visible, write only the visible part and mark it with `…`. Never complete a title from memory. If nothing is legible, readable=false."
-- **Multi-view consensus:** transcribe the best and alternate views. Agreement (token Jaccard ≥ 0.6) raises legibility; disagreement lowers it.
+- Use `config/settings.yaml` `transcribe.backend` (`local_ocr` by default, optional `gemini`). Shrink each spine box horizontally by 10% before cropping from its best-view frame; upscale so the short side is ≥ 96 px.
+- RapidOCR with CPU ONNX Runtime tries 0°, 90°, and 270° rotations; flat books also try 180°. Keep the rotation with the highest mean confidence and reject lines below 0.5. Gemini may transcribe only crops with no local OCR lines, when the fallback flag is enabled, a key is configured, and quota is known to be available. Quota errors leave the crop unreadable without blocking S5.
+- Output schema remains `{"crop_id","readable":bool,"orientation":"rotate_0deg|rotate_90deg|rotate_180deg|rotate_270deg","lines":[{"text","kind_guess":"title|author|publisher|other"}],"legibility":0-1}`. Gemini prompts still require visible characters only and prohibit completing titles from memory.
+- The configured catalogue thresholds remain unchanged. Merged or weak text stays `unidentified`; no title is inferred from OCR alone.
 - **Validation guard:** reject any line > 80 characters, or lines containing text that also appears in your prompt examples (a prompt-leak check).
 - Output `s05_transcriptions.json` (keeps raw text = `spine_text_raw`).
 

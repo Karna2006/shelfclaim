@@ -96,7 +96,9 @@ async def test_detection_stage_converts_normalized_boxes_to_pixels(tmp_path) -> 
     fake = FakeVision()
 
     output = await run_detection_stage(
-        tmp_path, Settings(config=YamlSettings(), _env_file=None), fake
+        tmp_path,
+        Settings(config=YamlSettings(), vision_model="gemini-3.8-flash", _env_file=None),
+        fake,
     )
 
     doc = json.loads(output.read_text())
@@ -158,7 +160,12 @@ async def test_detection_stage_retries_503_then_uses_next_model(tmp_path) -> Non
 
     detector = BusyThenAvailable()
     output = await run_detection_stage(
-        tmp_path, Settings(config=YamlSettings(), _env_file=None), detector
+        tmp_path,
+        Settings(
+            config=YamlSettings(vision={"detection_model_fallbacks": True}),
+            _env_file=None,
+        ),
+        detector,
     )
     document = json.loads(output.read_text(encoding="utf-8"))
 

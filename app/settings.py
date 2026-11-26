@@ -49,7 +49,7 @@ class CueSettings(BaseModel):
 class KeyframeSettings(BaseModel):
     min_novelty: float = 0.15
     detection_interval_s: float = Field(default=1.5, gt=0)
-    detection_max_frames: int = Field(default=60, gt=0)
+    detection_max_frames: int = Field(default=10, gt=0)
     recon_min: int = 40
     recon_max: int = 80
 
@@ -99,6 +99,14 @@ class StructureSettings(BaseModel):
 class VisionSettings(BaseModel):
     detection_method: Literal["full_frame"] = "full_frame"
     detection_model: str = "gemini-3.5-flash-lite"
+    detection_model_fallbacks: bool = False
+
+
+class TranscribeSettings(BaseModel):
+    backend: Literal["local_ocr", "gemini"] = "local_ocr"
+    confidence_min: float = Field(default=0.5, ge=0, le=1)
+    crop_horizontal_shrink: float = Field(default=0.10, ge=0, lt=0.5)
+    gemini_fallback_if_empty: bool = False
 
 
 class AgentSettings(BaseModel):
@@ -153,6 +161,7 @@ class YamlSettings(BaseModel):
     review: ReviewSettings = Field(default_factory=ReviewSettings)
     structure: StructureSettings = Field(default_factory=StructureSettings)
     vision: VisionSettings = Field(default_factory=VisionSettings)
+    transcribe: TranscribeSettings = Field(default_factory=TranscribeSettings)
     agent: AgentSettings = Field(default_factory=AgentSettings)
     llm: LlmSettings = Field(default_factory=LlmSettings)
 
