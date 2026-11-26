@@ -12,6 +12,7 @@ from collections import Counter
 from pathlib import Path
 from typing import cast
 
+from app.capture.storage import list_frames
 from app.live.rate_limit import ModelRateLimiter
 from app.pipeline.artifacts import Detection, DetectionFrameStats, DetectionsDoc, Event
 from app.pipeline.context import StageContext
@@ -34,7 +35,12 @@ _ALLOWED_CLASSES = {
 }
 
 
-async def run(ctx: StageContext, *, max_keyframes: int | None = None) -> Path:
+async def run(
+    ctx: StageContext,
+    *,
+    max_keyframes: int | None = None,
+    frame_seqs: tuple[int, ...] | None = None,
+) -> Path:
     """Run S1 using a supplied fake/client or the configured Gemini client."""
     injected = ctx.clients.get("vision")
     detector = (
@@ -44,7 +50,11 @@ async def run(ctx: StageContext, *, max_keyframes: int | None = None) -> Path:
     )
     try:
         return await run_detection_stage(
-            ctx.sweep_dir, ctx.settings, detector, max_frames=max_keyframes
+            ctx.sweep_dir,
+            ctx.settings,
+            detector,
+            max_frames=max_keyframes,
+            frame_seqs=frame_seqs,
         )
     finally:
         if injected is None:
@@ -58,15 +68,24 @@ async def run_detection_stage(
     *,
     limiter: ModelRateLimiter | None = None,
     max_frames: int | None = None,
+    frame_seqs: tuple[int, ...] | None = None,
 ) -> Path:
     """Select and detect keyframes with concurrency two and bounded 429 retries."""
     if max_frames is not None and max_frames < 1:
         raise ValueError("max_frames must be positive")
     configured_max = settings.config.keyframes.detection_max_frames
     selected_max = min(max_frames, configured_max) if max_frames is not None else configured_max
-    keyframes = select_detection_keyframes(
-        sweep_dir, settings.config.keyframes, max_frames=selected_max
-    )
+    if frame_seqs is None:
+        keyframes = select_detection_keyframes(
+            sweep_dir, settings.config.keyframes, max_frames=selected_max
+        )
+    else:
+        by_seq = {frame.seq: frame for frame in list_frames(sweep_dir)}
+        if len(frame_seqs) != len(set(frame_seqs)) or any(seq not in by_seq for seq in frame_seqs):
+            raise ValueError("frame_seqs must contain unique saved frame sequences")
+        if len(frame_seqs) > selected_max:
+            raise ValueError("frame_seqs cannot exceed the selected keyframe limit")
+        keyframes = [by_seq[seq] for seq in frame_seqs]
     limiter = limiter or ModelRateLimiter(settings.config.llm)
     semaphore = asyncio.Semaphore(2)
 

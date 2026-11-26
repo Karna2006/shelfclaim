@@ -11,7 +11,11 @@ from pathlib import Path
 from typing import Any, cast
 
 import cv2
+from app.pipeline.artifacts import Event
 from app.pipeline.context import StageContext
+from app.telemetry.events import write_event
+from app.vision.models import vision_model_chain
+from app.vision.schema import SpineTranscriptionResponse
 from app.vision.transcription import CropInput, GeminiSpineTranscriber, SpineTranscriber
 
 
@@ -50,7 +54,20 @@ async def run(ctx: StageContext, *, max_books: int | None = None) -> Path:
         results: dict[str, list[dict[str, Any]]] = {}
         for start in range(0, len(jobs), 12):
             batch = jobs[start : start + 12]
-            response = await transcriber.transcribe(batch, ctx.settings.vision_model)
+            try:
+                response = await _transcribe_with_fallback(
+                    transcriber, batch, ctx.settings.vision_model
+                )
+            except RuntimeError as exc:
+                write_event(
+                    ctx.sweep_dir,
+                    Event(
+                        t_ms=0,
+                        type="transcription_unavailable",
+                        payload={"reason": str(exc), "crop_count": len(batch)},
+                    ),
+                )
+                continue
             known_ids = {crop.crop_id for crop in batch}
             for item in response.results:
                 if item.crop_id not in known_ids:
@@ -74,6 +91,21 @@ async def run(ctx: StageContext, *, max_books: int | None = None) -> Path:
     output = ctx.sweep_dir / "s05_transcriptions.json"
     output.write_text(json.dumps({"books": books}, indent=2) + "\n", encoding="utf-8")
     return output
+
+
+async def _transcribe_with_fallback(
+    transcriber: SpineTranscriber,
+    crops: list[CropInput],
+    primary_model: str,
+) -> SpineTranscriptionResponse:
+    """Try configured vision models in order so an exhausted primary can fall back."""
+    failures = []
+    for model in vision_model_chain(primary_model):
+        try:
+            return await transcriber.transcribe(crops, model)
+        except Exception as exc:
+            failures.append(f"{model}: {type(exc).__name__}")
+    raise RuntimeError("All transcription models failed: " + "; ".join(failures))
 
 
 def _make_crops(sweep_dir: Path, raw: dict[str, Any]) -> list[CropInput]:

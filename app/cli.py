@@ -80,6 +80,7 @@ def make_markers(
 def replay(
     sweep: Path,
     until: str | None = None,
+    frame_seqs: str | None = typer.Option(None, "--frame-seqs"),
     max_keyframes: Annotated[int | None, typer.Option("--max-keyframes", min=1, max=60)] = None,
     limit_books: Annotated[int | None, typer.Option("--limit-books", min=1, max=1000)] = None,
     limit: Annotated[int, typer.Option("--limit", min=0, max=40)] = 10,
@@ -87,6 +88,14 @@ def replay(
     """Run the sweep pipeline through S1, S3, S6, S7, or the final packet stage."""
     if until not in {None, "s01", "s03", "s06", "s07", "s10"}:
         raise typer.BadParameter("until must be s01, s03, s06, s07, or s10")
+    try:
+        selected_seqs = (
+            tuple(int(value.strip()) for value in frame_seqs.split(",") if value.strip())
+            if frame_seqs
+            else None
+        )
+    except ValueError as exc:
+        raise typer.BadParameter("--frame-seqs must be comma-separated sequence numbers") from exc
     settings = load_settings()
     try:
         output = asyncio.run(
@@ -95,6 +104,7 @@ def replay(
                 settings,
                 until=until or "s10",
                 max_keyframes=max_keyframes,
+                frame_seqs=selected_seqs,
                 max_books=limit_books,
                 price_limit=limit,
             )

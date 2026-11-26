@@ -66,6 +66,7 @@ class Event(ArtifactModel):
         "go_away",
         "stage_started",
         "stage_done",
+        "transcription_unavailable",
         "packet_ready",
         "landmark_marked",
         "error",

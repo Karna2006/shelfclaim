@@ -111,6 +111,36 @@ async def test_detection_stage_converts_normalized_boxes_to_pixels(tmp_path) -> 
 
 
 @pytest.mark.asyncio
+async def test_detection_stage_uses_explicit_reviewed_frame_sequences(tmp_path) -> None:
+    _make_sweep(tmp_path, count=4)
+    fake = FakeVision()
+
+    output = await run_detection_stage(
+        tmp_path,
+        Settings(config=YamlSettings(), _env_file=None),
+        fake,
+        frame_seqs=(3, 1),
+    )
+
+    document = DetectionsDoc.model_validate_json(output.read_text())
+    assert [row.seq for row in document.keyframe_stats] == [3, 1]
+    assert fake.calls == 2
+
+
+@pytest.mark.asyncio
+async def test_detection_stage_rejects_repeated_explicit_frame_sequence(tmp_path) -> None:
+    _make_sweep(tmp_path, count=2)
+
+    with pytest.raises(ValueError, match="unique saved frame"):
+        await run_detection_stage(
+            tmp_path,
+            Settings(config=YamlSettings(), _env_file=None),
+            FakeVision(),
+            frame_seqs=(0, 0),
+        )
+
+
+@pytest.mark.asyncio
 async def test_detection_stage_retries_503_then_uses_next_model(tmp_path) -> None:
     _make_sweep(tmp_path)
 

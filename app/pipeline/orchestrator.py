@@ -40,6 +40,7 @@ async def run_pipeline(
     until: str = "s10",
     price_limit: int = 10,
     max_keyframes: int | None = None,
+    frame_seqs: tuple[int, ...] | None = None,
     max_books: int | None = None,
     clients: dict[str, object] | None = None,
 ) -> Path:
@@ -55,7 +56,7 @@ async def run_pipeline(
     started = time.perf_counter()
     output = sweep_dir / "sweep.json"
     stage_functions: dict[str, Any] = {
-        "s01": lambda ctx: s01_detect.run(ctx, max_keyframes=max_keyframes),
+        "s01": lambda ctx: s01_detect.run(ctx, max_keyframes=max_keyframes, frame_seqs=frame_seqs),
         "s02": s02_geometry.run,
         "s03": s03_books.run,
         "s04": s04_measure.run,
