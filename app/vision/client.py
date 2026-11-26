@@ -10,7 +10,7 @@ from typing import Protocol
 
 from app.prompts.loader import load_prompt
 from app.settings import Settings
-from app.vision.schema import VisionResponse
+from app.vision.schema import FrameVisionResponse, VisionResponse
 from google import genai
 from google.genai import types
 
@@ -48,6 +48,24 @@ class GeminiVisionDetector:
         if not response.text:
             raise ValueError("Vision model returned no JSON")
         return VisionResponse.model_validate_json(response.text)
+
+    async def detect_still(self, image_bytes: bytes, model: str) -> FrameVisionResponse:
+        """Use a compact schema for an interactive single-image inspection."""
+        response = await self._client.aio.models.generate_content(
+            model=model,
+            contents=[
+                types.Part.from_text(text=load_prompt("detect")),
+                types.Part.from_bytes(data=image_bytes, mime_type="image/jpeg"),
+            ],
+            config=types.GenerateContentConfig(
+                response_mime_type="application/json",
+                response_schema=FrameVisionResponse,
+                temperature=0,
+            ),
+        )
+        if not response.text:
+            raise ValueError("Vision model returned no JSON")
+        return FrameVisionResponse.model_validate_json(response.text)
 
     async def close(self) -> None:
         await self._client.aio.aclose()

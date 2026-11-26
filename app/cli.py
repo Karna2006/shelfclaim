@@ -27,6 +27,7 @@ from app.pipeline.orchestrator import run_pipeline
 from app.pipeline.stages.s07_price_books import price_sweep
 from app.settings import Settings, load_settings
 from app.telemetry.events import write_event
+from app.vision.detect_frame import detect_frame as detect_single_frame
 
 app = typer.Typer(no_args_is_help=True, help="ShelfClaim development commands")
 
@@ -114,6 +115,30 @@ def debug_boxes(sweep: Path) -> None:
         if saved >= 5:
             break
     typer.echo(f"Saved {saved} debug frames under {out_dir}")
+
+
+@app.command("detect-frame")
+def detect_frame_command(
+    jpg: Path,
+    out: Annotated[Path, typer.Option("--out")],
+) -> None:
+    """Detect objects in one JPG and save an annotated PNG preview."""
+    try:
+        result = asyncio.run(detect_single_frame(jpg, out, load_settings()))
+    except Exception as exc:
+        typer.echo(
+            json.dumps(
+                {
+                    "error": "frame_detection_failed",
+                    "exception_type": type(exc).__name__,
+                    "detail": str(exc),
+                },
+                indent=2,
+            ),
+            err=True,
+        )
+        raise typer.Exit(code=1) from exc
+    typer.echo(json.dumps(result.to_dict(), indent=2))
 
 
 @app.command("inspect-sweep")

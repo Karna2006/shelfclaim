@@ -19,7 +19,7 @@ Rule: **boring, explainable, few moving parts.** Every choice below has a one-li
 | FX | **Frankfurter** (`api.frankfurter.dev`, no key) | Sourced, dated central-bank rates for every conversion |
 | Report | **Jinja2 → `report.html`** (self-contained, relative links to frames) | "PDF or HTML" allowed. HTML is faster and clickable |
 | Storage | **Files per sweep** (`sweeps/<id>/…` JSON, JSONL, JPEG) + **SQLite** response cache (`cache/http_cache.sqlite`) | Files are the evidence trail. No DB server |
-| CLI | **Typer** (`python -m app.cli …`) | replay, reprice, evaluate, make-markers |
+| CLI | **Typer** (`python -m app.cli …`) | replay, detect-frame, reprice, evaluate, make-markers |
 | Packaging | **uv** (`pyproject.toml` + `uv.lock`) | `uv sync` in seconds, which makes "stranger running in 15 min" realistic |
 | Tests / lint | **pytest**, **pytest-asyncio**, **ruff** | Fast. Models and HTTP mocked in unit tests |
 | Phone HTTPS | **Tailscale Serve** (recommended) or **Cloudflare quick tunnel**, or mkcert on LAN | `getUserMedia` requires a secure context |

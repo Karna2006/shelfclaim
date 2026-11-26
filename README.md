@@ -31,6 +31,7 @@ The browser uses Web Speech recognition and speech synthesis for voice. The serv
 
 ```powershell
 .venv\Scripts\python.exe -m app.cli inspect-sweep sweeps/<sweep-id>
+.venv\Scripts\python.exe -m app.cli detect-frame sweeps/<sweep-id>/frames/frame.jpg --out debug/frame-detections.png
 .venv\Scripts\python.exe -m app.cli replay sweeps/<sweep-id> --until s06
 .venv\Scripts\python.exe -m app.cli debug-boxes sweeps/<sweep-id>
 .venv\Scripts\python.exe -m app.cli reprice --sweep sweeps/<sweep-id> --country GB --limit 10

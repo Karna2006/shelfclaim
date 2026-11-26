@@ -26,6 +26,26 @@ class VisionResponse(BaseModel):
     objects: list[VisionObject] = Field(default_factory=list, max_length=2000)
 
 
+class FrameVisionObject(BaseModel):
+    """Minimal detection schema for a single image provider request."""
+
+    model_config = ConfigDict(extra="ignore")
+
+    cls: str
+    box_2d: list[int]
+    angle_deg: float = 90
+    item_category: str | None = None
+    note: str | None = None
+
+
+class FrameVisionResponse(BaseModel):
+    """Unbounded list schema avoids Gemini's constrained-array state ceiling."""
+
+    model_config = ConfigDict(extra="ignore")
+
+    objects: list[FrameVisionObject] = Field(default_factory=list)
+
+
 class SpineLine(BaseModel):
     model_config = ConfigDict(extra="ignore")
 
