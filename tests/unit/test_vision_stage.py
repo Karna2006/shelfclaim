@@ -5,7 +5,7 @@ import json
 import cv2
 import numpy as np
 import pytest
-from app.cli import _format_s03_count_rows
+from app.cli import _format_s03_count_rows, pick_frames
 from app.packet.models import BBox
 from app.pipeline.artifacts import Detection, DetectionsDoc, FrameRecord
 from app.pipeline.orchestrator import run_pipeline
@@ -78,6 +78,16 @@ def test_keyframes_respect_interval_and_cap(tmp_path) -> None:
     assert len(rows) <= 2
     assert len(capped_rows) == 40
     assert all(right.t_ms - left.t_ms >= 1500 for left, right in zip(rows, rows[1:], strict=False))
+
+
+def test_pick_frames_cli_reports_selected_frame_paths(tmp_path, capsys) -> None:
+    _make_sweep(tmp_path, count=4)
+
+    pick_frames(tmp_path, n=2)
+
+    output = capsys.readouterr().out
+    assert "rank | seq | blur" in output
+    assert str(tmp_path / "frames/0.jpg") in output
 
 
 @pytest.mark.asyncio

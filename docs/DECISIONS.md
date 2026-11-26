@@ -1,5 +1,7 @@
 # Decisions
 
+- Frame review for the 2026-11-26 shelf detection bake-off uses the existing S1 selection rule: highest blur score per 1.5-second interval, then near-duplicate rejection; sweep `sw_20261126_225839_2007` is the newest capture. Its three sharpest clear shelf views are seq 57 (blur 429.1), 62 (405.0), and 90 (386.6); global sharpness leaders show only a desk and monitors.
+
 - Stage A emits only quality cues from saved frame metrics until S1 provides row, text-size, occlusion, and item evidence.
 - Vision detection is post-capture in this implementation; the live async queue and provisional inventory push are deferred because the authorized model replay returned HTTP 503.
 - The per-run live model budget was exhausted by the failed S1 replay, so remaining pipeline verification uses local fixtures and avoids further model calls.

@@ -29,8 +29,32 @@ from app.pipeline.stages.s07_price_books import price_sweep
 from app.settings import Settings, load_settings
 from app.telemetry.events import write_event
 from app.vision.detect_frame import detect_frame as detect_single_frame
+from app.vision.keyframes import select_detection_keyframes
 
 app = typer.Typer(no_args_is_help=True, help="ShelfClaim development commands")
+
+
+@app.command("pick-frames")
+def pick_frames(
+    sweep: Path,
+    n: Annotated[int, typer.Option("--n", min=1, max=60)] = 5,
+) -> None:
+    """Pick sharp, non-duplicate frames for visual review or a detection bake-off."""
+    settings = load_settings()
+    selected = select_detection_keyframes(
+        sweep,
+        settings.config.keyframes,
+        max_frames=settings.config.keyframes.detection_max_frames,
+    )
+    if not selected:
+        raise typer.BadParameter(f"No readable frames found in {sweep}")
+    typer.echo("rank | seq | blur | exposure | gyro_dps | frame")
+    selected.sort(key=lambda row: row.blur if row.blur is not None else -1, reverse=True)
+    for index, record in enumerate(selected[:n], start=1):
+        typer.echo(
+            f"{index} | {record.seq} | {record.blur} | {record.exposure} | "
+            f"{record.gyro_dps} | {sweep / record.path}"
+        )
 
 
 @app.command()
