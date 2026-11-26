@@ -59,6 +59,10 @@ review:
   row_count_disagreement_pct: 0.10
 structure:
   full_row_width_pct: 0.80
+vision:
+  # Bake-off on Galaxy S24 FE sweep sw_20261126_225839_2007 favored full-frame detection.
+  detection_method: full_frame
+  detection_model: gemini-3.5-flash-lite
 agent:
   timeout_s: 20
   debounce_ms: 800

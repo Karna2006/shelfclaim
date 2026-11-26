@@ -28,10 +28,12 @@ from app.pipeline.orchestrator import run_pipeline
 from app.pipeline.stages.s07_price_books import price_sweep
 from app.settings import Settings, load_settings
 from app.telemetry.events import write_event
+from app.vision.bakeoff_cli import register_detection_bakeoff
 from app.vision.detect_frame import detect_frame as detect_single_frame
 from app.vision.keyframes import select_detection_keyframes
 
 app = typer.Typer(no_args_is_help=True, help="ShelfClaim development commands")
+register_detection_bakeoff(app)
 
 
 @app.command("pick-frames")

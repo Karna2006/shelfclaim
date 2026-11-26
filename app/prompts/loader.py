@@ -12,7 +12,15 @@ import yaml
 from pydantic import BaseModel, ConfigDict
 
 _PROMPT_DIR = Path(__file__).resolve().parent
-_ALLOWED_PROMPTS = {"agent_system", "detect", "transcribe", "items", "rerank"}
+_ALLOWED_PROMPTS = {
+    "agent_system",
+    "detect",
+    "shelf_rows",
+    "spine_boxes",
+    "transcribe",
+    "items",
+    "rerank",
+}
 
 
 class ScriptedLines(BaseModel):

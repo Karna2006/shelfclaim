@@ -96,6 +96,11 @@ class StructureSettings(BaseModel):
     full_row_width_pct: float = Field(default=0.80, gt=0, le=1)
 
 
+class VisionSettings(BaseModel):
+    detection_method: Literal["full_frame"] = "full_frame"
+    detection_model: str = "gemini-3.5-flash-lite"
+
+
 class AgentSettings(BaseModel):
     timeout_s: float = Field(default=20, gt=0)
     debounce_ms: int = Field(default=800, gt=0)
@@ -147,6 +152,7 @@ class YamlSettings(BaseModel):
     room: RoomSettings = Field(default_factory=RoomSettings)
     review: ReviewSettings = Field(default_factory=ReviewSettings)
     structure: StructureSettings = Field(default_factory=StructureSettings)
+    vision: VisionSettings = Field(default_factory=VisionSettings)
     agent: AgentSettings = Field(default_factory=AgentSettings)
     llm: LlmSettings = Field(default_factory=LlmSettings)
 

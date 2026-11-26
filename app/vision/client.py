@@ -51,10 +51,16 @@ class GeminiVisionDetector:
 
     async def detect_still(self, image_bytes: bytes, model: str) -> FrameVisionResponse:
         """Use a compact schema for an interactive single-image inspection."""
+        return await self.detect_with_prompt(image_bytes, load_prompt("detect"), model)
+
+    async def detect_with_prompt(
+        self, image_bytes: bytes, prompt: str, model: str
+    ) -> FrameVisionResponse:
+        """Run one still-image request with a caller-selected, reviewed prompt."""
         response = await self._client.aio.models.generate_content(
             model=model,
             contents=[
-                types.Part.from_text(text=load_prompt("detect")),
+                types.Part.from_text(text=prompt),
                 types.Part.from_bytes(data=image_bytes, mime_type="image/jpeg"),
             ],
             config=types.GenerateContentConfig(
