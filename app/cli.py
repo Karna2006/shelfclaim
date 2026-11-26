@@ -7,6 +7,7 @@ explicit phase stubs. Implements `docs/06_USER_FLOWS.md` §6 and Phase 0.
 from __future__ import annotations
 
 import asyncio
+import json
 from pathlib import Path
 from typing import Annotated
 
@@ -14,173 +15,20 @@ import cv2
 import typer
 import uvicorn
 from app.capture.face_audit import create_face_contact_sheet
+from app.capture.marker_pdf import generate_marker_pdf
 from app.capture.storage import list_frames
 from app.capture.summary import summarize_frames
 from app.capture.yunet_model import download_yunet_model
+from app.evaluation import evaluate_sweep
 from app.live.benchmark import benchmark_models
 from app.live.terminal import run_agent_chat
-from app.settings import load_settings
-from PIL import Image, ImageDraw, ImageFont
+from app.pipeline.artifacts import DetectionsDoc, Event
+from app.pipeline.orchestrator import run_pipeline
+from app.pipeline.stages.s07_price_books import price_sweep
+from app.settings import Settings, load_settings
+from app.telemetry.events import write_event
 
 app = typer.Typer(no_args_is_help=True, help="ShelfClaim development commands")
-
-# This print resolution keeps card edges crisp while preserving physical sizing.
-_PRINT_DPI = 300
-_A4_WIDTH_MM = 210
-_A4_HEIGHT_MM = 297
-_MARKER_TOP_MM = 38
-_MARKER_LABEL_GAP_MM = 8
-_MARKER_LABEL_FONT_MM = 3.5
-_PAGE_TITLE_FONT_MM = 5
-_RULER_LENGTH_MM = 100
-_RULER_LABEL_GAP_MM = 32
-_RULER_LABEL_HEIGHT_MM = 10
-_RULER_TICK_STEP_MM = 10
-_RULER_MAJOR_TICK_STEP_MM = 50
-_RULER_MAJOR_TICK_HEIGHT_MM = 5
-_RULER_MINOR_TICK_HEIGHT_MM = 3
-_PAGE_FOOTER_MM = 20
-_ARUCO_4X4_50_COUNT = 50
-
-
-def _font(size: int) -> ImageFont.ImageFont:
-    for name in ("arial.ttf", "DejaVuSans.ttf"):
-        try:
-            return ImageFont.truetype(name, size=size)
-        except OSError:
-            continue
-    return ImageFont.load_default(size=size)
-
-
-def generate_marker_pdf(
-    ids: tuple[int, ...], size_mm: float, out: Path, *, dpi: int = _PRINT_DPI
-) -> Path:
-    """Create A4 marker pages, retaining physical marker and ruler dimensions."""
-    if not ids:
-        raise ValueError("At least one marker ID is required")
-    if size_mm <= 0:
-        raise ValueError("Marker size must be positive")
-    aruco = cv2.aruco
-    dictionary_name = "DICT_4X4_50"
-    dictionary_code = getattr(aruco, dictionary_name, None)
-    if dictionary_code is None:
-        raise RuntimeError(f"OpenCV ArUco dictionary unavailable: {dictionary_name}")
-    dictionary = aruco.getPredefinedDictionary(dictionary_code)
-
-    page_w, page_h = _mm_to_px(_A4_WIDTH_MM, dpi), _mm_to_px(_A4_HEIGHT_MM, dpi)
-    marker_side_px = _mm_to_px(size_mm, dpi)
-    ruler_side_px = _mm_to_px(_RULER_LENGTH_MM, dpi)
-    pages: list[Image.Image] = []
-
-    for marker_id in ids:
-        if not 0 <= marker_id < _ARUCO_4X4_50_COUNT:
-            raise ValueError("DICT_4X4_50 marker IDs must be between 0 and 49")
-        if hasattr(aruco, "generateImageMarker"):
-            marker = aruco.generateImageMarker(dictionary, marker_id, marker_side_px)
-        else:
-            marker = aruco.drawMarker(dictionary, marker_id, marker_side_px)
-        pages.append(
-            _build_marker_page(
-                marker,
-                marker_id,
-                size_mm,
-                page_w,
-                page_h,
-                marker_side_px,
-                ruler_side_px,
-                dpi,
-            )
-        )
-
-    out.parent.mkdir(parents=True, exist_ok=True)
-    pages[0].save(out, format="PDF", resolution=dpi, save_all=True, append_images=pages[1:])
-    return out
-
-
-def _mm_to_px(value: float, dpi: int) -> int:
-    # Pillow's resolution is dots per inch, and one inch is exactly 25.4 mm.
-    return round(value * dpi / 25.4)
-
-
-def _build_marker_page(
-    marker: object,
-    marker_id: int,
-    size_mm: float,
-    page_w: int,
-    page_h: int,
-    marker_side_px: int,
-    ruler_side_px: int,
-    dpi: int,
-) -> Image.Image:
-    """Lay out a marker, ID, and ruler so print scaling is easy to verify."""
-    page = Image.new("RGB", (page_w, page_h), "white")
-    page.paste(
-        Image.fromarray(marker).convert("RGB"),
-        ((page_w - marker_side_px) // 2, _mm_to_px(_MARKER_TOP_MM, dpi)),
-    )
-    draw = ImageDraw.Draw(page)
-    marker_bottom = _mm_to_px(_MARKER_TOP_MM, dpi) + marker_side_px
-    _draw_marker_label(draw, page_w, marker_bottom, marker_id, size_mm, dpi)
-    _draw_ruler(draw, page_w, marker_bottom, ruler_side_px, dpi)
-    draw.text(
-        (page_w // 2, page_h - _mm_to_px(_PAGE_FOOTER_MM, dpi)),
-        "Print at 100% / actual size — no fit-to-page.",
-        fill="black",
-        font=_font(_mm_to_px(_PAGE_TITLE_FONT_MM, dpi)),
-        anchor="ms",
-    )
-    return page
-
-
-def _draw_marker_label(
-    draw: ImageDraw.ImageDraw,
-    page_w: int,
-    marker_bottom: int,
-    marker_id: int,
-    size_mm: float,
-    dpi: int,
-) -> None:
-    marker_label = f"ArUco ID {marker_id}  |  intended marker size {size_mm:.1f} mm"
-    draw.text(
-        (page_w // 2, marker_bottom + _mm_to_px(_MARKER_LABEL_GAP_MM, dpi)),
-        marker_label,
-        fill="black",
-        font=_font(_mm_to_px(_MARKER_LABEL_FONT_MM, dpi)),
-        anchor="mt",
-    )
-
-
-def _draw_ruler(
-    draw: ImageDraw.ImageDraw,
-    page_w: int,
-    marker_bottom: int,
-    ruler_side_px: int,
-    dpi: int,
-) -> None:
-    """Draw a physical scale check so print-size errors are visible immediately."""
-    ruler_x = (page_w - ruler_side_px) // 2
-    ruler_y = marker_bottom + _mm_to_px(_RULER_LABEL_GAP_MM, dpi)
-    draw.text(
-        (page_w // 2, ruler_y - _mm_to_px(_RULER_LABEL_HEIGHT_MM, dpi)),
-        f"{_RULER_LENGTH_MM} mm ruler line — verify print scale with a ruler",
-        fill="black",
-        font=_font(_mm_to_px(_MARKER_LABEL_FONT_MM, dpi)),
-        anchor="ms",
-    )
-    draw.line((ruler_x, ruler_y, ruler_x + ruler_side_px, ruler_y), fill="black", width=5)
-    for millimetres in range(0, _RULER_LENGTH_MM + 1, _RULER_TICK_STEP_MM):
-        tick_x = ruler_x + _mm_to_px(millimetres, dpi)
-        tick_height_mm = (
-            _RULER_MAJOR_TICK_HEIGHT_MM
-            if millimetres % _RULER_MAJOR_TICK_STEP_MM == 0
-            else _RULER_MINOR_TICK_HEIGHT_MM
-        )
-        tick_height = _mm_to_px(tick_height_mm, dpi)
-        draw.line(
-            (tick_x, ruler_y - tick_height, tick_x, ruler_y + tick_height),
-            fill="black",
-            width=4,
-        )
 
 
 @app.command()
@@ -202,8 +50,70 @@ def make_markers(
 
 @app.command()
 def replay(sweep: Path, until: str | None = None) -> None:
-    del sweep, until
-    typer.echo("not implemented in phase 0")
+    """Run the sweep pipeline through S1, S6, or the final packet stage."""
+    if until not in {None, "s01", "s06", "s10"}:
+        raise typer.BadParameter("until must be s01, s06, or s10")
+    settings = load_settings()
+    try:
+        output = asyncio.run(run_pipeline(sweep, settings, until=until or "s10"))
+    except Exception as exc:
+        if sweep.is_dir():
+            write_event(
+                sweep,
+                Event(
+                    t_ms=0,
+                    type="error",
+                    payload={
+                        "stage": until or "s10",
+                        "exception_type": type(exc).__name__,
+                        "message": str(exc),
+                    },
+                ),
+            )
+        typer.echo(f"Replay blocked: {type(exc).__name__}: {exc}", err=True)
+        raise typer.Exit(code=1) from exc
+    typer.echo(f"Pipeline reached {until or 's10'}: {output}")
+
+
+@app.command("debug-boxes")
+def debug_boxes(sweep: Path) -> None:
+    """Save up to five frame previews with S1 boxes drawn for review."""
+    detection_path = sweep / "s01_detections.json"
+    if not detection_path.is_file():
+        raise typer.BadParameter("Run replay --until s01 first")
+    detections = DetectionsDoc.model_validate_json(detection_path.read_text(encoding="utf-8"))
+    records = {record.seq: record for record in list_frames(sweep)}
+    out_dir = sweep / "debug_boxes"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    saved = 0
+    for seq, boxes in sorted(detections.frames.items()):
+        record = records.get(seq)
+        if record is None:
+            continue
+        image = cv2.imread(str(sweep / record.path))
+        if image is None:
+            continue
+        for detection in boxes:
+            box = detection.box_px
+            rect = ((box.x + box.w / 2, box.y + box.h / 2), (box.w, box.h), box.angle_deg)
+            points = cv2.boxPoints(rect).astype("int32")
+            cv2.polylines(image, [points], True, (40, 220, 40), 2)
+            cv2.putText(
+                image,
+                detection.cls,
+                (box.x, max(18, box.y - 5)),
+                cv2.FONT_HERSHEY_SIMPLEX,
+                0.5,
+                (40, 220, 40),
+                1,
+            )
+        output = out_dir / f"f_{seq:06d}_boxes.jpg"
+        cv2.imwrite(str(output), image)
+        typer.echo(str(output))
+        saved += 1
+        if saved >= 5:
+            break
+    typer.echo(f"Saved {saved} debug frames under {out_dir}")
 
 
 @app.command("inspect-sweep")
@@ -273,8 +183,42 @@ def reprice(
     country: Annotated[str, typer.Option("--country")],
     limit: int = typer.Option(10, min=1),
 ) -> None:
-    del sweep, country, limit
-    typer.echo("not implemented in phase 0")
+    """Price grounded catalogue matches with a bounded provider search count."""
+    if not 0 <= limit <= 40:
+        raise typer.BadParameter("limit must be between 0 and 40")
+    if not (sweep / "s06_identification.json").is_file():
+        typer.echo("Repricing blocked: S6 identification artifact is missing.", err=True)
+        raise typer.Exit(code=1)
+    settings = load_settings()
+    try:
+        output = asyncio.run(
+            price_sweep(
+                sweep,
+                settings,
+                _pricing_client(settings),
+                country=country,
+                limit=limit,
+            )
+        )
+    except Exception as exc:
+        typer.echo(f"Repricing blocked: {type(exc).__name__}: {exc}", err=True)
+        raise typer.Exit(code=1) from exc
+    result = json.loads(output.read_text(encoding="utf-8"))
+    typer.echo("Book | New | Used | Status")
+    for book_id, row in result["books"].items():
+        new, used = row.get("new", {}), row.get("used", {})
+        typer.echo(
+            f"{book_id} | {new.get('amount')} {new.get('currency')} | "
+            f"{used.get('amount')} {used.get('currency')} | "
+            f"{new.get('price_status')}/{used.get('price_status')}"
+        )
+    typer.echo(f"Evidence and results: {output} (SerpAPI searches={result['searches_used']})")
+
+
+def _pricing_client(settings: Settings) -> object:
+    from app.pricing.providers.serpapi import SerpApiProvider
+
+    return SerpApiProvider(settings)
 
 
 @app.command()
@@ -283,8 +227,8 @@ def evaluate(
     gt: Annotated[Path, typer.Option("--gt")],
     out: Annotated[Path, typer.Option("--out")],
 ) -> None:
-    del sweep, gt, out
-    typer.echo("not implemented in phase 0")
+    output = evaluate_sweep(sweep, gt, out)
+    typer.echo(f"Evaluation report: {output}")
 
 
 @app.command()

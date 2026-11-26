@@ -104,6 +104,11 @@ class AgentLoop:
                         self._history.append(AgentMessage(role="model", text=scripted_text))
                         self._trim_history()
                         return AgentReply(text=scripted_text, start_sweep_after_reply=True)
+            scripted_answer = _question_script(text, self.scripted_lines)
+            if scripted_answer is not None:
+                self._history.append(AgentMessage(role="model", text=scripted_answer))
+                self._trim_history()
+                return AgentReply(text=scripted_answer)
             return await self._generate()
         finally:
             self._history = deque(
@@ -318,6 +323,17 @@ def should_attach_frame(text: str, turn_number: int, settings: Settings) -> bool
     referenced = any(keyword.casefold() in normalized for keyword in keywords)
     every_n = settings.config.agent.frame_attachment_every_n_turns
     return referenced or turn_number % every_n == 0
+
+
+def _question_script(text: str, lines: ScriptedLines) -> str | None:
+    """Answer common title and price questions with reviewed, non-factual wording."""
+    normalized = text.casefold()
+    if any(word in normalized for word in ("price", "cost", "worth", "how much")):
+        return lines.price_question
+    title_phrases = ("which book", "what book", "title", "identify this book")
+    if any(word in normalized for word in title_phrases):
+        return lines.title_question
+    return None
 
 
 def _deterministic_locale(text: str) -> tuple[str, str] | None:

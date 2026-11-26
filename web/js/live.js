@@ -41,6 +41,9 @@ export function createLiveSocket(sweepId, callbacks = {}) {
         callbacks.onDebug?.("dropped user_text; live ws unavailable");
       }
     },
+    sendSpeechActivity(speaking) {
+      if (socket.readyState === WebSocket.OPEN) socket.send(JSON.stringify({ type: "speech_activity", speaking }));
+    },
     async sendFrame(blob, tMs) {
       if (socket.readyState !== WebSocket.OPEN || !blob) return;
       const bytes = new Uint8Array(await blob.arrayBuffer());

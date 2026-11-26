@@ -82,7 +82,7 @@ export function createSpeechIn({ onFinal, onUnsupported, onBlocked = () => {}, o
   };
 }
 
-export function createSpeechOut({ onSpeakingChange = () => {}, pauseInput = () => {}, resumeInput = () => {} } = {}) {
+export function createSpeechOut({ onSpeakingChange = () => {}, pauseInput = () => {}, resumeInput = () => {}, bargeInMode = true } = {}) {
   const synth = window.speechSynthesis;
   const queue = [];
   let active = false;
@@ -103,7 +103,7 @@ export function createSpeechOut({ onSpeakingChange = () => {}, pauseInput = () =
         onSpeakingChange(false);
         clearTimeout(resumeTimer);
         resumeTimer = window.setTimeout(() => {
-          if (!active && queue.length === 0) resumeInput();
+          if (!bargeInMode && !active && queue.length === 0) resumeInput();
         }, 300);
       }
       return;
@@ -113,7 +113,7 @@ export function createSpeechOut({ onSpeakingChange = () => {}, pauseInput = () =
     active = true;
     current = item;
     const token = ++serial;
-    pauseInput();
+    if (!bargeInMode) pauseInput();
     onSpeakingChange(true);
     const utterance = new SpeechSynthesisUtterance(item.text);
     utterance.voice = chooseVoice();
@@ -146,6 +146,7 @@ export function createSpeechOut({ onSpeakingChange = () => {}, pauseInput = () =
     pump();
   }
   return {
+    setBargeInMode(enabled) { bargeInMode = Boolean(enabled); },
     speak(text) { enqueue(text, 0); },
     speakCue(text, priority = 10) { enqueue(text, priority); },
     cancel() {

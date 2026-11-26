@@ -4,13 +4,24 @@ import base64
 import json
 
 import pytest
-from app.live.models import LiveFrameMessage, UserTextMessage, parse_live_message
+from app.live.models import (
+    LiveFrameMessage,
+    SpeechActivityMessage,
+    UserTextMessage,
+    parse_live_message,
+)
 
 
 def test_parse_final_text_protocol() -> None:
     message = parse_live_message(json.dumps({"type": "user_text", "text": "Hello", "t_ms": 12}))
     assert isinstance(message, UserTextMessage)
     assert message.text == "Hello"
+
+
+def test_parse_speech_activity_protocol() -> None:
+    message = parse_live_message(json.dumps({"type": "speech_activity", "speaking": True}))
+    assert isinstance(message, SpeechActivityMessage)
+    assert message.speaking is True
 
 
 def test_parse_low_resolution_frame_protocol() -> None:

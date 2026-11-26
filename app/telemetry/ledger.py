@@ -67,5 +67,9 @@ class Ledger:
 
     def to_dict(self) -> dict[str, Any]:
         known_costs = [row["cost_usd"] for row in self._costs]
-        total = sum(known_costs) if all(value is not None for value in known_costs) else None
+        total = (
+            sum(known_costs)
+            if known_costs and all(value is not None for value in known_costs)
+            else None
+        )
         return {"stages": self._stages.copy(), "costs": list(self._costs), "total_cost_usd": total}

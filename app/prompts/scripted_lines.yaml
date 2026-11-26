@@ -1,2 +1,4 @@
 opening: "Hi, I'm your claim assistant. I'll guide you through one slow walk past your shelves. Are you in India, with values in rupees?"
 after_locale: "Great. Start with the shelf on your left, top row, and move slowly."
+title_question: "I'll identify each book from its spine when we finish."
+price_question: "I'll price everything from real sources when we finish."

@@ -30,6 +30,8 @@ class LiveSessionContext:
     latest_frame_jpeg: bytes | None = None
     locale_confirmed: bool = False
     capture_stop_requested: bool = False
+    user_speaking: bool = False
+    packet_ready_sent: bool = False
     agent: AgentLoop | None = None
     websocket: WebSocket | None = None
     turn_lock: asyncio.Lock = field(default_factory=asyncio.Lock)

@@ -119,7 +119,7 @@ Rolling 2-second windows produce candidate cues. Priority order:
 
 Rate limits: ≤ 1 cue per 6 s overall, the same cue type ≤ once per 15 s, never while the user is speaking (from Live input-transcription activity), and `PROGRESS` only when nothing else is pending.
 
-Injection: `live_session.send_client_content(turns=[user: "[CAPTURE MONITOR] <fact>. Tell the user briefly."], turn_complete=True)`. Cue text holds measured facts only, for example `"Last 2 s: 70% of frames blurred, camera turning at 85°/s. Shelf A rows 1–2 not yet readable."`. The prompt tells the agent to turn these into one short spoken sentence. Every cue is logged to `events.jsonl` with the triggering metric values (this is your evidence for the 20% live-agent score).
+Injection: the monitor sends `{type:"cue", text, priority}` for direct TTS and appends the cue to agent history. Every cue is logged to `events.jsonl` with its type and triggering metrics. Current deterministic monitor supports TOO_FAST, TOO_DARK/LOW_LIGHT, BLURRY, and GLARE; detection-dependent coverage and occlusion cues remain pending S1.
 
 ## 5. Live agent (browser speech cascade)
 
@@ -127,7 +127,7 @@ The browser uses Web Speech recognition in continuous/interim mode with `en-IN`,
 
 The `AgentLoop` uses `AGENT_MODEL` (default `gemini-3.1-flash-lite`) through `google-genai` `generate_content`, with low thinking, a 20-second deadline, and the reviewed system prompt in `app/prompts/agent_system.md`. `VISION_MODEL` stays reserved for offline vision. The loop keeps about 20 dialogue turns, appends function calls and results, and falls back with "Sorry, say that again?" on model errors. Configured per-model request pacing and bounded exponential retries handle free-tier 429 responses.
 
-Attach the latest low-resolution frame when text contains a configured visible-reference keyword, or every configured third turn. One Start tap opens capture and live sockets with the same sweep ID. Final transcripts arriving within 800 ms are merged into one turn. The client pauses recognition while TTS speaks and resumes 300 ms after the queue empties; a large "Tap to interrupt" button provides barge-in. Cues use a priority queue and interrupt ordinary replies. A server EchoGuard drops final text matching a recent spoken agent/cue line (rapidfuzz ratio >= 85 within 10 seconds) and records `echo_dropped`.
+Attach the latest low-resolution frame when text contains a configured visible-reference keyword, or every configured third turn. One Start tap opens capture and live sockets with the same sweep ID. Final transcripts arriving within 800 ms are merged into one turn. By default, `agent.barge_in_mode` keeps recognition running during TTS; accepted non-echo final text cancels speech, while the server EchoGuard drops matching agent/cue lines (rapidfuzz ratio >= 85 within 10 seconds). The "Tap to interrupt" button remains available. Set barge_in_mode false to pause recognition while TTS speaks.
 
 ### Tools
 

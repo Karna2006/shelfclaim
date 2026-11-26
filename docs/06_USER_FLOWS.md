@@ -68,6 +68,7 @@ Client to server:
 |---|---|---|
 | `user_text` | `{type, text, t_ms}` | Final Web Speech result or typed fallback only; server merges finals within 800 ms |
 | `live_frame` | `{type, data: base64 jpeg, t_ms}` | Low-resolution JPEG, 768 px maximum long edge and q 0.6 |
+| `speech_activity` | `{type, speaking}` | Interim recognition activity used only to suppress spoken cues |
 | `control` | `{type, action:"stop"}` | Close the live session |
 
 Server to client:
@@ -78,8 +79,9 @@ Server to client:
 | `state` | `{type, state:"listening"}` | Session status |
 | `control` | `{type, action:"stop_capture"}` | Agent requested capture stop |
 | `error` | `{type, message}` | Invalid or unsupported protocol message |
+| `user_text_accepted` / `echo_dropped` | `{type}` | Accepted final speech interrupts TTS; echo leaves it speaking |
 
-The browser does not send audio. While speech synthesis speaks, recognition is paused/aborted and resumes 300 ms after utterance completion. The interrupt button cancels speech and resumes listening immediately. EchoGuard drops text matching an agent/cue line at rapidfuzz ratio >= 85 within 10 seconds. Interim recognition results are never sent to the LLM.
+The browser does not send audio. With `agent.barge_in_mode: true`, recognition stays active during speech synthesis; accepted non-echo final text cancels speech, while EchoGuard drops matching agent/cue lines at rapidfuzz ratio >= 85 within 10 seconds. The interrupt button cancels speech and listening continues. Interim recognition results never reach the LLM.
 
 ### 5.2 `/ws/capture`
 

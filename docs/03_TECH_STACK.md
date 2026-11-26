@@ -9,7 +9,7 @@ Rule: **boring, explainable, few moving parts.** Every choice below has a one-li
 | Client | **Single-page vanilla HTML + JS + CSS** (no build step), served by FastAPI | Nothing to install. Runs in mobile Chrome/Safari. Visual polish isn't scored |
 | Server | **Python 3.12, FastAPI + Uvicorn**, WebSockets | Same as the reference, so its bridge pattern is easy to adapt. Async I/O for many API calls |
 | Live voice + vision | **Free browser speech cascade**: Web Speech API + browser `speechSynthesis`; `AGENT_MODEL` (`gemini-3.1-flash-lite`) via `google-genai` function calling | Avoids Gemini Live billing. Only final transcripts and selected low-resolution frames reach the server; raw microphone audio stays in the browser |
-| Offline vision (detection + spine transcription + item description) | **Gemini Flash** (`VISION_MODEL`, default `gemini-3.8-flash`) with structured JSON output and 0–1000 normalised bounding boxes | Cheap, fast, good OCR on crops. One provider, one key |
+| Offline vision (detection + spine transcription + item description) | **Gemini Flash** (`VISION_MODEL`, default `gemini-3.5-flash-lite`) with structured JSON output and 0–1000 normalised bounding boxes | Cheap, fast, good OCR on crops. One provider, one key |
 | Metric 3D geometry | **MapAnything** (metric multi-view feed-forward reconstruction) on a serverless GPU (**Modal**). Fallback **VGGT-1B** (up-to-scale, scaled by markers) | Camera poses plus dense depth from ~40–80 frames in seconds. Metric output gives a second scale anchor |
 | Metric anchor | **OpenCV ArUco** (`cv2.aruco`) printed scale cards. Cross-checks: known shelf model dimensions, book-format priors | Deterministic and explainable. The brief explicitly allows reference objects and known shelf dimensions |
 | Classical CV | **OpenCV** (blur, glare, homography, YuNet face detection with strict Haar fallback), **NumPy/SciPy**, **scikit-learn** (DBSCAN, RANSAC), **Shapely** (polygon area) | Standard, testable, no GPU |
@@ -118,7 +118,7 @@ The capture path uses OpenCV Zoo's YuNet `face_detection_yunet_2023mar.onnx` at 
 | `AGENT_MODEL` | `gemini-3.1-flash-lite` | Text conversation and tool calling; low thinking; 20 s timeout |
 | `LIVE_MODEL` | unused | Optional legacy variable; browser speech cascade does not read it |
 | Rate limits | `config/settings.yaml` | Per-model request pacing, 429 retries, and bounded exponential backoff |
-| `VISION_MODEL` | `gemini-3.8-flash` | Offline detection, transcription, and item description; not used in conversation loop |
+| `VISION_MODEL` | `gemini-3.5-flash-lite` | Offline detection, transcription, and item description; not used in conversation loop |
 | `CHECKER_MODEL` | empty | Stretch: independent checker |
 
 | `SERPAPI_API_KEY` | — | New prices |

@@ -5,8 +5,8 @@ from pathlib import Path
 import cv2
 import numpy as np
 import pytest
+from app.capture.marker_pdf import generate_marker_pdf
 from app.capture.markers import detect_markers
-from app.cli import generate_marker_pdf
 from app.settings import Settings
 
 

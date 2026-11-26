@@ -11,6 +11,7 @@ import logging
 import math
 import re
 
+from app.capture.monitor import CaptureMonitor
 from app.capture.storage import FrameHeader, save_frame
 from fastapi import WebSocket, WebSocketDisconnect
 from pydantic import ValidationError
@@ -46,6 +47,7 @@ async def capture_socket(websocket: WebSocket, sweep_id: str) -> None:
         return
 
     await websocket.accept()
+    monitor = CaptureMonitor(settings.config.capture, settings.config.cues)
     fast_motion_since_ms: int | None = None
     try:
         while True:
@@ -85,6 +87,17 @@ async def capture_socket(websocket: WebSocket, sweep_id: str) -> None:
                 if context is not None:
                     context.latest_capture_seq = result.record.seq
                     context.latest_client_t_ms = header.t_ms
+                    candidate = monitor.observe(result.record, user_speaking=context.user_speaking)
+                    if candidate is not None:
+                        from app.server.ws_live import send_cue
+
+                        await send_cue(
+                            context,
+                            candidate.text,
+                            candidate.priority,
+                            kind=candidate.kind,
+                            metrics=candidate.metrics,
+                        )
                 await websocket.send_json(result.qc_message())
                 await websocket.send_json({"type": "ack", "seq": header.seq})
             elif message.get("text"):

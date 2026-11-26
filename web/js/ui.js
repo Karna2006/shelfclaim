@@ -21,6 +21,9 @@ export function createUi() {
   const speedFill = document.querySelector("#speed-fill");
   const cardsSeen = document.querySelector("#cards-seen");
   const message = document.querySelector("#message");
+  const inventorySheet = document.querySelector("#inventory-sheet");
+  const inventoryList = document.querySelector("#inventory-list");
+  const reportLink = document.querySelector("#open-report");
   const startButton = document.querySelector("#start-button");
   const stopButton = document.querySelector("#stop-button");
   const markerIds = new Set();
@@ -66,6 +69,19 @@ export function createUi() {
     showMicBlocked(show = true) { micBlocked.hidden = !show; },
     showVoiceGuidance(show = true) { voiceGuidance.hidden = !show; },
     setMessage(value) { message.textContent = value; },
+    renderInventory(payload) {
+      inventoryList.replaceChildren();
+      for (const row of payload.rows ?? []) {
+        const item = document.createElement("li");
+        item.textContent = `${row.row}: ${row.count} books`;
+        inventoryList.append(item);
+      }
+      inventorySheet.hidden = false;
+    },
+    showReportLink(url) {
+      reportLink.href = url;
+      reportLink.hidden = false;
+    },
     resetCards() {
       markerIds.clear();
       cardsSeen.textContent = "Cards seen: none";

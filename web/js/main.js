@@ -30,6 +30,7 @@ let recordingTimer = null;
 let wakeLock = null;
 let options = null;
 let pendingUserTexts = [];
+let speechActivityTimer = null;
 
 async function requestWakeLock() {
   if (!("wakeLock" in navigator) || document.visibilityState !== "visible") return;
@@ -42,8 +43,8 @@ async function releaseWakeLock() {
 
 function setupSpeech() {
   speechIn = createSpeechIn({
-    onFinal: sendUserText,
-    onInterim: () => {},
+    onFinal: (text) => { sendSpeechActivity(false); sendUserText(text); },
+    onInterim: () => sendSpeechActivity(true),
     onUnsupported: (reason) => {
       typedFallback.hidden = false;
       ui.showVoiceGuidance(true);
@@ -75,6 +76,12 @@ function sendUserText(text) {
     return;
   }
   liveSocket.sendFinalText(text, sweepTimeMs());
+}
+
+function sendSpeechActivity(speaking) {
+  liveSocket?.sendSpeechActivity(speaking);
+  clearTimeout(speechActivityTimer);
+  if (speaking) speechActivityTimer = window.setTimeout(() => liveSocket?.sendSpeechActivity(false), 1200);
 }
 
 async function requestMicAndListen() {
@@ -131,6 +138,7 @@ async function startSweep() {
     if (!response.ok) throw new Error(`Sweep creation failed (${response.status})`);
     const sweep = await response.json();
     options = { ...sweep.capture, hires_fps: sweep.hires_fps };
+    speechOut?.setBargeInMode(sweep.barge_in_mode === true);
     options.live_frame_max_side = sweep.live_frame_max_side;
     options.live_frame_quality = sweep.live_frame_quality;
     ui.setSpeedLimit(options.speed_max_dps);
@@ -170,6 +178,9 @@ async function startSweep() {
 function handleAgentMessage(message) {
   if (message.type === "agent_text") speechOut?.speak(message.text);
   if (message.type === "cue") speechOut?.speakCue(message.text, message.priority ?? 10);
+  if (message.type === "user_text_accepted") speechOut?.cancel();
+  if (message.type === "inventory") ui.renderInventory(message);
+  if (message.type === "packet_ready") ui.showReportLink(message.report_url);
   if (message.type === "control" && message.action === "stop_capture") stopSweep();
   if (message.type === "error") ui.setMessage(message.message);
 }
@@ -213,6 +224,7 @@ async function stopSweep() {
   if (frameTimer !== null) window.clearTimeout(frameTimer);
   if (motionTimer !== null) window.clearInterval(motionTimer);
   if (recordingTimer !== null) window.clearInterval(recordingTimer);
+  clearTimeout(speechActivityTimer);
   frameTimer = motionTimer = recordingTimer = null;
   speechIn?.stop();
   speechOut?.cancel();

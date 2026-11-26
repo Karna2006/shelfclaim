@@ -4,10 +4,11 @@ import json
 from pathlib import Path
 
 import pytest
-from app.live.agent import FALLBACK_LINE, AgentLoop, should_attach_frame
+from app.live.agent import FALLBACK_LINE, AgentLoop, _question_script, should_attach_frame
 from app.live.models import LlmResponse, LlmToolCall
 from app.live.session import LiveSessionContext
 from app.packet.models import Sweep
+from app.prompts.loader import load_scripted_lines
 from app.settings import Settings, YamlSettings
 
 
@@ -40,6 +41,16 @@ def make_session(tmp_path: Path) -> LiveSessionContext:
 
 def make_settings(tmp_path: Path) -> Settings:
     return Settings(config=YamlSettings(), sweeps_dir=tmp_path, _env_file=None)
+
+
+def test_title_and_price_questions_use_reviewed_lines() -> None:
+    lines = load_scripted_lines()
+    assert _question_script("Which book is this?", lines) == (
+        "I'll identify each book from its spine when we finish."
+    )
+    assert _question_script("How much is it worth?", lines) == (
+        "I'll price everything from real sources when we finish."
+    )
 
 
 async def test_agent_tool_call_result_then_reply_and_statement_frame_seq(tmp_path: Path) -> None:
@@ -83,7 +94,8 @@ async def test_visible_frame_is_used_for_turn_then_removed_from_rolling_history(
     tmp_path: Path,
 ) -> None:
     fake = FakeLlmClient([LlmResponse(text="I can see the shelf.")])
-    agent = AgentLoop(make_settings(tmp_path), make_session(tmp_path), fake)
+    session = make_session(tmp_path)
+    agent = AgentLoop(make_settings(tmp_path), session, fake)
     await agent.handle_user_text("What is this book?", b"jpeg")
 
     request_history = fake.calls[0]["history"]
@@ -362,21 +374,22 @@ async def test_numeric_retry_uses_system_note_and_accepts_clean_rephrase(tmp_pat
     )
 
 
-async def test_end_sweep_tool_result_propagates_capture_stop(tmp_path: Path) -> None:
+async def test_end_sweep_waits_for_coverage_confirmation(tmp_path: Path) -> None:
     fake = FakeLlmClient(
         [
             LlmResponse(
                 tool_calls=[LlmToolCall(name="end_sweep", arguments={})],
             ),
-            LlmResponse(text="Capture is complete."),
+            LlmResponse(text="Did we capture all shelves and rows?"),
         ]
     )
-    agent = AgentLoop(make_settings(tmp_path), make_session(tmp_path), fake)
+    session = make_session(tmp_path)
+    agent = AgentLoop(make_settings(tmp_path), session, fake)
 
     reply = await agent.handle_user_text("I'm done", None)
 
-    assert reply.stop_capture is True
-    assert reply.text == "Capture is complete."
+    assert reply.stop_capture is False
+    assert reply.text == "Did we capture all shelves and rows?"
 
 
 def test_frame_attachment_uses_configured_reference_terms_and_interval(tmp_path: Path) -> None:

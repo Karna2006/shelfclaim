@@ -16,6 +16,7 @@ from app.live.models import (
     ControlMessage,
     LiveFrameMessage,
     LlmResponse,
+    SpeechActivityMessage,
     UserTextMessage,
     parse_live_message,
 )
@@ -88,7 +89,13 @@ async def live_socket(websocket: WebSocket, sweep_id: str) -> None:
                 context.latest_frame_jpeg = message.jpeg_bytes()
                 context.latest_client_t_ms = message.t_ms
                 continue
-            _queue_final_text(context, message, pending)
+            if isinstance(message, SpeechActivityMessage):
+                context.user_speaking = message.speaking
+                continue
+            accepted = _queue_final_text(context, message, pending)
+            await websocket.send_json(
+                {"type": "user_text_accepted" if accepted else "echo_dropped"}
+            )
             if pending:
                 pending_since = asyncio.get_running_loop().time()
     except WebSocketDisconnect:
@@ -105,7 +112,7 @@ async def live_socket(websocket: WebSocket, sweep_id: str) -> None:
 
 def _queue_final_text(
     context: LiveSessionContext, message: UserTextMessage, pending: list[str]
-) -> None:
+) -> bool:
     """Discard recent agent echo, otherwise queue a final transcript for debounce."""
     match = context.echo_guard.match(message.text)
     if match is not None:
@@ -121,9 +128,10 @@ def _queue_final_text(
                 },
             ),
         )
-        return
+        return False
     context.latest_client_t_ms = message.t_ms
     pending.append(message.text.strip())
+    return True
 
 
 async def _send_reply(context: LiveSessionContext, reply: AgentReply) -> None:
@@ -145,9 +153,25 @@ async def _send_reply(context: LiveSessionContext, reply: AgentReply) -> None:
             await context.agent.complete_reply(reply)
         if reply.stop_capture:
             await context.websocket.send_json({"type": "control", "action": "stop_capture"})
+        report_path = context.sweep_dir / "report.html"
+        if report_path.is_file() and not context.packet_ready_sent:
+            context.packet_ready_sent = True
+            await context.websocket.send_json(
+                {
+                    "type": "packet_ready",
+                    "report_url": f"/api/sweeps/{context.sweep_id}/report",
+                }
+            )
 
 
-async def send_cue(context: LiveSessionContext, text: str, priority: int = 10) -> None:
+async def send_cue(
+    context: LiveSessionContext,
+    text: str,
+    priority: int = 10,
+    *,
+    kind: str = "capture",
+    metrics: dict[str, object] | None = None,
+) -> None:
     """Send a non-LLM cue that is logged, remembered, and spoken urgently."""
     if not text.strip():
         return
@@ -161,7 +185,7 @@ async def send_cue(context: LiveSessionContext, text: str, priority: int = 10) -
         Event(
             t_ms=context.latest_client_t_ms,
             type="cue_sent",
-            payload={"text": cue, "priority": priority},
+            payload={"text": cue, "priority": priority, "kind": kind, "metrics": metrics or {}},
         ),
     )
     context.echo_guard.add_spoken_line(cue)

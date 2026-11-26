@@ -223,7 +223,7 @@ class Item(ContractModel):
     dimensions_cm: Dimensions
     status: Literal["priced", "range", "needs_appraisal"]
     replacement_cost: ItemReplacementCost
-    confidence: float = Field(ge=0, le=1)
+    confidence: float | None = Field(default=None, ge=0, le=1)
     material: str | None = None
     frame_bbox: BBox | None = None
     crop_ref: str | None = None

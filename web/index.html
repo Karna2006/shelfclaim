@@ -36,6 +36,12 @@
         <p id="message">Start a sweep when you are ready.</p>
       </section>
 
+      <section id="inventory-sheet" class="capture-status" aria-live="polite" hidden>
+        <h2>Live inventory</h2>
+        <ul id="inventory-list"></ul>
+      </section>
+      <a id="open-report" class="notice" hidden target="_blank" rel="noopener">Open report</a>
+
       <form id="typed-fallback" class="typed-fallback" hidden>
         <label for="typed-message">Type a message</label>
         <div><input id="typed-message" autocomplete="off" /><button type="submit">Send</button></div>

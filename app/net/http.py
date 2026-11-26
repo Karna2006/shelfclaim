@@ -17,14 +17,20 @@ _USER_AGENT = "ShelfClaim/0.1 (local model setup)"
 _CACHE_TTL = timedelta(days=7)
 
 
-async def fetch_bytes(url: str, cache_path: Path = Path("cache/http_cache.sqlite")) -> bytes:
+async def fetch_bytes(
+    url: str,
+    cache_path: Path = Path("cache/http_cache.sqlite"),
+    *,
+    cache_key: str | None = None,
+) -> bytes:
     """Return cached response bytes or fetch and cache them."""
-    cached = _read_cache(url, cache_path)
+    selected_cache_key = cache_key or url
+    cached = _read_cache(selected_cache_key, cache_path)
     if cached is not None:
         return cached
 
     response_body = await _fetch_remote(url)
-    _write_cache(url, response_body, cache_path)
+    _write_cache(selected_cache_key, response_body, cache_path)
     return response_body
 
 

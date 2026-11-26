@@ -27,6 +27,8 @@ cues:
   same_type_gap_s: 15
 keyframes:
   min_novelty: 0.15
+  detection_interval_s: 1.5
+  detection_max_frames: 60
   recon_min: 40
   recon_max: 80
 dedup:
@@ -35,6 +37,7 @@ dedup:
   within_frame_containment: 0.85
   within_frame_center_factor: 0.30
   within_frame_review_iou_min: 0.50
+  item_frame_proximity_fraction: 0.03
 identify:
   tau_accept: 0.80
   tau_review: 0.55
@@ -53,6 +56,8 @@ room:
   min_conf_for_no_review: 0.5
 review:
   row_count_disagreement_pct: 0.10
+structure:
+  full_row_width_pct: 0.80
 agent:
   timeout_s: 20
   debounce_ms: 800
@@ -64,6 +69,7 @@ agent:
   frame_attachment_every_n_turns: 3
   echo_window_s: 10
   echo_match_ratio: 85
+  barge_in_mode: true
 llm:
   default_rate_limit:
     requests_per_minute: 5

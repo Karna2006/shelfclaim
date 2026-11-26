@@ -6,6 +6,7 @@ the browser app. Implements `docs/05_DATA_SCHEMA.md` §6 and Phase 0.
 
 from __future__ import annotations
 
+import re
 from collections.abc import Callable
 from pathlib import Path
 
@@ -17,7 +18,8 @@ from app.live.session import LiveSessionRegistry
 from app.server.ws_capture import capture_socket
 from app.server.ws_live import live_socket
 from app.settings import Settings, load_settings
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
+from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, ConfigDict, Field
 
@@ -62,8 +64,18 @@ def create_app(
             "capture": app.state.settings.config.capture.model_dump(),
             "live_frame_max_side": app.state.settings.config.agent.live_frame_max_side,
             "live_frame_quality": app.state.settings.config.agent.live_frame_quality,
+            "barge_in_mode": app.state.settings.config.agent.barge_in_mode,
             "live_ws_path": f"/ws/live/{sweep.id}",
         }
+
+    @app.get("/api/sweeps/{sweep_id}/report", tags=["capture"])
+    async def get_report(sweep_id: str) -> FileResponse:
+        if not re.fullmatch(r"sw_\d{8}_\d{6}_[0-9a-f]{4}", sweep_id):
+            raise HTTPException(status_code=404, detail="Report not found")
+        report = app.state.settings.sweeps_dir / sweep_id / "report.html"
+        if not report.is_file():
+            raise HTTPException(status_code=404, detail="Report not found")
+        return FileResponse(report, media_type="text/html")
 
     app.websocket("/ws/capture")(capture_socket)
     app.websocket("/ws/live/{sweep_id}")(live_socket)

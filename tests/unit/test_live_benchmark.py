@@ -20,5 +20,5 @@ async def test_benchmark_calls_agent_and_vision_models_without_network() -> None
 
     results = await benchmark_models(settings, fake)
 
-    assert fake.models == ["gemini-3.1-flash-lite", "gemini-3.8-flash"]
+    assert fake.models == ["gemini-3.1-flash-lite", "gemini-3.5-flash-lite"]
     assert all(result.ok and result.response_text == "OK" for result in results)

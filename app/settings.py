@@ -47,6 +47,8 @@ class CueSettings(BaseModel):
 
 class KeyframeSettings(BaseModel):
     min_novelty: float = 0.15
+    detection_interval_s: float = Field(default=1.5, gt=0)
+    detection_max_frames: int = Field(default=60, gt=0)
     recon_min: int = 40
     recon_max: int = 80
 
@@ -57,6 +59,7 @@ class DedupSettings(BaseModel):
     within_frame_containment: float = 0.85
     within_frame_center_factor: float = 0.30
     within_frame_review_iou_min: float = 0.50
+    item_frame_proximity_fraction: float = Field(default=0.03, gt=0, le=1)
 
 
 class IdentifySettings(BaseModel):
@@ -88,6 +91,10 @@ class ReviewSettings(BaseModel):
     row_count_disagreement_pct: float = Field(default=0.10, ge=0, le=1)
 
 
+class StructureSettings(BaseModel):
+    full_row_width_pct: float = Field(default=0.80, gt=0, le=1)
+
+
 class AgentSettings(BaseModel):
     timeout_s: float = Field(default=20, gt=0)
     debounce_ms: int = Field(default=800, gt=0)
@@ -101,6 +108,8 @@ class AgentSettings(BaseModel):
     frame_attachment_every_n_turns: int = Field(default=3, gt=0)
     echo_window_s: float = Field(default=10, gt=0)
     echo_match_ratio: int = Field(default=85, ge=0, le=100)
+    barge_in_mode: bool = True
+    barge_in_mode: bool = True
 
 
 class ModelRateLimitSettings(BaseModel):
@@ -129,6 +138,7 @@ class YamlSettings(BaseModel):
     measure: MeasureSettings = Field(default_factory=MeasureSettings)
     room: RoomSettings = Field(default_factory=RoomSettings)
     review: ReviewSettings = Field(default_factory=ReviewSettings)
+    structure: StructureSettings = Field(default_factory=StructureSettings)
     agent: AgentSettings = Field(default_factory=AgentSettings)
     llm: LlmSettings = Field(default_factory=LlmSettings)
 
@@ -149,7 +159,7 @@ class Settings(BaseSettings):
         default=False, validation_alias="GOOGLE_GENAI_USE_VERTEXAI"
     )
     agent_model: str = Field(default="gemini-3.1-flash-lite", validation_alias="AGENT_MODEL")
-    vision_model: str = Field(default="gemini-3.8-flash", validation_alias="VISION_MODEL")
+    vision_model: str = Field(default="gemini-3.5-flash-lite", validation_alias="VISION_MODEL")
     checker_model: str = Field(default="", validation_alias="CHECKER_MODEL")
     serpapi_api_key: SecretStr | None = Field(default=None, validation_alias="SERPAPI_API_KEY")
     shopping_provider: str = Field(default="serpapi", validation_alias="SHOPPING_PROVIDER")

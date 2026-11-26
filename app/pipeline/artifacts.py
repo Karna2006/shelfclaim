@@ -57,6 +57,8 @@ class Event(ArtifactModel):
         "go_away",
         "stage_started",
         "stage_done",
+        "packet_ready",
+        "landmark_marked",
         "error",
     ]
     payload: dict[str, Any] = Field(default_factory=dict)

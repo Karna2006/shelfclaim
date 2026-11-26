@@ -22,6 +22,8 @@ class ScriptedLines(BaseModel):
 
     opening: str
     after_locale: str
+    title_question: str
+    price_question: str
 
 
 def load_prompt(name: str) -> str:

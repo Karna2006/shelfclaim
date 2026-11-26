@@ -43,14 +43,21 @@ class ControlMessage(ClientMessage):
     action: Literal["stop"]
 
 
+class SpeechActivityMessage(ClientMessage):
+    type: Literal["speech_activity"]
+    speaking: bool
+
+
 LiveClientMessage = Annotated[
-    UserTextMessage | LiveFrameMessage | ControlMessage,
+    UserTextMessage | LiveFrameMessage | ControlMessage | SpeechActivityMessage,
     Field(discriminator="type"),
 ]
 _LIVE_MESSAGE_ADAPTER = TypeAdapter(LiveClientMessage)
 
 
-def parse_live_message(raw: str) -> UserTextMessage | LiveFrameMessage | ControlMessage:
+def parse_live_message(
+    raw: str,
+) -> UserTextMessage | LiveFrameMessage | ControlMessage | SpeechActivityMessage:
     """Parse a supported client message; reject audio and interim-result payloads."""
     try:
         message = _LIVE_MESSAGE_ADAPTER.validate_json(raw)
