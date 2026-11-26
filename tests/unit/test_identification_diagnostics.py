@@ -32,9 +32,17 @@ async def test_four_spines_match_openlibrary_fixtures(
 
     class RecordedCatalogue:
         google_calls = 0
+        open_library_calls = 0
+
+        async def search(self, title: str, author: str) -> list[dict[str, object]]:
+            google_candidates = await self.search_google_books(title, author)
+            if google_candidates:
+                return google_candidates
+            return await self.search_open_library(title, author)
 
         async def search_open_library(self, title: str, author: str) -> list[dict[str, object]]:
             del author
+            self.open_library_calls += 1
             documents = fixture.get(title, {}).get("docs", [])
             return [
                 {
@@ -62,7 +70,8 @@ async def test_four_spines_match_openlibrary_fixtures(
 
     assert candidates
     assert bool(result["chosen"]) is accepted
-    assert catalogue.google_calls == 0
+    assert catalogue.google_calls == len(result["queries"])
+    assert catalogue.open_library_calls == len(result["queries"])
     query_texts = [query for query, _ in result["queries"]]
     normalized_lines = [line.casefold().removeprefix("the ") for line in lines]
     assert query_texts[: len(lines)] == normalized_lines
@@ -96,6 +105,10 @@ async def test_closest_title_line_wins_and_other_title_is_reviewed(tmp_path: Pat
     }
 
     class TwoTitleCatalogue:
+        async def search(self, title: str, author: str) -> list[dict[str, object]]:
+            google = await self.search_google_books(title, author)
+            return google or await self.search_open_library(title, author)
+
         async def search_open_library(self, title: str, author: str) -> list[dict[str, object]]:
             del author
             candidate = candidates.get(title)

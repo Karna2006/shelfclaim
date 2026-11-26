@@ -1,67 +1,119 @@
 # ShelfClaim
 
-ShelfClaim guides a policyholder through a camera sweep of a home library and prepares an evidence-backed contents claim packet.
+ShelfClaim guides a policyholder through a phone-camera walk of a home library and builds an evidence-backed contents-claim packet.
 
-**Trust rules:** models perceive and transcribe; deterministic code counts, measures, prices, and totals. Every asserted price must link to a provider response and saved snapshot. Unknown values stay blank and enter review.
+**Trust model:** models perceive and transcribe; code decides. Packet counts, dimensions, prices, and totals come from detections, marker geometry, provider responses, and deterministic rules. Each price has a source and saved response; unknown values stay blank for review.
 
-## Results at a glance
+## Quickstart (under 15 minutes)
 
-The live run did not produce an S1 detection artifact: the single allowed Gemini replay returned HTTP 503 `UNAVAILABLE` (high demand). Accuracy is **not measured**; see [docs/results.md](docs/results.md). Offline QC on the demo sweep (`sw_20261126_023206_7f03`) found 68 frames over 42.73 seconds: 83.8% OK and 16.2% blurry. The latest sweep (`sw_20261126_044135_a4bd`) had 85 frames over 52.92 seconds: 0% OK, 49.4% blurry, 44.7% dark, and 5.9% fast. Neither sweep had markers detected.
+You need Python 3.12, `uv`, an Android phone, and network access.
 
-| Measure | Result |
-|---|---|
-| Book count, title, dimensions, price, item accuracy | Not measured; no S1 artifact or packet |
-| Room floor/wall area | Not measured; 3D reconstruction is out of scope |
-| Time to packet, provider cost | Not measured; full pipeline did not complete and rates are unset |
+1. Install the app and development tools:
 
-## Quickstart
+   ```powershell
+   uv sync --extra dev
+   Copy-Item .env.example .env
+   ```
 
-Expected setup is under 15 minutes with Python 3.12, `uv`, a phone, and network access.
+2. Set these keys in `.env` for the full identification and pricing path: `GOOGLE_API_KEY`, `GOOGLE_BOOKS_API_KEY`, and `SERPAPI_API_KEY`. `EBAY_CLIENT_ID` and `EBAY_CLIENT_SECRET` are optional and unused by the configured SerpApi eBay provider. Keep `.env` private.
+3. Download the face detector:
 
-1. Install dependencies: `uv sync --extra dev`.
-2. Copy `.env.example` to `.env` and set `GOOGLE_API_KEY`. Set `SERPAPI_API_KEY` only if you intend to run pricing. Do not commit `.env`.
-3. Set `GEOMETRY_BACKEND=off` for this build. Room area remains null; spine dimensions can only be measured when a marker is visible in the selected frame.
-4. Start the app: `uv run uvicorn app.server.main:app --host 0.0.0.0 --port 8000`.
-5. Expose the local server to your phone with Tailscale Serve or a tunnel, open the URL in Chrome, grant camera and microphone access, then tap Start.
-6. After a sweep, use the CLI commands below to process, inspect, evaluate, or price its saved artifacts.
+   ```powershell
+   uv run python -m app.cli download-yunet
+   ```
 
-The browser uses Web Speech recognition and speech synthesis for voice. The server sends recognized final text to the agent; it does not receive raw microphone audio. Models default to `AGENT_MODEL=gemini-3.1-flash-lite` and `VISION_MODEL=gemini-3.5-flash-lite`. The agent handles short conversation; the vision model handles detection and transcription. Current detection is a post-capture stage; live detection-driven inventory and cues are not wired yet.
+4. Create scale cards, print at actual size, measure a printed marker with a ruler, then set `MARKER_SIZE_MM` in `.env` to the measured size:
 
-## CLI
+   ```powershell
+   uv run python -m app.cli make-markers --ids 0 1 2 --size-mm 100 --out markers.pdf
+   ```
+
+5. Set `GEOMETRY_BACKEND=off` for this build, then start the server:
+
+   ```powershell
+   .\tasks.ps1 dev
+   ```
+
+6. In another terminal, expose port 8000 to your phone:
+
+   ```powershell
+   tailscale serve --bg 8000
+   ```
+
+   Open the provided HTTPS address in Android Chrome, allow camera and microphone access, and tap **Start**. Place the scale cards on the shelves you want measured. With geometry disabled, room area stays unmeasured.
+
+## Common commands
 
 ```powershell
-.venv\Scripts\python.exe -m app.cli inspect-sweep sweeps/<sweep-id>
-.venv\Scripts\python.exe -m app.cli detect-frame sweeps/<sweep-id>/frames/frame.jpg --out debug/frame-detections.png
-.venv\Scripts\python.exe -m app.cli replay sweeps/<sweep-id> --until s06
-.venv\Scripts\python.exe -m app.cli debug-boxes sweeps/<sweep-id>
-.venv\Scripts\python.exe -m app.cli reprice --sweep sweeps/<sweep-id> --country GB --limit 10
-.venv\Scripts\python.exe -m app.cli replay sweeps/<sweep-id> --until s10
-.venv\Scripts\python.exe -m app.cli evaluate --sweep sweeps/<sweep-id> --gt eval/ground_truth --out docs/results.md
-.\tasks.ps1 check
+# Replay saved frames beginning at identification and continue through the packet
+uv run python -m app.cli replay sweeps/<sweep-id> --from-stage s06 --until s10 --limit 10
+
+# Evaluate against labelled ground truth
+uv run python -m app.cli evaluate --sweep sweeps/<sweep-id> --gt eval/ground_truth --out docs/results.md
+
+# Search up to 10 price queries for a locale
+uv run python -m app.cli reprice --sweep sweeps/<sweep-id> --country GB --limit 10
+
+# Test the conversational agent in a terminal
+uv run python -m app.cli agent-chat
+
+# Exercise the real agent loop with saved frames
+uv run python -m app.cli agent-soak --turns 20 --with-frames sweeps/sw_20261126_023206_7f03
 ```
 
-Replay may call the configured vision service; repricing uses at most `--limit` SerpAPI searches and requires S6 catalogue matches. Do not rerun a live model call when it would exceed the configured budget.
+Replay can call configured model and pricing providers. Use saved fixtures for routine development and keep live calls within the available quota. See [evaluation results](docs/results.md) before interpreting performance.
 
-## Reference design decisions
+## Reference app: kept, changed, removed
 
-The source notes are in `docs/notes/PRODUCT_DIRECTION.md` and the review outline is in `docs/12_DELIVERABLES_AND_REVIEW.md`.
+- **Kept:** the voice-and-camera intake pattern, browser-to-server WebSocket shape, non-blocking tool calls, the “say only what you see” honesty rule, and mocked-model tests.
+- **Changed:** added a separate 1080p capture channel because the reference’s 512 px, 1 fps stream cannot resolve spine text; changed the agent into a sweep director that speaks measured QC cues; replaced the ADK graph with a staged, file-based pipeline.
+- **Removed:** policy lookup, incident sketches, avatar, and notebook-style packet.
 
-- **Kept:** one guided camera walk, spoken instructions, an auditable packet, evidence-first review, and explicit uncertainty.
-- **Changed:** Gemini Live became a browser speech cascade to avoid its billing path; the pipeline uses saved per-stage JSON; high-resolution frames support spine reading; deterministic capture cues guide the walk.
-- **Threw away:** the reference policy lookup and mock directory, incident sketches, avatar, ADK classification graph, and ZIP-notebook packet format because they do not support measured, line-level library inventory evidence.
+## Design decisions
 
-## Models, tools, and assumptions
+- **Free cascaded voice:** Chrome Web Speech recognition sends text to Gemini Flash-Lite and deterministic intent handlers; browser speech synthesis speaks replies. This replaces Gemini Live because it requires billing. Raw microphone audio does not go to the server.
+- **Direct capture cues:** blur, speed, exposure, and glare rules trigger short browser-spoken cues from measured frame data without an LLM call.
+- **Local spine reading:** RapidOCR with ONNX Runtime is the default because the Gemini free quota was exhausted; local OCR does not consume model quota.
+- **Catalogue order:** Google Books is primary for metadata and ISBNs because Open Library was unreachable from this network. Open Library remains an enabled fallback. Google Books `saleInfo` is not price evidence.
+- **Prices:** SerpApi Google Shopping supplies new offers; the SerpApi eBay engine supplies used offers; Frankfurter supplies FX conversion. The environment template and settings mention optional eBay Browse credentials/provider selection, but this repository has no Browse provider implementation; this run used SerpApi eBay.
 
-- Gemini via `google-genai`: configured agent and vision models above. The one S1 vision replay in this run returned 503. No successful full pipeline call is claimed.
-- Browser voice: Web Speech API and `speechSynthesis`; no raw audio upload.
-- Catalogue: Open Library and Google Books metadata. Identity requires a catalogue match on transcribed spine text.
-- Pricing: SerpAPI Google Shopping and eBay results, with Frankfurter FX for cross-currency quotes. No pricing calls were made in this run.
-- Geometry: `GEOMETRY_BACKEND=off`; only marker-plane spine measurements are in scope. Room dimensions and area remain null.
-- Coding assistant: Codex. Claude was not used for this run.
-- Assumptions: local sweep artifacts are the evidence source; no unobserved shelf, title, price, or room facts are inferred.
+## Models, services, and tools
 
-## Cost, latency, and limitations
+| Role | Model or service |
+|---|---|
+| Agent conversation | `AGENT_MODEL`, default `gemini-3.1-flash-lite`, through `google-genai` |
+| Vision detections | `VISION_MODEL`, default `gemini-3.5-flash-lite` |
+| Spine transcription | RapidOCR + ONNX Runtime on CPU |
+| Face detection | OpenCV YuNet; strict Haar fallback when the model is absent |
+| Catalogue | Google Books API first; Open Library fallback |
+| Price evidence | SerpApi Google Shopping and SerpApi eBay; Frankfurter FX |
+| Application | Python, FastAPI, Pydantic, Typer, httpx; browser Web Speech API and `speechSynthesis` |
 
-Per-provider rates in `config/pricing_rates.yaml` are still TODO. There is no successful full-run telemetry, so cost per sweep and per-stage latency are **not measured**. The results table is blocked because the replay returned 503 and the ground-truth count file has no measured `true_count` rows.
+AI coding tools: Codex implemented the application; Claude helped with planning documents and debugging guidance.
 
-Known limits: S1 detections are post-capture rather than live; the capture monitor currently emits only image-quality cues; the inventory sheet does not receive a live provisional feed; item brand/material extraction and item price integration need completion; a full pipeline packet has not yet been validated on a field sweep; room area is not measured.
+## Assumptions
+
+These follow [docs/01_PROBLEM_BREAKDOWN.md §9](docs/01_PROBLEM_BREAKDOWN.md) and [docs/DECISIONS.md](docs/DECISIONS.md): India/INR is primary and UK/GBP is the second locale; up to three printed A4 ArUco cards are allowed setup. Replacement value is the median of matched new physical offers, not necessarily the same edition unless edition evidence exists. Used value is the median of matched used offers and assumes “Used – Good”; without a local market, the nearest market is converted with sourced FX. `excluded_from_totals` counts lines. Wall area is defined as gross perimeter × height; doors and windows are not subtracted unless measured. Appraisal rules include used value above ₹5,000/£50, more than 1.5× replacement, pre-1950 publication, signed/first-edition claims, or visual leather/gilt cues. Art and portraits default to appraisal unless the user confirms a print. Scale cards are the intended metric anchors; with `GEOMETRY_BACKEND=off`, room dimensions and area remain null and book dimensions require a same-plane marker.
+
+## Results, cost, and latency
+
+| Measure | Current evidence |
+|---|---|
+| S06–S10 packet validation | PASS |
+| Book rows / identified | 11 / 4; not an accuracy score |
+| Used prices | 4 converted eBay UK offers; 8 SerpApi searches |
+| Accuracy | NOT MEASURED; labelled ground truth is incomplete |
+| S06–S10 time to packet | 96.118319 s; excludes capture and S01–S05 |
+| Cost per sweep | TODO: provider rates and cost telemetry are not available |
+
+The 11 rows came from the three reviewed shelf frames only, not a full-sweep coverage count. See [docs/results.md](docs/results.md) for stage durations, evaluation bars, and evidence limits. Provider rates in `config/pricing_rates.yaml` are still TODO.
+
+## Limitations
+
+- The current shelf run contains about 30 books, below the brief’s 60-book minimum.
+- Room area is not measured; 3D reconstruction is out of scope for this build.
+- In this build, `end_sweep` does not automatically launch finalization; use CLI replay to process saved capture artifacts.
+- Spine boxes can overlap, affecting line assignment and identity matching.
+- Capture metrics cannot answer visibility questions such as whether an artwork is an original or print.
+- Earphones are recommended so phone TTS is less likely to contaminate speech recognition.
+- Live detection-driven inventory and coverage cues remain incomplete; only deterministic image-quality cues are supported during capture.

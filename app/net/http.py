@@ -25,6 +25,8 @@ async def fetch_bytes(
     *,
     cache_key: str | None = None,
     on_request: RequestObserver | None = None,
+    timeout_s: float = 30,
+    max_retries: int = 2,
 ) -> bytes:
     """Return cached response bytes or fetch and cache them."""
     selected_cache_key = cache_key or url
@@ -34,21 +36,27 @@ async def fetch_bytes(
             on_request(url, 200, True, None)
         return cached
 
-    response_body = await _fetch_remote(url, on_request)
+    if timeout_s <= 0 or max_retries < 0:
+        raise ValueError("timeout_s must be positive and max_retries cannot be negative")
+    retrying_fetch = retry(
+        retry=retry_if_exception_type((httpx.TimeoutException, httpx.TransportError)),
+        wait=wait_exponential(multiplier=0.5, min=0.5, max=4),
+        stop=stop_after_attempt(max_retries + 1),
+        reraise=True,
+    )(_fetch_remote)
+    response_body = await retrying_fetch(url, on_request, timeout_s)
     _write_cache(selected_cache_key, response_body, cache_path)
     return response_body
 
 
-@retry(
-    retry=retry_if_exception_type((httpx.TimeoutException, httpx.TransportError)),
-    wait=wait_exponential(multiplier=0.5, min=0.5, max=4),
-    stop=stop_after_attempt(3),
-    reraise=True,
-)
-async def _fetch_remote(url: str, on_request: RequestObserver | None = None) -> bytes:
+async def _fetch_remote(
+    url: str,
+    on_request: RequestObserver | None = None,
+    timeout_s: float = 30,
+) -> bytes:
     async with httpx.AsyncClient(
         headers={"User-Agent": _USER_AGENT},
-        timeout=30,
+        timeout=timeout_s,
         follow_redirects=True,
     ) as client:
         try:

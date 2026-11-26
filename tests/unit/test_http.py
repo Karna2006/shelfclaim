@@ -21,3 +21,20 @@ async def test_fetch_bytes_caches_response_and_sets_user_agent(tmp_path: Path) -
     assert first == second == b"model"
     assert route.call_count == 1
     assert route.calls[0].request.headers["user-agent"].startswith("ShelfClaim/")
+
+
+@pytest.mark.asyncio
+async def test_fetch_bytes_allows_one_configured_connection_retry(tmp_path: Path) -> None:
+    url = "https://books.example.test/search"
+    with respx.mock(assert_all_called=True) as router:
+        route = router.get(url).mock(
+            side_effect=[
+                httpx.ConnectError("first connection failed"),
+                httpx.ConnectError("second connection failed"),
+            ]
+        )
+
+        with pytest.raises(httpx.ConnectError):
+            await fetch_bytes(url, tmp_path / "cache.sqlite", timeout_s=5, max_retries=1)
+
+    assert route.call_count == 2

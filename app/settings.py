@@ -66,6 +66,10 @@ class DedupSettings(BaseModel):
 class IdentifySettings(BaseModel):
     tau_accept: float = 0.80
     tau_review: float = 0.55
+    catalogue_order: list[Literal["google_books", "open_library"]] = Field(
+        default_factory=lambda: ["google_books", "open_library"]
+    )
+    open_library_enabled: bool = True
     weights: dict[str, float] = Field(
         default_factory=lambda: {
             "title": 0.55,

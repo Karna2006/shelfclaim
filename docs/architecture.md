@@ -1,33 +1,42 @@
 # ShelfClaim architecture
 
-ShelfClaim separates perception from decisions. Browser speech recognition sends final text over `/ws/live`; the server agent uses function calls for sweep control and responses, and browser speech synthesis speaks replies and deterministic capture cues. The capture WebSocket stores video-only frames and quality metrics. It does not stream microphone audio.
+Models perceive; deterministic application code decides packet values. The browser sends final speech text and video-only capture frames; raw mic audio remains in browser speech recognition.
 
 ```mermaid
 flowchart LR
-  Phone[Phone camera + Web Speech] -->|video frames + metrics| Capture[Capture storage + quality monitor]
-  Phone -->|final text| Agent[AgentLoop + tool handlers]
-  Agent -->|short text| Phone
-  Capture -->|saved sweep| S1[Keyframes + Gemini vision detections]
-  S1 --> S3[Rows + best-frame spine counts]
-  S3 --> S4[Marker-plane spine dimensions]
-  S4 --> S5[Spine transcription]
-  S5 --> S6[Open Library + Google Books match]
-  S6 --> S7[SerpAPI offers + deterministic pricing]
-  S1 --> S8[Non-book item candidates]
-  S3 --> S9[Room fields null: geometry off]
-  S7 --> S10[Validation + claim packet + report]
-  S8 --> S10
-  S9 --> S10
+  Phone[Phone: camera + Web Speech] -->|video frames, motion, QC| Server[FastAPI capture + live sockets]
+  Phone -->|final text| Agent[Intent router + Gemini Flash-Lite]
+  Server --> Monitor[Rolling quality monitor]
+  Monitor -->|spoken cue from measured QC| Phone
+  Server --> Saved[Saved frames + metrics]
+  Saved --> S1[S1 Gemini detections]
+  S1 --> S3[S3 shelf rows + best-frame counts]
+  S3 --> S4[S4 marker-plane measurements]
+  S4 --> S5[S5 local RapidOCR]
+  S5 --> S6[S6 catalogue match]
+  S6 --> S7[S7 sourced prices + appraisal rules]
+  S1 --> Items[Item candidates]
+  S3 --> Room[Room fields: null when geometry off]
+  S7 --> S10[S10 code totals + validation]
+  Items --> S10
+  Room --> S10
+  S10 --> Report[claim_packet.json + report.html]
 ```
 
-## Models and evidence
+## Models and tools
 
-`AGENT_MODEL` defaults to `gemini-3.1-flash-lite` for short conversation. `VISION_MODEL` defaults to `gemini-3.5-flash-lite` for structured detections and spine transcription. The model proposes boxes or visible text; deterministic code performs pixel conversion, NMS, row assignment, measurements, catalogue matching, filters, price aggregation, and totals. Titles enter the packet only after catalogue matching. Prices come only from parsed provider offers and require a source URL, retrieval time, and saved response snapshot.
+`AGENT_MODEL` defaults to `gemini-3.1-flash-lite` for conversation and function calls. Deterministic intent handlers cover common sweep actions. `VISION_MODEL` defaults to `gemini-3.5-flash-lite` for detections; local RapidOCR with ONNX Runtime reads spine text without Gemini quota. OpenCV handles image processing and YuNet face boxes. Google Books is the primary catalogue for title/author/ISBN metadata, with Open Library as an enabled fallback. Google Books `saleInfo` is ignored for pricing.
 
-Spine measurements use a planar homography only when an ArUco marker is visible on the same shelf unit and plane as the book. The known marker size (`MARKER_SIZE_MM`) defines that metric scale. Without a valid same-plane marker, dimensions are null with a review reason. This is not room reconstruction: with `GEOMETRY_BACKEND=off`, room dimensions, floor area, and wall area remain null.
+The quality monitor derives blur, exposure, glare, and motion from saved frame metrics. Supported cues are spoken directly by browser TTS; they do not pass through the LLM. Detection runs post-capture in this build, so detection-dependent cues and live provisional inventory are not wired into capture.
 
-New book prices use SerpAPI Google Shopping. Used offers use the SerpAPI eBay engine; cross-market GBP quotes for India use Frankfurter conversion. The optional eBay Browse provider remains available. Physical-item filters, title matching, IQR outlier rejection, median calculation, locale appraisal rules, and item ranges are deterministic. Raw provider responses are saved under sweep evidence.
+## Measurement and price evidence
 
-## Current run status
+Book dimensions use an ArUco marker-plane homography. The printed marker size (`MARKER_SIZE_MM`, set from a ruler measurement) supplies metric scale; a marker must be on the same unit and plane as the book. Without that evidence, dimensions stay null. `GEOMETRY_BACKEND=off` leaves room dimensions, floor area, and wall area null; there is no room reconstruction in this build.
 
-The live S1 replay returned HTTP 503 `UNAVAILABLE`; downstream detections and a final packet were not produced. The demo and latest sweeps contain only capture records, so no book count, identified title, price, dimension, or room-area result is claimed. See [results](results.md) and [failure log](failure_log.md). The implementation currently runs detection after capture; streaming detections and provisional inventory are not wired into the live session.
+New offers come from SerpApi Google Shopping; used offers come from the SerpApi eBay engine. The pipeline filters physical books and mismatched titles, rejects IQR outliers, and takes the median. Frankfurter provides documented FX conversion for cross-market used prices. Locale appraisal rules suppress prices for signed, first-edition, rare, or art lines when applicable. Raw provider responses are saved as evidence snapshots. Settings list optional eBay Browse credentials/provider selection, but this repository has no Browse provider implementation; the run used SerpApi eBay.
+
+Totals are computed by `app/packet/totals.py`, never by a model. The validation gate checks frame references, price evidence, and recomputed totals before the report is ready.
+
+## Runtime status
+
+The phone capture and agent sockets run during a sweep. Final stage processing is started with CLI replay in this build; `end_sweep` does not yet launch the pipeline automatically. The latest S06–S10 replay passed validation on three selected shelf frames, with 11 book rows, 4 identified, and 4 used-price offers. Per-stage timing and provider cost are included only when recorded in telemetry; see [results](results.md) and [failure log](failure_log.md).

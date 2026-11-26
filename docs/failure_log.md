@@ -1,33 +1,23 @@
 # Failure log
 
-This run did not produce a packet. The recorded evaluation is `BLOCKED`; the failures below describe observed blockers, not inferred model accuracy.
+Observed failures and fixes for the current build. Missing measurements remain explicit TODOs.
 
-## Three largest observed blockers
+## Three largest errors
 
-1. **Vision replay unavailable.** The single authorized S1 replay against `sw_20261126_044135_a4bd` returned Google HTTP 503 `UNAVAILABLE` (high demand). Root cause: upstream service availability. Before/after quality is not measurable because no S1 artifact was created. Do not spend another model call until the quota/window allows a retry.
-2. **Downstream evidence absent.** Both target sweeps lack `s01_detections.json`; `debug-boxes` stops with “Run replay --until s01 first”, and `reprice --limit 10` stops before the provider call because S6 is missing. Root cause: stages require grounded upstream detections and catalogue matches. Result: zero SerpAPI searches; no counts, titles, dimensions, or prices were fabricated.
-3. **Evaluation has no valid comparison set.** The latest sweep has no `claim_packet.json`, and `eval/ground_truth/count_gt.csv` has no measured `true_count` rows. The evaluator reports all accuracy bars as NOT MEASURED rather than treating missing data as a pass or dropping unmatched shelves.
+| Area | Symptom and evidence | Root cause | Fix and measured result |
+|---|---|---|---|
+| Voice turns | Phone notes: 3 of 4 user turns became forced finals after 8 s; replies took 21–78 s. | Speaker TTS was heard by recognition, keeping interim speech active and mixing or delaying the next user turn; cues could pre-empt replies. | Promote stable interim text after 1.2 s, strip recent spoken phrases, prioritize user turns over cues, route common intents deterministically, and use earphones mode. `agent-soak` returned replies for 20/20 scripted turns. `PROGRESS.md` records 0 fallback, p50 39 ms, and interpolated p95 1,339 ms for its 21 replies including greeting. |
+| Gemini quota and availability | Gemini calls returned 500/503/429 errors; fallback paths ran and Gemini transcription could be empty. | Transient service errors and exhausted free-tier quota. | Agent calls retry and move through the configured model chain. Local RapidOCR with ONNX Runtime is the default spine reader, so OCR no longer depends on Gemini quota. Before/after transcription accuracy: **TODO: fill from final run**. |
+| Identification | Before: 0 of 11 books identified. Adjacent spine text was merged, and Open Library could not connect from this network. | S6 scored merged text as one title; neighboring author text diluted the title match. The catalogue request also failed before scoring. | OCR lines are assigned to boxes by position; S6 queries each line and adjacent pair, with strict title/author rules. Google Books is now the primary metadata/ISBN catalogue, with Open Library as an enabled fallback. After S06–S10 replay: 4 of 11 identified; no title-accuracy result without ground truth. |
 
-## Measurements and fixes
+## Cost and stage latency
 
-The offline capture summary provides the only measured comparison in this run:
+Cost per sweep: **TODO: fill from telemetry after pricing rates are set**. The S06–S10 replay recorded S06 65.652798 s, S07 30.327691 s, S08 0.024337 s, S09 0.003086 s, and S10 0.091901 s; S01–S05 and full capture-to-packet latency remain **TODO: fill from a full-run telemetry record**. Provider rates in `config/pricing_rates.yaml` are TODO; do not estimate a cost from model or search counts.
 
-| Sweep | Frames | Duration | OK | Blurry | Fast | Dark | Glare / bright | Markers |
-|---|---:|---:|---:|---:|---:|---:|---:|---|
-| `sw_20261126_023206_7f03` | 68 | 42.73 s | 83.8% | 16.2% | 0% | 0% | 0% / 0% | none |
-| `sw_20261126_044135_a4bd` | 85 | 52.92 s | 0% | 49.4% | 5.9% | 44.7% | 0% / 0% | none |
+## With two more weeks
 
-No before/after model, count, price, or accuracy fix can be measured from these artifacts. The implementation includes test coverage for deterministic keyframe, box, counting, marker-plane, pricing, and packet logic, but that does not substitute for a successful field replay. The latest local check passed 113 tests.
-
-## Cost and latency
-
-Pricing rates in `config/pricing_rates.yaml` are marked TODO, and there is no successful full-run stage telemetry. Cost per sweep and per-stage latency are **not measured**. The model returned an upstream 503; no cost is inferred from that response. The repricing command made zero SerpAPI searches.
-
-## Next two weeks
-
-- Retry one S1 replay when the vision endpoint is available; save raw detections and debug-box previews for both sweeps.
-- Wire the async detection queue and provisional inventory into capture, then validate all monitor cues and voice barge-in on a phone.
-- Label ground truth by row, books, items, measured dimensions, and checked prices; re-run evaluation without omitting unmatched lines.
-- Complete item brand/material extraction and grounded item pricing; verify evidence snapshots and appraisal handling.
-- Generate and validate one complete packet, then record actual stage latency and provider costs after pricing rates are filled from their sources.
-- Measure room geometry only if the scope changes from geometry-off and a supported reconstruction/scale path is implemented.
+- Add MapAnything 3D reconstruction for room area and stronger spatial deduplication.
+- Evaluate a dedicated spine detector; fine-tune only if measured split/merge errors justify it.
+- Add Gemini Live or native audio only with a funded billing path.
+- Wire `end_sweep` to finalization and spoken packet summary.
+- Add a checker agent and evaluate against 60+ books with complete ground truth.

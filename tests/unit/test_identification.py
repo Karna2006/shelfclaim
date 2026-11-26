@@ -8,7 +8,6 @@ import pytest
 from app.identify.catalogue import OpenLibraryGoogleBooks
 from app.pipeline.context import StageContext
 from app.pipeline.stages.s06_identify import (
-    identify_spine_lines,
     normalize_catalogue_text,
     run,
 )
@@ -118,68 +117,52 @@ async def test_catalogue_http_quota_error_leaves_book_unidentified(tmp_path) -> 
 
 
 @pytest.mark.asyncio
-async def test_open_library_queries_precede_google_books_fallback() -> None:
-    class OrderedCatalogue:
-        def __init__(self) -> None:
-            self.calls: list[tuple[str, str, str]] = []
+async def test_google_books_is_primary_and_open_library_is_fallback(monkeypatch) -> None:
+    catalogue = OpenLibraryGoogleBooks(Settings(config=YamlSettings(), _env_file=None))
+    calls: list[str] = []
 
-        async def search_open_library(self, title: str, author: str):
-            self.calls.append(("openlibrary", title, author))
-            return []
+    async def google_books(title: str, author: str):
+        del title, author
+        calls.append("google_books")
+        return []
 
-        async def search_google_books(self, title: str, author: str):
-            self.calls.append(("google_books", title, author))
-            return [{"source": "google_books", "key": "gb1", "title": title}]
+    async def open_library(title: str, author: str):
+        del title, author
+        calls.append("open_library")
+        return [{"source": "openlibrary", "key": "ol1", "title": "Deep Work"}]
 
-    catalogue = OrderedCatalogue()
-    transcription = {
-        "views": [
-            {
-                "lines": [
-                    {"text": "DEEP WORK", "kind_guess": "other"},
-                    {"text": "Cal Newport", "kind_guess": "other"},
-                ]
-            }
-        ]
-    }
+    monkeypatch.setattr(catalogue, "_google_books", google_books)
+    monkeypatch.setattr(catalogue, "_open_library", open_library)
+    results = await catalogue.search("Deep Work", "Cal Newport")
 
-    results = await identify_spine_lines(transcription["views"][0]["lines"], catalogue)
-
-    assert [call[0] for call in catalogue.calls] == [
-        "openlibrary",
-        "openlibrary",
-        "openlibrary",
-        "google_books",
-    ]
-    assert [call[1] for call in catalogue.calls[:3]] == [
-        "deep work",
-        "cal newport",
-        "deep work cal newport",
-    ]
-    assert results["candidates"][0]["candidate"]["source"] == "google_books"
+    assert calls == ["google_books", "open_library"]
+    assert results[0]["source"] == "openlibrary"
 
 
 @pytest.mark.asyncio
-async def test_open_library_429_prevents_google_books_fallback() -> None:
-    class RateLimitedCatalogue:
-        google_called = False
+async def test_google_books_429_falls_back_to_open_library(monkeypatch) -> None:
+    catalogue = OpenLibraryGoogleBooks(Settings(config=YamlSettings(), _env_file=None))
+    open_library_calls = 0
 
-        async def search_open_library(self, title: str, author: str):
-            del title, author
-            request = httpx.Request("GET", "https://openlibrary.org")
-            response = httpx.Response(429, request=request)
-            raise httpx.HTTPStatusError("rate limited", request=request, response=response)
+    async def rate_limited_google(title: str, author: str):
+        del title, author
+        request = httpx.Request("GET", "https://books.googleapis.com")
+        response = httpx.Response(429, request=request)
+        raise httpx.HTTPStatusError("rate limited", request=request, response=response)
 
-        async def search_google_books(self, title: str, author: str):
-            del title, author
-            self.google_called = True
-            return []
+    async def open_library(title: str, author: str):
+        nonlocal open_library_calls
+        del title, author
+        open_library_calls += 1
+        return [{"source": "openlibrary", "key": "ol1", "title": "Deep Work"}]
 
-    catalogue = RateLimitedCatalogue()
-    results = await identify_spine_lines([{"text": "DEEP WORK"}], catalogue)
+    monkeypatch.setattr(catalogue, "_google_books", rate_limited_google)
+    monkeypatch.setattr(catalogue, "_open_library", open_library)
 
-    assert results["candidates"] == []
-    assert not catalogue.google_called
+    result = await catalogue.search("Deep Work", "")
+
+    assert result[0]["source"] == "openlibrary"
+    assert open_library_calls == 1
 
 
 @pytest.mark.asyncio
@@ -194,12 +177,12 @@ async def test_recent_google_books_429_suppresses_requests_for_one_minute(monkey
         return []
 
     monkeypatch.setattr(catalogue, "_google_books", fake_google_books)
-    catalogue._last_429_at = time.monotonic()
+    catalogue._rate_limited_until["google_books"] = time.monotonic() + 60
 
     assert await catalogue.search_google_books("TITLE", "AUTHOR") == []
     assert calls == 0
 
-    catalogue._last_429_at = time.monotonic() - 61
+    catalogue._rate_limited_until["google_books"] = time.monotonic() - 1
     assert await catalogue.search_google_books("TITLE", "AUTHOR") == []
     assert calls == 1
 

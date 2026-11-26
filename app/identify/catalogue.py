@@ -6,7 +6,6 @@ with source keys; candidate text is never accepted without deterministic scoring
 
 from __future__ import annotations
 
-import asyncio
 import json
 import time
 from typing import Protocol
@@ -15,6 +14,10 @@ from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 import httpx
 from app.net.http import fetch_bytes
 from app.settings import Settings
+
+_CATALOGUE_TIMEOUT_S = 5
+_CATALOGUE_MAX_RETRIES = 1
+_RATE_LIMIT_COOLDOWN_S = 60
 
 
 class CatalogueClient(Protocol):
@@ -26,48 +29,73 @@ class CatalogueClient(Protocol):
 
 
 class OpenLibraryGoogleBooks:
-    """Query Open Library and Google Books; SQLite URL caching is shared by both."""
+    """Search ordered catalogues with per-run connection circuit breakers."""
 
     def __init__(self, settings: Settings) -> None:
         self.settings = settings
-        self._last_429_at: float | None = None
-        self._google_lock = asyncio.Lock()
+        self._unavailable: set[str] = set()
+        self._rate_limited_until: dict[str, float] = {}
         self.query_log: list[dict[str, object]] = []
 
     async def search(self, title: str, author: str) -> list[dict[str, object]]:
-        candidates = await self.search_open_library(title, author)
-        if candidates or self._recent_429():
-            return candidates
-        return await self.search_google_books(title, author)
+        for provider in self.settings.config.identify.catalogue_order:
+            if (
+                provider == "open_library"
+                and not self.settings.config.identify.open_library_enabled
+            ):
+                continue
+            try:
+                candidates = await self._search_provider(provider, title, author)
+            except (httpx.HTTPError, OSError, ValueError, TimeoutError):
+                continue
+            if candidates:
+                return candidates
+        return []
 
     async def search_open_library(self, title: str, author: str) -> list[dict[str, object]]:
-        try:
-            return await self._open_library(title, author)
-        except httpx.HTTPStatusError as exc:
-            self._remember_429(exc)
-            raise
+        if not self.settings.config.identify.open_library_enabled:
+            return []
+        return await self._search_provider("open_library", title, author)
 
     async def search_google_books(self, title: str, author: str) -> list[dict[str, object]]:
-        async with self._google_lock:
-            if self._recent_429():
-                return []
-            try:
+        return await self._search_provider("google_books", title, author)
+
+    async def _search_provider(
+        self, provider: str, title: str, author: str
+    ) -> list[dict[str, object]]:
+        if self._provider_unavailable(provider):
+            return []
+        try:
+            if provider == "google_books":
                 return await self._google_books(title, author)
-            except httpx.HTTPStatusError as exc:
-                self._remember_429(exc)
-                raise
+            return await self._open_library(title, author)
+        except (httpx.ConnectError, httpx.ConnectTimeout):
+            self._unavailable.add(provider)
+            raise
+        except httpx.HTTPStatusError as exc:
+            if exc.response.status_code == 429:
+                self._rate_limited_until[provider] = time.monotonic() + _RATE_LIMIT_COOLDOWN_S
+            raise
 
-    def _recent_429(self) -> bool:
-        return self._last_429_at is not None and time.monotonic() - self._last_429_at < 60
-
-    def _remember_429(self, error: httpx.HTTPStatusError) -> None:
-        if error.response.status_code == 429:
-            self._last_429_at = time.monotonic()
+    def _provider_unavailable(self, provider: str) -> bool:
+        if provider in self._unavailable:
+            return True
+        rate_limited_until = self._rate_limited_until.get(provider, 0)
+        if rate_limited_until <= time.monotonic():
+            self._rate_limited_until.pop(provider, None)
+            return False
+        return True
 
     async def _open_library(self, title: str, author: str) -> list[dict[str, object]]:
         query = urlencode({"title": title, "author": author, "limit": 8})
         url = f"https://openlibrary.org/search.json?{query}"
-        body = await fetch_bytes(url, self.settings.cache_db, on_request=self._record_request)
+        body = await fetch_bytes(
+            url,
+            self.settings.cache_db,
+            on_request=self._record_request,
+            timeout_s=_CATALOGUE_TIMEOUT_S,
+            max_retries=_CATALOGUE_MAX_RETRIES,
+        )
         docs = json.loads(body).get("docs", [])
         return [
             {
@@ -89,7 +117,13 @@ class OpenLibraryGoogleBooks:
         if self.settings.google_books_api_key is not None:
             query["key"] = self.settings.google_books_api_key.get_secret_value()
         url = f"https://www.googleapis.com/books/v1/volumes?{urlencode(query)}"
-        body = await fetch_bytes(url, self.settings.cache_db, on_request=self._record_request)
+        body = await fetch_bytes(
+            url,
+            self.settings.cache_db,
+            on_request=self._record_request,
+            timeout_s=_CATALOGUE_TIMEOUT_S,
+            max_retries=_CATALOGUE_MAX_RETRIES,
+        )
         items = json.loads(body).get("items", [])
         candidates = []
         for item in items:
@@ -110,6 +144,7 @@ class OpenLibraryGoogleBooks:
                     ],
                 }
             )
+        # Google Play saleInfo describes digital storefront offers; it is not pricing evidence.
         return candidates
 
     def _record_request(

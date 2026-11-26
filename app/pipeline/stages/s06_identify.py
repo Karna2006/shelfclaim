@@ -134,37 +134,18 @@ async def identify_spine_lines(
 ) -> dict[str, Any]:
     """Search each line and adjacent pair, then apply title-first evidence rules."""
     queries = _line_title_queries(lines)
-    open_library_search = getattr(catalogue, "search_open_library", None)
-    google_books_search = getattr(catalogue, "search_google_books", None)
     evidence: dict[tuple[str, str], list[tuple[dict[str, object], str, tuple[int, ...]]]] = {}
-    rate_limited = False
     for query, line_indices in queries:
         try:
-            found = (
-                await open_library_search(query, "")
-                if callable(open_library_search)
-                else await catalogue.search(query, "")
-            )
-        except httpx.HTTPStatusError as exc:
-            rate_limited = exc.response.status_code == 429
+            found = await catalogue.search(query, "")
+        except httpx.HTTPStatusError:
             break
         except (httpx.HTTPError, OSError, ValueError, TimeoutError):
-            break
+            continue
         for candidate in found:
             identity = (str(candidate.get("source", "")), str(candidate.get("key", "")))
             if all(identity):
                 evidence.setdefault(identity, []).append((candidate, query, line_indices))
-
-    if not evidence and not rate_limited and callable(google_books_search) and queries:
-        try:
-            for candidate in await google_books_search(queries[0][0], ""):
-                identity = (str(candidate.get("source", "")), str(candidate.get("key", "")))
-                if all(identity):
-                    evidence.setdefault(identity, []).append(
-                        (candidate, queries[0][0], queries[0][1])
-                    )
-        except (httpx.HTTPError, OSError, ValueError, TimeoutError):
-            pass
 
     candidates = []
     for matches in evidence.values():

@@ -40,6 +40,8 @@ dedup:
   within_frame_review_iou_min: 0.50
   item_frame_proximity_fraction: 0.03
 identify:
+  catalogue_order: [google_books, open_library]
+  open_library_enabled: true
   tau_accept: 0.80
   tau_review: 0.55
   weights:
