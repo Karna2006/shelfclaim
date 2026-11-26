@@ -30,6 +30,7 @@ let recordingTimer = null;
 let wakeLock = null;
 let options = null;
 let pendingUserTexts = [];
+let pendingSpeechEvents = [];
 let speechActivityTimer = null;
 
 async function requestWakeLock() {
@@ -56,7 +57,13 @@ function setupSpeech() {
       logEvent("speech", "microphone blocked by recognition service");
     },
     onStatus: (state) => ui.setMicStatus(state),
-    onEvent: (name, detail) => logEvent("speech", `${name}: ${detail}`),
+    onEvent: (name, detail) => {
+      logEvent("speech", `${name}: ${detail}`);
+      if (/^(onstart|onend|onerror|start error|restart|forced-final|unsupported browser)$/i.test(name)) {
+        if (liveSocket) liveSocket.sendSpeechEvent(name, detail, sweepTimeMs());
+        else pendingSpeechEvents.push({ name, detail });
+      }
+    },
   });
   speechOut = createSpeechOut({
     pauseInput: () => speechIn?.pause(),
@@ -119,6 +126,7 @@ async function requestMicAndListen() {
 
 async function startSweep() {
   pendingUserTexts = [];
+  pendingSpeechEvents = [];
   ui.startButton.disabled = true;
   ui.setMessage("Requesting camera and motion access…");
   try {
@@ -138,6 +146,7 @@ async function startSweep() {
     if (!response.ok) throw new Error(`Sweep creation failed (${response.status})`);
     const sweep = await response.json();
     options = { ...sweep.capture, hires_fps: sweep.hires_fps };
+    speechIn?.setForceFinalAfter?.(sweep.interim_force_final_ms ?? 8000);
     speechOut?.setBargeInMode(sweep.barge_in_mode === true);
     options.live_frame_max_side = sweep.live_frame_max_side;
     options.live_frame_quality = sweep.live_frame_quality;
@@ -155,6 +164,9 @@ async function startSweep() {
       onConnection: (state) => ui.setAgentConnection(state),
       onMessage: handleAgentMessage,
       onDebug: (event) => logEvent("live ws", event),
+    });
+    pendingSpeechEvents.splice(0).forEach(({ name, detail }) => {
+      liveSocket.sendSpeechEvent(name, detail, sweepTimeMs());
     });
     captureStartedAt = performance.now();
     lastFrameAt = captureStartedAt - options.frame_min_interval_ms;

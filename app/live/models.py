@@ -48,8 +48,19 @@ class SpeechActivityMessage(ClientMessage):
     speaking: bool
 
 
+class SpeechEventMessage(ClientMessage):
+    type: Literal["speech_event"]
+    name: str = Field(min_length=1, max_length=40)
+    detail: str = Field(default="", max_length=160)
+    t_ms: int = Field(ge=0)
+
+
 LiveClientMessage = Annotated[
-    UserTextMessage | LiveFrameMessage | ControlMessage | SpeechActivityMessage,
+    UserTextMessage
+    | LiveFrameMessage
+    | ControlMessage
+    | SpeechActivityMessage
+    | SpeechEventMessage,
     Field(discriminator="type"),
 ]
 _LIVE_MESSAGE_ADAPTER = TypeAdapter(LiveClientMessage)
@@ -57,7 +68,9 @@ _LIVE_MESSAGE_ADAPTER = TypeAdapter(LiveClientMessage)
 
 def parse_live_message(
     raw: str,
-) -> UserTextMessage | LiveFrameMessage | ControlMessage | SpeechActivityMessage:
+) -> (
+    UserTextMessage | LiveFrameMessage | ControlMessage | SpeechActivityMessage | SpeechEventMessage
+):
     """Parse a supported client message; reject audio and interim-result payloads."""
     try:
         message = _LIVE_MESSAGE_ADAPTER.validate_json(raw)

@@ -17,6 +17,7 @@ from app.live.models import (
     LiveFrameMessage,
     LlmResponse,
     SpeechActivityMessage,
+    SpeechEventMessage,
     UserTextMessage,
     parse_live_message,
 )
@@ -73,10 +74,7 @@ async def live_socket(websocket: WebSocket, sweep_id: str) -> None:
                     pending.clear()
                     pending_since = None
                     async with context.turn_lock:
-                        await _send_reply(
-                            context,
-                            await context.agent.handle_user_text(text, context.latest_frame_jpeg),
-                        )
+                        await _handle_user_turn(context, text)
                 continue
             try:
                 message = parse_live_message(raw)
@@ -91,6 +89,19 @@ async def live_socket(websocket: WebSocket, sweep_id: str) -> None:
                 continue
             if isinstance(message, SpeechActivityMessage):
                 context.user_speaking = message.speaking
+                continue
+            if isinstance(message, SpeechEventMessage):
+                write_event(
+                    sweep_dir,
+                    Event(
+                        t_ms=message.t_ms,
+                        type="speech_event",
+                        payload={
+                            "name": message.name,
+                            "detail": message.detail,
+                        },
+                    ),
+                )
                 continue
             accepted = _queue_final_text(context, message, pending)
             await websocket.send_json(
@@ -162,6 +173,45 @@ async def _send_reply(context: LiveSessionContext, reply: AgentReply) -> None:
                     "report_url": f"/api/sweeps/{context.sweep_id}/report",
                 }
             )
+
+
+async def _handle_user_turn(context: LiveSessionContext, text: str) -> None:
+    """Speak one short filler if a model turn exceeds the configured latency target."""
+    if context.agent is None:
+        return
+    task = asyncio.create_task(context.agent.handle_user_text(text, context.latest_frame_jpeg))
+    try:
+        reply = await asyncio.wait_for(
+            asyncio.shield(task), timeout=context.agent.settings.config.agent.filler_after_s
+        )
+    except TimeoutError:
+        await _send_filler(context)
+        reply = await task
+    await _send_reply(context, reply)
+
+
+async def _send_filler(context: LiveSessionContext) -> None:
+    """Log and speak a single latency filler without adding an LLM turn."""
+    text = "One moment."
+    append_transcript(
+        context.sweep_dir,
+        TranscriptLine(t_ms=context.latest_client_t_ms, speaker="agent", text=text),
+    )
+    write_event(
+        context.sweep_dir,
+        Event(
+            t_ms=context.latest_client_t_ms,
+            type="transcript_agent",
+            payload={"text": text, "kind": "filler"},
+        ),
+    )
+    context.echo_guard.add_spoken_line(text)
+    if context.agent is not None:
+        context.agent.record_cue(text)
+    if context.websocket is not None:
+        await context.websocket.send_json(
+            {"type": "agent_text", "text": text, "t_ms": context.latest_client_t_ms}
+        )
 
 
 async def send_cue(

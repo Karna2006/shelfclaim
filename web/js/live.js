@@ -44,6 +44,11 @@ export function createLiveSocket(sweepId, callbacks = {}) {
     sendSpeechActivity(speaking) {
       if (socket.readyState === WebSocket.OPEN) socket.send(JSON.stringify({ type: "speech_activity", speaking }));
     },
+    sendSpeechEvent(name, detail, tMs) {
+      if (socket.readyState === WebSocket.OPEN) {
+        socket.send(JSON.stringify({ type: "speech_event", name, detail, t_ms: tMs }));
+      }
+    },
     async sendFrame(blob, tMs) {
       if (socket.readyState !== WebSocket.OPEN || !blob) return;
       const bytes = new Uint8Array(await blob.arrayBuffer());

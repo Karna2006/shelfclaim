@@ -7,6 +7,7 @@ import pytest
 from app.live.models import (
     LiveFrameMessage,
     SpeechActivityMessage,
+    SpeechEventMessage,
     UserTextMessage,
     parse_live_message,
 )
@@ -22,6 +23,15 @@ def test_parse_speech_activity_protocol() -> None:
     message = parse_live_message(json.dumps({"type": "speech_activity", "speaking": True}))
     assert isinstance(message, SpeechActivityMessage)
     assert message.speaking is True
+
+
+def test_parse_speech_event_protocol() -> None:
+    message = parse_live_message(
+        json.dumps({"type": "speech_event", "name": "onerror", "detail": "no-speech", "t_ms": 35})
+    )
+    assert isinstance(message, SpeechEventMessage)
+    assert message.name == "onerror"
+    assert message.detail == "no-speech"
 
 
 def test_parse_low_resolution_frame_protocol() -> None:

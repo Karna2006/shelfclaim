@@ -1,4 +1,4 @@
-export function createSpeechIn({ onFinal, onUnsupported, onBlocked = () => {}, onInterim = () => {}, onStatus = () => {}, onEvent = () => {} }) {
+export function createSpeechIn({ onFinal, onUnsupported, onBlocked = () => {}, onInterim = () => {}, onStatus = () => {}, onEvent = () => {}, forceFinalAfterMs = 8000 }) {
   if (/SamsungBrowser/i.test(navigator.userAgent)) {
     onUnsupported?.("samsung-internet");
     onStatus("unsupported");
@@ -20,6 +20,24 @@ export function createSpeechIn({ onFinal, onUnsupported, onBlocked = () => {}, o
   let paused = false;
   let lastErrorCode = "";
   let restartTimer = null;
+  let forceFinalTimer = null;
+  let interimText = "";
+  function clearInterim() {
+    clearTimeout(forceFinalTimer);
+    forceFinalTimer = null;
+    interimText = "";
+  }
+  function scheduleForceFinal() {
+    if (forceFinalTimer || !interimText) return;
+    forceFinalTimer = window.setTimeout(() => {
+      forceFinalTimer = null;
+      const forced = interimText.trim();
+      interimText = "";
+      if (!forced) return;
+      onEvent("forced-final", "interim promoted after 8s without a final result");
+      onFinal(forced);
+    }, forceFinalAfterMs);
+  }
   const startNative = () => {
     if (!wanted || paused) return;
     try { recognition.start(); } catch (error) {
@@ -40,18 +58,24 @@ export function createSpeechIn({ onFinal, onUnsupported, onBlocked = () => {}, o
       const text = result[0]?.transcript?.trim();
       if (!text) continue;
       if (result.isFinal) {
+        clearInterim();
         onEvent("final", text);
         onFinal(text);
       } else {
+        interimText = text;
         onEvent("interim", text);
         onInterim(text);
+        scheduleForceFinal();
       }
     }
   };
   const scheduleRestart = () => {
     if (!wanted || paused) return;
     clearTimeout(restartTimer);
-    restartTimer = window.setTimeout(startNative, 150);
+    restartTimer = window.setTimeout(() => {
+      onEvent("restart", "automatic recognition restart");
+      startNative();
+    }, 150);
   };
   recognition.onend = () => {
     onEvent("onend", paused ? "paused" : "recognition ended");
@@ -78,7 +102,8 @@ export function createSpeechIn({ onFinal, onUnsupported, onBlocked = () => {}, o
     start() { wanted = true; paused = false; onEvent("start requested", "SpeechRecognition.start()"); startNative(); },
     pause() { paused = true; clearTimeout(restartTimer); onStatus("paused (agent speaking)"); onEvent("paused", "agent speaking"); try { recognition.abort(); } catch {} },
     resume() { if (!wanted) return; paused = false; onEvent("resume requested", "speech ended"); startNative(); },
-    stop() { wanted = false; paused = true; clearTimeout(restartTimer); onEvent("stopped", "sweep ended"); try { recognition.abort(); } catch {} },
+    setForceFinalAfter(ms) { forceFinalAfterMs = Math.max(1000, ms); },
+    stop() { wanted = false; paused = true; clearTimeout(restartTimer); clearInterim(); onEvent("stopped", "sweep ended"); try { recognition.abort(); } catch {} },
   };
 }
 

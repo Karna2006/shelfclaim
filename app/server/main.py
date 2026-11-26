@@ -65,6 +65,9 @@ def create_app(
             "live_frame_max_side": app.state.settings.config.agent.live_frame_max_side,
             "live_frame_quality": app.state.settings.config.agent.live_frame_quality,
             "barge_in_mode": app.state.settings.config.agent.barge_in_mode,
+            "interim_force_final_ms": round(
+                app.state.settings.config.agent.interim_force_final_s * 1000
+            ),
             "live_ws_path": f"/ws/live/{sweep.id}",
         }
 
