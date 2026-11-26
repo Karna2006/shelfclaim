@@ -4,6 +4,7 @@ import json
 from decimal import Decimal
 
 import pytest
+from app.cli import _format_s07_price_row
 from app.pipeline.stages.s07_price_books import price_sweep
 from app.pricing.book_pricer import PricedOffer, estimate_book_price
 from app.pricing.item_pricer import estimate_item_range
@@ -45,6 +46,29 @@ def test_item_art_requires_print_statement_and_template_needs_three_offers() -> 
     assert art.status == "needs_appraisal"
     assert template.status == "needs_appraisal"
     assert template.reason == "fewer_than_three_template_offers"
+
+
+def test_price_table_keeps_provider_links_and_conversion_flag() -> None:
+    new = {
+        "amount": 500,
+        "currency": "INR",
+        "source": "Shop",
+        "url": "https://shop.example/book",
+    }
+    used = {
+        "amount": 400,
+        "currency": "INR",
+        "source": "eBay UK",
+        "url": "https://ebay.example/item",
+        "converted": True,
+    }
+
+    row = _format_s07_price_row("Example", new, used)
+
+    assert row == (
+        "Example | 500 INR | Shop | https://shop.example/book | 400 INR | "
+        "eBay UK | https://ebay.example/item | True"
+    )
 
 
 class FakePricing:

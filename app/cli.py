@@ -55,10 +55,11 @@ def replay(
     until: str | None = None,
     max_keyframes: Annotated[int | None, typer.Option("--max-keyframes", min=1, max=60)] = None,
     limit_books: Annotated[int | None, typer.Option("--limit-books", min=1, max=1000)] = None,
+    limit: Annotated[int, typer.Option("--limit", min=0, max=40)] = 10,
 ) -> None:
-    """Run the sweep pipeline through S1, S3, S6, or the final packet stage."""
-    if until not in {None, "s01", "s03", "s06", "s10"}:
-        raise typer.BadParameter("until must be s01, s03, s06, or s10")
+    """Run the sweep pipeline through S1, S3, S6, S7, or the final packet stage."""
+    if until not in {None, "s01", "s03", "s06", "s07", "s10"}:
+        raise typer.BadParameter("until must be s01, s03, s06, s07, or s10")
     settings = load_settings()
     try:
         output = asyncio.run(
@@ -68,6 +69,7 @@ def replay(
                 until=until or "s10",
                 max_keyframes=max_keyframes,
                 max_books=limit_books,
+                price_limit=limit,
             )
         )
     except Exception as exc:
@@ -93,6 +95,8 @@ def replay(
         _print_s03_counts(sweep)
     elif until == "s06":
         _print_s06_books(sweep, limit_books)
+    elif until == "s07":
+        _print_s07_prices(sweep)
 
 
 def _print_detection_keyframe_stats(sweep: Path) -> None:
@@ -161,6 +165,41 @@ def _print_s06_books(sweep: Path, limit: int | None) -> None:
         confidence = identification.get("id_confidence", 0)
         status = identification.get("status", "unidentified")
         typer.echo(f"{book_id} | {spine_text} | {title_author} | {confidence} | {status}")
+
+
+def _print_s07_prices(sweep: Path) -> None:
+    identities = json.loads((sweep / "s06_identification.json").read_text(encoding="utf-8")).get(
+        "books", {}
+    )
+    prices = json.loads((sweep / "s07_book_prices.json").read_text(encoding="utf-8")).get(
+        "books", {}
+    )
+    typer.echo(
+        "title | new price | new source | new URL | used price | used source | used URL | converted"
+    )
+    if not prices:
+        typer.echo("No identified books to price.")
+        return
+    for book_id, quotes in prices.items():
+        title = identities.get(book_id, {}).get("title", "") or "Unidentified spine"
+        new, used = quotes.get("new", {}), quotes.get("used", {})
+        typer.echo(_format_s07_price_row(title, new, used))
+
+
+def _format_s07_price_row(title: str, new: dict[str, Any], used: dict[str, Any]) -> str:
+    return (
+        f"{title} | {_price_value(new)} | {new.get('source') or '—'} | "
+        f"{new.get('url') or '—'} | {_price_value(used)} | "
+        f"{used.get('source') or '—'} | {used.get('url') or '—'} | "
+        f"{bool(used.get('converted', False))}"
+    )
+
+
+def _price_value(quote: dict[str, Any]) -> str:
+    amount = quote.get("amount")
+    if amount is None:
+        return "—"
+    return f"{amount} {quote.get('currency') or ''}".strip()
 
 
 @app.command("debug-boxes")
