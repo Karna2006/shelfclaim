@@ -14,7 +14,7 @@ from pathlib import Path
 import cv2
 import numpy as np
 import yaml
-from app.capture.faces import blur_faces
+from app.capture.faces import YuNetDetectorCache, blur_faces
 from app.capture.markers import detect_markers
 from app.capture.quality import QualityScores, Verdict, classify_verdict, score_frame
 from app.packet.models import Sweep
@@ -95,6 +95,7 @@ def save_frame(
     jpeg_bytes: bytes,
     settings: Settings,
     fast_sustained: bool = False,
+    face_detector_cache: YuNetDetectorCache | None = None,
 ) -> CaptureResult:
     """Score, redact, and persist one frame, reusing an acknowledged sequence on retry."""
     seq = header.seq
@@ -110,7 +111,9 @@ def save_frame(
 
     gyro_dps = header.motion.gyro_dps if header.motion is not None else None
     quality = score_frame(image, settings.config.capture, gyro_dps, fast_sustained)
-    markers, face_boxes, jpeg_to_save = _redact_and_encode(image, jpeg_bytes, settings)
+    markers, face_boxes, jpeg_to_save = _redact_and_encode(
+        image, jpeg_bytes, settings, face_detector_cache
+    )
     frame_path.write_bytes(jpeg_to_save)
     record = FrameRecord(
         seq=seq,
@@ -166,10 +169,15 @@ def _decode_jpeg(jpeg_bytes: bytes, header: FrameHeader) -> np.ndarray:
 
 
 def _redact_and_encode(
-    frame: np.ndarray, jpeg_bytes: bytes, settings: Settings
+    frame: np.ndarray,
+    jpeg_bytes: bytes,
+    settings: Settings,
+    face_detector_cache: YuNetDetectorCache | None = None,
 ) -> tuple[list[MarkerObservation], list[tuple[int, int, int, int, float | None]], bytes]:
     markers = detect_markers(frame, settings)
-    redacted, face_boxes = blur_faces(frame, settings.config.capture)
+    redacted, face_boxes = blur_faces(
+        frame, settings.config.capture, detector_cache=face_detector_cache
+    )
     if not face_boxes:
         return markers, face_boxes, jpeg_bytes
 

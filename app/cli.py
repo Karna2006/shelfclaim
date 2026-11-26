@@ -17,6 +17,8 @@ from app.capture.face_audit import create_face_contact_sheet
 from app.capture.storage import list_frames
 from app.capture.summary import summarize_frames
 from app.capture.yunet_model import download_yunet_model
+from app.live.benchmark import benchmark_models
+from app.live.terminal import run_agent_chat
 from app.settings import load_settings
 from PIL import Image, ImageDraw, ImageFont
 
@@ -239,6 +241,24 @@ def download_yunet() -> None:
     """Download the checksum-pinned YuNet face detector model into models/."""
     model_path = asyncio.run(download_yunet_model())
     typer.echo(f"Verified YuNet model saved to {model_path}")
+
+
+@app.command("check-llm")
+def check_llm() -> None:
+    """Benchmark one text generation call for AGENT_MODEL and VISION_MODEL."""
+    for result in asyncio.run(benchmark_models(load_settings())):
+        status = "OK" if result.ok else "FAIL"
+        details = f"text={result.response_text!r}" if result.ok else f"error={result.error_type}"
+        typer.echo(f"{status} {result.model} latency={result.latency_s:.2f}s {details}")
+
+
+@app.command("agent-chat")
+def agent_chat() -> None:
+    """Run the real live agent in a terminal, loading settings and .env normally."""
+    settings = load_settings()
+    if settings.google_api_key is None:
+        raise typer.BadParameter("Set GOOGLE_API_KEY in the process environment first")
+    asyncio.run(run_agent_chat(settings))
 
 
 @app.command()

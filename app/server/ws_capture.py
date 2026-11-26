@@ -67,13 +67,24 @@ async def capture_socket(websocket: WebSocket, sweep_id: str) -> None:
                         and header.t_ms - fast_motion_since_ms
                         >= settings.config.capture.speed_sustain_s * 1000
                     )
-                    result = save_frame(sweep_dir, header, jpeg_bytes, settings, fast_sustained)
+                    result = save_frame(
+                        sweep_dir,
+                        header,
+                        jpeg_bytes,
+                        settings,
+                        fast_sustained,
+                        websocket.app.state.face_detector_cache,
+                    )
                 except (ValueError, ValidationError) as exc:
                     logger.info("Rejected capture frame: %s", exc)
                     await websocket.send_json(
                         {"type": "error", "message": "Invalid capture frame", "recoverable": True}
                     )
                     continue
+                context = websocket.app.state.live_sessions.get(sweep_id)
+                if context is not None:
+                    context.latest_capture_seq = result.record.seq
+                    context.latest_client_t_ms = header.t_ms
                 await websocket.send_json(result.qc_message())
                 await websocket.send_json({"type": "ack", "seq": header.seq})
             elif message.get("text"):

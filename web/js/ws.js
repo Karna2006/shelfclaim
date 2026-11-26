@@ -13,16 +13,19 @@ export function createCaptureSocket(sweepId, config, callbacks = {}) {
   function connect() {
     if (disposed) return;
     callbacks.onConnection?.("connecting");
+    callbacks.onDebug?.("connecting");
     socket = new WebSocket(endpoint);
     socket.binaryType = "arraybuffer";
     socket.onopen = () => {
       retryAttempt = 0;
       callbacks.onConnection?.("connected");
+      callbacks.onDebug?.("connected");
       flush();
     };
     socket.onmessage = ({ data }) => {
       let message;
       try { message = JSON.parse(data); } catch { return; }
+      if (message.type === "error") callbacks.onDebug?.("received error");
       if (message.type === "qc") callbacks.onQc?.(message);
       if (message.type === "ack") {
         const index = pending.findIndex((frame) => frame.seq === message.seq);
@@ -31,10 +34,11 @@ export function createCaptureSocket(sweepId, config, callbacks = {}) {
       }
       if (message.type === "error") callbacks.onMessage?.(message.message);
     };
-    socket.onerror = () => callbacks.onConnection?.("disconnected");
+    socket.onerror = () => { callbacks.onConnection?.("disconnected"); callbacks.onDebug?.("error"); };
     socket.onclose = () => {
       pending.forEach((frame) => { frame.sent = false; });
       callbacks.onConnection?.("disconnected");
+      callbacks.onDebug?.("closed; reconnect scheduled");
       scheduleReconnect();
     };
   }

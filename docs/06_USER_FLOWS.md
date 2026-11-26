@@ -11,7 +11,7 @@
 
 | # | User | Agent / System | Screen |
 |---|---|---|---|
-| 1 | Taps **Start** | Permissions requested (camera, mic, motion on iOS). `POST /api/sweeps` → sweep_id. Both WebSockets open. Live session connects | Camera preview, "Connecting…" |
+| 1 | Taps **Start** | Camera and motion permissions requested; speech recognition starts from the same tap. `POST /api/sweeps` → sweep_id. Capture and live text WebSockets open for the same sweep ID | Camera preview, "Connecting…" |
 | 2 | — | Agent: "Hi, I'll help you document your library for the claim. You're in India and want values in rupees, right?" | Caption of agent speech |
 | 3 | "Yes" | Agent calls `set_locale(IN, INR)`. "Great. Walk the room once, slowly, shelf by shelf, then the walls and furniture. I'll tell you if I can't read something. Are the scale cards on the shelves?" | Locale chip "IN · INR" |
 | 4 | "Yes, go" | `start_sweep()`: timer starts, GPU warmed, stage workers start. Agent: "Start at the left shelf, top row." | Timer 00:00, QC meter live |
@@ -61,27 +61,25 @@ Agent readback numbers come **only** from the tool result (code-computed). The p
 
 ## 5. WebSocket message protocol
 
-### 5.1 `/ws/live` (JSON text frames unless noted)
+### 5.1 `/ws/live/{sweep_id}` (JSON text frames)
 
-Client → server:
+Client to server:
 | type | fields | notes |
 |---|---|---|
-| `audio` | binary frame: raw PCM16LE 16 kHz mono, 20–40 ms chunks | binary for efficiency |
-| `live_frame` | `{type, data: base64 jpeg, t_ms}` | 768 px, 1 fps |
-| `text` | `{type, text}` | typed fallback input |
-| `control` | `{type, action: "start"|"stop"|"mute"|"unmute"}` | |
+| `user_text` | `{type, text, t_ms}` | Final Web Speech result or typed fallback only; server merges finals within 800 ms |
+| `live_frame` | `{type, data: base64 jpeg, t_ms}` | Low-resolution JPEG, 768 px maximum long edge and q 0.6 |
+| `control` | `{type, action:"stop"}` | Close the live session |
 
-Server → client:
+Server to client:
 | type | fields |
 |---|---|
-| `agent_audio` | binary PCM16 24 kHz |
-| `transcript` | `{speaker:"user"|"agent", text, final:bool, t_ms}` |
-| `agent_state` | `{state:"listening"|"speaking"|"thinking"}` |
-| `tool_event` | `{name, args, status:"started"|"done", result_summary}` |
-| `inventory` | `{books:{total_provisional, by_row:{"A-1":12,…}}, items:[{id, category, status}], coverage:{rows:{…}, ceiling, corners, cards_seen}}` |
-| `pipeline` | `{stage, status:"queued"|"running"|"done"|"failed", pct?, eta_s?}` |
-| `packet_ready` | `{sweep_id, report_url, json_url, summary:{…}}` |
-| `error` | `{message, recoverable:bool}` |
+| `agent_text` | `{type, text, t_ms}` | Browser speech synthesis reads the reply |
+| `cue` | `{type, text, priority}` | Direct urgent speech; appended to assistant history and transcript |
+| `state` | `{type, state:"listening"}` | Session status |
+| `control` | `{type, action:"stop_capture"}` | Agent requested capture stop |
+| `error` | `{type, message}` | Invalid or unsupported protocol message |
+
+The browser does not send audio. While speech synthesis speaks, recognition is paused/aborted and resumes 300 ms after utterance completion. The interrupt button cancels speech and resumes listening immediately. EchoGuard drops text matching an agent/cue line at rapidfuzz ratio >= 85 within 10 seconds. Interim recognition results are never sent to the LLM.
 
 ### 5.2 `/ws/capture`
 

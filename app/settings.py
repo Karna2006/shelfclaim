@@ -88,6 +88,34 @@ class ReviewSettings(BaseModel):
     row_count_disagreement_pct: float = Field(default=0.10, ge=0, le=1)
 
 
+class AgentSettings(BaseModel):
+    timeout_s: float = Field(default=20, gt=0)
+    debounce_ms: int = Field(default=800, gt=0)
+    history_turns: int = Field(default=20, gt=0)
+    max_tool_rounds: int = Field(default=5, gt=0)
+    live_frame_max_side: int = Field(default=768, gt=0)
+    live_frame_quality: float = Field(default=0.6, gt=0, le=1)
+    frame_attachment_keywords: list[str] = Field(
+        default_factory=lambda: ["this", "that", "here", "painting", "shelf", "book", "what is"]
+    )
+    frame_attachment_every_n_turns: int = Field(default=3, gt=0)
+    echo_window_s: float = Field(default=10, gt=0)
+    echo_match_ratio: int = Field(default=85, ge=0, le=100)
+
+
+class ModelRateLimitSettings(BaseModel):
+    requests_per_minute: int = Field(default=5, gt=0)
+    window_s: float = Field(default=60, gt=0)
+    max_retries: int = Field(default=3, ge=0)
+    backoff_initial_s: float = Field(default=0.5, gt=0)
+    backoff_max_s: float = Field(default=8, gt=0)
+
+
+class LlmSettings(BaseModel):
+    default_rate_limit: ModelRateLimitSettings = Field(default_factory=ModelRateLimitSettings)
+    model_rate_limits: dict[str, ModelRateLimitSettings] = Field(default_factory=dict)
+
+
 class YamlSettings(BaseModel):
     """Thresholds and model rules from config/settings.yaml."""
 
@@ -101,6 +129,8 @@ class YamlSettings(BaseModel):
     measure: MeasureSettings = Field(default_factory=MeasureSettings)
     room: RoomSettings = Field(default_factory=RoomSettings)
     review: ReviewSettings = Field(default_factory=ReviewSettings)
+    agent: AgentSettings = Field(default_factory=AgentSettings)
+    llm: LlmSettings = Field(default_factory=LlmSettings)
 
 
 class Settings(BaseSettings):
@@ -118,10 +148,9 @@ class Settings(BaseSettings):
     google_genai_use_vertexai: bool = Field(
         default=False, validation_alias="GOOGLE_GENAI_USE_VERTEXAI"
     )
-    live_model: str = Field(default="gemini-3.8-live", validation_alias="LIVE_MODEL")
+    agent_model: str = Field(default="gemini-3.1-flash-lite", validation_alias="AGENT_MODEL")
     vision_model: str = Field(default="gemini-3.8-flash", validation_alias="VISION_MODEL")
     checker_model: str = Field(default="", validation_alias="CHECKER_MODEL")
-    live_voice: str = Field(default="Kore", validation_alias="LIVE_VOICE")
     serpapi_api_key: SecretStr | None = Field(default=None, validation_alias="SERPAPI_API_KEY")
     shopping_provider: str = Field(default="serpapi", validation_alias="SHOPPING_PROVIDER")
     used_provider: Literal["serpapi_ebay", "ebay_browse"] = Field(
@@ -154,7 +183,7 @@ class Settings(BaseSettings):
 
 def load_settings(
     settings_path: Path = Path("config/settings.yaml"),
-    env_file: Path = Path(".env"),
+    env_file: Path | None = Path(".env"),
 ) -> Settings:
     """Read YAML defaults and let environment values configure secrets/runtime."""
     yaml_values: dict[str, object] = {}
@@ -164,5 +193,5 @@ def load_settings(
             raise ValueError(f"Settings YAML must contain a mapping: {settings_path}")
         yaml_values = loaded
     config = YamlSettings.model_validate(yaml_values)
-    selected_env = env_file if env_file.exists() else None
+    selected_env = env_file if env_file is not None and env_file.exists() else None
     return Settings(config=config, _env_file=selected_env)

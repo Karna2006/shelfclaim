@@ -8,19 +8,50 @@ from __future__ import annotations
 
 import math
 from pathlib import Path
+from threading import RLock
+from typing import Any
 
 import cv2
 import numpy as np
 from app.settings import CaptureSettings
 
+cv2.utils.logging.setLogLevel(cv2.utils.logging.LOG_LEVEL_ERROR)
+
 FaceBox = tuple[int, int, int, int, float | None]
 _MODEL_FILENAME = "face_detection_yunet_2023mar.onnx"
+
+
+class YuNetDetectorCache:
+    """Reuse one YuNet instance per model and score threshold across capture frames."""
+
+    def __init__(self) -> None:
+        self._detectors: dict[tuple[str, float], tuple[Any, tuple[int, int]]] = {}
+        self._lock = RLock()
+
+    def detect(self, frame: np.ndarray, model_path: Path, score_threshold: float) -> Any:
+        height, width = frame.shape[:2]
+        size = (width, height)
+        key = (str(model_path.resolve()), score_threshold)
+        with self._lock:
+            cached = self._detectors.get(key)
+            if cached is None:
+                detector = cv2.FaceDetectorYN.create(
+                    str(model_path), "", size, score_threshold, 0.3, 5000
+                )
+            else:
+                detector, previous_size = cached
+                if previous_size != size:
+                    detector.setInputSize(size)
+            self._detectors[key] = (detector, size)
+            _, detections = detector.detect(frame)
+        return detections
 
 
 def blur_faces(
     frame: np.ndarray,
     settings: CaptureSettings | None = None,
     model_path: Path | None = None,
+    detector_cache: YuNetDetectorCache | None = None,
 ) -> tuple[np.ndarray, list[FaceBox]]:
     """Redact YuNet detections, using strict Haar detection when the model is absent."""
     if frame.ndim != 3 or frame.shape[2] != 3 or not frame.size:
@@ -29,7 +60,12 @@ def blur_faces(
     selected_settings = settings or CaptureSettings()
     selected_model = model_path or _default_model_path()
     if selected_model.is_file():
-        boxes = _detect_yunet(frame, selected_model, selected_settings.face_score_threshold)
+        boxes = _detect_yunet(
+            frame,
+            selected_model,
+            selected_settings.face_score_threshold,
+            detector_cache or YuNetDetectorCache(),
+        )
     else:
         boxes = _detect_haar(frame, selected_settings)
     return _blur_boxes(frame, boxes), boxes
@@ -39,12 +75,14 @@ def _default_model_path() -> Path:
     return Path(__file__).resolve().parents[2] / "models" / _MODEL_FILENAME
 
 
-def _detect_yunet(frame: np.ndarray, model_path: Path, score_threshold: float) -> list[FaceBox]:
+def _detect_yunet(
+    frame: np.ndarray,
+    model_path: Path,
+    score_threshold: float,
+    detector_cache: YuNetDetectorCache,
+) -> list[FaceBox]:
     height, width = frame.shape[:2]
-    detector = cv2.FaceDetectorYN.create(
-        str(model_path), "", (width, height), score_threshold, 0.3, 5000
-    )
-    _, detections = detector.detect(frame)
+    detections = detector_cache.detect(frame, model_path, score_threshold)
     if detections is None:
         return []
     boxes = [

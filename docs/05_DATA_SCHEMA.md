@@ -198,12 +198,14 @@ class UserStatement(BaseModel):              # (add) top-level list
     target_hint: str
     t_s: float                               # seconds since sweep start
     frame_ref: str | None
+    frame_seq: int | None = None              # latest saved capture frame at statement time
+    value: str | None = None
     resolved_to: list[str] = []              # ["i_003"] or ["shelf:B-*"]
     applied_effect: str | None = None        # "status→needs_appraisal" | "excluded"
 
 class Meta(BaseModel):                       # (add)
     pipeline_version: str
-    models: dict[str, str]                   # {"live": "...", "vision": "...", "recon": "mapanything"}
+    models: dict[str, str]                   # {"agent": "...", "vision": "...", "recon": "mapanything"}
     telemetry: dict                          # latency per stage, cost per provider, total cost
     assumptions: list[str]
     validation: dict                         # results of the validation gate
@@ -291,7 +293,7 @@ sweeps/<sweep_id>/
 ├── live_frames/               # (optional) low-res frames sent to the live model
 ├── audio/                     # (optional) agent+user audio wav for the demo trace
 ├── events.jsonl
-├── transcript.jsonl           # {t_ms, speaker, text, final}
+├── transcript.jsonl           # {t_ms, speaker:"user"|"agent"|"cue", text, final}
 ├── user_statements.jsonl
 ├── geometry/                  # depth_*.npz, conf_*.npz, pointcloud.ply (debug), room_debug.png
 ├── stages/                    # s00…s10 JSON + telemetry.json
@@ -390,7 +392,7 @@ units: {area: [m2, ft2]}
 | POST | `/api/sweeps` | Create sweep → `{sweep_id}` |
 | GET | `/api/sweeps/{id}/status` | Pipeline progress, provisional inventory |
 | GET | `/api/sweeps/{id}/packet` | `claim_packet.json` |
-| WS | `/ws/live?sweep_id=` | Audio/low-res frames ↔ agent audio, transcripts, tool events, inventory events |
+| WS | `/ws/live/{sweep_id}` | Final text + selected low-res frames to agent; agent text, cues, transcript and tool events back |
 | WS | `/ws/capture?sweep_id=` | Hi-res frames (binary) + motion (JSON) → `qc` events back |
 
 WebSocket message types are in `06_USER_FLOWS.md` §5.

@@ -78,7 +78,7 @@ Phone access: `tailscale serve --bg 8000` (or `cloudflared tunnel --url http://l
 ```
 app/
   server/      main.py (FastAPI app, routes), ws_live.py, ws_capture.py, sessions.py
-  live/        bridge.py (Gemini Live session), tools.py, prompt loader, cues.py
+  live/        agent.py, client.py, tools.py, rate_limit.py, echo_guard.py, transcript.py
   capture/     quality.py, monitor.py, coverage.py, keyframes.py, storage.py, faces.py, markers.py
   vision/      client.py, detect.py, transcribe.py, items.py
   geometry/    recon_client.py, scale.py, lift.py, dedup.py, measure.py, room.py, homography.py
@@ -93,7 +93,7 @@ app/
   settings.py  (pydantic-settings; loads .env + config/settings.yaml)
 config/        settings.yaml, locales/IN.yaml, locales/GB.yaml, taxonomy.yaml, pricing_rates.yaml
 gpu/           modal_recon.py
-web/           index.html, styles.css, js/{main,audio,camera,ws,ui}.js, audio-worklet.js
+web/           index.html, styles.css, js/{main,speech,live,camera,ws,ui}.js
 eval/          ground_truth/*.csv, evaluate.py helpers
 tests/         unit/, fixtures/
 docs/          planning docs + deliverable docs (architecture.md, failure_log.md, results.md)

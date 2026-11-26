@@ -53,3 +53,26 @@ room:
   min_conf_for_no_review: 0.5
 review:
   row_count_disagreement_pct: 0.10
+agent:
+  timeout_s: 20
+  debounce_ms: 800
+  history_turns: 20
+  max_tool_rounds: 5
+  live_frame_max_side: 768
+  live_frame_quality: 0.60
+  frame_attachment_keywords: [this, that, here, painting, shelf, book, "what is"]
+  frame_attachment_every_n_turns: 3
+  echo_window_s: 10
+  echo_match_ratio: 85
+llm:
+  default_rate_limit:
+    requests_per_minute: 5
+    window_s: 60
+    max_retries: 3
+    backoff_initial_s: 0.5
+    backoff_max_s: 8
+  model_rate_limits:
+    gemini-3.1-flash-lite:
+      requests_per_minute: 15
+    gemini-3.8-flash:
+      requests_per_minute: 5

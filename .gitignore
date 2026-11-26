@@ -23,4 +23,5 @@ library-claim-agent-docs/
 library-claim-agent-docs.zip
 .vscode/
 *pytest-tmp*/
+/.pytest-temp-agent/
 .pytest-tmp/

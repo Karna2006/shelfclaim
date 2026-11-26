@@ -4,7 +4,7 @@ from pathlib import Path
 
 import cv2
 import numpy as np
-from app.capture.faces import blur_faces
+from app.capture.faces import YuNetDetectorCache, blur_faces
 from app.settings import CaptureSettings
 
 
@@ -99,3 +99,32 @@ def test_yunet_uses_configured_threshold_and_records_score(monkeypatch, tmp_path
     assert observed["score"] == 0.87
     assert face_boxes[0][:4] == (10, 20, 30, 40)
     assert np.isclose(face_boxes[0][4], 0.93)
+
+
+def test_yunet_detector_is_constructed_once_and_resizes_only_on_change(
+    monkeypatch, tmp_path: Path
+) -> None:
+    model_path = tmp_path / "yunet.onnx"
+    model_path.touch()
+    observed = {"created": 0, "detects": 0, "resizes": 0}
+
+    class FakeDetector:
+        def setInputSize(self, size):
+            observed["resizes"] += 1
+
+        def detect(self, frame):
+            observed["detects"] += 1
+            return 1, None
+
+    def create_detector(*_args):
+        observed["created"] += 1
+        return FakeDetector()
+
+    monkeypatch.setattr(cv2.FaceDetectorYN, "create", create_detector)
+    cache = YuNetDetectorCache()
+    for size in ((80, 100), (80, 100), (80, 100), (60, 90), (60, 90)):
+        image = np.zeros((size[1], size[0], 3), dtype=np.uint8)
+        _, boxes = blur_faces(image, model_path=model_path, detector_cache=cache)
+        assert boxes == []
+
+    assert observed == {"created": 1, "detects": 5, "resizes": 1}

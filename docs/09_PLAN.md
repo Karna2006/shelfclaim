@@ -37,16 +37,16 @@ Parallel human track (not Codex): ground truth collection (`11`), accounts/keys,
 
 ---
 
-## Phase 2 — Live agent bridge (≈2.5 h)
+## Phase 2 - Free browser speech cascade (~2.5 h)
 **Tier A**
-- `app/live/bridge.py`: Gemini Live connect with `LIVE_MODEL`, audio in/out, input/output transcription, barge-in, **context window compression (sliding window)**, **session resumption** (store the handle; reconnect on GoAway/drop), low-res frame forwarding at 1 fps.
-- `web/js/audio.js` + `audio-worklet.js`: mic → PCM16 16 kHz; playback of 24 kHz agent audio with interruption flush.
-- `app/server/ws_live.py` and the protocol in `06` §5.1.
-- `app/live/tools.py`: `set_locale`, `start_sweep`, `end_sweep`, `get_sweep_status` (returns stub data for now), `record_user_statement`, `mark_landmark`, `get_packet_summary` (stub). All `NON_BLOCKING`. Scheduling rules from `04` §5.
-- `app/prompts/agent_system.md`: full system instruction per `04` §5 and `06` §7.
-- Transcript to `transcript.jsonl`; tool calls to `events.jsonl`.
+- Browser `SpeechIn` uses Web Speech API (`en-IN`, continuous/interim), sends final text only; `SpeechOut` uses browser speech synthesis with echo protection and a Tap to interrupt control.
+- `app/live/agent.py` calls `AGENT_MODEL` with low thinking, 20 s deadline, bounded history, optional selected 768px frames, documented tools, and safe fallback. `VISION_MODEL` remains outside the conversation loop.
+- `app/live/client.py` provides the `LlmClient` protocol and fake seam; model-specific pacing and bounded 429 backoff are configured in YAML.
+- `app/server/ws_live.py` parses text/frame/control messages, debounces finals, filters TTS echo, persists transcript and tool events, and supports priority cues.
+- Preserve `scripts/check_flash.py`; `check-llm` benchmarks one call to each configured model.
+- Tests cover tools, fake agent tool-call flow, cues, echo guard, rate limiting, and protocol parsing.
 
-**Done when:** you can hold a 4-minute conversation with the camera on and it doesn't drop (proves compression). Saying "I'm in India" triggers `set_locale(IN, INR)`. Saying "that's a print" logs a user statement with a frame seq. Killing Wi-Fi for 5 s recovers.
+**Done when:** on a phone over HTTPS, one Start tap starts capture and the agent on one sweep ID. Spoken final text gets a spoken response; cues interrupt regular replies; the interrupt button stops TTS; unsupported recognition exposes typed input. No microphone audio is sent to the server.
 
 ---
 

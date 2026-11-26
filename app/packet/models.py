@@ -289,6 +289,8 @@ class UserStatement(ContractModel):
     target_hint: str
     t_s: float = Field(ge=0)
     frame_ref: str | None = None
+    frame_seq: int | None = Field(default=None, ge=0)
+    value: str | None = None
     resolved_to: list[str] = Field(default_factory=list)
     applied_effect: str | None = None
 

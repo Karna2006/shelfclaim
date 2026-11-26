@@ -12,6 +12,8 @@
       <header class="topbar">
         <strong>ShelfClaim</strong>
         <span id="connection" class="connection" aria-live="polite">Ready</span>
+        <span id="agent-connection" class="connection" aria-live="polite">Agent idle</span>
+        <span id="mic-status" class="mic-status" data-state="idle" aria-live="polite">Mic: idle</span>
         <time id="timer">00:00</time>
       </header>
 
@@ -33,6 +35,22 @@
         <p id="cards-seen">Cards seen: none</p>
         <p id="message">Start a sweep when you are ready.</p>
       </section>
+
+      <form id="typed-fallback" class="typed-fallback" hidden>
+        <label for="typed-message">Type a message</label>
+        <div><input id="typed-message" autocomplete="off" /><button type="submit">Send</button></div>
+      </form>
+      <aside id="mic-blocked" class="notice mic-blocked" role="alert" hidden>
+        <span>Microphone blocked — tap the lock icon → Permissions → Microphone → Allow, then tap Retry</span>
+        <button id="retry-mic" type="button">Retry mic</button>
+      </aside>
+      <p id="voice-guidance" class="notice" hidden>Use Chrome for voice. You can type messages below.</p>
+      <button id="interrupt-button" class="interrupt-button" type="button" hidden>Tap to interrupt</button>
+
+      <details class="debug-panel">
+        <summary>debug</summary>
+        <ol id="debug-events" aria-live="polite"></ol>
+      </details>
 
       <footer class="controls">
         <button id="start-button" type="button">Start sweep</button>

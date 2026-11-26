@@ -33,6 +33,7 @@ button { font: inherit; }
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   min-height: 44px;
   gap: 12px;
   font-size: 14px;
@@ -41,6 +42,9 @@ button { font: inherit; }
 .connection, #timer { color: #a1a1aa; font-variant-numeric: tabular-nums; }
 .connection[data-state="connected"] { color: #16a34a; }
 .connection[data-state="disconnected"] { color: #d97706; }
+.mic-status { padding: 4px 7px; border: 1px solid #52525b; border-radius: 999px; color: #d4d4d8; font-size: 12px; white-space: nowrap; }
+.mic-status[data-state="listening"] { border-color: #16a34a; color: #86efac; }
+.mic-status[data-state="blocked"], .mic-status[data-state="error"] { border-color: #dc2626; color: #fca5a5; }
 
 .camera-panel {
   position: relative;
@@ -106,6 +110,23 @@ video {
 .controls button:first-child { border-color: #16a34a; background: #14532d; }
 .controls button:disabled { opacity: 0.45; }
 .controls button:focus-visible { outline: 2px solid #f5f5f5; outline-offset: 2px; }
+
+.typed-fallback { display: grid; gap: 8px; color: #d4d4d8; font-size: 14px; }
+.typed-fallback[hidden], .interrupt-button[hidden] { display: none; }
+.typed-fallback div { display: flex; gap: 8px; }
+.typed-fallback input { min-width: 0; flex: 1; min-height: 48px; padding: 10px; border: 1px solid #52525b; border-radius: 8px; background: #18181b; color: #fff; font: inherit; }
+.typed-fallback button, .interrupt-button { min-height: 52px; border: 1px solid #71717a; border-radius: 10px; padding: 10px 16px; background: #27272a; color: #fff; font: inherit; font-weight: 700; touch-action: manipulation; }
+.interrupt-button { width: 100%; min-height: 64px; border-color: #f59e0b; background: #78350f; font-size: 18px; }
+
+.notice { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 10px 12px; border: 1px solid #d97706; border-radius: 10px; background: #29200f; color: #fde68a; font-size: 13px; line-height: 1.4; }
+.notice[hidden] { display: none; }
+.mic-blocked { border-color: #dc2626; background: #2a1111; color: #fecaca; }
+.mic-blocked button { flex: 0 0 auto; min-height: 44px; padding: 8px 12px; border: 1px solid #f87171; border-radius: 8px; background: #7f1d1d; color: #fff; font-weight: 700; touch-action: manipulation; }
+.debug-panel { color: #a1a1aa; font-size: 12px; }
+.debug-panel summary { display: inline-block; min-height: 32px; padding: 6px 2px; color: #a1a1aa; text-decoration: underline; cursor: pointer; touch-action: manipulation; }
+.debug-panel ol { display: grid; gap: 4px; max-height: 170px; overflow: auto; margin: 4px 0 0; padding: 8px 8px 8px 28px; border: 1px solid #3f3f46; border-radius: 8px; background: #141416; }
+.debug-panel li { padding-left: 2px; overflow-wrap: anywhere; }
+.debug-panel time { margin-right: 7px; color: #71717a; font-variant-numeric: tabular-nums; }
 
 @media (orientation: landscape) {
   .sweep-screen { grid-template-rows: auto minmax(0, 1fr) auto; width: min(100%, 760px); }

@@ -8,7 +8,7 @@ Rule: **boring, explainable, few moving parts.** Every choice below has a one-li
 |---|---|---|
 | Client | **Single-page vanilla HTML + JS + CSS** (no build step), served by FastAPI | Nothing to install. Runs in mobile Chrome/Safari. Visual polish isn't scored |
 | Server | **Python 3.12, FastAPI + Uvicorn**, WebSockets | Same as the reference, so its bridge pattern is easy to adapt. Async I/O for many API calls |
-| Live voice + vision | **Gemini Live** via `google-genai` SDK (`LIVE_MODEL`, default `gemini-3.8-live`) | The brief's reference uses it. Native audio, barge-in, non-blocking function calls |
+| Live voice + vision | **Free browser speech cascade**: Web Speech API + browser `speechSynthesis`; `AGENT_MODEL` (`gemini-3.1-flash-lite`) via `google-genai` function calling | Avoids Gemini Live billing. Only final transcripts and selected low-resolution frames reach the server; raw microphone audio stays in the browser |
 | Offline vision (detection + spine transcription + item description) | **Gemini Flash** (`VISION_MODEL`, default `gemini-3.8-flash`) with structured JSON output and 0–1000 normalised bounding boxes | Cheap, fast, good OCR on crops. One provider, one key |
 | Metric 3D geometry | **MapAnything** (metric multi-view feed-forward reconstruction) on a serverless GPU (**Modal**). Fallback **VGGT-1B** (up-to-scale, scaled by markers) | Camera poses plus dense depth from ~40–80 frames in seconds. Metric output gives a second scale anchor |
 | Metric anchor | **OpenCV ArUco** (`cv2.aruco`) printed scale cards. Cross-checks: known shelf model dimensions, book-format priors | Deterministic and explainable. The brief explicitly allows reference objects and known shelf dimensions |
@@ -59,19 +59,19 @@ dev = ["pytest>=8", "pytest-asyncio>=0.23", "ruff>=0.5", "respx>=0.21"]
 
 GPU-side dependencies (MapAnything / VGGT, torch) live **only** in the Modal image definition in `gpu/modal_recon.py`. They never enter the main environment. That keeps the local install light.
 
-> Version note: use the latest `google-genai`. Model IDs change often, so they are **env vars**, never hardcoded. Before Phase 3, check the current Live and Flash model IDs in Google AI Studio and put them in `.env`.
+> Version note: use the current `google-genai`. Agent and vision model IDs are configurable with `AGENT_MODEL` and `VISION_MODEL`; run `check-llm` to measure latency for both. `LIVE_MODEL` is an optional legacy variable and is unused.
 
 ## 3. Frontend
 
-- `web/index.html`, `web/app.js`, `web/audio-worklet.js`, `web/styles.css`. ES modules. No framework, no bundler.
-- APIs used: `getUserMedia` (camera `facingMode: "environment"`, ideal 1920×1080 at 30 fps, fallback 1280×720 at 30 fps; request continuous focus and exposure when track capabilities allow), `AudioWorklet` (mic to PCM16 16 kHz), `AudioContext` playback at 24 kHz, `DeviceMotionEvent` and `DeviceOrientationEvent` (iOS needs `DeviceMotionEvent.requestPermission()` on a tap), `OffscreenCanvas`/`canvas.toBlob` for JPEG encoding, `navigator.wakeLock` (keeps the screen on during the sweep).
-- Two WebSockets: `/ws/live` (audio + low-res frames + agent events) and `/ws/capture` (hi-res JPEG binary frames + motion JSON). They're separate so a heavy frame upload never delays voice.
+- `web/index.html`, `web/js/*.js`, `web/styles.css`. ES modules. No framework, no bundler.
+- APIs used: `getUserMedia` for video only (`audio:false`, environment camera, ideal 1920x1080 at 30 fps, fallback 1280x720 at 30 fps; request continuous focus and exposure where supported), Web Speech recognition (`en-IN`, continuous/interim; send final results only), browser `speechSynthesis`, `DeviceMotionEvent` and `DeviceOrientationEvent`, `canvas.toBlob`, and `navigator.wakeLock`. If recognition is unavailable, show typed input.
+- Two WebSockets: `/ws/live/{sweep_id}` (final text, selected 768px JPEGs, agent replies and cues) and `/ws/capture?sweep_id=` (hi-res JPEG binary frames + motion JSON). They are separate so a heavy frame upload never delays agent turns.
 
 ## 4. Models: who does what
 
 | Job | Model | Input | Output | Guardrail |
 |---|---|---|---|---|
-| Conversation, sweep direction, questions, corrections | `LIVE_MODEL` (Gemini Live) | Mic audio, ~768px frames at 1 fps, monitor cues (text), tool results | Speech, tool calls | Never states counts, prices or IDs it didn't get from a tool result. Context compression on |
+| Conversation, sweep direction, questions, corrections | `AGENT_MODEL` (default `gemini-3.1-flash-lite`, low thinking) | Final text, selected ~768px frames, cues, tool results | Reply text, tool calls | 20 s timeout; never states unsupported prices, counts, dimensions or titles |
 | Spine/shelf/item detection | `VISION_MODEL` (Flash) | 1080p keyframe | JSON: boxes (0–1000), class, rotation, shelf-row hints | Boxes only. No titles at this stage |
 | Spine transcription | `VISION_MODEL` | Upright spine crops (batch of ≤12 per call) | JSON: verbatim text lines, legibility 0–1, `unreadable` flag | Prompt forbids inference. Output text must be substring-plausible (validated) |
 | Candidate re-rank (optional) | `VISION_MODEL` | Transcribed text + ≤8 catalogue candidates (IDs) | Chosen candidate ID or `none` | Can only return an ID from the list. Final accept by numeric threshold in code |
@@ -100,7 +100,7 @@ The capture path uses OpenCV Zoo's YuNet `face_detection_yunet_2023mar.onnx` at 
 
 | Service | What you need | Free tier / cost | Notes |
 |---|---|---|---|
-| Google AI Studio | `GOOGLE_API_KEY` | Free tier exists; paid usage per token | Check Live model availability for your key |
+| Google AI Studio | `GOOGLE_API_KEY` | Free tier exists; paid usage per token | Agent uses text generation; check configured Flash model access |
 | SerpApi | `SERPAPI_API_KEY` | 250 searches/month free; Starter plan is paid | ~70 searches per uncached sweep. **Cache everything**. Consider one month of Starter if you iterate a lot |
 | eBay Developers Program | `EBAY_CLIENT_ID`, `EBAY_CLIENT_SECRET` (production keyset) | Free | Client-credentials OAuth token, scope `https://api.ebay.com/oauth/api_scope`. Keyset activation can take a few hours, so apply first |
 | Modal | `modal token new` (stored in `~/.modal.toml`) | Monthly free credits | GPU `L4` or `A10G`. Warm the container at sweep start |
@@ -113,12 +113,14 @@ The capture path uses OpenCV Zoo's YuNet `face_detection_yunet_2023mar.onnx` at 
 
 | Var | Default | Purpose |
 |---|---|---|
-| `GOOGLE_API_KEY` | — | Gemini (Live + Flash) |
+| `GOOGLE_API_KEY` | none | Gemini Flash agent and vision calls |
 | `GOOGLE_GENAI_USE_VERTEXAI` | `False` | AI Studio mode |
-| `LIVE_MODEL` | `gemini-3.8-live` | Live conversation model (verify current ID) |
-| `VISION_MODEL` | `gemini-3.8-flash` | Detection, transcription, items (verify current ID) |
+| `AGENT_MODEL` | `gemini-3.1-flash-lite` | Text conversation and tool calling; low thinking; 20 s timeout |
+| `LIVE_MODEL` | unused | Optional legacy variable; browser speech cascade does not read it |
+| Rate limits | `config/settings.yaml` | Per-model request pacing, 429 retries, and bounded exponential backoff |
+| `VISION_MODEL` | `gemini-3.8-flash` | Offline detection, transcription, and item description; not used in conversation loop |
 | `CHECKER_MODEL` | empty | Stretch: independent checker |
-| `LIVE_VOICE` | `Kore` | Voice |
+
 | `SERPAPI_API_KEY` | — | New prices |
 | `SHOPPING_PROVIDER` | `serpapi` | Swap point |
 | `EBAY_CLIENT_ID` / `EBAY_CLIENT_SECRET` | — | Used prices |

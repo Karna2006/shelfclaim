@@ -39,6 +39,18 @@ export async function openCamera(video) {
         canvas.toBlob((blob) => (blob ? resolve(blob) : reject(new Error("JPEG capture failed"))), "image/jpeg", quality);
       });
     },
+    async captureLiveJpeg(maxSide = 768, quality = 0.6) {
+      const ratio = Math.min(1, maxSide / Math.max(video.videoWidth, video.videoHeight));
+      const width = Math.max(1, Math.round(video.videoWidth * ratio));
+      const height = Math.max(1, Math.round(video.videoHeight * ratio));
+      const liveCanvas = document.createElement("canvas");
+      liveCanvas.width = width;
+      liveCanvas.height = height;
+      liveCanvas.getContext("2d", { alpha: false }).drawImage(video, 0, 0, width, height);
+      return new Promise((resolve, reject) => {
+        liveCanvas.toBlob((blob) => (blob ? resolve(blob) : reject(new Error("Live JPEG capture failed"))), "image/jpeg", quality);
+      });
+    },
     stop() {
       stream.getTracks().forEach((trackToStop) => trackToStop.stop());
       video.srcObject = null;

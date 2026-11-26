@@ -10,6 +10,10 @@ const verdictText = {
 
 export function createUi() {
   const connection = document.querySelector("#connection");
+  const agentConnection = document.querySelector("#agent-connection");
+  const micStatus = document.querySelector("#mic-status");
+  const micBlocked = document.querySelector("#mic-blocked");
+  const voiceGuidance = document.querySelector("#voice-guidance");
   const timer = document.querySelector("#timer");
   const qcPill = document.querySelector("#qc-pill");
   const speedValue = document.querySelector("#speed-value");
@@ -51,6 +55,16 @@ export function createUi() {
       connection.textContent = state === "connected" ? "Connected" : state === "connecting" ? "Connecting" : "Offline";
       connection.dataset.state = state;
     },
+    setAgentConnection(state) {
+      agentConnection.textContent = state === "connected" ? "Voice agent" : state === "connecting" ? "Agent connecting" : "Agent offline";
+      agentConnection.dataset.state = state;
+    },
+    setMicStatus(state) {
+      micStatus.textContent = `Mic: ${state}`;
+      micStatus.dataset.state = state === "listening" ? "listening" : state === "blocked" ? "blocked" : state.startsWith("error:") ? "error" : "idle";
+    },
+    showMicBlocked(show = true) { micBlocked.hidden = !show; },
+    showVoiceGuidance(show = true) { voiceGuidance.hidden = !show; },
     setMessage(value) { message.textContent = value; },
     resetCards() {
       markerIds.clear();

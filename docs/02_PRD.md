@@ -38,7 +38,7 @@ A live voice-and-camera agent that guides a policyholder through one walk of the
 ## 4. MVP feature list (strictly 5)
 
 ### F1. Live sweep agent (voice + camera, directs the capture)
-- Real-time two-way voice (Gemini Live) with the camera on, in a mobile browser.
+- Real-time two-way voice in a mobile browser using Web Speech recognition and browser speech synthesis, with Gemini Flash function calling for conversation. This cascade avoids Gemini Live billing; recognized final text and selected low-resolution frames reach the server, never raw microphone audio.
 - Greets the user, confirms country and currency, explains the sweep in 1–2 sentences, asks them to place the scale cards (if not placed).
 - **Capture monitor** (deterministic): per-frame blur, glare, exposure and speed scores, plus a coverage map (shelf rows seen, room corners seen, ceiling seen). It pushes cues to the agent, which says them out loud during the pass ("Slow down a little", "Step closer to the top shelf on the left, I can't read those spines", "Tilt up to the ceiling line once").
 - Asks questions it can't answer from video ("Is that portrait an original or a print?").
