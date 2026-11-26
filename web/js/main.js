@@ -44,7 +44,7 @@ async function releaseWakeLock() {
 
 function setupSpeech() {
   speechIn = createSpeechIn({
-    onFinal: (text) => { sendSpeechActivity(false); sendUserText(text); },
+    onFinal: (text, forcedFinal) => { sendSpeechActivity(false); sendUserText(text, forcedFinal); },
     onInterim: () => sendSpeechActivity(true),
     onUnsupported: (reason) => {
       typedFallback.hidden = false;
@@ -59,7 +59,7 @@ function setupSpeech() {
     onStatus: (state) => ui.setMicStatus(state),
     onEvent: (name, detail) => {
       logEvent("speech", `${name}: ${detail}`);
-      if (/^(onstart|onend|onerror|start error|restart|forced-final|unsupported browser)$/i.test(name)) {
+      if (/^(onstart|onend|onerror|start error|restart|forced-final|late-final-ignored|unsupported browser|paused|resume requested|tts-start|tts-end)$/i.test(name)) {
         if (liveSocket) liveSocket.sendSpeechEvent(name, detail, sweepTimeMs());
         else pendingSpeechEvents.push({ name, detail });
       }
@@ -68,7 +68,12 @@ function setupSpeech() {
   speechOut = createSpeechOut({
     pauseInput: () => speechIn?.pause(),
     resumeInput: () => { if (active) speechIn?.resume(); },
-    onSpeakingChange: (speaking) => { interruptButton.hidden = !speaking; },
+    onSpeakingChange: (speaking, kind) => {
+      interruptButton.hidden = !speaking;
+      if (speaking) ui.setAgentState("speaking");
+      else if (ui.getAgentState() === "speaking") ui.setAgentState("listening");
+      if (kind) liveSocket?.sendSpeechEvent(speaking ? "tts-start" : "tts-end", kind, sweepTimeMs());
+    },
   });
   if (speechIn.supported) {
     typedFallback.hidden = true;
@@ -76,13 +81,14 @@ function setupSpeech() {
   }
 }
 
-function sendUserText(text) {
+function sendUserText(text, forcedFinal = false) {
+  ui.setAgentState("thinking");
   if (!liveSocket) {
-    pendingUserTexts.push(text);
+    pendingUserTexts.push({ text, forcedFinal });
     logEvent("live ws", "queued final text; socket not created yet");
     return;
   }
-  liveSocket.sendFinalText(text, sweepTimeMs());
+  liveSocket.sendFinalText(text, sweepTimeMs(), forcedFinal);
 }
 
 function sendSpeechActivity(speaking) {
@@ -146,8 +152,8 @@ async function startSweep() {
     if (!response.ok) throw new Error(`Sweep creation failed (${response.status})`);
     const sweep = await response.json();
     options = { ...sweep.capture, hires_fps: sweep.hires_fps };
-    speechIn?.setForceFinalAfter?.(sweep.interim_force_final_ms ?? 8000);
-    speechOut?.setBargeInMode(sweep.barge_in_mode === true);
+    speechIn?.setForceFinalAfter?.(sweep.interim_force_final_ms ?? 1200);
+    speechOut?.setEarphonesMode(sweep.earphones_mode !== false);
     options.live_frame_max_side = sweep.live_frame_max_side;
     options.live_frame_quality = sweep.live_frame_quality;
     ui.setSpeedLimit(options.speed_max_dps);
@@ -171,7 +177,7 @@ async function startSweep() {
     captureStartedAt = performance.now();
     lastFrameAt = captureStartedAt - options.frame_min_interval_ms;
     lastLiveFrameAt = captureStartedAt - 1000;
-    pendingUserTexts.splice(0).forEach((text) => liveSocket.sendFinalText(text, sweepTimeMs()));
+    pendingUserTexts.splice(0).forEach(({ text, forcedFinal }) => liveSocket.sendFinalText(text, sweepTimeMs(), forcedFinal));
     active = true;
     ui.setMessage(`Sweep ${sweep.sweep_id}: capturing ${width}×${height}. Move slowly along each shelf.`);
     recordingTimer = ui.setRecording(Date.now());
@@ -190,7 +196,16 @@ async function startSweep() {
 function handleAgentMessage(message) {
   if (message.type === "agent_text") speechOut?.speak(message.text);
   if (message.type === "cue") speechOut?.speakCue(message.text, message.priority ?? 10);
-  if (message.type === "user_text_accepted") speechOut?.cancel();
+  if (message.type === "user_text_accepted") {
+    speechOut?.cancel();
+    ui.setYouSaid(message.text || "");
+    ui.setAgentState("thinking");
+  }
+  if (message.type === "echo_dropped") {
+    ui.setYouSaid(message.cleaned_text || "");
+    ui.setAgentState(speechOut?.isSpeaking() ? "speaking" : "listening");
+  }
+  if (message.type === "state") ui.setAgentState(message.state);
   if (message.type === "inventory") ui.renderInventory(message);
   if (message.type === "packet_ready") ui.showReportLink(message.report_url);
   if (message.type === "control" && message.action === "stop_capture") stopSweep();

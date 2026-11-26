@@ -31,6 +31,14 @@ class LiveSessionContext:
     locale_confirmed: bool = False
     capture_stop_requested: bool = False
     user_speaking: bool = False
+    last_user_speech_at: float | None = None
+    agent_turn_pending: bool = False
+    agent_reply_active: bool = False
+    tts_speaking: bool = False
+    earphones_mode: bool = True
+    cue_max_words: int = 8
+    cue_suppress_after_user_s: float = 8
+    last_cleaned_text: str = ""
     packet_ready_sent: bool = False
     agent: AgentLoop | None = None
     websocket: WebSocket | None = None
@@ -45,12 +53,23 @@ class LiveSessionRegistry:
         self._sessions: dict[str, LiveSessionContext] = {}
 
     def create(
-        self, sweep_id: str, sweep_dir: Path, echo_window_s: float, echo_ratio: int
+        self,
+        sweep_id: str,
+        sweep_dir: Path,
+        echo_window_s: float,
+        echo_ratio: int,
+        *,
+        earphones_mode: bool = True,
+        cue_max_words: int = 8,
+        cue_suppress_after_user_s: float = 8,
     ) -> LiveSessionContext:
         context = LiveSessionContext(
             sweep_id=sweep_id,
             sweep_dir=sweep_dir,
             echo_guard=EchoGuard(echo_window_s, echo_ratio),
+            earphones_mode=earphones_mode,
+            cue_max_words=cue_max_words,
+            cue_suppress_after_user_s=cue_suppress_after_user_s,
         )
         self._sessions[sweep_id] = context
         return context

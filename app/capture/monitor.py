@@ -32,6 +32,7 @@ class CaptureMonitor:
         self.frames: deque[FrameRecord] = deque()
         self.last_sent_s = float("-inf")
         self.last_by_type: dict[str, float] = {}
+        self.sustained_since_ms: dict[str, int] = {}
 
     def observe(self, frame: FrameRecord, *, user_speaking: bool = False) -> CueCandidate | None:
         self.frames.append(frame)
@@ -39,6 +40,14 @@ class CaptureMonitor:
         while self.frames and self.frames[0].t_ms < cutoff:
             self.frames.popleft()
         candidate = self._candidate()
+        if candidate is not None and candidate.kind in {"LOW_LIGHT", "BLURRY"}:
+            other_kind = "BLURRY" if candidate.kind == "LOW_LIGHT" else "LOW_LIGHT"
+            self.sustained_since_ms.pop(other_kind, None)
+            started = self.sustained_since_ms.setdefault(candidate.kind, frame.t_ms)
+            if frame.t_ms - started < self.cues.low_light_blurry_sustain_s * 1000:
+                return None
+        else:
+            self.sustained_since_ms.clear()
         if candidate is None or user_speaking:
             return None
         now_s = frame.t_ms / 1000

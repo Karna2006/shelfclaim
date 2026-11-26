@@ -28,9 +28,9 @@ export function createLiveSocket(sweepId, callbacks = {}) {
       socket.addEventListener("open", resolve, { once: true });
       socket.addEventListener("error", () => reject(new Error("Agent connection failed")), { once: true });
     }),
-    sendFinalText(text, tMs) {
+    sendFinalText(text, tMs, forcedFinal = false) {
       if (!text.trim()) return;
-      const packet = JSON.stringify({ type: "user_text", text: text.trim(), t_ms: tMs });
+      const packet = JSON.stringify({ type: "user_text", text: text.trim(), t_ms: tMs, forced_final: forcedFinal });
       if (socket.readyState === WebSocket.OPEN) {
         socket.send(packet);
         callbacks.onDebug?.("sent user_text");

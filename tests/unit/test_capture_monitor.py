@@ -10,10 +10,11 @@ def _frame(
     gyro: float = 2,
     exposure: float = 100,
     glare: float = 0,
+    t_ms: int | None = None,
 ):
     return FrameRecord(
         seq=seq,
-        t_ms=seq * 500,
+        t_ms=seq * 500 if t_ms is None else t_ms,
         path=f"frames/{seq}.jpg",
         w=1080,
         h=1920,
@@ -44,3 +45,12 @@ def test_monitor_low_light_suppressed_while_user_speaks() -> None:
         assert result is None
     result = monitor.observe(_frame(6, verdict="low_light_blur", exposure=60))
     assert result is not None and result.kind == "LOW_LIGHT"
+
+
+def test_blurry_cue_requires_three_seconds_and_same_type_waits_thirty_seconds() -> None:
+    monitor = CaptureMonitor(CaptureSettings(), CueSettings())
+    assert monitor.observe(_frame(0, verdict="blurry")) is None
+    assert monitor.observe(_frame(6, verdict="blurry")) is not None
+
+    assert monitor.observe(_frame(30, verdict="blurry", t_ms=15_000)) is None
+    assert monitor.observe(_frame(66, verdict="blurry", t_ms=33_000)) is not None

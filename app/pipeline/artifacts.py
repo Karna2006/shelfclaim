@@ -44,7 +44,13 @@ class Event(ArtifactModel):
     t_ms: int = Field(ge=0)
     type: Literal[
         "cue_sent",
+        "cue_suppressed",
         "echo_dropped",
+        "transcript_cleaned",
+        "intent_routed",
+        "agent_reply",
+        "recognition_paused",
+        "recognition_resumed",
         "numeric_claim_blocked",
         "agent_fallback",
         "agent_response_diagnostics",

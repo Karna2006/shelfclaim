@@ -87,10 +87,13 @@ async def capture_socket(websocket: WebSocket, sweep_id: str) -> None:
                 if context is not None:
                     context.latest_capture_seq = result.record.seq
                     context.latest_client_t_ms = header.t_ms
-                    candidate = monitor.observe(result.record, user_speaking=context.user_speaking)
-                    if candidate is not None:
-                        from app.server.ws_live import send_cue
+                    from app.server.live_output import cue_suppression_reason, send_cue
 
+                    candidate = monitor.observe(
+                        result.record,
+                        user_speaking=cue_suppression_reason(context) is not None,
+                    )
+                    if candidate is not None:
                         await send_cue(
                             context,
                             candidate.text,

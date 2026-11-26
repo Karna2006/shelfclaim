@@ -21,6 +21,7 @@ class UserTextMessage(ClientMessage):
     type: Literal["user_text"]
     text: str = Field(min_length=1, max_length=4000)
     t_ms: int = Field(ge=0)
+    forced_final: bool = False
 
 
 class LiveFrameMessage(ClientMessage):

@@ -12,6 +12,8 @@ from typing import TYPE_CHECKING, Any
 
 import yaml
 from app.live.models import AgentMessage, AgentReply, LlmToolCall, LlmToolResult
+from app.pipeline.artifacts import Event
+from app.telemetry.events import write_event
 
 _INTENT_PATH = Path(__file__).resolve().parents[1] / "prompts" / "agent_intents.yaml"
 
@@ -49,6 +51,14 @@ async def route_intent(agent: AgentLoop, text: str) -> AgentReply | None:
         return None
     kind = intent["kind"]
     agent.last_model_used = "intent-router"
+    write_event(
+        agent.session.sweep_dir,
+        Event(
+            t_ms=agent.session.latest_client_t_ms,
+            type="intent_routed",
+            payload={"kind": kind, "route": "deterministic"},
+        ),
+    )
     if kind in {
         "print",
         "original",

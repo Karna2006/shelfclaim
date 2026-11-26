@@ -41,8 +41,9 @@ class CaptureSettings(BaseModel):
 class CueSettings(BaseModel):
     window_s: float = 2
     blurred_fraction: float = 0.40
-    min_gap_s: float = 6
-    same_type_gap_s: float = 15
+    min_gap_s: float = 12
+    same_type_gap_s: float = 30
+    low_light_blurry_sustain_s: float = Field(default=3, gt=0)
 
 
 class KeyframeSettings(BaseModel):
@@ -105,17 +106,18 @@ class AgentSettings(BaseModel):
     )
     retry_backoff_s: list[float] = Field(default_factory=lambda: [0.5, 1.5])
     filler_after_s: float = Field(default=2.5, gt=0)
-    interim_force_final_s: float = Field(default=8, gt=0)
+    interim_force_final_s: float = Field(default=1.2, gt=0)
     live_frame_max_side: int = Field(default=768, gt=0)
     live_frame_quality: float = Field(default=0.6, gt=0, le=1)
     frame_attachment_keywords: list[str] = Field(
         default_factory=lambda: ["this", "that", "here", "painting", "shelf", "book", "what is"]
     )
     frame_attachment_every_n_turns: int = Field(default=3, gt=0)
-    echo_window_s: float = Field(default=10, gt=0)
+    echo_window_s: float = Field(default=6, gt=0)
     echo_match_ratio: int = Field(default=85, ge=0, le=100)
-    barge_in_mode: bool = True
-    barge_in_mode: bool = True
+    earphones_mode: bool = True
+    cue_max_words: int = Field(default=8, gt=0)
+    cue_suppress_after_user_s: float = Field(default=8, ge=0)
 
 
 class ModelRateLimitSettings(BaseModel):

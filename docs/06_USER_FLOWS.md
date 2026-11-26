@@ -66,10 +66,10 @@ Agent readback numbers come **only** from the tool result (code-computed). The p
 Client to server:
 | type | fields | notes |
 |---|---|---|
-| `user_text` | `{type, text, t_ms}` | Final Web Speech result or typed fallback only; server merges finals within 800 ms |
+| `user_text` | `{type, text, t_ms, forced_final?}` | Final Web Speech result or typed fallback only; server merges finals within 800 ms. `forced_final` marks interim promoted after 1.2 s stable |
 | `live_frame` | `{type, data: base64 jpeg, t_ms}` | Low-resolution JPEG, 768 px maximum long edge and q 0.6 |
 | `speech_activity` | `{type, speaking}` | Interim recognition activity used only to suppress spoken cues |
-| `speech_event` | `{type, name, detail, t_ms}` | Recognition start/end/restart/error and forced-final diagnostics; no interim transcript text |
+| `speech_event` | `{type, name, detail, t_ms}` | Recognition start/end/restart/error, pause/resume, TTS state, and forced-final diagnostics |
 | `control` | `{type, action:"stop"}` | Close the live session |
 
 Server to client:
@@ -80,9 +80,10 @@ Server to client:
 | `state` | `{type, state:"listening"}` | Session status |
 | `control` | `{type, action:"stop_capture"}` | Agent requested capture stop |
 | `error` | `{type, message}` | Invalid or unsupported protocol message |
-| `user_text_accepted` / `echo_dropped` | `{type}` | Accepted final speech interrupts TTS; echo leaves it speaking |
+| `user_text_accepted` | `{type, text}` | Echo-cleaned transcript; accepted speech interrupts queued/playing speech |
+| `echo_dropped` | `{type, cleaned_text}` | Whole transcript was a recent spoken echo |
 
-The browser does not send audio. With `agent.barge_in_mode: true`, recognition stays active during speech synthesis; accepted non-echo final text cancels speech, while EchoGuard drops matching agent/cue lines at rapidfuzz ratio >= 85 within 10 seconds. The interrupt button cancels speech and listening continues. Interim text does not reach the LLM unless recognition has produced no final for eight seconds, when the latest interim is promoted to a final turn. Recognition lifecycle and error codes are logged as `speech_event` records.
+The browser does not send audio. With `agent.earphones_mode: true` (default), recognition stays active during speech synthesis and accepted user speech cancels playback. With earphones mode off, recognition pauses during TTS and resumes 300 ms after the utterance. The server strips matching recent TTS phrases from mixed transcripts using rapidfuzz partial ratio >= 85 over three-word windows in a six-second window; it drops a whole transcript only when at least four words match. The interrupt button remains available. If interim text stays unchanged for 1.2 seconds without a browser final, the browser submits it as `forced_final`. Recognition lifecycle, pause/resume, TTS state, and error codes are logged as `speech_event` records. Cues are limited to one every 12 seconds and one of the same type every 30 seconds; low-light and blurry cues require three seconds of sustained evidence and are suppressed during user speech, for eight seconds after speech, and until an agent reply finishes.
 
 ### 5.2 `/ws/capture`
 

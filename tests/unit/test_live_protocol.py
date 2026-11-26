@@ -19,6 +19,14 @@ def test_parse_final_text_protocol() -> None:
     assert message.text == "Hello"
 
 
+def test_parse_forced_final_text_protocol() -> None:
+    message = parse_live_message(
+        json.dumps({"type": "user_text", "text": "yes", "t_ms": 12, "forced_final": True})
+    )
+    assert isinstance(message, UserTextMessage)
+    assert message.forced_final is True
+
+
 def test_parse_speech_activity_protocol() -> None:
     message = parse_live_message(json.dumps({"type": "speech_activity", "speaking": True}))
     assert isinstance(message, SpeechActivityMessage)

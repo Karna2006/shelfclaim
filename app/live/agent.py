@@ -94,6 +94,19 @@ class AgentLoop:
                 if locale is not None:
                     self.last_model_used = "intent-router"
                     country, currency = locale
+                    write_event(
+                        self.session.sweep_dir,
+                        Event(
+                            t_ms=self.session.latest_client_t_ms,
+                            type="intent_routed",
+                            payload={
+                                "kind": "locale",
+                                "route": "deterministic",
+                                "country": country,
+                                "currency": currency,
+                            },
+                        ),
+                    )
                     tool_call = LlmToolCall(
                         name="set_locale",
                         arguments={"country": country, "currency": currency},

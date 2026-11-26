@@ -56,6 +56,9 @@ def create_app(
             app.state.settings.sweeps_dir / sweep.id,
             app.state.settings.config.agent.echo_window_s,
             app.state.settings.config.agent.echo_match_ratio,
+            earphones_mode=app.state.settings.config.agent.earphones_mode,
+            cue_max_words=app.state.settings.config.agent.cue_max_words,
+            cue_suppress_after_user_s=app.state.settings.config.agent.cue_suppress_after_user_s,
         )
         return {
             "sweep_id": sweep.id,
@@ -64,7 +67,7 @@ def create_app(
             "capture": app.state.settings.config.capture.model_dump(),
             "live_frame_max_side": app.state.settings.config.agent.live_frame_max_side,
             "live_frame_quality": app.state.settings.config.agent.live_frame_quality,
-            "barge_in_mode": app.state.settings.config.agent.barge_in_mode,
+            "earphones_mode": app.state.settings.config.agent.earphones_mode,
             "interim_force_final_ms": round(
                 app.state.settings.config.agent.interim_force_final_s * 1000
             ),

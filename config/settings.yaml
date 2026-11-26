@@ -23,8 +23,9 @@ capture:
 cues:
   window_s: 2
   blurred_fraction: 0.40
-  min_gap_s: 6
-  same_type_gap_s: 15
+  min_gap_s: 12
+  same_type_gap_s: 30
+  low_light_blurry_sustain_s: 3
 keyframes:
   min_novelty: 0.15
   detection_interval_s: 1.5
@@ -66,14 +67,16 @@ agent:
   model_chain: [gemini-3.1-flash-lite, gemini-3.5-flash-lite]
   retry_backoff_s: [0.5, 1.5]
   filler_after_s: 2.5
-  interim_force_final_s: 8
+  interim_force_final_s: 1.2
   live_frame_max_side: 768
   live_frame_quality: 0.60
   frame_attachment_keywords: [this, that, here, painting, shelf, book, "what is"]
   frame_attachment_every_n_turns: 3
-  echo_window_s: 10
+  echo_window_s: 6
   echo_match_ratio: 85
-  barge_in_mode: true
+  earphones_mode: true
+  cue_max_words: 8
+  cue_suppress_after_user_s: 8
 llm:
   default_rate_limit:
     requests_per_minute: 5

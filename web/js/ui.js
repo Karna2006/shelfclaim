@@ -21,6 +21,8 @@ export function createUi() {
   const speedFill = document.querySelector("#speed-fill");
   const cardsSeen = document.querySelector("#cards-seen");
   const message = document.querySelector("#message");
+  const youSaid = document.querySelector("#you-said");
+  const agentState = document.querySelector("#agent-state");
   const inventorySheet = document.querySelector("#inventory-sheet");
   const inventoryList = document.querySelector("#inventory-list");
   const reportLink = document.querySelector("#open-report");
@@ -33,6 +35,7 @@ export function createUi() {
   let fastSince = null;
   let lastQc = null;
   let fastOverride = false;
+  let currentAgentState = "listening";
 
   function displaySpeed(speed) {
     if (speed === null || speed === undefined || !Number.isFinite(speed)) {
@@ -68,6 +71,13 @@ export function createUi() {
     },
     showMicBlocked(show = true) { micBlocked.hidden = !show; },
     showVoiceGuidance(show = true) { voiceGuidance.hidden = !show; },
+    setYouSaid(text) { youSaid.textContent = text ? `You said: ${text}` : "You said: —"; },
+    setAgentState(state) {
+      currentAgentState = ["listening", "thinking", "speaking"].includes(state) ? state : "listening";
+      agentState.textContent = `Agent: ${currentAgentState}`;
+      agentState.dataset.state = currentAgentState;
+    },
+    getAgentState() { return currentAgentState; },
     setMessage(value) { message.textContent = value; },
     renderInventory(payload) {
       inventoryList.replaceChildren();

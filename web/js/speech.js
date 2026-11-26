@@ -1,4 +1,4 @@
-export function createSpeechIn({ onFinal, onUnsupported, onBlocked = () => {}, onInterim = () => {}, onStatus = () => {}, onEvent = () => {}, forceFinalAfterMs = 8000 }) {
+export function createSpeechIn({ onFinal, onUnsupported, onBlocked = () => {}, onInterim = () => {}, onStatus = () => {}, onEvent = () => {}, forceFinalAfterMs = 1200 }) {
   if (/SamsungBrowser/i.test(navigator.userAgent)) {
     onUnsupported?.("samsung-internet");
     onStatus("unsupported");
@@ -22,20 +22,28 @@ export function createSpeechIn({ onFinal, onUnsupported, onBlocked = () => {}, o
   let restartTimer = null;
   let forceFinalTimer = null;
   let interimText = "";
+  let lastForcedText = "";
+  let lastForcedAt = 0;
   function clearInterim() {
     clearTimeout(forceFinalTimer);
     forceFinalTimer = null;
     interimText = "";
   }
-  function scheduleForceFinal() {
-    if (forceFinalTimer || !interimText) return;
+  function scheduleForceFinal(text) {
+    if (!text) return;
+    if (text === lastForcedText && Date.now() - lastForcedAt < 5000) return;
+    if (text === interimText && forceFinalTimer) return;
+    interimText = text;
+    clearTimeout(forceFinalTimer);
     forceFinalTimer = window.setTimeout(() => {
       forceFinalTimer = null;
       const forced = interimText.trim();
       interimText = "";
       if (!forced) return;
-      onEvent("forced-final", "interim promoted after 8s without a final result");
-      onFinal(forced);
+      lastForcedText = forced;
+      lastForcedAt = Date.now();
+      onEvent("forced-final", `interim stable for ${forceFinalAfterMs}ms`);
+      onFinal(forced, true);
     }, forceFinalAfterMs);
   }
   const startNative = () => {
@@ -59,13 +67,16 @@ export function createSpeechIn({ onFinal, onUnsupported, onBlocked = () => {}, o
       if (!text) continue;
       if (result.isFinal) {
         clearInterim();
+        if (text === lastForcedText && Date.now() - lastForcedAt < 5000) {
+          onEvent("late-final-ignored", text);
+          continue;
+        }
         onEvent("final", text);
-        onFinal(text);
+        onFinal(text, false);
       } else {
-        interimText = text;
         onEvent("interim", text);
         onInterim(text);
-        scheduleForceFinal();
+        scheduleForceFinal(text);
       }
     }
   };
@@ -102,12 +113,12 @@ export function createSpeechIn({ onFinal, onUnsupported, onBlocked = () => {}, o
     start() { wanted = true; paused = false; onEvent("start requested", "SpeechRecognition.start()"); startNative(); },
     pause() { paused = true; clearTimeout(restartTimer); onStatus("paused (agent speaking)"); onEvent("paused", "agent speaking"); try { recognition.abort(); } catch {} },
     resume() { if (!wanted) return; paused = false; onEvent("resume requested", "speech ended"); startNative(); },
-    setForceFinalAfter(ms) { forceFinalAfterMs = Math.max(1000, ms); },
+    setForceFinalAfter(ms) { forceFinalAfterMs = Math.max(100, ms); },
     stop() { wanted = false; paused = true; clearTimeout(restartTimer); clearInterim(); onEvent("stopped", "sweep ended"); try { recognition.abort(); } catch {} },
   };
 }
 
-export function createSpeechOut({ onSpeakingChange = () => {}, pauseInput = () => {}, resumeInput = () => {}, bargeInMode = true } = {}) {
+export function createSpeechOut({ onSpeakingChange = () => {}, pauseInput = () => {}, resumeInput = () => {}, earphonesMode = true } = {}) {
   const synth = window.speechSynthesis;
   const queue = [];
   let active = false;
@@ -123,12 +134,17 @@ export function createSpeechOut({ onSpeakingChange = () => {}, pauseInput = () =
       ?? null;
   }
   function pump() {
-    if (!synth || active || queue.length === 0) {
+    if (!synth) {
+      queue.length = 0;
+      onSpeakingChange(false, current?.kind ?? null);
+      return;
+    }
+    if (active || queue.length === 0) {
       if (!active && queue.length === 0) {
-        onSpeakingChange(false);
+        onSpeakingChange(false, null);
         clearTimeout(resumeTimer);
         resumeTimer = window.setTimeout(() => {
-          if (!bargeInMode && !active && queue.length === 0) resumeInput();
+          if (!earphonesMode && !active && queue.length === 0) resumeInput();
         }, 300);
       }
       return;
@@ -138,8 +154,8 @@ export function createSpeechOut({ onSpeakingChange = () => {}, pauseInput = () =
     active = true;
     current = item;
     const token = ++serial;
-    if (!bargeInMode) pauseInput();
-    onSpeakingChange(true);
+    if (!earphonesMode) pauseInput();
+    onSpeakingChange(true, item.kind);
     const utterance = new SpeechSynthesisUtterance(item.text);
     utterance.voice = chooseVoice();
     utterance.lang = utterance.voice?.lang || "en-IN";
@@ -147,41 +163,51 @@ export function createSpeechOut({ onSpeakingChange = () => {}, pauseInput = () =
       if (token !== serial) return;
       active = false;
       current = null;
+      onSpeakingChange(false, item.kind);
       pump();
     };
     utterance.onend = finish;
     utterance.onerror = finish;
     synth.speak(utterance);
   }
-  function enqueue(text, priority = 0) {
+  function enqueue(text, priority = 0, kind = "cue") {
     if (!text?.trim()) return;
     clearTimeout(resumeTimer);
-    const item = { text: text.trim(), priority, order: Date.now() + Math.random() };
-    if (active && current && priority > current.priority) {
-      queue.push(current);
-      queue.push(item);
+    const item = { text: text.trim(), priority, kind, order: Date.now() };
+    if (kind === "cue" && active && current?.kind === "agent") return;
+    if (kind === "cue" && active && current?.kind === "cue" && priority > current.priority) {
       active = false;
       current = null;
       serial += 1;
       synth.cancel();
-      pump();
-      return;
     }
     queue.push(item);
     pump();
   }
   return {
-    setBargeInMode(enabled) { bargeInMode = Boolean(enabled); },
-    speak(text) { enqueue(text, 0); },
-    speakCue(text, priority = 10) { enqueue(text, priority); },
+    setEarphonesMode(enabled) { earphonesMode = Boolean(enabled); },
+    speak(text) {
+      for (let index = queue.length - 1; index >= 0; index -= 1) {
+        if (queue[index].kind === "cue") queue.splice(index, 1);
+      }
+      if (active && current?.kind === "cue") {
+        active = false;
+        current = null;
+        serial += 1;
+        synth?.cancel();
+      }
+      enqueue(text, 0, "agent");
+    },
+    speakCue(text, priority = 10) { enqueue(text, priority, "cue"); },
     cancel() {
       queue.length = 0;
       clearTimeout(resumeTimer);
+      const kind = current?.kind ?? null;
       serial += 1;
       active = false;
       current = null;
       synth?.cancel();
-      onSpeakingChange(false);
+      onSpeakingChange(false, kind);
       resumeInput();
     },
     isSpeaking() { return active || Boolean(synth?.speaking); },
