@@ -63,7 +63,10 @@ async def run_pipeline(
         "s09": s09_room.run,
         "s10": s10_assemble.run,
     }
-    for stage in _ORDER[: _ORDER.index(until) + 1]:
+    stages = list(_ORDER[: _ORDER.index(until) + 1])
+    if until != "s01" and (sweep_dir / "s01_detections.json").is_file():
+        stages.remove("s01")
+    for stage in stages:
         write_event(
             sweep_dir,
             Event(t_ms=0, type="stage_started", payload={"stage": stage, "backend": "off"}),

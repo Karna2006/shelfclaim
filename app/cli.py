@@ -9,7 +9,7 @@ from __future__ import annotations
 import asyncio
 import json
 from pathlib import Path
-from typing import Annotated
+from typing import Annotated, Any
 
 import cv2
 import typer
@@ -55,9 +55,9 @@ def replay(
     until: str | None = None,
     max_keyframes: Annotated[int | None, typer.Option("--max-keyframes", min=1, max=60)] = None,
 ) -> None:
-    """Run the sweep pipeline through S1, S6, or the final packet stage."""
-    if until not in {None, "s01", "s06", "s10"}:
-        raise typer.BadParameter("until must be s01, s06, or s10")
+    """Run the sweep pipeline through S1, S3, S6, or the final packet stage."""
+    if until not in {None, "s01", "s03", "s06", "s10"}:
+        raise typer.BadParameter("until must be s01, s03, s06, or s10")
     settings = load_settings()
     try:
         output = asyncio.run(
@@ -87,6 +87,8 @@ def replay(
     typer.echo(f"Pipeline reached {until or 's10'}: {output}")
     if (until or "s10") == "s01":
         _print_detection_keyframe_stats(sweep)
+    elif until == "s03":
+        _print_s03_counts(sweep)
 
 
 def _print_detection_keyframe_stats(sweep: Path) -> None:
@@ -99,6 +101,35 @@ def _print_detection_keyframe_stats(sweep: Path) -> None:
             f"{row.seq} | {row.model} | {row.latency_ms} | {row.spine_count} | "
             f"{row.shelf_board_count} | {row.item_count}"
         )
+
+
+def _print_s03_counts(sweep: Path) -> None:
+    document = json.loads((sweep / "s03_books_raw.json").read_text(encoding="utf-8"))
+    frame_paths = {frame.seq: frame.path for frame in list_frames(sweep)}
+    rows = _format_s03_count_rows(document, frame_paths)
+    typer.echo("unit | row | count | best_frame | candidate_min | candidate_max")
+    if not rows:
+        typer.echo("No unit rows formed: S1 did not detect complete shelf-unit rows.")
+        return
+    for row in rows:
+        typer.echo(row)
+
+
+def _format_s03_count_rows(document: dict[str, Any], frame_paths: dict[int, str]) -> list[str]:
+    formatted = []
+    for unit in document.get("units", []):
+        for row in unit.get("rows", []):
+            candidates = [candidate["count"] for candidate in row.get("candidate_counts", [])]
+            best_seq = row.get("best_frame_seq")
+            best_path = frame_paths.get(best_seq, "frame path unavailable")
+            best_frame = f"{best_seq} ({best_path})"
+            minimum = min(candidates) if candidates else "n/a"
+            maximum = max(candidates) if candidates else "n/a"
+            formatted.append(
+                f"{unit['unit']} | {row['row']} | {row['count']} | {best_frame} | "
+                f"{minimum} | {maximum}"
+            )
+    return formatted
 
 
 @app.command("debug-boxes")

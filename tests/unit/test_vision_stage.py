@@ -5,6 +5,7 @@ import json
 import cv2
 import numpy as np
 import pytest
+from app.cli import _format_s03_count_rows
 from app.packet.models import BBox
 from app.pipeline.artifacts import Detection, DetectionsDoc, FrameRecord
 from app.pipeline.orchestrator import run_pipeline
@@ -162,6 +163,31 @@ def test_best_frame_row_count_and_candidate_disagreement() -> None:
     assert result["review_queue"][0]["code"] == "count_disagreement_row"
 
 
+def test_s03_summary_reports_best_frame_and_candidate_range() -> None:
+    result = {
+        "units": [
+            {
+                "unit": "A",
+                "rows": [
+                    {
+                        "row": 1,
+                        "count": 2,
+                        "best_frame_seq": 4,
+                        "candidate_counts": [
+                            {"seq": 0, "count": 3},
+                            {"seq": 4, "count": 2},
+                        ],
+                    }
+                ],
+            }
+        ]
+    }
+
+    lines = _format_s03_count_rows(result, {4: "frames/f_000004.jpg"})
+
+    assert lines == ["A | 1 | 2 | 4 (frames/f_000004.jpg) | 2 | 3"]
+
+
 def test_marker_homography_measures_synthetic_spine() -> None:
     dimensions = measure_spine_bbox(
         BBox(x=120, y=110, w=20, h=100),
@@ -185,3 +211,26 @@ async def test_orchestrator_records_geometry_off(tmp_path) -> None:
     assert output.name == "s02_geometry.json"
     assert geometry["backend"] == "off"
     assert geometry["status"] == "skipped"
+
+
+@pytest.mark.asyncio
+async def test_orchestrator_reuses_existing_s1_for_s03(tmp_path) -> None:
+    class UnusedVision:
+        async def detect(self, image_bytes: bytes, model: str) -> VisionResponse:
+            raise AssertionError("existing S1 should be reused")
+
+    _make_sweep(tmp_path)
+    detections_path = tmp_path / "s01_detections.json"
+    detections_path.write_text(DetectionsDoc().model_dump_json(), encoding="utf-8")
+    settings = Settings(config=YamlSettings(), _env_file=None)
+
+    output = await run_pipeline(
+        tmp_path,
+        settings,
+        until="s03",
+        clients={"vision": UnusedVision()},
+    )
+
+    assert output.name == "s03_books_raw.json"
+    assert json.loads(output.read_text(encoding="utf-8"))["units"] == []
+    assert detections_path.is_file()
