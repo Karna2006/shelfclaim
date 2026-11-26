@@ -40,6 +40,7 @@ async def run_pipeline(
     until: str = "s10",
     price_limit: int = 10,
     max_keyframes: int | None = None,
+    max_books: int | None = None,
     clients: dict[str, object] | None = None,
 ) -> Path:
     """Run each stage once in order and update latency telemetry after completion."""
@@ -47,6 +48,8 @@ async def run_pipeline(
         raise ValueError(f"Unsupported pipeline stage: {until}")
     if max_keyframes is not None and max_keyframes < 1:
         raise ValueError("max_keyframes must be positive")
+    if max_books is not None and max_books < 1:
+        raise ValueError("max_books must be positive")
     selected_settings = settings.model_copy(update={"geometry_backend": "off"})
     context = StageContext(sweep_dir, selected_settings, Ledger(), clients or {})
     started = time.perf_counter()
@@ -56,8 +59,8 @@ async def run_pipeline(
         "s02": s02_geometry.run,
         "s03": s03_books.run,
         "s04": s04_measure.run,
-        "s05": s05_transcribe.run,
-        "s06": s06_identify.run,
+        "s05": lambda ctx: s05_transcribe.run(ctx, max_books=max_books),
+        "s06": lambda ctx: s06_identify.run(ctx, max_books=max_books),
         "s07": lambda ctx: s07_price_books.run(ctx, limit=price_limit),
         "s08": s08_items.run,
         "s09": s09_room.run,

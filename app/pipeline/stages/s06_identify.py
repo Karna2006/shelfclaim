@@ -18,19 +18,29 @@ from app.pipeline.context import StageContext
 from rapidfuzz import fuzz
 
 
-async def run(ctx: StageContext) -> Path:
+async def run(ctx: StageContext, *, max_books: int | None = None) -> Path:
     """Search catalogues for readable transcriptions and persist scored matches."""
+    if max_books is not None and max_books < 1:
+        raise ValueError("max_books must be positive")
     transcription_path = ctx.sweep_dir / "s05_transcriptions.json"
     if not transcription_path.is_file():
         raise FileNotFoundError("S5 transcriptions are required before catalogue matching")
-    raw = json.loads(transcription_path.read_text(encoding="utf-8"))
+    s03_path = ctx.sweep_dir / "s03_books_raw.json"
+    if not s03_path.is_file():
+        raise FileNotFoundError("S3 book clusters are required before catalogue matching")
+    transcriptions = json.loads(transcription_path.read_text(encoding="utf-8")).get("books", {})
+    book_rows = json.loads(s03_path.read_text(encoding="utf-8")).get("books", [])
+    if max_books is not None:
+        book_rows = book_rows[:max_books]
     injected = ctx.clients.get("catalogue")
     catalogue = (
         cast(CatalogueClient, injected) if injected else OpenLibraryGoogleBooks(ctx.settings)
     )
     semaphore = asyncio.Semaphore(5)
 
-    async def match(book_id: str, transcription: dict[str, Any]) -> tuple[str, dict[str, Any]]:
+    async def match(
+        book_id: str, transcription: dict[str, Any]
+    ) -> tuple[str, dict[str, Any], dict[str, str] | None]:
         title, author, publisher = _transcribed_fields(transcription)
         candidates = []
         if title:
@@ -79,7 +89,16 @@ async def run(ctx: StageContext) -> Path:
         return book_id, result, review
 
     matched = await asyncio.gather(
-        *(match(book_id, value) for book_id, value in raw.get("books", {}).items())
+        *(
+            match(
+                book["book_id"],
+                transcriptions.get(
+                    book["book_id"],
+                    {"views": [], "spine_text_raw": "", "legibility": 0},
+                ),
+            )
+            for book in book_rows
+        )
     )
     output_doc = {
         "books": {book_id: result for book_id, result, _ in matched},

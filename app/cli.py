@@ -54,6 +54,7 @@ def replay(
     sweep: Path,
     until: str | None = None,
     max_keyframes: Annotated[int | None, typer.Option("--max-keyframes", min=1, max=60)] = None,
+    limit_books: Annotated[int | None, typer.Option("--limit-books", min=1, max=1000)] = None,
 ) -> None:
     """Run the sweep pipeline through S1, S3, S6, or the final packet stage."""
     if until not in {None, "s01", "s03", "s06", "s10"}:
@@ -66,6 +67,7 @@ def replay(
                 settings,
                 until=until or "s10",
                 max_keyframes=max_keyframes,
+                max_books=limit_books,
             )
         )
     except Exception as exc:
@@ -89,6 +91,8 @@ def replay(
         _print_detection_keyframe_stats(sweep)
     elif until == "s03":
         _print_s03_counts(sweep)
+    elif until == "s06":
+        _print_s06_books(sweep, limit_books)
 
 
 def _print_detection_keyframe_stats(sweep: Path) -> None:
@@ -130,6 +134,33 @@ def _format_s03_count_rows(document: dict[str, Any], frame_paths: dict[int, str]
                 f"{minimum} | {maximum}"
             )
     return formatted
+
+
+def _print_s06_books(sweep: Path, limit: int | None) -> None:
+    transcriptions = json.loads(
+        (sweep / "s05_transcriptions.json").read_text(encoding="utf-8")
+    ).get("books", {})
+    identifications = json.loads(
+        (sweep / "s06_identification.json").read_text(encoding="utf-8")
+    ).get("books", {})
+    book_ids = list(identifications)
+    if limit is not None:
+        book_ids = book_ids[:limit]
+    typer.echo("book id | spine text read | identified title/author | confidence | status")
+    if not book_ids:
+        typer.echo("No S3 book rows to transcribe or identify.")
+        return
+    for book_id in book_ids:
+        transcription = transcriptions.get(book_id, {})
+        identification = identifications[book_id]
+        authors = identification.get("authors", [])
+        author_text = ", ".join(authors) if isinstance(authors, list) else str(authors)
+        title = identification.get("title", "")
+        title_author = " — ".join(value for value in (title, author_text) if value) or "—"
+        spine_text = transcription.get("spine_text_raw", "") or "—"
+        confidence = identification.get("id_confidence", 0)
+        status = identification.get("status", "unidentified")
+        typer.echo(f"{book_id} | {spine_text} | {title_author} | {confidence} | {status}")
 
 
 @app.command("debug-boxes")

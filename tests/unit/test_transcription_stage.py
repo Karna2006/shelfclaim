@@ -54,3 +54,24 @@ async def test_transcription_stage_batches_no_more_than_twelve_crops(tmp_path) -
 
     assert fake.batch_sizes == [12, 12, 2]
     assert len(json.loads(output.read_text(encoding="utf-8"))["books"]) == 13
+
+
+@pytest.mark.asyncio
+async def test_transcription_limit_keeps_empty_placeholder_for_unreadable_book(tmp_path) -> None:
+    books = [
+        {"book_id": "b_0001", "best_view": {"frame_ref": "missing.jpg", "bbox": {}}},
+        {"book_id": "b_0002", "best_view": {"frame_ref": "missing.jpg", "bbox": {}}},
+    ]
+    (tmp_path / "s03_books_raw.json").write_text(json.dumps({"books": books}), encoding="utf-8")
+    context = StageContext(
+        tmp_path,
+        Settings(config=YamlSettings(), _env_file=None),
+        Ledger(),
+    )
+
+    output = await run(context, max_books=1)
+
+    transcriptions = json.loads(output.read_text(encoding="utf-8"))["books"]
+    assert list(transcriptions) == ["b_0001"]
+    assert transcriptions["b_0001"]["spine_text_raw"] == ""
+    assert transcriptions["b_0001"]["views"] == []

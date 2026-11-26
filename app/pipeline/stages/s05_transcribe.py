@@ -15,16 +15,30 @@ from app.pipeline.context import StageContext
 from app.vision.transcription import CropInput, GeminiSpineTranscriber, SpineTranscriber
 
 
-async def run(ctx: StageContext) -> Path:
+async def run(ctx: StageContext, *, max_books: int | None = None) -> Path:
     """Write visible spine text using injected or configured transcription service."""
+    if max_books is not None and max_books < 1:
+        raise ValueError("max_books must be positive")
     s03 = ctx.sweep_dir / "s03_books_raw.json"
     if not s03.is_file():
         raise FileNotFoundError("S3 book clusters are required before transcription")
     raw = json.loads(s03.read_text(encoding="utf-8"))
-    jobs = _make_crops(ctx.sweep_dir, raw)
+    source_books = raw.get("books", [])
+    if max_books is not None:
+        source_books = source_books[:max_books]
+    books = {
+        book["book_id"]: {
+            "views": [],
+            "consensus_text": "",
+            "legibility": 0,
+            "spine_text_raw": "",
+        }
+        for book in source_books
+    }
+    jobs = _make_crops(ctx.sweep_dir, {"books": source_books})
     if not jobs:
         output = ctx.sweep_dir / "s05_transcriptions.json"
-        output.write_text('{"books": {}}\n', encoding="utf-8")
+        output.write_text(json.dumps({"books": books}, indent=2) + "\n", encoding="utf-8")
         return output
     transcriber_obj = ctx.clients.get("transcriber")
     transcriber = (
@@ -48,7 +62,6 @@ async def run(ctx: StageContext) -> Path:
     finally:
         if transcriber_obj is None:
             await transcriber.close()
-    books = {}
     for book_id, views in results.items():
         best = max(views, key=lambda view: (view["readable"], view["legibility"]))
         raw_text = " | ".join(line["text"] for line in best["lines"])

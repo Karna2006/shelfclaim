@@ -21,6 +21,9 @@ def test_catalogue_normalization_folds_accents_and_punctuation() -> None:
 
 @pytest.mark.asyncio
 async def test_unidentified_book_keeps_identity_fields_empty(tmp_path) -> None:
+    (tmp_path / "s03_books_raw.json").write_text(
+        json.dumps({"books": [{"book_id": "b_0001"}]}), encoding="utf-8"
+    )
     (tmp_path / "s05_transcriptions.json").write_text(
         json.dumps(
             {
@@ -44,3 +47,24 @@ async def test_unidentified_book_keeps_identity_fields_empty(tmp_path) -> None:
     assert book["status"] == "unidentified"
     assert (book["title"], book["authors"], book["edition"], book["isbn"]) == ("", [], "", "")
     assert book["id_confidence"] == 0
+
+
+@pytest.mark.asyncio
+async def test_missing_transcription_is_explicitly_unidentified(tmp_path) -> None:
+    (tmp_path / "s03_books_raw.json").write_text(
+        json.dumps({"books": [{"book_id": "b_0001"}]}), encoding="utf-8"
+    )
+    (tmp_path / "s05_transcriptions.json").write_text('{"books": {}}', encoding="utf-8")
+    context = StageContext(
+        tmp_path,
+        Settings(config=YamlSettings(), _env_file=None),
+        Ledger(),
+        {"catalogue": EmptyCatalogue()},
+    )
+
+    output = await run(context)
+
+    book = json.loads(output.read_text(encoding="utf-8"))["books"]["b_0001"]
+    assert book["status"] == "unidentified"
+    assert (book["title"], book["authors"], book["edition"], book["isbn"]) == ("", [], "", "")
+    assert book["spine_text_raw"] == ""
