@@ -1,0 +1,36 @@
+statements:
+  print:
+    phrases: [print, printed copy]
+    confirmation: "Okay, I recorded that as a print."
+  original:
+    phrases: [original]
+    confirmation: "Okay, I recorded that as an original."
+  first_edition:
+    phrases: [first edition]
+    confirmation: "Okay, I flagged that edition for review."
+  signed:
+    phrases: [signed, autograph]
+    confirmation: "Okay, I flagged the signed item for review."
+  rare:
+    phrases: [rare]
+    confirmation: "Okay, I flagged that item for review."
+  not_mine:
+    phrases: [not mine, aren't mine, are not mine, roommate's]
+    confirmation: "Okay, I marked that area as not yours."
+  exclude_region:
+    phrases: [skip that shelf, skip the shelf, skip shelf, exclude, leave out]
+    confirmation: "Okay, I marked that shelf to exclude."
+other:
+  done_phrases: ["i'm done", "im done", finished, "that's all", "thats all", all done]
+  count_phrases: [how many books, book count, count the books]
+  missed_phrases: [what did i miss, what have i missed, what rows are missing]
+  title_phrases: [which book is this, what book is this, identify this book]
+  price_phrases: [what's it worth, whats it worth, how much is it worth, price of this]
+  no_count: "I don't have a confirmed book count yet."
+  count: "I count {count} books so far."
+  no_gaps: "I don't see any rows marked for review."
+  coverage_unavailable: "I haven't checked shelf coverage yet. Have you captured all shelves and rows?"
+  gaps: "Please capture these rows before we finish: {rows}."
+  title: "I'll identify each book from its spine when we finish."
+  price: "I'll price everything from real sources when we finish."
+  done: "Okay, I'll finish this sweep now."

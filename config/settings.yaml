@@ -61,8 +61,12 @@ structure:
 agent:
   timeout_s: 20
   debounce_ms: 800
-  history_turns: 20
+  history_turns: 8
   max_tool_rounds: 5
+  model_chain: [gemini-3.1-flash-lite, gemini-3.5-flash-lite]
+  retry_backoff_s: [0.5, 1.5]
+  filler_after_s: 2.5
+  interim_force_final_s: 8
   live_frame_max_side: 768
   live_frame_quality: 0.60
   frame_attachment_keywords: [this, that, here, painting, shelf, book, "what is"]

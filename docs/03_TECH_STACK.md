@@ -115,7 +115,7 @@ The capture path uses OpenCV Zoo's YuNet `face_detection_yunet_2023mar.onnx` at 
 |---|---|---|
 | `GOOGLE_API_KEY` | none | Gemini Flash agent and vision calls |
 | `GOOGLE_GENAI_USE_VERTEXAI` | `False` | AI Studio mode |
-| `AGENT_MODEL` | `gemini-3.1-flash-lite` | Text conversation and tool calling; low thinking; 20 s timeout |
+| `AGENT_MODEL` | `gemini-3.1-flash-lite` | Text conversation and tool calling; low thinking; 20 s timeout; transient server retries and configured model fallback |
 | `LIVE_MODEL` | unused | Optional legacy variable; browser speech cascade does not read it |
 | Rate limits | `config/settings.yaml` | Per-model request pacing, 429 retries, and bounded exponential backoff |
 | `VISION_MODEL` | `gemini-3.5-flash-lite` | Offline detection, transcription, and item description; not used in conversation loop |

@@ -89,3 +89,4 @@ def test_sweep_status_reports_shelf_rows_and_provisional_counts(tmp_path: Path) 
     assert result["coverage"]["provisional_counts"] == [
         {"row": "A-1", "books": 7, "best_frame_seq": 4}
     ]
+    assert result["provisional_book_count"] == 7

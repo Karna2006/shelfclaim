@@ -7,13 +7,26 @@ Output: assistant text plus a capture-stop signal. Implements architecture §5.
 from __future__ import annotations
 
 import logging
-import re
 from collections import deque
 
 from app.live.client import LlmClient
+from app.live.intents import route_intent
 from app.live.models import AgentMessage, AgentReply, LlmToolCall, LlmToolResult
 from app.live.numeric_grounding import find_ungrounded_claims
+from app.live.resilience import generate_with_fallback
 from app.live.session import LiveSessionContext
+from app.live.text import (
+    deterministic_locale as _deterministic_locale,
+)
+from app.live.text import (
+    frame_marker as _frame_marker,
+)
+from app.live.text import (
+    limit_reply as _limit_reply,
+)
+from app.live.text import (
+    question_script as _question_script,
+)
 from app.live.tools import TOOL_SCHEMAS, ToolHandlers
 from app.live.transcript import TranscriptLine, append_transcript
 from app.pipeline.artifacts import Event
@@ -43,6 +56,7 @@ class AgentLoop:
         self._recent_tool_results: deque[object] = deque(maxlen=10)
         self._turn_count = 0
         self._blocks = 0
+        self.last_model_used = "scripted"
 
     async def greet(self) -> AgentReply:
         """Return the reviewed opening without calling the language model."""
@@ -60,7 +74,9 @@ class AgentLoop:
         self._turn_count += 1
         self.session.latest_user_text = text
         frame = frame_jpeg if should_attach_frame(text, self._turn_count, self.settings) else None
-        self._history.append(AgentMessage(role="user", text=text, image_jpeg=frame))
+        marker = _frame_marker(self.session.latest_capture_seq) if frame is not None else None
+        stored_text = f"{text}\n{marker}" if marker else text
+        self._history.append(AgentMessage(role="user", text=stored_text, image_jpeg=frame))
         self._trim_history()
         append_transcript(
             self.session.sweep_dir,
@@ -76,6 +92,7 @@ class AgentLoop:
             if not self.session.locale_confirmed:
                 locale = _deterministic_locale(text)
                 if locale is not None:
+                    self.last_model_used = "intent-router"
                     country, currency = locale
                     tool_call = LlmToolCall(
                         name="set_locale",
@@ -104,8 +121,12 @@ class AgentLoop:
                         self._history.append(AgentMessage(role="model", text=scripted_text))
                         self._trim_history()
                         return AgentReply(text=scripted_text, start_sweep_after_reply=True)
+            intent_reply = await route_intent(self, text)
+            if intent_reply is not None:
+                return intent_reply
             scripted_answer = _question_script(text, self.scripted_lines)
             if scripted_answer is not None:
+                self.last_model_used = "scripted"
                 self._history.append(AgentMessage(role="model", text=scripted_answer))
                 self._trim_history()
                 return AgentReply(text=scripted_answer)
@@ -135,15 +156,18 @@ class AgentLoop:
         history_before_turn = list(self._history)
         try:
             while True:
-                response = await self.client.generate(
-                    model=self.settings.agent_model,
+                self.last_model_used = self.settings.agent_model
+                response, model = await generate_with_fallback(
+                    self.client,
+                    self.settings,
+                    self.session.sweep_dir,
+                    self.session.latest_client_t_ms,
                     system_prompt=request_system_prompt,
                     history=list(self._history),
                     tools=TOOL_SCHEMAS,
-                    thinking_level="minimal",
-                    timeout_s=self.settings.config.agent.timeout_s,
                     max_output_tokens=max_output_tokens,
                 )
+                self.last_model_used = model
                 self._log_response_diagnostics(response.diagnostics)
                 request_system_prompt = self.system_prompt
                 if not response.tool_calls:
@@ -311,9 +335,32 @@ class AgentLoop:
         )
 
     def _trim_history(self) -> None:
-        max_messages = max(4, self.settings.config.agent.history_turns * 3)
-        while len(self._history) > max_messages:
-            self._history.popleft()
+        messages = list(self._history)
+        user_turns = [
+            index
+            for index, message in enumerate(messages)
+            if message.role == "user" and not message.tool_results
+        ]
+        keep_turns = self.settings.config.agent.history_turns
+        if len(user_turns) > keep_turns:
+            start = user_turns[-keep_turns]
+            if messages[start].tool_results and start > 0 and messages[start - 1].tool_calls:
+                start -= 1
+            messages = messages[start:]
+        max_messages = keep_turns * 4 + 4
+        while len(messages) > max_messages:
+            turns = [
+                index
+                for index, message in enumerate(messages)
+                if message.role == "user" and not message.tool_results
+            ]
+            if len(turns) > 1:
+                messages = messages[turns[1] :]
+            elif turns:
+                break
+            else:
+                messages.pop(0)
+        self._history = deque(messages)
 
 
 def should_attach_frame(text: str, turn_number: int, settings: Settings) -> bool:
@@ -323,51 +370,3 @@ def should_attach_frame(text: str, turn_number: int, settings: Settings) -> bool
     referenced = any(keyword.casefold() in normalized for keyword in keywords)
     every_n = settings.config.agent.frame_attachment_every_n_turns
     return referenced or turn_number % every_n == 0
-
-
-def _question_script(text: str, lines: ScriptedLines) -> str | None:
-    """Answer common title and price questions with reviewed, non-factual wording."""
-    normalized = text.casefold()
-    if any(word in normalized for word in ("price", "cost", "worth", "how much")):
-        return lines.price_question
-    title_phrases = ("which book", "what book", "title", "identify this book")
-    if any(word in normalized for word in title_phrases):
-        return lines.title_question
-    return None
-
-
-def _deterministic_locale(text: str) -> tuple[str, str] | None:
-    """Resolve clear opening answers without spending a model turn."""
-    tokens = re.findall(r"[a-z]+", text.casefold())
-    india = any(token in {"india", "rupees", "inr"} for token in tokens)
-    uk = any(token in {"uk", "pounds", "gbp"} for token in tokens)
-    if india and uk:
-        return None
-    if india:
-        return "IN", "INR"
-    if uk:
-        return "GB", "GBP"
-    affirmations = {"yes", "yeah", "yep", "correct", "haan", "ha", "sure"}
-    if tokens and tokens[0] in affirmations:
-        return "IN", "INR"
-    if tokens in (["right"], ["right", "yes"], ["that", "is", "right"]):
-        return "IN", "INR"
-    return None
-
-
-def _limit_reply(text: str) -> tuple[str, bool]:
-    """Keep replies within two complete sentences and thirty whitespace words."""
-    normalized = text.strip()
-    sentences = [
-        match.group(0).strip()
-        for match in re.finditer(r"[^.!?]+(?:[.!?]+|$)", normalized)
-        if match.group(0).strip()
-    ]
-    selected: list[str] = []
-    for sentence in sentences[:2]:
-        candidate = " ".join([*selected, sentence])
-        if len(candidate.split()) > 30:
-            break
-        selected.append(sentence)
-    limited = " ".join(selected) if selected else FALLBACK_LINE
-    return limited, limited != normalized

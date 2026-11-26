@@ -215,6 +215,15 @@ class ToolHandlers:
             "capture": "active" if not self._session.capture_stop_requested else "stopping",
             "latest_frame_seq": self._session.latest_capture_seq,
             "coverage": coverage,
+            "provisional_book_count": (
+                sum(
+                    int(row["books"])
+                    for row in coverage["provisional_counts"]
+                    if isinstance(row.get("books"), int) and not isinstance(row.get("books"), bool)
+                )
+                if coverage["provisional_counts"]
+                else None
+            ),
             "detection_frames": detection_frames,
             "duration_s": max((row.t_ms for row in records), default=0) / 1000,
             "markers_seen": sorted({marker.id for row in records for marker in row.markers}),

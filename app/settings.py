@@ -98,8 +98,14 @@ class StructureSettings(BaseModel):
 class AgentSettings(BaseModel):
     timeout_s: float = Field(default=20, gt=0)
     debounce_ms: int = Field(default=800, gt=0)
-    history_turns: int = Field(default=20, gt=0)
+    history_turns: int = Field(default=8, gt=0)
     max_tool_rounds: int = Field(default=5, gt=0)
+    model_chain: list[str] = Field(
+        default_factory=lambda: ["gemini-3.1-flash-lite", "gemini-3.5-flash-lite"]
+    )
+    retry_backoff_s: list[float] = Field(default_factory=lambda: [0.5, 1.5])
+    filler_after_s: float = Field(default=2.5, gt=0)
+    interim_force_final_s: float = Field(default=8, gt=0)
     live_frame_max_side: int = Field(default=768, gt=0)
     live_frame_quality: float = Field(default=0.6, gt=0, le=1)
     frame_attachment_keywords: list[str] = Field(

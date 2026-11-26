@@ -53,37 +53,16 @@ def test_title_and_price_questions_use_reviewed_lines() -> None:
     )
 
 
-async def test_agent_tool_call_result_then_reply_and_statement_frame_seq(tmp_path: Path) -> None:
+async def test_print_statement_routes_to_tool_and_saves_current_frame_seq(tmp_path: Path) -> None:
     session = make_session(tmp_path)
     session.latest_capture_seq = 7
-    fake = FakeLlmClient(
-        [
-            LlmResponse(
-                tool_calls=[
-                    LlmToolCall(
-                        name="record_user_statement",
-                        arguments={
-                            "kind": "print",
-                            "target_hint": "portrait",
-                            "text": "This looks valuable",
-                            "value": "INR 5000",
-                        },
-                        call_id="call-1",
-                    )
-                ]
-            ),
-            LlmResponse(text="Noted, I recorded that statement."),
-        ]
-    )
+    fake = FakeLlmClient([])
     agent = AgentLoop(make_settings(tmp_path), session, fake)
 
     reply = await agent.handle_user_text("It's a print", None)
 
-    assert reply.text == "Noted, I recorded that statement."
-    assert len(fake.calls) == 2
-    second_history = fake.calls[1]["history"]
-    assert isinstance(second_history, list)
-    assert second_history[-1].tool_results[0].response["frame_seq"] == 7
+    assert reply.text == "Okay, I recorded that as a print."
+    assert fake.calls == []
     saved = json.loads((tmp_path / "user_statements.jsonl").read_text(encoding="utf-8"))
     assert saved["frame_seq"] == 7
     assert saved["text"] == "It's a print"
@@ -101,6 +80,7 @@ async def test_visible_frame_is_used_for_turn_then_removed_from_rolling_history(
     request_history = fake.calls[0]["history"]
     assert isinstance(request_history, list)
     assert request_history[-1].image_jpeg == b"jpeg"
+    assert "[frame f_latest]" in request_history[-1].text
     assert all(message.image_jpeg is None for message in agent._history)
 
 
@@ -306,7 +286,7 @@ async def test_unsupported_number_is_blocked_after_one_failed_regeneration(
     )
     agent = AgentLoop(make_settings(tmp_path), make_session(tmp_path), fake)
 
-    reply = await agent.handle_user_text("How many books?", None)
+    reply = await agent.handle_user_text("Tell me a number about the books.", None)
 
     assert reply.text == FALLBACK_LINE
     events = [
@@ -319,22 +299,21 @@ async def test_unsupported_number_is_blocked_after_one_failed_regeneration(
     assert fallback["payload"]["exception_type"] == "UngroundedNumericClaim"
 
 
-async def test_tool_returned_book_count_grounds_reply(tmp_path: Path) -> None:
-    fake = FakeLlmClient(
-        [
-            LlmResponse(tool_calls=[LlmToolCall(name="get_sweep_status")]),
-            LlmResponse(text="I logged 12 books."),
-        ]
-    )
+async def test_how_many_books_answers_from_status_tool_without_llm(tmp_path: Path) -> None:
+    fake = FakeLlmClient([])
     agent = AgentLoop(make_settings(tmp_path), make_session(tmp_path), fake)
 
     async def status_with_count(_: str, __: dict[str, object]) -> dict[str, object]:
-        return {"book_count": 12}
+        return {
+            "provisional_book_count": 12,
+            "coverage": {"available": True, "rows_needing_review": []},
+        }
 
     agent.tools.execute = status_with_count
     reply = await agent.handle_user_text("How many books?", None)
 
-    assert reply.text == "I logged 12 books."
+    assert reply.text == "I count 12 books so far."
+    assert fake.calls == []
 
 
 async def test_approximate_rounded_currency_matches_tool_summary(tmp_path: Path) -> None:
@@ -364,7 +343,7 @@ async def test_numeric_retry_uses_system_note_and_accepts_clean_rephrase(tmp_pat
     )
     agent = AgentLoop(make_settings(tmp_path), make_session(tmp_path), fake)
 
-    reply = await agent.handle_user_text("How many books?", None)
+    reply = await agent.handle_user_text("Tell me a number about the books.", None)
 
     assert reply.text == "I can't confirm that yet."
     assert len(fake.calls) == 2
@@ -375,21 +354,15 @@ async def test_numeric_retry_uses_system_note_and_accepts_clean_rephrase(tmp_pat
 
 
 async def test_end_sweep_waits_for_coverage_confirmation(tmp_path: Path) -> None:
-    fake = FakeLlmClient(
-        [
-            LlmResponse(
-                tool_calls=[LlmToolCall(name="end_sweep", arguments={})],
-            ),
-            LlmResponse(text="Did we capture all shelves and rows?"),
-        ]
-    )
+    fake = FakeLlmClient([])
     session = make_session(tmp_path)
     agent = AgentLoop(make_settings(tmp_path), session, fake)
 
     reply = await agent.handle_user_text("I'm done", None)
 
     assert reply.stop_capture is False
-    assert reply.text == "Did we capture all shelves and rows?"
+    assert "captured all shelves and rows" in reply.text
+    assert fake.calls == []
 
 
 def test_frame_attachment_uses_configured_reference_terms_and_interval(tmp_path: Path) -> None:
