@@ -118,12 +118,21 @@ export function createSpeechIn({ onFinal, onUnsupported, onBlocked = () => {}, o
   };
 }
 
-export function createSpeechOut({ onSpeakingChange = () => {}, pauseInput = () => {}, resumeInput = () => {}, earphonesMode = true } = {}) {
+export function createSpeechOut({
+  onSpeakingChange = () => {},
+  pauseInput = () => {},
+  resumeInput = () => {},
+  earphonesMode = true,
+  now = () => Date.now(),
+  cueMaxAgeMs = 4000,
+} = {}) {
   const synth = window.speechSynthesis;
   const queue = [];
   let active = false;
   let current = null;
   let serial = 0;
+  let batchSerial = 0;
+  let interruptedBatchId = null;
   let resumeTimer = null;
   function voices() { return synth?.getVoices?.() ?? []; }
   function chooseVoice() {
@@ -133,7 +142,23 @@ export function createSpeechOut({ onSpeakingChange = () => {}, pauseInput = () =
       ?? available.find((voice) => /^en/i.test(voice.lang))
       ?? null;
   }
+  function cueIsValid(item) {
+    if (item.kind !== "cue") return true;
+    if (now() - item.createdAt > cueMaxAgeMs) return false;
+    try { return item.condition(); } catch { return false; }
+  }
+  function discardInvalidCues() {
+    for (let index = queue.length - 1; index >= 0; index -= 1) {
+      if (!cueIsValid(queue[index])) queue.splice(index, 1);
+    }
+  }
+  function removeQueued(predicate) {
+    for (let index = queue.length - 1; index >= 0; index -= 1) {
+      if (predicate(queue[index])) queue.splice(index, 1);
+    }
+  }
   function pump() {
+    discardInvalidCues();
     if (!synth) {
       queue.length = 0;
       onSpeakingChange(false, current?.kind ?? null);
@@ -151,6 +176,10 @@ export function createSpeechOut({ onSpeakingChange = () => {}, pauseInput = () =
     }
     queue.sort((a, b) => b.priority - a.priority || a.order - b.order);
     const item = queue.shift();
+    if (!cueIsValid(item)) {
+      pump();
+      return;
+    }
     active = true;
     current = item;
     const token = ++serial;
@@ -163,6 +192,10 @@ export function createSpeechOut({ onSpeakingChange = () => {}, pauseInput = () =
       if (token !== serial) return;
       active = false;
       current = null;
+      if (item.batchId !== null && item.batchId === interruptedBatchId) {
+        removeQueued((queued) => queued.batchId === item.batchId);
+        interruptedBatchId = null;
+      }
       onSpeakingChange(false, item.kind);
       pump();
     };
@@ -170,35 +203,54 @@ export function createSpeechOut({ onSpeakingChange = () => {}, pauseInput = () =
     utterance.onerror = finish;
     synth.speak(utterance);
   }
-  function enqueue(text, priority = 0, kind = "cue") {
-    if (!text?.trim()) return;
-    clearTimeout(resumeTimer);
-    const item = { text: text.trim(), priority, kind, order: Date.now() };
-    if (kind === "cue" && active && current?.kind === "agent") return;
-    if (kind === "cue" && active && current?.kind === "cue" && priority > current.priority) {
-      active = false;
-      current = null;
-      serial += 1;
-      synth.cancel();
+  function speakSentences(text) {
+    const sentences = splitSpeechSentences(text);
+    if (sentences.length === 0) return;
+    const batchId = ++batchSerial;
+    for (const sentence of sentences) {
+      queue.push({
+        text: sentence,
+        priority: 0,
+        kind: "agent",
+        order: now(),
+        batchId,
+      });
     }
-    queue.push(item);
     pump();
+  }
+  function requestBargeIn(text) {
+    const cleaned = String(text ?? "").trim();
+    const explicitStop = /^(?:please\s+)?(?:stop|wait|hold\s+on)\b/i.test(cleaned);
+    const wordCount = cleaned.match(/[\p{L}\p{N}]+(?:['’][\p{L}\p{N}]+)*/gu)?.length ?? 0;
+    if ((!explicitStop && wordCount < 2) || !active) return false;
+
+    const runningBatch = current?.kind === "agent" ? current.batchId : null;
+    removeQueued((item) => item.kind === "cue" || item.kind === "agent");
+    if (runningBatch !== null) interruptedBatchId = runningBatch;
+    return true;
   }
   return {
     setEarphonesMode(enabled) { earphonesMode = Boolean(enabled); },
-    speak(text) {
-      for (let index = queue.length - 1; index >= 0; index -= 1) {
-        if (queue[index].kind === "cue") queue.splice(index, 1);
-      }
-      if (active && current?.kind === "cue") {
-        active = false;
-        current = null;
-        serial += 1;
-        synth?.cancel();
-      }
-      enqueue(text, 0, "agent");
+    speak(text) { speakSentences(text); },
+    speakCue(text, priority = 10, cueType = "capture", condition = () => true) {
+      const duplicate = (active && current?.kind === "cue" && current.cueType === cueType)
+        || queue.some((item) => item.kind === "cue" && item.cueType === cueType);
+      if (duplicate || !text?.trim()) return false;
+      const item = {
+        text: text.trim(),
+        priority,
+        kind: "cue",
+        cueType,
+        condition,
+        createdAt: now(),
+        order: now(),
+        batchId: null,
+      };
+      queue.push(item);
+      pump();
+      return true;
     },
-    speakCue(text, priority = 10) { enqueue(text, priority, "cue"); },
+    requestBargeIn,
     cancel() {
       queue.length = 0;
       clearTimeout(resumeTimer);
@@ -206,10 +258,23 @@ export function createSpeechOut({ onSpeakingChange = () => {}, pauseInput = () =
       serial += 1;
       active = false;
       current = null;
+      interruptedBatchId = null;
       synth?.cancel();
       onSpeakingChange(false, kind);
       resumeInput();
     },
     isSpeaking() { return active || Boolean(synth?.speaking); },
   };
+}
+
+function splitSpeechSentences(text) {
+  const normalized = String(text ?? "").trim();
+  if (!normalized) return [];
+  if (typeof Intl.Segmenter === "function") {
+    return [...new Intl.Segmenter(undefined, { granularity: "sentence" }).segment(normalized)]
+      .map((part) => part.segment.trim())
+      .filter(Boolean);
+  }
+  return normalized.match(/[^.!?]+[.!?]+|[^.!?]+$/g)?.map((sentence) => sentence.trim()).filter(Boolean)
+    ?? [normalized];
 }

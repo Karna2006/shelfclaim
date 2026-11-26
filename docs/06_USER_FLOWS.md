@@ -40,7 +40,7 @@ Agent readback numbers come **only** from the tool result (code-computed). The p
 | Glare on glossy spines | `GLARE` cue: "There's glare. Tilt the phone slightly down." |
 | Too dark or blur under dim light while steady | `TOO_DARK`: "It's a bit dark. Can you turn on a light?" The `low_light_blur` QC verdict is used when blur is below threshold, gyro is below `speed_max_dps`, and exposure is below `low_light_exposure_max`. |
 | User walks past a shelf unit without covering all rows | `ROW_MISSED` cue when they move to the next unit: "Go back to the shelf on your left, the bottom row was skipped." (re-capture within the same pass is allowed) |
-| User interrupts the agent mid-sentence | Barge-in (`START_OF_ACTIVITY_INTERRUPTS`). The agent stops and listens |
+| User speaks while the agent is talking | Finish the current sentence, then drop the remaining reply and handle a clean final with at least two words. "Stop", "wait", and "hold on" do the same; the interrupt button cancels immediately |
 | "That's a first edition" while pointing at a book | `record_user_statement(kind=first_edition, target_hint="this book", …)` resolved via the frame at that time → the book becomes `needs_appraisal` |
 | "Those aren't mine" (a region) | `exclude_region` → lines kept in the packet with `excluded_reason`, removed from totals |
 | User asks "how much is my library worth?" during the sweep | Agent: "I'll have sourced prices when we finish. I don't guess values." |
@@ -76,14 +76,14 @@ Server to client:
 | type | fields |
 |---|---|
 | `agent_text` | `{type, text, t_ms}` | Browser speech synthesis reads the reply |
-| `cue` | `{type, text, priority}` | Direct urgent speech; appended to assistant history and transcript |
+| `cue` | `{type, text, priority, kind}` | Direct speech queued behind the current sentence; appended to assistant history and transcript |
 | `state` | `{type, state:"listening"}` | Session status |
 | `control` | `{type, action:"stop_capture"}` | Agent requested capture stop |
 | `error` | `{type, message}` | Invalid or unsupported protocol message |
-| `user_text_accepted` | `{type, text}` | Echo-cleaned transcript; accepted speech interrupts queued/playing speech |
+| `user_text_accepted` | `{type, text}` | Echo-cleaned transcript; qualifying speech stops the reply after its current sentence |
 | `echo_dropped` | `{type, cleaned_text}` | Whole transcript was a recent spoken echo |
 
-The browser does not send audio. With `agent.earphones_mode: true` (default), recognition stays active during speech synthesis and accepted user speech cancels playback. With earphones mode off, recognition pauses during TTS and resumes 300 ms after the utterance. The server strips matching recent TTS phrases from mixed transcripts using rapidfuzz partial ratio >= 85 over three-word windows in a six-second window; it drops a whole transcript only when at least four words match. The interrupt button remains available. If interim text stays unchanged for 1.2 seconds without a browser final, the browser submits it as `forced_final`. Recognition lifecycle, pause/resume, TTS state, and error codes are logged as `speech_event` records. Cues are limited to one every 12 seconds and one of the same type every 30 seconds; low-light and blurry cues require three seconds of sustained evidence and are suppressed during user speech, for eight seconds after speech, and until an agent reply finishes.
+The browser does not send audio. With `agent.earphones_mode: true` (default), recognition stays active during speech synthesis; with earphones mode off, recognition pauses during TTS and resumes 300 ms after speech. Only an echo-cleaned final or stable forced-final with at least two words can request sentence-boundary barge-in; interim speech, noise, and one-word answers do not stop playback. "Stop", "wait", or "hold on" are explicit commands. The interrupt button cancels immediately. The server strips matching recent TTS phrases from mixed transcripts using rapidfuzz partial ratio >= 85 over three-word windows in a six-second window; it drops a whole transcript only when at least four words match. If interim text stays unchanged for 1.2 seconds without a browser final, the browser submits it as `forced_final`. Recognition lifecycle, pause/resume, TTS state, and error codes are logged as `speech_event` records. Cues are limited to one every 12 seconds and one of the same type every 30 seconds; low-light and blurry cues require three seconds of sustained evidence and are suppressed during user speech, for eight seconds after speech, and until an agent reply finishes. A cue received during speech waits in the browser queue, then plays after the current sentence if it is still relevant and no more than four seconds old; duplicate cue types are not queued.
 
 ### 5.2 `/ws/capture`
 

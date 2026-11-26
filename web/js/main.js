@@ -32,6 +32,18 @@ let options = null;
 let pendingUserTexts = [];
 let pendingSpeechEvents = [];
 let speechActivityTimer = null;
+let latestQc = null;
+let acceptedTurnWhileSpeaking = false;
+
+function cueConditionIsTrue(kind) {
+  const verdict = latestQc?.verdict;
+  if (!verdict) return true;
+  if (kind === "TOO_FAST") return verdict === "fast";
+  if (kind === "BLURRY") return verdict === "blurry";
+  if (kind === "LOW_LIGHT") return verdict === "low_light_blur" || verdict === "dark";
+  if (kind === "GLARE") return verdict === "glare";
+  return true;
+}
 
 async function requestWakeLock() {
   if (!("wakeLock" in navigator) || document.visibilityState !== "visible") return;
@@ -71,6 +83,7 @@ function setupSpeech() {
     onSpeakingChange: (speaking, kind) => {
       interruptButton.hidden = !speaking;
       if (speaking) ui.setAgentState("speaking");
+      else if (acceptedTurnWhileSpeaking) ui.setAgentState("thinking");
       else if (ui.getAgentState() === "speaking") ui.setAgentState("listening");
       if (kind) liveSocket?.sendSpeechEvent(speaking ? "tts-start" : "tts-end", kind, sweepTimeMs());
     },
@@ -133,6 +146,8 @@ async function requestMicAndListen() {
 async function startSweep() {
   pendingUserTexts = [];
   pendingSpeechEvents = [];
+  latestQc = null;
+  acceptedTurnWhileSpeaking = false;
   ui.startButton.disabled = true;
   ui.setMessage("Requesting camera and motion access…");
   try {
@@ -162,7 +177,7 @@ async function startSweep() {
     ui.resetCards();
     captureSocket = createCaptureSocket(sweep.sweep_id, options, {
       onConnection: (state) => ui.setConnection(state),
-      onQc: (qc) => ui.renderQc(qc),
+      onQc: (qc) => { latestQc = qc; ui.renderQc(qc); },
       onMessage: (text) => ui.setMessage(text),
       onDebug: (event) => logEvent("capture ws", event),
     });
@@ -194,18 +209,29 @@ async function startSweep() {
 }
 
 function handleAgentMessage(message) {
-  if (message.type === "agent_text") speechOut?.speak(message.text);
-  if (message.type === "cue") speechOut?.speakCue(message.text, message.priority ?? 10);
+  if (message.type === "agent_text") {
+    acceptedTurnWhileSpeaking = false;
+    speechOut?.speak(message.text);
+  }
+  if (message.type === "cue") {
+    speechOut?.speakCue(
+      message.text,
+      message.priority ?? 10,
+      message.kind ?? "capture",
+      () => cueConditionIsTrue(message.kind),
+    );
+  }
   if (message.type === "user_text_accepted") {
-    speechOut?.cancel();
+    acceptedTurnWhileSpeaking = Boolean(speechOut?.isSpeaking());
+    speechOut?.requestBargeIn(message.text || "");
     ui.setYouSaid(message.text || "");
-    ui.setAgentState("thinking");
+    if (!speechOut?.isSpeaking()) ui.setAgentState("thinking");
   }
   if (message.type === "echo_dropped") {
     ui.setYouSaid(message.cleaned_text || "");
     ui.setAgentState(speechOut?.isSpeaking() ? "speaking" : "listening");
   }
-  if (message.type === "state") ui.setAgentState(message.state);
+  if (message.type === "state" && !speechOut?.isSpeaking()) ui.setAgentState(message.state);
   if (message.type === "inventory") ui.renderInventory(message);
   if (message.type === "packet_ready") ui.showReportLink(message.report_url);
   if (message.type === "control" && message.action === "stop_capture") stopSweep();

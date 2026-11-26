@@ -39,7 +39,9 @@ async def test_cue_message_is_sent_and_logged_as_spoken_history(tmp_path: Path) 
     session.websocket = socket
     await send_cue(session, "Turn on a light", priority=20)
 
-    assert socket.sent == [{"type": "cue", "text": "Turn on a light", "priority": 20}]
+    assert socket.sent == [
+        {"type": "cue", "text": "Turn on a light", "priority": 20, "kind": "capture"}
+    ]
     assert session.echo_guard.match("Turn on a light") is not None
     assert agent_note.notes == ["Turn on a light"]
     transcript = json.loads((tmp_path / "transcript.jsonl").read_text(encoding="utf-8"))
@@ -175,7 +177,7 @@ def test_echo_filter_preserves_short_answers_and_drops_full_cue_repeat(tmp_path:
     assert dropped[-1]["payload"]["similarity"] >= 85
 
 
-async def test_scripted_user_turns_get_one_reply_while_cues_are_blocked(tmp_path: Path) -> None:
+async def test_scripted_user_turns_get_one_reply_and_deliver_speech_cues(tmp_path: Path) -> None:
     _write_sweep(tmp_path)
     responses = [LlmResponse(text="Yes, I can see the shelf.")]
     client = _ScriptedClient(responses)
@@ -189,17 +191,37 @@ async def test_scripted_user_turns_get_one_reply_while_cues_are_blocked(tmp_path
         assert not await send_cue(session, "Hold the phone steadily", kind="BLURRY")
         session.agent_turn_pending = False
         await _handle_user_turn(session, text)
-        assert not await send_cue(session, "Move the phone slowly", kind="TOO_FAST")
+        assert await send_cue(session, "Move the phone slowly", kind="TOO_FAST")
 
     replies = [message for message in socket.sent if message.get("type") == "agent_text"]
     assert len(replies) == 4
-    assert not any(message.get("type") == "cue" for message in socket.sent)
+    assert len([message for message in socket.sent if message.get("type") == "cue"]) == 4
     events = [
         json.loads(line)
         for line in (tmp_path / "events.jsonl").read_text(encoding="utf-8").splitlines()
     ]
     assert len([event for event in events if event["type"] == "agent_reply"]) == 4
-    assert len([event for event in events if event["type"] == "cue_suppressed"]) == 8
+    assert len([event for event in events if event["type"] == "cue_suppressed"]) == 4
+
+
+async def test_capture_cue_is_sent_while_agent_speech_is_active(tmp_path: Path) -> None:
+    session = LiveSessionContext("sw_20261126_030042_1552", tmp_path)
+    session.agent_reply_active = True
+    session.tts_speaking = True
+    socket = FakeWebSocket()
+    session.websocket = socket
+
+    sent = await send_cue(session, "Move the phone more slowly.", kind="TOO_FAST")
+
+    assert sent
+    assert socket.sent == [
+        {
+            "type": "cue",
+            "text": "Move the phone more slowly.",
+            "priority": 10,
+            "kind": "TOO_FAST",
+        }
+    ]
 
 
 async def test_slow_turn_speaks_one_moment_then_real_reply(tmp_path: Path) -> None:

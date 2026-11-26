@@ -145,7 +145,9 @@ async def send_cue(
     if context.agent is not None:
         context.agent.record_cue(cue)
     if context.websocket is not None:
-        await context.websocket.send_json({"type": "cue", "text": cue, "priority": priority})
+        await context.websocket.send_json(
+            {"type": "cue", "text": cue, "priority": priority, "kind": kind}
+        )
     return True
 
 
@@ -160,10 +162,6 @@ def cue_suppression_reason(context: LiveSessionContext) -> str | None:
         return "user_speech_cooldown"
     if context.agent_turn_pending:
         return "agent_turn_pending"
-    if context.agent_reply_active:
-        return "agent_reply_active"
-    if context.tts_speaking:
-        return "tts_speaking"
     return None
 
 
