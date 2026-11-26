@@ -21,6 +21,7 @@ from app.capture.summary import summarize_frames
 from app.capture.yunet_model import download_yunet_model
 from app.evaluation import evaluate_sweep
 from app.live.benchmark import benchmark_models
+from app.live.soak import run_agent_soak
 from app.live.terminal import run_agent_chat
 from app.pipeline.artifacts import DetectionsDoc, Event
 from app.pipeline.orchestrator import run_pipeline
@@ -333,6 +334,17 @@ def agent_chat() -> None:
     if settings.google_api_key is None:
         raise typer.BadParameter("Set GOOGLE_API_KEY in the process environment first")
     asyncio.run(run_agent_chat(settings))
+
+
+@app.command("agent-soak")
+def agent_soak(
+    turns: Annotated[int, typer.Option(min=1, max=100)] = 20,
+    with_frames: Annotated[
+        Path, typer.Option("--with-frames", exists=True, file_okay=False)
+    ] = Path("sweeps/sw_20261126_023206_7f03"),
+) -> None:
+    """Run a 20-turn production AgentLoop soak using saved sweep frames."""
+    asyncio.run(run_agent_soak(load_settings(), with_frames, turns))
 
 
 @app.command()
