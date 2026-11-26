@@ -89,9 +89,19 @@ class RowCountCheck(ArtifactModel):
     box_count: int = Field(ge=0)
 
 
+class DetectionFrameStats(ArtifactModel):
+    seq: int = Field(ge=0)
+    model: str
+    latency_ms: int = Field(ge=0)
+    spine_count: int = Field(ge=0)
+    shelf_board_count: int = Field(ge=0)
+    item_count: int = Field(ge=0)
+
+
 class DetectionsDoc(ArtifactModel):
     frames: dict[int, list[Detection]] = Field(default_factory=dict)
     row_count_checks: list[RowCountCheck] = Field(default_factory=list)
+    keyframe_stats: list[DetectionFrameStats] = Field(default_factory=list)
 
 
 class GeometryDoc(ArtifactModel):

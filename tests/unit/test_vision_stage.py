@@ -15,6 +15,7 @@ from app.settings import Settings, YamlSettings
 from app.vision.keyframes import select_detection_keyframes
 from app.vision.nms import suppress_frame_duplicates
 from app.vision.schema import VisionObject, VisionResponse
+from google.genai.errors import APIError
 
 
 def _box(det_id: str, x: int, width: int = 10) -> Detection:
@@ -67,11 +68,14 @@ def _make_sweep(path, count: int = 1) -> None:
 
 
 def test_keyframes_respect_interval_and_cap(tmp_path) -> None:
-    _make_sweep(tmp_path, count=6)
+    _make_sweep(tmp_path, count=45)
 
     rows = select_detection_keyframes(tmp_path, YamlSettings().keyframes, max_frames=2)
+    unique_settings = YamlSettings().keyframes.model_copy(update={"min_novelty": 0})
+    capped_rows = select_detection_keyframes(tmp_path, unique_settings, max_frames=40)
 
     assert len(rows) <= 2
+    assert len(capped_rows) == 40
     assert all(right.t_ms - left.t_ms >= 1500 for left, right in zip(rows, rows[1:], strict=False))
 
 
@@ -87,7 +91,42 @@ async def test_detection_stage_converts_normalized_boxes_to_pixels(tmp_path) -> 
     doc = json.loads(output.read_text())
     box = doc["frames"]["0"][0]["box_px"]
     assert box == {"x": 20, "y": 12, "w": 10, "h": 96, "angle_deg": 90.0}
+    stats = doc["keyframe_stats"][0]
+    assert stats["seq"] == 0
+    assert stats["model"] == "gemini-3.5-flash-lite"
+    assert isinstance(stats["latency_ms"], int) and stats["latency_ms"] >= 0
+    assert (stats["spine_count"], stats["shelf_board_count"], stats["item_count"]) == (1, 0, 0)
     assert fake.calls == 1
+
+
+@pytest.mark.asyncio
+async def test_detection_stage_retries_503_then_uses_next_model(tmp_path) -> None:
+    _make_sweep(tmp_path)
+
+    class BusyThenAvailable:
+        def __init__(self) -> None:
+            self.models: list[str] = []
+
+        async def detect(self, image_bytes: bytes, model: str) -> VisionResponse:
+            self.models.append(model)
+            if len(self.models) <= 2:
+                raise APIError(503, {"status": "UNAVAILABLE", "message": "fixture outage"})
+            return VisionResponse(
+                objects=[VisionObject(cls="book_spine", box_2d=[100, 200, 900, 300])]
+            )
+
+    detector = BusyThenAvailable()
+    output = await run_detection_stage(
+        tmp_path, Settings(config=YamlSettings(), _env_file=None), detector
+    )
+    document = json.loads(output.read_text(encoding="utf-8"))
+
+    assert detector.models == [
+        "gemini-3.5-flash-lite",
+        "gemini-3.5-flash-lite",
+        "gemini-3.1-flash-lite",
+    ]
+    assert document["keyframe_stats"][0]["model"] == "gemini-3.1-flash-lite"
 
 
 def test_best_frame_row_count_and_candidate_disagreement() -> None:

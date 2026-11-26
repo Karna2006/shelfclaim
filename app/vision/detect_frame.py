@@ -17,13 +17,10 @@ import cv2
 import numpy as np
 from app.settings import Settings
 from app.vision.client import GeminiVisionDetector
+from app.vision.models import VISION_MODEL_FALLBACKS
 from app.vision.schema import FrameVisionObject, FrameVisionResponse
 
-MODEL_FALLBACK_CHAIN = (
-    "gemini-3.5-flash-lite",
-    "gemini-3.1-flash-lite",
-    "gemini-3.8-flash",
-)
+MODEL_FALLBACK_CHAIN = VISION_MODEL_FALLBACKS
 _RETRIES_ON_503 = 1
 _RETRY_DELAY_S = 0.5
 

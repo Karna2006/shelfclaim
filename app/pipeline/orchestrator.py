@@ -39,17 +39,20 @@ async def run_pipeline(
     *,
     until: str = "s10",
     price_limit: int = 10,
+    max_keyframes: int | None = None,
     clients: dict[str, object] | None = None,
 ) -> Path:
     """Run each stage once in order and update latency telemetry after completion."""
     if until not in _ORDER:
         raise ValueError(f"Unsupported pipeline stage: {until}")
+    if max_keyframes is not None and max_keyframes < 1:
+        raise ValueError("max_keyframes must be positive")
     selected_settings = settings.model_copy(update={"geometry_backend": "off"})
     context = StageContext(sweep_dir, selected_settings, Ledger(), clients or {})
     started = time.perf_counter()
     output = sweep_dir / "sweep.json"
     stage_functions: dict[str, Any] = {
-        "s01": s01_detect.run,
+        "s01": lambda ctx: s01_detect.run(ctx, max_keyframes=max_keyframes),
         "s02": s02_geometry.run,
         "s03": s03_books.run,
         "s04": s04_measure.run,

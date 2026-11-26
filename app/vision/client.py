@@ -41,7 +41,7 @@ class GeminiVisionDetector:
             ],
             config=types.GenerateContentConfig(
                 response_mime_type="application/json",
-                response_schema=VisionResponse,
+                response_schema=FrameVisionResponse,
                 temperature=0,
             ),
         )

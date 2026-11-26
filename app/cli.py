@@ -50,13 +50,24 @@ def make_markers(
 
 
 @app.command()
-def replay(sweep: Path, until: str | None = None) -> None:
+def replay(
+    sweep: Path,
+    until: str | None = None,
+    max_keyframes: Annotated[int | None, typer.Option("--max-keyframes", min=1, max=60)] = None,
+) -> None:
     """Run the sweep pipeline through S1, S6, or the final packet stage."""
     if until not in {None, "s01", "s06", "s10"}:
         raise typer.BadParameter("until must be s01, s06, or s10")
     settings = load_settings()
     try:
-        output = asyncio.run(run_pipeline(sweep, settings, until=until or "s10"))
+        output = asyncio.run(
+            run_pipeline(
+                sweep,
+                settings,
+                until=until or "s10",
+                max_keyframes=max_keyframes,
+            )
+        )
     except Exception as exc:
         if sweep.is_dir():
             write_event(
@@ -74,6 +85,20 @@ def replay(sweep: Path, until: str | None = None) -> None:
         typer.echo(f"Replay blocked: {type(exc).__name__}: {exc}", err=True)
         raise typer.Exit(code=1) from exc
     typer.echo(f"Pipeline reached {until or 's10'}: {output}")
+    if (until or "s10") == "s01":
+        _print_detection_keyframe_stats(sweep)
+
+
+def _print_detection_keyframe_stats(sweep: Path) -> None:
+    document = DetectionsDoc.model_validate_json(
+        (sweep / "s01_detections.json").read_text(encoding="utf-8")
+    )
+    typer.echo("seq | model | latency_ms | #spines | #shelf_boards | #items")
+    for row in document.keyframe_stats:
+        typer.echo(
+            f"{row.seq} | {row.model} | {row.latency_ms} | {row.spine_count} | "
+            f"{row.shelf_board_count} | {row.item_count}"
+        )
 
 
 @app.command("debug-boxes")

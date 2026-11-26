@@ -7,16 +7,19 @@ Input: saved frames, vision detector interface and configured rules. Output:
 from __future__ import annotations
 
 import asyncio
+import time
+from collections import Counter
 from pathlib import Path
 from typing import cast
 
 from app.live.rate_limit import ModelRateLimiter
-from app.pipeline.artifacts import Detection, DetectionsDoc, Event
+from app.pipeline.artifacts import Detection, DetectionFrameStats, DetectionsDoc, Event
 from app.pipeline.context import StageContext
 from app.settings import Settings
 from app.telemetry.events import write_event
 from app.vision.client import GeminiVisionDetector, VisionDetector
 from app.vision.keyframes import select_detection_keyframes
+from app.vision.models import vision_model_chain
 from app.vision.nms import suppress_frame_duplicates
 from app.vision.schema import VisionResponse
 
@@ -31,7 +34,7 @@ _ALLOWED_CLASSES = {
 }
 
 
-async def run(ctx: StageContext) -> Path:
+async def run(ctx: StageContext, *, max_keyframes: int | None = None) -> Path:
     """Run S1 using a supplied fake/client or the configured Gemini client."""
     injected = ctx.clients.get("vision")
     detector = (
@@ -40,7 +43,9 @@ async def run(ctx: StageContext) -> Path:
         else GeminiVisionDetector(ctx.settings)
     )
     try:
-        return await run_detection_stage(ctx.sweep_dir, ctx.settings, detector)
+        return await run_detection_stage(
+            ctx.sweep_dir, ctx.settings, detector, max_frames=max_keyframes
+        )
     finally:
         if injected is None:
             await detector.close()
@@ -52,27 +57,49 @@ async def run_detection_stage(
     detector: VisionDetector,
     *,
     limiter: ModelRateLimiter | None = None,
+    max_frames: int | None = None,
 ) -> Path:
     """Select and detect keyframes with concurrency two and bounded 429 retries."""
-    keyframes = select_detection_keyframes(sweep_dir, settings.config.keyframes)
+    if max_frames is not None and max_frames < 1:
+        raise ValueError("max_frames must be positive")
+    configured_max = settings.config.keyframes.detection_max_frames
+    selected_max = min(max_frames, configured_max) if max_frames is not None else configured_max
+    keyframes = select_detection_keyframes(
+        sweep_dir, settings.config.keyframes, max_frames=selected_max
+    )
     limiter = limiter or ModelRateLimiter(settings.config.llm)
     semaphore = asyncio.Semaphore(2)
 
-    async def detect_one(record: object) -> tuple[int, list[Detection]]:
+    async def detect_one(record: object) -> tuple[int, list[Detection], DetectionFrameStats]:
         frame = record
         image_path = sweep_dir / frame.path
         data = image_path.read_bytes()
-        response = await _detect_with_retry(detector, limiter, settings, data, semaphore)
+        response, model, latency_ms = await _detect_with_retry(
+            detector, limiter, settings, data, semaphore
+        )
         raw = [
             detection
             for index, item in enumerate(response.objects)
             if item.cls in _ALLOWED_CLASSES
             if (detection := _to_detection(frame.seq, index, item, frame.w, frame.h)) is not None
         ]
-        return frame.seq, suppress_frame_duplicates(raw, settings.config.dedup)
+        kept = suppress_frame_duplicates(raw, settings.config.dedup)
+        counts = Counter(item.cls for item in kept)
+        stats = DetectionFrameStats(
+            seq=frame.seq,
+            model=model,
+            latency_ms=latency_ms,
+            spine_count=counts.get("book_spine", 0),
+            shelf_board_count=counts.get("shelf_board", 0),
+            item_count=counts.get("item", 0),
+        )
+        return frame.seq, kept, stats
 
     results = await asyncio.gather(*(detect_one(row) for row in keyframes))
-    document = DetectionsDoc(frames={seq: detections for seq, detections in results})
+    document = DetectionsDoc(
+        frames={seq: detections for seq, detections, _ in results},
+        keyframe_stats=[stats for _, _, stats in results],
+    )
     output = sweep_dir / "s01_detections.json"
     output.write_text(document.model_dump_json(indent=2) + "\n", encoding="utf-8")
     write_event(
@@ -96,19 +123,31 @@ async def _detect_with_retry(
     settings: Settings,
     image: bytes,
     semaphore: asyncio.Semaphore,
-) -> VisionResponse:
-    model = settings.vision_model
-    retry = limiter.settings_for(model)
+) -> tuple[VisionResponse, str, int]:
+    total_request_s = 0.0
+    failures: list[str] = []
     async with semaphore:
-        for attempt in range(retry.max_retries + 1):
-            await limiter.acquire(model)
-            try:
-                return await detector.detect(image, model)
-            except Exception as exc:
-                if not _is_429(exc) or attempt >= retry.max_retries:
-                    raise
-                await asyncio.sleep(limiter.backoff_s(model, attempt))
-    raise RuntimeError("unreachable detection retry state")
+        for model in vision_model_chain(settings.vision_model):
+            retry = limiter.settings_for(model)
+            attempt = 0
+            while True:
+                await limiter.acquire(model)
+                request_started = time.perf_counter()
+                try:
+                    response = await detector.detect(image, model)
+                    total_request_s += time.perf_counter() - request_started
+                    return response, model, round(total_request_s * 1000)
+                except Exception as exc:
+                    total_request_s += time.perf_counter() - request_started
+                    retry_429 = _is_429(exc) and attempt < retry.max_retries
+                    retry_503 = _is_503(exc) and attempt < 1
+                    if retry_429 or retry_503:
+                        await asyncio.sleep(limiter.backoff_s(model, attempt))
+                        attempt += 1
+                        continue
+                    failures.append(f"{model}: {type(exc).__name__} ({_status_code(exc)})")
+                    break
+    raise RuntimeError("All vision models failed: " + "; ".join(failures))
 
 
 def _to_detection(seq: int, index: int, item: object, width: int, height: int) -> Detection | None:
@@ -135,3 +174,15 @@ def _is_429(error: Exception) -> bool:
         or getattr(error, "status_code", None) == 429
         or "429" in str(error)
     )
+
+
+def _is_503(error: Exception) -> bool:
+    return _status_code(error) == 503 or "503" in str(error)
+
+
+def _status_code(error: Exception) -> int | None:
+    for attribute in ("code", "status_code"):
+        value = getattr(error, attribute, None)
+        if isinstance(value, int):
+            return value
+    return None
