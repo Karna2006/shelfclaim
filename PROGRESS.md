@@ -36,4 +36,14 @@ Manual recovery: after a successful S1–S9 replay, run `.venv\\Scripts\\python.
 
 ## Verification
 
-Latest `.\\tasks.ps1 check`: passed, 113 tests. No git commits or pushes were made. Integrity rules applied: model calls do not create packet counts/prices/dimensions/totals; unknown values remain null/empty; prices require parsed provider evidence and snapshots; identities require catalogue matches; room measurements remain unknown with 3D disabled; frame references are validated.
+Latest `.\\tasks.ps1 check`: passed, 121 tests. Local commits for Steps 4–6: `8f98694`, `6dd4491`, `3ac7463`; nothing was pushed. Integrity rules applied: model calls do not create packet counts/prices/dimensions/totals; unknown values remain null/empty; prices require parsed provider evidence and snapshots; identities require catalogue matches; room measurements remain unknown with 3D disabled; frame references are validated.
+
+## Steps 4–8 follow-up
+
+**Steps 4–6 done, source sweep is data-limited.** Replayed `sw_20261126_023206_7f03` through S06/S07/S10. It contains no S3 book rows, so no titles or book prices can be audited. S10 validation passes at `sweeps/sw_20261126_023206_7f03/report.html`; totals contain 0 books, 14 appraisal items excluded from totals, and 15 review entries. Latest time-to-packet was 0.232233 s. Commits are listed above.
+
+**Step 7 blocked pending a new phone sweep.** Available folders end at `sw_20261126_044135_a4bd`; there is no sweep captured after the requested marker-card room setup. The 044135 sweep also has no S1 artifact because its vision call previously returned HTTP 503. Do not claim measured dimensions until a new sweep and marker-bearing frames exist.
+
+**Step 8 partial.** Unit tests verify monitor quality-cue selection/throttling, cue delivery/logging, echo suppression, and reading provisional counts from an existing S03 artifact. Replay through S10 passed. The saved 023206 S1 artifact has no `book_spine`, `shelf_unit`, or `shelf_board` detections and no artwork category. Code inspection found three live gaps: no S1 worker sends `inventory` messages during capture; art detections do not trigger an `ART_QUESTION` cue; `end_sweep` stops capture but does not start finalization or speak `get_packet_summary`. The only verified phone cue path is deterministic quality cues (fast, low light, blur, glare). The packet summary tool returns data when asked, but automatic spoken readback is not wired.
+
+Manual phone verification of the currently wired path: open the served HTTPS app in Chrome, tap Start and allow camera/microphone, pan quickly for over a second to trigger TOO_FAST, then hold steady in dim light to trigger the low-light cue. Speak during a cue to confirm the monitor suppresses speech-overlapping cues. Inventory fill-in, original/print question, and final packet readback cannot pass until the three live gaps above are implemented. After the room is prepared, capture a fresh sweep with marker cards before attempting Step 7 dimensions.
