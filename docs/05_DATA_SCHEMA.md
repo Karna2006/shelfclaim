@@ -269,7 +269,7 @@ class ClaimPacket(BaseModel):
 | `s03_books_raw.json` | `BookClustersDoc` | `units:[{unit:"A", rows:[{row:1, z_min, z_max, axis[3]}]}]`, `books:[{book_id, unit,row,position, member_dets:[det_id], best_view:{seq,bbox}, alt_view?, center_world[3], count_method}]` |
 | `s04_measurements.json` | `MeasurementsDoc` | `books:{book_id:{height_cm,thickness_cm,method,alt?,flags[]}}`, `rows:{"A-1":{span_m}}`, `shelf_run_m`, `sum_thickness_m` |
 | `s05_transcriptions.json` | `TranscriptionsDoc` | `books:{book_id:{views:[{seq,readable,orientation,lines[],legibility}], consensus_text, legibility}}` |
-| `s06_identification.json` | `IdentificationDoc` | `books:{book_id:{status, chosen?:{source,key,title,authors,year}, edition?, isbn?, features{}, raw_score, id_confidence, candidates:[…]}}`, `thresholds:{accept, review}`, `calibration:{a,b,fitted_on}` |
+| `s06_identification.json` | `IdentificationDoc` | `books:{book_id:{status, chosen?:{source,key,title,authors,year}, edition?, isbn?, features{}, raw_score, id_confidence, candidates:[…]}}`, `thresholds:{title_sim_min, author_sim_min_for_short_titles, minimum_words_without_author}`, `calibration:{method,fitted_on}` |
 | `s07_book_prices.json` | `BookPricesDoc` | `books:{book_id:{new:PriceQuote, used:PriceQuote, appraisal:{flag, reasons[]}}}` |
 | `s08_items.json` | `ItemsDoc` | `items:[{item_id, category, member_dets[], center_world, dims, description, brand_model, material, is_artwork, price:ItemPriceQuote, status}]` |
 | `s09_room.json` | `RoomDoc` | everything in `Room` + `planes:{floor, ceiling, walls[]}`, `point_count`, `debug_png` |

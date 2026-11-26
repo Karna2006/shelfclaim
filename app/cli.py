@@ -20,6 +20,7 @@ from app.capture.storage import list_frames
 from app.capture.summary import summarize_frames
 from app.capture.yunet_model import download_yunet_model
 from app.evaluation import evaluate_sweep
+from app.identify.cli import register_identification_commands
 from app.live.benchmark import benchmark_models
 from app.live.soak import run_agent_soak
 from app.live.terminal import run_agent_chat
@@ -34,6 +35,7 @@ from app.vision.keyframes import select_detection_keyframes
 
 app = typer.Typer(no_args_is_help=True, help="ShelfClaim development commands")
 register_detection_bakeoff(app)
+register_identification_commands(app)
 
 
 @app.command("pick-frames")

@@ -1,0 +1,48 @@
+{
+  "responses": {
+    "everyday hero manifesto": {
+      "docs": [
+        {
+          "key": "/books/OL36053750M",
+          "title": "Everyday Hero Manifesto",
+          "author_name": ["Robin S. Sharma"],
+          "publisher": ["HarperCollins Publishers"],
+          "first_publish_year": 2021
+        }
+      ]
+    },
+    "deep work": {
+      "docs": [
+        {
+          "key": "/books/OL26314691M",
+          "title": "Deep Work",
+          "author_name": ["Cal Newport"],
+          "publisher": ["Grand Central Publishing"],
+          "first_publish_year": 2016
+        }
+      ]
+    },
+    "halfmurders": {
+      "docs": [
+        {
+          "key": "/works/fixture-half-murders",
+          "title": "The Half Murders",
+          "author_name": ["Brandon McNulty"],
+          "publisher": [],
+          "first_publish_year": 2023
+        }
+      ]
+    },
+    "almanack of naval ravikant": {
+      "docs": [
+        {
+          "key": "/works/OL22255847W",
+          "title": "The Almanack of Naval Ravikant",
+          "author_name": ["Eric Jorgenson"],
+          "publisher": ["Scribe Media"],
+          "first_publish_year": 2020
+        }
+      ]
+    }
+  }
+}

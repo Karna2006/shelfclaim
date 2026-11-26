@@ -200,14 +200,12 @@ Output `s04_measurements.json`.
 - Output `s05_transcriptions.json` (keeps raw text = `spine_text_raw`).
 
 ### S6 — Identify (`identify/`)
-1. **Query build:** title candidate = longest `title`-kind line (or the longest line). Author = `author`-kind line. Publisher = `publisher`-kind line.
-2. **Candidates:** Search Open Library first using the book's own title/author lines, then the longest line alone and longest line with a person-name line as author. Use Google Books only when Open Library returns no candidates and no 429 has occurred in the last 60 seconds. Merge by normalised title + author.
-3. **Features per candidate:** `title_sim` (rapidfuzz `token_set_ratio` on normalised strings), `author_sim` (surname match + token ratio), `publisher_sim`, `legibility`, `margin` (top-1 minus top-2 score), `n_views_agree`.
-4. **Score:** `raw = 0.55·title + 0.25·author + 0.10·publisher + 0.10·legibility`, minus a penalty if `margin < 0.05`. **Calibrate** `id_confidence = sigmoid(a·raw + b)`, fitted on your ground truth in Phase 9 (logistic regression on features). Until then, use the uncalibrated score and say so.
-5. **Decision:** `id_confidence ≥ τ_accept` (start 0.80) → `identified`. `τ_review ≤ conf < τ_accept` → `identified` + review entry "low ID confidence". Below `τ_review` (start 0.55) → `unidentified`: title/author/edition/isbn **empty**, raw spine text kept. Pick `τ_accept` on ground truth so that confidently-wrong ≤ 2% (a margin under the 3% bar).
-6. **Optional LLM re-rank:** only if ≥ 2 candidates are within 0.05. The model returns a candidate ID or `none`. Its pick changes only *which* candidate, never the threshold.
-7. **Edition:** fetch Open Library editions for the work. Accept an edition only if the spine publisher fuzzy-matches the edition publisher (≥ 85) **and** (the edition has `physical_dimensions` within 1.5 cm of the measured height **or** no other edition from that publisher exists). Then fill `edition` and `isbn`; otherwise leave them blank.
-8. Output `s06_identification.json`, with the candidate lists saved for audit.
+1. **Query build:** search every non-empty OCR line and every adjacent line pair as a title query on Open Library `search.json`. Normalize case, punctuation, whitespace and a leading `THE`; compare compact forms too so joined words such as `HALFMURDERS` can match `Half Murders`. Do not merge non-adjacent lines.
+2. **Candidates:** search Open Library first. Use Google Books only if Open Library returns no candidates and neither provider has returned HTTP 429 in the last 60 seconds. Record each request URL and status for diagnostics. Merge duplicate records by source key.
+3. **Features per candidate:** report `title_sim`, `author_sim`, `publisher_sim`, `raw_score`, and `id_confidence`. A line that does not match a candidate author is ignored; it never subtracts from title evidence.
+4. **Decision:** accept only when `title_sim ≥ 90` and either another OCR line on that spine matches a catalogue author at `author_sim ≥ 85`, or the normalized title has at least three words. Confidence is the accepted title similarity expressed from 0 to 1; rejected candidates have `id_confidence=0`. Otherwise keep title/author/edition/isbn **empty** and preserve the raw spine text.
+5. If a box has multiple distinct accepted titles, select the one whose matching OCR line center is closest to the box center and add a `multiple_titles_in_box` review entry listing the other titles. If line geometry is unavailable, use the highest title similarity and author similarity.
+6. Edition remains empty unless supported by edition-specific evidence. Output `s06_identification.json` with candidate scores and decisions saved for audit.
 
 ### S7 — Price books (`pricing/`)
 For each `identified` book not already `needs_appraisal`:

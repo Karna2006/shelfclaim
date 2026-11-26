@@ -8,7 +8,7 @@ import pytest
 from app.identify.catalogue import OpenLibraryGoogleBooks
 from app.pipeline.context import StageContext
 from app.pipeline.stages.s06_identify import (
-    _search_candidates,
+    identify_spine_lines,
     normalize_catalogue_text,
     run,
 )
@@ -18,7 +18,7 @@ from app.telemetry.ledger import Ledger
 
 class EmptyCatalogue:
     async def search(self, title: str, author: str) -> list[dict[str, object]]:
-        assert title == "VISIBLE FRAGMENT"
+        assert title == "visible fragment"
         return []
 
 
@@ -143,16 +143,20 @@ async def test_open_library_queries_precede_google_books_fallback() -> None:
         ]
     }
 
-    results = await _search_candidates(catalogue, "DEEP WORK", "Cal Newport", transcription)
+    results = await identify_spine_lines(transcription["views"][0]["lines"], catalogue)
 
     assert [call[0] for call in catalogue.calls] == [
         "openlibrary",
         "openlibrary",
+        "openlibrary",
         "google_books",
     ]
-    assert catalogue.calls[0][1:] == ("DEEP WORK", "Cal Newport")
-    assert catalogue.calls[1][1:] == ("DEEP WORK", "")
-    assert results[0]["source"] == "google_books"
+    assert [call[1] for call in catalogue.calls[:3]] == [
+        "deep work",
+        "cal newport",
+        "deep work cal newport",
+    ]
+    assert results["candidates"][0]["candidate"]["source"] == "google_books"
 
 
 @pytest.mark.asyncio
@@ -172,9 +176,9 @@ async def test_open_library_429_prevents_google_books_fallback() -> None:
             return []
 
     catalogue = RateLimitedCatalogue()
-    results = await _search_candidates(catalogue, "DEEP WORK", "", {"spine_text_raw": "DEEP WORK"})
+    results = await identify_spine_lines([{"text": "DEEP WORK"}], catalogue)
 
-    assert results == []
+    assert results["candidates"] == []
     assert not catalogue.google_called
 
 
@@ -201,10 +205,10 @@ async def test_recent_google_books_429_suppresses_requests_for_one_minute(monkey
 
 
 @pytest.mark.asyncio
-async def test_merged_unclassified_ocr_text_does_not_match_title_subset(tmp_path) -> None:
+async def test_two_word_title_needs_a_matching_author_line(tmp_path) -> None:
     class CatalogueWithPartialTitle:
         async def search(self, title: str, author: str) -> list[dict[str, object]]:
-            assert "THE ONE THING" in title
+            assert title == "one thing"
             del author
             return [
                 {
@@ -224,7 +228,7 @@ async def test_merged_unclassified_ocr_text_does_not_match_title_subset(tmp_path
             {
                 "books": {
                     "b_0001": {
-                        "spine_text_raw": "THE ONE THING GARY KELLER DEEP WORK",
+                        "spine_text_raw": "THE ONE THING",
                         "legibility": 0.98,
                         "views": [{"lines": [{"kind_guess": "other", "text": "THE ONE THING"}]}],
                     }

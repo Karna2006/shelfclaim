@@ -7,6 +7,7 @@ tenacity retries, a seven-day cache, and a ShelfClaim User-Agent.
 from __future__ import annotations
 
 import sqlite3
+from collections.abc import Callable
 from datetime import UTC, datetime, timedelta
 from pathlib import Path
 
@@ -15,6 +16,7 @@ from tenacity import retry, retry_if_exception_type, stop_after_attempt, wait_ex
 
 _USER_AGENT = "ShelfClaim/0.1 (local model setup)"
 _CACHE_TTL = timedelta(days=7)
+RequestObserver = Callable[[str, int | None, bool, str | None], None]
 
 
 async def fetch_bytes(
@@ -22,14 +24,17 @@ async def fetch_bytes(
     cache_path: Path = Path("cache/http_cache.sqlite"),
     *,
     cache_key: str | None = None,
+    on_request: RequestObserver | None = None,
 ) -> bytes:
     """Return cached response bytes or fetch and cache them."""
     selected_cache_key = cache_key or url
     cached = _read_cache(selected_cache_key, cache_path)
     if cached is not None:
+        if on_request is not None:
+            on_request(url, 200, True, None)
         return cached
 
-    response_body = await _fetch_remote(url)
+    response_body = await _fetch_remote(url, on_request)
     _write_cache(selected_cache_key, response_body, cache_path)
     return response_body
 
@@ -40,13 +45,20 @@ async def fetch_bytes(
     stop=stop_after_attempt(3),
     reraise=True,
 )
-async def _fetch_remote(url: str) -> bytes:
+async def _fetch_remote(url: str, on_request: RequestObserver | None = None) -> bytes:
     async with httpx.AsyncClient(
         headers={"User-Agent": _USER_AGENT},
         timeout=30,
         follow_redirects=True,
     ) as client:
-        response = await client.get(url)
+        try:
+            response = await client.get(url)
+        except httpx.HTTPError as exc:
+            if on_request is not None:
+                on_request(url, None, False, type(exc).__name__)
+            raise
+        if on_request is not None:
+            on_request(str(response.url), response.status_code, False, None)
         response.raise_for_status()
         return response.content
 

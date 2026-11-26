@@ -132,6 +132,15 @@ async def _run_frame_ocr(
                 lines=spine_lines,
                 legibility=confidence,
             ).model_dump(mode="json")
+            view["lines"] = [
+                {
+                    "text": line.text,
+                    "kind_guess": "other",
+                    "confidence": line.confidence,
+                    "bbox": {"x": line.x, "y": line.y, "w": line.w, "h": line.h},
+                }
+                for line in own_lines
+            ]
             view["seq"] = book["best_view"].get("seq")
             view["frame_ref"] = frame_ref
             raw_text = " | ".join(line.text for line in own_lines)
