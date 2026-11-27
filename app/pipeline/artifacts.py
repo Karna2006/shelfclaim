@@ -108,10 +108,28 @@ class DetectionFrameStats(ArtifactModel):
     item_count: int = Field(ge=0)
 
 
+class SelectedDetectionKeyframe(ArtifactModel):
+    seq: int = Field(ge=0)
+    segment: int = Field(ge=0)
+    qc_verdict: (
+        Literal["ok", "blurry", "low_light_blur", "glare", "dark", "bright", "fast"] | None
+    ) = None
+    blur: float | None = None
+    quality_fallback: bool = False
+
+
+class DetectionReviewEntry(ArtifactModel):
+    ref_id: str
+    code: Literal["low_quality_coverage_segment"]
+    evidence: str
+
+
 class DetectionsDoc(ArtifactModel):
     frames: dict[int, list[Detection]] = Field(default_factory=dict)
     row_count_checks: list[RowCountCheck] = Field(default_factory=list)
     keyframe_stats: list[DetectionFrameStats] = Field(default_factory=list)
+    selected_keyframes: list[SelectedDetectionKeyframe] = Field(default_factory=list)
+    review_queue: list[DetectionReviewEntry] = Field(default_factory=list)
 
 
 class GeometryDoc(ArtifactModel):

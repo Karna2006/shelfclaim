@@ -47,11 +47,12 @@ class CueSettings(BaseModel):
 
 
 class KeyframeSettings(BaseModel):
-    min_novelty: float = 0.15
-    detection_interval_s: float = Field(default=1.5, gt=0)
-    detection_max_frames: int = Field(default=10, gt=0)
     recon_min: int = 40
     recon_max: int = 80
+
+
+class DetectionSettings(BaseModel):
+    max_keyframes: int = Field(default=6, ge=1, le=6)
 
 
 class DedupSettings(BaseModel):
@@ -157,6 +158,7 @@ class YamlSettings(BaseModel):
 
     capture: CaptureSettings = Field(default_factory=CaptureSettings)
     cues: CueSettings = Field(default_factory=CueSettings)
+    detection: DetectionSettings = Field(default_factory=DetectionSettings)
     keyframes: KeyframeSettings = Field(default_factory=KeyframeSettings)
     dedup: DedupSettings = Field(default_factory=DedupSettings)
     identify: IdentifySettings = Field(default_factory=IdentifySettings)

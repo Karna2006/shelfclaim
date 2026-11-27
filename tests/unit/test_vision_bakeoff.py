@@ -20,7 +20,7 @@ def test_vision_detection_default_matches_bakeoff_winner() -> None:
     assert YamlSettings().vision.detection_method == "full_frame"
     assert YamlSettings().vision.detection_model == "gemini-3.5-flash-lite"
     assert not YamlSettings().vision.detection_model_fallbacks
-    assert YamlSettings().keyframes.detection_max_frames == 10
+    assert YamlSettings().detection.max_keyframes == 6
     assert YamlSettings().transcribe.backend == "local_ocr"
 
 

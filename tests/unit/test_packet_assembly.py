@@ -48,6 +48,18 @@ def test_packet_assembly_keeps_unknowns_null_and_reports_room_limit(tmp_path) ->
             "review_queue": [],
         },
     )
+    _write(
+        tmp_path / "s01_detections.json",
+        {
+            "review_queue": [
+                {
+                    "ref_id": "segment-2",
+                    "code": "low_quality_coverage_segment",
+                    "evidence": "Segment 2 had no QC-ok frame; selected frame 4.",
+                }
+            ]
+        },
+    )
     _write(tmp_path / "s04_measurements.json", {"books": {}, "rows": {}, "shelf_run_m": None})
     _write(tmp_path / "s05_transcriptions.json", {"books": {}})
     _write(
@@ -116,5 +128,11 @@ def test_packet_assembly_keeps_unknowns_null_and_reports_room_limit(tmp_path) ->
     assert packet["room"]["floor_area_m2"] is None
     assert packet["room"]["confidence"] == 0
     assert any(entry["code"] == "room_not_measured" for entry in packet["review_queue"])
+    assert any(
+        entry["code"] == "low_quality_coverage_segment"
+        and entry["ref_id"] == "segment-2"
+        and entry["reason"] == "Low-quality coverage segment"
+        for entry in packet["review_queue"]
+    )
     assert packet["meta"]["validation"]["passed"] is True
     assert (tmp_path / "report.html").is_file()

@@ -50,6 +50,8 @@ def run(ctx: StageContext) -> Path:
     if missing:
         raise FileNotFoundError(f"Required packet artifacts are missing: {', '.join(missing)}")
     raw = {name: _read(ctx.sweep_dir / name) for name in required}
+    s01_path = ctx.sweep_dir / "s01_detections.json"
+    raw["s01_detections.json"] = _read(s01_path) if s01_path.is_file() else {}
     sweep = Sweep.model_validate_json((ctx.sweep_dir / "sweep.json").read_text(encoding="utf-8"))
     frames = {row.seq: row for row in list_frames(ctx.sweep_dir)}
     books = _build_books(raw, frames, sweep.currency)
@@ -247,17 +249,23 @@ def _quote(
 def _build_review(raw: dict[str, dict[str, Any]]) -> list[ReviewEntry]:
     result = []
     for key in (
+        "s01_detections.json",
         "s03_books_raw.json",
         "s04_measurements.json",
         "s06_identification.json",
         "s07_book_prices.json",
     ):
-        for entry in raw[key].get("review_queue", []):
+        for entry in raw.get(key, {}).get("review_queue", []):
             code = str(entry.get("code", "review_required"))
+            reason = (
+                "Low-quality coverage segment"
+                if code == "low_quality_coverage_segment"
+                else code.replace("_", " ")
+            )
             result.append(
                 ReviewEntry(
                     ref_id=str(entry.get("ref_id", "sweep")),
-                    reason=code.replace("_", " "),
+                    reason=reason,
                     code=code,
                     evidence=entry.get("evidence"),
                 )

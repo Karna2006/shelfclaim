@@ -45,11 +45,11 @@ def pick_frames(
 ) -> None:
     """Pick sharp, non-duplicate frames for visual review or a detection bake-off."""
     settings = load_settings()
-    selected = select_detection_keyframes(
+    selection = select_detection_keyframes(
         sweep,
-        settings.config.keyframes,
-        max_frames=settings.config.keyframes.detection_max_frames,
+        max_frames=settings.config.detection.max_keyframes,
     )
+    selected = selection.frames
     if not selected:
         raise typer.BadParameter(f"No readable frames found in {sweep}")
     typer.echo("rank | seq | blur | exposure | gyro_dps | frame")
@@ -146,6 +146,17 @@ def _print_detection_keyframe_stats(sweep: Path) -> None:
     document = DetectionsDoc.model_validate_json(
         (sweep / "s01_detections.json").read_text(encoding="utf-8")
     )
+    frame_paths = {frame.seq: frame for frame in list_frames(sweep)}
+    typer.echo("Selected keyframes: segment | seq | QC | blur | fallback | frame")
+    for choice in document.selected_keyframes:
+        frame = frame_paths.get(choice.seq)
+        frame_path = sweep / frame.path if frame is not None else "frame path unavailable"
+        typer.echo(
+            f"{choice.segment + 1} | {choice.seq} | {choice.qc_verdict} | "
+            f"{choice.blur} | {choice.quality_fallback} | {frame_path}"
+        )
+    for entry in document.review_queue:
+        typer.echo(f"Review: {entry.ref_id} | {entry.code} | {entry.evidence}")
     typer.echo("seq | model | latency_ms | #spines | #shelf_boards | #items")
     for row in document.keyframe_stats:
         typer.echo(

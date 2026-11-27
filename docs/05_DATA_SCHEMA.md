@@ -264,7 +264,7 @@ class ClaimPacket(BaseModel):
 | `events.jsonl` (root) | `Event` | `t_ms, type` includes `cue_sent`, `cue_suppressed`, `echo_dropped`, `transcript_cleaned`, `intent_routed`, `agent_reply`, `agent_attempt`, `agent_fallback`, `recognition_paused`, `recognition_resumed`, `transcription_unavailable`, `speech_event`, `tool_call`, `tool_result`, transcript, session, stage, packet, and error events; `payload` carries event-specific evidence |
 | `user_statements.jsonl` (root) | `UserStatement` (pre-resolution) | as above, `resolved_to` empty |
 | `s00_keyframes.json` | `KeyframeSets` | `detection:[seq]`, `reconstruction:[seq]`, selection params |
-| `s01_detections.json` | `DetectionsDoc` | `frames:{seq:[{det_id, cls, box_px:BBox, item_category, score?, merged_from:[det_id], flags:["possible_duplicate_box"]}]}`, `row_count_checks:[{seq,row_hint,model_count_hint,box_count}]`, `keyframe_stats:[{seq,model,latency_ms,spine_count,shelf_board_count,item_count}]`; `model_count_hint` is review-only and never changes a packet count; `merged_from` records suppressed same-frame duplicate IDs; borderline IoU pairs remain separate and carry `possible_duplicate_box` |
+| `s01_detections.json` | `DetectionsDoc` | `selected_keyframes:[{seq,segment,qc_verdict,blur,quality_fallback}]`, `review_queue:[{ref_id,code:"low_quality_coverage_segment",evidence}]`, `frames:{seq:[{det_id, cls, box_px:BBox, item_category, score?, merged_from:[det_id], flags:["possible_duplicate_box"]}]}`, `row_count_checks:[{seq,row_hint,model_count_hint,box_count}]`, `keyframe_stats:[{seq,model,latency_ms,spine_count,shelf_board_count,item_count}]`; `model_count_hint` is review-only and never changes a packet count; `merged_from` records suppressed same-frame duplicate IDs; borderline IoU pairs remain separate and carry `possible_duplicate_box` |
 | `s02_geometry.json` | `GeometryDoc` | `backend, model, frames:[{seq, K[3x3], T_world_cam[4x4], depth_path, conf_path}]`, `gravity`, `scale:{factor, anchors[], disagreement_pct, method}`, `status`, `error?` |
 | `s03_books_raw.json` | `BookClustersDoc` | `units:[{unit:"A", rows:[{row:1, z_min, z_max, axis[3]}]}]`, `books:[{book_id, unit,row,position, member_dets:[det_id], best_view:{seq,bbox}, alt_view?, center_world[3], count_method}]` |
 | `s04_measurements.json` | `MeasurementsDoc` | `books:{book_id:{height_cm,thickness_cm,method,alt?,flags[]}}`, `rows:{"A-1":{span_m}}`, `shelf_run_m`, `sum_thickness_m` |
@@ -324,8 +324,9 @@ capture:
 cues:
   min_gap_s: 6
   same_type_gap_s: 15
+detection:
+  max_keyframes: 6
 keyframes:
-  min_novelty: 0.15
   recon_min: 40
   recon_max: 80
 dedup:

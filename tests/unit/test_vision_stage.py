@@ -5,14 +5,15 @@ import json
 import cv2
 import numpy as np
 import pytest
-from app.cli import _format_s03_count_rows, pick_frames
+from app.cli import _format_s03_count_rows, _print_detection_keyframe_stats, pick_frames
+from app.live.rate_limit import ModelRateLimiter
 from app.packet.models import BBox
 from app.pipeline.artifacts import Detection, DetectionsDoc, FrameRecord
 from app.pipeline.orchestrator import run_pipeline
 from app.pipeline.stages.s01_detect import run_detection_stage
 from app.pipeline.stages.s03_books import build_book_clusters
 from app.pipeline.stages.s04_measure import measure_spine_bbox
-from app.settings import Settings, YamlSettings
+from app.settings import LlmSettings, ModelRateLimitSettings, Settings, YamlSettings
 from app.vision.keyframes import select_detection_keyframes
 from app.vision.nms import suppress_frame_duplicates
 from app.vision.schema import VisionObject, VisionResponse
@@ -68,16 +69,62 @@ def _make_sweep(path, count: int = 1) -> None:
     (path / "frames.jsonl").write_text("".join(row.model_dump_json() + "\n" for row in records))
 
 
-def test_keyframes_respect_interval_and_cap(tmp_path) -> None:
+def test_keyframes_cover_segments_and_respect_budget(tmp_path) -> None:
     _make_sweep(tmp_path, count=45)
 
-    rows = select_detection_keyframes(tmp_path, YamlSettings().keyframes, max_frames=2)
-    unique_settings = YamlSettings().keyframes.model_copy(update={"min_novelty": 0})
-    capped_rows = select_detection_keyframes(tmp_path, unique_settings, max_frames=40)
+    rows = select_detection_keyframes(tmp_path, max_frames=2)
+    capped_rows = select_detection_keyframes(tmp_path, max_frames=6)
 
-    assert len(rows) <= 2
-    assert len(capped_rows) == 40
-    assert all(right.t_ms - left.t_ms >= 1500 for left, right in zip(rows, rows[1:], strict=False))
+    assert len(rows.frames) == 2
+    assert [choice.segment for choice in rows.choices] == [0, 1]
+    assert len(capped_rows.frames) == 6
+    assert [choice.segment for choice in capped_rows.choices] == list(range(6))
+
+
+def test_keyframes_choose_sharpest_ok_frame_and_flag_quality_fallback(tmp_path) -> None:
+    _make_sweep(tmp_path, count=12)
+    records = [
+        FrameRecord.model_validate_json(line)
+        for line in (tmp_path / "frames.jsonl").read_text(encoding="utf-8").splitlines()
+    ]
+    adjusted = []
+    for frame in records:
+        seq = frame.seq
+        verdict = "blurry" if seq in {1, 2, 3} else "ok"
+        blur = float(seq * 100 + 100)
+        adjusted.append(
+            frame.model_copy(update={"t_ms": seq * 1000, "qc_verdict": verdict, "blur": blur})
+        )
+    (tmp_path / "frames.jsonl").write_text(
+        "".join(frame.model_dump_json() + "\n" for frame in adjusted), encoding="utf-8"
+    )
+
+    selection = select_detection_keyframes(tmp_path, max_frames=6)
+
+    assert [frame.seq for frame in selection.frames] == [0, 3, 5, 7, 9, 11]
+    assert [choice.segment for choice in selection.review_choices] == [1]
+    assert selection.review_choices[0].quality_fallback is True
+
+
+@pytest.mark.asyncio
+async def test_replay_keyframe_output_lists_selected_frames_and_paths(tmp_path, capsys) -> None:
+    _make_sweep(tmp_path, count=12)
+
+    limiter = ModelRateLimiter(
+        LlmSettings(default_rate_limit=ModelRateLimitSettings(requests_per_minute=100))
+    )
+    await run_detection_stage(
+        tmp_path,
+        Settings(config=YamlSettings(), _env_file=None),
+        FakeVision(),
+        limiter=limiter,
+    )
+    _print_detection_keyframe_stats(tmp_path)
+
+    output = capsys.readouterr().out
+    assert "Selected keyframes: segment | seq | QC | blur | fallback | frame" in output
+    assert str(tmp_path / "frames/0.jpg") in output
+    assert str(tmp_path / "frames/10.jpg") in output
 
 
 def test_pick_frames_cli_reports_selected_frame_paths(tmp_path, capsys) -> None:
@@ -110,6 +157,15 @@ async def test_detection_stage_converts_normalized_boxes_to_pixels(tmp_path) -> 
     assert isinstance(stats["latency_ms"], int) and stats["latency_ms"] >= 0
     assert (stats["spine_count"], stats["shelf_board_count"], stats["item_count"]) == (1, 0, 0)
     assert fake.calls == 1
+    assert doc["selected_keyframes"] == [
+        {
+            "seq": 0,
+            "segment": 0,
+            "qc_verdict": "ok",
+            "blur": 400.0,
+            "quality_fallback": False,
+        }
+    ]
 
 
 @pytest.mark.asyncio

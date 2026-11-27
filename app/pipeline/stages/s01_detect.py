@@ -14,12 +14,19 @@ from typing import cast
 
 from app.capture.storage import list_frames
 from app.live.rate_limit import ModelRateLimiter
-from app.pipeline.artifacts import Detection, DetectionFrameStats, DetectionsDoc, Event
+from app.pipeline.artifacts import (
+    Detection,
+    DetectionFrameStats,
+    DetectionReviewEntry,
+    DetectionsDoc,
+    Event,
+    SelectedDetectionKeyframe,
+)
 from app.pipeline.context import StageContext
 from app.settings import Settings
 from app.telemetry.events import write_event
 from app.vision.client import GeminiVisionDetector, VisionDetector
-from app.vision.keyframes import select_detection_keyframes
+from app.vision.keyframes import describe_explicit_selection, select_detection_keyframes
 from app.vision.models import vision_model_chain
 from app.vision.nms import suppress_frame_duplicates
 from app.vision.schema import VisionResponse
@@ -73,19 +80,25 @@ async def run_detection_stage(
     """Select and detect keyframes with concurrency two and bounded 429 retries."""
     if max_frames is not None and max_frames < 1:
         raise ValueError("max_frames must be positive")
-    configured_max = settings.config.keyframes.detection_max_frames
+    configured_max = settings.config.detection.max_keyframes
     selected_max = min(max_frames, configured_max) if max_frames is not None else configured_max
+    available_frames = list_frames(sweep_dir)
     if frame_seqs is None:
-        keyframes = select_detection_keyframes(
-            sweep_dir, settings.config.keyframes, max_frames=selected_max
+        selection = select_detection_keyframes(
+            sweep_dir,
+            max_frames=selected_max,
         )
     else:
-        by_seq = {frame.seq: frame for frame in list_frames(sweep_dir)}
+        by_seq = {frame.seq: frame for frame in available_frames}
         if len(frame_seqs) != len(set(frame_seqs)) or any(seq not in by_seq for seq in frame_seqs):
             raise ValueError("frame_seqs must contain unique saved frame sequences")
         if len(frame_seqs) > selected_max:
             raise ValueError("frame_seqs cannot exceed the selected keyframe limit")
         keyframes = [by_seq[seq] for seq in frame_seqs]
+        selection = describe_explicit_selection(
+            available_frames, keyframes, segment_count=selected_max
+        )
+    keyframes = selection.frames
     limiter = limiter or ModelRateLimiter(settings.config.llm)
     semaphore = asyncio.Semaphore(2)
 
@@ -118,6 +131,33 @@ async def run_detection_stage(
     document = DetectionsDoc(
         frames={seq: detections for seq, detections, _ in results},
         keyframe_stats=[stats for _, _, stats in results],
+        selected_keyframes=[
+            SelectedDetectionKeyframe(
+                seq=choice.frame.seq,
+                segment=choice.segment,
+                qc_verdict=choice.frame.qc_verdict,
+                blur=choice.frame.blur,
+                quality_fallback=choice.quality_fallback,
+            )
+            for choice in selection.choices
+            if choice.frame is not None
+        ],
+        review_queue=[
+            DetectionReviewEntry(
+                ref_id=f"segment-{choice.segment + 1}",
+                code="low_quality_coverage_segment",
+                evidence=(
+                    f"Segment {choice.segment + 1} had no saved frames."
+                    if choice.frame is None
+                    else (
+                        f"Segment {choice.segment + 1} had no QC-ok frame; "
+                        f"selected frame {choice.frame.seq} (verdict={choice.frame.qc_verdict}, "
+                        f"blur={choice.frame.blur})."
+                    )
+                ),
+            )
+            for choice in selection.review_choices
+        ],
     )
     output = sweep_dir / "s01_detections.json"
     output.write_text(document.model_dump_json(indent=2) + "\n", encoding="utf-8")
