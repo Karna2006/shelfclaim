@@ -20,6 +20,10 @@ See the [system design page](docs/system-design.html), [architecture overview](d
 
 These are three saved sweeps, not an accuracy benchmark; identification, pricing, and dimensions still depend on readable text, catalogue connectivity, and visible scale markers.
 
+GitHub shows `report.html` as source. Open it locally in a browser, or visit `http://localhost:8000/sweeps/<id>/` while the server runs.
+
+OCR-first detection raised identification on the same shelf from **4/11** (Gemini spine boxes) to **7/13**.
+
 ## Principles
 
 - Models perceive; code decides.
@@ -37,7 +41,14 @@ The steps below take under 15 minutes on a configured machine. You need Python 3
    Copy-Item .env.example .env
    ```
 
-   On macOS/Linux use `cp .env.example .env` instead. Set `GOOGLE_API_KEY` for live voice. Set `SERPAPI_API_KEY` for book price searches. `GOOGLE_BOOKS_API_KEY` is optional in the current client; Google Books requests can be keyless. Keep `.env` private.
+   On macOS/Linux, create the file with:
+
+   ```bash
+   uv sync --extra dev
+   cp .env.example .env
+   ```
+
+   Set `GOOGLE_API_KEY` for live voice and `SERPAPI_API_KEY` for book price searches. `GOOGLE_BOOKS_API_KEY` is recommended: keyless Google Books requests can receive HTTP 429 quickly. Open Library is disabled by default because it was unreachable from this network. Keep `.env` private.
 2. Download the YuNet face model (Haar detection is used if the model is unavailable):
 
    ```powershell
@@ -56,12 +67,12 @@ The steps below take under 15 minutes on a configured machine. You need Python 3
 
    On macOS/Linux:
 
-   ```sh
+   ```bash
    uv run uvicorn app.server.main:app --reload --host 0.0.0.0 --port 8000
    ```
 5. In another terminal, expose the server to the phone and open the shown HTTPS address in Android Chrome:
 
-   ```sh
+   ```bash
    tailscale serve --bg 8000
    ```
 
@@ -75,7 +86,7 @@ Common voice inputs include “yes” (locale confirmation), “it's a print”,
 
 Useful CLI commands:
 
-```sh
+```bash
 # Resume processing at identification and build through the report
 uv run python -m app.cli replay sweeps/<sweep-id> --from-stage s06 --until s10 --limit 10
 
@@ -98,7 +109,6 @@ Live API calls depend on provider availability and quota. Use fixtures for routi
 app/             FastAPI server, capture, live agent, pipeline, packet, and providers
 web/             Phone app and laptop live viewer (vanilla JavaScript)
 config/          Capture, detection, locale, pricing, and model settings
-gpu/             Optional reconstruction backend
 scripts/         Small diagnostic/reproduction scripts
 tests/           Unit and browser speech tests with mocked services
 eval/            Ground-truth files and evaluation inputs
