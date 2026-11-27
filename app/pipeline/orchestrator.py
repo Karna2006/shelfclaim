@@ -9,6 +9,7 @@ from __future__ import annotations
 import asyncio
 import json
 import time
+from collections.abc import Awaitable, Callable
 from pathlib import Path
 from typing import Any
 
@@ -44,6 +45,7 @@ async def run_pipeline(
     frame_seqs: tuple[int, ...] | None = None,
     max_books: int | None = None,
     clients: dict[str, object] | None = None,
+    on_progress: Callable[[dict[str, object]], Awaitable[None]] | None = None,
 ) -> Path:
     """Run each stage once in order and update latency telemetry after completion."""
     if from_stage not in _ORDER:
@@ -75,15 +77,36 @@ async def run_pipeline(
     stages = list(_ORDER[_ORDER.index(from_stage) : _ORDER.index(until) + 1])
     if from_stage == "s01" and until != "s01" and (sweep_dir / "s01_detections.json").is_file():
         stages.remove("s01")
-    for stage in stages:
+    for index, stage in enumerate(stages, start=1):
         write_event(
             sweep_dir,
             Event(t_ms=0, type="stage_started", payload={"stage": stage, "backend": "off"}),
         )
+        if on_progress is not None:
+            await on_progress(
+                {"stage": stage, "state": "started", "current": index, "total": len(stages)}
+            )
         try:
             with context.ledger.stage(stage):
                 stage_output = stage_functions[stage](context)
                 output = await stage_output if asyncio.iscoroutine(stage_output) else stage_output
+            write_event(
+                sweep_dir,
+                Event(
+                    t_ms=0,
+                    type="stage_done",
+                    payload={"stage": stage, "output": output.name, "backend": "off"},
+                ),
+            )
+            if on_progress is not None:
+                await on_progress(
+                    {
+                        "stage": stage,
+                        "state": "complete",
+                        "current": index,
+                        "total": len(stages),
+                    }
+                )
         except Exception as exc:
             write_event(
                 sweep_dir,

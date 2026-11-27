@@ -16,6 +16,7 @@ from app.live.echo_guard import EchoGuard
 
 if TYPE_CHECKING:
     from app.live.agent import AgentLoop
+    from app.server.viewer import ViewerHub
     from fastapi import WebSocket
 
 
@@ -40,6 +41,8 @@ class LiveSessionContext:
     cue_suppress_after_user_s: float = 8
     last_cleaned_text: str = ""
     packet_ready_sent: bool = False
+    finalization_task: asyncio.Task[None] | None = None
+    viewer_hub: ViewerHub | None = None
     agent: AgentLoop | None = None
     websocket: WebSocket | None = None
     turn_lock: asyncio.Lock = field(default_factory=asyncio.Lock)

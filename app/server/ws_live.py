@@ -142,6 +142,11 @@ async def live_socket(websocket: WebSocket, sweep_id: str) -> None:
                 cleaned = " ".join(pending)
                 context.user_speaking = False
                 await websocket.send_json({"type": "user_text_accepted", "text": cleaned})
+                if context.viewer_hub is not None:
+                    await context.viewer_hub.publish(
+                        sweep_id,
+                        {"type": "caption", "speaker": "user", "text": cleaned},
+                    )
                 if message.forced_final:
                     pending.clear()
                     pending_since = None

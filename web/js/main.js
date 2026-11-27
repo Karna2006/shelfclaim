@@ -34,6 +34,7 @@ let pendingSpeechEvents = [];
 let speechActivityTimer = null;
 let latestQc = null;
 let acceptedTurnWhileSpeaking = false;
+let finalizing = false;
 
 function cueConditionIsTrue(kind) {
   const verdict = latestQc?.verdict;
@@ -79,7 +80,7 @@ function setupSpeech() {
   });
   speechOut = createSpeechOut({
     pauseInput: () => speechIn?.pause(),
-    resumeInput: () => { if (active) speechIn?.resume(); },
+    resumeInput: () => { if (active || finalizing) speechIn?.resume(); },
     onSpeakingChange: (speaking, kind) => {
       interruptButton.hidden = !speaking;
       if (speaking) ui.setAgentState("speaking");
@@ -144,6 +145,9 @@ async function requestMicAndListen() {
 }
 
 async function startSweep() {
+  if (finalizing) return;
+  if (liveSocket || captureSocket || camera || motion) await stopSweep();
+  finalizing = false;
   pendingUserTexts = [];
   pendingSpeechEvents = [];
   latestQc = null;
@@ -233,8 +237,18 @@ function handleAgentMessage(message) {
   }
   if (message.type === "state" && !speechOut?.isSpeaking()) ui.setAgentState(message.state);
   if (message.type === "inventory") ui.renderInventory(message);
-  if (message.type === "packet_ready") ui.showReportLink(message.report_url);
-  if (message.type === "control" && message.action === "stop_capture") stopSweep();
+  if (message.type === "pipeline_progress") {
+    ui.setMessage(message.state === "failed"
+      ? "Report finalization failed. Check the sweep events."
+      : `Finalizing report: ${message.stage || "pipeline"} (${message.state || "working"}).`);
+    if (message.state === "failed") finishFinalizationUi();
+  }
+  if (message.type === "packet_ready") {
+    ui.showReportLink(message.report_url);
+    ui.setMessage("Report is ready.");
+    finishFinalizationUi();
+  }
+  if (message.type === "control" && message.action === "stop_capture") finishCaptureForFinalization();
   if (message.type === "error") ui.setMessage(message.message);
 }
 
@@ -274,6 +288,7 @@ async function captureFrame() {
 
 async function stopSweep() {
   active = false;
+  finalizing = false;
   if (frameTimer !== null) window.clearTimeout(frameTimer);
   if (motionTimer !== null) window.clearInterval(motionTimer);
   if (recordingTimer !== null) window.clearInterval(recordingTimer);
@@ -292,6 +307,33 @@ async function stopSweep() {
   camera = null;
   await releaseWakeLock();
   ui.setRecording(null);
+}
+
+async function finishCaptureForFinalization() {
+  if (finalizing) return;
+  active = false;
+  finalizing = true;
+  if (frameTimer !== null) window.clearTimeout(frameTimer);
+  if (motionTimer !== null) window.clearInterval(motionTimer);
+  if (recordingTimer !== null) window.clearInterval(recordingTimer);
+  frameTimer = motionTimer = recordingTimer = null;
+  captureSocket?.close();
+  captureSocket = null;
+  motion?.stop();
+  motion = null;
+  camera?.stop();
+  camera = null;
+  await releaseWakeLock();
+  ui.setRecording(null);
+  ui.startButton.disabled = true;
+  ui.setAgentState("thinking");
+  ui.setMessage("Capture complete. Finalizing report…");
+}
+
+function finishFinalizationUi() {
+  finalizing = false;
+  ui.startButton.disabled = false;
+  ui.setAgentState(speechOut?.isSpeaking() ? "speaking" : "listening");
 }
 
 typedFallback.addEventListener("submit", (event) => {

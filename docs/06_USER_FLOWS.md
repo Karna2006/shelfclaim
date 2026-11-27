@@ -79,6 +79,9 @@ Server to client:
 | `cue` | `{type, text, priority, kind}` | Direct speech queued behind the current sentence; appended to assistant history and transcript |
 | `state` | `{type, state:"listening"}` | Session status |
 | `control` | `{type, action:"stop_capture"}` | Agent requested capture stop |
+| `pipeline_progress` | `{type, stage, state, current, total}` | Finalization state sent to phone and viewer |
+| `inventory` | `{type, rows, items, provisional}` | Detection/pipeline inventory; final packet fills the panel |
+| `packet_ready` | `{type, report_url}` | Validated report is available at `/sweeps/{sweep_id}/` |
 | `error` | `{type, message}` | Invalid or unsupported protocol message |
 | `user_text_accepted` | `{type, text}` | Echo-cleaned transcript; qualifying speech stops the reply after its current sentence |
 | `echo_dropped` | `{type, cleaned_text}` | Whole transcript was a recent spoken echo |
@@ -105,6 +108,22 @@ for the configured sustain window. `low_light_blur` requires blur below
 `blur_min`, gyro below `speed_max_dps`, and exposure below the configurable
 `low_light_exposure_max` (default 85). Brightness uses the configured dark and
 bright mean-luminance thresholds.
+
+When `end_sweep` requests capture stop, the browser closes only the camera and
+capture socket while keeping the live voice socket open. The server runs the
+same `run_pipeline` function as CLI replay in a worker thread and sends
+`pipeline_progress`, inventory updates, and `packet_ready` messages to the
+phone and connected viewers. The final spoken summary uses only counts returned
+by `get_packet_summary`; failed finalization is logged and reported with a
+short spoken fallback. CLI replay remains available as a recovery path.
+
+### 5.3 `/ws/viewer/{sweep_id}` (JSON text frames)
+
+The laptop viewer receives a latest-state snapshot on connect, then live
+`frame` (face-redacted, at most 960 px and approximately 3 fps), `qc`,
+`caption`, `inventory`, `pipeline_progress`, and `packet_ready` events. The
+server stores no separate viewer copy of the sweep; relative report assets are
+served from the validated sweep directory under `/sweeps/{sweep_id}/`.
 
 ## 6. Developer flows (CLI)
 

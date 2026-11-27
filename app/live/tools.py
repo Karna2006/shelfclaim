@@ -302,7 +302,7 @@ class ToolHandlers:
             "books_replacement_cost": totals["books_replacement_cost"],
             "books_used_value": totals["books_used_value"],
             "review_queue_count": len(packet["review_queue"]),
-            "report_path": f"/api/sweeps/{self._session.sweep_id}/report",
+            "report_path": f"/sweeps/{self._session.sweep_id}/",
         }
 
 

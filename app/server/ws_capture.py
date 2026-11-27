@@ -87,6 +87,12 @@ async def capture_socket(websocket: WebSocket, sweep_id: str) -> None:
                 if context is not None:
                     context.latest_capture_seq = result.record.seq
                     context.latest_client_t_ms = header.t_ms
+                await websocket.app.state.viewer_hub.publish_saved_frame(
+                    sweep_id, sweep_dir / result.record.path, header.t_ms
+                )
+                qc_message = result.qc_message()
+                await websocket.app.state.viewer_hub.publish(sweep_id, qc_message)
+                if context is not None:
                     from app.server.live_output import cue_suppression_reason, send_cue
 
                     candidate = monitor.observe(
@@ -101,7 +107,7 @@ async def capture_socket(websocket: WebSocket, sweep_id: str) -> None:
                             kind=candidate.kind,
                             metrics=candidate.metrics,
                         )
-                await websocket.send_json(result.qc_message())
+                await websocket.send_json(qc_message)
                 await websocket.send_json({"type": "ack", "seq": header.seq})
             elif message.get("text"):
                 sample = _accept_motion_sample(message["text"])

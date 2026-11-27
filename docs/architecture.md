@@ -8,7 +8,9 @@ flowchart LR
   Phone -->|final text| Agent[Intent router + Gemini Flash-Lite]
   Server --> Monitor[Rolling quality monitor]
   Monitor -->|spoken cue from measured QC| Phone
+  Phone -->|end_sweep| Finalize[Background pipeline worker]
   Server --> Saved[Saved frames + metrics]
+  Saved -->|redacted frames + QC| Viewer[Live laptop viewer]
   Saved --> S1[S1 Gemini detections]
   S1 --> S3[S3 shelf rows + best-frame counts]
   S3 --> S4[S4 marker-plane measurements]
@@ -21,6 +23,9 @@ flowchart LR
   Items --> S10
   Room --> S10
   S10 --> Report[claim_packet.json + report.html]
+  Finalize --> S1
+  Report -->|progress, inventory, packet_ready| Viewer
+  Report -->|spoken summary + report link| Phone
 ```
 
 ## Models and tools
@@ -39,4 +44,4 @@ Totals are computed by `app/packet/totals.py`, never by a model. The validation 
 
 ## Runtime status
 
-The phone capture and agent sockets run during a sweep. Final stage processing is started with CLI replay in this build; `end_sweep` does not yet launch the pipeline automatically. The latest S06–S10 replay passed validation on three selected shelf frames, with 11 book rows, 4 identified, and 4 used-price offers. Per-stage timing and provider cost are included only when recorded in telemetry; see [results](results.md) and [failure log](failure_log.md).
+The phone capture and agent sockets run during a sweep. `end_sweep` starts the same `run_pipeline` function used by CLI replay in a worker thread; stage progress and final inventory are broadcast to the phone and laptop viewer. CLI replay remains available for recovery and repeatable analysis. The latest S06–S10 replay passed validation on three selected shelf frames, with 11 book rows, 4 identified, and 4 used-price offers. Per-stage timing and provider cost are included only when recorded in telemetry; see [results](results.md) and [failure log](failure_log.md).

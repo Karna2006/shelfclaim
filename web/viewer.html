@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en" data-sweep-id="__SWEEP_ID__">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b0b0c" />
+    <title>ShelfClaim live viewer</title>
+    <link rel="stylesheet" href="/viewer.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div><strong>ShelfClaim</strong><span id="sweep-label"></span></div>
+      <div class="top-actions">
+        <span id="connection" data-state="connecting">Connecting</span>
+        <label><input id="speak-toggle" type="checkbox" checked /> Speak agent on laptop</label>
+      </div>
+    </header>
+    <main class="viewer-grid">
+      <section class="frame-panel" aria-label="Latest camera frame">
+        <div class="frame-heading">
+          <span id="qc-pill" data-state="idle">Waiting for camera</span>
+          <span id="cards-seen">Cards seen: none</span>
+        </div>
+        <img id="live-frame" alt="Latest saved camera frame" />
+        <p id="frame-empty">Waiting for a phone sweep to send frames.</p>
+        <section class="progress-panel" aria-live="polite">
+          <div><strong>Finalization</strong><span id="pipeline-label">Not started</span></div>
+          <progress id="pipeline-progress" max="10" value="0"></progress>
+          <a id="report-link" href="#" hidden>Open report</a>
+        </section>
+      </section>
+      <aside class="side-panel">
+        <section class="card caption-card">
+          <h2>Conversation</h2>
+          <ol id="captions" aria-live="polite"></ol>
+        </section>
+        <section class="card inventory-card">
+          <h2>Live inventory</h2>
+          <p id="inventory-placeholder">Inventory appears after detection.</p>
+          <div id="inventory-content" hidden>
+            <h3>Books by row</h3>
+            <ul id="book-rows"></ul>
+            <h3>Items</h3>
+            <ul id="items-list"></ul>
+          </div>
+        </section>
+      </aside>
+    </main>
+    <script type="module" src="/js/viewer.js"></script>
+  </body>
+</html>
