@@ -15,6 +15,7 @@ from typing import Any, cast
 
 import httpx
 from app.identify.catalogue import CatalogueClient, OpenLibraryGoogleBooks
+from app.pipeline.artifacts import DetectionsDoc
 from app.pipeline.context import StageContext
 from rapidfuzz import fuzz
 
@@ -39,9 +40,12 @@ async def run(ctx: StageContext, *, max_books: int | None = None) -> Path:
     )
     semaphore = asyncio.Semaphore(5)
 
+    query_log = getattr(catalogue, "query_log", None)
+    query_log_start = len(query_log) if isinstance(query_log, list) else 0
+
     async def match(
         book: dict[str, Any], transcription: dict[str, Any]
-    ) -> tuple[str, dict[str, Any], list[dict[str, Any]]]:
+    ) -> tuple[str, dict[str, Any], list[dict[str, Any]], list[dict[str, Any]]]:
         async with semaphore:
             matched = await identify_spine_lines(
                 _line_records(transcription),
@@ -70,8 +74,15 @@ async def run(ctx: StageContext, *, max_books: int | None = None) -> Path:
             "id_confidence": confidence,
             "candidates": matched["candidates"][:8],
             "spine_text_raw": transcription.get("spine_text_raw", ""),
+            "unit": book.get("unit", ""),
+            "row": book.get("row"),
+            "candidate_views": book.get("best_view", {}).get("candidate_views", []),
         }
-        return book["book_id"], result, reviews
+        query_plan = [
+            {"query": query, "line_indices": list(indices)} for query, indices in matched["queries"]
+        ]
+        result["queries"] = query_plan
+        return book["book_id"], result, reviews, query_plan
 
     matched = await asyncio.gather(
         *(
@@ -85,9 +96,23 @@ async def run(ctx: StageContext, *, max_books: int | None = None) -> Path:
             for book in book_rows
         )
     )
+    s01_path = ctx.sweep_dir / "s01_detections.json"
+    s01 = (
+        DetectionsDoc.model_validate_json(s01_path.read_text(encoding="utf-8"))
+        if s01_path.is_file()
+        else None
+    )
+    if s01 is not None and s01.backend == "ocr_spines":
+        _mark_identified_duplicates(
+            matched,
+            max_gap_ms=ctx.settings.config.detection.ocr_dedup_max_gap_ms,
+            min_x_overlap=ctx.settings.config.detection.ocr_dedup_x_overlap_min,
+        )
     output_doc = {
-        "books": {book_id: result for book_id, result, _ in matched},
-        "review_queue": [review for _, _, reviews in matched for review in reviews],
+        "books": {book_id: result for book_id, result, _, _ in matched},
+        "review_queue": [review for _, _, reviews, _ in matched for review in reviews],
+        "catalogue_requests": (query_log[query_log_start:] if isinstance(query_log, list) else []),
+        "queries_generated": {book_id: queries for book_id, _, _, queries in matched},
         "thresholds": {
             "title_sim_min": 90,
             "author_sim_min_for_short_titles": 85,
@@ -300,3 +325,67 @@ def _candidate_choice_key(
             -candidate["title_sim"],
         )
     return -candidate["title_sim"], -candidate["author_sim"]
+
+
+def _mark_identified_duplicates(
+    results: list[tuple[str, dict[str, Any], list[dict[str, Any]], list[dict[str, Any]]]],
+    *,
+    max_gap_ms: int,
+    min_x_overlap: float,
+) -> None:
+    """Merge repeated catalogue titles only when same-row frames overlap in x."""
+    canonical: dict[tuple[str, int, str], list[tuple[str, dict[str, Any]]]] = {}
+    for book_id, result, _, _ in sorted(results, key=lambda item: item[0]):
+        if result["status"] != "identified":
+            continue
+        title_key = normalize_catalogue_text(str(result.get("title", "")))
+        row = result.get("row")
+        if not title_key or not isinstance(row, int):
+            continue
+        key = (str(result.get("unit", "")), row, title_key)
+        earlier = canonical.setdefault(key, [])
+        duplicate_of = next(
+            (
+                canonical_id
+                for canonical_id, canonical_result in earlier
+                if _books_overlap_in_time(
+                    canonical_result.get("candidate_views", []),
+                    result.get("candidate_views", []),
+                    max_gap_ms,
+                    min_x_overlap,
+                )
+            ),
+            None,
+        )
+        if duplicate_of is not None:
+            result["status"] = "duplicate"
+            result["duplicate_of"] = duplicate_of
+        else:
+            earlier.append((book_id, result))
+
+
+def _books_overlap_in_time(
+    first_views: list[dict[str, Any]],
+    second_views: list[dict[str, Any]],
+    max_gap_ms: int,
+    min_x_overlap: float,
+) -> bool:
+    for first in first_views:
+        for second in second_views:
+            if first.get("seq") == second.get("seq"):
+                continue
+            if abs(int(first.get("t_ms", 0)) - int(second.get("t_ms", 0))) > max_gap_ms:
+                continue
+            first_box, second_box = first.get("bbox", {}), second.get("bbox", {})
+            overlap = max(
+                0,
+                min(
+                    float(first_box.get("x", 0)) + float(first_box.get("w", 0)),
+                    float(second_box.get("x", 0)) + float(second_box.get("w", 0)),
+                )
+                - max(float(first_box.get("x", 0)), float(second_box.get("x", 0))),
+            )
+            smaller = min(float(first_box.get("w", 0)), float(second_box.get("w", 0)))
+            if smaller > 0 and overlap / smaller >= min_x_overlap:
+                return True
+    return False

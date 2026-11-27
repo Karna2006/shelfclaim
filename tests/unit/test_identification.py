@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import asyncio
 import json
 import time
 
@@ -8,6 +9,7 @@ import pytest
 from app.identify.catalogue import OpenLibraryGoogleBooks
 from app.pipeline.context import StageContext
 from app.pipeline.stages.s06_identify import (
+    _mark_identified_duplicates,
     normalize_catalogue_text,
     run,
 )
@@ -19,6 +21,34 @@ class EmptyCatalogue:
     async def search(self, title: str, author: str) -> list[dict[str, object]]:
         assert title == "visible fragment"
         return []
+
+
+def test_ocr_books_with_same_title_and_overlapping_nearby_views_are_deduplicated() -> None:
+    first = _identified_result([{"seq": 1, "t_ms": 1000, "bbox": {"x": 10, "w": 40}}])
+    duplicate = _identified_result([{"seq": 2, "t_ms": 2000, "bbox": {"x": 12, "w": 40}}])
+    separate_position = _identified_result([{"seq": 2, "t_ms": 2000, "bbox": {"x": 140, "w": 40}}])
+    rows = [
+        ("b_0001", first, [], []),
+        ("b_0002", duplicate, [], []),
+        ("b_0003", separate_position, [], []),
+    ]
+
+    _mark_identified_duplicates(rows, max_gap_ms=5000, min_x_overlap=0.5)
+
+    assert first["status"] == "identified"
+    assert duplicate["status"] == "duplicate"
+    assert duplicate["duplicate_of"] == "b_0001"
+    assert separate_position["status"] == "identified"
+
+
+def _identified_result(views: list[dict[str, object]]) -> dict[str, object]:
+    return {
+        "status": "identified",
+        "title": "Deep Work",
+        "unit": "A",
+        "row": 1,
+        "candidate_views": views,
+    }
 
 
 def test_catalogue_normalization_folds_accents_and_punctuation() -> None:
@@ -163,6 +193,30 @@ async def test_google_books_429_falls_back_to_open_library(monkeypatch) -> None:
 
     assert result[0]["source"] == "openlibrary"
     assert open_library_calls == 1
+
+
+@pytest.mark.asyncio
+async def test_catalogue_connect_failure_opens_circuit_for_concurrent_queries(monkeypatch) -> None:
+    catalogue = OpenLibraryGoogleBooks(Settings(config=YamlSettings(), _env_file=None))
+    calls = {"google_books": 0, "open_library": 0}
+
+    async def fail_google(title: str, author: str):
+        del title, author
+        calls["google_books"] += 1
+        raise httpx.ConnectError("offline")
+
+    async def fail_open_library(title: str, author: str):
+        del title, author
+        calls["open_library"] += 1
+        raise httpx.ConnectError("offline")
+
+    monkeypatch.setattr(catalogue, "_google_books", fail_google)
+    monkeypatch.setattr(catalogue, "_open_library", fail_open_library)
+
+    results = await asyncio.gather(*(catalogue.search(f"title {index}", "") for index in range(5)))
+
+    assert results == [[], [], [], [], []]
+    assert calls == {"google_books": 1, "open_library": 1}
 
 
 @pytest.mark.asyncio

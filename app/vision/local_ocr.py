@@ -27,6 +27,8 @@ class FrameOcrLine:
     y: float
     w: float
     h: float
+    rotation: int = 0
+    ocr_height: float = 0
 
     @property
     def center(self) -> tuple[float, float]:
@@ -78,11 +80,24 @@ class LocalOcrTranscriber:
                 confidence = max(0.0, min(1.0, float(score)))
                 if not cleaned or confidence < self._confidence_min:
                     continue
-                source_box = _box_to_source(box, angle, width, height)
+                points = np.asarray(box, dtype=np.float32).reshape(-1, 2)
+                ocr_height = float(points[:, 1].max() - points[:, 1].min())
+                source_box = _box_to_source(points, angle, width, height)
                 if source_box is None:
                     continue
                 x0, y0, x1, y1 = source_box
-                lines.append(FrameOcrLine(cleaned, confidence, x0, y0, x1 - x0, y1 - y0))
+                lines.append(
+                    FrameOcrLine(
+                        cleaned,
+                        confidence,
+                        x0,
+                        y0,
+                        x1 - x0,
+                        y1 - y0,
+                        rotation=angle,
+                        ocr_height=ocr_height,
+                    )
+                )
         return _deduplicate_frame_lines(lines)
 
     def _transcribe_sync(self, crops: list[CropInput]) -> SpineTranscriptionResponse:

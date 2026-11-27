@@ -29,6 +29,7 @@ class SerpApiProvider:
             raise ValueError("SERPAPI_API_KEY is required for repricing")
         self._key = settings.serpapi_api_key.get_secret_value()
         self._cache = settings.cache_db
+        self.query_log: list[dict[str, object]] = []
 
     async def shopping(self, query: str, locale: dict[str, object]) -> SearchPayload:
         params = {
@@ -53,7 +54,20 @@ class SerpApiProvider:
     async def fx(self, from_currency: str, to_currency: str) -> SearchPayload:
         query = urlencode({"base": from_currency, "symbols": to_currency})
         url = f"https://api.frankfurter.dev/v1/latest?{query}"
-        raw = await fetch_bytes(url, self._cache)
+        safe_url = url
+
+        def observe(_url: str, status: int | None, cached: bool, error: str | None) -> None:
+            self.query_log.append(
+                {"url": safe_url, "status": status, "cache": cached, "error": error}
+            )
+
+        raw = await fetch_bytes(
+            url,
+            self._cache,
+            on_request=observe,
+            cache_ttl=None,
+            cache_http_errors=True,
+        )
         data = json.loads(raw)
         return SearchPayload(data=data, raw=raw, request_url=url)
 
@@ -61,6 +75,19 @@ class SerpApiProvider:
         url = f"{base}?{urlencode(params)}"
         safe_params = {**params, "api_key": "REDACTED"}
         safe_url = f"{base}?{urlencode(safe_params)}"
-        raw = await fetch_bytes(url, self._cache, cache_key=safe_url)
+
+        def observe(_url: str, status: int | None, cached: bool, error: str | None) -> None:
+            self.query_log.append(
+                {"url": safe_url, "status": status, "cache": cached, "error": error}
+            )
+
+        raw = await fetch_bytes(
+            url,
+            self._cache,
+            cache_key=safe_url,
+            on_request=observe,
+            cache_ttl=None,
+            cache_http_errors=True,
+        )
         data = json.loads(raw)
         return SearchPayload(data=data, raw=raw, request_url=safe_url)

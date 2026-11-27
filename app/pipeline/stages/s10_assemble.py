@@ -155,6 +155,8 @@ def _build_books(
     for cluster in clusters:
         book_id = cluster["book_id"]
         identity = identities.get(book_id, {})
+        if identity.get("status") == "duplicate":
+            continue
         transcription = transcriptions.get(book_id, {})
         pricing = prices.get(book_id, {})
         view = cluster["best_view"]

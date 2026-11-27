@@ -152,7 +152,10 @@ Each stage: input = previous stage JSON files + frames. Output = `sweeps/<id>/st
 - **Reconstruction set:** 40–80 frames spread through the sweep. Greedy selection maximises gyro-integrated yaw/pitch diversity and sharpness. Always include every frame where a scale card was detected.
 
 ### S1 — Detection (`vision/detect.py`) *(streams during the sweep)*
-- Gemini 3.5 Flash Lite, at most 6 coverage-selected keyframes per sweep, JSON schema output:
+- Default backend is local RapidOCR CPU on at most 6 coverage-selected keyframes. Run 90° and 270° rotations, plus 0° for flat text when the frame contains spine-shaped vertical text; map boxes back to source-frame coordinates and keep confidence ≥ `detection.ocr_confidence_min`. Filter vertical text boxes by the configured minimum source-frame height and aspect ratio so small screen/interface text does not become a book.
+- Cluster text-box centre-y values into shelf-row bands using configured gap thresholds. Within a row, cluster centre-x values with 1-D DBSCAN (`eps = detection.ocr_x_eps_factor × median OCR text-line height`), then split transitive clusters wider than the configured fraction of a row band to prevent adjacent spines from merging. Each cluster becomes one spine box spanning the row band, with its OCR lines ordered top-to-bottom.
+- Optional `detection.assist: gemini` adds only Gemini spine boxes with no spatial overlap with an OCR cluster. A Gemini assist failure is recorded per frame and does not block OCR detections. The `gemini` backend remains available for comparison.
+- Gemini backend and assist use at most 6 coverage-selected keyframes per sweep, JSON schema output:
   `{"objects":[{"cls":"book_spine|book_stack|shelf_unit|shelf_board|item","box_2d":[ymin,xmin,ymax,xmax],"angle_deg":0-180,"item_category":"…","note":"…"}]}`.
 - Boxes are 0–1000 normalised; convert to pixels. For long thin spines, ask for **rotated** boxes via `angle_deg` and validate (clip to the image, min side ≥ 6 px).
 - Prompt: "List EVERY book spine individually, including thin ones, books lying flat and books in stacks. Do not read titles. Do not merge adjacent books."
@@ -172,6 +175,7 @@ Each stage: input = previous stage JSON files + frames. Output = `sweeps/<id>/st
 5. Output `s02_geometry.json`: poses, intrinsics, scale, anchors, gravity, path to `geometry/depth_*.npz`.
 
 ### S3 — Lift, dedup, count (`geometry/lift.py`, `geometry/dedup.py`)
+For the `ocr_spines` backend, books are tracked by row and horizontal box overlap across close-in-time selected frames (default maximum gap 18 s, configurable). The sharpest readable view is retained per track, candidate frame counts are saved, and count disagreement remains reviewable. Repeated identified titles are merged only when row, time and x-overlap evidence all agree. The numbered steps below describe the legacy Gemini/geometry backend.
 1. For each spine detection in a frame that has depth (recon frame, or nearest recon frame mapped via homography if it's a detection-only frame): sample depth inside the central 60% of the rotated box (median), back-project the box centre, top-mid and bottom-mid points to world coordinates (scaled by `s*`).
 2. **Shelf structure:** shelf-board detections → world heights → per unit, cluster board heights → rows. Shelf units are separated by DBSCAN on the horizontal position of `shelf_unit` boxes' 3D centres. Name them `A, B, C…` left-to-right in sweep order. Rows are numbered from the top: `A-1`, `A-2`…
 3. **Dedup:** within each row, DBSCAN on 1-D position along the row axis (eps = 0.5 × median spine thickness, min_samples = 1) with a **cannot-link constraint on post-NMS detections**: two surviving detections from the same frame never merge (adjacent books in one frame are distinct by definition). Same-frame near-duplicate boxes have already been consolidated by S1; suppressed IDs remain auditable through `merged_from`. Clusters = books.
@@ -192,7 +196,8 @@ Sanity: height outside [8, 45] cm or thickness outside [0.3, 12] cm → keep the
 Output `s04_measurements.json`.
 
 ### S5 — Transcribe spines (`vision/transcribe.py`) *(starts during the sweep for stable clusters)*
-- Use `config/settings.yaml` `transcribe.backend` (`local_ocr` by default, optional `gemini`). Local OCR runs once on each best-view frame at 90° and 270°; frames containing flat spines also run at 0°. Map OCR quadrilaterals back to frame coordinates and keep lines with confidence ≥ 0.5.
+- With detection.backend ocr_spines, S5 reuses per-spine OCR lines persisted by S1; it does not run OCR a second time.
+- With legacy Gemini detection, transcribe.backend runs OCR on each best-view frame at 90/270 degrees; include 0 degrees for flat books when present. Map quadrilaterals to frame coordinates and keep confidence >= 0.5.
 - Assign each line by its center to a containing spine box; if boxes overlap, choose the nearest box center-x. Drop lines outside all spine boxes and order each spine's text top-to-bottom. Gemini remains an optional fallback only for books without local OCR text when enabled, keyed, and available.
 - Output schema remains `{"crop_id","readable":bool,"orientation":"rotate_0deg|rotate_90deg|rotate_180deg|rotate_270deg","lines":[{"text","kind_guess":"title|author|publisher|other"}],"legibility":0-1}`. Gemini prompts still require visible characters only and prohibit completing titles from memory.
 - The configured catalogue thresholds remain unchanged. Merged or weak text stays `unidentified`; no title is inferred from OCR alone.
@@ -200,14 +205,16 @@ Output `s04_measurements.json`.
 - Output `s05_transcriptions.json` (keeps raw text = `spine_text_raw`).
 
 ### S6 — Identify (`identify/`)
-1. **Query build:** search every non-empty OCR line and every adjacent line pair as a title query on Open Library `search.json`. Normalize case, punctuation, whitespace and a leading `THE`; compare compact forms too so joined words such as `HALFMURDERS` can match `Half Murders`. Do not merge non-adjacent lines.
-2. **Candidates:** search Open Library first. Use Google Books only if Open Library returns no candidates and neither provider has returned HTTP 429 in the last 60 seconds. Record each request URL and status for diagnostics. Merge duplicate records by source key.
+1. **Query build:** search every non-empty OCR line and every adjacent line pair as a title query. Normalize case, punctuation, whitespace and a leading `THE`; compare compact forms too so joined words such as `HALFMURDERS` can match `Half Murders`. Do not merge non-adjacent lines.
+2. **Candidates:** use Google Books first for catalogue metadata and ISBNs; use Open Library only as the configured fallback. A connection failure opens a per-run circuit breaker for that provider, including concurrent queries. Calls use a 5 s timeout and one retry. Never use Google Books `saleInfo` as a price. Record redacted request URLs, HTTP status and cache hits for diagnostics; merge duplicate records by source key.
 3. **Features per candidate:** report `title_sim`, `author_sim`, `publisher_sim`, `raw_score`, and `id_confidence`. A line that does not match a candidate author is ignored; it never subtracts from title evidence.
 4. **Decision:** accept only when `title_sim ≥ 90` and either another OCR line on that spine matches a catalogue author at `author_sim ≥ 85`, or the normalized title has at least three words. Confidence is the accepted title similarity expressed from 0 to 1; rejected candidates have `id_confidence=0`. Otherwise keep title/author/edition/isbn **empty** and preserve the raw spine text.
 5. If a box has multiple distinct accepted titles, select the one whose matching OCR line center is closest to the box center and add a `multiple_titles_in_box` review entry listing the other titles. If line geometry is unavailable, use the highest title similarity and author similarity.
 6. Edition remains empty unless supported by edition-specific evidence. Output `s06_identification.json` with candidate scores and decisions saved for audit.
+Catalogue response bodies and HTTP statuses are cached indefinitely under credential-redacted request URLs; generated per-book queries and provider request/cache results are copied into S6 for replay audits.
 
 ### S7 — Price books (`pricing/`)
+Shopping, used-market and FX HTTP responses are cached indefinitely by credential-redacted request URL, including HTTP error responses, so repeated replays reuse the same provider evidence. Each replay still writes the returned raw payload into the sweep's evidence folder.
 For each `identified` book not already `needs_appraisal`:
 1. **Pre-appraisal rules** (`appraisal_rules.py`): user said signed/first edition/rare, first publish year < 1950 with no modern edition match, or spine text contains "first edition"/"signed"/"limited". → `needs_appraisal`, skip pricing.
 2. **Replacement (new):** `ShoppingProvider.search(query, locale)`. Query = ISBN if resolved, else `"<title>" <author> book`. Filter offers: title fuzzy ≥ 80 vs the work title, physical only (exclude: kindle, ebook, e-book, audiobook, audio cd, mp3, summary, study guide, workbook, poster, "set of", "box set" unless the spine says set), condition new, price > 0. If ≥ 3 remain, drop IQR outliers. `amount` = median. `url`/`source` = the offer closest to the median (`"<merchant> via Google Shopping"`). Raw response → `evidence/prices/<book_id>_new.json`.

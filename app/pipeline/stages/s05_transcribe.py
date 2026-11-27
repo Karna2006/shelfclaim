@@ -40,6 +40,8 @@ async def run(ctx: StageContext, *, max_books: int | None = None) -> Path:
         }
         for book in source_books
     }
+    if any("ocr_lines" in book.get("best_view", {}) for book in source_books):
+        return await _run_saved_frame_ocr(ctx, source_books, books)
     transcriber_obj = ctx.clients.get("transcriber")
     if transcriber_obj is None and ctx.settings.config.transcribe.backend == "local_ocr":
         return await _run_frame_ocr(ctx, source_books, books)
@@ -93,6 +95,53 @@ async def run(ctx: StageContext, *, max_books: int | None = None) -> Path:
             "legibility": best["legibility"],
             "spine_text_raw": raw_text,
         }
+    output = ctx.sweep_dir / "s05_transcriptions.json"
+    output.write_text(json.dumps({"books": books}, indent=2) + "\n", encoding="utf-8")
+    return output
+
+
+async def _run_saved_frame_ocr(
+    ctx: StageContext,
+    source_books: list[dict[str, Any]],
+    books: dict[str, dict[str, Any]],
+) -> Path:
+    """Copy the exact S1 OCR evidence into S5 so no second OCR pass can drift."""
+    for book in source_books:
+        book_id = book["book_id"]
+        best = book["best_view"]
+        lines = [line for line in best.get("ocr_lines", []) if str(line.get("text", "")).strip()]
+        ordered = sorted(lines, key=lambda line: (line.get("bbox", {}).get("y", 0), line["text"]))
+        confidence = (
+            sum(float(line.get("confidence", 0)) for line in ordered) / len(ordered)
+            if ordered
+            else 0.0
+        )
+        raw_text = " | ".join(str(line["text"]) for line in ordered)
+        books[book_id] = {
+            "views": [
+                {
+                    "crop_id": f"{book_id}_frame",
+                    "readable": bool(ordered),
+                    "orientation": "frame_ocr",
+                    "lines": [
+                        {
+                            "text": line["text"],
+                            "kind_guess": "other",
+                            "confidence": float(line.get("confidence", 0)),
+                            "bbox": line.get("bbox", {}),
+                        }
+                        for line in ordered
+                    ],
+                    "legibility": confidence,
+                    "seq": best.get("seq"),
+                    "frame_ref": best.get("frame_ref"),
+                }
+            ],
+            "consensus_text": raw_text,
+            "legibility": confidence,
+            "spine_text_raw": raw_text,
+        }
+    await _fallback_empty_books(ctx, source_books, books)
     output = ctx.sweep_dir / "s05_transcriptions.json"
     output.write_text(json.dumps({"books": books}, indent=2) + "\n", encoding="utf-8")
     return output

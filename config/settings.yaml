@@ -27,7 +27,18 @@ cues:
   same_type_gap_s: 30
   low_light_blurry_sustain_s: 3
 detection:
+  backend: ocr_spines
+  assist: none
   max_keyframes: 6
+  ocr_confidence_min: 0.5
+  ocr_min_spine_height_pct: 0.08
+  ocr_vertical_aspect_min: 1.0
+  ocr_flat_line_width_pct: 0.08
+  ocr_row_gap_factor: 0.6
+  ocr_x_eps_factor: 0.6
+  ocr_max_cluster_width_pct_row: 0.45
+  ocr_dedup_max_gap_ms: 18000
+  ocr_dedup_x_overlap_min: 0.5
 keyframes:
   recon_min: 40
   recon_max: 80

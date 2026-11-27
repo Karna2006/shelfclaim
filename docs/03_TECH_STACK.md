@@ -9,12 +9,12 @@ Rule: **boring, explainable, few moving parts.** Every choice below has a one-li
 | Client | **Single-page vanilla HTML + JS + CSS** (no build step), served by FastAPI | Nothing to install. Runs in mobile Chrome/Safari. Visual polish isn't scored |
 | Server | **Python 3.12, FastAPI + Uvicorn**, WebSockets | Same as the reference, so its bridge pattern is easy to adapt. Async I/O for many API calls |
 | Live voice + vision | **Free browser speech cascade**: Web Speech API + browser `speechSynthesis`; `AGENT_MODEL` (`gemini-3.1-flash-lite`) via `google-genai` function calling | Avoids Gemini Live billing. Only final transcripts and selected low-resolution frames reach the server; raw microphone audio stays in the browser |
-| Offline vision detection | **Gemini Flash** (`gemini-3.5-flash-lite`, at most 6 coverage-selected keyframes per sweep) with structured JSON output and 0–1000 normalised bounding boxes | Limits free-tier calls while retaining the tested detector |
-| Spine transcription | **RapidOCR + ONNX Runtime CPU** locally by default; optional Gemini fallback only for empty local results | OCR does not depend on Gemini quota; catalogue matching still rejects weak text |
+| Offline vision detection | **RapidOCR CPU** on at most 6 coverage-selected keyframes; filters text boxes by configurable spine size/aspect; optional Gemini assist adds only non-overlapping unreadable spine boxes | Keeps spine detection available after free Gemini quota exhaustion and avoids counting short on-screen text as books |
+| Spine transcription | **RapidOCR + ONNX Runtime CPU**; S1 OCR lines are assigned to spine boxes and reused by S5 | Transcription does not depend on Gemini quota; catalogue matching still rejects weak text |
 | Metric 3D geometry | **MapAnything** (metric multi-view feed-forward reconstruction) on a serverless GPU (**Modal**). Fallback **VGGT-1B** (up-to-scale, scaled by markers) | Camera poses plus dense depth from ~40–80 frames in seconds. Metric output gives a second scale anchor |
 | Metric anchor | **OpenCV ArUco** (`cv2.aruco`) printed scale cards. Cross-checks: known shelf model dimensions, book-format priors | Deterministic and explainable. The brief explicitly allows reference objects and known shelf dimensions |
 | Classical CV | **OpenCV** (blur, glare, homography, YuNet face detection with strict Haar fallback), **NumPy/SciPy**, **scikit-learn** (DBSCAN, RANSAC), **Shapely** (polygon area) | Standard, testable, no GPU |
-| Book catalogue | **Open Library** Search + Works + Editions API (no key); **Google Books API** (metadata/ISBN only) | Free, open, and editions carry publishers, ISBNs and physical dimensions |
+| Book catalogue | **Google Books API first** for metadata/ISBN only; optional **Open Library Search** fallback (`identify.catalogue_order`) | Catalogue metadata supplies candidate evidence; `saleInfo` is never treated as price evidence |
 | New-price source | **SerpApi Google Shopping** (`gl` per country) behind a `ShoppingProvider` interface | Localised merchant prices with links (Amazon.in, Flipkart, Bookswagon… / UK retailers) |
 | Used-price source | **eBay Browse API** `item_summary/search`, marketplace per locale, `conditions:{USED}` | Real used listings with URLs. Official API |
 | FX | **Frankfurter** (`api.frankfurter.dev`, no key) | Sourced, dated central-bank rates for every conversion |
@@ -75,8 +75,8 @@ GPU-side dependencies (MapAnything / VGGT, torch) live **only** in the Modal ima
 | Job | Model | Input | Output | Guardrail |
 |---|---|---|---|---|
 | Conversation, sweep direction, questions, corrections | `AGENT_MODEL` (default `gemini-3.1-flash-lite`, low thinking) | Final text, selected ~768px frames, cues, tool results | Reply text, tool calls | 20 s timeout; never states unsupported prices, counts, dimensions or titles |
-| Spine/shelf/item detection | `VISION_MODEL` (Flash) | 1080p keyframe | JSON: boxes (0–1000), class, rotation, shelf-row hints | Boxes only. No titles at this stage |
-| Spine transcription | `VISION_MODEL` | Upright spine crops (batch of ≤12 per call) | JSON: verbatim text lines, legibility 0–1, `unreadable` flag | Prompt forbids inference. Output text must be substring-plausible (validated) |
+| Spine/shelf/item detection | RapidOCR for book spines by default; optional Gemini assist or legacy Gemini backend | 1080p keyframe | OCR text boxes clustered into row/spine boxes; Gemini can also return shelf/item JSON boxes (0–1000) | Deterministic OCR boxes drive book counts; Gemini assist adds unreadable spines and never transcribes titles |
+| Spine transcription | RapidOCR CPU (default); optional `VISION_MODEL` fallback | Selected full-resolution frames and OCR lines assigned to each spine | Verbatim text lines and mean confidence | Local OCR is deterministic and the catalogue threshold gates all titles |
 | Candidate re-rank (optional) | `VISION_MODEL` | Transcribed text + ≤8 catalogue candidates (IDs) | Chosen candidate ID or `none` | Can only return an ID from the list. Final accept by numeric threshold in code |
 | Item description and brand OCR | `VISION_MODEL` | Item crop | Category (from fixed taxonomy), material, visible brand/model text | Brand only if legible text was transcribed |
 | 3D reconstruction | MapAnything (fallback VGGT) on Modal GPU | 40–80 keyframes at reduced resolution (~518 px) | Camera poses, intrinsics, depth maps, metric scale | Scale re-anchored to ArUco. Disagreement reported |
@@ -96,7 +96,7 @@ The capture path uses OpenCV Zoo's YuNet `face_detection_yunet_2023mar.onnx` at 
 ## 5. Data and storage constraints
 
 - One folder per sweep: `sweeps/<sweep_id>/` (layout in `05_DATA_SCHEMA.md`). It's gitignored except the final demo sweep, which you commit (frames compressed) because it's a deliverable.
-- HTTP cache: SQLite key = `provider + normalized query + locale`, value = raw JSON + fetched_at. TTL 7 days. Cached snapshots are still written into the sweep's `evidence/prices/` so every packet carries its own evidence.
+- HTTP cache: SQLite keys use normalized, credential-redacted request URLs; raw response bodies and HTTP status are cached without expiry so a replay reuses successful responses and failures consistently. Clear the cache to retry a failed provider request. Cached price responses still write sweep-local snapshots under `evidence/prices/` so every packet carries its own evidence.
 - No database server. No ORM.
 
 ## 6. Accounts and keys (get these on Day 1)

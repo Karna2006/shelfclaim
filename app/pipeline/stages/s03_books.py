@@ -14,6 +14,7 @@ from app.capture.storage import list_frames
 from app.pipeline.artifacts import Detection, DetectionsDoc, Event, FrameRecord
 from app.pipeline.context import StageContext
 from app.telemetry.events import write_event
+from app.vision.ocr_books import build_ocr_book_clusters
 
 
 def run(ctx: StageContext) -> Path:
@@ -22,12 +23,22 @@ def run(ctx: StageContext) -> Path:
     if not detections_path.is_file():
         raise FileNotFoundError("S1 detections are required before book counting")
     detections = DetectionsDoc.model_validate_json(detections_path.read_text(encoding="utf-8"))
-    result = build_book_clusters(
-        list_frames(ctx.sweep_dir),
-        detections,
-        full_width_pct=ctx.settings.config.structure.full_row_width_pct,
-        disagreement_pct=ctx.settings.config.review.row_count_disagreement_pct,
-    )
+    frames = list_frames(ctx.sweep_dir)
+    if detections.backend == "ocr_spines":
+        result = build_ocr_book_clusters(
+            frames,
+            detections,
+            max_gap_ms=ctx.settings.config.detection.ocr_dedup_max_gap_ms,
+            min_x_overlap=ctx.settings.config.detection.ocr_dedup_x_overlap_min,
+            disagreement_pct=ctx.settings.config.review.row_count_disagreement_pct,
+        )
+    else:
+        result = build_book_clusters(
+            frames,
+            detections,
+            full_width_pct=ctx.settings.config.structure.full_row_width_pct,
+            disagreement_pct=ctx.settings.config.review.row_count_disagreement_pct,
+        )
     output = ctx.sweep_dir / "s03_books_raw.json"
     output.write_text(json.dumps(result, indent=2) + "\n", encoding="utf-8")
     write_event(

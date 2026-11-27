@@ -38,3 +38,31 @@ async def test_fetch_bytes_allows_one_configured_connection_retry(tmp_path: Path
             await fetch_bytes(url, tmp_path / "cache.sqlite", timeout_s=5, max_retries=1)
 
     assert route.call_count == 2
+
+
+@pytest.mark.asyncio
+async def test_fetch_bytes_caches_http_errors_when_replay_determinism_is_requested(
+    tmp_path: Path,
+) -> None:
+    url = "https://books.example.test/search?q=visible"
+    events = []
+    with respx.mock(assert_all_called=True) as router:
+        route = router.get(url).mock(return_value=httpx.Response(429, content=b"quota"))
+
+        for _ in range(2):
+            with pytest.raises(httpx.HTTPStatusError):
+                await fetch_bytes(
+                    url,
+                    tmp_path / "cache.sqlite",
+                    cache_ttl=None,
+                    cache_http_errors=True,
+                    on_request=lambda request_url, status, cached, error: events.append(
+                        (request_url, status, cached, error)
+                    ),
+                )
+
+    assert route.call_count == 1
+    assert events == [
+        (url, 429, False, None),
+        (url, 429, True, "cached_http_status"),
+    ]

@@ -79,10 +79,15 @@ async def price_sweep(
     evidence_dir.mkdir(parents=True, exist_ok=True)
     statements = _statement_kinds(sweep_dir)
     timestamp = datetime.now(UTC).isoformat()
+    provider_log = getattr(provider, "query_log", None)
+    provider_log_start = len(provider_log) if isinstance(provider_log, list) else 0
     books: dict[str, Any] = {}
     review: list[dict[str, str]] = []
 
     for book_id, book in identification.get("books", {}).items():
+        if book.get("status") == "duplicate":
+            books[book_id] = {"duplicate_of": book.get("duplicate_of")}
+            continue
         title = str(book.get("title", ""))
         authors = book.get("authors", [])
         author = " ".join(authors) if isinstance(authors, list) else str(authors)
@@ -171,6 +176,9 @@ async def price_sweep(
                 "books": books,
                 "review_queue": review,
                 "searches_used": min(max(0, limit), 40) - searches_left,
+                "provider_requests": (
+                    provider_log[provider_log_start:] if isinstance(provider_log, list) else []
+                ),
             },
             indent=2,
         )

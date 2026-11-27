@@ -88,6 +88,8 @@ class Detection(ArtifactModel):
     score: float | None = None
     merged_from: list[str] = Field(default_factory=list)
     flags: list[str] = Field(default_factory=list)
+    row_index: int | None = Field(default=None, ge=1)
+    ocr_lines: list[dict[str, Any]] = Field(default_factory=list)
 
 
 class RowCountCheck(ArtifactModel):
@@ -106,6 +108,7 @@ class DetectionFrameStats(ArtifactModel):
     spine_count: int = Field(ge=0)
     shelf_board_count: int = Field(ge=0)
     item_count: int = Field(ge=0)
+    errors: list[str] = Field(default_factory=list)
 
 
 class SelectedDetectionKeyframe(ArtifactModel):
@@ -125,6 +128,7 @@ class DetectionReviewEntry(ArtifactModel):
 
 
 class DetectionsDoc(ArtifactModel):
+    backend: Literal["ocr_spines", "gemini"] = "gemini"
     frames: dict[int, list[Detection]] = Field(default_factory=dict)
     row_count_checks: list[RowCountCheck] = Field(default_factory=list)
     keyframe_stats: list[DetectionFrameStats] = Field(default_factory=list)

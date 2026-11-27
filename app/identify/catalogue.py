@@ -6,6 +6,7 @@ with source keys; candidate text is never accepted without deterministic scoring
 
 from __future__ import annotations
 
+import asyncio
 import json
 import time
 from typing import Protocol
@@ -34,6 +35,11 @@ class OpenLibraryGoogleBooks:
     def __init__(self, settings: Settings) -> None:
         self.settings = settings
         self._unavailable: set[str] = set()
+        self._connectivity_checked: set[str] = set()
+        self._connection_locks = {
+            "google_books": asyncio.Lock(),
+            "open_library": asyncio.Lock(),
+        }
         self._rate_limited_until: dict[str, float] = {}
         self.query_log: list[dict[str, object]] = []
 
@@ -65,13 +71,33 @@ class OpenLibraryGoogleBooks:
     ) -> list[dict[str, object]]:
         if self._provider_unavailable(provider):
             return []
+        if provider in self._connectivity_checked:
+            return await self._request_provider(provider, title, author)
+        async with self._connection_locks[provider]:
+            if self._provider_unavailable(provider):
+                return []
+            if provider in self._connectivity_checked:
+                return await self._request_provider(provider, title, author)
+            try:
+                candidates = await self._request_provider(provider, title, author)
+            except (httpx.ConnectError, httpx.ConnectTimeout):
+                self._unavailable.add(provider)
+                raise
+            except httpx.HTTPStatusError as exc:
+                self._connectivity_checked.add(provider)
+                if exc.response.status_code == 429:
+                    self._rate_limited_until[provider] = time.monotonic() + _RATE_LIMIT_COOLDOWN_S
+                raise
+            self._connectivity_checked.add(provider)
+            return candidates
+
+    async def _request_provider(
+        self, provider: str, title: str, author: str
+    ) -> list[dict[str, object]]:
         try:
             if provider == "google_books":
                 return await self._google_books(title, author)
             return await self._open_library(title, author)
-        except (httpx.ConnectError, httpx.ConnectTimeout):
-            self._unavailable.add(provider)
-            raise
         except httpx.HTTPStatusError as exc:
             if exc.response.status_code == 429:
                 self._rate_limited_until[provider] = time.monotonic() + _RATE_LIMIT_COOLDOWN_S
@@ -92,9 +118,12 @@ class OpenLibraryGoogleBooks:
         body = await fetch_bytes(
             url,
             self.settings.cache_db,
+            cache_key=_redact_url(url),
             on_request=self._record_request,
             timeout_s=_CATALOGUE_TIMEOUT_S,
             max_retries=_CATALOGUE_MAX_RETRIES,
+            cache_ttl=None,
+            cache_http_errors=True,
         )
         docs = json.loads(body).get("docs", [])
         return [
@@ -120,9 +149,12 @@ class OpenLibraryGoogleBooks:
         body = await fetch_bytes(
             url,
             self.settings.cache_db,
+            cache_key=_redact_url(url),
             on_request=self._record_request,
             timeout_s=_CATALOGUE_TIMEOUT_S,
             max_retries=_CATALOGUE_MAX_RETRIES,
+            cache_ttl=None,
+            cache_http_errors=True,
         )
         items = json.loads(body).get("items", [])
         candidates = []

@@ -52,7 +52,18 @@ class KeyframeSettings(BaseModel):
 
 
 class DetectionSettings(BaseModel):
+    backend: Literal["ocr_spines", "gemini"] = "ocr_spines"
+    assist: Literal["none", "gemini"] = "none"
     max_keyframes: int = Field(default=6, ge=1, le=6)
+    ocr_confidence_min: float = Field(default=0.5, ge=0, le=1)
+    ocr_min_spine_height_pct: float = Field(default=0.08, gt=0, le=1)
+    ocr_vertical_aspect_min: float = Field(default=1.0, gt=0)
+    ocr_flat_line_width_pct: float = Field(default=0.08, gt=0, le=1)
+    ocr_row_gap_factor: float = Field(default=0.6, gt=0)
+    ocr_x_eps_factor: float = Field(default=0.6, gt=0)
+    ocr_max_cluster_width_pct_row: float = Field(default=0.45, gt=0, le=1)
+    ocr_dedup_max_gap_ms: int = Field(default=18000, gt=0)
+    ocr_dedup_x_overlap_min: float = Field(default=0.5, ge=0, le=1)
 
 
 class DedupSettings(BaseModel):
