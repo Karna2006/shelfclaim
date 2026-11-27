@@ -1,0 +1,168 @@
+{"t_ms":0,"type":"transcript_agent","payload":{"text":"Hi, I'm your claim assistant. I'll guide you through one slow walk past your shelves. Are you in India, with values in rupees?"}}
+{"t_ms":1998,"type":"speech_event","payload":{"name":"tts-start","detail":"agent"}}
+{"t_ms":3090,"type":"cue_sent","payload":{"text":"Move the phone more slowly.","priority":100,"kind":"TOO_FAST","metrics":{"window_frames":4,"fast_fraction":0.5,"low_light_fraction":0.0,"blurry_fraction":1.0,"glare_fraction":0.0,"median_blur":39.77999788290473,"median_exposure":100.3264185474537,"median_gyro_dps":36.82701098249593}}}
+{"t_ms":6776,"type":"speech_event","payload":{"name":"tts-end","detail":"agent"}}
+{"t_ms":6776,"type":"speech_event","payload":{"name":"tts-start","detail":"agent"}}
+{"t_ms":7988,"type":"transcript_cleaned","payload":{"original":"hi I am your claim assistant","cleaned":"hi I am your claim assistant","removed_words":[]}}
+{"t_ms":8961,"type":"transcript_user","payload":{"text":"hi I am your claim assistant"}}
+{"t_ms":8961,"type":"agent_request","payload":{"model":"gemini-3.1-flash-lite","history_messages":3,"history_turns":1,"image_parts":0,"image_bytes":0,"tool_count":7,"estimated_prompt_tokens":1138,"total_prompt_tokens":null}}
+{"t_ms":11041,"type":"speech_event","payload":{"name":"tts-end","detail":"agent"}}
+{"t_ms":8961,"type":"agent_attempt","payload":{"model":"gemini-3.1-flash-lite","attempt":1,"latency_ms":2227,"success":true,"error":null,"history_messages":3,"history_turns":1,"image_parts":0,"image_bytes":0,"tool_count":7,"estimated_prompt_tokens":1138,"total_prompt_tokens":1501}}
+{"t_ms":10710,"type":"agent_response_diagnostics","payload":{"finish_reason":"STOP","usage_metadata":{"candidates_token_count":20,"prompt_token_count":1501,"prompt_tokens_details":[{"modality":"TEXT","token_count":1501}],"total_token_count":1521,"thoughts_token_count":null},"prompt_feedback":null,"block_reason":null,"has_text_part":true,"has_function_call_part":false}}
+{"t_ms":10710,"type":"agent_reply","payload":{"latency_ms":2250,"model":"gemini-3.1-flash-lite","text":"I am your claim assistant. To begin, are you in India and using rupees for your inventory?"}}
+{"t_ms":10710,"type":"transcript_agent","payload":{"text":"I am your claim assistant. To begin, are you in India and using rupees for your inventory?"}}
+{"t_ms":11545,"type":"speech_event","payload":{"name":"tts-start","detail":"agent"}}
+{"t_ms":13606,"type":"speech_event","payload":{"name":"tts-end","detail":"agent"}}
+{"t_ms":13608,"type":"speech_event","payload":{"name":"tts-start","detail":"agent"}}
+{"t_ms":14451,"type":"speech_event","payload":{"name":"forced-final","detail":"interim stable for 1200ms"}}
+{"t_ms":14454,"type":"transcript_cleaned","payload":{"original":"I am your cli","cleaned":"","removed_words":["I","am","your","cli"]}}
+{"t_ms":14454,"type":"echo_dropped","payload":{"text":"I am your cli","original":"I am your cli","cleaned":"","matched_line":"I am your claim assistant. To begin, are you in India and using rupees for your inventory?","similarity":96.0}}
+{"t_ms":16725,"type":"speech_event","payload":{"name":"forced-final","detail":"interim stable for 1200ms"}}
+{"t_ms":16725,"type":"transcript_cleaned","payload":{"original":"to begin","cleaned":"to begin","removed_words":[]}}
+{"t_ms":16725,"type":"transcript_user","payload":{"text":"to begin"}}
+{"t_ms":16725,"type":"agent_request","payload":{"model":"gemini-3.1-flash-lite","history_messages":5,"history_turns":2,"image_parts":0,"image_bytes":0,"tool_count":7,"estimated_prompt_tokens":1177,"total_prompt_tokens":null}}
+{"t_ms":16725,"type":"agent_attempt","payload":{"model":"gemini-3.1-flash-lite","attempt":1,"latency_ms":1284,"success":true,"error":null,"history_messages":5,"history_turns":2,"image_parts":0,"image_bytes":0,"tool_count":7,"estimated_prompt_tokens":1177,"total_prompt_tokens":1525}}
+{"t_ms":16725,"type":"agent_response_diagnostics","payload":{"finish_reason":"STOP","usage_metadata":{"candidates_token_count":11,"prompt_token_count":1525,"prompt_tokens_details":[{"modality":"TEXT","token_count":1525}],"total_token_count":1536,"thoughts_token_count":null},"prompt_feedback":null,"block_reason":null,"has_text_part":true,"has_function_call_part":false}}
+{"t_ms":16725,"type":"agent_reply","payload":{"latency_ms":1328,"model":"gemini-3.1-flash-lite","text":"Please confirm your country and currency so we can start."}}
+{"t_ms":16725,"type":"transcript_agent","payload":{"text":"Please confirm your country and currency so we can start."}}
+{"t_ms":18021,"type":"speech_event","payload":{"name":"tts-end","detail":"agent"}}
+{"t_ms":18686,"type":"speech_event","payload":{"name":"tts-start","detail":"agent"}}
+{"t_ms":21039,"type":"speech_event","payload":{"name":"forced-final","detail":"interim stable for 1200ms"}}
+{"t_ms":21039,"type":"transcript_cleaned","payload":{"original":"to begin in India and using rupees for your inventory yes I am in India","cleaned":"to begin in India and using rupees for your inventory yes I am in India","removed_words":[]}}
+{"t_ms":21039,"type":"transcript_user","payload":{"text":"to begin in India and using rupees for your inventory yes I am in India"}}
+{"t_ms":21039,"type":"intent_routed","payload":{"kind":"locale","route":"deterministic","country":"IN","currency":"INR"}}
+{"t_ms":21039,"type":"tool_call","payload":{"name":"set_locale","args":{"country":"IN","currency":"INR"}}}
+{"t_ms":21039,"type":"tool_result","payload":{"name":"set_locale","result":{"supported":true,"country":"IN","currency":"INR"}}}
+{"t_ms":21039,"type":"agent_reply","payload":{"latency_ms":31,"model":"intent-router","text":"Great. Start with the shelf on your left, top row, and move slowly."}}
+{"t_ms":21039,"type":"transcript_agent","payload":{"text":"Great. Start with the shelf on your left, top row, and move slowly."}}
+{"t_ms":21039,"type":"tool_call","payload":{"name":"start_sweep","args":{}}}
+{"t_ms":21039,"type":"stage_started","payload":{"stage":"capture"}}
+{"t_ms":21039,"type":"tool_result","payload":{"name":"start_sweep","result":{"started":true,"sweep_id":"sw_20261127_062544_0f69"}}}
+{"t_ms":22514,"type":"speech_event","payload":{"name":"tts-end","detail":"agent"}}
+{"t_ms":22514,"type":"speech_event","payload":{"name":"tts-start","detail":"agent"}}
+{"t_ms":23227,"type":"speech_event","payload":{"name":"tts-end","detail":"agent"}}
+{"t_ms":23227,"type":"speech_event","payload":{"name":"tts-start","detail":"agent"}}
+{"t_ms":27872,"type":"speech_event","payload":{"name":"tts-end","detail":"agent"}}
+{"t_ms":28911,"type":"transcript_cleaned","payload":{"original":"to begin in India and using rupees for your inventory yes I am in India","cleaned":"to begin in India and using rupees for your inventory yes I am in India","removed_words":[]}}
+{"t_ms":29347,"type":"transcript_user","payload":{"text":"to begin in India and using rupees for your inventory yes I am in India"}}
+{"t_ms":29347,"type":"agent_request","payload":{"model":"gemini-3.1-flash-lite","history_messages":11,"history_turns":4,"image_parts":0,"image_bytes":0,"tool_count":7,"estimated_prompt_tokens":1351,"total_prompt_tokens":null}}
+{"t_ms":29347,"type":"agent_attempt","payload":{"model":"gemini-3.1-flash-lite","attempt":1,"latency_ms":2092,"success":true,"error":null,"history_messages":11,"history_turns":4,"image_parts":0,"image_bytes":0,"tool_count":7,"estimated_prompt_tokens":1351,"total_prompt_tokens":1645}}
+{"t_ms":31739,"type":"agent_response_diagnostics","payload":{"finish_reason":"STOP","usage_metadata":{"candidates_token_count":16,"prompt_token_count":1645,"prompt_tokens_details":[{"modality":"TEXT","token_count":1645}],"total_token_count":1661,"thoughts_token_count":null},"prompt_feedback":null,"block_reason":null,"has_text_part":true,"has_function_call_part":false}}
+{"t_ms":31739,"type":"agent_reply","payload":{"latency_ms":2125,"model":"gemini-3.1-flash-lite","text":"Please start by capturing the top shelf on the left. Move the camera slowly."}}
+{"t_ms":31739,"type":"transcript_agent","payload":{"text":"Please start by capturing the top shelf on the left. Move the camera slowly."}}
+{"t_ms":32069,"type":"speech_event","payload":{"name":"tts-start","detail":"agent"}}
+{"t_ms":35482,"type":"speech_event","payload":{"name":"tts-end","detail":"agent"}}
+{"t_ms":35482,"type":"speech_event","payload":{"name":"tts-start","detail":"agent"}}
+{"t_ms":37317,"type":"speech_event","payload":{"name":"tts-end","detail":"agent"}}
+{"t_ms":37081,"type":"cue_sent","payload":{"text":"Hold the phone steadier for a moment.","priority":80,"kind":"BLURRY","metrics":{"window_frames":4,"fast_fraction":0.0,"low_light_fraction":0.0,"blurry_fraction":1.0,"glare_fraction":0.0,"median_blur":58.57779150775954,"median_exposure":93.46667775848766,"median_gyro_dps":2.890946514836224}}}
+{"t_ms":37534,"type":"speech_event","payload":{"name":"tts-start","detail":"cue"}}
+{"t_ms":40088,"type":"speech_event","payload":{"name":"tts-end","detail":"cue"}}
+{"t_ms":41292,"type":"speech_event","payload":{"name":"forced-final","detail":"interim stable for 1200ms"}}
+{"t_ms":41292,"type":"transcript_cleaned","payload":{"original":"for","cleaned":"for","removed_words":[]}}
+{"t_ms":41292,"type":"transcript_user","payload":{"text":"for"}}
+{"t_ms":41292,"type":"agent_request","payload":{"model":"gemini-3.1-flash-lite","history_messages":14,"history_turns":5,"image_parts":0,"image_bytes":0,"tool_count":7,"estimated_prompt_tokens":1410,"total_prompt_tokens":null}}
+{"t_ms":41292,"type":"agent_attempt","payload":{"model":"gemini-3.1-flash-lite","attempt":1,"latency_ms":1167,"success":true,"error":null,"history_messages":14,"history_turns":5,"image_parts":0,"image_bytes":0,"tool_count":7,"estimated_prompt_tokens":1410,"total_prompt_tokens":1680}}
+{"t_ms":42456,"type":"agent_response_diagnostics","payload":{"finish_reason":"STOP","usage_metadata":{"candidates_token_count":12,"prompt_token_count":1680,"prompt_tokens_details":[{"modality":"TEXT","token_count":1680}],"total_token_count":1692,"thoughts_token_count":null},"prompt_feedback":null,"block_reason":null,"has_text_part":true,"has_function_call_part":false}}
+{"t_ms":42456,"type":"agent_reply","payload":{"latency_ms":1203,"model":"gemini-3.1-flash-lite","text":"Keep moving along the shelf at a steady, slow pace."}}
+{"t_ms":42456,"type":"transcript_agent","payload":{"text":"Keep moving along the shelf at a steady, slow pace."}}
+{"t_ms":42857,"type":"speech_event","payload":{"name":"tts-start","detail":"agent"}}
+{"t_ms":46624,"type":"speech_event","payload":{"name":"tts-end","detail":"agent"}}
+{"t_ms":56741,"type":"cue_sent","payload":{"text":"Move the phone more slowly.","priority":100,"kind":"TOO_FAST","metrics":{"window_frames":4,"fast_fraction":0.5,"low_light_fraction":0.0,"blurry_fraction":1.0,"glare_fraction":0.0,"median_blur":37.617069359369026,"median_exposure":95.5803481867284,"median_gyro_dps":34.31297142051513}}}
+{"t_ms":62662,"type":"stage_done","payload":{"stage":"s01","keyframes":6,"detections":29}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s03","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s03","books":19}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s03","output":"s03_books_raw.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s04","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s04"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s04","output":"s04_measurements.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s05","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s05","output":"s05_transcriptions.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s06","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s06","output":"s06_identification.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s07","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s07","output":"s07_book_prices.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s08","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s08","items":0}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s08","output":"s08_items.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s09","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s09"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s09","output":"s09_room.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s10","backend":"off"}}
+{"t_ms":0,"type":"packet_ready","payload":{"packet":"claim_packet.json","report":"report.html"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s10","output":"claim_packet.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s03","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s03","books":19}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s03","output":"s03_books_raw.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s04","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s04"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s04","output":"s04_measurements.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s05","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s05","output":"s05_transcriptions.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s06","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s06","output":"s06_identification.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s07","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s07","output":"s07_book_prices.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s08","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s08","items":0}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s08","output":"s08_items.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s09","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s09"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s09","output":"s09_room.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s10","backend":"off"}}
+{"t_ms":0,"type":"packet_ready","payload":{"packet":"claim_packet.json","report":"report.html"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s10","output":"claim_packet.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s03","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s03","books":19}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s03","output":"s03_books_raw.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s04","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s04"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s04","output":"s04_measurements.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s05","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s05","output":"s05_transcriptions.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s06","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s06","output":"s06_identification.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s07","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s07","output":"s07_book_prices.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s08","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s08","items":0}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s08","output":"s08_items.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s09","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s09"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s09","output":"s09_room.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s10","backend":"off"}}
+{"t_ms":0,"type":"packet_ready","payload":{"packet":"claim_packet.json","report":"report.html"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s10","output":"claim_packet.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s03","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s03","books":19}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s03","output":"s03_books_raw.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s04","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s04"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s04","output":"s04_measurements.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s05","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s05","output":"s05_transcriptions.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s06","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s06","output":"s06_identification.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s07","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s07","output":"s07_book_prices.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s08","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s08","items":0}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s08","output":"s08_items.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s09","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s09"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s09","output":"s09_room.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s10","backend":"off"}}
+{"t_ms":0,"type":"packet_ready","payload":{"packet":"claim_packet.json","report":"report.html"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s10","output":"claim_packet.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s06","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s06","output":"s06_identification.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s07","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s07","output":"s07_book_prices.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s08","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s08","items":0}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s08","output":"s08_items.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s09","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s09"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s09","output":"s09_room.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s10","backend":"off"}}
+{"t_ms":0,"type":"packet_ready","payload":{"packet":"claim_packet.json","report":"report.html"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s10","output":"claim_packet.json","backend":"off"}}

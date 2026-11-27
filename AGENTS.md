@@ -5,13 +5,13 @@
 This repo is **ShelfClaim**, a take-home for Cozmo AI: a live voice-and-vision insurance agent that inventories and values a home library in one camera sweep and outputs `claim_packet.json` + `report.html`.
 
 Before changing code, read the relevant docs in `docs/`:
-- `docs/02_PRD.md`: what we build and what we DON'T build (non-goals are binding)
-- `docs/03_TECH_STACK.md`: allowed frameworks, models, APIs, env vars
-- `docs/04_ARCHITECTURE.md`: stage-by-stage algorithms (follow them, don't improvise a different pipeline)
-- `docs/05_DATA_SCHEMA.md`: the packet contract and stage artifacts (field names are binding)
-- `docs/06_USER_FLOWS.md`: flows and the WebSocket protocol
-- `docs/07_UI_UX.md`: UI layout and style
-- `docs/09_PLAN.md`: the current phase and its "done when" criteria
+- `docs/planning/02_PRD.md`: what we build and what we DON'T build (non-goals are binding)
+- `docs/planning/03_TECH_STACK.md`: allowed frameworks, models, APIs, env vars
+- `docs/planning/04_ARCHITECTURE.md`: stage-by-stage algorithms (follow them, don't improvise a different pipeline)
+- `docs/planning/05_DATA_SCHEMA.md`: the packet contract and stage artifacts (field names are binding)
+- `docs/planning/06_USER_FLOWS.md`: flows and the WebSocket protocol
+- `docs/planning/07_UI_UX.md`: UI layout and style
+- `docs/planning/09_PLAN.md`: the current phase and its "done when" criteria
 
 If a doc and the code disagree, **stop and ask**. Don't silently pick one.
 
@@ -46,12 +46,12 @@ If a doc and the code disagree, **stop and ask**. Don't silently pick one.
 ## 3. Workflow rules (how you work in this repo)
 
 1. **Plan first.** For any task touching > 1 file, reply with: files to create/modify, the functions and their signatures, the tests you will add, and risks. **Wait for approval** ("go") before editing, unless the prompt explicitly says "implement directly".
-2. **One phase at a time** per `docs/09_PLAN.md`. Don't start the next phase's work.
+2. **One phase at a time** per `docs/planning/09_PLAN.md`. Don't start the next phase's work.
 3. **Tests with every change.** Unit tests mock all network and model calls (`respx` for httpx, fakes for Gemini/Modal). Fixtures live in `tests/fixtures/`.
 4. After implementing: run `make check` (lint + tests). Fix failures. Then output a short summary: what changed, how to verify manually, and any deviations from the docs and why.
 5. Never delete or rewrite docs in `docs/` unless asked. If a design change is needed, propose a doc patch.
-6. Don't add dependencies outside `docs/03_TECH_STACK.md` without asking.
-7. Don't touch `.env`. Only update `.env.example` when adding a variable (and document it in `docs/03_TECH_STACK.md` §7).
+6. Don't add dependencies outside `docs/planning/03_TECH_STACK.md` without asking.
+7. Don't touch `.env`. Only update `.env.example` when adding a variable (and document it in `docs/planning/03_TECH_STACK.md` §7).
 8. Don't commit. Arun reviews and commits himself. **Never add AI attribution / Co-Authored-By lines** to any commit message or file.
 
 ## 4. Commands
@@ -105,5 +105,5 @@ sweeps/        (gitignored except the demo sweep)
 - [ ] Code follows the integrity rules (§1). Say explicitly which rules were relevant.
 - [ ] Unit tests added/updated, `make check` green.
 - [ ] No file > 400 lines. No new dependency without approval.
-- [ ] Artifacts validate against `docs/05_DATA_SCHEMA.md` models.
+- [ ] Artifacts validate against `docs/planning/05_DATA_SCHEMA.md` models.
 - [ ] Summary written: changes, how to verify, deviations.

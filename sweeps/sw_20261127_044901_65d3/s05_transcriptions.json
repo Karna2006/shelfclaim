@@ -1,0 +1,474 @@
+{
+  "books": {
+    "b_0001": {
+      "views": [
+        {
+          "crop_id": "b_0001_frame",
+          "readable": true,
+          "orientation": "frame_ocr",
+          "lines": [
+            {
+              "text": "THE ALMANA",
+              "kind_guess": "other",
+              "confidence": 0.99609,
+              "bbox": {
+                "x": 1.0,
+                "y": 626.0,
+                "w": 140.0,
+                "h": 221.0
+              }
+            }
+          ],
+          "legibility": 0.99609,
+          "seq": 60,
+          "frame_ref": "frames/f_000060_0039028.jpg"
+        }
+      ],
+      "consensus_text": "THE ALMANA",
+      "legibility": 0.99609,
+      "spine_text_raw": "THE ALMANA"
+    },
+    "b_0002": {
+      "views": [
+        {
+          "crop_id": "b_0002_frame",
+          "readable": false,
+          "orientation": "frame_ocr",
+          "lines": [],
+          "legibility": 0.0,
+          "seq": 60,
+          "frame_ref": "frames/f_000060_0039028.jpg"
+        }
+      ],
+      "consensus_text": "",
+      "legibility": 0,
+      "spine_text_raw": ""
+    },
+    "b_0003": {
+      "views": [
+        {
+          "crop_id": "b_0003_frame",
+          "readable": true,
+          "orientation": "frame_ocr",
+          "lines": [
+            {
+              "text": "RUTOBIOGRAPHY OF A YOGI",
+              "kind_guess": "other",
+              "confidence": 0.94864,
+              "bbox": {
+                "x": 17.0,
+                "y": 652.0,
+                "w": 274.0,
+                "h": 423.0
+              }
+            }
+          ],
+          "legibility": 0.94864,
+          "seq": 60,
+          "frame_ref": "frames/f_000060_0039028.jpg"
+        }
+      ],
+      "consensus_text": "RUTOBIOGRAPHY OF A YOGI",
+      "legibility": 0.94864,
+      "spine_text_raw": "RUTOBIOGRAPHY OF A YOGI"
+    },
+    "b_0004": {
+      "views": [
+        {
+          "crop_id": "b_0004_frame",
+          "readable": true,
+          "orientation": "frame_ocr",
+          "lines": [
+            {
+              "text": "THE ONE THING",
+              "kind_guess": "other",
+              "confidence": 0.99973,
+              "bbox": {
+                "x": 98.0,
+                "y": 770.0,
+                "w": 374.0,
+                "h": 519.0
+              }
+            },
+            {
+              "text": "Why Some Teams Pull Together and Others Don't",
+              "kind_guess": "other",
+              "confidence": 0.99873,
+              "bbox": {
+                "x": 137.0,
+                "y": 1035.0,
+                "w": 268.0,
+                "h": 410.0
+              }
+            },
+            {
+              "text": "Whyf   e    bDont",
+              "kind_guess": "other",
+              "confidence": 0.50933,
+              "bbox": {
+                "x": 132.0,
+                "y": 1034.0,
+                "w": 272.0,
+                "h": 413.0
+              }
+            },
+            {
+              "text": "LEADERS EAT LAST",
+              "kind_guess": "other",
+              "confidence": 0.98927,
+              "bbox": {
+                "x": 154.0,
+                "y": 1042.0,
+                "w": 285.0,
+                "h": 430.0
+              }
+            },
+            {
+              "text": "GARY KELLER",
+              "kind_guess": "other",
+              "confidence": 0.99984,
+              "bbox": {
+                "x": 37.0,
+                "y": 1253.0,
+                "w": 142.0,
+                "h": 192.0
+              }
+            },
+            {
+              "text": "WITH JAY PAPAS",
+              "kind_guess": "other",
+              "confidence": 0.98958,
+              "bbox": {
+                "x": 1.0,
+                "y": 1236.0,
+                "w": 152.0,
+                "h": 240.0
+              }
+            },
+            {
+              "text": "5",
+              "kind_guess": "other",
+              "confidence": 0.50327,
+              "bbox": {
+                "x": 310.0,
+                "y": 1501.0,
+                "w": 25.0,
+                "h": 31.0
+              }
+            },
+            {
+              "text": "NCER",
+              "kind_guess": "other",
+              "confidence": 0.806,
+              "bbox": {
+                "x": 273.0,
+                "y": 1528.0,
+                "w": 42.0,
+                "h": 35.0
+              }
+            }
+          ],
+          "legibility": 0.84946875,
+          "seq": 60,
+          "frame_ref": "frames/f_000060_0039028.jpg"
+        }
+      ],
+      "consensus_text": "THE ONE THING | Why Some Teams Pull Together and Others Don't | Whyf   e    bDont | LEADERS EAT LAST | GARY KELLER | WITH JAY PAPAS | 5 | NCER",
+      "legibility": 0.84946875,
+      "spine_text_raw": "THE ONE THING | Why Some Teams Pull Together and Others Don't | Whyf   e    bDont | LEADERS EAT LAST | GARY KELLER | WITH JAY PAPAS | 5 | NCER"
+    },
+    "b_0005": {
+      "views": [
+        {
+          "crop_id": "b_0005_frame",
+          "readable": true,
+          "orientation": "frame_ocr",
+          "lines": [
+            {
+              "text": "SIMON SINEK",
+              "kind_guess": "other",
+              "confidence": 0.99913,
+              "bbox": {
+                "x": 404.0,
+                "y": 742.0,
+                "w": 205.0,
+                "h": 292.0
+              }
+            },
+            {
+              "text": "SALIL DESAI",
+              "kind_guess": "other",
+              "confidence": 0.99965,
+              "bbox": {
+                "x": 398.0,
+                "y": 1175.0,
+                "w": 138.0,
+                "h": 196.0
+              }
+            },
+            {
+              "text": "PIATKUS",
+              "kind_guess": "other",
+              "confidence": 0.99986,
+              "bbox": {
+                "x": 376.0,
+                "y": 1525.0,
+                "w": 87.0,
+                "h": 71.0
+              }
+            }
+          ],
+          "legibility": 0.9995466666666667,
+          "seq": 60,
+          "frame_ref": "frames/f_000060_0039028.jpg"
+        }
+      ],
+      "consensus_text": "SIMON SINEK | SALIL DESAI | PIATKUS",
+      "legibility": 0.9995466666666667,
+      "spine_text_raw": "SIMON SINEK | SALIL DESAI | PIATKUS"
+    },
+    "b_0006": {
+      "views": [
+        {
+          "crop_id": "b_0006_frame",
+          "readable": true,
+          "orientation": "frame_ocr",
+          "lines": [
+            {
+              "text": "FMURDERS",
+              "kind_guess": "other",
+              "confidence": 0.9872,
+              "bbox": {
+                "x": 525.0,
+                "y": 977.0,
+                "w": 137.0,
+                "h": 182.0
+              }
+            },
+            {
+              "text": "Cal Newport",
+              "kind_guess": "other",
+              "confidence": 0.99992,
+              "bbox": {
+                "x": 480.0,
+                "y": 1110.0,
+                "w": 225.0,
+                "h": 306.0
+              }
+            },
+            {
+              "text": "GREAT IDEAS",
+              "kind_guess": "other",
+              "confidence": 0.99927,
+              "bbox": {
+                "x": 567.0,
+                "y": 1346.0,
+                "w": 78.0,
+                "h": 109.0
+              }
+            }
+          ],
+          "legibility": 0.9954633333333334,
+          "seq": 60,
+          "frame_ref": "frames/f_000060_0039028.jpg"
+        }
+      ],
+      "consensus_text": "FMURDERS | Cal Newport | GREAT IDEAS",
+      "legibility": 0.9954633333333334,
+      "spine_text_raw": "FMURDERS | Cal Newport | GREAT IDEAS"
+    },
+    "b_0007": {
+      "views": [
+        {
+          "crop_id": "b_0007_frame",
+          "readable": true,
+          "orientation": "frame_ocr",
+          "lines": [
+            {
+              "text": "DEEP WORK",
+              "kind_guess": "other",
+              "confidence": 0.99795,
+              "bbox": {
+                "x": 650.0,
+                "y": 756.0,
+                "w": 268.0,
+                "h": 386.0
+              }
+            },
+            {
+              "text": "IRFAN ALAM",
+              "kind_guess": "other",
+              "confidence": 0.99221,
+              "bbox": {
+                "x": 701.0,
+                "y": 1160.0,
+                "w": 113.0,
+                "h": 170.0
+              }
+            },
+            {
+              "text": "VINTAGE",
+              "kind_guess": "other",
+              "confidence": 0.99975,
+              "bbox": {
+                "x": 649.0,
+                "y": 1434.0,
+                "w": 76.0,
+                "h": 102.0
+              }
+            }
+          ],
+          "legibility": 0.9966366666666667,
+          "seq": 60,
+          "frame_ref": "frames/f_000060_0039028.jpg"
+        }
+      ],
+      "consensus_text": "DEEP WORK | IRFAN ALAM | VINTAGE",
+      "legibility": 0.9966366666666667,
+      "spine_text_raw": "DEEP WORK | IRFAN ALAM | VINTAGE"
+    },
+    "b_0008": {
+      "views": [
+        {
+          "crop_id": "b_0008_frame",
+          "readable": true,
+          "orientation": "frame_ocr",
+          "lines": [
+            {
+              "text": "u ek",
+              "kind_guess": "other",
+              "confidence": 0.6586,
+              "bbox": {
+                "x": 880.0,
+                "y": 781.0,
+                "w": 199.0,
+                "h": 333.0
+              }
+            },
+            {
+              "text": "ur:Thousand Weeks",
+              "kind_guess": "other",
+              "confidence": 0.96249,
+              "bbox": {
+                "x": 882.0,
+                "y": 787.0,
+                "w": 198.0,
+                "h": 328.0
+              }
+            },
+            {
+              "text": "Heal Your Mind Heal Your Life",
+              "kind_guess": "other",
+              "confidence": 0.99698,
+              "bbox": {
+                "x": 820.0,
+                "y": 788.0,
+                "w": 209.0,
+                "h": 328.0
+              }
+            },
+            {
+              "text": "The Myth of Sisyphus",
+              "kind_guess": "other",
+              "confidence": 0.99961,
+              "bbox": {
+                "x": 790.0,
+                "y": 925.0,
+                "w": 113.0,
+                "h": 159.0
+              }
+            },
+            {
+              "text": "Oliver Burkeman",
+              "kind_guess": "other",
+              "confidence": 0.99143,
+              "bbox": {
+                "x": 692.0,
+                "y": 1115.0,
+                "w": 221.0,
+                "h": 319.0
+              }
+            }
+          ],
+          "legibility": 0.921822,
+          "seq": 60,
+          "frame_ref": "frames/f_000060_0039028.jpg"
+        }
+      ],
+      "consensus_text": "u ek | ur:Thousand Weeks | Heal Your Mind Heal Your Life | The Myth of Sisyphus | Oliver Burkeman",
+      "legibility": 0.921822,
+      "spine_text_raw": "u ek | ur:Thousand Weeks | Heal Your Mind Heal Your Life | The Myth of Sisyphus | Oliver Burkeman"
+    },
+    "b_0009": {
+      "views": [
+        {
+          "crop_id": "b_0009_frame",
+          "readable": false,
+          "orientation": "frame_ocr",
+          "lines": [],
+          "legibility": 0.0,
+          "seq": 60,
+          "frame_ref": "frames/f_000060_0039028.jpg"
+        }
+      ],
+      "consensus_text": "",
+      "legibility": 0,
+      "spine_text_raw": ""
+    },
+    "b_0010": {
+      "views": [
+        {
+          "crop_id": "b_0010_frame",
+          "readable": true,
+          "orientation": "frame_ocr",
+          "lines": [
+            {
+              "text": "YOUR PARACHUTE? 2017",
+              "kind_guess": "other",
+              "confidence": 0.98162,
+              "bbox": {
+                "x": 857.0,
+                "y": 1028.0,
+                "w": 223.0,
+                "h": 379.0
+              }
+            },
+            {
+              "text": "ER PLAN",
+              "kind_guess": "other",
+              "confidence": 0.9971,
+              "bbox": {
+                "x": 935.0,
+                "y": 1261.0,
+                "w": 145.0,
+                "h": 238.0
+              }
+            }
+          ],
+          "legibility": 0.98936,
+          "seq": 60,
+          "frame_ref": "frames/f_000060_0039028.jpg"
+        }
+      ],
+      "consensus_text": "YOUR PARACHUTE? 2017 | ER PLAN",
+      "legibility": 0.98936,
+      "spine_text_raw": "YOUR PARACHUTE? 2017 | ER PLAN"
+    },
+    "b_0011": {
+      "views": [
+        {
+          "crop_id": "b_0011_frame",
+          "readable": false,
+          "orientation": "frame_ocr",
+          "lines": [],
+          "legibility": 0.0,
+          "seq": 60,
+          "frame_ref": "frames/f_000060_0039028.jpg"
+        }
+      ],
+      "consensus_text": "",
+      "legibility": 0,
+      "spine_text_raw": ""
+    }
+  }
+}

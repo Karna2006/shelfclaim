@@ -1,0 +1,1567 @@
+{
+  "frames": {
+    "3": [
+      {
+        "det_id": "f000003_d0000",
+        "cls": "shelf_unit",
+        "box_px": {
+          "x": 0,
+          "y": 0,
+          "w": 1080,
+          "h": 1528,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000003_d0001",
+        "cls": "shelf_board",
+        "box_px": {
+          "x": 431,
+          "y": 361,
+          "w": 486,
+          "h": 90,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000003_d0002",
+        "cls": "shelf_board",
+        "box_px": {
+          "x": 445,
+          "y": 766,
+          "w": 408,
+          "h": 44,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000003_d0003",
+        "cls": "shelf_board",
+        "box_px": {
+          "x": 2,
+          "y": 1106,
+          "w": 793,
+          "h": 77,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000003_d0004",
+        "cls": "item",
+        "box_px": {
+          "x": 0,
+          "y": 793,
+          "w": 281,
+          "h": 294,
+          "angle_deg": 90.0
+        },
+        "item_category": "cabinet",
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000003_d0005",
+        "cls": "item",
+        "box_px": {
+          "x": 910,
+          "y": 1244,
+          "w": 170,
+          "h": 183,
+          "angle_deg": 90.0
+        },
+        "item_category": "other",
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000003_d0006",
+        "cls": "item",
+        "box_px": {
+          "x": 456,
+          "y": 966,
+          "w": 93,
+          "h": 123,
+          "angle_deg": 90.0
+        },
+        "item_category": "other",
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000003_d0007",
+        "cls": "item",
+        "box_px": {
+          "x": 571,
+          "y": 950,
+          "w": 88,
+          "h": 137,
+          "angle_deg": 90.0
+        },
+        "item_category": "other",
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000003_d0008",
+        "cls": "item",
+        "box_px": {
+          "x": 636,
+          "y": 824,
+          "w": 176,
+          "h": 290,
+          "angle_deg": 90.0
+        },
+        "item_category": "other",
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000003_d0009",
+        "cls": "item",
+        "box_px": {
+          "x": 174,
+          "y": 812,
+          "w": 201,
+          "h": 298,
+          "angle_deg": 90.0
+        },
+        "item_category": "other",
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000003_d0010",
+        "cls": "item",
+        "box_px": {
+          "x": 345,
+          "y": 812,
+          "w": 204,
+          "h": 309,
+          "angle_deg": 90.0
+        },
+        "item_category": "other",
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000003_d0011",
+        "cls": "item",
+        "box_px": {
+          "x": 538,
+          "y": 979,
+          "w": 58,
+          "h": 152,
+          "angle_deg": 90.0
+        },
+        "item_category": "other",
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000003_d0012",
+        "cls": "item",
+        "box_px": {
+          "x": 23,
+          "y": 31,
+          "w": 292,
+          "h": 359,
+          "angle_deg": 90.0
+        },
+        "item_category": "other",
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000003_d0013",
+        "cls": "item",
+        "box_px": {
+          "x": 419,
+          "y": 121,
+          "w": 412,
+          "h": 305,
+          "angle_deg": 90.0
+        },
+        "item_category": "other",
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      }
+    ],
+    "24": [
+      {
+        "det_id": "f000024_d0000",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 0,
+          "y": 35,
+          "w": 87,
+          "h": 138,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000024_d0001",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 44,
+          "y": 0,
+          "w": 139,
+          "h": 175,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000024_d0002",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 148,
+          "y": 0,
+          "w": 150,
+          "h": 182,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000024_d0003",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 279,
+          "y": 0,
+          "w": 149,
+          "h": 186,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000024_d0004",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 416,
+          "y": 0,
+          "w": 180,
+          "h": 184,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000024_d0005",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 554,
+          "y": 0,
+          "w": 172,
+          "h": 205,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000024_d0006",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 674,
+          "y": 0,
+          "w": 205,
+          "h": 211,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000024_d0007",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 815,
+          "y": 0,
+          "w": 173,
+          "h": 219,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000024_d0008",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 924,
+          "y": 0,
+          "w": 156,
+          "h": 225,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000024_d0009",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 347,
+          "y": 954,
+          "w": 168,
+          "h": 711,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": [
+          "possible_duplicate_box"
+        ]
+      },
+      {
+        "det_id": "f000024_d0010",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 383,
+          "y": 870,
+          "w": 255,
+          "h": 823,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": [
+          "possible_duplicate_box"
+        ]
+      },
+      {
+        "det_id": "f000024_d0011",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 477,
+          "y": 806,
+          "w": 257,
+          "h": 901,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": [
+          "possible_duplicate_box"
+        ]
+      },
+      {
+        "det_id": "f000024_d0012",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 579,
+          "y": 854,
+          "w": 258,
+          "h": 868,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": [
+          "possible_duplicate_box"
+        ]
+      },
+      {
+        "det_id": "f000024_d0013",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 672,
+          "y": 885,
+          "w": 278,
+          "h": 845,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": [
+          "possible_duplicate_box"
+        ]
+      },
+      {
+        "det_id": "f000024_d0014",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 783,
+          "y": 889,
+          "w": 253,
+          "h": 806,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": [
+          "possible_duplicate_box"
+        ]
+      },
+      {
+        "det_id": "f000024_d0015",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 873,
+          "y": 937,
+          "w": 207,
+          "h": 712,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": [
+          "possible_duplicate_box"
+        ]
+      },
+      {
+        "det_id": "f000024_d0016",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 921,
+          "y": 858,
+          "w": 159,
+          "h": 605,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000024_d0017",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 1015,
+          "y": 916,
+          "w": 65,
+          "h": 401,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000024_d0018",
+        "cls": "shelf_board",
+        "box_px": {
+          "x": 0,
+          "y": 163,
+          "w": 1080,
+          "h": 161,
+          "angle_deg": 0.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000024_d0019",
+        "cls": "shelf_board",
+        "box_px": {
+          "x": 313,
+          "y": 1726,
+          "w": 767,
+          "h": 71,
+          "angle_deg": 0.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000024_d0020",
+        "cls": "shelf_unit",
+        "box_px": {
+          "x": 0,
+          "y": 0,
+          "w": 1080,
+          "h": 1920,
+          "angle_deg": 0.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000024_d0021",
+        "cls": "item",
+        "box_px": {
+          "x": 635,
+          "y": 601,
+          "w": 408,
+          "h": 296,
+          "angle_deg": 0.0
+        },
+        "item_category": "decor_other",
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      }
+    ],
+    "32": [
+      {
+        "det_id": "f000032_d0000",
+        "cls": "shelf_unit",
+        "box_px": {
+          "x": 215,
+          "y": 280,
+          "w": 865,
+          "h": 1435,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000032_d0001",
+        "cls": "shelf_board",
+        "box_px": {
+          "x": 0,
+          "y": 150,
+          "w": 1080,
+          "h": 209,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000032_d0002",
+        "cls": "shelf_board",
+        "box_px": {
+          "x": 219,
+          "y": 1548,
+          "w": 861,
+          "h": 167,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000032_d0003",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 5,
+          "y": 0,
+          "w": 187,
+          "h": 184,
+          "angle_deg": 45.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000032_d0004",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 174,
+          "y": 0,
+          "w": 261,
+          "h": 188,
+          "angle_deg": 45.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000032_d0005",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 462,
+          "y": 0,
+          "w": 183,
+          "h": 202,
+          "angle_deg": 45.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000032_d0006",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 563,
+          "y": 0,
+          "w": 238,
+          "h": 213,
+          "angle_deg": 45.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000032_d0007",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 714,
+          "y": 0,
+          "w": 219,
+          "h": 227,
+          "angle_deg": 45.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000032_d0008",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 810,
+          "y": 0,
+          "w": 243,
+          "h": 234,
+          "angle_deg": 45.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000032_d0009",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 924,
+          "y": 0,
+          "w": 156,
+          "h": 242,
+          "angle_deg": 45.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000032_d0010",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 993,
+          "y": 123,
+          "w": 87,
+          "h": 129,
+          "angle_deg": 45.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000032_d0011",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 256,
+          "y": 941,
+          "w": 170,
+          "h": 678,
+          "angle_deg": 75.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": [
+          "possible_duplicate_box"
+        ]
+      },
+      {
+        "det_id": "f000032_d0012",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 288,
+          "y": 860,
+          "w": 243,
+          "h": 787,
+          "angle_deg": 75.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": [
+          "possible_duplicate_box"
+        ]
+      },
+      {
+        "det_id": "f000032_d0013",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 380,
+          "y": 799,
+          "w": 256,
+          "h": 858,
+          "angle_deg": 75.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": [
+          "possible_duplicate_box"
+        ]
+      },
+      {
+        "det_id": "f000032_d0014",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 481,
+          "y": 845,
+          "w": 242,
+          "h": 822,
+          "angle_deg": 75.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": [
+          "possible_duplicate_box"
+        ]
+      },
+      {
+        "det_id": "f000032_d0015",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 567,
+          "y": 872,
+          "w": 264,
+          "h": 796,
+          "angle_deg": 75.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": [
+          "possible_duplicate_box"
+        ]
+      },
+      {
+        "det_id": "f000032_d0016",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 677,
+          "y": 876,
+          "w": 233,
+          "h": 758,
+          "angle_deg": 75.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": [
+          "possible_duplicate_box"
+        ]
+      },
+      {
+        "det_id": "f000032_d0017",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 759,
+          "y": 924,
+          "w": 198,
+          "h": 666,
+          "angle_deg": 75.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": [
+          "possible_duplicate_box"
+        ]
+      },
+      {
+        "det_id": "f000032_d0018",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 814,
+          "y": 852,
+          "w": 248,
+          "h": 788,
+          "angle_deg": 75.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [
+          "f000032_d0019"
+        ],
+        "flags": [
+          "possible_duplicate_box"
+        ]
+      },
+      {
+        "det_id": "f000032_d0020",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 1029,
+          "y": 904,
+          "w": 51,
+          "h": 279,
+          "angle_deg": 75.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      }
+    ],
+    "53": [
+      {
+        "det_id": "f000053_d0000",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 0,
+          "y": 524,
+          "w": 248,
+          "h": 476,
+          "angle_deg": 45.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000053_d0001",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 0,
+          "y": 526,
+          "w": 391,
+          "h": 847,
+          "angle_deg": 45.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000053_d0002",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 0,
+          "y": 657,
+          "w": 537,
+          "h": 1010,
+          "angle_deg": 45.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": [
+          "possible_duplicate_box"
+        ]
+      },
+      {
+        "det_id": "f000053_d0003",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 200,
+          "y": 492,
+          "w": 420,
+          "h": 1111,
+          "angle_deg": 45.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": [
+          "possible_duplicate_box"
+        ]
+      },
+      {
+        "det_id": "f000053_d0004",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 391,
+          "y": 578,
+          "w": 310,
+          "h": 1041,
+          "angle_deg": 45.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000053_d0005",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 551,
+          "y": 591,
+          "w": 412,
+          "h": 1014,
+          "angle_deg": 45.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000053_d0006",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 716,
+          "y": 726,
+          "w": 364,
+          "h": 858,
+          "angle_deg": 45.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000053_d0007",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 843,
+          "y": 877,
+          "w": 237,
+          "h": 705,
+          "angle_deg": 45.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000053_d0008",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 975,
+          "y": 1066,
+          "w": 105,
+          "h": 476,
+          "angle_deg": 45.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000053_d0009",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 1022,
+          "y": 1450,
+          "w": 58,
+          "h": 94,
+          "angle_deg": 45.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000053_d0010",
+        "cls": "shelf_board",
+        "box_px": {
+          "x": 0,
+          "y": 1536,
+          "w": 1080,
+          "h": 382,
+          "angle_deg": 0.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      }
+    ],
+    "60": [
+      {
+        "det_id": "f000060_d0000",
+        "cls": "shelf_board",
+        "box_px": {
+          "x": 0,
+          "y": 1523,
+          "w": 1080,
+          "h": 211,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000060_d0001",
+        "cls": "shelf_board",
+        "box_px": {
+          "x": 0,
+          "y": 207,
+          "w": 1080,
+          "h": 68,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000060_d0002",
+        "cls": "shelf_unit",
+        "box_px": {
+          "x": 0,
+          "y": 0,
+          "w": 1080,
+          "h": 278,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000060_d0003",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 0,
+          "y": 503,
+          "w": 109,
+          "h": 252,
+          "angle_deg": 45.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000060_d0004",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 0,
+          "y": 578,
+          "w": 194,
+          "h": 386,
+          "angle_deg": 45.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000060_d0005",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 0,
+          "y": 591,
+          "w": 397,
+          "h": 726,
+          "angle_deg": 45.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000060_d0006",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 27,
+          "y": 737,
+          "w": 468,
+          "h": 912,
+          "angle_deg": 45.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000060_d0007",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 228,
+          "y": 733,
+          "w": 451,
+          "h": 891,
+          "angle_deg": 45.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": [
+          "possible_duplicate_box"
+        ]
+      },
+      {
+        "det_id": "f000060_d0008",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 355,
+          "y": 703,
+          "w": 471,
+          "h": 914,
+          "angle_deg": 45.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": [
+          "possible_duplicate_box"
+        ]
+      },
+      {
+        "det_id": "f000060_d0009",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 494,
+          "y": 720,
+          "w": 464,
+          "h": 851,
+          "angle_deg": 45.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": [
+          "possible_duplicate_box"
+        ]
+      },
+      {
+        "det_id": "f000060_d0011",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 620,
+          "y": 687,
+          "w": 460,
+          "h": 897,
+          "angle_deg": 45.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [
+          "f000060_d0010"
+        ],
+        "flags": [
+          "possible_duplicate_box"
+        ]
+      },
+      {
+        "det_id": "f000060_d0012",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 789,
+          "y": 958,
+          "w": 291,
+          "h": 591,
+          "angle_deg": 45.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000060_d0013",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 890,
+          "y": 1173,
+          "w": 190,
+          "h": 378,
+          "angle_deg": 45.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000060_d0014",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 988,
+          "y": 1386,
+          "w": 92,
+          "h": 158,
+          "angle_deg": 45.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      }
+    ],
+    "67": [
+      {
+        "det_id": "f000067_d0000",
+        "cls": "shelf_unit",
+        "box_px": {
+          "x": 0,
+          "y": 0,
+          "w": 1080,
+          "h": 1194,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000067_d0001",
+        "cls": "shelf_board",
+        "box_px": {
+          "x": 0,
+          "y": 1359,
+          "w": 1080,
+          "h": 356,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000067_d0002",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 0,
+          "y": 668,
+          "w": 153,
+          "h": 342,
+          "angle_deg": 65.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000067_d0003",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 0,
+          "y": 697,
+          "w": 303,
+          "h": 495,
+          "angle_deg": 65.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000067_d0004",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 0,
+          "y": 687,
+          "w": 429,
+          "h": 724,
+          "angle_deg": 65.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": []
+      },
+      {
+        "det_id": "f000067_d0006",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 50,
+          "y": 680,
+          "w": 539,
+          "h": 925,
+          "angle_deg": 65.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [
+          "f000067_d0007",
+          "f000067_d0005"
+        ],
+        "flags": []
+      },
+      {
+        "det_id": "f000067_d0009",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 248,
+          "y": 612,
+          "w": 647,
+          "h": 955,
+          "angle_deg": 65.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [
+          "f000067_d0008"
+        ],
+        "flags": [
+          "possible_duplicate_box"
+        ]
+      },
+      {
+        "det_id": "f000067_d0010",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 477,
+          "y": 708,
+          "w": 493,
+          "h": 843,
+          "angle_deg": 65.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": [
+          "possible_duplicate_box"
+        ]
+      },
+      {
+        "det_id": "f000067_d0011",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 714,
+          "y": 931,
+          "w": 245,
+          "h": 522,
+          "angle_deg": 65.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": [
+          "possible_duplicate_box"
+        ]
+      },
+      {
+        "det_id": "f000067_d0012",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 733,
+          "y": 812,
+          "w": 255,
+          "h": 638,
+          "angle_deg": 65.0
+        },
+        "item_category": null,
+        "score": null,
+        "merged_from": [],
+        "flags": [
+          "possible_duplicate_box"
+        ]
+      }
+    ]
+  },
+  "row_count_checks": [],
+  "keyframe_stats": [
+    {
+      "seq": 3,
+      "model": "gemini-3.5-flash-lite",
+      "latency_ms": 3129,
+      "spine_count": 0,
+      "shelf_board_count": 3,
+      "item_count": 10
+    },
+    {
+      "seq": 24,
+      "model": "gemini-3.5-flash-lite",
+      "latency_ms": 4050,
+      "spine_count": 18,
+      "shelf_board_count": 2,
+      "item_count": 1
+    },
+    {
+      "seq": 32,
+      "model": "gemini-3.5-flash-lite",
+      "latency_ms": 3988,
+      "spine_count": 17,
+      "shelf_board_count": 2,
+      "item_count": 0
+    },
+    {
+      "seq": 53,
+      "model": "gemini-3.5-flash-lite",
+      "latency_ms": 2969,
+      "spine_count": 10,
+      "shelf_board_count": 1,
+      "item_count": 0
+    },
+    {
+      "seq": 60,
+      "model": "gemini-3.5-flash-lite",
+      "latency_ms": 3675,
+      "spine_count": 11,
+      "shelf_board_count": 2,
+      "item_count": 0
+    },
+    {
+      "seq": 67,
+      "model": "gemini-3.5-flash-lite",
+      "latency_ms": 5402,
+      "spine_count": 8,
+      "shelf_board_count": 1,
+      "item_count": 0
+    }
+  ],
+  "selected_keyframes": [
+    {
+      "seq": 3,
+      "segment": 0,
+      "qc_verdict": "blurry",
+      "blur": 192.50698453731337,
+      "quality_fallback": true
+    },
+    {
+      "seq": 24,
+      "segment": 1,
+      "qc_verdict": "blurry",
+      "blur": 133.71900688285064,
+      "quality_fallback": true
+    },
+    {
+      "seq": 32,
+      "segment": 2,
+      "qc_verdict": "blurry",
+      "blur": 134.4796285198518,
+      "quality_fallback": true
+    },
+    {
+      "seq": 53,
+      "segment": 3,
+      "qc_verdict": "blurry",
+      "blur": 180.5687902729536,
+      "quality_fallback": true
+    },
+    {
+      "seq": 60,
+      "segment": 4,
+      "qc_verdict": "blurry",
+      "blur": 199.20225621473801,
+      "quality_fallback": true
+    },
+    {
+      "seq": 67,
+      "segment": 5,
+      "qc_verdict": "low_light_blur",
+      "blur": 188.0345958555909,
+      "quality_fallback": true
+    }
+  ],
+  "review_queue": [
+    {
+      "ref_id": "segment-1",
+      "code": "low_quality_coverage_segment",
+      "evidence": "Segment 1 had no QC-ok frame; selected frame 3 (verdict=blurry, blur=192.50698453731337)."
+    },
+    {
+      "ref_id": "segment-2",
+      "code": "low_quality_coverage_segment",
+      "evidence": "Segment 2 had no QC-ok frame; selected frame 24 (verdict=blurry, blur=133.71900688285064)."
+    },
+    {
+      "ref_id": "segment-3",
+      "code": "low_quality_coverage_segment",
+      "evidence": "Segment 3 had no QC-ok frame; selected frame 32 (verdict=blurry, blur=134.4796285198518)."
+    },
+    {
+      "ref_id": "segment-4",
+      "code": "low_quality_coverage_segment",
+      "evidence": "Segment 4 had no QC-ok frame; selected frame 53 (verdict=blurry, blur=180.5687902729536)."
+    },
+    {
+      "ref_id": "segment-5",
+      "code": "low_quality_coverage_segment",
+      "evidence": "Segment 5 had no QC-ok frame; selected frame 60 (verdict=blurry, blur=199.20225621473801)."
+    },
+    {
+      "ref_id": "segment-6",
+      "code": "low_quality_coverage_segment",
+      "evidence": "Segment 6 had no QC-ok frame; selected frame 67 (verdict=low_light_blur, blur=188.0345958555909)."
+    }
+  ]
+}

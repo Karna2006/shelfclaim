@@ -1,0 +1,1424 @@
+{
+  "search_metadata": {
+    "id": "6b08bb921b6c6ebc0bd1c3aa",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/0y3sF2vXcyo236D5gz2qmvCHMzop8q_10RxfBj5Tz8c/6b08bb921b6c6ebc0bd1c3aa.json",
+    "markdown_endpoint": "https://serpapi.com/searches/0y3sF2vXcyo236D5gz2qmvCHMzop8q_10RxfBj5Tz8c/6b08bb921b6c6ebc0bd1c3aa.md",
+    "created_at": "2026-11-26 23:06:58 UTC",
+    "processed_at": "2026-11-26 23:06:58 UTC",
+    "ebay_url": "https://www.ebay.co.uk/sch/i.html?_nkw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book",
+    "raw_html_file": "https://serpapi.com/searches/0y3sF2vXcyo236D5gz2qmvCHMzop8q_10RxfBj5Tz8c/6b08bb921b6c6ebc0bd1c3aa.html",
+    "total_time_taken": 1.83
+  },
+  "search_parameters": {
+    "engine": "ebay",
+    "_nkw": "Heal Your Mind Heal Your Life Monica DuBay book",
+    "ebay_domain": "ebay.co.uk"
+  },
+  "search_information": {
+    "organic_results_state": "Results for exact spelling",
+    "total_results": 1,
+    "query_displayed": "Heal Your Mind Heal Your Life Monica DuBay book"
+  },
+  "categories": [
+    {
+      "name": "Books, Comics & Magazines",
+      "link": "https://www.ebay.co.uk/sch/267/i.html?_nkw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book",
+      "id": 267,
+      "serpapi_link": "https://serpapi.com/search.json?_nkw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&category_id=267&ebay_domain=ebay.co.uk&engine=ebay"
+    },
+    {
+      "name": "Fiction & Non-Fiction Books",
+      "link": "https://www.ebay.co.uk/sch/261186/i.html?_nkw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book",
+      "id": 261186,
+      "serpapi_link": "https://serpapi.com/search.json?_nkw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&category_id=261186&ebay_domain=ebay.co.uk&engine=ebay"
+    }
+  ],
+  "organic_results": [
+    {
+      "title": "Heal Your Mind Heal Your Life: A Mindset Mastery Roadmap To Release Fear, Awaken",
+      "link": "https://www.ebay.co.uk/itm/800793418939?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&itmmeta=01M8D1SE0VVVKCY88VCF10ZC3R&hash=itemba7301dcbb:g:5FcAAeSwXiVqw-EW&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2FVQ2j7onSm9%2BNuPlruFMO3YJN9KKwcTvKvENqkA%2BwOwnrGpxaY8WgQd9gWonQGACZFH6kiQRWWlR6nrwvT%2FAkt6NIlYkXbJwEpAtZeIyDP9FLDeWCPJ%2FwyaOECa3kp65M70p1H%2BuxksqkDcKHETVccBrxZ%2F1hHmwL%2BJqg6yeGbq%2FulN2JXxXfme4stdeoDZNdsVfnOudC%2Foy%2B0vc%2BQsO9duD%2F4iLVEsHiqKSyOLyx9mpgMEH9sZM5eUTPHufObGJie%2FuPv8JNtskNF5UifoKkJBzANXaR45mOJafyadvqeNA%3D%3D%7Ctkp%3ABk9SR-7g5aHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=800793418939",
+      "product_id": "800793418939",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£14.82",
+        "extracted": 14.82
+      },
+      "old_price": {
+        "raw": "£16.93",
+        "extracted": 16.93,
+        "discount": "£14.82"
+      },
+      "shipping": {
+        "raw": "+£8.01 delivery",
+        "extracted": 8.01
+      },
+      "location": "from United States",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/5FcAAeSwXiVqw-EW/s-l500.jpg",
+      "seller": {
+        "username": "bargainbookstores",
+        "reviews": 1200000,
+        "positive_feedback_in_percentage": 99.7
+      }
+    },
+    {
+      "sponsored": true,
+      "title": "Heal Your Mind Heal Your Life: A Self-Help Book. Coe<|",
+      "link": "https://www.ebay.co.uk/itm/127594635117?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&itmmeta=01M8D1SE0VE02BSEAPQ8X6143K&hash=item1db53b9f6d:g:BX0AAeSwWUZpVQr-&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9B9o%2FiXE6lnQPihN5u7vn6HczVmHbKBtje6K3u1UPal8Je3o31XzLx4mpCQeSMYLM01PvSSofIHjQ0YTYioLquruv%2BQZq2YXzGoFU6GZrePjaUJePvWdqpffqVCCDGjQ6%2B2spdSRpWNxPdF7BoxZ6FxOsGnqisBJocLim4tj8v%2BuTzT%2FIgaxpbpSxNT6KtfJ57IDyBUcnshk85bjyI2VoBuzrLokfGtCuEsgwd4%2BPpshBj8S8HtJK%2Ba0zpPmv%2Bn9BP37ee%2BwFqmcC08jl7jo58%2Bnk0tR8vSYBMAng33HZ0T726QmVZyBG0Q5jmf%2BgS6Nss0MM%2BKRqp8ZcEo0QY3gfq%7Ctkp%3ABFBM7uDlocNo",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=127594635117",
+      "product_id": "127594635117",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£20.15",
+        "extracted": 20.15
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/BX0AAeSwWUZpVQr-/s-l500.jpg",
+      "seller": {
+        "username": "baham_books",
+        "reviews": 3600000,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "sponsored": true,
+      "title": "Heal Your Mind: Your Prescription for Wholeness through Medicine, Affirmations",
+      "link": "https://www.ebay.co.uk/itm/295729995318?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&itmmeta=01M8D1SE0V6G1XDKDWY1KBT8VH&hash=item44dae19e36:g:6f4AAOSwj4dkdtlk&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde86hGBqHKOQbr4MmdV6vzE47d%2BGmnaeXcxjPfhMKh%2Bn0K4%2B5JkFZ8%2FmqaFEI71pS3MnZA9PknKiDAQ3o6HUNCnlec52y4lBtxu%2BcmsL4VrmI8pYd5c3Zci7FvUEzauJsuB0zLHK%2BQ9XzQ1B3glKL967%2BB%2BRo3KwPC5sAre0geN8wao0Io2b36lSw%2B2Kg7kx1Mb%2B3LTp6EQdfm0ggRy%2B8MKXX%2B%2Fb1fWEXxPsWGy15laIQAVkCvrPGuHtLRPSs%2B5bQKrJ--SHAyS3V%2BQ1J3Hns5OdIGGfA3xLdzCYBLoNju75sCegMnfUweb06kOdQL7yo%2BNd92e5EpyicDivG%2Fv9HpQg%7Ctkp%3ABFBM7uDlocNo",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=295729995318",
+      "product_id": "295729995318",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£3.50",
+        "extracted": 3.5
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/6f4AAOSwj4dkdtlk/s-l500.jpg",
+      "seller": {
+        "username": "baham_books",
+        "reviews": 3600000,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "sponsored": true,
+      "title": "Heal Your Mind: Your Prescription for Wholeness through Medicine",
+      "link": "https://www.ebay.co.uk/itm/334586227869?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&itmmeta=01M8D1SE0VEZXJ4F8MW54HRWPG&hash=item4de6e4ac9d:g:hRAAAOSw8wVjQN1a&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9km6Mioq2Wy5hs5Vc%2FJs0%2BsrLQUb3y7K4GB2oD1YVc%2BmOSEFQ03ZQXEDkGKdkNRlUfXMLID%2FIy9yUzx7xbONtDb3G1OQG4fUPEQArKjIgO1WprhFYFN3wrG0%2FaHjApeSvcFCJalGJoFcKVpzyzbH9SRyWilQOJtI8s6qiDqJTZjg1yg58PI6p%2FW0cQM0sTLY8TKFkA3uuXI7Qwsf0sB0Gr2KgXBreeGMrKFVOrrifI3WbGHXGve3rhEl7oGbOqxRDnfUFpRzQWG%2FqKfucB1JXzbmZwgccA1EhN9NE8mhMF5xF6YKa20eAzMPRFF3%2BW9yB0GkoMJDyu0FgCMXT9yg5R%7Ctkp%3ABFBM7uDlocNo",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=334586227869",
+      "product_id": "334586227869",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£3.33",
+        "extracted": 3.33
+      },
+      "shipping": "Free delivery",
+      "quantity_sold": "6 sold",
+      "extracted_quantity_sold": 6,
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "extensions": [
+        "Direct from Awesome Books"
+      ],
+      "thumbnail": "https://i.ebayimg.com/images/g/hRAAAOSw8wVjQN1a/s-l500.jpg",
+      "seller": {
+        "username": "awesomebooksuk",
+        "reviews": 2600000,
+        "positive_feedback_in_percentage": 99.7
+      }
+    },
+    {
+      "sponsored": true,
+      "title": "You Can Heal Your Life – Louise L. Hay – Self‑Healing & Affirmations",
+      "link": "https://www.ebay.co.uk/itm/128204040883?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&itmmeta=01M8D1SE0VGRSPA5W3QZ7T06NP&hash=item1dd98e6ab3:g:PmEAAeSwbmhpmmSn&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8J5in%2FRBAQrhya1gb8FyegZGn92Zu9NYdoTkoSgm%2F0Xpf4E%2Be7%2BE%2B19%2BZx3q9ZW9dg8EVFXlpgvFjADRvFoPKeAXSwgRx8XiCEnV5jINpFXMIpVcxndVDUi0BExtass%2FcKLx%2FJq0%2B3fEJkmn5feYbJh3Ux8nDxqYGrjQrI6neyOnfr1ZMkUMw6L9WS148TjRxQkSuYR4NgDu0PruCUGY0Wsz3AuOoEnOjguNaP0DPgbIXqntZVckufy1x%2BN1%2BeJ9WXSmIa5OLmluV0kLCKydDxsnpLxvXgiK35ZU5yi0Al7u9fzD2EhnLcA7YV7o8GyOYhYCVyrbJ2%2Bl7zUZAs%2BFvq%7Ctkp%3ABFBM7uDlocNo",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=128204040883",
+      "product_id": "128204040883",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£9.01",
+        "extracted": 9.01
+      },
+      "shipping": {
+        "raw": "+£15.27 delivery",
+        "extracted": 15.27
+      },
+      "location": "from Australia",
+      "buying_format": "accepts_offers",
+      "buying_format_text": "or Best Offer",
+      "thumbnail": "https://i.ebayimg.com/images/g/PmEAAeSwbmhpmmSn/s-l500.jpg",
+      "seller": {
+        "username": "dustybooks1",
+        "reviews": 916,
+        "positive_feedback_in_percentage": 100
+      }
+    },
+    {
+      "title": "Self-Healing:Use Your Mind To Heal Your Body: How to use your ,",
+      "link": "https://www.ebay.co.uk/itm/389806819389?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&itmmeta=01M8D1SE0W4B5XBP6HPNZWN6NA&hash=item5ac24c083d:g:q0gAAeSwNtJpxof2&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9YTlpaqb%2FhDzFLB8bWkMYm5QfyHrHs759doccFpUJxEPF3axIyYaYOrtyni39Y9CIu7CB5Ba5caPcd6NWGuXLnyr4YyKaJiP%2BKUTOljesnvRktV1hnypoMliDlHBIGKxNvwERUInNb32A3c6%2F3ZG9Q4tsBbYMkhxcNSXRke%2FJugkjagvnp4V49OpQdujArXkaRrZdI6wiwAMX4r2G%2BLtbVus4nRpoDjgZGCP53j4iAYDdKuKvfaupnV7S4uqtC9pz0cE5We1LxEE7nZ1jAi22JwL--KLDHxaLxqEKcKNZ1GgZVnG1tsQFFkmaM7%2F8bq4%2FAub42swZxvw5OqSyjTDUc%7Ctkp%3ABk9SR-7g5aHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=389806819389",
+      "product_id": "389806819389",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£2.55",
+        "extracted": 2.55
+      },
+      "shipping": "Free delivery",
+      "stock_status": "Last one",
+      "watchers": "2 watchers",
+      "extracted_watchers": 2,
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/q0gAAeSwNtJpxof2/s-l500.jpg",
+      "seller": {
+        "username": "cmedia_group",
+        "reviews": 1600000,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "title": "Self-Healing:Use Your Mind To Heal Your Body: How to use your .",
+      "link": "https://www.ebay.co.uk/itm/397901748742?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&itmmeta=01M8D1SE0W25VC7MB8FV3BJVEP&hash=item5ca4cada06:g:QuIAAeSwnflp9Vvy&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde8SBRm%2FM0jmSt4MwSXPylPHksQfZYr2ocpAbzdP6WNIhWJREYQLzI1veTlPpFtI4XLm%2BloB7owdeJGYOSCRcIX%2FoZslVUH7RCgTN8aU%2B79Jz%2BRjkLnZc9IrrqKutE3CI3d9YxkxCN2WzOddlkq2Vv8UKaeQ6SknjSBXrPQY2zNg6kJitGjBOSs1pOJnOWALGiiibmtzMvhm8KStLtafZStPLELvYMrCj8II31nYZZZ51yqsDUqg1qOuxjgeS9TmwC1i1MsOMvpUr7evdacsKUkqHA3e7sUveS2NUrTExvvUAA%3D%3D%7Ctkp%3ABk9SR_Dg5aHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=397901748742",
+      "product_id": "397901748742",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£2.55",
+        "extracted": 2.55
+      },
+      "shipping": "Free delivery",
+      "watchers": "1 watchers",
+      "extracted_watchers": 1,
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "extensions": [
+        "Direct from Awesome Books"
+      ],
+      "thumbnail": "https://i.ebayimg.com/images/g/QuIAAeSwnflp9Vvy/s-l500.jpg",
+      "seller": {
+        "username": "awesomebooksuk",
+        "reviews": 2600000,
+        "positive_feedback_in_percentage": 99.7
+      }
+    },
+    {
+      "title": "You Can Heal Your Life by Louise Hay - 9798318604652",
+      "link": "https://www.ebay.co.uk/itm/820208533127?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&itmmeta=01M8D1SE0WFDQ2KG3456SJFE77&hash=itembef83cfe87:g:vRwAAeSwsqZrCJDa&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9DCeijPdFvFzkCLNnFDSOVFJe0%2Bl3c3BEQGK%2BYyWcXwSKZJ%2FwAsX18TtzvallGUXO3INK1MRL5umacnzwL9Ct7KmWLGk4ckcNBS8gSgXaPP7tBY83uxRajWSUVIqVMPooZmxU4SJHv%2F6iknAC1y0PfDb794qE3UQmSItfO4E3H2l8I0wp8btbLLDveOTvfNbppuw51bFvBbwrsaYbmztXGZZDNGOWJWcSAAB6H9Twya%2FG4RL9PlmHwqWMFc3nDcgGMkM1b5rhAXcqcp0WMVGez1XAOIhYtPxfM%2BL%2FquTst7vphaUVOmgHKEPxx70FC8CnruY0VyoZYoYToL3ARJLEw%7Ctkp%3ABk9SR_Dg5aHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=820208533127",
+      "product_id": "820208533127",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£15.22",
+        "extracted": 15.22
+      },
+      "old_price": {
+        "raw": "£20.00",
+        "extracted": 20.0,
+        "discount": "£15.22"
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/vRwAAeSwsqZrCJDa/s-l500.jpg",
+      "seller": {
+        "username": "books--etc",
+        "reviews": 761300,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "title": "You Can Heal Your Life",
+      "link": "https://www.ebay.co.uk/itm/820207878160?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&itmmeta=01M8D1SE0WCR99XWSKVBW2YA0B&hash=itembef8330010:g:rZgAAeSwDJpqxDYo&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2FS9u546ZdXvrN8sZ0KBHKHo%2FFIp2ASiC%2F5Z6yBZE75pph%2BrWVqs7dOf7ya2RmDsBcN6kkB7VoCHMS1iOr1Leg5c%2FIzFx3CexW0MNH5diyC7hoY2zNomeIEDHtMfJQBMOUS8cwjAIuUauAIPdBDzsG1R6%2B9P4knb72nmqlPHydXz%2Fle4BzUsfS1UOq4iIw6IDRaQOOF%2FiDwf7qme2mFhYmsAdaGO2XZo1PDZK1OZ6kHvPbS62rws%2Bkq3vVAKjqumKUsfBC60FmDGuBKEuKa%2BpDxM6lCzDjqvNzMdFa%2FWtfGyQ%3D%3D%7Ctkp%3ABk9SR_Dg5aHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=820207878160",
+      "product_id": "820207878160",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£15.42",
+        "extracted": 15.42
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/rZgAAeSwDJpqxDYo/s-l500.jpg",
+      "seller": {
+        "username": "speedyhenuk",
+        "reviews": 1700000,
+        "positive_feedback_in_percentage": 99.9
+      }
+    },
+    {
+      "title": "The Power of Crystal Healing: Change Your Energy and Live a High-vibe Life By E",
+      "link": "https://www.ebay.co.uk/itm/124364340039?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&itmmeta=01M8D1SE0WR7R7WZRNQ2TMGCZX&hash=item1cf4b13b47:g:gWEAAOSwB69feKoH&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9FMen1Mmk%2BvL8D4vrGEf%2BTOeWMFkvJquNf3imchVQv2Gtwud6rXuKWj1SYQ6KzqskhngUtcEw1J%2FnoGteu9Cde2iYUgTSRWOQj9snOMMcE6DqvQgASaXxCMJHkL%2Fnsf2pRoJVQ4me95PSHKPGp1UkltkfmjDiqNgcLCEa6B2B7k%2BuUZAzZw6gFjR2Np6IszEA3rmmzmR%2FBmjuwzTmzfdYYGZKJU9O%2B3SdprKZKtyG9VoHaA38nC6NMtQcROVYayg5hsZ0KHx7UzQwc%2FIalUb0gXCBStLsiBURRVvoTpY6%2FeTsI4n5Fa0dIpD0PAMITHSfkHPeOmtvCUS3VRsQVeNfq%7Ctkp%3ABk9SR_Dg5aHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=124364340039",
+      "product_id": "124364340039",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£2.82",
+        "extracted": 2.82
+      },
+      "shipping": "Free delivery",
+      "quantity_sold": "57 sold",
+      "extracted_quantity_sold": 57,
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/gWEAAOSwB69feKoH/s-l500.jpg",
+      "seller": {
+        "username": "baham_books",
+        "reviews": 3600000,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "title": "Heal Your Hurting Mind by Craig Groeschel (Paperback Book)",
+      "link": "https://www.ebay.co.uk/itm/287370942100?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&epid=2356158233&itmmeta=01M8D1SE0WE2EQ2SZPR8YG2YH7&hash=item42e8a49694:g:l50AAeSwjehq~ge0&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde9Iza8YMW5MtBn3L6NrWimuLYeXz28ry7PE%2BsQyQzpfo2ii3eh5F%2BaBOHVS2a4Go5PLIRwBn9jK8xmkzPKLuywln3UOCCVA8O5UBICv3JqqmjU1VR5sA%2BNM6JjJsx6LvMBlHVAdd3Y4Z75xbgaS9nkqd9ESTlsWbNsb91LmKTTWDrijSJygNqU%2Fw%2BADTWhImcc%2FriwZz4kSaD0eumzozs18ZUD7%2FID1%2F0ASS34dXBijKw0yB3Itcz%2BdBTFTZTs4uAZGBa9Szzmp2HYZFZ1jM3er978K4%2Fvb%2FFs2sAILbAKN3A%3D%3D%7Ctkp%3ABk9SR_Dg5aHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=287370942100",
+      "product_id": "287370942100",
+      "epid": "2356158233",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£13.45",
+        "extracted": 13.45
+      },
+      "old_price": {
+        "raw": "£14.99",
+        "extracted": 14.99,
+        "discount": "£13.45"
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/l50AAeSwjehq~ge0/s-l500.jpg",
+      "seller": {
+        "username": "bookcorneruk",
+        "reviews": 126700,
+        "positive_feedback_in_percentage": 100
+      }
+    },
+    {
+      "title": "You Can Heal Your Life: Deluxe Edition by Louise Hay",
+      "link": "https://www.ebay.co.uk/itm/366718156373?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&itmmeta=01M8D1SE0XJ7DQFW226G80XG0Y&hash=item55621afe55:g:FqQAAeSwTMVqxkE2&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9wd3MWnsm8iGDlr0TBtBSWYoxyVumNY2pGqI6Xxd5phi9v0Xte4Fi3j7L%2FnE8KWCpR%2BToMq%2FWj1WEjrCDL%2BqtUeRP629j3%2FXWUtiekdboJ%2BOxIM8ZkHbl9HOOU4ROZxMonhfTUFlEByzNhUCGkpYU%2BkuYaKyikWCZshISzZ6NQIqceAq7bVgWi7lKPk8ccalb0%2BJU7zZlxYGyPZwIU7x0y7HTNmxt6srpwONYwkOduqgfwPi07ug01DNs9S1kH74okuw4%2Fu6pk08A82uiXx6BGzK%2BoToGicbraWvS%2FeGE3cGGb%2FDrSLfM3sB4DYDwahwILm3CSA8Q0xaBSf835jgAw%7Ctkp%3ABk9SR_Dg5aHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=366718156373",
+      "product_id": "366718156373",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£16.21",
+        "extracted": 16.21
+      },
+      "old_price": {
+        "raw": "£20.00",
+        "extracted": 20.0,
+        "discount": "£16.21"
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/FqQAAeSwTMVqxkE2/s-l500.jpg",
+      "seller": {
+        "username": "bookmail",
+        "reviews": 700300,
+        "positive_feedback_in_percentage": 100
+      }
+    },
+    {
+      "title": "Self-Love - The Secret to Manifesting: Heal Your Mind, - Paperback NEW MONICA.",
+      "link": "https://www.ebay.co.uk/itm/398195350417?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&itmmeta=01M8D1SE0XM5S3N0FNRR2V923N&hash=item5cb64adb91:g:r-wAAeSw7ehqXhon&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9nNYSIMiYgJVABZOUtztrULFgOVAq0HQbqe53i1ekGt04ZWiGpri6HtkoWXjSOoMV9X90ExgmSb5zZmNTThkdtZHcmqnA4Om0iGbsaMq4rWCU%2BjapcFRB4RDpUY9U9jBY0XE3NzQJe9fgP6An3LsQIMTHOXONcUIK4pVpR%2FH%2BtpX51DFy%2FPWz9hM%2BrQZ31Im9q2TYNRCWt9%2FBl%2BFBi0P%2BeO8W7P7m6jBupDIXw%2BcnsXcEHDEO4vPMO4mpoIhhc1d%2FilccGZWobHUZwRs8Yh9mIcG%2Bt%2B4nx4UBH01gxArvHS%2BNmLc5FsJ8DbPQyU8LeRSVum8cdZeayRd9tImoso4rJ%7Ctkp%3ABk9SR_Dg5aHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=398195350417",
+      "product_id": "398195350417",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£14.63",
+        "extracted": 14.63
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/r-wAAeSw7ehqXhon/s-l500.jpg",
+      "seller": {
+        "username": "buyitnowbooksoz2010",
+        "reviews": 413400,
+        "positive_feedback_in_percentage": 99.6
+      }
+    },
+    {
+      "sponsored": true,
+      "title": "Heal Your Mind Heal Your Life, Book On Depression, Anxiety And Confidence Boost",
+      "link": "https://www.ebay.co.uk/itm/134167460303?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&itmmeta=01M8D1SE0XH2GWC3J2V5EJG0ED&hash=item1f3d00f9cf:g:m7QAAOSwdmdixp0L&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2Bsgj53SXdV3qcvbmjDkjsNV%2F0e1k4aVPtii5h%2BKdSxNKzG5uBGrdODOSECzFpxyY32R%2BuRp0wbrUDCnExmOnrLm4E91fb3gQUdCoVJmInzZp1NTAZF5eBkMrD5f9ZIVbxHC7nRtLpC%2FdX5C4dKetMjZ03%2F78kltjITkB%2FKxON6txyigszygkBABHjkg256l4ykmyVtpIaKqWIipOUbz7q2XzUoHoPKO2jcIPrmTJg3zTeqeEwIlAgKpVkrBFl%2BQCIKi%2F60SSPrqw4JaT5Z17fuOztalVOk%2FeV0ls7YrRQUAjnVx4djhRbnpygKft%2F6%2FyIilc87Lkfxlq18yFwJysDp%7Ctkp%3ABFBM8ODlocNo",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=134167460303",
+      "product_id": "134167460303",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£7.58",
+        "extracted": 7.58
+      },
+      "shipping": {
+        "raw": "+£16.37 delivery",
+        "extracted": 16.37
+      },
+      "location": "from Australia",
+      "stock_status": "Last one",
+      "quantity_sold": "6 sold",
+      "extracted_quantity_sold": 6,
+      "buying_format": "accepts_offers",
+      "buying_format_text": "or Best Offer",
+      "thumbnail": "https://i.ebayimg.com/images/g/m7QAAOSwdmdixp0L/s-l500.jpg",
+      "seller": {
+        "username": "2014aumioch",
+        "reviews": 754,
+        "positive_feedback_in_percentage": 100
+      }
+    },
+    {
+      "sponsored": true,
+      "title": "Heal Your Mind and Your Body Will Heal, Book 2: Prayers to transform you<|",
+      "link": "https://www.ebay.co.uk/itm/306690168125?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&epid=22046514851&itmmeta=01M8D1SE0XQN0CMHJ74PJ3ANDS&hash=item476828953d:g:j5wAAeSwpvZpV-0s&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2BM4H4HT%2Fiywdn0sGclq0adjqP0hAiUj1ZIVeicPZioM60BQ%2BjqO%2F93xw4qpL09mpxupv2ljdhj%2FmI2rLR0e%2Fes6xIfYrTFhoUL3UwXbEm5T7TrvfIvRoghDZx28U5XrZSr4vgwPXpiXDIdEd%2Fx5MnD1VyL3SzmoYHAbmyWsCazKygQF9wuC4ntE0vS6rGE3c%2FLLqNOgfDad0%2FxUqPDWraCzssDo01IqAnxZlJ06DU5VWRPKyzoZt1M8R1%2BqzwIODR9CNX0gg4XXWRJ8iUc08uE%2FjcmhHzMbHCua9zdvUmvuTHrB1R5Yd%2BN9BXn8ghKWdFUq7xOlBagoo%2Byg%2FlPQGp9%7Ctkp%3ABFBM8ODlocNo",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=306690168125",
+      "product_id": "306690168125",
+      "epid": "22046514851",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£24.23",
+        "extracted": 24.23
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/j5wAAeSwpvZpV-0s/s-l500.jpg",
+      "seller": {
+        "username": "baham_books",
+        "reviews": 3600000,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "sponsored": true,
+      "title": "Heal Your Mind: Your Prescription for Wholeness. Hay<|",
+      "link": "https://www.ebay.co.uk/itm/297894437445?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&epid=12082837204&itmmeta=01M8D1SE0XQ6BQPGCW2CRSBR1S&hash=item455be46245:g:pJMAAeSwRJZpVXGY&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8m14CICJbi7%2FWvaJXlkmpSJ64onV2aplzIfpmBEAbbbd4SQ8ttX1Fc4feIyelZHE%2Bjq1AhJY%2BN3gMwBRSeTacF2Qaq6ule0wZQjEr7KvEYaqcmg2ZEPtewHAh84TZnAWA%2BuneVGDhlnTHQaroZuMmD8XKdyFrHxiJrqnFHvdcsebvwjcsiXRInkO9GXRt7hG7zeFm3LEDmOEkw7YlxZ92OhQ6cIgM0JdJ%2BdZlUgJfvIHkSLPu2VyuNOabijlr%2FP71DrJhPiMNuTDXH4DO1aXRyMC5%2Bm2V70voOiBmx1a6%2F8kYAZ9xqn%2BU%2FOPjpYRR%2Blec3EW1DjqIR3nSW6wTqxW9O%7Ctkp%3ABFBM8ODlocNo",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=297894437445",
+      "product_id": "297894437445",
+      "epid": "12082837204",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£23.92",
+        "extracted": 23.92
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/pJMAAeSwRJZpVXGY/s-l500.jpg",
+      "seller": {
+        "username": "baham_books",
+        "reviews": 3600000,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "sponsored": true,
+      "title": "Your Mind Can Heal Your Body: How your experiences and emotions .9780749927127",
+      "link": "https://www.ebay.co.uk/itm/293499363806?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&epid=90209081&itmmeta=01M8D1SE0XXT6PG96ZBGKNYTXQ&hash=item4455ece1de:g:cw8AAOSwbEReXmwt&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2FiFhoJjjl1LeAEMNchAbib8UNcODUb3wzE3lpK9ifiPU6dTFOrNt6PKp2kUROVPAp4S4YFo31%2FBNsc0t0dqyRSj4L6rZhX%2F1FR%2FVDWUdtcLsJh8IldXtSwfU5JRya0dm6nL9RTO7CkokiCpTriRyV7C160hklTe8uGQWjk9LJgMz9u9J49Wp9RBAcRbHPRsN2eoyMNjo5EHqWwJHhMR99BFpJWdtkuXlaMs43HcEo%2FSz9Nda0xgjeRBLXLJOm6ZqScG5XB91Yp9C%2FTCqj%2B7x92tjJ2kw477oygfRUb0KpkuEWEojKUVBTh2v5oZXRVTNB8muU6KkRIN9nl08h6xPtv%7Ctkp%3ABFBM8ODlocNo",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=293499363806",
+      "product_id": "293499363806",
+      "epid": "90209081",
+      "condition": "Pre-owned",
+      "rating": 5.0,
+      "reviews": 1,
+      "price": {
+        "raw": "£3.50",
+        "extracted": 3.5
+      },
+      "shipping": "Free delivery",
+      "stock_status": "Last one",
+      "quantity_sold": "19 sold",
+      "extracted_quantity_sold": 19,
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/cw8AAOSwbEReXmwt/s-l500.jpg",
+      "seller": {
+        "username": "baham_books",
+        "reviews": 3600000,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "title": "Your Mind Can Heal Your Body: How your experiences and... - Manning, Matthew",
+      "link": "https://www.ebay.co.uk/itm/366474495735?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&epid=90962197&itmmeta=01M8D1SE0YABT2NT1FWYJ9YFFB&hash=item55539506f7:g:S6oAAeSwSX9qLA-Q&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2Ba%2FHNhwPRPn7c6tS9wYf7krlFDxcV5H6pi7LysSqHPde1%2B%2FCBS9RMZ%2FiqHyWhe2B6jivUAB5sWyxQDQOeYgmDmkFLXoxhE4O1owAv8gxdRAxIS692wwBRBfLXGFZHZofzdSBweH314IKVP4Om3tDbOTh9RHHtsVgDxAIF%2BlXBZZuWIiqYso0cAd5q%2BMgwF4YMfG7iJaARXyCXnRsuuGvPX%2B8obAgxT%2FlqzbpVY10Kec5GJakwuk3rDtOrpFViQIYawvTVHj9h1nb9BHZWYbT%2F8eHur%2Bk5G0Q14cCYqlKqPqHIEzXORUHZFa%2FDfEP4GPNcLkP7qIZxBsUdly8otGMvC%7Ctkp%3ABk9SR_Dg5aHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=366474495735",
+      "product_id": "366474495735",
+      "epid": "90962197",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£5.05",
+        "extracted": 5.05
+      },
+      "shipping": "Free delivery in 3 days",
+      "promotion": "Save up to 20% with Multi-buy",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/S6oAAeSwSX9qLA-Q/s-l500.jpg",
+      "seller": {
+        "username": "webuybooks",
+        "reviews": 3300000,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "title": "You Can Heal Your Life 40th Anniversary Edition by Louise Hay (Paperback Book)",
+      "link": "https://www.ebay.co.uk/itm/287601645015?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&epid=7083685535&itmmeta=01M8D1SE0Y3FHKZYHSVY9MSJRK&hash=item42f664d5d7:g:V9MAAeSw1PlrBMxk&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2B6g6%2F59kzmJe9NIQi5wDqecw6hHwJSKEwruynWN0c%2FS2NtCbIiDqSC%2FaHKNbRx6lOngvAQfaUWvoBY7bKdHMaVBZ8UwUNWR4TGdE%2BbEgaQyeOnFArTjKxFvcXdXJ5JG2OqRWkd%2FrBnAWxDsQecgqToMOa9frOMo3wNueNbZuSknLHSOURAPeE2lQwit6LdR%2F9cY%2FBG4WiXdOK264ZKT%2Fzvy8uYFQh%2B6ka4L5UZpkFlmwvZR1Y2hsNfRV1G5p3etRz%2FbC1H70RDZpYpKeVk7cCH2pYFVF33eI%2FcGJx%2BXk77IA%3D%3D%7Ctkp%3ABk9SR_Lg5aHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=287601645015",
+      "product_id": "287601645015",
+      "epid": "7083685535",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£14.74",
+        "extracted": 14.74
+      },
+      "old_price": {
+        "raw": "£16.99",
+        "extracted": 16.99,
+        "discount": "£14.74"
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/V9MAAeSw1PlrBMxk/s-l500.jpg",
+      "seller": {
+        "username": "bookcorneruk",
+        "reviews": 126700,
+        "positive_feedback_in_percentage": 100
+      }
+    },
+    {
+      "title": "Heal Your Gut, Mind & Emotions: 5 Steps to Reset Your Health with Ayurveda and",
+      "link": "https://www.ebay.co.uk/itm/267744817849?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&epid=13083793473&itmmeta=01M8D1SE0YQZZ5641AZWX801S3&hash=item3e56d5b2b9:g:Jr8AAeSwiBtqbhlJ&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9uOhmGDp7DnrbCYqD3iz5Yiiglwxn6N1qTkJty4n9RdU1yLdwY6QVZ7SaQ9dpgTc6pZ1YbNN2oGPYQlNyzOeSf1gS5WRoHnhMlR%2B4ZGn2euJJMT0q%2FUD3RfDMP%2BNwFs2%2Fyge2a4UpzGruvmT1qoj7UKl2RPlASwpI50m5JvZNObBWTg3XONHeffppImZpMzdGjbuic%2FNK01ra86Z7WRZzEEUfVJHt1ZsTYcjBXPA85C0b4Y7wPt6MsuxWncmONHbkX3sDA2p4Zrxc0oT6qmiu3IkFl11MVaRMYiBEqkhH5vPCsxEaOdHeO%2BeuHKfb4yaVnkTD9OHGBA31%2F2W2wps7q%7Ctkp%3ABk9SR_Lg5aHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=267744817849",
+      "product_id": "267744817849",
+      "epid": "13083793473",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£7.01",
+        "extracted": 7.01
+      },
+      "shipping": {
+        "raw": "+£4.99 delivery",
+        "extracted": 4.99
+      },
+      "location": "from India",
+      "buying_format": "accepts_offers",
+      "buying_format_text": "or Best Offer",
+      "thumbnail": "https://i.ebayimg.com/images/g/Jr8AAeSwiBtqbhlJ/s-l500.jpg",
+      "seller": {
+        "username": "best_collection_4u",
+        "reviews": 1800,
+        "positive_feedback_in_percentage": 100
+      }
+    },
+    {
+      "title": "Genius Life: Heal Your Mind, Strengthen Your Body, Become by Max Lugavere Hardco",
+      "link": "https://www.ebay.co.uk/itm/276724063539?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&epid=28046666234&itmmeta=01M8D1SE0YASQHS2A1CWJ25RSB&hash=item406e0a1d33:g:TSgAAOSw-fZnL4ni&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde9msueIyhIx4GykVzuABngrD3oeG895qpVu0%2BU1PiJ%2FspS8XSXGlxOAX%2Bpq75tKzXSxVw%2FqOxk6Li1F--qX3qDLB6OW4mF5Zfmi51hSszkxBS7XdAvjIjTCe9PNCNGgDGdMOWa1ODNJAZXyuNWluY0NuLWVAGCud3dIIm2Rv2alwCmnD0KxmxqAunxZ0uCq7gKxZVGsNP9uvl2Cy39VN23lDKKwAhdYHW9NspzPHRm9viEx1wHMWPp9HNh%2FF9q0jQk4aAn8oAIkq%2B0mYYIc7elNkk4tbmUXqyIJhaR9BbuCPQ%3D%3D%7Ctkp%3ABk9SR_Lg5aHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=276724063539",
+      "product_id": "276724063539",
+      "epid": "28046666234",
+      "condition": "Brand new",
+      "rating": 5.0,
+      "reviews": 1,
+      "price": {
+        "raw": "£8.31",
+        "extracted": 8.31
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/TSgAAOSw-fZnL4ni/s-l500.jpg",
+      "seller": {
+        "username": "thebookbundleuk",
+        "reviews": 117500,
+        "positive_feedback_in_percentage": 99.9
+      }
+    },
+    {
+      "title": "Heal Your Gut Mind Emotions",
+      "link": "https://www.ebay.co.uk/itm/398170209871?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&epid=13083793473&itmmeta=01M8D1SE0YCTTCFTWGDAKXXK5D&hash=item5cb4cb3e4f:g:FTYAAeSwPpdqVSXy&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2BTOHIxlKKjsqMHmGnUdIqnvRzr7UXl9rgR3c12jXZM0AwRMeU7202Pk2m3WDmphRtnfEpQH91k%2BD9ZBnoybDhmnhuMCEjFhHZpN88mFJ2rZEieiZ4YHrYAinM5j0eRKXKJuJfbqPDj3Dzw5X%2BrmmEgs9zviM%2BoAzP2NKI7PvAHTFXjqRSdigHGAxejRrVm5f1Rr2fXlh87lJg39C7WxBpFecwbA5LrXPu3vK%2FBCqbzvcQwDgL9rOy%2B8g6DFObWVqVuXtZhwozGdLpa34rTe7zN1a1m3szV1Dlk7E0DwW0vaLEgICw0OaNbTLNxjRTwtf%2BaN3vy%2BylVX0AAgAPLvgIK%7Ctkp%3ABk9SR_Lg5aHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=398170209871",
+      "product_id": "398170209871",
+      "epid": "13083793473",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£9.96",
+        "extracted": 9.96
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/FTYAAeSwPpdqVSXy/s-l500.jpg",
+      "seller": {
+        "username": "speedyhenuk",
+        "reviews": 1700000,
+        "positive_feedback_in_percentage": 99.9
+      }
+    },
+    {
+      "title": "You Can Heal Your Life Deluxe Edition by Louise Hay (Hardback Book)",
+      "link": "https://www.ebay.co.uk/itm/920012357753?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&itmmeta=01M8D1SE0ZERFRCY7WS42K09ZW&hash=itemd635028079:g:xeIAAeSwETZq7WuP&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde8PAspCLxvdV02HdXmIa65A4FiWbL%2Fyr5fH%2FW7NrTo%2BngD8Nb1hP3vHDaSB2oNmU%2FsVwnaZaAeeI6Ou6cbLqvf8xBy%2BS%2BcYftQZ5cOetfRlpYwPGU%2BO%2FRONZtDT%2BV15V0puPfteNqN2RAZmRZ9Y2CfVPEjLiICoAYvGDf4sSh%2BTmeGg%2BatDAYfehplSGMR9Km76RRJJl2AjbVXNBrvOjnPKZ%2Fb0kUDvHZlh9e%2BApjMJQglD0%2ByqtMzQ6Z4zf3B8BoAUEhNz7r%2FBpq38B31JB%2F8YTyqwB0fRfqSKQTATEI%2BwJw%3D%3D%7Ctkp%3ABk9SR_Lg5aHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=920012357753",
+      "product_id": "920012357753",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£16.69",
+        "extracted": 16.69
+      },
+      "old_price": {
+        "raw": "£20.00",
+        "extracted": 20.0,
+        "discount": "£16.69"
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/xeIAAeSwETZq7WuP/s-l500.jpg",
+      "seller": {
+        "username": "bookcorneruk",
+        "reviews": 126700,
+        "positive_feedback_in_percentage": 100
+      }
+    },
+    {
+      "title": "Genius Life: Heal Your Mind, Strengthen Your Body, Become by Max Lugavere Hardco",
+      "link": "https://www.ebay.co.uk/itm/335668359849?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&epid=28046666234&itmmeta=01M8D1SE0ZNY6B82PS18T1M1NE&hash=item4e2764b2a9:g:pRcAAOSw0XdnMdb6&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2FjKKQR0qw4KrhYd8tAjMZtj18p%2F5z728z5WQqkU0rhI8NSmC1AM3LHuuEW5UGwwOIJR%2BOUinT%2FLHwRg2%2FQsHUQFmx%2BINUfGF%2FpO3MuXVDEPvshGLDtH8MLlQjsUMANJvdoFVrKuO%2FTgxjLMk2vSSKMRPdeFaohllKOeTMjas56Smd2T5SD7vdjBh1aPvk%2Fi3%2Fzo3C2Y7gXiYnEHgUkosfFT57P5raZhC89wR0h%2BR2N%2B%2FXMFlyEU4Ekj%2FF5b0oO587sV4r0cV2gTX39vMFdjUxAxMpyYtVS2O%2FxEWcG8j3LChQBNmC1IECC%2FKWZymrip0bDF33hce1%2BC8NwPodIWWZV%7Ctkp%3ABk9SR_Lg5aHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=335668359849",
+      "product_id": "335668359849",
+      "epid": "28046666234",
+      "condition": "Brand new",
+      "rating": 5.0,
+      "reviews": 1,
+      "price": {
+        "raw": "£8.31",
+        "extracted": 8.31
+      },
+      "shipping": "Free delivery",
+      "promotion": "7% off over £25 with coupon",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/pRcAAOSw0XdnMdb6/s-l500.jpg",
+      "seller": {
+        "username": "koblit2018",
+        "reviews": 52200,
+        "positive_feedback_in_percentage": 100
+      }
+    },
+    {
+      "title": "Positive Life Choices, Heal Your Life And One Minute Mindfulness Bundle",
+      "link": "https://www.ebay.co.uk/itm/286710103090?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&itmmeta=01M8D1SE0Z5BQM1HP9B0N1FKG3&hash=item42c140fc32:g:ud8AAeSwstBod4Xw&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8WYmN0mPy2kToG4%2BlAbEmQTGYu8eUTBZlrEnvWmu8w0MkFErEM3g4NabFgnM9aE4Y7THlo0N%2FhixDuKM5FlEvuMraRZRcqc%2Br9KkNKt7pSg98yEGiI7aGXmbd0dAh787SIleZTMlkVzjgGLmV3y3z1jf5K%2F2K7OUpVAd9f4aCbNUOoSNq5btGasZXHOgpEK0Wc2DtGYYdf9bBrY7dfgzQoDAA6RSEu4ZodSLqulLMpdf8EqGBSC1Enm4SNcZ9bj9GoUmJR%2F8kN77pPrHBksBGk2iwYVvP1rcVaMdXnYK8GzZfH7bqblBIB297pUnlGJmII41dLBZLMy279WvnvUnQv%7Ctkp%3ABk9SR_Lg5aHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=286710103090",
+      "product_id": "286710103090",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£3.15",
+        "extracted": 3.15
+      },
+      "shipping": {
+        "raw": "+£3.38 delivery",
+        "extracted": 3.38
+      },
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/ud8AAeSwstBod4Xw/s-l500.jpg",
+      "seller": {
+        "username": "bloomin-3296",
+        "reviews": 485,
+        "positive_feedback_in_percentage": 100
+      }
+    },
+    {
+      "title": "Heal Your Hurting Mind",
+      "link": "https://www.ebay.co.uk/itm/358791617276?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&epid=2356158233&itmmeta=01M8D1SE0ZEK5S4TCZQZ9GPKN2&hash=item5389a59afc:g:GVIAAeSwayVqVST6&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9p4svnSL5%2F3z38u0xBOfKCbq7EkyPH3cbqUtaMijxQbqX8Jp2AfG6eFE8fnatiynV1NtfVD%2FSV45X0HQGANVyHq8ahhyFuc4R56kxoE43zo2nDfZpig8ItiXYndYXHjCIMBsKAHnIGwNjsEa%2F6SZb2jcoTGNA186HaPFLsovmYDARq4s04MLJVE%2BTxRjMJXSLdyCdIDtNXgSnsqH7fAnEQwoTifIuw6QaiwSC5w4nWZnmHpRo0ngqLrQjdRXF8xiOx2TYAXDhsRLntKxw%2Bm06y3MHKJPnHLsbt3oYAhZpiuVXRzU7KJhskazR85%2BGHMrPwztVM2p3%2BlUdRSFthyZQ8%7Ctkp%3ABk9SR_Lg5aHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=358791617276",
+      "product_id": "358791617276",
+      "epid": "2356158233",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£13.06",
+        "extracted": 13.06
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/GVIAAeSwayVqVST6/s-l500.jpg",
+      "seller": {
+        "username": "speedyhenuk",
+        "reviews": 1700000,
+        "positive_feedback_in_percentage": 99.9
+      }
+    },
+    {
+      "title": "Healing Dreams: How to Interpret Your Dreams and Change Your Life (Hamlyn Mind,",
+      "link": "https://www.ebay.co.uk/itm/292694942100?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&epid=87719443&itmmeta=01M8D1SE0ZK7HZNWY8YR9PG14S&hash=item4425fa6194:g:jOMAAOSwXk9bf0JN&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2B5bbbXTHbtTNxywJ2RFwaz0ji%2BcpgsMPj47Ril4G7itcWb5Eb1fMOnNwNtJvCZpqv3MdD7CD9rMwFLWYMYdt9D4rfUg5zTowAhDKC9NMS4fx6XP7QzyCD6DQ46knY2QGZmA3gjwhG5hf1u%2BRBrGBD0ZOPPZhuFB8nXBqBu%2Biiz3LxFnmA9i3WGKgaPz00o45%2Few6qjDb519sxC%2BHpNc2duRBVOmSOHLIfu8U2buRmOjVyhlN%2BM5Lh7ak41cIw065tsFV8T53oxW7njsK6VArSwNeDQriGcJtziIAD1Y3qr5g%3D%3D%7Ctkp%3ABk9SR_Lg5aHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=292694942100",
+      "product_id": "292694942100",
+      "epid": "87719443",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£2.86",
+        "extracted": 2.86
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/jOMAAOSwXk9bf0JN/s-l500.jpg",
+      "seller": {
+        "username": "baham_books",
+        "reviews": 3600000,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "title": "The Dream Cure How recalling your dreams can heal your life by Theresa Cheung",
+      "link": "https://www.ebay.co.uk/itm/306398555802?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&epid=7070844264&itmmeta=01M8D1SE10XZEVXAFG97HVJD3S&hash=item4756c6ee9a:g:MhEAAeSwdAtod9Kh&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde9eNsZsEZ%2FI0RGuCYVw40XcqCKvQj%2BK%2BD4aRQZGG7N%2Bcu2YBa8Q2fXsc5akGxCsKpR%2FzdOthucSTecY6fpCceZ3MZXsKO5r2lC7Gs34UD3kwjdOBVg0kPXS88DKF%2FvLXKoSZxIQDYMk2xClnsD6Ld81wVMieczwvPxp96CIB2OugOFlGDqdhYiDfUpQdMuRIQqEIY4KK9D67Shr%2FOV2hEki1LYDQcvonTCsmfnz0nrZQzQRrR3MZZRUAASLjyqpzD0abf21hReVvF3%2FOY6k3s%2B1B08qRDIjrhhRpu%2FSMXAbBA%3D%3D%7Ctkp%3ABk9SR_Lg5aHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=306398555802",
+      "product_id": "306398555802",
+      "epid": "7070844264",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£9.99",
+        "extracted": 9.99
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/MhEAAeSwdAtod9Kh/s-l500.jpg",
+      "seller": {
+        "username": "b00kb0x",
+        "reviews": 190400,
+        "positive_feedback_in_percentage": 100
+      }
+    },
+    {
+      "title": "Heal Your Mind: Your Prescription for Wholeness... - Schulz, Dr Mona Lisa",
+      "link": "https://www.ebay.co.uk/itm/158187382133?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&itmmeta=01M8D1SE106W35QYVH2FPGE15F&hash=item24d4b3e575:g:YK0AAeSwYEVqfvLB&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8xaG6615DCN4wiXm8WCerzqK8nxmCq2jpHZq0I3g%2FeC1xo8g4%2FTZ7axWvwrdKrroGYHAR5%2BJiLu5tZ2S3Vzv3kC9DgJwAnVlbSacAyrzDOHBNRVVmZBPuaM7PWvFwaJrvVZ42RE67zFjiI6a5pyEjSlgMdndpGW0RaVASIJQ1b6cnAYQVshyYz48%2BBSTO%2FYKZzd7g8zRdPhkYPv88x2kkchtSyi5k2jl1DwmBcFjQR788Yo94YpDRO%2Fzf24n3xJqaiRde%2BhU9FG1bk1NFicaEKCQyLdh0QXHroRqDEvucZ7ytuIg2tQXexFShtUcrJdU8UesA59MA6pSnSClp47t6%2B%7Ctkp%3ABk9SR_Lg5aHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=158187382133",
+      "product_id": "158187382133",
+      "condition": "New (other)",
+      "price": {
+        "raw": "£3.60",
+        "extracted": 3.6
+      },
+      "shipping": "Free delivery in 3 days",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/YK0AAeSwYEVqfvLB/s-l500.jpg",
+      "seller": {
+        "username": "webuybooks",
+        "reviews": 3300000,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "sponsored": true,
+      "title": "Your Mind Can Heal Your Body: How your experiences and emotion ..9780749927127",
+      "link": "https://www.ebay.co.uk/itm/313017096665?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&epid=90209081&itmmeta=01M8D1SE10ED4164EEY2E3V3CX&hash=item48e145d9d9:g:phYAAOSwScNeXnLd&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2BkKV8WkfXJDLQGGckPPrjMB9D6SEmrmhoagpf7mrsHxYXCUKQaNXQmRjIfJ7P%2Bth%2BENeG1edqfUMXUwSriquums1ReUkf30KVyuCwG4kakBFDV93zCZZujTXpVVioLUFplnyfPqvNPhyqloAeFSj0N5R8w8u9sxRvT5G9CRb9MUolhvf%2FGE9zeSjSWftyWFz69n7N4P3xybDt5XCLUkiTHvBf%2FrI0mLdhuLJlJTaZw3vADdG8OQ0n2c0f9TBuFAA3G6nTYel9lFgWADh22c1%2BfJyQHxJv%2BSdYtRa4N4plRoXHzyJYX0w4PrULiB4mab3Amzs61DhIKVlN%2BwBQ5bmXW%7Ctkp%3ABFBM9ODlocNo",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=313017096665",
+      "product_id": "313017096665",
+      "epid": "90209081",
+      "condition": "Pre-owned",
+      "rating": 5.0,
+      "reviews": 1,
+      "price": {
+        "raw": "£3.33",
+        "extracted": 3.33
+      },
+      "shipping": "Free delivery",
+      "watchers": "4 watchers",
+      "extracted_watchers": 4,
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "extensions": [
+        "Direct from Awesome Books"
+      ],
+      "thumbnail": "https://i.ebayimg.com/images/g/phYAAOSwScNeXnLd/s-l500.jpg",
+      "seller": {
+        "username": "awesomebooksuk",
+        "reviews": 2600000,
+        "positive_feedback_in_percentage": 99.7
+      }
+    },
+    {
+      "sponsored": true,
+      "title": "Heal Your Mind and Your Body Will Heal: Book 5 , PhD.BS, Marie<-",
+      "link": "https://www.ebay.co.uk/itm/127125535255?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&epid=27046698189&itmmeta=01M8D1SE106D9M079GH119PWK2&hash=item1d9945ba17:g:X~gAAeSwUQhoLbAe&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8cSY30aVDp4j8N4giRT0QW1dG6InARl156%2FFqzCNYniYghTkWasg%2BsapVEo3rQqtr09%2FhZEwW08IKsP8ChaIZDuwaVjzCCDZ9qqI0igQyxT4t5lnCi9AdYOx3kiyHXcntlpqNBnUHdqew%2B2%2B8nJ1bFAt5MKFh%2B1J%2B8GI7s0IjGVubYC2x7pjrKomeL9Q1%2BADip%2FIC3%2F08bSvISNDylzUvuM0efpAnGfkZkeztRaJIMLqtSNVgYnjtrfMdyvQQBRahWx4oTdsggc8tSxCHOH8%2BWLDzd%2FA0AqNR8CaySQ4%2F1NaB5iz1OOBsYehmV%2FKkhHswrT%2BYfwRZUFvsJjjYxA%2BNS%7Ctkp%3ABFBM9ODlocNo",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=127125535255",
+      "product_id": "127125535255",
+      "epid": "27046698189",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£8.71",
+        "extracted": 8.71
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/X~gAAeSwUQhoLbAe/s-l500.jpg",
+      "seller": {
+        "username": "baham_books",
+        "reviews": 3600000,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "sponsored": true,
+      "title": "The Genius Life Heal Your Mind, Strengthen Your Body, and Become | Lugavere Max",
+      "link": "https://www.ebay.co.uk/itm/197718099506?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&epid=28046666234&itmmeta=01M8D1SE11MVS408MGMA8WJVGM&hash=item2e08eac632:g:dK8AAeSw7txo0Rbk&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2FGEBDzI8QRLVpMv%2F9oSI4lxBAi55W5eRckBVCPtYiikZLxCtyD%2B4k5zC3%2FMIdDWPKZbVLSPbPhkkOxJvvL4DLra204WMtGoNsNbJ87m8dVHYOng2f4hEE00VwFmUvbC9dm852o9s9%2BSGtREZwSU67bBBa6%2Bhd%2B3uH41p4fWVNNvc0JCMDkeQV2dVgYPdZBu436arqogKSuoN4Wi3Z7SBvJX%2FRdFQmDA%2BFO4eOGXKJzUtTMvt7e0tgR7SJyKZ3MR3hSpSHvM4AsDwYTZGomDEJSTBxGdx9atMGiWq%2BZeJJFMGF3s7C72bGOO0VNJVWjH8AsuHCP85FTmo%2F9SiORp1S7%7Ctkp%3ABFBM9ODlocNo",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=197718099506",
+      "product_id": "197718099506",
+      "epid": "28046666234",
+      "condition": "Brand new",
+      "rating": 5.0,
+      "reviews": 1,
+      "price": {
+        "raw": "£9.99",
+        "extracted": 9.99
+      },
+      "shipping": "Free delivery",
+      "promotion": "£9.49 with coupon",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/dK8AAeSw7txo0Rbk/s-l500.jpg",
+      "seller": {
+        "username": "miimii4",
+        "reviews": 9900,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "sponsored": true,
+      "title": "Heal Your Mind and Your Body Will Heal, Book 3:. Stevens<|",
+      "link": "https://www.ebay.co.uk/itm/127595421685?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&epid=11046685825&itmmeta=01M8D1SE11JTSTQW5HRVVBVVAM&hash=item1db5479ff5:g:llkAAeSw3zlpVWsN&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9rnvUDHyLnnFDCmCqZazHILXJViHhSNHmFpdUhDMTXW9H%2FsHNvhwDZMnKkYRRq3oLWuBIvFqkrt%2BR1EpTIQUiOcbIwWiQRbTiRmnOrxJvbd%2BR%2FpAVBWG6V4XMFBLqRkI3Wy23QnGG86%2B%2B3SSrGtwlN8FFVdm%2F4JfZkSeis9XHiAcv8UvQSQqM7jeAuX1ui8Bx8QAy8oCDVwf%2B47jF3WcfZpRIl%2FJ7GLAJYt8Fzgx7jGYgbuW9%2BXNoTCyHc9GjHqWwCxz%2FqLKPsFTM%2Bw76M1wdGB913%2BLjUv4wYtUQjBcIrFRDT26O7tTcF%2B8WG4OC2ZlK2rv1NdujkhK4Uix8vQ4Ru%7Ctkp%3ABFBM9ODlocNo",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=127595421685",
+      "product_id": "127595421685",
+      "epid": "11046685825",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£24.23",
+        "extracted": 24.23
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/llkAAeSw3zlpVWsN/s-l500.jpg",
+      "seller": {
+        "username": "baham_books",
+        "reviews": 3600000,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "title": "Heal Your Mind: Your Prescription for Wholeness through Medicine, Affirmations",
+      "link": "https://www.ebay.co.uk/itm/227593602229?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&itmmeta=01M8D1SE11T9GVHQXDS7MCX5S7&hash=item34fda2c4b5:g:4dUAAeSwBVtq6BhP&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8bM5O2Pkh15msosuqnmnjOskY%2BCcdzKWQhNvXj3XYjyi%2B%2B6iqFduDmEsfKOWQyzEnMoBB%2FnqzA4EUTynOl7c%2FY8eMXc8j%2BHfm4ZiyCXXs0EEbz73X65s72H5dCfvadghT9LAaNzQMbQ3sEVIMTwTpNykaXSLSWZLswkqOKWvqJbUH5Rohz8HF4hzNTPXwngAXdZNJBNjSUaCmKDXxGMzS9blgV%2FB%2BDYkQgcvwyh%2BpIJNXBPY9p2l0gkU4DdWuJJm2dcabuKUdtvqxEL%2F%2B4YqqfPp4YxZi3DZetZMXiLRalecLKhX7PKM%2FXZ3IwQ3iQLmJDwDTYR%2FPd7sXg%2BTJlf%2BUd%7Ctkp%3ABk9SR_Tg5aHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=227593602229",
+      "product_id": "227593602229",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£18.79",
+        "extracted": 18.79
+      },
+      "shipping": "Free delivery in 3 days",
+      "returns": "Free returns",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/4dUAAeSwBVtq6BhP/s-l500.jpg",
+      "seller": {
+        "username": "nextdoorstoreuk",
+        "reviews": 397700,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "title": "Heal: Discover your unlimited potential and awaken the powerful healer within B",
+      "link": "https://www.ebay.co.uk/itm/306069581342?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&itmmeta=01M8D1SE11G6G27XTK17P7V7XQ&hash=item47432b2e1e:i:306069581342&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9txMhPrM5ytjAscWc82nyrES1RJK7Bj0rzyRvs%2B9v%2FVoW77JAd0IFCUERUfSNbkfoSgn6Dmp6gnjOWZH%2B%2BrWXhtomqhMZQS3jEeuQR8%2BLo6aRqD3lNYLt4vmvU%2FAWx%2Bq5Ovig4j7AI6909%2B34jnjlrx54vp3YQVvEdzSCxiVfYthVBwi50ZaybpRkGqh8fzMk8Sr2pI5albR0v0TxMMSYa%2BV%2B5kSp0Abn7WJp4ZB5gR%2F%2BBfuyazBPAFeALvz%2Bd2PBnttvSqUrN5c98mrecj9qqMV3U9pxvpSRqZbuRYvWpwFAzIpIRYaCDrlOe2wbBvTilScM43WfWVkYC0bw5iIxe%7Ctkp%3ABk9SR_Tg5aHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=306069581342",
+      "product_id": "306069581342",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£4.68",
+        "extracted": 4.68
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://secureir.ebaystatic.com/pictures/aw/pics/stockimage1.jpg",
+      "seller": {
+        "username": "baham_books",
+        "reviews": 3600000,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "title": "Heal Your Mind: Your Prescription for Wholeness through Medicine",
+      "link": "https://www.ebay.co.uk/itm/137171367511?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&itmmeta=01M8D1SE12G1CY97T05V8A46J3&hash=item1ff00cf657:g:IwIAAeSwnuZpxk7J&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2BxhGz3goNxl9xde6F63rd18sMi7Qj8V6%2BJf6F1l8W3bgYT5ziACl1uYWzHXNTBggjDnn9wSrjKqyohKyfC1%2B%2FvEA8GOtfH%2BZd8DWWbRq5q%2Ffj7SaqME3k7WNJiMJVNg%2BRXSoAqn05NzLsY9%2BVRqhaomqH4e2%2BZAdlPHLqio47mPjOT42X2yMY6aNMYt2%2FoIUDX66LziWmHHNaa69xPjWcIjGIsfpKJoNdnOhZ5XtuwrC2TRZpA8mQ4qadpWHTCHPnYwjJaIeEGBZ98%2BrEDBLngi99L1rtfOOP0GXvADdIVCEE%2FPcRhhmyD13%2FNcOzgfqkQiA3ut%2B21t1rA4yaTAr8m%7Ctkp%3ABk9SR_Tg5aHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=137171367511",
+      "product_id": "137171367511",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£3.28",
+        "extracted": 3.28
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/IwIAAeSwnuZpxk7J/s-l500.jpg",
+      "seller": {
+        "username": "cmedia_group",
+        "reviews": 1600000,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "title": "The Dream Cure: How recalling your dreams can heal your life - Cheung, Theresa",
+      "link": "https://www.ebay.co.uk/itm/158303439304?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&epid=7070844264&itmmeta=01M8D1SE12B6ABR2KNF1MQT65J&hash=item24db9ec9c8:g:31gAAeSwBa1qrE8T&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde8KST1Qv18gtydvNKHbas6qRRjVMoNFdP7pfv9VDP%2BEmiNFmLpPtig3ZmU8gx1sG3D1rRik5zNZD54Bav1VhlIlEYKXDPDrJoDoQPpiSW6hOxMTywYNbmqqcIA4GFE4oUmsWSHWVkqd2zK7v1At8U08b5PPshKKBn3IxA4ht8ZRblKmr4L6vu--vWglfWdwK7%2BUdf9wPPKpdUlkekns49DwNBEavtABFZcu1k14AsdqUSVzCP1ELeAEkoKeWg9rlJmHrIVWrY7kCCnJ%2B%2F62dhgBSMfXgVdmSmdFqdnsIJ%2BOyA%3D%3D%7Ctkp%3ABk9SR_Tg5aHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=158303439304",
+      "product_id": "158303439304",
+      "epid": "7070844264",
+      "condition": "New (other)",
+      "price": {
+        "raw": "£4.61",
+        "extracted": 4.61
+      },
+      "shipping": "Free delivery in 3 days",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/31gAAeSwBa1qrE8T/s-l500.jpg",
+      "seller": {
+        "username": "webuybooks",
+        "reviews": 3300000,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "title": "4-Healthy Mind-Self Help for Stress, Pain & Illness. With CD, Heal Your Life",
+      "link": "https://www.ebay.co.uk/itm/325945780020?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&itmmeta=01M8D1SE12HHQVPC69SNH1SDHZ&hash=item4be3e1e734:g:bfUAAOSw39FljUZ3&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2FLdChfcQT8%2FRSStdOAirO%2FOcVqqy9by5ewK8Z4mKg%2B%2Bnl%2F%2BYhcyJJAwCzbLdGNRsP0xvpLgADiti8tivbMbS7wQTfok7%2FT8v4JQUNU9PyW52kngcchyoAYCdV4pKKUkfVHdS%2BybB5aiWbuu4YEyXL0m%2FwcN8Cb5H%2FMNGupdj2y2ZTGyuJXjyzgBjdN3VBh4qxa%2Bg0se1UKjFeoO6bAtqd%2BIHBNUMPEkd46G5JvEud%2Bh0VSasQBMXN0G%2FC3XfiKLFM1iVZJf1ApCNqSmRG4K6VxAtMtvNZFAw11zQgadme6Pw%3D%3D%7Ctkp%3ABk9SR_Tg5aHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=325945780020",
+      "product_id": "325945780020",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£9.99",
+        "extracted": 9.99
+      },
+      "shipping": {
+        "raw": "+£3.95 delivery",
+        "extracted": 3.95
+      },
+      "buying_format": "accepts_offers",
+      "buying_format_text": "or Best Offer",
+      "thumbnail": "https://i.ebayimg.com/images/g/bfUAAOSw39FljUZ3/s-l500.jpg",
+      "seller": {
+        "username": "cornishtrader2012",
+        "reviews": 9500,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "title": "Heal Your Mind, Heal Your Life : A Mental Health Self-help Book for Overcomin...",
+      "link": "https://www.ebay.co.uk/itm/800557774101?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&itmmeta=01M8D1SE126QQ0605AK7P78FCT&hash=itemba64f63515:g:VGIAAeSwzadqjLVg&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8pzRbjdxOqYJVCkE4%2FMJKgVWwJ45TzyIz05qVqSdWHm%2FPhEVqYsORBiMMYVmkdkyZdlg2eP%2BJpPjC4sRvawbXbE0Q1OK3%2BMIBUXYkkxFlZF%2FFY89C2whCEm8NAD2pXG23FOpGESEFI4iqvWLGcefyUUWj4mcqa9O5DjjcGX2zZOroZTz5l26xilIhdnlPk4SjhY7VtwsKyWIiJBxC7TeZFg%2B9hs0DAt7GMQ8TGrAPEUP02wgOD8XSsK51B25eFc%2BQBdDICO8ZYdmgoDvfWUDNgd%2BquqTx4kFg8gk5Hd51uOb0Vmh6x3vlL92EfNjLSwb%2FD1RaBzV%2BgUuya6xV8rRx8%7Ctkp%3ABk9SR_Tg5aHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=800557774101",
+      "product_id": "800557774101",
+      "condition": "New (other)",
+      "price": {
+        "raw": "£20.13",
+        "extracted": 20.13
+      },
+      "old_price": {
+        "raw": "£20.25",
+        "extracted": 20.25,
+        "discount": "£20.13"
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/VGIAAeSwzadqjLVg/s-l500.jpg",
+      "seller": {
+        "username": "superbookdeals1",
+        "reviews": 89900,
+        "positive_feedback_in_percentage": 99.1
+      }
+    },
+    {
+      "sponsored": true,
+      "title": "Mindful Healing: 5 Simple Steps to Transform Your Life. Ahmed 9781789296624.#+.#",
+      "link": "https://www.ebay.co.uk/itm/298068045229?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&epid=7082551896&itmmeta=01M8D1SE13FA9JF22GEFN7D60C&hash=item45663d6dad:g:XcEAAeSwDAFpoBoq&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8NV338HOji4JTEOudGQxb9HNraUbrILM%2FdstL6vL5Y6PfW0%2BFW1z%2FgWHn3NZr1d39IC40ktWzkaNGp%2FxBUy0B%2BCunBPL3pEFACQrsuQBxMAMt0MH61GE4q7icGwyXAkQ14u7FjQ%2BUti3J%2FGreFTBqztXBDxhhCIz5VCWaeN6B1v7vJzb6PNC%2F2ZyS4rtg1JAWLi4IrL0bgfHkD94U3nu%2BC99YsSJiXB9%2BB6yg5KkRpa5sMmn9EQhsKAR7wsYEzLaEs3ozxucaliy6kgwdqvAfrUkXPJ5k7avsgJZ%2Fac2a1rNB4b7K%2F8%2FEexdOSmemQQBtw16cbBjgcAcsYnEhu4SLq%7Ctkp%3ABFBM9ODlocNo",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=298068045229",
+      "product_id": "298068045229",
+      "epid": "7082551896",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£12.92",
+        "extracted": 12.92
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/XcEAAeSwDAFpoBoq/s-l500.jpg",
+      "seller": {
+        "username": "baham_books",
+        "reviews": 3600000,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "sponsored": true,
+      "title": "Meditations To Heal Your Life Paperback Louise Hay",
+      "link": "https://www.ebay.co.uk/itm/147550116452?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&itmmeta=01M8D1SE13A4YAP42TQMV5AFTX&hash=item225aac1a64:g:hfkAAeSw9KNqmwVN&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9tMjU0z8xpVi40DKMZyuAQL%2Fcl6WwWAysWoU1Mff1ggVzEeHR8p4lbQUeGZjSE0d%2Fckjvip89u948OHg9shMTlG7Xn3cufTw%2FzYZ8oe5ohn0MeDm7Xq%2BWz4Xz46sOOXCjX%2F5zn%2BqRfy8eOgSDHD3YARp5Kdk%2FRA%2BW8d6cPtWb0XiQqUu5ZLGIYlQvvO%2BeZx3VHg3PRpn%2B3I0tpouheR7keY9s%2FGdOrk78ABOXf9EOEGHPTj8m3yMM1G07tyHVIWWu%2FB6J0X5TlZHL027QarxO79GDJ%2Fdow6PwCPxOLVLeS1j440Ln8%2FGB4d6GrOupDmD19DlQpTKIe9yFGmR3V4kuv%7Ctkp%3ABFBM9uDlocNo",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=147550116452",
+      "product_id": "147550116452",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£14.99",
+        "extracted": 14.99
+      },
+      "shipping": "Free delivery",
+      "location": "from India",
+      "returns": "Free returns",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/hfkAAeSw9KNqmwVN/s-l500.jpg",
+      "seller": {
+        "username": "premiumbooksandpens",
+        "reviews": 5500,
+        "positive_feedback_in_percentage": 96.5
+      }
+    },
+    {
+      "title": "Heal Your Hurting Mind",
+      "link": "https://www.ebay.co.uk/itm/398170185480?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&epid=11085275509&itmmeta=01M8D1SE13WC3ASVF7YETEJAR2&hash=item5cb4cadf08:g:jSwAAeSwogFqVSU~&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde98BxpVyehOYUK%2FuPCanwbpOl4jygxH0QZSKC5hgK3k4FRi%2BMpeGuc%2BlqSgvc0LqjdzbRRAfMtvNBwFVNDXf0ENIY8GNL9qZNoinUBPdsBlnL2VNLaWd1RCcXlqCtygFCLbzEyjh3V3K9VQtKpYH%2FIxuBMMHsZiD0TDtJB3sQWkmsG96%2FXb7ajD%2BHOD0YAeLkc4%2FNhku1747WzT0WmFp%2BcSt2H51KT%2FaIfX5%2FVfE4TZMunCrY2fmkiZ3mTTiMjp1g%2FmRsYupZjLYxvYcbAw2dqcAfaqd6O%2Bbt0zQl2lBS4wdw%3D%3D%7Ctkp%3ABk9SR_bg5aHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=398170185480",
+      "product_id": "398170185480",
+      "epid": "11085275509",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£19.50",
+        "extracted": 19.5
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/jSwAAeSwogFqVSU~/s-l500.jpg",
+      "seller": {
+        "username": "speedyhenuk",
+        "reviews": 1700000,
+        "positive_feedback_in_percentage": 99.9
+      }
+    },
+    {
+      "title": "The Dream Cure: How recalling your dreams can heal your life, Cheung, Theresa, N",
+      "link": "https://www.ebay.co.uk/itm/356651480491?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&itmmeta=01M8D1SE133A8GZQR1KPS84BD6&hash=item530a15b5ab:g:DSsAAeSw95dqwy5s&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8wdhy7ulrOETUzsIoNED%2BCrn7gm4nIkHA4SAiGAIcucwv7jGSY%2Bj393kOsaW5BIEPOm40aAZT25IteidyEeF186ctqtPimRhJT9d0QFmA0uGAbC0tTTGEH86QA9y1HEwo6aFsz6nGBpXg2xdR%2BBtgT%2BiqJUcxXeKSr8dvfKkSZhQxn1wVLRKRBCBpbAiTVxIE4rsXcVIBwA8GbbuLX5mICjQB7SLpW1C893Tgxxh0n5VfHyCKhdVNDSyPw1Q1qrvAGS6gkaXTNP%2FG%2BsNdZP29ljZisaJ5GBJ%2BDB07xNT5ZTIPhmwbY1jtryA1WTABZOJUWPXvui2x1lI9LjVwkhLPg%7Ctkp%3ABk9SR_bg5aHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=356651480491",
+      "product_id": "356651480491",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£9.80",
+        "extracted": 9.8
+      },
+      "shipping": "Free delivery in 3 days",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/DSsAAeSw95dqwy5s/s-l500.jpg",
+      "seller": {
+        "username": "parrot_books",
+        "reviews": 17300,
+        "positive_feedback_in_percentage": 99.9
+      }
+    },
+    {
+      "title": "Karma Healing : Unblock Your Life on the Soul Level Paperback Yae",
+      "link": "https://www.ebay.co.uk/itm/117099746784?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&itmmeta=01M8D1SE14DGSTNBZJKRZB4F13&hash=item1b43b055e0:g:n3QAAeSwuAxpv26i&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde80rcZFwBq8Xm1mfP6SzGONltd4qLebuInYq26LtLFzFbZPCG1P%2FFUt0JJ%2FnnmWYbKy%2FICbmoTkRIaY9QDsf3aUDqJpIcbXZIZPSjwPtcsx4YhT4QfrpjjCyMw95nc%2BNrLY3yk5cMIm%2BCw%2BDSGruTSimIgeHtAPtWUij5XOGooXpG5sBHFlxFu%2BKLkf9JY%2BJHPeM5NwDga3ot%2BK9OokUpvuZd1CdfHN4AStt41tE8N9rw4eBJv7FysTCQWtkQEgGcOC8dn6CwJZEgtHah%2B%2BMo6nSVjEAZhFNF93ZMKUk3V%2FF1Yovl9oFPRwJ6OgaT2YYjMPpxA0uxjfr1%2BdX5rIy7Nl%7Ctkp%3ABk9SR_bg5aHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=117099746784",
+      "product_id": "117099746784",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£8.88",
+        "extracted": 8.88
+      },
+      "shipping": "Free delivery",
+      "promotion": "20% off over 3",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/n3QAAeSwuAxpv26i/s-l500.jpg",
+      "seller": {
+        "username": "better_world_books_uk",
+        "reviews": 754400,
+        "positive_feedback_in_percentage": 99.6
+      }
+    },
+    {
+      "title": "Heal Your Gut, Heal Your Mind: The 3-step approach to physical and emotional we",
+      "link": "https://www.ebay.co.uk/itm/128218501231?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&epid=6083736869&itmmeta=01M8D1SE14TEATG2MSAC4HE5HQ&hash=item1dda6b106f:g:wTQAAeSwRORrCFwC&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2FcMS%2FC21%2BGfzv0FnQOVawR1sMyc%2Bvs3vda9iUYmB4HGjAaACck%2BDbpo514FsZ%2BSbVRyNwxM4QUDM%2FSb7pOMnG3UI2umVPgHXzHz1WBdqJlZOhck%2Bcvx3aGPOCa%2BwdbOmbQiRi4DxftATR4PLZF3WhGzm6x294hpoMCFAPY%2F%2Bjo0hUMDp1eyhVIAH0%2B61D1A6CbMOZyRF88YL7o2U%2BrabuB6A%2B0S9MjB0H0K7QEcGSIcMKyEQCpxVy%2BgnJHw%2FH%2F4OFguwoUB%2BkA%2BL2HtReNxZyCDlw2QECyi3RskLliexqSO%2FJXxghPelhhux6OHaNs1cXoc%2BgTcxzKdAJbYrtTcUB6%7Ctkp%3ABk9SR_bg5aHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=128218501231",
+      "product_id": "128218501231",
+      "epid": "6083736869",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£15.37",
+        "extracted": 15.37
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/wTQAAeSwRORrCFwC/s-l500.jpg",
+      "seller": {
+        "username": "bookaxis2015",
+        "reviews": 49600,
+        "positive_feedback_in_percentage": 99.7
+      }
+    },
+    {
+      "title": "Heal: Discover your unlimited potential and awaken the powerful",
+      "link": "https://www.ebay.co.uk/itm/335787487299?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&itmmeta=01M8D1SE14NMY6KK2873H1Q7K5&hash=item4e2e7e7043:g:BuwAAOSwgNxnmE3x&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde94hrqkH4wgt7p889bLlVZvI2ghcjHrU9WrIUInnit9jTNtn7XEwCNClLvyO4eo9mdvhN%2FYLk5FyDeUf6dvuY2ZC2ZqDP7WBxZMi%2BAIyubaKi7FAl8jDjJr%2BLEWBzh%2FG4RqtrJKc0wf3NSMaVov5X56H5gWKOrSm%2FPusw7Sg7%2BfiHbPIhPknvWQERyl9NyWfYusOgJpWBzXSUXu4apkWXxdEW8YvOK%2F8UFMbEbifYc0WcNYkBtaiyqt4KIEX0bdsmH8Lt9GX5xbXXj15XafH6gvhBcvM4s8hb%2BqD4Yj3zxD4w%3D%3D%7Ctkp%3ABk9SR_bg5aHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=335787487299",
+      "product_id": "335787487299",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£5.45",
+        "extracted": 5.45
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "extensions": [
+        "Direct from Awesome Books"
+      ],
+      "thumbnail": "https://i.ebayimg.com/images/g/BuwAAOSwgNxnmE3x/s-l500.jpg",
+      "seller": {
+        "username": "awesomebooksuk",
+        "reviews": 2600000,
+        "positive_feedback_in_percentage": 99.7
+      }
+    },
+    {
+      "title": "You Can Heal Your Life, Louise Hay, Hardback",
+      "link": "https://www.ebay.co.uk/itm/377635440789?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&itmmeta=01M8D1SE14HKPG5NVWPJ9YT0XB&hash=item57ecd38895:g:DwEAAeSwQp5q83ru&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2B9QbATA%2FNkM42X0jFXcF1bH%2FNi9n8lIE5qOUVknlnFB2UaoAjwXaWzZOvKcR4tBIEL%2FeFheYQMwBd98pLaKbxbG8FiaKMKd8aoZKn7VDyTNG7PaxnK0s6jJ4oMBdfqcMQ0yX0fpwQKIUTz3LcvhbsS8Ri%2BiIEnJu3DV45u5nSE0QF6RSCcDTtqzBsH%2BYmbMUq%2BVn7zdw9nAV%2FR478ybog8bKAgtjmdOXcWBrIIq0yq9bWy9nfXnqwgrfiMpOd2CjVyFok34IU4fU6u2fYPo3sqn3mLRngc4PZgWPIhU0kRmyiIsxtOiSB1W0si3EYLhmK6N9CAg%2FM7QFlx8C%2FRqrtZ%7Ctkp%3ABk9SR_bg5aHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=377635440789",
+      "product_id": "377635440789",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£16.01",
+        "extracted": 16.01
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/DwEAAeSwQp5q83ru/s-l500.jpg",
+      "seller": {
+        "username": "pbshop.store",
+        "reviews": 313000,
+        "positive_feedback_in_percentage": 99.3
+      }
+    },
+    {
+      "title": "Heal Your Hurting Mind: Biblical Ho..., Groeschel, Crai",
+      "subtitle": "Free UK Delivery | 10m Happy Customers | Trusted Seller",
+      "link": "https://www.ebay.co.uk/itm/147575868119?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&epid=11085275509&itmmeta=01M8D1SE152WB8Y4NEF5H4MBY4&hash=item225c350ad7:g:7l4AAeSwKjZqqd4U&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9%2Byt8mwQ41peijPXAE0GjVu1Af1ChssnQwOsaNNLwOtchKBp66%2BjlScrdi3e5XpB900wiDsseb%2B4jbrDOlhhI%2FeEVf6VI6TS6IJM6W6cSXzI1aOggY6YugJ%2F2B87IaMA9b87usCeDkJ728A8Aq3cZE1S%2B0QpFNeyQJvT36QGBAncLh4iMajvjuLoJDbqXsTn2QZH2xudxbx4SC3BxWnkoKFpQK8%2B5PM4NfZTVdaPgqpqfTp3%2BaSCCLGGRz%2FK2LVK1NeUG3oXnNS1LwXT2xsMTOQHZm%2F9CT1nAmcX0iGcEgXEf%2BB3ug%2FTkz8l9kpy14SR9%2FlkqoIiDTToCEoL92HPnK%7Ctkp%3ABk9SR_bg5aHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=147575868119",
+      "product_id": "147575868119",
+      "epid": "11085275509",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£19.99",
+        "extracted": 19.99
+      },
+      "shipping": "Free delivery in 3 days",
+      "promotion": "Buy 2, get 1 20% off",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "extensions": [
+        "Direct from World of Books"
+      ],
+      "thumbnail": "https://i.ebayimg.com/images/g/7l4AAeSwKjZqqd4U/s-l500.jpg",
+      "seller": {
+        "username": "worldofbooks08",
+        "reviews": 11900000,
+        "positive_feedback_in_percentage": 99.5
+      }
+    },
+    {
+      "title": "Charge and the Energy Body: The Vital Key to Healing Your Life, Your Chakras an",
+      "link": "https://www.ebay.co.uk/itm/227595060398?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&itmmeta=01M8D1SE155ANWFYX54A07XWK9&hash=item34fdb904ae:g:7k8AAeSwrL1q6Wlm&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2B2DPSZRcxURF98NGCdlwT7D%2F9HsIQZ663ST%2BEwdQzVKISi%2FzZOVwlPcb3UpZEqHdErlYbZrTdn4iHBbJkAboR7JnglpkmyGSjM9UR8IWFZjCQZSDvLFbUJgSaSvNVwzCHprsA8hpAFv6maa56ciwK59uwcaAFh8mOWymVze%2BHB6c%2FmkvGxJWsRS4bb30mLT9SMKKTIZLZ09UVafb2xJut7Xi2ay%2FwgYwgR2%2BdeUsIVLQCKTd9EH%2FnqJTVb1cGjpj88Y%2FseV62TilQk3gX3mrKIAEdd43ETL2WdqYUp3O9STqX2LG%2FcYnZc%2BQqB0AGLuEqpXvsKXZ47TE4R%2BLoOR%2F2v%7Ctkp%3ABk9SR_bg5aHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=227595060398",
+      "product_id": "227595060398",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£17.44",
+        "extracted": 17.44
+      },
+      "shipping": "Free delivery in 3 days",
+      "returns": "Free returns",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/7k8AAeSwrL1q6Wlm/s-l500.jpg",
+      "seller": {
+        "username": "nextdoorstoreuk",
+        "reviews": 397700,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "title": "Heal Your Hurting Mind Craig Groeschel Paperback Zondervan Religion",
+      "link": "https://www.ebay.co.uk/itm/128182053045?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&epid=2356158233&itmmeta=01M8D1SE15NNKYTC6H4C0C4WYZ&hash=item1dd83ee8b5:g:P1oAAeSwPk1q77uK&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9tiRPby3cOwa0MypZbpXC3%2BPbUV565C0Xji%2FJBAZQ80Wgpb%2BbvmYOdSqidg32LhILyNU1neF2CjHmdokBNnkfbuQTo9XcTJMUDWWmBwYOIo2BG3gMRyDwNuSWRzxctftdhFTNYVIU3D1VMZjzlCzxPVKG3qvjqdenMl8liYD4fD6FYiVtOQ3dE1Ib9J0Y%2FHlmDb1T6YfwaoqmWcdtrLB2yH5b6AyZtdsa2v3VI9IPiA4mAXdKqhLHNrO%2FxTkgsJl%2BgSdZxqtjgG8V8Z%2F7SaW3MMxWmBhXNJtVpcr8at5OVqZpJKn2BgCPiz7vM17pfavUXQXPyuvAc%2FwW8o2URS2xP%7Ctkp%3ABk9SR_bg5aHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=128182053045",
+      "product_id": "128182053045",
+      "epid": "2356158233",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£12.92",
+        "extracted": 12.92
+      },
+      "shipping": "Free delivery",
+      "returns": "Free returns",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/P1oAAeSwPk1q77uK/s-l500.jpg",
+      "seller": {
+        "username": "energystar2020",
+        "reviews": 149100,
+        "positive_feedback_in_percentage": 99.3
+      }
+    },
+    {
+      "title": "Your Mind Can Heal Your Body by Matthew Manning - 9780749939885",
+      "link": "https://www.ebay.co.uk/itm/287302884004?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&epid=90962197&itmmeta=01M8D1SE155HXNF8AC9CSKPSSH&hash=item42e4961aa4:g:hUsAAeSw-b5q6zS7&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2B8jcUNCroFHyQ%2FSA7%2Bh%2FrMMmSSohpIh9bUscuRTXhmLq0iT6HYhOX1B%2FZ1gdHmYwiKPUyZRtU5lcOHwugwQrwNiUEuufzdhLymSPvfrguxo4j86SY7Z%2BAaKeVOpWJZbGMR2QadKuCMJjUH286awtv1sqG0mvPXHG%2B6E3Q0ZiXrtSYiwjfc8IOlzBBxTStbRVslKsoe7%2B2%2FbsM%2FuUl9PCqFbBJKolxW149uX%2FqttaklV%2FoZryWaZhf57zQWNwlX3gAdLwcfax97T%2B%2F7lSGqAlTwYTUGyv4eTiw2W2z6NKA4Wg%3D%3D%7Ctkp%3ABk9SR_bg5aHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=287302884004",
+      "product_id": "287302884004",
+      "epid": "90962197",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£15.59",
+        "extracted": 15.59
+      },
+      "shipping": "Free delivery",
+      "promotion": "Save up to 8% with Multi-buy",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/hUsAAeSw-b5q6zS7/s-l500.jpg",
+      "seller": {
+        "username": "books--etc",
+        "reviews": 761300,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "title": "Heal Your Mind: Your Prescription for Wholeness through Medicine, Affirmations",
+      "link": "https://www.ebay.co.uk/itm/236278389488?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&itmmeta=01M8D1SE15WHFFH0W9EB4B223D&hash=item37034a1af0:g:~uEAAeSwRhpopZvq&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2Fo35aF--46l%2BeN9hI5R9bCdhzwAmgkaXcLGosow6%2F0iKVBjwji5Rj%2BV2iEXnEbTk4f5b8rPab8K6NOmWhI%2F8jWV1QnYHA41KACaCOcmTiVSzEQqy0pp8gvSA61mCqq2cc5x70BTDp2xPkzR6wysEamcGwySagNk8laPbjxEbTUNPkYaHcp%2BROADQr503Fmp1RYUJujFxeq%2FyBbQ%2BtgnzNQeP6Okn%2Fi0811nqQ1ID7u5tuk3ZaTBIMC7%2FG5zYksuQKJImn76DxLT4%2BibgRP7HHuAo2avFMUcZ%2BRaogdo7de44551SyUVbQ150F7B43s7gDrA8InYaXtSuFMf3xZUhGD%7Ctkp%3ABk9SR_bg5aHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=236278389488",
+      "product_id": "236278389488",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£18.86",
+        "extracted": 18.86
+      },
+      "shipping": "Free delivery in 3 days",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/~uEAAeSwRhpopZvq/s-l500.jpg",
+      "seller": {
+        "username": "wowtrust",
+        "reviews": 151400,
+        "positive_feedback_in_percentage": 99.7
+      }
+    },
+    {
+      "title": "Heal Your Mind: Your Prescription for Wholeness through Medicine, Affirmations a",
+      "link": "https://www.ebay.co.uk/itm/237175620794?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&itmmeta=01M8D1SE16F87T6A5AH5QF51FB&hash=item3738c4c4ba:g:ttwAAeSwSs1q999H&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde9ctCP8azbixw3xM1kbiqsvUxi2bKT3h%2FX9Qr1iuFO20GSKYe7oYL365OYEEZ8tuISh391SztJgYO0tv60EgzfdFwfKdvgiexrBDUMdJCl4usXYNG6ODAWPKlGK%2BR8xS4zInL5YaEh4Ktfg80YuyTdybcGfBGgceaIn6WIk%2BYbH1AT1DrByhSS%2F6MGISWWJyHeX7%2FU7m%2Be56wS4b4I77MfCo5M3B2%2B1J2GhEx4pKpumo%2BpB8w%2FEtVci0uMKTJtleXBqKxPRVVeYr9D6ZV%2Fy04vuzfOj8IWTIaWaNSc1oWEiMg%3D%3D%7Ctkp%3ABk9SR_jg5aHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=237175620794",
+      "product_id": "237175620794",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£3.67",
+        "extracted": 3.67
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/ttwAAeSwSs1q999H/s-l500.jpg",
+      "seller": {
+        "username": "brit_books_xp",
+        "reviews": 944800,
+        "positive_feedback_in_percentage": 99.3
+      }
+    },
+    {
+      "title": "Self-Healing:Use Your Mind To Heal Your Body: How to use your mind to heal your",
+      "link": "https://www.ebay.co.uk/itm/920052149163?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&itmmeta=01M8D1SE167N92MRZ9XFF0YPA1&hash=itemd63761abab:g:5~wAAeSwF9xq1UqT&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9wToeEd0Yk9gDq9GcMIOMr3nae0uzyvJlk42--apbzUk1TRAtpgN%2BH7NeJmZxvETxc76FMceWZl9I05GnTr%2BoHmhhe3GdK4hT9Sg46C9NER93Kw86VgZRKUiYU7xtNfc6c3%2FkopFqm43DihH0XzI3GM90oAutJwvxgJ19iVZ08RSmz20TmHpauQu%2Bx%2FwJxSuhlKdHcsQPLHhalDTgsvMIiBu6Ir19sRFQbHlbPNwqXeoj5sz%2BFEVvsl%2BYPpg1Bo9f1b1gDWTNTVSiT0UKOfFqFmMdZYwxWEbYYf1cfqckEvGLO8gqMVEn3wxkEAmynVQ7FVafZdSyziTL73Lv4nrGj%7Ctkp%3ABk9SR_jg5aHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=920052149163",
+      "product_id": "920052149163",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£10.45",
+        "extracted": 10.45
+      },
+      "shipping": "Free delivery in 3 days",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/5~wAAeSwF9xq1UqT/s-l500.jpg",
+      "seller": {
+        "username": "sellbookslimited",
+        "reviews": 25000,
+        "positive_feedback_in_percentage": 99.3
+      }
+    },
+    {
+      "title": "2005 Factory Sealed You Can Heal Your Life Affirmations Kit Louse L Hay CD Book",
+      "link": "https://www.ebay.co.uk/itm/227556761149?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&itmmeta=01M8D1SE16PGV8906WK8AVQD3T&hash=item34fb709e3d:g:AIEAAeSwVslqxkLR&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2Bv%2B14luDtxC%2F714ptJn00flJuUvYMagmnNFV64mho1jIujbzCOKT5SU5Rp%2BysfCd9jOyr%2BkHQGuQCLg803CoTgbXXsgWlbQPFMTphw1r5l4PZL%2BIOl35G0cJ07w7ZGKYNnz8fqh3aKvhjbJX9vMZzQI%2FzQp9sgTh%2BA64yIdoeHCEFTlzzeK97mM5I1xG0agnQhOc%2FIwSzRaPn2sZGSRPZxLq4PI8Zoq2du2j927rNu3yyFyOW0qNCldPcQkpRaXb0c%2BECx%2FXIuAXm%2BPysXgOF%2FHD7YCO%2FNXCG9GmQyXsoYnYK37ScgKeklii82xLiQ4D%2F5oOJw9sih7%2FM88cQ%2FfxEG%7Ctkp%3ABk9SR_jg5aHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=227556761149",
+      "product_id": "227556761149",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£36.75",
+        "extracted": 36.75
+      },
+      "shipping": {
+        "raw": "+£3.38 delivery",
+        "extracted": 3.38
+      },
+      "buying_format": "accepts_offers",
+      "buying_format_text": "or Best Offer",
+      "thumbnail": "https://i.ebayimg.com/images/g/AIEAAeSwVslqxkLR/s-l500.jpg",
+      "seller": {
+        "username": "misskittymoon",
+        "reviews": 746,
+        "positive_feedback_in_percentage": 100
+      }
+    },
+    {
+      "title": "Mindful Healing : 5 Simple Steps to Transform Your Life by Afrosa Ahmed ...",
+      "link": "https://www.ebay.co.uk/itm/365747339008?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&epid=7082551896&itmmeta=01M8D1SE16KE543QGPA62VN867&hash=item55283d7f00:i:365747339008&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2FjRhynJscRmogZglcmjTVPbLeqbXDT3oOK2t6MSJJ2%2Frfld69DuQj8Wpn93Pt0Ttnbkv9k%2BxIZ%2FKZbW%2BK3P3K9BqosWuIhWWSUMm%2B8ECL1jT4aDAkC--qjZhdld5%2BSNAPFXm4xPCrgORsMAcaIPzymklUK6fE4XYC44BJIgokV1%2B0b4Kcpk4ROlS5Qvlu7%2FbIuQewD5Yzvlpui1ZYLxokUNFx7W5jeO4%2Fxf0J5NZifQtC0a%2BapdVTXXUWyzVZIkDI8oDNWsopQst2TH%2FXjOJUZRL1Zwit4BHtdiBYEC0G667kkDO6TSkBjKPypAK8T4oUE7DP4twws%2BgGD%2F91sf%2Fqw%7Ctkp%3ABk9SR_jg5aHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=365747339008",
+      "product_id": "365747339008",
+      "epid": "7082551896",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£12.59",
+        "extracted": 12.59
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://secureir.ebaystatic.com/pictures/aw/pics/stockimage1.jpg",
+      "seller": {
+        "username": "speedyhenuk",
+        "reviews": 1700000,
+        "positive_feedback_in_percentage": 99.9
+      }
+    },
+    {
+      "title": "Karma Healing Unblock Your Life on the Soul Level by Yael Eini (Paperback Book)",
+      "link": "https://www.ebay.co.uk/itm/287714885744?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&itmmeta=01M8D1SE17Y1KGV2M2SYZ25JMH&hash=item42fd24c070:g:~70AAeSwOUpq~fVw&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde8%2BS%2F3VPtUhA8wnijDaFnPNkK7xrca8f1wRg6pfU8o0iQmg0HT7VFH2Tw58BBNsx6yNWxYQqrJj1nYxnRdXTh2g2XnZUWlZD%2F8uoh5H7ES%2BnfXdk%2BKMyp0ptUt0BWAUi7JDLs6C8VQ3lOux%2FDpKu3K4TLg3NXebuK7doJ44NB%2F5iOBpSPlfdZlYireykPEmNPtE%2BOtQngc5dGQhvjlbZ4svhOu9cXpgg50%2BfqiiThmxgYzAKgqI9EuJYCzK0GO23CQxAx96wMNDa0Wmfi24S2u6YUgbC1uf0vFB%2B53ui1qmWg%3D%3D%7Ctkp%3ABk9SR_jg5aHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=287714885744",
+      "product_id": "287714885744",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£14.98",
+        "extracted": 14.98
+      },
+      "old_price": {
+        "raw": "£14.99",
+        "extracted": 14.99,
+        "discount": "£14.98"
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/~70AAeSwOUpq~fVw/s-l500.jpg",
+      "seller": {
+        "username": "bookcorneruk",
+        "reviews": 126700,
+        "positive_feedback_in_percentage": 100
+      }
+    },
+    {
+      "title": "Heal Your Mind : Your Prescription for Wholeness Through Medicine",
+      "link": "https://www.ebay.co.uk/itm/306780643589?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&itmmeta=01M8D1SE171369CR2MBN83CG45&hash=item476d8d2105:g:IzIAAeSwYxJpl~Aa&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2F5VLrki7px97xQ9hNLczL23YCZGCD8SGl4LOsvcCfv%2BPEG%2BsfeN032P6sAHAZzksrD5rm%2F%2BlESYmb%2FVrvvNNIrxRhbnCG93fTnIlYfrBkbruyRlbxwWZLMHXm%2B5v2CkUyxCOLZcwfhQ002d6Quxo5LtLSsZYuGbxU0uNx8Qsqix9aPp0StWlUi9S7vutoENPilouVhOfrkpvF1jI4ho%2Boczapko9I9zKrVtbFNkUX86pXqLO5DAJkHIkbZAcMsF7mnJDo8Wxp8%2FveeU4uIMwMVm%2BOmQAsCt9gp3kv%2BlyYbCJtfBm9lEyUSfGeAI25mMxAdIBSH6Rkow9poHk50eCfS%7Ctkp%3ABk9SR_jg5aHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=306780643589",
+      "product_id": "306780643589",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£5.03",
+        "extracted": 5.03
+      },
+      "shipping": "Free delivery",
+      "promotion": "20% off over 3",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/IzIAAeSwYxJpl~Aa/s-l500.jpg",
+      "seller": {
+        "username": "better_world_books_uk",
+        "reviews": 754400,
+        "positive_feedback_in_percentage": 99.6
+      }
+    },
+    {
+      "title": "Heal Your Mind: Your Prescription for Wholeness... - Schulz, Mona Lisa, M.D.,...",
+      "link": "https://www.ebay.co.uk/itm/365620701024?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&epid=12082837204&itmmeta=01M8D1SE177Y1Q9K13NR3X7EZH&hash=item5520b12760:g:ZYkAAeSwhFhoL9Wq&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde8od5MlKzH2wGtaklaUo5otp199Yoz1szSY0ThFb6YvxkN%2F2pTzmftrGLLVZ5bnFLEMq1SRtkdS5W0wvM%2F2TX4c2GQ8ffiaTm3S%2FMcGybIlJy3bIggKWlpYtP6afNAKMAw5wte6KIwlXTKU%2FBERUWmp1Y%2FYJ3AjFC%2BCpZ%2BqA7eh3V9jpFkcxvwK%2BsYgmEinxejK8boSCjzPmN%2BSdOaysaPxh3UYAeQ171vZgLUB4H4cTQ5oHOE2q%2F%2B%2ByJscn5BDO6w259pnPS4vz17rt3VXGwux8S20k4f9s8gnRz0OO6iNBg%3D%3D%7Ctkp%3ABk9SR_jg5aHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=365620701024",
+      "product_id": "365620701024",
+      "epid": "12082837204",
+      "condition": "New (other)",
+      "price": {
+        "raw": "£15.71",
+        "extracted": 15.71
+      },
+      "shipping": "Free delivery in 3 days",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/ZYkAAeSwhFhoL9Wq/s-l500.jpg",
+      "seller": {
+        "username": "webuybooks",
+        "reviews": 3300000,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "sponsored": true,
+      "title": "Brandy Gillmore Master Your Mind and Energy to Heal Your Body (Paperback)",
+      "subtitle": "Another great item from Rarewaves | Free delivery",
+      "link": "https://www.ebay.co.uk/itm/820375374295?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&epid=19082234113&itmmeta=01M8D1SE18RJ5JZM7JPHEX3J9K&hash=itembf022ec9d7:g:YQAAAeSwHl5q~91d&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2BZe3CXQrsBbDEplVCoBIaaJqFSlF8u%2B3vdJh7wfJEAlIWvMtm3HHPNKtrDackD7cUqI90gaJuOEYHVpJxFGq9n2Jv96R78GoU83wGM1U0VjYk%2BP4n%2B4kh53rOUFGYqm6XTFGP94xriiU4hkxqap%2BYA2IXitewLJVyvhO1DhRsQV8zgi2vjk5jiBLiq07jU8kkEpYIofXzWV8oP9TG9lww0Zly%2Bz4ONMg0ODdDK7eioz0LBdeHsihjI%2BABM7iKEkALB8xG77mm1QWy5tvv105cImp0uv9g%2BJrWH9PY9QHqa6vXXYbxi3xN2akm02Zf%2FQ219E4JCR18zhDP2R7nr0iF9%7Ctkp%3ABFBM-ODlocNo",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=820375374295",
+      "product_id": "820375374295",
+      "epid": "19082234113",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£14.90",
+        "extracted": 14.9
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/YQAAAeSwHl5q~91d/s-l500.jpg",
+      "seller": {
+        "username": "rarewaves-outlet",
+        "reviews": 1700000,
+        "positive_feedback_in_percentage": 98.8
+      }
+    },
+    {
+      "sponsored": true,
+      "title": "Indroneil Mukerjee Heal Your Mind to Heal Your Body (Paperback)",
+      "subtitle": "Another great item from Rarewaves | Free delivery",
+      "link": "https://www.ebay.co.uk/itm/307209636578?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&itmmeta=01M8D1SE18RDB5AA1VXDH9VCWB&hash=item47871f0ae2:g:qOwAAeSwQ6VqvxGa&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8xai62EyBhdroilvxUkvAmkgagxjUo9fZwOHGsPV557Uq3Zx2slWOYNfLNJ9OgecAmbL30ebUEwpLJQ9ikVq2SgIU8LnCfXmw%2FKlcsLL9%2BE8ZYv0VTjtgXqnZTPIJdLTTDff%2FipCQQS3sekaUMTX2mze9z7ma7Cb%2F8r9SqU%2BcHvIOlWQKvtVPjzwqDeF0R6sR5ETSPLlwDsvt0DQj2nIALhlA7t6IhD8RqzYYg79%2BA4LpLhUUEqCVM7yYBAX9ixsWAyygmDfSRdKuT8tVcVCnUBsOrDLYLvxniRNuAqKip7nMjM7F2Xls4hMOcTh%2FtczmpluGMl5KUJVaOOrc4YYoX%7Ctkp%3ABFBM-ODlocNo",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=307209636578",
+      "product_id": "307209636578",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£18.16",
+        "extracted": 18.16
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/qOwAAeSwQ6VqvxGa/s-l500.jpg",
+      "seller": {
+        "username": "rarewaves-outlet",
+        "reviews": 1700000,
+        "positive_feedback_in_percentage": 98.8
+      }
+    }
+  ]
+}

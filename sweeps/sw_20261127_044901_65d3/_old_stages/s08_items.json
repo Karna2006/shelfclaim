@@ -1,0 +1,365 @@
+{
+  "items": [
+    {
+      "item_id": "i_0001",
+      "category": "decor_other",
+      "member_dets": [
+        "f000001_d0004"
+      ],
+      "best_view": {
+        "seq": 1,
+        "frame_ref": "frames/f_000001_0001245.jpg",
+        "bbox": {
+          "x": 0,
+          "y": 816,
+          "w": 254,
+          "h": 192,
+          "angle_deg": 0.0
+        }
+      },
+      "dimensions_cm": {
+        "w": null,
+        "h": null,
+        "d": null
+      },
+      "dims_method": "none",
+      "description": "decor other",
+      "brand_model": "",
+      "material": null,
+      "is_artwork": false,
+      "status": "needs_appraisal",
+      "confidence": null
+    },
+    {
+      "item_id": "i_0002",
+      "category": "decor_other",
+      "member_dets": [
+        "f000001_d0005"
+      ],
+      "best_view": {
+        "seq": 1,
+        "frame_ref": "frames/f_000001_0001245.jpg",
+        "bbox": {
+          "x": 621,
+          "y": 845,
+          "w": 167,
+          "h": 278,
+          "angle_deg": 0.0
+        }
+      },
+      "dimensions_cm": {
+        "w": null,
+        "h": null,
+        "d": null
+      },
+      "dims_method": "none",
+      "description": "decor other",
+      "brand_model": "",
+      "material": null,
+      "is_artwork": false,
+      "status": "needs_appraisal",
+      "confidence": null
+    },
+    {
+      "item_id": "i_0003",
+      "category": "decor_other",
+      "member_dets": [
+        "f000001_d0006"
+      ],
+      "best_view": {
+        "seq": 1,
+        "frame_ref": "frames/f_000001_0001245.jpg",
+        "bbox": {
+          "x": 329,
+          "y": 826,
+          "w": 195,
+          "h": 316,
+          "angle_deg": 0.0
+        }
+      },
+      "dimensions_cm": {
+        "w": null,
+        "h": null,
+        "d": null
+      },
+      "dims_method": "none",
+      "description": "decor other",
+      "brand_model": "",
+      "material": null,
+      "is_artwork": false,
+      "status": "needs_appraisal",
+      "confidence": null
+    },
+    {
+      "item_id": "i_0004",
+      "category": "decor_other",
+      "member_dets": [
+        "f000001_d0007",
+        "f000044_d0007"
+      ],
+      "best_view": {
+        "seq": 1,
+        "frame_ref": "frames/f_000001_0001245.jpg",
+        "bbox": {
+          "x": 157,
+          "y": 845,
+          "w": 194,
+          "h": 278,
+          "angle_deg": 0.0
+        }
+      },
+      "dimensions_cm": {
+        "w": null,
+        "h": null,
+        "d": null
+      },
+      "dims_method": "none",
+      "description": "decor other",
+      "brand_model": "",
+      "material": null,
+      "is_artwork": false,
+      "status": "needs_appraisal",
+      "confidence": null
+    },
+    {
+      "item_id": "i_0005",
+      "category": "decor_other",
+      "member_dets": [
+        "f000001_d0008"
+      ],
+      "best_view": {
+        "seq": 1,
+        "frame_ref": "frames/f_000001_0001245.jpg",
+        "bbox": {
+          "x": 11,
+          "y": 48,
+          "w": 297,
+          "h": 365,
+          "angle_deg": 0.0
+        }
+      },
+      "dimensions_cm": {
+        "w": null,
+        "h": null,
+        "d": null
+      },
+      "dims_method": "none",
+      "description": "decor other",
+      "brand_model": "",
+      "material": null,
+      "is_artwork": false,
+      "status": "needs_appraisal",
+      "confidence": null
+    },
+    {
+      "item_id": "i_0006",
+      "category": "decor_other",
+      "member_dets": [
+        "f000009_d0022"
+      ],
+      "best_view": {
+        "seq": 9,
+        "frame_ref": "frames/f_000009_0006065.jpg",
+        "bbox": {
+          "x": 0,
+          "y": 432,
+          "w": 281,
+          "h": 384,
+          "angle_deg": 90.0
+        }
+      },
+      "dimensions_cm": {
+        "w": null,
+        "h": null,
+        "d": null
+      },
+      "dims_method": "none",
+      "description": "decor other",
+      "brand_model": "",
+      "material": null,
+      "is_artwork": false,
+      "status": "needs_appraisal",
+      "confidence": null
+    },
+    {
+      "item_id": "i_0007",
+      "category": "decor_other",
+      "member_dets": [
+        "f000009_d0023"
+      ],
+      "best_view": {
+        "seq": 9,
+        "frame_ref": "frames/f_000009_0006065.jpg",
+        "bbox": {
+          "x": 0,
+          "y": 1008,
+          "w": 329,
+          "h": 413,
+          "angle_deg": 90.0
+        }
+      },
+      "dimensions_cm": {
+        "w": null,
+        "h": null,
+        "d": null
+      },
+      "dims_method": "none",
+      "description": "decor other",
+      "brand_model": "",
+      "material": null,
+      "is_artwork": false,
+      "status": "needs_appraisal",
+      "confidence": null
+    },
+    {
+      "item_id": "i_0008",
+      "category": "decor_other",
+      "member_dets": [
+        "f000009_d0024"
+      ],
+      "best_view": {
+        "seq": 9,
+        "frame_ref": "frames/f_000009_0006065.jpg",
+        "bbox": {
+          "x": 481,
+          "y": 1248,
+          "w": 577,
+          "h": 259,
+          "angle_deg": 90.0
+        }
+      },
+      "dimensions_cm": {
+        "w": null,
+        "h": null,
+        "d": null
+      },
+      "dims_method": "none",
+      "description": "decor other",
+      "brand_model": "",
+      "material": null,
+      "is_artwork": false,
+      "status": "needs_appraisal",
+      "confidence": null
+    },
+    {
+      "item_id": "i_0009",
+      "category": "decor_other",
+      "member_dets": [
+        "f000009_d0025"
+      ],
+      "best_view": {
+        "seq": 9,
+        "frame_ref": "frames/f_000009_0006065.jpg",
+        "bbox": {
+          "x": 657,
+          "y": 355,
+          "w": 239,
+          "h": 211,
+          "angle_deg": 90.0
+        }
+      },
+      "dimensions_cm": {
+        "w": null,
+        "h": null,
+        "d": null
+      },
+      "dims_method": "none",
+      "description": "decor other",
+      "brand_model": "",
+      "material": null,
+      "is_artwork": false,
+      "status": "needs_appraisal",
+      "confidence": null
+    },
+    {
+      "item_id": "i_0010",
+      "category": "decor_other",
+      "member_dets": [
+        "f000012_d0016"
+      ],
+      "best_view": {
+        "seq": 12,
+        "frame_ref": "frames/f_000012_0007954.jpg",
+        "bbox": {
+          "x": 664,
+          "y": 691,
+          "w": 400,
+          "h": 317,
+          "angle_deg": 0.0
+        }
+      },
+      "dimensions_cm": {
+        "w": null,
+        "h": null,
+        "d": null
+      },
+      "dims_method": "none",
+      "description": "decor other",
+      "brand_model": "",
+      "material": null,
+      "is_artwork": false,
+      "status": "needs_appraisal",
+      "confidence": null
+    },
+    {
+      "item_id": "i_0011",
+      "category": "decor_other",
+      "member_dets": [
+        "f000016_d0011"
+      ],
+      "best_view": {
+        "seq": 16,
+        "frame_ref": "frames/f_000016_0010609.jpg",
+        "bbox": {
+          "x": 459,
+          "y": 518,
+          "w": 367,
+          "h": 298,
+          "angle_deg": 90.0
+        }
+      },
+      "dimensions_cm": {
+        "w": null,
+        "h": null,
+        "d": null
+      },
+      "dims_method": "none",
+      "description": "decor other",
+      "brand_model": "",
+      "material": null,
+      "is_artwork": false,
+      "status": "needs_appraisal",
+      "confidence": null
+    },
+    {
+      "item_id": "i_0012",
+      "category": "decor_other",
+      "member_dets": [
+        "f000044_d0008"
+      ],
+      "best_view": {
+        "seq": 44,
+        "frame_ref": "frames/f_000044_0028707.jpg",
+        "bbox": {
+          "x": 0,
+          "y": 1638,
+          "w": 324,
+          "h": 282,
+          "angle_deg": 90.0
+        }
+      },
+      "dimensions_cm": {
+        "w": null,
+        "h": null,
+        "d": null
+      },
+      "dims_method": "none",
+      "description": "decor other",
+      "brand_model": "",
+      "material": null,
+      "is_artwork": false,
+      "status": "needs_appraisal",
+      "confidence": null
+    }
+  ]
+}

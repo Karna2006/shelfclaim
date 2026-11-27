@@ -1,0 +1,1464 @@
+{
+  "books": {
+    "b_0001": {
+      "new": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T04:48:01.343247+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": null
+      },
+      "used": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T04:48:01.343247+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": "Used \u2013 Good"
+      },
+      "appraisal": {
+        "flag": false,
+        "reasons": []
+      }
+    },
+    "b_0002": {
+      "new": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T04:48:01.343247+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": null
+      },
+      "used": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T04:48:01.343247+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": "Used \u2013 Good"
+      },
+      "appraisal": {
+        "flag": false,
+        "reasons": []
+      }
+    },
+    "b_0003": {
+      "new": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T04:48:01.343247+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": null
+      },
+      "used": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T04:48:01.343247+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": "Used \u2013 Good"
+      },
+      "appraisal": {
+        "flag": false,
+        "reasons": []
+      }
+    },
+    "b_0004": {
+      "new": {
+        "amount": null,
+        "currency": "INR",
+        "source": "SerpAPI",
+        "url": "https://serpapi.com/search.json?engine=google_shopping&q=The+One+Thing+Gary+Keller+book&gl=in&hl=en&google_domain=google.co.in&api_key=REDACTED",
+        "retrieved_at": "2026-11-27T04:48:01.343247+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "evidence/prices/b_0004_new.json",
+        "price_status": "not_found",
+        "condition_assumed": null,
+        "offers_used": []
+      },
+      "used": {
+        "amount": 493.0398,
+        "currency": "INR",
+        "source": "{'username': 'atsr-93', 'reviews': 25, 'positive_feedback_in_percentage': 100} via SerpAPI",
+        "url": "https://www.ebay.co.uk/itm/137808293130?_skw=The+One+Thing+Gary+Keller+book&itmmeta=01M8D574HFDZXPR04W7Z4MXRC5&hash=item201603ad0a:g:sEIAAeSwGNdqwO-w&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde%2Fr%2Bxzr4DgLZd6lho%2FGKnpXbD0NGEyndQuL%2B%2BXZ%2FR%2Fnms1zMvu1B%2FyQqdknMy6Y7rL8%2BIpLD95GXWt9L38HQNR5s%2FpRU%2Bo9QLAAGnzst3Wsy%2FyHy6OzjDBU0%2BxwaMyuSuAhINs87%2FXYwMBAhNGgAz60hi4KWuApc3mdBQM2rtiVy76rQjWd3bi1%2BDMU662lYYRDc6kVhEJ8m1PRlgwt9lwkp2%2F6D15gCtLYk9jIpkU1dV6I5qj0VWvwq1JN7IWHs9yGivS6xuayxJWAjXU5wteBrmSPEvzUMYhXy%2Fudm2iSb7vqorrjMqO%2F53oW2A2IaWc%3D%7Ctkp%3ABFBMjsmcpcNo",
+        "retrieved_at": "2026-11-27T04:48:01.343247+00:00",
+        "converted": true,
+        "original_amount": 4.07,
+        "original_currency": "GBP",
+        "fx": {
+          "from_currency": "GBP",
+          "to_currency": "INR",
+          "rate": 121.14,
+          "rate_date": "2026-11-26",
+          "source": "Frankfurter",
+          "url": "https://api.frankfurter.dev/v1/latest?base=GBP&symbols=INR"
+        },
+        "n_offers": 5,
+        "snapshot_path": "evidence/prices/b_0004_used.json",
+        "price_status": "priced",
+        "condition_assumed": "Used \u2013 Good",
+        "offers_used": [
+          {
+            "title": "The One Thing by Gary Keller Paperback",
+            "price": 3.47,
+            "merchant": "{'username': 'rareperl', 'reviews': 93, 'positive_feedback_in_percentage': 100}",
+            "url": "https://www.ebay.co.uk/itm/227202805891?_skw=The+One+Thing+Gary+Keller+book&itmmeta=01M8D574HJ7C7B0J73WHJ5GVAK&hash=item34e657b083:g:4ucAAeSw0bNpg2~w&itmprp=enc%3AAQALAAAA4CHNgUiiE%2FjQhlDTaMiAde8HpQ1wbtq2MBQfkOiUNn3U4rQgWXHhSDHDxow%2F78HSYhkbtCPh3E0y7MwwjLhNIYBXJPGZZsIRxHiAfbtrVlk3JVdJYUqCkIWp03UNZlB%2BmleuIRGFwU8a65mNwCp6AXqTF3VQhTrX0Ev9LpR4dPBfZv5RoPBQ6DTZTt82adJEzH0xxdB9bTmpgIHTW%2B8h%2FcTu7sw1cS1fJ%2FRBLCoS9TNIEpd8hu6d0ZBxqZkRANvd0OgTnQvW4Jyonkf5kBojaf6zxilqTCpI7WohQYl8klbi%7Ctkp%3ABk9SR5DJnKXDaA"
+          },
+          {
+            "title": "The One Thing Gary Keller Jay Papasan Paperback Productivity Business",
+            "price": 3.94,
+            "merchant": "{'username': 'neliiv', 'reviews': 272, 'positive_feedback_in_percentage': 100}",
+            "url": "https://www.ebay.co.uk/itm/940036163422?_skw=The+One+Thing+Gary+Keller+book&itmmeta=01M8D574HGYZ15TQW7FA43N1T9&hash=itemdade85875e:g:dA4AAeSwwnNq25g8&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde%2FQfAW0fBAxjnA%2BHrwkMmwIlL7gqoMSwVE6GIeAVLiSVEcl6cVyGs%2F2HRmVEEN73OCRr%2BAAdV3ZybOOqGCZCWEBK%2F1a0W8jdTtll8qm%2BU2duk8kC8PiWIY8bsY7bOPHIUEsCiJSRIfbjWjpqi88KCkIZDok8ogMV4FRMmk4gvfOiLXZMOUr6J5X2EkfYfUSj--LPlkx3%2FawrKtgEqdZukuW%2FwDmTjM935eoxRZTB36tBsp7TVhW5W9hZkQ9BvwqhLa0%2BKuYEaJ8obE%2B%2FpkxObi81KaVjQbm910oI%2Bz4GCT5ZpJqfzfh4GwoZqvXfmx%2FOUg%3D%7Ctkp%3ABk9SR47JnKXDaA"
+          },
+          {
+            "title": "The ONE Thing Gary Keller & Jay Papasan Paperback Productivity",
+            "price": 4.07,
+            "merchant": "{'username': 'atsr-93', 'reviews': 25, 'positive_feedback_in_percentage': 100}",
+            "url": "https://www.ebay.co.uk/itm/137808293130?_skw=The+One+Thing+Gary+Keller+book&itmmeta=01M8D574HFDZXPR04W7Z4MXRC5&hash=item201603ad0a:g:sEIAAeSwGNdqwO-w&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde%2Fr%2Bxzr4DgLZd6lho%2FGKnpXbD0NGEyndQuL%2B%2BXZ%2FR%2Fnms1zMvu1B%2FyQqdknMy6Y7rL8%2BIpLD95GXWt9L38HQNR5s%2FpRU%2Bo9QLAAGnzst3Wsy%2FyHy6OzjDBU0%2BxwaMyuSuAhINs87%2FXYwMBAhNGgAz60hi4KWuApc3mdBQM2rtiVy76rQjWd3bi1%2BDMU662lYYRDc6kVhEJ8m1PRlgwt9lwkp2%2F6D15gCtLYk9jIpkU1dV6I5qj0VWvwq1JN7IWHs9yGivS6xuayxJWAjXU5wteBrmSPEvzUMYhXy%2Fudm2iSb7vqorrjMqO%2F53oW2A2IaWc%3D%7Ctkp%3ABFBMjsmcpcNo"
+          },
+          {
+            "title": "The ONE Thing by Gary Keller & Jay Papasan Paperback Self Help Business Book VG",
+            "price": 4.31,
+            "merchant": "{'username': 'dannmar43', 'reviews': 20, 'positive_feedback_in_percentage': 100}",
+            "url": "https://www.ebay.co.uk/itm/188655501137?_skw=The+One+Thing+Gary+Keller+book&itmmeta=01M8D574HGZFNMD936RWP6NCNQ&hash=item2becbe7f51:g:l50AAeSw3QtqWk2r&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde8owTWmI49Fk0GM7WpGwdSiIrfIrAHpNaVdozNLZkJrhaTVk8L2yFjUqvQE7lKrMgpdusEKpIIhfUa%2Fnbn%2BMZ6oMguqBf21UZ5UKww%2BMPpWA%2BfcWRkS%2FjD7ll4dZgG9unEj9ajzj278%2FzJp9BmfM3aOImzPg8GHPpTEh7UZ5a3sfcJGk6HLmWUP9W9pu4tQt%2F5LpTQ9w2hXJjwbOtrz476K%2FYrTPtVdE47IVgMKoJx--FJPpAjpzEZONkhHqjRSqznCBQvEAJjH2vu%2FFB8Z2Jww8z4%2B5Mi%2BBuuGSr5LBDvddddAiFw7vnKgAzpXgEDUKKg%3D%7Ctkp%3ABk9SR47JnKXDaA"
+          },
+          {
+            "title": "The One Thing by Gary Keller Jay Papasan Paperback 2019 Edition",
+            "price": 4.32,
+            "merchant": "{'username': 'jamieharris1971', 'reviews': 108, 'positive_feedback_in_percentage': 100}",
+            "url": "https://www.ebay.co.uk/itm/158252776083?_skw=The+One+Thing+Gary+Keller+book&itmmeta=01M8D574HHR79SCEAQ5Y9HF8TG&hash=item24d899ba93:g:SHAAAeSwWOBqmS9g&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde9dHAw6tPEJVjoj9eHny9aJyrbU9NkfWfmvqyL6gfD79Rsx1YP%2FMXD4LJGG3drTOH39QXr4bQAYPLxo2anXpN6RGJlSwJglEJaYn%2FOUxD0Wxv4d2KwZjjriS1C44opMD80qre5wr3jpn0CaJrfQt5%2BL3VuWpMz3ehB2xgzjqXfRBoD6q0BQX2LucbsRS1V59F4ApN%2B8q%2BFQS2jzOWOzD9opErn3exANq6xQAp1oDeoW0zaJueUQy1LLzmn1Caiyds02eXJGGJeMMnBDH%2FAI9xTRnojp7eOqxisqAYZdW3bNhg1PxdHIa8hrQwIKcHJ9Wck%3D%7Ctkp%3ABk9SR5DJnKXDaA"
+          }
+        ]
+      },
+      "appraisal": {
+        "flag": false,
+        "reasons": []
+      },
+      "query": "The One Thing Gary Keller book"
+    },
+    "b_0005": {
+      "new": {
+        "amount": null,
+        "currency": "INR",
+        "source": "SerpAPI",
+        "url": "https://serpapi.com/search.json?engine=google_shopping&q=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&gl=in&hl=en&google_domain=google.co.in&api_key=REDACTED",
+        "retrieved_at": "2026-11-27T04:48:01.343247+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "evidence/prices/b_0005_new.json",
+        "price_status": "not_found",
+        "condition_assumed": null,
+        "offers_used": []
+      },
+      "used": {
+        "amount": 609.3342,
+        "currency": "INR",
+        "source": "{'username': 'better_world_books_uk', 'reviews': 754400, 'positive_feedback_in_percentage': 99.6} via SerpAPI",
+        "url": "https://www.ebay.co.uk/itm/306780643589?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&itmmeta=01M8D1SE171369CR2MBN83CG45&hash=item476d8d2105:g:IzIAAeSwYxJpl~Aa&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2F5VLrki7px97xQ9hNLczL23YCZGCD8SGl4LOsvcCfv%2BPEG%2BsfeN032P6sAHAZzksrD5rm%2F%2BlESYmb%2FVrvvNNIrxRhbnCG93fTnIlYfrBkbruyRlbxwWZLMHXm%2B5v2CkUyxCOLZcwfhQ002d6Quxo5LtLSsZYuGbxU0uNx8Qsqix9aPp0StWlUi9S7vutoENPilouVhOfrkpvF1jI4ho%2Boczapko9I9zKrVtbFNkUX86pXqLO5DAJkHIkbZAcMsF7mnJDo8Wxp8%2FveeU4uIMwMVm%2BOmQAsCt9gp3kv%2BlyYbCJtfBm9lEyUSfGeAI25mMxAdIBSH6Rkow9poHk50eCfS%7Ctkp%3ABk9SR_jg5aHDaA",
+        "retrieved_at": "2026-11-27T04:48:01.343247+00:00",
+        "converted": true,
+        "original_amount": 5.03,
+        "original_currency": "GBP",
+        "fx": {
+          "from_currency": "GBP",
+          "to_currency": "INR",
+          "rate": 121.14,
+          "rate_date": "2026-11-26",
+          "source": "Frankfurter",
+          "url": "https://api.frankfurter.dev/v1/latest?base=GBP&symbols=INR"
+        },
+        "n_offers": 11,
+        "snapshot_path": "evidence/prices/b_0005_used.json",
+        "price_status": "priced",
+        "condition_assumed": "Used \u2013 Good",
+        "offers_used": [
+          {
+            "title": "Self-Healing:Use Your Mind To Heal Your Body: How to use your ,",
+            "price": 2.55,
+            "merchant": "{'username': 'cmedia_group', 'reviews': 1600000, 'positive_feedback_in_percentage': 99.8}",
+            "url": "https://www.ebay.co.uk/itm/389806819389?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&itmmeta=01M8D1SE0W4B5XBP6HPNZWN6NA&hash=item5ac24c083d:g:q0gAAeSwNtJpxof2&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9YTlpaqb%2FhDzFLB8bWkMYm5QfyHrHs759doccFpUJxEPF3axIyYaYOrtyni39Y9CIu7CB5Ba5caPcd6NWGuXLnyr4YyKaJiP%2BKUTOljesnvRktV1hnypoMliDlHBIGKxNvwERUInNb32A3c6%2F3ZG9Q4tsBbYMkhxcNSXRke%2FJugkjagvnp4V49OpQdujArXkaRrZdI6wiwAMX4r2G%2BLtbVus4nRpoDjgZGCP53j4iAYDdKuKvfaupnV7S4uqtC9pz0cE5We1LxEE7nZ1jAi22JwL--KLDHxaLxqEKcKNZ1GgZVnG1tsQFFkmaM7%2F8bq4%2FAub42swZxvw5OqSyjTDUc%7Ctkp%3ABk9SR-7g5aHDaA"
+          },
+          {
+            "title": "Self-Healing:Use Your Mind To Heal Your Body: How to use your .",
+            "price": 2.55,
+            "merchant": "{'username': 'awesomebooksuk', 'reviews': 2600000, 'positive_feedback_in_percentage': 99.7}",
+            "url": "https://www.ebay.co.uk/itm/397901748742?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&itmmeta=01M8D1SE0W25VC7MB8FV3BJVEP&hash=item5ca4cada06:g:QuIAAeSwnflp9Vvy&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde8SBRm%2FM0jmSt4MwSXPylPHksQfZYr2ocpAbzdP6WNIhWJREYQLzI1veTlPpFtI4XLm%2BloB7owdeJGYOSCRcIX%2FoZslVUH7RCgTN8aU%2B79Jz%2BRjkLnZc9IrrqKutE3CI3d9YxkxCN2WzOddlkq2Vv8UKaeQ6SknjSBXrPQY2zNg6kJitGjBOSs1pOJnOWALGiiibmtzMvhm8KStLtafZStPLELvYMrCj8II31nYZZZ51yqsDUqg1qOuxjgeS9TmwC1i1MsOMvpUr7evdacsKUkqHA3e7sUveS2NUrTExvvUAA%3D%3D%7Ctkp%3ABk9SR_Dg5aHDaA"
+          },
+          {
+            "title": "Positive Life Choices, Heal Your Life And One Minute Mindfulness Bundle",
+            "price": 3.15,
+            "merchant": "{'username': 'bloomin-3296', 'reviews': 485, 'positive_feedback_in_percentage': 100}",
+            "url": "https://www.ebay.co.uk/itm/286710103090?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&itmmeta=01M8D1SE0Z5BQM1HP9B0N1FKG3&hash=item42c140fc32:g:ud8AAeSwstBod4Xw&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8WYmN0mPy2kToG4%2BlAbEmQTGYu8eUTBZlrEnvWmu8w0MkFErEM3g4NabFgnM9aE4Y7THlo0N%2FhixDuKM5FlEvuMraRZRcqc%2Br9KkNKt7pSg98yEGiI7aGXmbd0dAh787SIleZTMlkVzjgGLmV3y3z1jf5K%2F2K7OUpVAd9f4aCbNUOoSNq5btGasZXHOgpEK0Wc2DtGYYdf9bBrY7dfgzQoDAA6RSEu4ZodSLqulLMpdf8EqGBSC1Enm4SNcZ9bj9GoUmJR%2F8kN77pPrHBksBGk2iwYVvP1rcVaMdXnYK8GzZfH7bqblBIB297pUnlGJmII41dLBZLMy279WvnvUnQv%7Ctkp%3ABk9SR_Lg5aHDaA"
+          },
+          {
+            "title": "Your Mind Can Heal Your Body: How your experiences and emotion ..9780749927127",
+            "price": 3.33,
+            "merchant": "{'username': 'awesomebooksuk', 'reviews': 2600000, 'positive_feedback_in_percentage': 99.7}",
+            "url": "https://www.ebay.co.uk/itm/313017096665?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&epid=90209081&itmmeta=01M8D1SE10ED4164EEY2E3V3CX&hash=item48e145d9d9:g:phYAAOSwScNeXnLd&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2BkKV8WkfXJDLQGGckPPrjMB9D6SEmrmhoagpf7mrsHxYXCUKQaNXQmRjIfJ7P%2Bth%2BENeG1edqfUMXUwSriquums1ReUkf30KVyuCwG4kakBFDV93zCZZujTXpVVioLUFplnyfPqvNPhyqloAeFSj0N5R8w8u9sxRvT5G9CRb9MUolhvf%2FGE9zeSjSWftyWFz69n7N4P3xybDt5XCLUkiTHvBf%2FrI0mLdhuLJlJTaZw3vADdG8OQ0n2c0f9TBuFAA3G6nTYel9lFgWADh22c1%2BfJyQHxJv%2BSdYtRa4N4plRoXHzyJYX0w4PrULiB4mab3Amzs61DhIKVlN%2BwBQ5bmXW%7Ctkp%3ABFBM9ODlocNo"
+          },
+          {
+            "title": "Your Mind Can Heal Your Body: How your experiences and emotions .9780749927127",
+            "price": 3.5,
+            "merchant": "{'username': 'baham_books', 'reviews': 3600000, 'positive_feedback_in_percentage': 99.8}",
+            "url": "https://www.ebay.co.uk/itm/293499363806?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&epid=90209081&itmmeta=01M8D1SE0XXT6PG96ZBGKNYTXQ&hash=item4455ece1de:g:cw8AAOSwbEReXmwt&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2FiFhoJjjl1LeAEMNchAbib8UNcODUb3wzE3lpK9ifiPU6dTFOrNt6PKp2kUROVPAp4S4YFo31%2FBNsc0t0dqyRSj4L6rZhX%2F1FR%2FVDWUdtcLsJh8IldXtSwfU5JRya0dm6nL9RTO7CkokiCpTriRyV7C160hklTe8uGQWjk9LJgMz9u9J49Wp9RBAcRbHPRsN2eoyMNjo5EHqWwJHhMR99BFpJWdtkuXlaMs43HcEo%2FSz9Nda0xgjeRBLXLJOm6ZqScG5XB91Yp9C%2FTCqj%2B7x92tjJ2kw477oygfRUb0KpkuEWEojKUVBTh2v5oZXRVTNB8muU6KkRIN9nl08h6xPtv%7Ctkp%3ABFBM8ODlocNo"
+          },
+          {
+            "title": "Heal Your Mind : Your Prescription for Wholeness Through Medicine",
+            "price": 5.03,
+            "merchant": "{'username': 'better_world_books_uk', 'reviews': 754400, 'positive_feedback_in_percentage': 99.6}",
+            "url": "https://www.ebay.co.uk/itm/306780643589?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&itmmeta=01M8D1SE171369CR2MBN83CG45&hash=item476d8d2105:g:IzIAAeSwYxJpl~Aa&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2F5VLrki7px97xQ9hNLczL23YCZGCD8SGl4LOsvcCfv%2BPEG%2BsfeN032P6sAHAZzksrD5rm%2F%2BlESYmb%2FVrvvNNIrxRhbnCG93fTnIlYfrBkbruyRlbxwWZLMHXm%2B5v2CkUyxCOLZcwfhQ002d6Quxo5LtLSsZYuGbxU0uNx8Qsqix9aPp0StWlUi9S7vutoENPilouVhOfrkpvF1jI4ho%2Boczapko9I9zKrVtbFNkUX86pXqLO5DAJkHIkbZAcMsF7mnJDo8Wxp8%2FveeU4uIMwMVm%2BOmQAsCt9gp3kv%2BlyYbCJtfBm9lEyUSfGeAI25mMxAdIBSH6Rkow9poHk50eCfS%7Ctkp%3ABk9SR_jg5aHDaA"
+          },
+          {
+            "title": "Your Mind Can Heal Your Body: How your experiences and... - Manning, Matthew",
+            "price": 5.05,
+            "merchant": "{'username': 'webuybooks', 'reviews': 3300000, 'positive_feedback_in_percentage': 99.8}",
+            "url": "https://www.ebay.co.uk/itm/366474495735?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&epid=90962197&itmmeta=01M8D1SE0YABT2NT1FWYJ9YFFB&hash=item55539506f7:g:S6oAAeSwSX9qLA-Q&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2Ba%2FHNhwPRPn7c6tS9wYf7krlFDxcV5H6pi7LysSqHPde1%2B%2FCBS9RMZ%2FiqHyWhe2B6jivUAB5sWyxQDQOeYgmDmkFLXoxhE4O1owAv8gxdRAxIS692wwBRBfLXGFZHZofzdSBweH314IKVP4Om3tDbOTh9RHHtsVgDxAIF%2BlXBZZuWIiqYso0cAd5q%2BMgwF4YMfG7iJaARXyCXnRsuuGvPX%2B8obAgxT%2FlqzbpVY10Kec5GJakwuk3rDtOrpFViQIYawvTVHj9h1nb9BHZWYbT%2F8eHur%2Bk5G0Q14cCYqlKqPqHIEzXORUHZFa%2FDfEP4GPNcLkP7qIZxBsUdly8otGMvC%7Ctkp%3ABk9SR_Dg5aHDaA"
+          },
+          {
+            "title": "You Can Heal Your Life \u2013 Louise L. Hay \u2013 Self\u2011Healing & Affirmations",
+            "price": 9.01,
+            "merchant": "{'username': 'dustybooks1', 'reviews': 916, 'positive_feedback_in_percentage': 100}",
+            "url": "https://www.ebay.co.uk/itm/128204040883?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&itmmeta=01M8D1SE0VGRSPA5W3QZ7T06NP&hash=item1dd98e6ab3:g:PmEAAeSwbmhpmmSn&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8J5in%2FRBAQrhya1gb8FyegZGn92Zu9NYdoTkoSgm%2F0Xpf4E%2Be7%2BE%2B19%2BZx3q9ZW9dg8EVFXlpgvFjADRvFoPKeAXSwgRx8XiCEnV5jINpFXMIpVcxndVDUi0BExtass%2FcKLx%2FJq0%2B3fEJkmn5feYbJh3Ux8nDxqYGrjQrI6neyOnfr1ZMkUMw6L9WS148TjRxQkSuYR4NgDu0PruCUGY0Wsz3AuOoEnOjguNaP0DPgbIXqntZVckufy1x%2BN1%2BeJ9WXSmIa5OLmluV0kLCKydDxsnpLxvXgiK35ZU5yi0Al7u9fzD2EhnLcA7YV7o8GyOYhYCVyrbJ2%2Bl7zUZAs%2BFvq%7Ctkp%3ABFBM7uDlocNo"
+          },
+          {
+            "title": "Heal Your Gut Mind Emotions",
+            "price": 9.96,
+            "merchant": "{'username': 'speedyhenuk', 'reviews': 1700000, 'positive_feedback_in_percentage': 99.9}",
+            "url": "https://www.ebay.co.uk/itm/398170209871?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&epid=13083793473&itmmeta=01M8D1SE0YCTTCFTWGDAKXXK5D&hash=item5cb4cb3e4f:g:FTYAAeSwPpdqVSXy&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2BTOHIxlKKjsqMHmGnUdIqnvRzr7UXl9rgR3c12jXZM0AwRMeU7202Pk2m3WDmphRtnfEpQH91k%2BD9ZBnoybDhmnhuMCEjFhHZpN88mFJ2rZEieiZ4YHrYAinM5j0eRKXKJuJfbqPDj3Dzw5X%2BrmmEgs9zviM%2BoAzP2NKI7PvAHTFXjqRSdigHGAxejRrVm5f1Rr2fXlh87lJg39C7WxBpFecwbA5LrXPu3vK%2FBCqbzvcQwDgL9rOy%2B8g6DFObWVqVuXtZhwozGdLpa34rTe7zN1a1m3szV1Dlk7E0DwW0vaLEgICw0OaNbTLNxjRTwtf%2BaN3vy%2BylVX0AAgAPLvgIK%7Ctkp%3ABk9SR_Lg5aHDaA"
+          },
+          {
+            "title": "4-Healthy Mind-Self Help for Stress, Pain & Illness. With CD, Heal Your Life",
+            "price": 9.99,
+            "merchant": "{'username': 'cornishtrader2012', 'reviews': 9500, 'positive_feedback_in_percentage': 99.8}",
+            "url": "https://www.ebay.co.uk/itm/325945780020?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&itmmeta=01M8D1SE12HHQVPC69SNH1SDHZ&hash=item4be3e1e734:g:bfUAAOSw39FljUZ3&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2FLdChfcQT8%2FRSStdOAirO%2FOcVqqy9by5ewK8Z4mKg%2B%2Bnl%2F%2BYhcyJJAwCzbLdGNRsP0xvpLgADiti8tivbMbS7wQTfok7%2FT8v4JQUNU9PyW52kngcchyoAYCdV4pKKUkfVHdS%2BybB5aiWbuu4YEyXL0m%2FwcN8Cb5H%2FMNGupdj2y2ZTGyuJXjyzgBjdN3VBh4qxa%2Bg0se1UKjFeoO6bAtqd%2BIHBNUMPEkd46G5JvEud%2Bh0VSasQBMXN0G%2FC3XfiKLFM1iVZJf1ApCNqSmRG4K6VxAtMtvNZFAw11zQgadme6Pw%3D%3D%7Ctkp%3ABk9SR_Tg5aHDaA"
+          },
+          {
+            "title": "Self-Healing:Use Your Mind To Heal Your Body: How to use your mind to heal your",
+            "price": 10.45,
+            "merchant": "{'username': 'sellbookslimited', 'reviews': 25000, 'positive_feedback_in_percentage': 99.3}",
+            "url": "https://www.ebay.co.uk/itm/920052149163?_skw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&itmmeta=01M8D1SE167N92MRZ9XFF0YPA1&hash=itemd63761abab:g:5~wAAeSwF9xq1UqT&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9wToeEd0Yk9gDq9GcMIOMr3nae0uzyvJlk42--apbzUk1TRAtpgN%2BH7NeJmZxvETxc76FMceWZl9I05GnTr%2BoHmhhe3GdK4hT9Sg46C9NER93Kw86VgZRKUiYU7xtNfc6c3%2FkopFqm43DihH0XzI3GM90oAutJwvxgJ19iVZ08RSmz20TmHpauQu%2Bx%2FwJxSuhlKdHcsQPLHhalDTgsvMIiBu6Ir19sRFQbHlbPNwqXeoj5sz%2BFEVvsl%2BYPpg1Bo9f1b1gDWTNTVSiT0UKOfFqFmMdZYwxWEbYYf1cfqckEvGLO8gqMVEn3wxkEAmynVQ7FVafZdSyziTL73Lv4nrGj%7Ctkp%3ABk9SR_jg5aHDaA"
+          }
+        ]
+      },
+      "appraisal": {
+        "flag": false,
+        "reasons": []
+      },
+      "query": "Heal Your Mind Heal Your Life Monica DuBay book"
+    },
+    "b_0006": {
+      "new": {
+        "amount": null,
+        "currency": "INR",
+        "source": "SerpAPI",
+        "url": "https://serpapi.com/search.json?engine=google_shopping&q=What+Color+Is+Your+Parachute%3F+2017+Richard+N.+Bolles+book&gl=in&hl=en&google_domain=google.co.in&api_key=REDACTED",
+        "retrieved_at": "2026-11-27T04:48:01.343247+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "evidence/prices/b_0006_new.json",
+        "price_status": "not_found",
+        "condition_assumed": null,
+        "offers_used": []
+      },
+      "used": {
+        "amount": 480.9258,
+        "currency": "INR",
+        "source": "{'username': 'awesomebooksuk', 'reviews': 2600000, 'positive_feedback_in_percentage': 99.7} via SerpAPI",
+        "url": "https://www.ebay.co.uk/itm/312223395735?_skw=What+Color+Is+Your+Parachute%3F+2017+Richard+N.+Bolles+book&epid=21046541174&itmmeta=01M8DNA16W1TBN9HXDNMEMFH1P&hash=item48b1f6ef97:g:bZAAAOSwgsVbf8jG&itmprp=enc%3AAQALAAABICHNgUiiE%2FjQhlDTaMiAde8ClvPqP7C1uflMXZTeCeUr8RRGHuohwN87yA%2FbsK%2Fbqx5xC3hWNcwEGQDAawTySRfrhP0HpQKGZwI%2FEvWxvS9cUBcNWy%2FhK4EeQmMWHNIxsWPUWq7SP1H9q0eFaLdNo%2BxhODkeVhWuMz8NBmeWXqcHllZbZtQNuy7tV5X7NCeIjFJFPMxu2f7Ery1WRsTDa6A870N4IW47hWV%2BaQ8u7rG5RFQruKj0fdsSB8zc4miRlJO7RK3CaeTawp6Z15pK%2FCzqTIw91pFmJ7iYBlEWrhunPtuZAPnYApS%2BWIh8MFcyzR7tSRLnsKaWTaus%2Fc4baWXGXdG5MJpwYtrphts8BcRXXmbprJVyx13KG7nSNU6riw%3D%3D%7Ctkp%3ABFBM8JOotcNo",
+        "retrieved_at": "2026-11-27T04:48:01.343247+00:00",
+        "converted": true,
+        "original_amount": 3.97,
+        "original_currency": "GBP",
+        "fx": {
+          "from_currency": "GBP",
+          "to_currency": "INR",
+          "rate": 121.14,
+          "rate_date": "2026-11-26",
+          "source": "Frankfurter",
+          "url": "https://api.frankfurter.dev/v1/latest?base=GBP&symbols=INR"
+        },
+        "n_offers": 43,
+        "snapshot_path": "evidence/prices/b_0006_used.json",
+        "price_status": "priced",
+        "condition_assumed": "Used \u2013 Good",
+        "offers_used": [
+          {
+            "title": "What Color Is Your Parachute? 2018: A Practical Manual for Job-Hunters and Caree",
+            "price": 2.94,
+            "merchant": "{'username': 'ggiezgg', 'reviews': 425800, 'positive_feedback_in_percentage': 99.8}",
+            "url": "https://www.ebay.co.uk/itm/318363890688?_skw=What+Color+Is+Your+Parachute%3F+2017+Richard+N.+Bolles+book&epid=24038261502&itmmeta=01M8DNA1703AJKW0G5247TH869&hash=item4a1ff77400:g:uGIAAeSwvgtqdYmn&itmprp=enc%3AAQALAAABICHNgUiiE%2FjQhlDTaMiAde--rNZxpb%2FnULF5oc%2F48t%2FidlOb7Z5gIircn8vcbAF7IXkUid4qVhuVXPOTDiZmKAHYEODAxZKRpvl9su9eSLbe5cycTeCtWpfzF3ZavG3dfXoMGcDIfR9wnDuB5HpFyIS%2BGrCB0Ekekgi3vt2RC6G5w2DWDIzGsMFK66GXGuPMyrffPrmBrJU0%2BDLC7Z5xD%2BcdAAzJEG7J3P%2BbD6wvKkR6YLGRqjslvlpB%2FZePGV1h9T03q8Ymhd%2Bb2o0kC%2BrquRceAQaeQzB08Do0O3iz90Int5Z%2FXsBdI%2FkpvqqV%2FTBql7qusNCwttHhx2bLG36mnTl3WwaClQ4NqOCHx%2F2S9WwqUY61OFJzurC6EmsKqEaqnA%3D%3D%7Ctkp%3ABFBM8pOotcNo"
+          },
+          {
+            "title": "What Color Is Your Parachute? 2018 Edition - Richard N. Bolles - Career Classic",
+            "price": 2.96,
+            "merchant": "{'username': 'sevenfridays', 'reviews': 161, 'positive_feedback_in_percentage': 100}",
+            "url": "https://www.ebay.co.uk/itm/327073335366?_skw=What+Color+Is+Your+Parachute%3F+2017+Richard+N.+Bolles+book&epid=238439374&itmmeta=01M8DNA16T86ZMVACVK779F8ZR&hash=item4c27170846:g:YsAAAeSwX0FpyBEt&itmprp=enc%3AAQALAAABICHNgUiiE%2FjQhlDTaMiAde8qASJs3qBXx%2B%2FAXfLmE1xM%2BSx%2F5T9if87AycuD0lSZUoN5AcQLOiMhffldXeWXDxj%2FwR5ebcxAWkfrLM3BO9c9Bno2Ro3Gz543wFPvxpgyUVuH3obknbAc8Fj7TiYIxlSvHuo7uCUoPGNbx5qd68I5pRRa%2FJr8%2B4ZbeKjNV9LRrAB4QHq9dUcoamWAo4uqzU2grNMCSQUnfeBATFK%2FTk7T7EO9OVN%2FXDL59TWntR8JmKCxm%2FLQKDfQkMiPtq6sbPPof32HW9RAy4nsRFppU2tf%2F7ETW7NecHeCmKltX%2Bhhv89KO0G68lr55fXtA1WHtXdudJViFsmAPjf%2FdvH00PnM2JWwGzsVkjkqsl0e%2FbOa2w%3D%3D%7Ctkp%3ABk9SR-6TqLXDaA"
+          },
+          {
+            "title": "What Color Is Your Parachute? 2018: A Practical Manual for Job-Hunters and Caree",
+            "price": 3.03,
+            "merchant": "{'username': 'ggiezgg', 'reviews': 425800, 'positive_feedback_in_percentage': 99.8}",
+            "url": "https://www.ebay.co.uk/itm/317362122970?_skw=What+Color+Is+Your+Parachute%3F+2017+Richard+N.+Bolles+book&epid=24038261502&itmmeta=01M8DNA175X508ZB4TJEFQ9M99&hash=item49e441b0da:g:xc0AAeSwsZdqf7o1&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde93cVR3aenxMg1ahZ%2BU9UiGvTQz2VH1cWmDfoqP0pStdaSwFvf7wX5wGxefU82w5ZzhmoBYUlcHDcwcRe7jBXbq%2Bcyn660R2ov3lWAmhuxZYtJ4iwisZUGE1sraKM9mbTaE34Xj00bMEuh84k3Tua2FMHFx98zAFNUNpBPF4rI440B1QyFx0%2F81umEm0in7p%2FsGxwFn5HTJpzOxd4%2FE7fcBCmB6XFsWvMdkhxdJREo5QOyndyVSh0QEZ4woNS0UaknEJupmLp9LfdZljkGTBYrLS6gIv7HIYlwns0a7hxUXvbS0qc99etmg5CpkS9o6jeE%3D%7Ctkp%3ABk9SR_STqLXDaA"
+          },
+          {
+            "title": "What Color Is Your Parachute? 2017: A Practical Manual for Job-Hunters and Caree",
+            "price": 3.03,
+            "merchant": "{'username': 'ggiezgg', 'reviews': 425800, 'positive_feedback_in_percentage': 99.8}",
+            "url": "https://www.ebay.co.uk/itm/389001873236?_skw=What+Color+Is+Your+Parachute%3F+2017+Richard+N.+Bolles+book&epid=10038299752&itmmeta=01M8DNA176MN6Q953P2FEH12PJ&hash=item5a92518754:g:38wAAeSwRT9qfpEc&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde%2B9CfX%2FilzXWns2TnF64X57VaNdtVxoabq3dlR33zcNvnbgiAeSgCdr2t2eSYV2o7Jiv5RxIdJoCcMmHLWoARBZ6Oa%2F%2BFTrExTv5VoCfJZ7XPqAwROLOWGssaCmchiFtsiu7Kau0aoHOD3MzayGp5%2F5ARIIWnhK%2BJYQBRl0PqsYfFJpD8CcqFTihxSTy0uxFeBffBbjk%2FMzRl4lIMX9qxP1mFgUCuxBEaSuP3AfnwwSxCkt0hznWSpqbYJCfsfQU9Hxq61xT0FWqlrlAOukQbcKZz7V2pjXiRHHMeRTz0G9qoVh9zxSnviUqwKFvDBtLoE%3D%7Ctkp%3ABk9SR_STqLXDaA"
+          },
+          {
+            "title": "What Color is Your Parachute? 2018: A Practical Manual for Job-H",
+            "price": 3.22,
+            "merchant": "{'username': 'cmedia_group', 'reviews': 1600000, 'positive_feedback_in_percentage': 99.8}",
+            "url": "https://www.ebay.co.uk/itm/377067071210?_skw=What+Color+Is+Your+Parachute%3F+2017+Richard+N.+Bolles+book&epid=238439374&itmmeta=01M8DNA16TW09GS65Q0BYRT32P&hash=item57caf2e6ea:g:My8AAeSwYnNpxn9O&itmprp=enc%3AAQALAAABICHNgUiiE%2FjQhlDTaMiAde9JL6vuD2clcxPGNp7DDKZ13wsAh8EoRRW8K1yL%2Bu2%2ByXRyYjMloydmtfmRqaVmupsfAnfthnBp4GQKx4x1q%2FzqnEw2FMgO1CQYYPJPrgCQdBr7G942czjUE42aqRQWIRKK%2Fd%2B2v8YvlSeqoQTLZK6osr4j1%2FvBCTeOp6cRKVW4NGjZkx0rRJSBRQDH1jfhzS%2BcxGUgMTfZO%2FpJ53XYBvdeJBFE%2FyPAHJqSGgGDsPwx9ZOTnrjplnOWiKz6QkQV2He4AfNakaWE2cF9vXOkCxFW6x1SwVPi0eU6ObGdmqN05b%2B1ZvUtJ07bVRj14Z%2BdPu8%2FNRz3oE%2BsntxaixcSLmkTJldLQ1a8ct5VvYxtiSeP8Q%3D%3D%7Ctkp%3ABFBM7pOotcNo"
+          },
+          {
+            "title": "What color is your parachute? (Paperback) Richard N Bolles Pre owned",
+            "price": 3.26,
+            "merchant": "{'username': 'gilesy0447', 'reviews': 320, 'positive_feedback_in_percentage': 100}",
+            "url": "https://www.ebay.co.uk/itm/198525600662?_skw=What+Color+Is+Your+Parachute%3F+2017+Richard+N.+Bolles+book&epid=21046541174&itmmeta=01M8DNA16V31B10Z652MANVHWF&hash=item2e390c4396:g:-nwAAeSwhEBqZhTT&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde8s1Z0enWOK3R6OIY%2FO2wMHZQU4k%2FkZM14AVXWpAyOZZcll%2FwYP2TcBQ82XDmR7zlkkHVeAi0LzMU0qwBV%2BVw2MvJITRLz7vygkCQW0xCCRdgcPUPm74hvL3pz89GjY%2BpCCLZJ%2BATtoosEg94gxKWObHv3vEutV1xg%2FOsbtjpo3C8rWZ%2FGWeISQJ5LwUAFJx9bQSVzggjo7OqohKoA6JBqI6mtu9dQqNbdry51Irxkr0oXLX7zhcWxN3KjfpZt%2Fm4gbjqyj2e04oy6eRqIzZ7M1k%2FBUDKZwiEFvFYtbEsBX7n6Ka5UmLP%2FM2l%2FQ27a9HDA%3D%7Ctkp%3ABk9SR-6TqLXDaA"
+          },
+          {
+            "title": "What color is your parachute? (Paperback) - FREE Shipping",
+            "price": 3.37,
+            "merchant": "{'username': 'musicmagpie', 'reviews': 14100000, 'positive_feedback_in_percentage': 99}",
+            "url": "https://www.ebay.co.uk/itm/306317149411?_skw=What+Color+Is+Your+Parachute%3F+2017+Richard+N.+Bolles+book&epid=21046541174&itmmeta=01M8DNA16SQS6ATR05HACKQGSN&hash=item4751ecc4e3:g:AJEAAeSwXftozBAG&itmprp=enc%3AAQALAAABICHNgUiiE%2FjQhlDTaMiAde%2FgWw4olNi0wFUN8CEjyDXsUw3K4KNv9yQwROC4zm3WZG6d%2BO9miHYS2i5ByYUCZPIUMZSq4Y7fFL4YUStL9Jt7jLiLOCBJGpp4qy70NXBGVQ5w%2FmH6hvQ1LWvm8weuFMcTmE%2Bksv5ZpiV3ATdKn%2FTdHgt5tjf0kb%2FX3a%2FATGK8zE%2BauyUex8vzRL%2FNUp7MC3NXnSGJ%2Fl4nlxh%2B2sgXhsWoh6cxMSzl1fxU3eHZHv2AX4VtCkoCZv55FifMEJ8y4EmlMLKlCMXt7tCN38LNN9PXGc00KD6ieJ5OcfZvgt8aqhflBrmOUb4CPHs5f%2FL3fWTRqtpVeMW2CKYy7eVKI1twAfLtXDoJEW4AyjJ%2B%2BZt9Zw%3D%3D%7Ctkp%3ABFBM7pOotcNo"
+          },
+          {
+            "title": "What Color is Your Parachute? 2017: A Practical Manual for Job-Hunters and Caree",
+            "price": 3.38,
+            "merchant": "{'username': 'thecotswoldlibrary', 'reviews': 958900, 'positive_feedback_in_percentage': 99.8}",
+            "url": "https://www.ebay.co.uk/itm/860161098454?_skw=What+Color+Is+Your+Parachute%3F+2017+Richard+N.+Bolles+book&epid=21046541174&itmmeta=01M8DNA16VM66Y1TQEC3WD0508&hash=itemc84598c2d6:g:jScAAeSwXxJrACW9&itmprp=enc%3AAQALAAABICHNgUiiE%2FjQhlDTaMiAde%2Bt3BsK%2FyYM3wAw%2Bnf5rDAtBQpqSfJTkJFy6lCR6aakHPKvuBSEA2IkrkD1fbgFJEgKNNgEdMJAXqAsAKke2l6BG8O1c4gA87GQeczZB46mhmZZVOl2RL3PVkOjsnuJU%2BV2%2FnDdcaBLJr5QfU7Krjhs9jOatLXZK9N1Ig%2BKib3QS%2FaJOoPEmFWTx6y%2FdWSmVTsgPPGqHJau3eaTokf7FWUufmYjWhij%2B%2BL5XeIDuHZ1IV9gn1nT0w9rZmDAXI5Q3p3t8BrFM0LXBCGPqgWxTQcDEwSknJdQiRJEDXUlJto9dHH4Iv%2BX286P2BIVx5DezuiA1oFOuMF732qweVTA3vAWebfQFxTwgR9G%2FVR5aoChKw%3D%3D%7Ctkp%3ABk9SR-6TqLXDaA"
+          },
+          {
+            "title": "What Color is Your Parachute? 2018: A Practical Manual for Job-Hunters and Caree",
+            "price": 3.38,
+            "merchant": "{'username': 'thecotswoldlibrary', 'reviews': 958900, 'positive_feedback_in_percentage': 99.8}",
+            "url": "https://www.ebay.co.uk/itm/860070170658?_skw=What+Color+Is+Your+Parachute%3F+2017+Richard+N.+Bolles+book&epid=238439374&itmmeta=01M8DNA16X2FG37GV4WA94S1R4&hash=itemc8402d5022:g:oOQAAeSwI4pq2S2I&itmprp=enc%3AAQALAAABICHNgUiiE%2FjQhlDTaMiAde8MqY5IbU5EKzG5RuOm%2BhDuUZmVxS1VAPc%2F1NdlS4SF0rylC9mXInEByhMzSjeYvXFsE9OaQqCZ4mU1wrbn7NMjQDCqAVzGxyNkIXNOEAxnqkwl3JbGaZO6l417TeJAcS8R%2ByVi4u8H8%2Bh%2BNrxmpnwH4%2FyhkaWsffWjeboYpqPwK7xeBTrO5OFilvRCP1VKXAVJS432IsuPobuBC05L5O4lDiZnazygEzeMQwvl1g%2BVH3xqawAVwyVE69xmlPKVpOh2JpXoij2vtLbZHMNu%2BAVJCahslpwqsVrO1cJ8XF6NCAweVM2%2Fkx%2FAKvDratMK9jLsxxaDq%2BOW2kEvKp%2BHJSloMMwrSSAQI8B4Z4vFocFUfQ%3D%3D%7Ctkp%3ABk9SR_CTqLXDaA"
+          },
+          {
+            "title": "What Color Is Your Parachute? 2017: - paperback, Richard N Bolles, 9780399578205",
+            "price": 3.39,
+            "merchant": "{'username': 'gulfcoastllc', 'reviews': 324000, 'positive_feedback_in_percentage': 99.8}",
+            "url": "https://www.ebay.co.uk/itm/128142487460?_skw=What+Color+Is+Your+Parachute%3F+2017+Richard+N.+Bolles+book&epid=10038299752&itmmeta=01M8DNA16ZN5HHS9KGZHHKAKMV&hash=item1dd5e32fa4:g:pzQAAOSwdhJf~hCN&itmprp=enc%3AAQALAAABICHNgUiiE%2FjQhlDTaMiAde9zoUbRcVFZsjg8GNOuvVzFYTSFhs%2FMPCD0IVgihp%2BVlUjAULeBd4qQ%2FPwcpx%2Fj7n8KoWXgnHWcS8%2FTL%2FpshX6OFjoEUH5xJAYkjXnWeIN7920179aq7FF6bmcs1q%2BH%2FIv1S73wjfP%2BG8QuWY5tXnoRZLZspVjSLU86Z6s%2BlssHqHOBu%2BdAF541XNE68EC9U8TZzb4JwbUMEJlPWfzvND7ezxFmnYxrMIRrrYbPogQhabM7L%2BmLO6RO090xsLQ94VnCEy%2B504NXI204t3U9hJFBYnmKhn%2FpygUQDsoczvhu4YOJ1VR8k2IAn%2Fxxtb5OIDZi9GbRfvD3JlZSrPpz5UmOvY%2FvyXu%2FBwVvvehzveInvQ%3D%3D%7Ctkp%3ABk9SR_CTqLXDaA"
+          },
+          {
+            "title": "What Color is Your Parachute? 2018: A Practical Manual for Job-Hunters and Care",
+            "price": 3.44,
+            "merchant": "{'username': 'baham_books', 'reviews': 3600000, 'positive_feedback_in_percentage': 99.8}",
+            "url": "https://www.ebay.co.uk/itm/123905762821?_skw=What+Color+Is+Your+Parachute%3F+2017+Richard+N.+Bolles+book&epid=238439374&itmmeta=01M8DNA16S9D53KA9ET4JXV5DY&hash=item1cd95be605:g:r54AAOSw0zdde8bV&itmprp=enc%3AAQALAAABICHNgUiiE%2FjQhlDTaMiAde8hD4c1uhezMLDStREFtRwwSpb1If0pgvHfFG9PBEOp1LcqfBmgvQoFpCLmPwzvOKMnM1GpKYGfB4cZxlPKYhNsftgoWAI5isBWrxTm41offg1udkRoxLSCNxWuURg5Q9qOmb0fG8WhmrDZNpFYlNsYE7WeyFJ8N60kP6x9mnvXub7VIMeOwccIg23YWnbUDS87H0KM2m02ZokrNRmw3TlgX362EjNVS3GiIF9hnxyRtYdXVhP8lKjyz%2B8KdYC6wtxXriwpjfCkj2D34xFFuNNiq48yhuSq42qltCfcs%2F1wSc5cHVwMS86vNTivnOFJunTduoM5GfS3rUDldgE1I%2ByJncAIOIn%2BLwSL6bDYB8y9Dw%3D%3D%7Ctkp%3ABFBM7pOotcNo"
+          },
+          {
+            "title": "What Color is Your Parachute? 2017: A Practical Manual for Job-Hunters and Care",
+            "price": 3.44,
+            "merchant": "{'username': 'baham_books', 'reviews': 3600000, 'positive_feedback_in_percentage': 99.8}",
+            "url": "https://www.ebay.co.uk/itm/292370408666?_skw=What+Color+Is+Your+Parachute%3F+2017+Richard+N.+Bolles+book&epid=21046541174&itmmeta=01M8DNA16VXP0QJCG4FZH34JGG&hash=item4412a264da:g:pvsAAOSwqbxaMkbv&itmprp=enc%3AAQALAAABICHNgUiiE%2FjQhlDTaMiAde%2FmMjXTsyihL%2Fs%2BEI7b14ofeO6apC2PrK87OO4jnVIjDU%2BBlymfUxpw8URTmVnOKD8ZPMJhLq%2BS42HXMGmzQF4N4T8OohrREWwPcFLaKFOPTZnf0DB3kyzXENBocGRLfJG6xQHgzbVeIePbJvYsuK3dYk4vnMnHyQyzblrfe1S4z1w53gOrFTVMnT%2BFk28CQ6nSPowT5bOuxOkBj1S3o6Tg1lGFKpgJTgmfGZ9C6jSCchbtvXiVs5vns80vMtmVg%2BffovHyYM9DPkIGuVF%2FtBhzo0X1sZFgmUBaMzC7mByY2M8ql6ny7F6zXzF46kY6fU5y3SVKhFrq0zmmWyNz%2FGRn2JeZHQYjkHt%2BPzosw%2Bi4xA%3D%3D%7Ctkp%3ABk9SR-6TqLXDaA"
+          },
+          {
+            "title": "What Color is Your Parachute? 2017: A Practical Manual for Job-Hunters and Caree",
+            "price": 3.65,
+            "merchant": "{'username': 'webuybooks', 'reviews': 3300000, 'positive_feedback_in_percentage': 99.8}",
+            "url": "https://www.ebay.co.uk/itm/366434741585?_skw=What+Color+Is+Your+Parachute%3F+2017+Richard+N.+Bolles+book&epid=21046541174&itmmeta=01M8DNA16WJP8SFY7MWC4RK9Y7&hash=item5551366d51:g:s5AAAeSwyRhqFWQJ&itmprp=enc%3AAQALAAABICHNgUiiE%2FjQhlDTaMiAde%2FIVwkv6LohJ8OdmC2yCs9kqzVO%2BRz%2BCfOCJGOyrpDHPlyQF7Uc2z2%2FRHxZKNKtCk6CEkiEWKIf42njtDgaTK9E57UggbarRdPjWHta1BsXzdEgqKAQdADq0bTl6IfMsWEy7onvdvFm4LEOJlC8qevkIygOHvjtUsuKzYsbaQYRJRVpsq2qRmGCwsqnsytPhMzntCtP1WCabNMSFxLOSnivmh8WzuCjW6uEgfqwH1BcLvvbUSecWRffemF3J5xdQ6WBBSuUe7XgmJROIHmUrCtZAkBs5tEc7L4acvZNWzpCjWaRvZPWzEi9mt3cWmhCiWI%2F6NlUMSDncGMFKwKRTBbOe0PZE9elNQePl2M4bha%2FbQ%3D%3D%7Ctkp%3ABFBM8JOotcNo"
+          },
+          {
+            "title": "What Color is Your Parachute? 2017: A Practical Manual for Job-Hunters and Caree",
+            "price": 3.67,
+            "merchant": "{'username': 'brit_books_xp', 'reviews': 944800, 'positive_feedback_in_percentage': 99.3}",
+            "url": "https://www.ebay.co.uk/itm/315358628926?_skw=What+Color+Is+Your+Parachute%3F+2017+Richard+N.+Bolles+book&epid=21046541174&itmmeta=01M8DNA16XX6M1F08HJRB1GBP7&hash=item496cd6cc3e:g:XIsAAeSwkHBq2hxU&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde%2BzBK6Y4cHG7oml9GJthXSAnk3JT0PQDzHGq1mYvq5xojn1u%2FpySmEBHXUIqXY%2BX08xNrPl9OdAcMMLOhEE10HFAJlz5f6zUNu4YCSlMfT9SzlmefMxnWWkUJU3W84MNPP8QUlocphDQAfKYBX68uhrQvvJAwblh%2Fz8uVx9%2F28YljP8S3ZhOEQjhFkphIMzBXYGkugX1T%2BNGf%2FWj3FLg7qE4Ze%2FDi6nQz5vvLqek%2BR10Z4uoZ8Zm%2FEITvTHfHC2pjdJa4%2FbG%2BTLQTx0gavqQAxlL9M26FbFDUII8ZafeINuSCLrnudlzv8%2FjJPhWltT094%3D%7Ctkp%3ABk9SR_CTqLXDaA"
+          },
+          {
+            "title": "What Color is Your Parachute? 2018: A Practical Manual for Job-Hunters and Caree",
+            "price": 3.67,
+            "merchant": "{'username': 'greener_books_london', 'reviews': 829500, 'positive_feedback_in_percentage': 99.5}",
+            "url": "https://www.ebay.co.uk/itm/198327413360?_skw=What+Color+Is+Your+Parachute%3F+2017+Richard+N.+Bolles+book&epid=238439374&itmmeta=01M8DNA16XDKA41EHPXWBGB4QR&hash=item2e2d3c2a70:g:fy0AAeSwyudqe28g&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde%2Bt1iIZxau78U010pPYfYOb6kHMJfZ65jzZs47XkvMvZe97%2BV0Tjd46X12He4gIbi0g82llBB92BfQrRV8TWUCzul0uXfHCGBfVGkPI00NT2iFdZalpRulVGfmSnOp2g5bDg2fZLjlYsQxr3Jj5dNP%2Fei%2FErqm1hyrM%2BJ0oH6QW6vrTovDwk654zUyCCvnWoV8LXaZwvVVwNE079HEEvwTbOW8hy1852UyBW%2Bx6d6KVooofpIsKcBfh2JlVj2niqTVNLRgk%2BBOh13PBkTEVT3lKrpgR1gzzAZLAyOweiCj6tOGDvilKowNA0XfY6OYC2ZA%3D%7Ctkp%3ABk9SR_CTqLXDaA"
+          },
+          {
+            "title": "What Color is Your Parachute? 2018: A Practical Manual for Job-Hunters and Caree",
+            "price": 3.67,
+            "merchant": "{'username': 'brit_books_xp', 'reviews': 944800, 'positive_feedback_in_percentage': 99.3}",
+            "url": "https://www.ebay.co.uk/itm/397965815995?_skw=What+Color+Is+Your+Parachute%3F+2017+Richard+N.+Bolles+book&epid=238439374&itmmeta=01M8DNA16XMBVM019ZMTXZM4MN&hash=item5ca89c70bb:g:1xgAAeSw~uRqe~i3&itmprp=enc%3AAQALAAABICHNgUiiE%2FjQhlDTaMiAde8TL8%2FSHrhTFHYqQq1ezZAEmF%2FHSa01ZqTi6pX0H7uEPbkmE9wsVweBaRf48RTj%2FOX0CZdWq3dZ11KzqmJK87ELqQWQPWRcIM5Gg3AKorAf7PHnQfXFBIeMB3Q%2BJzQ%2FGy%2FdusTXiiS6v%2FpUDMecMeiOn8g2eSc4I7%2BPVCoQUP%2FIMq%2FiaXc6yFxGdFsOfx7xxyEoGaey%2B3kes4cG4kO8A79NH--0smHWGgFYCJSaDwmmd7o4D6FPxmG2J2G0PH6bMrrX7f64Bo69aTkUexEuC4VwRMNBT%2BXHXacw9zW8mcNBe%2FlBN0hYp9aAECThLPa7CHXe9WOtzaJXHK%2BBvABCRf9d4LVlQXeG1lP3kO2JouJIsw%3D%3D%7Ctkp%3ABk9SR_CTqLXDaA"
+          },
+          {
+            "title": "What Color is Your Parachute? 2018:..., Richard N. Boll",
+            "price": 3.72,
+            "merchant": "{'username': 'worldofbooks08', 'reviews': 11900000, 'positive_feedback_in_percentage': 99.5}",
+            "url": "https://www.ebay.co.uk/itm/145013840261?_skw=What+Color+Is+Your+Parachute%3F+2017+Richard+N.+Bolles+book&epid=238439374&itmmeta=01M8DNA16VY4QM0T0YM2D8KTJG&hash=item21c37f9985:g:VM0AAeSwe5ZpNJjz&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde%2BFnOhg0fPpsveE3wH5SvYbYt%2FjQUwjnyksgfoDg2z%2BLIjIZbrUVk0RLQiA87lVXSBSsuKQD2r3JyPGmGTIFCgGfTrTR1P1Cz6CdnnqPwFY0EKHFP5%2BHSMOZ8mVvrRi1bCs23OoRPZKL4dhNsZJbpvB5Nj1PGcktoR5WqNpn7p4b9DAn8xQhAcgbj9JqrnK4BAfwfdKY6Tb7CpFIlMhz0Uxqco3Hw6un2fKflrZlhddwox9ybfXR0ByuMiGlusKlR8jLKzWqFXE6sCQmLTHofGok36FvfP7NkuSY730Qbya3s5D1eljI1b%2Bes%2BKDbaL6A8%3D%7Ctkp%3ABk9SR-6TqLXDaA"
+          },
+          {
+            "title": "What Color Is Your Parachute? - Paperback, by Bolles Richard N. - Great",
+            "price": 3.8,
+            "merchant": "{'username': 'keilerman2015', 'reviews': 4100, 'positive_feedback_in_percentage': 100}",
+            "url": "https://www.ebay.co.uk/itm/940021048970?_skw=What+Color+Is+Your+Parachute%3F+2017+Richard+N.+Bolles+book&epid=24038261502&itmmeta=01M8DNA173VJ1WFSQ1D75ERFMS&hash=itemdadd9ee68a:g:Aw0AAeSwd2xqC3ak&itmprp=enc%3AAQALAAABICHNgUiiE%2FjQhlDTaMiAde830vjFmb6Y06By6rrwXwKcjgits5cGPOi5zgSHj1B%2BKwXhyvoxYnhJUDxjDhUdsmVPtYKrjDq3a3s0UtAKvWXD0K16pvfRLKejeHVlVZEnDEnoFyfBlaBNjOiC41qtD1iQclfMajziEPW6l3yOeWWGYJhKQlN2LRHbg224P86Pzqk6KvMh9PbA9Qrb6ba5CCYBxlTsMHelz9znUSYTy86uZab9VDZ1qptD1NwOgRFffTIR7CI7sXb2VPD90Z8fGG0r7q2w33Bt2xaEVSd5kaVS5sE4Bj0YqAfpgRRaugLh1jrJpHDDUrzvPVsZymLgdp%2BskMjCtj9UE88XoRP4IUmqVL9qjsOl9Qix6KEm6eB6Aw%3D%3D%7Ctkp%3ABk9SR_KTqLXDaA"
+          },
+          {
+            "title": "What Color Is Your Parachute? 2017 by Richard N. Bolles",
+            "price": 3.8,
+            "merchant": "{'username': 'seventhshelf', 'reviews': 2000, 'positive_feedback_in_percentage': 99.1}",
+            "url": "https://www.ebay.co.uk/itm/287551133422?_skw=What+Color+Is+Your+Parachute%3F+2017+Richard+N.+Bolles+book&epid=10038299752&itmmeta=01M8DNA1749MM9KY588AGC9WH7&hash=item42f36216ee:g:0lAAAeSwnxdqbg7T&itmprp=enc%3AAQALAAABICHNgUiiE%2FjQhlDTaMiAde9rv8ARQbAJPFRWBtjPUwEiSymIWnjNCGQiVUYQ4wMG05Y8z9TCJC%2BmIBxUM0qvx5oVipMMnAC6ushiZYjL3%2F8hCI2UixPLrRQF4YKGJOa731AadZ52n0WbVjxwHGQctKN%2B%2BSAoYCsRsdHgbKBem9Hi%2BpaDYlEH5wvQvbce3rSSp87lGkybqy08NQo%2BiZxKHGWD%2BK74N3prHhMK3dWnxjyfuWUTYVfdgRHI4bwHcqbB%2FTf19n1rRhKQFRL%2BdyqTKbP450dm0J7x2BDwQQrIIfLaNTzLhZlBK%2F32RnOYbf43BSDvCrRjiRjPJ7%2Bl2yV7Q6YdozPgCyvmsQktf%2FUi3SbN%2F3s4wYjR2DEi%2B%2Fhv8wu94g%3D%3D%7Ctkp%3ABk9SR_STqLXDaA"
+          },
+          {
+            "title": "What Color Is Your Parachute? 2018: A Practical M- 0399579648, Bolles, hardcover",
+            "price": 3.93,
+            "merchant": "{'username': 'your_online_bookstore', 'reviews': 861200, 'positive_feedback_in_percentage': 99.8}",
+            "url": "https://www.ebay.co.uk/itm/307254478261?_skw=What+Color+Is+Your+Parachute%3F+2017+Richard+N.+Bolles+book&epid=234768728&itmmeta=01M8DNA1755DEVAH00ZTFFBZ31&hash=item4789cb45b5:g:UfwAAeSwgIRrBmLi&itmprp=enc%3AAQALAAABICHNgUiiE%2FjQhlDTaMiAde9fWXJYgG86qnTakLLLBHp%2B07Su%2B1SCOdle3cX71K3V0Mn1u3Z%2FvTmG1m4llVPwF4DL6QPP21sYK2vvoG%2FKsRZD9QyWeG%2FcFHNrdaBYVuXJvitqzmKXpWeFk9DHv9zIqe8FmIcxNQzAHbByIXklabXzj5tPG14SZiMzTIEVrp%2Fcr%2BzjWWNnaR%2BsZuRERWz3WQnUeDeo%2ByTadmVp6LNbHjs%2FW0sU7374UsA6Hi9TA18Vsy25miN%2BZHMmRb3%2B94k7814X6xCASi6ivZfk5HvnwOc9NxsEDPggUsiT2a94yGJbbdGNNbLUa3Uwe1hBZfiR8sQiGo86Hc9WjtSht8rfy5F8Pqi5bxK%2BtEK%2BM8TwTLYkuA%3D%3D%7Ctkp%3ABk9SR_STqLXDaA"
+          },
+          {
+            "title": "What Color is Your Parachute? 2017: A Practical Manual for Job-Hunters and Ca.",
+            "price": 3.97,
+            "merchant": "{'username': 'awesomebooksuk', 'reviews': 2600000, 'positive_feedback_in_percentage': 99.7}",
+            "url": "https://www.ebay.co.uk/itm/312223395735?_skw=What+Color+Is+Your+Parachute%3F+2017+Richard+N.+Bolles+book&epid=21046541174&itmmeta=01M8DNA16W1TBN9HXDNMEMFH1P&hash=item48b1f6ef97:g:bZAAAOSwgsVbf8jG&itmprp=enc%3AAQALAAABICHNgUiiE%2FjQhlDTaMiAde8ClvPqP7C1uflMXZTeCeUr8RRGHuohwN87yA%2FbsK%2Fbqx5xC3hWNcwEGQDAawTySRfrhP0HpQKGZwI%2FEvWxvS9cUBcNWy%2FhK4EeQmMWHNIxsWPUWq7SP1H9q0eFaLdNo%2BxhODkeVhWuMz8NBmeWXqcHllZbZtQNuy7tV5X7NCeIjFJFPMxu2f7Ery1WRsTDa6A870N4IW47hWV%2BaQ8u7rG5RFQruKj0fdsSB8zc4miRlJO7RK3CaeTawp6Z15pK%2FCzqTIw91pFmJ7iYBlEWrhunPtuZAPnYApS%2BWIh8MFcyzR7tSRLnsKaWTaus%2Fc4baWXGXdG5MJpwYtrphts8BcRXXmbprJVyx13KG7nSNU6riw%3D%3D%7Ctkp%3ABFBM8JOotcNo"
+          },
+          {
+            "title": "What Color is Your Parachute? 2018: A Practical Manual for Job-H",
+            "price": 3.97,
+            "merchant": "{'username': 'awesomebooksuk', 'reviews': 2600000, 'positive_feedback_in_percentage': 99.7}",
+            "url": "https://www.ebay.co.uk/itm/398269536906?_skw=What+Color+Is+Your+Parachute%3F+2017+Richard+N.+Bolles+book&epid=238439374&itmmeta=01M8DNA16WX25AT4TP91FA5QFJ&hash=item5cbab6da8a:g:KzgAAeSwBJRqeZN0&itmprp=enc%3AAQALAAABICHNgUiiE%2FjQhlDTaMiAde9T0qJKweXAuqPn2Kyr0OMsDM%2BfK5xXlGBzPMrxbo3P4mot9TxyRZirerHojxue4FyH1DtiT8uis8lmM7U54bRkR1sQwiFUhMvfr6dP%2B2pzoVSQJ%2BbYdjXuRD40okLpR%2FN5b86qIv54XiOg86VcOHwfmBQPBLHtz7KNJj%2FVF1GJT2%2Fz7dc1GkTa0lzYlL%2FytCvEW0J7TuhmHcfL%2B%2FhAwIfzhK5JwdlLCAXEJ8zFCp9dfZuzdqrrEoEemhakKSEDZ9hsamxNbNGMG1wRrNkUIHEExaHrO63hRPcXrAhZfXvNn2%2FlIpgSrsx2IjWEjF9w2MJQOR4MHbnXT%2B8Cu0v2LV8UyPcvQ3IBapieIlRHqqNkuA%3D%3D%7Ctkp%3ABFBM8JOotcNo"
+          },
+          {
+            "title": "What Color is Your Parachute? 2017: A Practical Manual for Job-H",
+            "price": 3.97,
+            "merchant": "{'username': 'cmedia_group', 'reviews': 1600000, 'positive_feedback_in_percentage': 99.8}",
+            "url": "https://www.ebay.co.uk/itm/389776980420?_skw=What+Color+Is+Your+Parachute%3F+2017+Richard+N.+Bolles+book&epid=21046541174&itmmeta=01M8DNA16WG5Q632R8EHPCN279&hash=item5ac084b9c4:g:b~YAAeSwNW5pvgvq&itmprp=enc%3AAQALAAABICHNgUiiE%2FjQhlDTaMiAde%2B5Pl6ZsU9Yg2fDz8k5qAnb3ehM5cXOO2%2BUV4j337mxgDoUMa1oWczDRTZ4H2Ms29pKLJBufdVKvUJt9O8K21NXWt9j3B4N%2BZBtnetB6nMHOWsOu7%2FAPxgvtWT5kS465m7t6EByJPTsywMlly76ALS0rBoZGO30tLUNkjFFcql%2BR6L6BTVb2RikTv%2Fz2ZsAyeJ%2FnDeVTBCbClFfTe94G6WDZrw9KgxYKGhIzIVjaQQGwHPSLI%2FiAJydmMgn2bCxOdXCBy57bdV68J%2B4LoS9brXm5TH1HhFDVwNNmfOkjL1NUGyZOkA%2FJrmsjDn6bBhhAIB0EPYruE%2FkJnu6dKq9IHxYbs9YjWaTnaunsSO%2BEqpHUA%3D%3D%7Ctkp%3ABFBM8JOotcNo"
+          },
+          {
+            "title": "What Color is Your Parachute? 2017:..., Richard N. Boll",
+            "price": 4.0,
+            "merchant": "{'username': 'worldofbooks08', 'reviews': 11900000, 'positive_feedback_in_percentage': 99.5}",
+            "url": "https://www.ebay.co.uk/itm/145015393791?_skw=What+Color+Is+Your+Parachute%3F+2017+Richard+N.+Bolles+book&epid=21046541174&itmmeta=01M8DNA16T2XZYCWY2ZNKF8N7D&hash=item21c3974dff:g:gGsAAeSwEcxpNJpj&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde982qHkeWQTwsnAKuif%2BuF6ry7RhCoa%2Bm3eR1J8IkoCFejnRqQsisLaxbcVnFXTdeA8F01ZEQPTFxbVW%2BNta6W01qkFV%2FFHzCgOQL5rfiowarJD28VYCWabyla%2FT0%2FRpDP4Kf6ezB%2BD9nLrbgnhoTj2L8LtojXPZyiIwqOYd8zH5gXW5A1Bt9kosc8j%2Fz3Z4nmqlKI0pTxNWhrkVTV7TTBZlD%2BW%2BewpizU2X4L0Sn0u3yUekK0rVvnOqCkdVGV4EjkSvlAT41Vp55Xzows1AuPEuUzxcrTi4p2%2BviJwzlKj1B%2FYI18RbV8WylGuCOMxuuc%3D%7Ctkp%3ABk9SR-6TqLXDaA"
+          },
+          {
+            "title": "What Color Is Your Parachute? 2017: A Practical Manual for Job-Hunters and...",
+            "price": 4.1,
+            "merchant": "{'username': 'thrift.books', 'reviews': 4900000, 'positive_feedback_in_percentage': 99.7}",
+            "url": "https://www.ebay.co.uk/itm/198403529897?_skw=What+Color+Is+Your+Parachute%3F+2017+Richard+N.+Bolles+book&epid=10038299752&itmmeta=01M8DNA176E877YHQ74KC372TK&hash=item2e31c59ca9:g:pzQAAOSwdhJf~hCN&itmprp=enc%3AAQALAAABICHNgUiiE%2FjQhlDTaMiAde9zli365UjQyIx7DWEZemi15HsXcRUDPFc%2BaQTb8E8gk1m%2FwwixL8EYKBG2PneQIkh%2FPWM9jEvi%2FaMnLCIaTjK15gUCaCUEqluRP1o1WfcmZRJo8T%2FctPVk7j%2FLue5SdZu92V3DEX9D7fDs1F0m%2BRriLB9wcIxx79Y97InxOc%2F%2B1qZ%2BHSXA3nSHoO0Rm1G8vhMnGXCJmmFipLUoICgByEvPN9OmTy9aIZ4noaD4EqK63BWRuRvE5DU2amD1q9UfKQNKISy4M8X5xT%2FMebz0A8pNKTU%2Bj9OcvS5kAPLUAlF98TQIei%2BK1TaoZKMlAptdm9mrDCkQe8%2BrjNbUaOxQUKpvXFXkTSfTIy3mV1fpPeNqnQ%3D%3D%7Ctkp%3ABFBM9JOotcNo"
+          },
+          {
+            "title": "What Color Is Your Parachute? 2017, Richard N Bolles",
+            "price": 4.12,
+            "merchant": "{'username': 'worldofbooksinc', 'reviews': 383400, 'positive_feedback_in_percentage': 99.4}",
+            "url": "https://www.ebay.co.uk/itm/354620973297?_skw=What+Color+Is+Your+Parachute%3F+2017+Richard+N.+Bolles+book&epid=10038299752&itmmeta=01M8DNA16Y6PEA0SZ9V5CXFMPT&hash=item52910ea0f1:g:rMUAAeSwM6Bqj0T0&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde9s97fBQVEVSuT7AuapWeZU%2BohlD0n4GRjkpoVRX5vWqidDuSaXdXAg2m3Q%2FVjRtZovt2YqyEJGuSUt23sb%2Fvb9TqAlV4HZ8MCIHGaEp27OjZpF%2BWNAwbDbP8y8dIii5QYi7k%2F2TA4C1D0cMOVEW3C06LL13ew1zW0Oi5rXUvae%2B1QiQ%2BCi1KtRXc28D1YuSxZkzpGKWVodpgxLea%2FlLFYyQj0iVZxiJUMxv3dI9X53qWMavBrwSnHXLWeKUYAbO1UxvxTONy2tu1co1AhV%2F6rtYPtJaiPz78nC8HMrvYabEdIR2O0EWWeFkDuc%2FMwVHVo%3D%7Ctkp%3ABk9SR_CTqLXDaA"
+          },
+          {
+            "title": "What Color Is Your Parachute? 2017, Richard N Bolles",
+            "price": 4.12,
+            "merchant": "{'username': 'worldofbooksinc', 'reviews': 383400, 'positive_feedback_in_percentage': 99.4}",
+            "url": "https://www.ebay.co.uk/itm/354620973303?_skw=What+Color+Is+Your+Parachute%3F+2017+Richard+N.+Bolles+book&epid=10038299752&itmmeta=01M8DNA16Y129A9E27H65RYB9A&hash=item52910ea0f7:g:TCoAAeSwWhdqj0XW&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde8rKr%2FWmm8cOLPFn8jQVCJIOlrwFQ%2FY%2BVkfUm0zB8elCotanPucvbuKSYhtF5plu8uGfXhCYI7kdAoCvikzKP%2FIAlu6QaWX6vR%2FZAJuScrxylMrnO0KwV2%2F9iTtXz4Bx%2BrsG9EYfA%2BaLdMkrpTt%2FfxOyr4B9Pw6iy%2B2wAOQXfjqBFidjFkAN1%2Bqtv5RAVr5qS9V6BULRsVDHPOdx5LawPJ1BC4I6qVXI9OLg8UjjZFhRgM7HHF2bMMzo9ImZba4WdSFCVGo4txbIXBFKSoagXHVwcf52P%2FYxVV6%2FSelhM3YBurDmeAoCk046bmt3dDTBiU%3D%7Ctkp%3ABk9SR_CTqLXDaA"
+          },
+          {
+            "title": "What Color Is Your Parachute? 2017, Richard N Bolles",
+            "price": 4.12,
+            "merchant": "{'username': 'worldofbooksinc', 'reviews': 383400, 'positive_feedback_in_percentage': 99.4}",
+            "url": "https://www.ebay.co.uk/itm/354620973299?_skw=What+Color+Is+Your+Parachute%3F+2017+Richard+N.+Bolles+book&epid=10038299752&itmmeta=01M8DNA16Z5VWWEPAF4NQY56X0&hash=item52910ea0f3:g:X70AAeSw0KVqj0Wk&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde%2FWWNztipFvSY6gJJdyhz4Fi18YhkT1SUnyZM9Ha3o%2BfA0aGOXdP4VsQfLrfj0D3vd6RZ4mHq9TKau16BcKZEt7hH239CC03y8Jwkc59gAOzeNyeFbMMeoQhCkr%2Fzug4Ir1asLCf%2FZ6eFSFQ%2BrpvaALRrr1FYDPUIr%2BHDytw5pzNl9dli1nKak2X22P3BD9hcuSBr22zDQUHEtdr%2FLCJicpF8z4buw5UwZocJjowlj9wuetX7tz8Y6XZwFE9%2FWpJKtVJl626FnaemsJseao--IthVsazX4flwlXeLkDHe%2F%2Bl%2B%2BDtKNNYiicEPV8CD8u77Q%3D%7Ctkp%3ABk9SR_CTqLXDaA"
+          },
+          {
+            "title": "What Color Is Your Parachute? 2018, Richard N Bolles",
+            "price": 4.48,
+            "merchant": "{'username': 'worldofbooksinc', 'reviews': 383400, 'positive_feedback_in_percentage': 99.4}",
+            "url": "https://www.ebay.co.uk/itm/317539008937?_skw=What+Color+Is+Your+Parachute%3F+2017+Richard+N.+Bolles+book&epid=24038261502&itmmeta=01M8DNA170APM525GSG15VRPPC&hash=item49eeccc1a9:g:S0QAAeSw7ltq8c44&itmprp=enc%3AAQALAAABICHNgUiiE%2FjQhlDTaMiAde%2Fea1Da4l6yN5mKCBG388tF%2FB%2BUzJKJkorJmdLrqU7VtU60y8Z%2FUaS0BRjBf6dOfEwDIie%2F0nY8vLWc8d7snXoqjTryScqL3tec%2FE9HrwHv%2B52hm5ATFWVwwyYweoZ23rMDi%2B%2BljoK%2BJTyQszogNf6vb2t1ZytLLCYVR0uo3pxhTjzBVtJ9WL%2Bdcfhcm9JZGBnKQxee3jPDCO%2Fn1guUcK9QCI%2FU2x3TyytmnPgLiKPZvXJtCYG0YxHYuQUNoqqrThGEIaUoTHuw47JFnNEFKSERDVxMoOxo7bY8%2FNrKx7lCqcCo%2BmpMwj8zJ4xXICz8btW4DkOxG1B8NTmwgPdZ9rxWIqwLsfbUwWoipi0imtNjRQ%3D%3D%7Ctkp%3ABk9SR_KTqLXDaA"
+          },
+          {
+            "title": "What Color Is Your Parachute? 2018, Richard N Bolles",
+            "price": 4.48,
+            "merchant": "{'username': 'worldofbooksinc', 'reviews': 383400, 'positive_feedback_in_percentage': 99.4}",
+            "url": "https://www.ebay.co.uk/itm/354620973316?_skw=What+Color+Is+Your+Parachute%3F+2017+Richard+N.+Bolles+book&epid=24038261502&itmmeta=01M8DNA171NC3GJDCWR2SJBGSR&hash=item52910ea104:g:S1cAAeSw7ltq8c46&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde%2Bqw%2Byx5NwKAR5o3Rt7DvUVitcnIMUSXiJ%2FNC5kpNpy25TKWgEByxSsGa6buutm7U5p3AO8AHVhQBnoBw57mM0AC78aLP1AyIHDZcCVVjcKTDDSto8RdtCXfDjsMiXgmy9WtGC1lSikp26iQ4MJmc8WIsr3brDIyPaNK%2FFp2SDV2HqZvnGh2Uol%2BUTajk8%2BO%2BuXXQCfGG%2FfZJtOy6AKPO5jH9Twow1NQG4C3qbCrNWauLr3d%2B4pKmpdQ7QmS4Xx5UD%2BGaP8k9aKH%2FXFxd0JAu4kuGcRlj8ExpArxaqXF2%2FKA5V3I7ZkNtDCd6bChO8e8pQ%3D%7Ctkp%3ABk9SR_KTqLXDaA"
+          },
+          {
+            "title": "What Color Is Your Parachute? - Paperback, by Bolles Richard N. - Acceptable n",
+            "price": 4.64,
+            "merchant": "{'username': 'booksrun', 'reviews': 542900, 'positive_feedback_in_percentage': 99.7}",
+            "url": "https://www.ebay.co.uk/itm/406820834267?_skw=What+Color+Is+Your+Parachute%3F+2017+Richard+N.+Bolles+book&epid=24038261502&itmmeta=01M8DNA170TCVDGJYZ2WH205M7&hash=item5eb8694bdb:g:r5gAAeSwc1VrCEM5&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde%2BQyH6GlpHVPAgOKS1HZ8mzkgIAzIque4Q4m2XXq0yR2GNE6Yi6as4BPC4fEOhXYUiro7EcFhu5uuAV%2BZtvUDn%2FuI7tZaMFNB%2F6zXFsc2YhMxfCAhajHoFNnWvFIBzG784mf8637p0KpxQPsfa7oIwZlWmMzhi0k0o21v43AcSFPCA0lbzl7hmBXysRHXMCBOT407jePBKO6QihnXc%2FVlpL2YXSD3hHdy8g4zWhmbmkPeeJX2X%2FDZEi%2BDLBLEkqR%2FlxiMqS8nCObXI5hS5WVn%2BPGZbKWQ%2By%2Fxn%2Bp4iHsz3OL%2BjbW9UI6ImNuLYF8%2FX83e4%3D%7Ctkp%3ABk9SR_KTqLXDaA"
+          },
+          {
+            "title": "Richard N. Bolles What Color Is Your Parachute? 2018 Paperback Ten Speed",
+            "price": 4.75,
+            "merchant": "{'username': 'auto_technology2', 'reviews': 12, 'positive_feedback_in_percentage': 100}",
+            "url": "https://www.ebay.co.uk/itm/398182993254?_skw=What+Color+Is+Your+Parachute%3F+2017+Richard+N.+Bolles+book&epid=238439374&itmmeta=01M8DNA16XSEB40V5CMYP2FN82&hash=item5cb58e4d66:g:EK8AAeSwHflqWZg5&itmprp=enc%3AAQALAAABICHNgUiiE%2FjQhlDTaMiAde%2FznRZF3mcOkrRtl8okySrEGoFUeNG%2B8PikSK3job1DtTt5CFXct5E2EvA%2Fq1wfGh0i3S0aCGpO37z483I2YoDSpAEfqHt1a%2BquipVeYPb%2BuOBM8fqnDUFvufL9ssMtbjlc9ZfgoYAH4%2BhkwQlEH4lyZMxcWGNpLqORuiHmtN9vV9j%2B%2BZPw4z3GHhVturpQbtB2kFQkGtwqO4fZCGSuldBbIaaQkQtnHnX7Gxjld7gzSemLI2zsOc3W1TT6%2FAI1OP3fO9T7ZF0MyexQZeiPhekQ%2BLVHQbbdNnwizddDWnSUe%2B4itKopoV7h%2Bin8Lb5aV9YxqnTTsj6Hr7j2DWJBZDZciP1dNUfo0OQ1bOkGKUAzJQ%3D%3D%7Ctkp%3ABk9SR_CTqLXDaA"
+          },
+          {
+            "title": "What Color Is Your Parachute? - Paperback, by Bolles Richard N. - Very Good c",
+            "price": 4.91,
+            "merchant": "{'username': 'booksrun', 'reviews': 542900, 'positive_feedback_in_percentage': 99.7}",
+            "url": "https://www.ebay.co.uk/itm/147381631753?_skw=What+Color+Is+Your+Parachute%3F+2017+Richard+N.+Bolles+book&epid=24038261502&itmmeta=01M8DNA16Y7MD0ZNEFQH99ANQE&hash=item2250a13b09:g:KrUAAeSwjwxrCNrX&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde9QiJJWkLYdOGqOw8Cawrl5nc2pYffORFcVm4MgGTerxbakA1HzCO8rPJREKoimvBNdPA%2FUjRLUiDEtHaMdpk%2BmLj3eilLMezi22DBGcgjmm2Hr%2F8tQ29NdCgZLy9XE4D%2Be9F1V%2BIRDcsnyFG3WLBuml0NMrVpNcFnH3%2BgF0LMLE%2BUHN702lORThl5zKvxOfKVlZMsrQi7hozEKRjudMe97bDvcfqSFJJ0kwN4FDeKFw4VsE1jNcVtKPREqjpIjwG7RR9qaWyhbZSR9zuyO%2Fu9UPlEz8QB6Yd%2Fi8gFukd1VOFniVTXjj3SVl5KB38KOeoc%3D%7Ctkp%3ABk9SR_CTqLXDaA"
+          },
+          {
+            "title": "What Color Is Your Parachute? 2018 : A Practical Manual for Job-H",
+            "price": 5.03,
+            "merchant": "{'username': 'better_world_books_uk', 'reviews': 754500, 'positive_feedback_in_percentage': 99.6}",
+            "url": "https://www.ebay.co.uk/itm/297992082462?_skw=What+Color+Is+Your+Parachute%3F+2017+Richard+N.+Bolles+book&epid=238439374&itmmeta=01M8DNA173J04TNWMHNK51C2RF&hash=item4561b6541e:g:cGYAAeSwVWFpgDUh&itmprp=enc%3AAQALAAABICHNgUiiE%2FjQhlDTaMiAde%2BfaTVTWE1iz8jsGEUsJDFHUx2epIi27cGGyL82BUKYme8D6pGaI3tudc2InijlIOtHMmzXLPvghZw07l%2FbkA3%2B9ekILsq7jsAfbX84ZRe%2F0mJp%2BlgAoi88qAuV%2B%2BGgqtjvhjafrqWVZmRRwsSLD1Qp%2FzhEpgSmbj4Cz7JewMOi1%2FgLT3W4QlJEpGMpiZkOS6k4PE98CaInt9nElIm3WQHn%2B1U3bGENwpGZuFfFdUj02qOau%2FYTcAO1jTFzlyThBcsZMYqRAPXWZVJDWOPgHnj7gMlkVXpBFQpQNptqzb%2BMhqiWXMUMGqnsoXoCgWYivQh%2F9LSrJO67qLux5wZcjKYASMtehHpgTqIZJufZfntJWA%3D%3D%7Ctkp%3ABk9SR_KTqLXDaA"
+          },
+          {
+            "title": "What Color Is Your Parachute? 2017 : A Practical Manual for Job-H",
+            "price": 5.03,
+            "merchant": "{'username': 'better_world_books_uk', 'reviews': 754500, 'positive_feedback_in_percentage': 99.6}",
+            "url": "https://www.ebay.co.uk/itm/116998332557?_skw=What+Color+Is+Your+Parachute%3F+2017+Richard+N.+Bolles+book&epid=21046541174&itmmeta=01M8DNA174Y3ED1TK72HM2K2QA&hash=item1b3da4e08d:g:7HIAAeSwD3ZpdFee&itmprp=enc%3AAQALAAABICHNgUiiE%2FjQhlDTaMiAde9R6Hhkl2GxuYr0OWkxGioSfiJXEfKjaT%2FnClpqk%2FXLcIYz1DKLTL706a9gUy24R%2BbJ4L1b2lC36MZlyGC4ezXScj49%2FROwqAp1tSe5Z3iH%2B36FDy7V0qiZtxuzqvCKblaSzXw%2BbsAHx1ITdiA2GoazDFJVgvYoB7tglEPGxaspNJEt06ZffKR4nJaScn10fgWm3xFjA87n9KF7cGrpIxkLBznlu9SFK%2FxatcWtEe4AhRd%2B0ibNnLwnFYBY4slxeZf7QJXnHIyDMnsncTXTsKsojlUF298BqJ4uqclB7vcXKZM45txYpC6X7Wlqda0fRrjwrFAXH91UfUrMl7TCjbMEim3ez6yuQzEjB5tEQL8GCw%3D%3D%7Ctkp%3ABk9SR_KTqLXDaA"
+          },
+          {
+            "title": "What Color Is Your Parachute? 2017: A Practical ... | Book | condition very good",
+            "price": 5.05,
+            "merchant": "{'username': 'momox_uk', 'reviews': 621200, 'positive_feedback_in_percentage': 97.8}",
+            "url": "https://www.ebay.co.uk/itm/168500294519?_skw=What+Color+Is+Your+Parachute%3F+2017+Richard+N.+Bolles+book&epid=21046541174&itmmeta=01M8DNA172JGC3A43TKEAQZ1DR&hash=item273b667377:g:r2sAAeSwsYZq7sBl&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde%2BOZphitngYSAlvjjHykjN2AVJZKe1bi%2FB5hXw7aWXC%2FBbeT%2Fw2TLhoqkPnDszoL%2FPyFJrFrZdkYmfP%2BFR0koss0CJIwjuWnM2fFWZVrVeHQOP9V9XPrnmNMj56gbYW1j9Xp0thXjSvhm5ppRsljV6anBFSSwVPi0RFekdeXdTVf%2B1UESHmxVJeBWxgNlMDwgSD7L1lYCkn8pwtiYmoSvnp%2FjkV4isvgsYy%2FJV2wVGBt%2BrgP6Fy9iAZ13jZQLwIG7b1keZXzU9Ga%2FOQu1ZWvPqKRut1d%2F6gywb9G4DDEQXKWXzYGqiWd3EA6ZRd9qpphDs%3D%7Ctkp%3ABk9SR_KTqLXDaA"
+          },
+          {
+            "title": "What Color Is Your Parachute? - Paperback, by Bolles Richard N. - Very Good q",
+            "price": 5.18,
+            "merchant": "{'username': 'booksrun', 'reviews': 542900, 'positive_feedback_in_percentage': 99.7}",
+            "url": "https://www.ebay.co.uk/itm/406750816996?_skw=What+Color+Is+Your+Parachute%3F+2017+Richard+N.+Bolles+book&epid=24038261502&itmmeta=01M8DNA16YJJ9X50Q9RRWAJH3F&hash=item5eb43ceae4:g:~F4AAeSwtWRrCNHF&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde9Xoo%2Bx8UsrQo%2B26Qd7sALd0oOGutPPVsp606hDdAfkLvl2FHGIRiXFyhrkKg0pO4kfZ6eeYOLU7oJfCL5nOp0CgljKGSiaInSinU5FPskzmMT9xQKkXns6nqq%2BZ%2F0gnwzUNWTjTuxNfdIdbroyR%2Bf6apwTmdBks2jNoosqcoENTZD1vRIVxsugAZzwI8DdevWjRpT3BopHEQCB9y%2BSHl%2FmObBP3q3dbEGb1dtG%2FL9SA%2B5pzOYFyVYPYQibDyg%2F0ikzWQ%2BIh78UwmUPOUlFANeY%2Fk%2F3%2Bp7EYKhciRD%2B3aDOempzW1QuBiL%2BAQWaCRlFZq0%3D%7Ctkp%3ABk9SR_CTqLXDaA"
+          },
+          {
+            "title": "What Color Is Your Parachute? 2018 : A Practical Manual for Job-H",
+            "price": 5.21,
+            "merchant": "{'username': 'betterworldbookswest', 'reviews': 579500, 'positive_feedback_in_percentage': 99.7}",
+            "url": "https://www.ebay.co.uk/itm/376741155410?_skw=What+Color+Is+Your+Parachute%3F+2017+Richard+N.+Bolles+book&epid=234768728&itmmeta=01M8DNA171M0487XA6NKAFK1WK&hash=item57b785d252:g:yxsAAeSwWORpLAKj&itmprp=enc%3AAQALAAABICHNgUiiE%2FjQhlDTaMiAde%2FL8sHu3rZDhT8B0keKsaQkoX3S840osGksxZjQr30LI5jsHT1y8Xpz9J3DBopV14IeNs0Iq1Kja9lntK0uOGthqcpVbA%2BNhTc0ZqnxkMAJFWUR6Y6H%2FeI8%2B7c%2FaVp2f%2BmSdYWe1Dd2SsaMxcgwlQKTABN6UdcPpkp7pBJb%2BwGEVTp3Iihv9ijqEviieim6Rc0b8nmYJHwvX8CaPP6B2k%2Br8U4YwkxwjAvoEkxMw%2FWxzexwE8n5uEfzlUQggOSVR1gxMFfer3NBzHRpq5BLuL59pAYIHMzmjG76ntZpSMuQYO9CqccWk19Fk0xKVH0EvWrq9KUpVOJECW8wk571%2BpIadR1GW8REisoHYz2l0hKcRA%3D%3D%7Ctkp%3ABFBM8pOotcNo"
+          },
+          {
+            "title": "What Color is Your Parachute? 2017: A Practical Manual for Job-Hunters and Caree",
+            "price": 5.3,
+            "merchant": "{'username': 'harland_white_trading', 'reviews': 33100, 'positive_feedback_in_percentage': 99.1}",
+            "url": "https://www.ebay.co.uk/itm/295576585274?_skw=What+Color+Is+Your+Parachute%3F+2017+Richard+N.+Bolles+book&epid=21046541174&itmmeta=01M8DNA170ESABNSEWK4H7ZKQ7&hash=item44d1bcc43a:g:8HsAAeSwiB1q5FJ~&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde%2FCTJ1FJiOCoiK39p9A%2FdupzBCbmXfKiXIvsYm12LbHVOvuetnZY56BSJaQWSBuGWK7eZCCt1lsR2OJSrjxiNe9y4ROSdiUlr8vK07pdE2oGBS1FYaXFKKUJ8R5C3IINklYCkuw9sh82avKe8WOb1QNmQ3y4u1coby%2F80MfOhvhmRQr%2BddBblWls%2FCSLEP3wGASwvJCnH8%2Fz4%2F9WHAhqMdh5wNJhp9AlRsXAA98%2BR5%2BmaXIzcg5%2F6FNUz5Mf3zqUS9aGfFqwJ1qgvU73qlvb9vx8qg10IAzOIpAn4m8xDw%2FSGDwipziOBhJIHdCyDvXsUE%3D%7Ctkp%3ABk9SR_KTqLXDaA"
+          },
+          {
+            "title": "What Color Is Your Parachute? 2018:..., Richard N Bolle",
+            "price": 5.44,
+            "merchant": "{'username': 'worldofbooksinc', 'reviews': 383400, 'positive_feedback_in_percentage': 99.4}",
+            "url": "https://www.ebay.co.uk/itm/277541737383?_skw=What+Color+Is+Your+Parachute%3F+2017+Richard+N.+Bolles+book&epid=234768728&itmmeta=01M8DNA172NCB0841NPFXCZBV6&hash=item409ec6d3a7:g:l3cAAeSwFPZq8THx&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde8kXzp9r4ih%2BE6fiiE0K3rwihVapq9EQP3A3RaEB87mDPfWIMcmdYL1pA5OJv0ixQN3%2FffADpJHju%2Bv4CHL11p0TMaWaJUpyegUSysvbaRFjlFmkV56WOA%2FE7JCvZNwBSYC99gcuCPvUpIjDaKI2hZKMe76emb9zzKFjG870hsqsJa7oArlyhH%2FCjpBcRBO%2FsG5HlTyRqxEldbN0Q0MR4m5zHw8m60bKfwl5eOW8vF3tGOiAX%2Fg%2F2K%2BCX7pfhJihqEBsDVEVZuNIT4aaqh1NJypvBUZg30A0tiDLth7YpZuRH46XxgB8d2nMn%2BOubfR4%2BM%3D%7Ctkp%3ABk9SR_KTqLXDaA"
+          },
+          {
+            "title": "What Color is Your Parachute? 2017: A Practical Manual for Job-Hunters and Caree",
+            "price": 5.97,
+            "merchant": "{'username': 'brit_books_xp', 'reviews': 944800, 'positive_feedback_in_percentage': 99.3}",
+            "url": "https://www.ebay.co.uk/itm/313637090051?_skw=What+Color+Is+Your+Parachute%3F+2017+Richard+N.+Bolles+book&epid=222462783&itmmeta=01M8DNA16YWA4RB2CHGZYVVGAG&hash=item49063a3303:g:R9YAAOSwKWJhFhmw&itmprp=enc%3AAQALAAABICHNgUiiE%2FjQhlDTaMiAde%2Fuo%2BJEMtTqj5fzvtGez7cOPJBCP6u%2B9bWlJogwZyu9FOhcLG074thANdREynnY5t0tjcEzDN%2BezSqmRyQ%2BlmhRUUl2V6cBbEy8nsQTebTZa6HX5zL2npgypAXA%2Bo7mlKP3CWk02ydELLp5tev08V4XQnMlUYoXybeHFqAzqI6f4%2BylIr6AfAONtp%2BnVZJaMg1Ue8FgV2FDwabVe8FiyJq8BtvW1m6quIYBy7qubIBR5dbaKUhviZYEYHb3%2Bd%2FvifVD4ajrPNZHEBXJIsKK9pXXbqjmirrL7uIP9fPsbarnS0IvBmv%2Fkjh9vGKNoZEdzsdvMyQEajFGD%2BBUDaXaIUYOaZSJ%2BY62aTDkuAxAKYRo%2Fg%3D%3D%7Ctkp%3ABk9SR_CTqLXDaA"
+          },
+          {
+            "title": "What Color is Your Parachute? 2018:... by Richard N. Bolles Paperback / softback",
+            "price": 6.01,
+            "merchant": "{'username': 'worldofbooksusa', 'reviews': 1400000, 'positive_feedback_in_percentage': 98.9}",
+            "url": "https://www.ebay.co.uk/itm/304862476846?_skw=What+Color+Is+Your+Parachute%3F+2017+Richard+N.+Bolles+book&epid=24038261502&itmmeta=01M8DNA172WC2KDK5RQ3A6R15B&hash=item46fb383a2e:g:V5AAAeSw1bBpM-50&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde9SPZO8lgNalBf3eCL%2FpdxVnzEUvPlkma7oxocxmzPqvQFdJ4U4nwqaXh6%2FWKiftFUNvMMfry7ZDc6nnWvbSk0%2BUVW3JIRyX%2Fx8inXGFsh1boG4RNr2FCQZC5ho%2Bq9W6bM7nkCfS3WVAJHSo70T5oIPwVj7sRRSIvboI4h0c4ltRMXlJ25MrxkBLAaj7F7gyTCD5mi2H5A4o9%2FIZjLdTwRQiBdCgz5X9Gbu6x%2FMCEORfPBNJ55AMnc%2BOx8G7bcVyeBQq63GUhg2pwlMAeTkV749jhM%2F1IS1I%2BaNO7D6TlPOtQk8RY74DE4tP3w482Lyjs8%3D%7Ctkp%3ABk9SR_KTqLXDaA"
+          },
+          {
+            "title": "What Color is Your Parachute? 2017:... by Richard N. Bolles Paperback / softback",
+            "price": 6.01,
+            "merchant": "{'username': 'worldofbooksusa', 'reviews': 1400000, 'positive_feedback_in_percentage': 98.9}",
+            "url": "https://www.ebay.co.uk/itm/385510358264?_skw=What+Color+Is+Your+Parachute%3F+2017+Richard+N.+Bolles+book&epid=10038299752&itmmeta=01M8DNA1732SEHMCDESK7JVSHN&hash=item59c2353cf8:g:x24AAeSw46lpN7KK&itmprp=enc%3AAQALAAABICHNgUiiE%2FjQhlDTaMiAde%2FIb6rIkTcA52L46cN9a7jCDtg0CAD4m7pC90QAvTWqPEepXjs7yO%2FfPOVcWfL%2BxOVNcz5nyJKOl%2FWuchfzTzAXG%2BgDBSTrnn%2Fb3U4MLuu9Js5FSxCFv0vLLG0P7V6ZfAqlDqqewT3YM%2BcmX7Zrwr0mEmLl29InXygSvsUoZBIVzShbZrn77Wj2oQbQjE7KuHCLmBZURqDP7rQ--O7K6CeWeYXd4JkHvYgiXuaEMDbLbawyEGTo9Lh01KB4pmuNlhTY9ZDJpWYDzPTtSSsE5%2FgC7fZfLWsOtdLZu0wEAvbW%2BeHLajhIQRLikQzwzqrBpioi1Xn3KfF9ydTN4JIfxhmmERD3n7aK43l%2BxzWrIK45og%3D%3D%7Ctkp%3ABk9SR_KTqLXDaA"
+          }
+        ]
+      },
+      "appraisal": {
+        "flag": false,
+        "reasons": []
+      },
+      "query": "What Color Is Your Parachute? 2017 Richard N. Bolles book"
+    },
+    "b_0007": {
+      "new": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T04:48:01.343247+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": null
+      },
+      "used": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T04:48:01.343247+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": "Used \u2013 Good"
+      },
+      "appraisal": {
+        "flag": false,
+        "reasons": []
+      }
+    },
+    "b_0008": {
+      "new": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T04:48:01.343247+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": null
+      },
+      "used": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T04:48:01.343247+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": "Used \u2013 Good"
+      },
+      "appraisal": {
+        "flag": false,
+        "reasons": []
+      }
+    },
+    "b_0009": {
+      "new": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T04:48:01.343247+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": null
+      },
+      "used": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T04:48:01.343247+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": "Used \u2013 Good"
+      },
+      "appraisal": {
+        "flag": false,
+        "reasons": []
+      }
+    },
+    "b_0010": {
+      "new": {
+        "amount": null,
+        "currency": "INR",
+        "source": "SerpAPI",
+        "url": "https://serpapi.com/search.json?engine=google_shopping&q=The+Lords+of+Easy+Money+Christopher+Leonard+book&gl=in&hl=en&google_domain=google.co.in&api_key=REDACTED",
+        "retrieved_at": "2026-11-27T04:48:01.343247+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "evidence/prices/b_0010_new.json",
+        "price_status": "not_found",
+        "condition_assumed": null,
+        "offers_used": []
+      },
+      "used": {
+        "amount": 1292.5638,
+        "currency": "INR",
+        "source": "{'username': 'thesixth', 'reviews': 2200, 'positive_feedback_in_percentage': 99.3} via SerpAPI",
+        "url": "https://www.ebay.co.uk/itm/168580698837?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=28050407162&itmmeta=01M8DNA54NRP0AT9MYZ76DG4SW&hash=item27403152d5:g:M7AAAeSwRTtqbhC3&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2BUBRRZp0Bb5Rn4l7G6TqAXYOU%2FuoJYdID74Oz2jpZiEdJe10DrGYmAtssK75Lsr2jMAIii9JOB4d24IUB9QPOkDGhQAM6DD%2BdmV4p%2FPCbT3u8jtKJ%2Fll7%2B5wHZvNrkq%2Bv9Q4YWIfEFwDjXZF7ql3VUeCQNXBZwiTltcs8ihzUrZRVDBmw3jnpWRLPHMzBnYG4U4P2H8sBas%2BuermskQNVwZR4B9F%2B5iK8R43aoGYZHz0e%2FDOEHz6oRiMEG76hG33QdNjQB73OjKF3pspIKn2P%2FRbb8YDuXOl%2BhNkBjVDmA3w%3D%3D%7Ctkp%3ABk9SR9bSqLXDaA",
+        "retrieved_at": "2026-11-27T04:48:01.343247+00:00",
+        "converted": true,
+        "original_amount": 10.67,
+        "original_currency": "GBP",
+        "fx": {
+          "from_currency": "GBP",
+          "to_currency": "INR",
+          "rate": 121.14,
+          "rate_date": "2026-11-26",
+          "source": "Frankfurter",
+          "url": "https://api.frankfurter.dev/v1/latest?base=GBP&symbols=INR"
+        },
+        "n_offers": 23,
+        "snapshot_path": "evidence/prices/b_0010_used.json",
+        "price_status": "priced",
+        "condition_assumed": "Used \u2013 Good",
+        "offers_used": [
+          {
+            "title": "Lords of Easy Money : How the Federal Reserve Broke the American Economy by...",
+            "price": 3.55,
+            "merchant": "{'username': 'danieuzu0', 'reviews': 873, 'positive_feedback_in_percentage': 100}",
+            "url": "https://www.ebay.co.uk/itm/286887498391?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=14057263375&itmmeta=01M8DNA54MQ196G6JPF48800FK&hash=item42cbd3d297:g:i54AAeSwYrBo9aYy&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2FB4LXkFHorh%2BHVRBVs5CSosNsrj2nzP4MO4N2JbHvvk%2BNAs94awlbzp3ATHzvuUY6BskTZCtBGizWoRT7%2BlNxDGHF4rWHRcQi%2BPzhsOdRr6305mUz77gpMVMYG6iIXVmjIVUq%2FuPzLTmjj5mlTQBCT%2BGWAAhOGPEX2av7amRjY%2B8lHHxTS79qivuivw1xj%2Bpb0mm7qi5Gocsu11pMKCp7JonrT4DWG1G%2BKPbE3ys3aYqxbM3WOgNXy7E%2FZChBdLDca%2BSwltf1U3fGU3g%2B4zbJSWRM1xr%2B%2BcwdW4JKHiJIkyoi96PdrzQcIOf5WHLRC7xL%2Bc1X8JhNAGT0sgNojqGwR%7Ctkp%3ABk9SR9bSqLXDaA"
+          },
+          {
+            "title": "The Lords of Easy Money by Christopher Leonard",
+            "price": 5.33,
+            "merchant": "{'username': 'seventhshelf', 'reviews': 2000, 'positive_feedback_in_percentage': 99.1}",
+            "url": "https://www.ebay.co.uk/itm/287551154565?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=14057263375&itmmeta=01M8DNA54MYJH3DZ9Z0A4WVGBH&hash=item42f3626985:g:KJMAAeSwBGxqbhDb&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde87SFDmYZAGaj0gTGSdv8xKpVruWiO19lRlphqaBU8wvfJ%2BU7G2PdOYJM%2BZwanO0jAFby3Z8ST5ksbujQsGMwaAyt1%2Fj%2FfOMnwaVwlHjBMwY62F3eaWotjvMctv3Gi0J%2FhPV0kWl9jjJU%2BSbP1BxUfUaAWXDqP0YbMFOW1nYQE9xTsIOHRSfpVEo%2B30rDyBjsPslPFnz5Q2rfW7Z1ifcj0XTLjwHEYJQBtUZn750ybW6i68ZODUL49CiX6hn%2FD%2FYDLodfNsZhbBbwYpMuRBGxL62Y34zopFN9NQT7JZ3oTkHkLVyiXaQY%2F5PYAnGBweHmfmaQljIhcI2al3vgPzGs77%7Ctkp%3ABk9SR9bSqLXDaA"
+          },
+          {
+            "title": "The Lords of Easy Money: How the Federal Reserve Broke the American Economy",
+            "price": 7.82,
+            "merchant": "{'username': 'goodwillbookworksaustin', 'reviews': 287200, 'positive_feedback_in_percentage': 99.8}",
+            "url": "https://www.ebay.co.uk/itm/366767354756?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=28050407162&itmmeta=01M8DNA54MHVJMSE5BEX772EJ6&hash=item556509b384:g:3UoAAeSwxURrCG8n&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2FuVf4rvlAM3538VY1pOHrreamWqscGD7Ew1ZOZqqhej38qpzSadUdeUh9BQDuWo1GceI666i7HQfMgCrb7q9P5dYfR0hTJp%2FSSEWHYZgefrbqb4Xyg2uZ087JW4X5ZpNeF7wrMhr6XwgLQw0rc9diqxkvingyZbas3M0q7059Cpg6cQPZb7MOkENZwTxJzACjm7t5Zfud0wSmKMPYwlxKHkneNDc%2BIyYoayb02yWFYnXR7YSP1GZpepsQ2u6p1gucGNooGO0hXBNYpXWc9lzU4T6rpODHfx59H40AMeD8xEA%3D%3D%7Ctkp%3ABk9SR9bSqLXDaA"
+          },
+          {
+            "title": "The Lords of Easy Money : How the Federal Reserve Broke the Ameri",
+            "price": 8.13,
+            "merchant": "{'username': 'betterworldbookswest', 'reviews': 579500, 'positive_feedback_in_percentage': 99.7}",
+            "url": "https://www.ebay.co.uk/itm/398128510657?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=28050407162&itmmeta=01M8DNA54P5S824183B30K790M&hash=item5cb24ef6c1:g:0aMAAeSw9wNqRTRl&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8mxsY8W1rB9k019QSo%2BlpLWX3uGBnRUJAddGQ8l7QJGDR4IUJAX5j2MPb2xXlZRqC27XUD%2Fhc7R%2Fh33uhAGdhpSBSS%2FnOa52ZctE3n%2FidKd8Bcor3z%2FxrbgXAPsJWF2uNhhk0iqNzGEZo%2F5tybOAGbfJ5awdhDXoHFGmkMXIYTkCn%2FjDmNryMW2KIloXSeNb%2B8aWsNSlV%2F8FTAtaBsCVMr1REku8Wki%2FR0o%2BRIn5FZk0t6Vsq5SQx82XEW7GM0XYgwU6Iclb2G%2FPvMbGyIB94wMGC0Ou1z2iTcWHGpGFnzF53A2kQ6LCyTiepH%2BRMnk02PagGRKQZPl93e7DnjcRWY%7Ctkp%3ABk9SR9jSqLXDaA"
+          },
+          {
+            "title": "The Lords of Easy Money : How the Federal Reserve Broke the Ameri",
+            "price": 8.13,
+            "merchant": "{'username': 'betterworldbooks', 'reviews': 3300000, 'positive_feedback_in_percentage': 99.7}",
+            "url": "https://www.ebay.co.uk/itm/227586563428?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=28050407162&itmmeta=01M8DNA54PWDN4MM77T4WQBMHY&hash=item34fd375d64:g:GSsAAeSwYONq4Xs-&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2BgvBEFz2bFUrjNCj3hQ3sbKuWf4MJ%2FLQvTW0Ajecu4n%2B50R40jfXN2Rio3cv2kC5RSuxGNtUhLwFJAahD%2F71PLtzUAiAQHvgwPZgDqb63MbPLinXKkcU1i5M40agmiT%2FX6%2Bq0tdp0%2F4lLE0ToHaHG6ZtClajVHUwtDoP%2FsN0zGRoFiZQau%2F3ih7L3OH%2Fa2qbvWKE%2BjB9x%2F3Wtrt6lVd8f0opiaV%2BxHHYbOPqdgNZ7bGZ0J6qB9JmO0KEc88p1zFDB5%2BA7QZxa%2FinbjNoRQBTOwefo42E1qxV5zdLmolipbEywI6qHF1XEkCZLsuo1ZBqd48N4w1bOt7LpReGs0Ytnz%7Ctkp%3ABFBM2NKotcNo"
+          },
+          {
+            "title": "The Lords of Easy Money : How the Federal Reserve Broke the Ameri",
+            "price": 8.13,
+            "merchant": "{'username': 'betterworldbooks', 'reviews': 3300000, 'positive_feedback_in_percentage': 99.7}",
+            "url": "https://www.ebay.co.uk/itm/227612108338?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=28050407162&itmmeta=01M8DNA54P4MXTSBE62DPQVEWH&hash=item34febd2632:g:e4IAAeSw1Y5q9qE6&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8X7i%2BW78NoYYKGSoO%2BgBnaSBqiN2CrXF8OpZ9VSnt%2BXsprkbJrqgOnyGrgGNLg8HAhjTliLODV0G0mvi2cWSUU3Lf4omB5fAnX7m0nX9tJKEEQAXUj7Qq3gIj%2FyOKncijAhvHVoCkuYWiVj0pG5hAh2eroFpBEaa7hJl48FRGZaHJVhvhMQw4l2t9MsSJ9K5mZS2qZQr9TlKVDqCKuLUR7Rla7zBQAtftlnWryHdNeBSBFjPCoWXPhGakUNHWjXqRsU77jzanDjJ6MTbgC4hVEvb%2By9jgCkyChiuBbOqCyDLeYVMVPGXsJZ%2F3XL18mmJGqTLeUgA2tXNkwx8KC86kL%7Ctkp%3ABFBM2NKotcNo"
+          },
+          {
+            "title": "The Lords of Easy Money: How - Hardcover, by Leonard Christopher - Very Good b",
+            "price": 8.3,
+            "merchant": "{'username': 'booksrun', 'reviews': 542900, 'positive_feedback_in_percentage': 99.7}",
+            "url": "https://www.ebay.co.uk/itm/128174001230?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=28050407162&itmmeta=01M8DNA54G6T2J4VYQ3G438KTB&hash=item1dd7c40c4e:g:L9MAAeSw9rJrCP6i&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2FIisXAUfteyjQ2XJFj3NqDQmMJDkMn1zQNEIFw2e4oXp7lWrCP2wiS4jt5Js6fPjxJHWEHH5Eaj40I6isCIDH4vf2AA%2BN51FR6ljNTRdRPv1QUG6WEkD2Rx7HoaB2gGP36vIb0hSBzSG2XWEH2UgC5gA6ve%2BFaipE08is71mMb6Oze7%2BzvT%2Fh3wj1o9VIHE0wYhUr22weFEnAfJBBWm3N%2Bx9GrJYHtgcbbIFkK0s2DlKfJ%2B%2Flk3uV0JSjFAfCat3Xu0QlwI5dE5ucIFMceXZEGIHTPzYss8vwf5%2B66GaokS9IIFDwC7icwjtZSO6bCYgMSXqR6XFGh88qQ0h7jGsFq%7Ctkp%3ABFBM0tKotcNo"
+          },
+          {
+            "title": "The Lords of Easy Money: How the Federal Reserve Broke the American Economy",
+            "price": 8.68,
+            "merchant": "{'username': 'sgwebooks', 'reviews': 135000, 'positive_feedback_in_percentage': 99.8}",
+            "url": "https://www.ebay.co.uk/itm/147676370160?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=28050407162&itmmeta=01M8DNA54KTBB8WVQ1A12JPH03&hash=item22623294f0:g:Q98AAeSwihprCF4N&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde9K7oQwPFoSENUFRhGgPlKnJcac5DhHssEXC30uM888DSpODZmUTGCosk%2FGFIpjaiuGkTgspIIzhDNz1YShAroB9lM62xmwP7OG%2BMKX2WrWHAwkPQCtVNNC3EGRS2qu2NERkD9Pseg3FBx%2FbA9KLtjwMrc5Sn2Y%2F3rQ4LNXkAsolXtXdiveR6kLl%2FeJu2nN95DDRRYjJfososvLyIpnyehL47zVt5Xw7T3dwpVK8Gu3xn1RTmjbqLn9i4CVsAztYh6r%2BixhLqEAjaJh8qoLUBUsk%2FNV%2FebyiGP4X9TdEXaJuA%3D%3D%7Ctkp%3ABk9SR9bSqLXDaA"
+          },
+          {
+            "title": "The Lords of Easy Money: How the Fe..., Christopher Leo",
+            "price": 9.34,
+            "merchant": "{'username': 'worldofbooksinc', 'reviews': 383400, 'positive_feedback_in_percentage': 99.4}",
+            "url": "https://www.ebay.co.uk/itm/354686588333?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=28050407162&itmmeta=01M8DNA54NBHVJ4KH3R88MX89V&hash=item5294f7d5ad:g:Sk4AAeSwrWpql0Q~&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde90ToVWtQLTLp5wvWNrDS1y3rpbXG2fpurl5v2RNsmKc46IktBw%2FtUIwy%2FTVMwamOUAoLXmLfDFttQ7mY6xje9AmYtEHTzP5voGXmpYFK112Kd48EJmIoBGCSrgigmVXct12i4PbOdlLv7KjYt92gvX7qEVVixHSKtc%2BDupgVLh4kcFCRelbdejjrPv23IJqiih9RFja%2BSB8uKi4P04fJTqa8g%2BJLqvn34nO6vF90GHg8wMTU9kC1NyhMzp39D2jcstXdOA8FmjKfQWveUFVBNAdKdqBJ%2F6Uy2QPHwPAccjkeAB9kLaUwJcWADmUMiGqpOwHoZNBJMu8oVRrnu7HYme%7Ctkp%3ABk9SR9bSqLXDaA"
+          },
+          {
+            "title": "The Lords of Easy Money: How the Fe..., Christopher Leo",
+            "price": 9.45,
+            "merchant": "{'username': 'worldofbooksinc', 'reviews': 383400, 'positive_feedback_in_percentage': 99.4}",
+            "url": "https://www.ebay.co.uk/itm/314936392405?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=14057263375&itmmeta=01M8DNA54MAQMEAXJ2V6N191DS&hash=item4953abfad5:g:BksAAeSwULNq3Jav&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde88%2B0N1Fh1ql7YU9taTYceK5KAidW17zw03RxZIMNZ6%2FmKdlS0l53%2B9wyio3LsFRvyvbiuU8rujR0%2FPDRItMbGncTlq%2FZh9FQEeScvqW9W3P45rMEMj0Ydyc4LIfqjUSbx7UKboS3jsUYJR3sptYvKUDxbfvjvBty69K%2BzUz9%2FZck56qN1DTekpTbl1MiAPptAutHy7XwgMWn4--XslqGE286QI%2BNOBIxYU%2Fer5A3h8XkcvzTW9zSseuMxMxpJyNDH0Y%2Fi19wlWdSp41I7z63iaZ747dzSKZDMUi4xmA5pxZg%3D%3D%7Ctkp%3ABk9SR9bSqLXDaA"
+          },
+          {
+            "title": "The Lords of Easy Money: Federal Reserve American Economy by Christopher Leonard",
+            "price": 10.08,
+            "merchant": "{'username': 'read4serenity', 'reviews': 7900, 'positive_feedback_in_percentage': 100}",
+            "url": "https://www.ebay.co.uk/itm/840047065946?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=6082550902&itmmeta=01M8DNA54H38BK5Z5E3GTZC0PJ&hash=itemc396b4fb5a:g:KkQAAeSwRsxq2Z7r&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2B5EA7uoTZOMfrkmWietvH1l7dLKjGp996C9IaHrpkjQonKNEZ4ikc%2BehR7FdZ%2BIslepH%2BsiKOG%2BD6HzMgFG1eFG3Drdzx77yhjKkJn2Ed1cgwDh08mrIxszDVruLceIFulOFYQ2D553wAsnjTv100YFlOVHLEUhY0SI6UUfdWV%2Fa9FnhTnL0v%2F1lcjBZ3m54a%2FQPStW%2FeWJyJiZDlBbgx2IC5G%2BfGxOhizXdq3Ysum6bJ5aqNDqSjdk67bMIT6t6ugcZyDTOGzOyNFUymF7ZVwhKduaWh8hKHYodGwx3PD5g%3D%3D%7Ctkp%3ABk9SR9TSqLXDaA"
+          },
+          {
+            "title": "The Lords of Easy Money by Christopher Leonard",
+            "price": 10.67,
+            "merchant": "{'username': 'thesixth', 'reviews': 2200, 'positive_feedback_in_percentage': 99.3}",
+            "url": "https://www.ebay.co.uk/itm/168580698837?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=28050407162&itmmeta=01M8DNA54NRP0AT9MYZ76DG4SW&hash=item27403152d5:g:M7AAAeSwRTtqbhC3&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2BUBRRZp0Bb5Rn4l7G6TqAXYOU%2FuoJYdID74Oz2jpZiEdJe10DrGYmAtssK75Lsr2jMAIii9JOB4d24IUB9QPOkDGhQAM6DD%2BdmV4p%2FPCbT3u8jtKJ%2Fll7%2B5wHZvNrkq%2Bv9Q4YWIfEFwDjXZF7ql3VUeCQNXBZwiTltcs8ihzUrZRVDBmw3jnpWRLPHMzBnYG4U4P2H8sBas%2BuermskQNVwZR4B9F%2B5iK8R43aoGYZHz0e%2FDOEHz6oRiMEG76hG33QdNjQB73OjKF3pspIKn2P%2FRbb8YDuXOl%2BhNkBjVDmA3w%3D%3D%7Ctkp%3ABk9SR9bSqLXDaA"
+          },
+          {
+            "title": "The Lords of Easy Money: How the Federal Reserve Broke the Amer .9781982166649",
+            "price": 11.16,
+            "merchant": "{'username': 'baham_books', 'reviews': 3600000, 'positive_feedback_in_percentage': 99.8}",
+            "url": "https://www.ebay.co.uk/itm/307286388629?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=8082523588&itmmeta=01M8DNA54D6DNDE3J7KC1CC2K1&hash=item478bb22f95:g:yvsAAeSwuxBq--ii&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2BnoDGb2pk3LyoctjezJyTx4TVWqoC9Bb2ZSN0KYIFmC67OoFPgIuoKNon9jIgr5cd2ZKUTuN97Pj1W9NabOjyRgFSc1t6nOkddOFDezW465H3Uv%2F85y3snW4mqYgR%2Bzx4vo6UQos9ktp6tiRTavAELg24tAdvRivLQJaYZxgM6GnuNe9RQrkKIh%2Fj1hXdit%2BpjeoIzqfdB5OqaFGJYpBFHLIohJtA6ubD3%2B6CiCi%2BQpT9KlIFFLy3xFTQjXHxruURx6NC8KDpVHujcKHUSLi%2FbbxtEet3YaU1H79SLfS5Kn2xZyv8FvUans%2FkL%2FeACoxMNNG4mk3YXlelhhKY65oq4%7Ctkp%3ABFBM0NKotcNo"
+          },
+          {
+            "title": "The Lords of Easy Money: How the Federal Reserve Broke the Ame...",
+            "price": 11.23,
+            "merchant": "{'username': 'lonestarbookrescue', 'reviews': 1200, 'positive_feedback_in_percentage': 100}",
+            "url": "https://www.ebay.co.uk/itm/336837225887?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=28050407162&itmmeta=01M8DNA54NQ63A4RG0NQTZ36J1&hash=item4e6d102d9f:g:e2UAAeSw0z9qyUwI&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2F6PnQiAqHssGKBRs56BS3ow96sIQpIk9a9Xk3siDrJ664LeICoPoNCvANCHJIHRqKc8F0YWhtiPEcYj4FYNmTq8m2B6TJaa9POr3UC77Av9xgBGlRw1D0KI%2Bz%2FGDNMUMtZL0P3i%2BwoT16B5P1KQl9fnN5SdSO60ehqmYo3LbiV%2BgoEOKUYEbJxqstnxDn7awIHR7WsXtUcEnj9qsIzNdLr%2F9YBFF02N6kem90UZbyGQvW6ZrJ2z%2FqYtfToOSbMB2j%2BwjTUXfSUhDUohZGG3AdulyHDdtB%2Ft5AmGTSjidzHOw%3D%3D%7Ctkp%3ABk9SR9bSqLXDaA"
+          },
+          {
+            "title": "The Lords of Easy Money: How the Federal Reserve Broke the American Economy",
+            "price": 11.51,
+            "merchant": "{'username': 'thrift.books', 'reviews': 4900000, 'positive_feedback_in_percentage': 99.7}",
+            "url": "https://www.ebay.co.uk/itm/198826415124?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=28050407162&itmmeta=01M8DNA54N11WSZ1J643EGFYAM&hash=item2e4afa5414:g:zncAAOSwq95hXs45&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde8vG1cTYkm7uO5yUlsEf7ZEZM9zprga9ZHfl0vX7HfE81%2FGgzKzHdYKfoLLtYPr2vuO%2FjzGwnb43OOKSnDx8EgIrXKvAin9PlQIdif%2F3M1XDocMVoMJpXx4abtnAVIhQ1GgSBuRzo9IpZJwqvJ63F%2Befmu6eF7pfHIZ1RbpeQ5dVtOrPYlEy7FSYIMJPtaZ33a2dQ8km7lyWjkvv35pNy17FFpf5pS6AdZyoi4moy61KRdtX0F5lpvv3qHI2bYYv8PDqA6rmk4NywHFOnm%2FHG7IAuNh3mMTKEP1qDf%2BdYw6vw%3D%3D%7Ctkp%3ABk9SR9jSqLXDaA"
+          },
+          {
+            "title": "The Lords of Easy Money: How the Federal Reserve Broke the Ameri",
+            "price": 12.84,
+            "merchant": "{'username': 'awesomebooksuk', 'reviews': 2600000, 'positive_feedback_in_percentage': 99.7}",
+            "url": "https://www.ebay.co.uk/itm/920151301071?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=8082523588&itmmeta=01M8DNA54DSAZ9MDK2HY6CYG6P&hash=itemd63d4a9bcf:g:fyEAAeSw5Nlq--yD&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2Fpmcn9p8Z0JNP4zJxeYWYAmtR2Nneyeec44mRkL0df%2Bb5C0dCIPB7yS033yIob%2FXA9z8fHsHjhWe3qacdP0W1jnqKYjg4%2F7vMo8QmMgH9H4ltNFLgITbQ2L5xjyb2LJq33hBtAO3HXRbuh7A5kl%2BFUClJT7UbAJZPH5rPGVV8pjuP1QRGUlOzNpJHnK1cij0oM5WUamC9FXaZYiiVid8dgLtkArMPMT4nnbp6BmPcOlUeSFA7LQCx5zadtg2ZMQNcfsBgeDoUE3ATsAjTS3Y6BaKgqAy1dulZNHTw%2Br7Jl2u663%2BBz%2FsB%2FjP75hgvnb7yFy2OjeHrH1MoeFPYtP7oy%7Ctkp%3ABFBM0NKotcNo"
+          },
+          {
+            "title": "The Lords of Easy Money: How the Federal Reserve Broke the Ameri",
+            "price": 12.84,
+            "merchant": "{'username': 'cmedia_group', 'reviews': 1600000, 'positive_feedback_in_percentage': 99.8}",
+            "url": "https://www.ebay.co.uk/itm/800928095083?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=8082523588&itmmeta=01M8DNA54GGMN96X7G1JXXDT1P&hash=itemba7b08db6b:g:TqQAAeSwuw9q--bD&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8IlCsoa42bMur%2FV9Cdlz4guNgL2YcLqzgn%2FUsMSRtYRIp47AxOnIpr344Zlc9UEzpgpAr%2FkAExdUEaQrK7G6xLe0cCjt5s1Y53eM3OkPXM%2B2Oo6S3wNJyp0M8SMzKuWdnlcRxIokQL46eGqgWrZ3kaxCjfb0X238yIzn40wtXgy8gjMXrMD7BSlaS2EATMT%2B9rAshD08VY8glmZgVm2fOQ2bdJ2bOayuAuBAY2mY2fiIA3k0oofRbIHXJ8yFFrUqN87h1fWktkp79ko%2FygMrz5Q9uOcEGrHn4ofToGdH%2FC3h%2B4gSc%2BwAFhphjzqP5xKorYjT0iG5yCGUXZ70dfqFI7%7Ctkp%3ABFBM0tKotcNo"
+          },
+          {
+            "title": "The Lords of Easy Money: How the Federal Reserve Broke the American Economy",
+            "price": 12.95,
+            "merchant": "{'username': 'thrift.books', 'reviews': 4900000, 'positive_feedback_in_percentage': 99.7}",
+            "url": "https://www.ebay.co.uk/itm/377675810224?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=28050407162&itmmeta=01M8DNA54N2YWS6PH5NM3JPNJT&hash=item57ef3b85b0:g:zncAAOSwq95hXs45&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9RZ6iXSpbjClbcPqTvwTI75lSnYULuns1GOXxtRKJD8egmzDPyvoWbFvp2LuNKFBTDzonO0NfuAGxFIs2bDkYBn7%2Fwi20MKj6gpuDP3OwR266HEv8RSUfxrXLWOurcaYmAS3FKybmeGkxbqVnCOqsxifIb6i6R7PW0ySvisbyJ9KBTi9WAyGv3Vi%2FzbLJg%2B%2BMAjbvvWy4U6T--uFTuVTHZwFUDUVpLzcBMAWi1FaWv5vcCPANwjEYq7JSBdbcJaEfUr7kQJHeTj5aIjhaH2SC%2FfYWUhYuNl6VwPz9WEvLvFObr3zKLHFXwFfXZDnSXJDyTEtcf72NauZCXS%2Fi%2BKNjr%7Ctkp%3ABk9SR9bSqLXDaA"
+          },
+          {
+            "title": "The Lords of Easy Money: How the Federal Reserve Broke... by Christopher Leonard",
+            "price": 17.09,
+            "merchant": "{'username': 'worldofbooksusa', 'reviews': 1400000, 'positive_feedback_in_percentage': 98.9}",
+            "url": "https://www.ebay.co.uk/itm/398054722994?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&itmmeta=01M8DNA54K1YK80RNP5YH2S66D&hash=item5cade90db2:g:DNQAAeSwX5NqK1u-&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2FzLyHtRH4p0YdbuginfBq0Z%2BAh2qohfTrf7JkVjXgyirVr%2FsBZkllLJ%2FQm1XEGy0A5vM0cTs5yPkm1aA3dZpgf2lN%2FSjMH3cvEzMTp7b9UdCHG%2BAln0KdPxm5%2BpZY86Mh8Lu7GaGxekmmqLsaNwvRcQ%2F44J1YbBvmO1mVF4z0s1dl86KuPNwpAIjkEtcK%2BggE01QaI1II9CEhZld8zzKql3BU0WCI4Q9hFjCSx9Feadsw9KEW3ulonnciXlDu4l7dGbqBSyzUos2j8YkF6mTH8lf1PXtw6rQyaOLg9YtF93ou7vcNJZBAsXIK%2FoPMKaeBzyoS%2BuB1VXSi3BuilJc3j%7Ctkp%3ABk9SR9TSqLXDaA"
+          },
+          {
+            "title": "The Lords of Easy Money: How the Federal Reserve Broke... by Christopher Leonard",
+            "price": 17.09,
+            "merchant": "{'username': 'worldofbooksusa', 'reviews': 1400000, 'positive_feedback_in_percentage': 98.9}",
+            "url": "https://www.ebay.co.uk/itm/397157979601?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&itmmeta=01M8DNA54K83X8J744ASRMYCW7&hash=item5c7875d5d1:g:j5cAAeSwXtlpP9wO&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8ioDf91iFEMWpJy3zN%2FHT66wC2ljLUsEcwuRrWdrSnEL%2F5xsEEwfONudERLPepv5Dtm%2BUiH0O2tGrJXg93RZTMimAVIM%2Bd4hWjI24%2FLitze%2BlU36nUMDDPoIwCTdObmS3%2FHt1T7X6QB6TT%2BXfVYuW%2Fi845hHAlJtuiWyp7TZSaSo45jIWnA4KYT9MRcJLJTLNd1uky%2BcixcPx35OkPure8kzxcNS8t0dpPExydXdz4NewMKPp8dIh7syUGCJzbsLbW8aqQtE153gY3HyVOE6OoOD4eeFHoXTdUu6aDVUMDycMjueGUyrWYGTHHVRKSmneFhiDWDSeVWB7LmZXKhgcl%7Ctkp%3ABk9SR9bSqLXDaA"
+          },
+          {
+            "title": "The Lords of Easy Money: How the Fe..., Christopher Leo",
+            "price": 18.69,
+            "merchant": "{'username': 'worldofbooks08', 'reviews': 11900000, 'positive_feedback_in_percentage': 99.5}",
+            "url": "https://www.ebay.co.uk/itm/397157685872?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&itmmeta=01M8DNA54D17538NXZCFKVFYY9&hash=item5c78715a70:g:rj8AAeSw4cVpRxLe&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8IR0hUE3FRXEKcNoDr9cH7SlMO--A9EoOvn9XkkWsupPlTU2q46BaDmEfcyeT6mT6vuJx%2FV6Z2UNsHo792I9C2Wk9XhiqqX5YgTkeyIMk7NpMnXSLdvayPD%2FDiLfd%2BGJebgzPYYwp0ZURaxDgxO3DldQwGRYNPS7z1rmeWggj5XclEWoHbabmXtChIKrFqkrc8pTpg1Fppw9BdVgIyxPAwYi%2FFZ%2BBD0xrER7vxoSbQcSzzACY62w93j4NY%2FLhuEAzEjtf7awYn%2Brn%2FxlBQ6X0krofQlEdpzudBbybDLLY%2F%2Bjy2LZSLpLS2PQ%2F1YmqNKrZd1KPqeAhDlIkLf%2FWgR4PT%7Ctkp%3ABFBM0NKotcNo"
+          },
+          {
+            "title": "The Lords of Easy Money: How the Fe..., Christopher Leo",
+            "price": 18.69,
+            "merchant": "{'username': 'worldofbooks08', 'reviews': 11900000, 'positive_feedback_in_percentage': 99.5}",
+            "url": "https://www.ebay.co.uk/itm/307002716462?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&itmmeta=01M8DNA54EP7D49Y2ZFPNXSTJ2&hash=item477ac9b12e:g:YBUAAeSw5oRqLz5D&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde9j%2BsR0EU2fsPslbaO2Z%2F1tFUJlOQdCacvIrtYO%2B1YwPjP2ArMqY1L6tnYSk2G%2Fu3BoxrI3NYILW35J39EatFS1NVKZ%2FWYJUtNBGqSUrPbr%2F25m8EMmS7GboSP2YlrnzWA9h2tzBUPkyX4A0mIDjSt29IpwNx6KLYFMrU3cw6rpE4%2Fca2wVHAGgbGwb9qB7pxfF6sjh1nejt0DZeOcLszY%2BfHGOMyjG3K6OZJdVoUzq8CYjJnvWNhS%2FHi08hQ4251GHQQJdpsdV%2FPM3Dql0zUhuQVVc5JlXmcIGH01Cn6GYXQ%3D%3D%7Ctkp%3ABk9SR9DSqLXDaA"
+          },
+          {
+            "title": "The Lords of Easy Money: How the Fe..., Leonard, Christ",
+            "price": 20.99,
+            "merchant": "{'username': 'worldofbooks08', 'reviews': 11900000, 'positive_feedback_in_percentage': 99.5}",
+            "url": "https://www.ebay.co.uk/itm/147685561716?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=24083463138&itmmeta=01M8DNA54D6DW6XKHFXF8RXFEJ&hash=item2262bed574:g:TEgAAeSw9mFq~Oor&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9cimDOS3Nw3rZ70n7%2BUB2HsQLt4lC07s11PL15wXFl3x8FvvZpP2C1br%2FRpxxdcQHftdYKc2az4YIRQjb1ZMT6yPN8%2BmpLfYQhBykXeEQ1B7elLldL5Gau7UMWjaYmWHMUVhaDPUr%2BYWFQvMlmFbTYHHNuXXcfrF9WBmANPdugLFx%2FZbqcllTNVjBPjZW%2Fjegm6HClbiq%2BAKVHY6Id1mLrQPypoA7iAadVQHunEpantDZP2hVNt6IWqstm5%2BNxKf47Vn9WZ0XHDIoOHAkqs7%2B3JxFCgLVPl969hxmsMblEM%2FxJWaIrFS6AfTNaFkroTQqRHtLqGo6SWZGkga9zOa1P%7Ctkp%3ABFBM0NKotcNo"
+          }
+        ]
+      },
+      "appraisal": {
+        "flag": false,
+        "reasons": []
+      },
+      "query": "The Lords of Easy Money Christopher Leonard book"
+    },
+    "b_0011": {
+      "new": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T04:48:01.343247+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": null
+      },
+      "used": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T04:48:01.343247+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": "Used \u2013 Good"
+      },
+      "appraisal": {
+        "flag": false,
+        "reasons": []
+      }
+    },
+    "b_0012": {
+      "new": {
+        "amount": null,
+        "currency": "INR",
+        "source": "SerpAPI",
+        "url": "https://serpapi.com/search.json?engine=google_shopping&q=The+Everyday+Hero+Manifesto+Robin+Sharma+book&gl=in&hl=en&google_domain=google.co.in&api_key=REDACTED",
+        "retrieved_at": "2026-11-27T04:48:01.343247+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "evidence/prices/b_0012_new.json",
+        "price_status": "not_found",
+        "condition_assumed": null,
+        "offers_used": []
+      },
+      "used": {
+        "amount": 732.897,
+        "currency": "INR",
+        "source": "{'username': 'mizpacman', 'reviews': 21600, 'positive_feedback_in_percentage': 99.4} via SerpAPI",
+        "url": "https://www.ebay.co.uk/itm/298735946906?_skw=The+Everyday+Hero+Manifesto+Robin+Sharma+book&itmmeta=01M8D1RQVRBCDWS96SX075GEQW&hash=item458e0ccc9a:g:65gAAeSwUPVqxDVQ&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde9Bht0JcHCGVPq3soUnM6I8ONp3go%2Fz3qei%2FqBpRIYR7OI2YDtdPWH81HAC1BPVorwgXc8gjCoYG%2FQ6bzK2jbRzAl93bI1S%2BoLPBRCamzn9tBwouO9s%2BmSqiccPjaq5A%2FhC5us0JFueRx3BkIg%2BInT6i40RJV32sDOqPJpjoY7WdIkKF%2F6WQXroGvdsHaOoJ%2F4Gar36JWyUrHQKLrxwl%2F%2BoKs8XuIPuhZBVpD0tKrz3LqPU5kn9d3yadfLoAGltYhaO1ZYQ9jvrpm09g69A7%2Blzm5q6HmS%2B6R391bhpq7p2Cw%3D%3D%7Ctkp%3ABk9SR5r-4qHDaA",
+        "retrieved_at": "2026-11-27T04:48:01.343247+00:00",
+        "converted": true,
+        "original_amount": 6.05,
+        "original_currency": "GBP",
+        "fx": {
+          "from_currency": "GBP",
+          "to_currency": "INR",
+          "rate": 121.14,
+          "rate_date": "2026-11-26",
+          "source": "Frankfurter",
+          "url": "https://api.frankfurter.dev/v1/latest?base=GBP&symbols=INR"
+        },
+        "n_offers": 6,
+        "snapshot_path": "evidence/prices/b_0012_used.json",
+        "price_status": "priced",
+        "condition_assumed": "Used \u2013 Good",
+        "offers_used": [
+          {
+            "title": "The Everyday Hero Manifesto : Activate Your Positivity, Maximize",
+            "price": 5.03,
+            "merchant": "{'username': 'better_world_books_uk', 'reviews': 754400, 'positive_feedback_in_percentage': 99.6}",
+            "url": "https://www.ebay.co.uk/itm/117146044343?_skw=The+Everyday+Hero+Manifesto+Robin+Sharma+book&epid=4063276715&itmmeta=01M8D1RQVSX6R0FJMKX74NYX8D&hash=item1b4672c7b7:g:mcwAAeSwibJp4Ls2&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde8CO4uRgUmiBcMt5vCzdqrjkXciVbunkdmuIR4M1IN9OuUV3fnBotAo58W5LPAGroKygckr9JtCZ%2BTXewBeLqbtaRSCJh%2ByeFuLHgKzTE68%2F2gauwlyW6Mx%2FmfbSKSJIoNqvRXy5hF9UkqFN9hG1S4SCnuYPiSKZx2C5fVqO03u3Ko79rZl6g%2BFaNPcJCCQibq8XZoCwspNTpDwQXyaKwo9xYkNXXgwMDUCXvVpPfla3chipKz3ptgU3kkVijYYuhmolPac9LAgSnu34Tbvmkgx%2FCb35%2FUI6uFkux6gvAP4zw%3D%3D%7Ctkp%3ABk9SR5r-4qHDaA"
+          },
+          {
+            "title": "The Everyday Hero Manifesto : Activate Positivity. Maximise Produ",
+            "price": 5.03,
+            "merchant": "{'username': 'better_world_books_uk', 'reviews': 754400, 'positive_feedback_in_percentage': 99.6}",
+            "url": "https://www.ebay.co.uk/itm/306984904886?_skw=The+Everyday+Hero+Manifesto+Robin+Sharma+book&epid=4063276715&itmmeta=01M8D1RQVSMYA00TDMVVY781DV&hash=item4779b9e8b6:g:r9wAAeSwEBxqIwYh&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2FECbwU94sCOvb6pT3If5CmZp8vhbb2jD4o%2BAQd1Z0AQ9hTEfWcrRPT%2FROO3Gqp66NESqJTw4kQjPLXAL%2B5cK2u%2F14kXr%2FuWO95Sd2C1Mrsm%2BsEt0mCabCdVjftWbLNwZ9UM6VgBwDduCoiIGeew4gr6s%2BFW64N705bT--DaxjIzznXfZLRVtgbHeIk%2B0upczqeDbyKfwp8kmyvozeP5D6Ynhlt%2FX4izWlbwFl9jYzVFSyvWWuHrTktp4UXXByAww1Ib%2FNevwSdMyzC08Djlkc9L0WrwvBRT7X%2B423wdeOLPQ%3D%3D%7Ctkp%3ABk9SR5r-4qHDaA"
+          },
+          {
+            "title": "Book Robin Sharma The Everyday Hero Manifesto",
+            "price": 6.04,
+            "merchant": "{'username': 'mizpacman', 'reviews': 21600, 'positive_feedback_in_percentage': 99.4}",
+            "url": "https://www.ebay.co.uk/itm/298735946906?_skw=The+Everyday+Hero+Manifesto+Robin+Sharma+book&itmmeta=01M8D1RQVRBCDWS96SX075GEQW&hash=item458e0ccc9a:g:65gAAeSwUPVqxDVQ&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde9Bht0JcHCGVPq3soUnM6I8ONp3go%2Fz3qei%2FqBpRIYR7OI2YDtdPWH81HAC1BPVorwgXc8gjCoYG%2FQ6bzK2jbRzAl93bI1S%2BoLPBRCamzn9tBwouO9s%2BmSqiccPjaq5A%2FhC5us0JFueRx3BkIg%2BInT6i40RJV32sDOqPJpjoY7WdIkKF%2F6WQXroGvdsHaOoJ%2F4Gar36JWyUrHQKLrxwl%2F%2BoKs8XuIPuhZBVpD0tKrz3LqPU5kn9d3yadfLoAGltYhaO1ZYQ9jvrpm09g69A7%2Blzm5q6HmS%2B6R391bhpq7p2Cw%3D%3D%7Ctkp%3ABk9SR5r-4qHDaA"
+          },
+          {
+            "title": "The Everyday Hero Manifesto : Activate Your Positivity.. By Robin Sharma.",
+            "price": 6.06,
+            "merchant": "{'username': 'chudedak', 'reviews': 552, 'positive_feedback_in_percentage': 100}",
+            "url": "https://www.ebay.co.uk/itm/276560651318?_skw=The+Everyday+Hero+Manifesto+Robin+Sharma+book&epid=11060613231&itmmeta=01M8D1RQVSX8J2TXN1ECS7533J&hash=item40644ca436:g:l7UAAOSwTxVmnKdF&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde9cPZ5Utl3x2Xv%2BaFxXunhmFIzO9U065Ozd%2F6yN9mUHTrLbP8CddfxHSLKi3oOlmYCV%2F4Ds%2BVj9x%2FSLHrNvHYRgnxBnVmYKk6Npi%2B7pwBv%2FR8tCf%2BevPst4HTTIGPQuNVwj1EWhfPBQ2j5TZYPBOqmoFHfGq4jPpr%2Fq1q1%2FmJYdOHEggS32BKE5bwzDGXrVWhgAucyj6xYHKtL4xAMd7peNcZmoSJRzmN9MPSvBIN3OujSJZqNJ6nzsBQ0m4TYUbsTWORme2mDutafSQCcpHVbLlrpdRBHa5faix3pA4dYK7Q%3D%3D%7Ctkp%3ABk9SR5r-4qHDaA"
+          },
+          {
+            "title": "The Everyday Hero Manifesto By Robin Sharma Over 20 Million Books Sold",
+            "price": 9.1,
+            "merchant": "{'username': 'regalheights', 'reviews': 1400, 'positive_feedback_in_percentage': 99.7}",
+            "url": "https://www.ebay.co.uk/itm/397826832683?_skw=The+Everyday+Hero+Manifesto+Robin+Sharma+book&itmmeta=01M8D1RQVS2SBRWH545VBDBT1A&hash=item5ca053b92b:g:eaUAAeSw5D5p2b7l&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8C1Hmz4T47poba6iA2lAfY%2F4bMVqSwylbEk3Io%2BV7nDPH6vVvBY0cRsoyl5DIXPv7P3PcU%2Bvl3C7alXCGSotOGzTXGWav%2B9yaj%2By4XlkDddLLOZXiZ4kykuks2seq0JhdAg0DHfWyjXSAa4ORbhXrIUaJqz6b%2FLTACh5rJ0bBtrdOIrRO5H5tSz9a5p3yausZO4AsbdunE8ZPtb0Jt18xlC9MkHIRyzHwOagWyGQEm1vRFdtafeKcL26R7grBHhNUZ80slNCtTe4UxuxADgEyNRdcoJA6jYbhcHwR5Ce5588kmMnchdYy%2FVWIazInnLB2YR%2FFZxuAbL%2BHw4fhpAcve%7Ctkp%3ABk9SR5r-4qHDaA"
+          },
+          {
+            "title": "The Everyday Hero Manifesto by Robin Sharma (Paperback Book)",
+            "price": 10.0,
+            "merchant": "{'username': 'forestup', 'reviews': 3200, 'positive_feedback_in_percentage': 100}",
+            "url": "https://www.ebay.co.uk/itm/267568189703?_skw=The+Everyday+Hero+Manifesto+Robin+Sharma+book&epid=4063276715&itmmeta=01M8D1RQVN5W2438R2EEF8VFW1&hash=item3e4c4e9107:g:f4oAAeSwiONphLY9&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde8H%2Bx%2BB7lHRQS2DvYqXq47GLue1cUOyQhpjLkgSdXlVBiheNmZ%2FerCcQpLwn61vKOdPnJ5JrWjhKSzhxBEXTULHMGM6EcvJZNSPI%2FQv8SmEahYj8KNRwJw%2F0tS0Q4QxQqn0kSliZ32grZwiU%2BjD7cHIlWM1Bi9nQZdqJFAfRi4kd3xpySlgxqZtW%2FW5xY9zvduv4TKO1cCoBVP0wCyt1tjXkGWAKTKeR3TdWDXuzf1AxBYlDlHTgQBBg0tVSJWjn7luwNGxbpHBDppxi9BIdbVV%2FvDAAkbHsVH2HcY5CFPC8Q%3D%3D%7Ctkp%3ABk9SR5b-4qHDaA"
+          }
+        ]
+      },
+      "appraisal": {
+        "flag": false,
+        "reasons": []
+      },
+      "query": "The Everyday Hero Manifesto Robin Sharma book"
+    },
+    "b_0013": {
+      "new": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T04:48:01.343247+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": null
+      },
+      "used": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T04:48:01.343247+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": "Used \u2013 Good"
+      },
+      "appraisal": {
+        "flag": false,
+        "reasons": []
+      }
+    },
+    "b_0014": {
+      "new": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T04:48:01.343247+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": null
+      },
+      "used": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T04:48:01.343247+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": "Used \u2013 Good"
+      },
+      "appraisal": {
+        "flag": false,
+        "reasons": []
+      },
+      "query": "Bret Easton Ellis G. Colby book"
+    },
+    "b_0015": {
+      "new": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T04:48:01.343247+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": null
+      },
+      "used": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T04:48:01.343247+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": "Used \u2013 Good"
+      },
+      "appraisal": {
+        "flag": false,
+        "reasons": []
+      },
+      "query": "The Lords of Easy Money Christopher Leonard book"
+    },
+    "b_0016": {
+      "new": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T04:48:01.343247+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": null
+      },
+      "used": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T04:48:01.343247+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": "Used \u2013 Good"
+      },
+      "appraisal": {
+        "flag": false,
+        "reasons": []
+      }
+    },
+    "b_0017": {
+      "new": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T04:48:01.343247+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": null
+      },
+      "used": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T04:48:01.343247+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": "Used \u2013 Good"
+      },
+      "appraisal": {
+        "flag": false,
+        "reasons": []
+      }
+    },
+    "b_0018": {
+      "new": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T04:48:01.343247+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": null
+      },
+      "used": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T04:48:01.343247+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": "Used \u2013 Good"
+      },
+      "appraisal": {
+        "flag": false,
+        "reasons": []
+      }
+    },
+    "b_0019": {
+      "new": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T04:48:01.343247+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": null
+      },
+      "used": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T04:48:01.343247+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": "Used \u2013 Good"
+      },
+      "appraisal": {
+        "flag": false,
+        "reasons": []
+      }
+    }
+  },
+  "review_queue": [
+    {
+      "ref_id": "b_0001",
+      "code": "unidentified_spine"
+    },
+    {
+      "ref_id": "b_0002",
+      "code": "unidentified_spine"
+    },
+    {
+      "ref_id": "b_0003",
+      "code": "unidentified_spine"
+    },
+    {
+      "ref_id": "b_0004",
+      "code": "price_converted"
+    },
+    {
+      "ref_id": "b_0004",
+      "code": "price_not_found"
+    },
+    {
+      "ref_id": "b_0005",
+      "code": "price_converted"
+    },
+    {
+      "ref_id": "b_0005",
+      "code": "price_not_found"
+    },
+    {
+      "ref_id": "b_0006",
+      "code": "price_converted"
+    },
+    {
+      "ref_id": "b_0006",
+      "code": "price_not_found"
+    },
+    {
+      "ref_id": "b_0007",
+      "code": "unidentified_spine"
+    },
+    {
+      "ref_id": "b_0008",
+      "code": "unidentified_spine"
+    },
+    {
+      "ref_id": "b_0009",
+      "code": "unidentified_spine"
+    },
+    {
+      "ref_id": "b_0010",
+      "code": "price_converted"
+    },
+    {
+      "ref_id": "b_0010",
+      "code": "price_not_found"
+    },
+    {
+      "ref_id": "b_0011",
+      "code": "unidentified_spine"
+    },
+    {
+      "ref_id": "b_0012",
+      "code": "price_converted"
+    },
+    {
+      "ref_id": "b_0012",
+      "code": "price_not_found"
+    },
+    {
+      "ref_id": "b_0013",
+      "code": "unidentified_spine"
+    },
+    {
+      "ref_id": "b_0014",
+      "code": "price_not_found"
+    },
+    {
+      "ref_id": "b_0015",
+      "code": "price_not_found"
+    },
+    {
+      "ref_id": "b_0016",
+      "code": "unidentified_spine"
+    },
+    {
+      "ref_id": "b_0017",
+      "code": "unidentified_spine"
+    },
+    {
+      "ref_id": "b_0018",
+      "code": "unidentified_spine"
+    },
+    {
+      "ref_id": "b_0019",
+      "code": "unidentified_spine"
+    }
+  ],
+  "searches_used": 10,
+  "provider_requests": [
+    {
+      "url": "https://serpapi.com/search.json?engine=google_shopping&q=The+One+Thing+Gary+Keller+book&gl=in&hl=en&google_domain=google.co.in&api_key=REDACTED",
+      "status": 200,
+      "cache": true,
+      "error": null
+    },
+    {
+      "url": "https://serpapi.com/search.json?engine=ebay&_nkw=The+One+Thing+Gary+Keller+book&ebay_domain=ebay.co.uk&api_key=REDACTED",
+      "status": 200,
+      "cache": true,
+      "error": null
+    },
+    {
+      "url": "https://api.frankfurter.dev/v1/latest?base=GBP&symbols=INR",
+      "status": 200,
+      "cache": true,
+      "error": null
+    },
+    {
+      "url": "https://serpapi.com/search.json?engine=google_shopping&q=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&gl=in&hl=en&google_domain=google.co.in&api_key=REDACTED",
+      "status": 200,
+      "cache": true,
+      "error": null
+    },
+    {
+      "url": "https://serpapi.com/search.json?engine=ebay&_nkw=Heal+Your+Mind+Heal+Your+Life+Monica+DuBay+book&ebay_domain=ebay.co.uk&api_key=REDACTED",
+      "status": 200,
+      "cache": true,
+      "error": null
+    },
+    {
+      "url": "https://api.frankfurter.dev/v1/latest?base=GBP&symbols=INR",
+      "status": 200,
+      "cache": true,
+      "error": null
+    },
+    {
+      "url": "https://serpapi.com/search.json?engine=google_shopping&q=What+Color+Is+Your+Parachute%3F+2017+Richard+N.+Bolles+book&gl=in&hl=en&google_domain=google.co.in&api_key=REDACTED",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://serpapi.com/search.json?engine=ebay&_nkw=What+Color+Is+Your+Parachute%3F+2017+Richard+N.+Bolles+book&ebay_domain=ebay.co.uk&api_key=REDACTED",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://api.frankfurter.dev/v1/latest?base=GBP&symbols=INR",
+      "status": 200,
+      "cache": true,
+      "error": null
+    },
+    {
+      "url": "https://serpapi.com/search.json?engine=google_shopping&q=The+Lords+of+Easy+Money+Christopher+Leonard+book&gl=in&hl=en&google_domain=google.co.in&api_key=REDACTED",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://serpapi.com/search.json?engine=ebay&_nkw=The+Lords+of+Easy+Money+Christopher+Leonard+book&ebay_domain=ebay.co.uk&api_key=REDACTED",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://api.frankfurter.dev/v1/latest?base=GBP&symbols=INR",
+      "status": 200,
+      "cache": true,
+      "error": null
+    },
+    {
+      "url": "https://serpapi.com/search.json?engine=google_shopping&q=The+Everyday+Hero+Manifesto+Robin+Sharma+book&gl=in&hl=en&google_domain=google.co.in&api_key=REDACTED",
+      "status": 200,
+      "cache": true,
+      "error": null
+    },
+    {
+      "url": "https://serpapi.com/search.json?engine=ebay&_nkw=The+Everyday+Hero+Manifesto+Robin+Sharma+book&ebay_domain=ebay.co.uk&api_key=REDACTED",
+      "status": 200,
+      "cache": true,
+      "error": null
+    },
+    {
+      "url": "https://api.frankfurter.dev/v1/latest?base=GBP&symbols=INR",
+      "status": 200,
+      "cache": true,
+      "error": null
+    }
+  ]
+}

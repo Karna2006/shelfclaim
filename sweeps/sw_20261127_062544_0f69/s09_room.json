@@ -1,0 +1,17 @@
+{
+  "room": {
+    "length_m": null,
+    "width_m": null,
+    "height_m": null,
+    "floor_area_m2": null,
+    "wall_area_m2": null,
+    "shelved_wall_area_m2": null,
+    "scale_method": "not measured (3D reconstruction out of scope for this build)",
+    "confidence": 0,
+    "shape": null,
+    "coverage_pct": null
+  },
+  "planes": {},
+  "point_count": null,
+  "debug_png": null
+}

@@ -1,0 +1,13 @@
+{"t_ms":0,"speaker":"agent","text":"Hi, I'm your claim assistant. I'll guide you through one slow walk past your shelves. Are you in India, with values in rupees?","final":true,"recorded_at":"2026-11-26T17:28:40.779340+00:00"}
+{"t_ms":6884,"speaker":"user","text":"hi I","final":true,"recorded_at":"2026-11-26T17:28:46.772122+00:00"}
+{"t_ms":8843,"speaker":"agent","text":"One moment.","final":true,"recorded_at":"2026-11-26T17:28:49.254785+00:00"}
+{"t_ms":9405,"speaker":"agent","text":"Are you in India and using rupees?","final":true,"recorded_at":"2026-11-26T17:28:49.686152+00:00"}
+{"t_ms":12448,"speaker":"user","text":"one","final":true,"recorded_at":"2026-11-26T17:28:52.370725+00:00"}
+{"t_ms":14629,"speaker":"agent","text":"One moment.","final":true,"recorded_at":"2026-11-26T17:28:54.878319+00:00"}
+{"t_ms":16347,"speaker":"agent","text":"Please confirm if you are in India and your currency is rupees.","final":true,"recorded_at":"2026-11-26T17:28:56.501606+00:00"}
+{"t_ms":16347,"speaker":"user","text":"you in","final":true,"recorded_at":"2026-11-26T17:28:56.505931+00:00"}
+{"t_ms":18664,"speaker":"agent","text":"One moment.","final":true,"recorded_at":"2026-11-26T17:28:59.017874+00:00"}
+{"t_ms":19242,"speaker":"agent","text":"Great. Start with the shelf on your left, top row, and move slowly.","final":true,"recorded_at":"2026-11-26T17:28:59.328737+00:00"}
+{"t_ms":28389,"speaker":"cue","text":"Hold the phone steadier for a moment.","final":true,"recorded_at":"2026-11-26T17:29:08.535938+00:00"}
+{"t_ms":48924,"speaker":"cue","text":"It's dark, can you turn on a light?","final":true,"recorded_at":"2026-11-26T17:29:29.025198+00:00"}
+{"t_ms":61199,"speaker":"cue","text":"Move the phone more slowly.","final":true,"recorded_at":"2026-11-26T17:29:41.284492+00:00"}

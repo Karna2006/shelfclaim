@@ -1,0 +1,1881 @@
+{
+  "backend": "ocr_spines",
+  "frames": {
+    "15": [
+      {
+        "det_id": "f000015_ocr0000",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 89,
+          "y": 45,
+          "w": 119,
+          "h": 134,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": 0.60403,
+        "merged_from": [],
+        "flags": [],
+        "row_index": 1,
+        "ocr_lines": [
+          {
+            "text": "NIE MR IAN",
+            "confidence": 0.60403,
+            "bbox": {
+              "x": 89.0,
+              "y": 45.0,
+              "w": 119.0,
+              "h": 134.0
+            },
+            "rotation": 90
+          }
+        ]
+      },
+      {
+        "det_id": "f000015_ocr0001",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 1,
+          "y": 382,
+          "w": 41,
+          "h": 102,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": 0.99838,
+        "merged_from": [],
+        "flags": [],
+        "row_index": 2,
+        "ocr_lines": [
+          {
+            "text": "OWER",
+            "confidence": 0.99838,
+            "bbox": {
+              "x": 1.0,
+              "y": 382.0,
+              "w": 41.0,
+              "h": 102.0
+            },
+            "rotation": 270
+          }
+        ]
+      }
+    ],
+    "27": [
+      {
+        "det_id": "f000027_ocr0000",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 85,
+          "y": 0,
+          "w": 73,
+          "h": 473,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": 0.99984,
+        "merged_from": [],
+        "flags": [],
+        "row_index": 1,
+        "ocr_lines": [
+          {
+            "text": "James",
+            "confidence": 0.99984,
+            "bbox": {
+              "x": 85.0,
+              "y": 298.0,
+              "w": 73.0,
+              "h": 92.0
+            },
+            "rotation": 90
+          }
+        ]
+      },
+      {
+        "det_id": "f000027_ocr0001",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 158,
+          "y": 0,
+          "w": 401,
+          "h": 473,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": 0.8957980000000001,
+        "merged_from": [],
+        "flags": [],
+        "row_index": 1,
+        "ocr_lines": [
+          {
+            "text": "Atomic",
+            "confidence": 0.99972,
+            "bbox": {
+              "x": 198.0,
+              "y": 0.0,
+              "w": 132.0,
+              "h": 151.0
+            },
+            "rotation": 0
+          },
+          {
+            "text": "Atomic Ha",
+            "confidence": 0.97644,
+            "bbox": {
+              "x": 158.0,
+              "y": 0.0,
+              "w": 180.0,
+              "h": 225.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "THEBN EA EAN  E SON",
+            "confidence": 0.65491,
+            "bbox": {
+              "x": 317.0,
+              "y": 0.0,
+              "w": 242.0,
+              "h": 381.0
+            },
+            "rotation": 0
+          },
+          {
+            "text": "ROBIN SHARMA",
+            "confidence": 0.99189,
+            "bbox": {
+              "x": 302.0,
+              "y": 88.0,
+              "w": 150.0,
+              "h": 236.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "ROBIM SHARMA",
+            "confidence": 0.95404,
+            "bbox": {
+              "x": 298.0,
+              "y": 88.0,
+              "w": 151.0,
+              "h": 237.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "HERO MANIFESTO",
+            "confidence": 0.99846,
+            "bbox": {
+              "x": 257.0,
+              "y": 172.0,
+              "w": 113.0,
+              "h": 174.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "ERIC JORGENSON",
+            "confidence": 0.96686,
+            "bbox": {
+              "x": 324.0,
+              "y": 270.0,
+              "w": 74.0,
+              "h": 108.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "EIOSON",
+            "confidence": 0.75619,
+            "bbox": {
+              "x": 322.0,
+              "y": 270.0,
+              "w": 74.0,
+              "h": 109.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "PARAMAHANSA",
+            "confidence": 0.99927,
+            "bbox": {
+              "x": 408.0,
+              "y": 282.0,
+              "w": 69.0,
+              "h": 98.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "PAYHWAASA",
+            "confidence": 0.6602,
+            "bbox": {
+              "x": 407.0,
+              "y": 284.0,
+              "w": 67.0,
+              "h": 96.0
+            },
+            "rotation": 90
+          }
+        ]
+      },
+      {
+        "det_id": "f000027_ocr0002",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 383,
+          "y": 0,
+          "w": 314,
+          "h": 473,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": 0.9201733333333334,
+        "merged_from": [],
+        "flags": [],
+        "row_index": 1,
+        "ocr_lines": [
+          {
+            "text": "AUTOBIOGAS",
+            "confidence": 0.94099,
+            "bbox": {
+              "x": 546.0,
+              "y": 15.0,
+              "w": 79.0,
+              "h": 107.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "THE ALMANACK OF NAVAL RAVIKANT",
+            "confidence": 0.99545,
+            "bbox": {
+              "x": 383.0,
+              "y": 0.0,
+              "w": 175.0,
+              "h": 275.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "YOGI",
+            "confidence": 0.99658,
+            "bbox": {
+              "x": 496.0,
+              "y": 116.0,
+              "w": 73.0,
+              "h": 96.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "THE ONE THING",
+            "confidence": 0.99987,
+            "bbox": {
+              "x": 522.0,
+              "y": 83.0,
+              "w": 170.0,
+              "h": 231.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "THE ON THING AR KYRPAASAN",
+            "confidence": 0.75078,
+            "bbox": {
+              "x": 433.0,
+              "y": 74.0,
+              "w": 264.0,
+              "h": 374.0
+            },
+            "rotation": 0
+          },
+          {
+            "text": "LEADERS EAT LAST",
+            "confidence": 0.9952,
+            "bbox": {
+              "x": 543.0,
+              "y": 210.0,
+              "w": 134.0,
+              "h": 189.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "GARY KELLER",
+            "confidence": 0.99824,
+            "bbox": {
+              "x": 496.0,
+              "y": 295.0,
+              "w": 66.0,
+              "h": 87.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "WIAA AASAN",
+            "confidence": 0.60687,
+            "bbox": {
+              "x": 461.0,
+              "y": 286.0,
+              "w": 90.0,
+              "h": 121.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "WITH JAY PAPASAN",
+            "confidence": 0.99758,
+            "bbox": {
+              "x": 464.0,
+              "y": 288.0,
+              "w": 86.0,
+              "h": 117.0
+            },
+            "rotation": 270
+          }
+        ]
+      },
+      {
+        "det_id": "f000027_ocr0003",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 651,
+          "y": 0,
+          "w": 361,
+          "h": 473,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": 0.88851125,
+        "merged_from": [],
+        "flags": [],
+        "row_index": 1,
+        "ocr_lines": [
+          {
+            "text": "SIMON SINEK",
+            "confidence": 0.99929,
+            "bbox": {
+              "x": 651.0,
+              "y": 70.0,
+              "w": 108.0,
+              "h": 146.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "Heal Your Mind Heal Your Life",
+            "confidence": 0.96903,
+            "bbox": {
+              "x": 839.0,
+              "y": 113.0,
+              "w": 123.0,
+              "h": 165.0
+            },
+            "rotation": 0
+          },
+          {
+            "text": "Heal  yrtie",
+            "confidence": 0.54296,
+            "bbox": {
+              "x": 842.0,
+              "y": 115.0,
+              "w": 121.0,
+              "h": 162.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "HALFMURDERS",
+            "confidence": 0.99456,
+            "bbox": {
+              "x": 701.0,
+              "y": 116.0,
+              "w": 121.0,
+              "h": 169.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "DEEP WORK Cal Newport",
+            "confidence": 0.99793,
+            "bbox": {
+              "x": 681.0,
+              "y": 87.0,
+              "w": 227.0,
+              "h": 312.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "Four Thousand Weeks Olid Burken an",
+            "confidence": 0.93217,
+            "bbox": {
+              "x": 765.0,
+              "y": 96.0,
+              "w": 247.0,
+              "h": 335.0
+            },
+            "rotation": 0
+          },
+          {
+            "text": "Ollu rBurken an",
+            "confidence": 0.8093,
+            "bbox": {
+              "x": 770.0,
+              "y": 277.0,
+              "w": 123.0,
+              "h": 150.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "Ollv rBurkenan",
+            "confidence": 0.86285,
+            "bbox": {
+              "x": 767.0,
+              "y": 278.0,
+              "w": 121.0,
+              "h": 149.0
+            },
+            "rotation": 90
+          }
+        ]
+      },
+      {
+        "det_id": "f000027_ocr0004",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 845,
+          "y": 0,
+          "w": 235,
+          "h": 473,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": 0.91906,
+        "merged_from": [],
+        "flags": [],
+        "row_index": 1,
+        "ocr_lines": [
+          {
+            "text": "Four Thousand Weeks",
+            "confidence": 0.99818,
+            "bbox": {
+              "x": 869.0,
+              "y": 105.0,
+              "w": 134.0,
+              "h": 179.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "WHAT COLOR IS YOUR PARACHUTE 2017",
+            "confidence": 0.95248,
+            "bbox": {
+              "x": 847.0,
+              "y": 130.0,
+              "w": 218.0,
+              "h": 301.0
+            },
+            "rotation": 0
+          },
+          {
+            "text": "WH    0",
+            "confidence": 0.73091,
+            "bbox": {
+              "x": 845.0,
+              "y": 131.0,
+              "w": 218.0,
+              "h": 304.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "ILLIONAIRE MASTER PLAN",
+            "confidence": 0.9989,
+            "bbox": {
+              "x": 881.0,
+              "y": 192.0,
+              "w": 199.0,
+              "h": 279.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "LLIONAIRE MASTER PLAN",
+            "confidence": 0.99928,
+            "bbox": {
+              "x": 876.0,
+              "y": 196.0,
+              "w": 203.0,
+              "h": 277.0
+            },
+            "rotation": 0
+          },
+          {
+            "text": "BRIANNA WIEST",
+            "confidence": 0.99817,
+            "bbox": {
+              "x": 969.0,
+              "y": 313.0,
+              "w": 82.0,
+              "h": 108.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "BRIANANAANEST",
+            "confidence": 0.7555,
+            "bbox": {
+              "x": 966.0,
+              "y": 313.0,
+              "w": 81.0,
+              "h": 109.0
+            },
+            "rotation": 90
+          }
+        ]
+      },
+      {
+        "det_id": "f000027_ocr0005",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 485,
+          "y": 689,
+          "w": 194,
+          "h": 71,
+          "angle_deg": 0.0
+        },
+        "item_category": null,
+        "score": 0.99973,
+        "merged_from": [],
+        "flags": [],
+        "row_index": 2,
+        "ocr_lines": [
+          {
+            "text": "SELF-HELP",
+            "confidence": 0.99973,
+            "bbox": {
+              "x": 485.0,
+              "y": 689.0,
+              "w": 194.0,
+              "h": 71.0
+            },
+            "rotation": 0
+          }
+        ]
+      },
+      {
+        "det_id": "f000027_ocr0006",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 321,
+          "y": 823,
+          "w": 211,
+          "h": 457,
+          "angle_deg": 0.0
+        },
+        "item_category": null,
+        "score": 0.9934379999999999,
+        "merged_from": [],
+        "flags": [],
+        "row_index": 3,
+        "ocr_lines": [
+          {
+            "text": "AMERICAN PSYCHO",
+            "confidence": 0.99991,
+            "bbox": {
+              "x": 355.0,
+              "y": 870.0,
+              "w": 60.0,
+              "h": 173.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "AMERICAN PSYCHO Bret Easton Ellis",
+            "confidence": 0.97846,
+            "bbox": {
+              "x": 355.0,
+              "y": 869.0,
+              "w": 91.0,
+              "h": 308.0
+            },
+            "rotation": 0
+          },
+          {
+            "text": "Feel-Good Productivity Ali Abdaal",
+            "confidence": 0.99635,
+            "bbox": {
+              "x": 402.0,
+              "y": 823.0,
+              "w": 130.0,
+              "h": 457.0
+            },
+            "rotation": 0
+          },
+          {
+            "text": "How to Enjoy Your Life and Your Job DALE CARNEGIE",
+            "confidence": 0.99262,
+            "bbox": {
+              "x": 321.0,
+              "y": 920.0,
+              "w": 91.0,
+              "h": 322.0
+            },
+            "rotation": 0
+          },
+          {
+            "text": "Bret Easton Ellis",
+            "confidence": 0.99985,
+            "bbox": {
+              "x": 392.0,
+              "y": 1040.0,
+              "w": 51.0,
+              "h": 138.0
+            },
+            "rotation": 90
+          }
+        ]
+      },
+      {
+        "det_id": "f000027_ocr0007",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 486,
+          "y": 823,
+          "w": 103,
+          "h": 457,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": 0.98558,
+        "merged_from": [],
+        "flags": [],
+        "row_index": 3,
+        "ocr_lines": [
+          {
+            "text": "George Orwell Nineteen Eghty-Four",
+            "confidence": 0.98233,
+            "bbox": {
+              "x": 523.0,
+              "y": 871.0,
+              "w": 66.0,
+              "h": 214.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "THE LORDS OF EASY MONEY",
+            "confidence": 0.98883,
+            "bbox": {
+              "x": 486.0,
+              "y": 983.0,
+              "w": 91.0,
+              "h": 280.0
+            },
+            "rotation": 0
+          }
+        ]
+      },
+      {
+        "det_id": "f000027_ocr0008",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 574,
+          "y": 823,
+          "w": 241,
+          "h": 457,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": 0.81936625,
+        "merged_from": [],
+        "flags": [],
+        "row_index": 3,
+        "ocr_lines": [
+          {
+            "text": "MARKON",
+            "confidence": 0.91088,
+            "bbox": {
+              "x": 657.0,
+              "y": 849.0,
+              "w": 40.0,
+              "h": 88.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "PanloCoelho",
+            "confidence": 0.97185,
+            "bbox": {
+              "x": 752.0,
+              "y": 885.0,
+              "w": 59.0,
+              "h": 132.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "二NUNCHI",
+            "confidence": 0.96954,
+            "bbox": {
+              "x": 611.0,
+              "y": 903.0,
+              "w": 97.0,
+              "h": 232.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "POWER",
+            "confidence": 0.99969,
+            "bbox": {
+              "x": 715.0,
+              "y": 926.0,
+              "w": 100.0,
+              "h": 247.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "NASSIM NICHOLAS TALEB FOOLED BY RANDOMNESS",
+            "confidence": 0.99782,
+            "bbox": {
+              "x": 577.0,
+              "y": 883.0,
+              "w": 99.0,
+              "h": 343.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "NASO G EG AO G ES",
+            "confidence": 0.63947,
+            "bbox": {
+              "x": 574.0,
+              "y": 886.0,
+              "w": 100.0,
+              "h": 341.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "NHH",
+            "confidence": 0.55814,
+            "bbox": {
+              "x": 684.0,
+              "y": 968.0,
+              "w": 74.0,
+              "h": 181.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "NHH A ANR",
+            "confidence": 0.50754,
+            "bbox": {
+              "x": 682.0,
+              "y": 971.0,
+              "w": 73.0,
+              "h": 179.0
+            },
+            "rotation": 90
+          }
+        ]
+      },
+      {
+        "det_id": "f000027_ocr0009",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 799,
+          "y": 823,
+          "w": 62,
+          "h": 457,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": 0.99865,
+        "merged_from": [],
+        "flags": [],
+        "row_index": 3,
+        "ocr_lines": [
+          {
+            "text": "THE ALCHEMIST",
+            "confidence": 0.99865,
+            "bbox": {
+              "x": 799.0,
+              "y": 1062.0,
+              "w": 62.0,
+              "h": 144.0
+            },
+            "rotation": 90
+          }
+        ]
+      }
+    ],
+    "46": [
+      {
+        "det_id": "f000046_ocr0000",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 480,
+          "y": 475,
+          "w": 279,
+          "h": 370,
+          "angle_deg": 0.0
+        },
+        "item_category": null,
+        "score": 0.66634,
+        "merged_from": [],
+        "flags": [],
+        "row_index": 1,
+        "ocr_lines": [
+          {
+            "text": "AtomIC",
+            "confidence": 0.66634,
+            "bbox": {
+              "x": 480.0,
+              "y": 475.0,
+              "w": 279.0,
+              "h": 370.0
+            },
+            "rotation": 0
+          }
+        ]
+      },
+      {
+        "det_id": "f000046_ocr0001",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 634,
+          "y": 605,
+          "w": 445,
+          "h": 660,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": 0.9932166666666667,
+        "merged_from": [],
+        "flags": [],
+        "row_index": 2,
+        "ocr_lines": [
+          {
+            "text": "THE EVERYDAY HERO MANIFESTO",
+            "confidence": 0.99748,
+            "bbox": {
+              "x": 634.0,
+              "y": 605.0,
+              "w": 388.0,
+              "h": 660.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "NAVAL RAVIKANT",
+            "confidence": 0.98623,
+            "bbox": {
+              "x": 901.0,
+              "y": 790.0,
+              "w": 178.0,
+              "h": 300.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "ROBIN SHARMA",
+            "confidence": 0.99594,
+            "bbox": {
+              "x": 725.0,
+              "y": 710.0,
+              "w": 312.0,
+              "h": 501.0
+            },
+            "rotation": 270
+          }
+        ]
+      },
+      {
+        "det_id": "f000046_ocr0002",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 218,
+          "y": 1097,
+          "w": 181,
+          "h": 236,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": 0.999945,
+        "merged_from": [],
+        "flags": [],
+        "row_index": 3,
+        "ocr_lines": [
+          {
+            "text": "Clear",
+            "confidence": 0.99998,
+            "bbox": {
+              "x": 218.0,
+              "y": 1135.0,
+              "w": 131.0,
+              "h": 164.0
+            },
+            "rotation": 0
+          },
+          {
+            "text": "James",
+            "confidence": 0.99991,
+            "bbox": {
+              "x": 253.0,
+              "y": 1143.0,
+              "w": 146.0,
+              "h": 190.0
+            },
+            "rotation": 270
+          }
+        ]
+      },
+      {
+        "det_id": "f000046_ocr0003",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 772,
+          "y": 1097,
+          "w": 145,
+          "h": 236,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": 0.99996,
+        "merged_from": [],
+        "flags": [],
+        "row_index": 3,
+        "ocr_lines": [
+          {
+            "text": "ERICJORGENSON",
+            "confidence": 0.99996,
+            "bbox": {
+              "x": 772.0,
+              "y": 1097.0,
+              "w": 145.0,
+              "h": 223.0
+            },
+            "rotation": 90
+          }
+        ]
+      },
+      {
+        "det_id": "f000046_ocr0004",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 940,
+          "y": 1097,
+          "w": 140,
+          "h": 236,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": 0.9128266666666667,
+        "merged_from": [],
+        "flags": [],
+        "row_index": 3,
+        "ocr_lines": [
+          {
+            "text": "YOGANANDA",
+            "confidence": 0.99997,
+            "bbox": {
+              "x": 940.0,
+              "y": 1111.0,
+              "w": 120.0,
+              "h": 178.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "PARAAANSA",
+            "confidence": 0.73855,
+            "bbox": {
+              "x": 954.0,
+              "y": 1112.0,
+              "w": 125.0,
+              "h": 200.0
+            },
+            "rotation": 0
+          },
+          {
+            "text": "PARAMAHANSA",
+            "confidence": 0.99996,
+            "bbox": {
+              "x": 959.0,
+              "y": 1114.0,
+              "w": 121.0,
+              "h": 197.0
+            },
+            "rotation": 270
+          }
+        ]
+      },
+      {
+        "det_id": "f000046_ocr0005",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 161,
+          "y": 1314,
+          "w": 118,
+          "h": 125,
+          "angle_deg": 0.0
+        },
+        "item_category": null,
+        "score": 0.89593,
+        "merged_from": [],
+        "flags": [],
+        "row_index": 4,
+        "ocr_lines": [
+          {
+            "text": "rh",
+            "confidence": 0.89593,
+            "bbox": {
+              "x": 161.0,
+              "y": 1314.0,
+              "w": 118.0,
+              "h": 125.0
+            },
+            "rotation": 0
+          }
+        ]
+      }
+    ],
+    "57": [
+      {
+        "det_id": "f000057_ocr0000",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 0,
+          "y": 657,
+          "w": 177,
+          "h": 779,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": 0.8792675,
+        "merged_from": [],
+        "flags": [],
+        "row_index": 1,
+        "ocr_lines": [
+          {
+            "text": "HALFMURDER",
+            "confidence": 0.94715,
+            "bbox": {
+              "x": 0.0,
+              "y": 791.0,
+              "w": 177.0,
+              "h": 283.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "MUOOER",
+            "confidence": 0.65223,
+            "bbox": {
+              "x": 0.0,
+              "y": 921.0,
+              "w": 95.0,
+              "h": 150.0
+            },
+            "rotation": 0
+          },
+          {
+            "text": "Cal New",
+            "confidence": 0.99355,
+            "bbox": {
+              "x": 0.0,
+              "y": 1049.0,
+              "w": 149.0,
+              "h": 222.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "Cal Newt",
+            "confidence": 0.92414,
+            "bbox": {
+              "x": 1.0,
+              "y": 1048.0,
+              "w": 151.0,
+              "h": 228.0
+            },
+            "rotation": 270
+          }
+        ]
+      },
+      {
+        "det_id": "f000057_ocr0001",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 81,
+          "y": 657,
+          "w": 599,
+          "h": 779,
+          "angle_deg": 0.0
+        },
+        "item_category": null,
+        "score": 0.9815845454545454,
+        "merged_from": [],
+        "flags": [],
+        "row_index": 1,
+        "ocr_lines": [
+          {
+            "text": "Four Thousand Weeks",
+            "confidence": 0.982,
+            "bbox": {
+              "x": 374.0,
+              "y": 665.0,
+              "w": 263.0,
+              "h": 379.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "Heal Your Mind Heal Your Life",
+            "confidence": 0.99406,
+            "bbox": {
+              "x": 302.0,
+              "y": 697.0,
+              "w": 239.0,
+              "h": 349.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "DEEP WORK",
+            "confidence": 0.99457,
+            "bbox": {
+              "x": 81.0,
+              "y": 657.0,
+              "w": 318.0,
+              "h": 443.0
+            },
+            "rotation": 0
+          },
+          {
+            "text": "The Myth of Sisyphus",
+            "confidence": 0.99774,
+            "bbox": {
+              "x": 250.0,
+              "y": 840.0,
+              "w": 127.0,
+              "h": 173.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "AIIO",
+            "confidence": 0.86494,
+            "bbox": {
+              "x": 312.0,
+              "y": 1049.0,
+              "w": 87.0,
+              "h": 100.0
+            },
+            "rotation": 0
+          },
+          {
+            "text": "UR PARACHUTE? 2017",
+            "confidence": 0.99051,
+            "bbox": {
+              "x": 358.0,
+              "y": 988.0,
+              "w": 238.0,
+              "h": 359.0
+            },
+            "rotation": 0
+          },
+          {
+            "text": "IRFAN ALAM",
+            "confidence": 0.99323,
+            "bbox": {
+              "x": 162.0,
+              "y": 1089.0,
+              "w": 124.0,
+              "h": 177.0
+            },
+            "rotation": 0
+          },
+          {
+            "text": "PARACHUTE? 2017",
+            "confidence": 0.9936,
+            "bbox": {
+              "x": 362.0,
+              "y": 1041.0,
+              "w": 207.0,
+              "h": 305.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "Oliver Burkeman",
+            "confidence": 0.98954,
+            "bbox": {
+              "x": 162.0,
+              "y": 1044.0,
+              "w": 244.0,
+              "h": 332.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "MASTER PLAN",
+            "confidence": 0.99979,
+            "bbox": {
+              "x": 435.0,
+              "y": 1077.0,
+              "w": 245.0,
+              "h": 354.0
+            },
+            "rotation": 0
+          },
+          {
+            "text": "Burkeman",
+            "confidence": 0.99745,
+            "bbox": {
+              "x": 166.0,
+              "y": 1147.0,
+              "w": 174.0,
+              "h": 222.0
+            },
+            "rotation": 0
+          }
+        ]
+      },
+      {
+        "det_id": "f000057_ocr0002",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 433,
+          "y": 657,
+          "w": 488,
+          "h": 779,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": 0.981948,
+        "merged_from": [],
+        "flags": [],
+        "row_index": 1,
+        "ocr_lines": [
+          {
+            "text": "WHAT COI",
+            "confidence": 0.93423,
+            "bbox": {
+              "x": 644.0,
+              "y": 710.0,
+              "w": 124.0,
+              "h": 172.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "WHAT COL",
+            "confidence": 0.98595,
+            "bbox": {
+              "x": 643.0,
+              "y": 711.0,
+              "w": 122.0,
+              "h": 171.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "THE MILLIONAIRE MASTER PLAN",
+            "confidence": 0.99486,
+            "bbox": {
+              "x": 433.0,
+              "y": 693.0,
+              "w": 488.0,
+              "h": 743.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "MILLIONAIRE MASTER PLAN",
+            "confidence": 0.99939,
+            "bbox": {
+              "x": 435.0,
+              "y": 784.0,
+              "w": 432.0,
+              "h": 652.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "BRIANNA WIEST",
+            "confidence": 0.99531,
+            "bbox": {
+              "x": 621.0,
+              "y": 1082.0,
+              "w": 151.0,
+              "h": 227.0
+            },
+            "rotation": 0
+          }
+        ]
+      },
+      {
+        "det_id": "f000057_ocr0003",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 772,
+          "y": 657,
+          "w": 210,
+          "h": 779,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": 0.99197,
+        "merged_from": [],
+        "flags": [],
+        "row_index": 1,
+        "ocr_lines": [
+          {
+            "text": "THE",
+            "confidence": 0.99998,
+            "bbox": {
+              "x": 816.0,
+              "y": 695.0,
+              "w": 105.0,
+              "h": 131.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "THE MOUNTAIN IS YOU",
+            "confidence": 0.98396,
+            "bbox": {
+              "x": 772.0,
+              "y": 711.0,
+              "w": 210.0,
+              "h": 331.0
+            },
+            "rotation": 0
+          }
+        ]
+      },
+      {
+        "det_id": "f000057_ocr0004",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 111,
+          "y": 1376,
+          "w": 82,
+          "h": 105,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": 0.99996,
+        "merged_from": [],
+        "flags": [],
+        "row_index": 2,
+        "ocr_lines": [
+          {
+            "text": "VINTAGE",
+            "confidence": 0.99996,
+            "bbox": {
+              "x": 111.0,
+              "y": 1376.0,
+              "w": 82.0,
+              "h": 105.0
+            },
+            "rotation": 90
+          }
+        ]
+      }
+    ],
+    "73": [
+      {
+        "det_id": "f000073_ocr0000",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 450,
+          "y": 37,
+          "w": 105,
+          "h": 125,
+          "angle_deg": 0.0
+        },
+        "item_category": null,
+        "score": 0.99976,
+        "merged_from": [],
+        "flags": [],
+        "row_index": 1,
+        "ocr_lines": [
+          {
+            "text": "B",
+            "confidence": 0.99976,
+            "bbox": {
+              "x": 450.0,
+              "y": 37.0,
+              "w": 105.0,
+              "h": 125.0
+            },
+            "rotation": 0
+          }
+        ]
+      },
+      {
+        "det_id": "f000073_ocr0001",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 0,
+          "y": 181,
+          "w": 317,
+          "h": 1445,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": 0.9405,
+        "merged_from": [],
+        "flags": [
+          "possible_duplicate_box"
+        ],
+        "row_index": 2,
+        "ocr_lines": [
+          {
+            "text": "Feel-Good Productivity Ali Abdaal",
+            "confidence": 0.99478,
+            "bbox": {
+              "x": 0.0,
+              "y": 181.0,
+              "w": 317.0,
+              "h": 1445.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "PICADOR",
+            "confidence": 0.99996,
+            "bbox": {
+              "x": 46.0,
+              "y": 1450.0,
+              "w": 62.0,
+              "h": 130.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "COLLECTION",
+            "confidence": 0.99973,
+            "bbox": {
+              "x": 34.0,
+              "y": 1457.0,
+              "w": 45.0,
+              "h": 123.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "COION",
+            "confidence": 0.76753,
+            "bbox": {
+              "x": 34.0,
+              "y": 1458.0,
+              "w": 41.0,
+              "h": 122.0
+            },
+            "rotation": 90
+          }
+        ]
+      },
+      {
+        "det_id": "f000073_ocr0002",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 226,
+          "y": 181,
+          "w": 295,
+          "h": 1445,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": 0.99088,
+        "merged_from": [],
+        "flags": [
+          "possible_duplicate_box"
+        ],
+        "row_index": 2,
+        "ocr_lines": [
+          {
+            "text": "George Orwell Nineteen Eighty-Four",
+            "confidence": 0.99606,
+            "bbox": {
+              "x": 350.0,
+              "y": 341.0,
+              "w": 171.0,
+              "h": 681.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "THE LORDS OF EASY MONEY",
+            "confidence": 0.9857,
+            "bbox": {
+              "x": 226.0,
+              "y": 699.0,
+              "w": 221.0,
+              "h": 885.0
+            },
+            "rotation": 0
+          }
+        ]
+      },
+      {
+        "det_id": "f000073_ocr0003",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 531,
+          "y": 181,
+          "w": 548,
+          "h": 1445,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": 0.8996,
+        "merged_from": [],
+        "flags": [],
+        "row_index": 2,
+        "ocr_lines": [
+          {
+            "text": "MANKON",
+            "confidence": 0.95704,
+            "bbox": {
+              "x": 782.0,
+              "y": 327.0,
+              "w": 103.0,
+              "h": 251.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "MANSON",
+            "confidence": 0.98508,
+            "bbox": {
+              "x": 786.0,
+              "y": 333.0,
+              "w": 88.0,
+              "h": 241.0
+            },
+            "rotation": 0
+          },
+          {
+            "text": "Power of",
+            "confidence": 0.99974,
+            "bbox": {
+              "x": 650.0,
+              "y": 552.0,
+              "w": 51.0,
+              "h": 108.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "P",
+            "confidence": 0.99984,
+            "bbox": {
+              "x": 972.0,
+              "y": 569.0,
+              "w": 107.0,
+              "h": 142.0
+            },
+            "rotation": 0
+          },
+          {
+            "text": "NUNCHI",
+            "confidence": 0.99991,
+            "bbox": {
+              "x": 662.0,
+              "y": 649.0,
+              "w": 177.0,
+              "h": 426.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "NA NS    SS",
+            "confidence": 0.82479,
+            "bbox": {
+              "x": 537.0,
+              "y": 434.0,
+              "w": 228.0,
+              "h": 1026.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "NAS     SS",
+            "confidence": 0.82805,
+            "bbox": {
+              "x": 536.0,
+              "y": 436.0,
+              "w": 226.0,
+              "h": 1025.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "NASSIM NICHOLAS TALEB FOOLED BY RANDOMNESS",
+            "confidence": 0.99624,
+            "bbox": {
+              "x": 531.0,
+              "y": 433.0,
+              "w": 234.0,
+              "h": 1031.0
+            },
+            "rotation": 0
+          },
+          {
+            "text": "NHSR",
+            "confidence": 0.73668,
+            "bbox": {
+              "x": 859.0,
+              "y": 713.0,
+              "w": 162.0,
+              "h": 528.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "NHSRR",
+            "confidence": 0.59487,
+            "bbox": {
+              "x": 850.0,
+              "y": 708.0,
+              "w": 177.0,
+              "h": 540.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "THT SGUVITNE ARTCK",
+            "confidence": 0.8058,
+            "bbox": {
+              "x": 856.0,
+              "y": 714.0,
+              "w": 165.0,
+              "h": 529.0
+            },
+            "rotation": 0
+          },
+          {
+            "text": "Euny Hong",
+            "confidence": 0.99993,
+            "bbox": {
+              "x": 808.0,
+              "y": 1226.0,
+              "w": 67.0,
+              "h": 150.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "MODERN CLASSICS",
+            "confidence": 0.96683,
+            "bbox": {
+              "x": 542.0,
+              "y": 1367.0,
+              "w": 68.0,
+              "h": 251.0
+            },
+            "rotation": 90
+          }
+        ]
+      }
+    ],
+    "104": [
+      {
+        "det_id": "f000104_ocr0000",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 0,
+          "y": 334,
+          "w": 197,
+          "h": 391,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": 0.74839,
+        "merged_from": [],
+        "flags": [],
+        "row_index": 1,
+        "ocr_lines": [
+          {
+            "text": "\"TTTT!",
+            "confidence": 0.74839,
+            "bbox": {
+              "x": 0.0,
+              "y": 334.0,
+              "w": 197.0,
+              "h": 391.0
+            },
+            "rotation": 90
+          }
+        ]
+      },
+      {
+        "det_id": "f000104_ocr0001",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 37,
+          "y": 627,
+          "w": 168,
+          "h": 319,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": 0.89999,
+        "merged_from": [],
+        "flags": [],
+        "row_index": 2,
+        "ocr_lines": [
+          {
+            "text": "山山",
+            "confidence": 0.89999,
+            "bbox": {
+              "x": 37.0,
+              "y": 627.0,
+              "w": 168.0,
+              "h": 319.0
+            },
+            "rotation": 90
+          }
+        ]
+      }
+    ]
+  },
+  "row_count_checks": [],
+  "keyframe_stats": [
+    {
+      "seq": 15,
+      "model": "rapidocr-onnxruntime",
+      "latency_ms": 37307,
+      "spine_count": 2,
+      "shelf_board_count": 0,
+      "item_count": 0,
+      "errors": []
+    },
+    {
+      "seq": 27,
+      "model": "rapidocr-onnxruntime",
+      "latency_ms": 86706,
+      "spine_count": 10,
+      "shelf_board_count": 0,
+      "item_count": 0,
+      "errors": []
+    },
+    {
+      "seq": 46,
+      "model": "rapidocr-onnxruntime",
+      "latency_ms": 126174,
+      "spine_count": 6,
+      "shelf_board_count": 0,
+      "item_count": 0,
+      "errors": []
+    },
+    {
+      "seq": 57,
+      "model": "rapidocr-onnxruntime",
+      "latency_ms": 164666,
+      "spine_count": 5,
+      "shelf_board_count": 0,
+      "item_count": 0,
+      "errors": []
+    },
+    {
+      "seq": 73,
+      "model": "rapidocr-onnxruntime",
+      "latency_ms": 204814,
+      "spine_count": 4,
+      "shelf_board_count": 0,
+      "item_count": 0,
+      "errors": []
+    },
+    {
+      "seq": 104,
+      "model": "rapidocr-onnxruntime",
+      "latency_ms": 237531,
+      "spine_count": 2,
+      "shelf_board_count": 0,
+      "item_count": 0,
+      "errors": []
+    }
+  ],
+  "selected_keyframes": [
+    {
+      "seq": 15,
+      "segment": 0,
+      "qc_verdict": "blurry",
+      "blur": 162.47198856824767,
+      "quality_fallback": true
+    },
+    {
+      "seq": 27,
+      "segment": 1,
+      "qc_verdict": "ok",
+      "blur": 285.7024738653178,
+      "quality_fallback": false
+    },
+    {
+      "seq": 46,
+      "segment": 2,
+      "qc_verdict": "blurry",
+      "blur": 153.82289277112648,
+      "quality_fallback": true
+    },
+    {
+      "seq": 57,
+      "segment": 3,
+      "qc_verdict": "blurry",
+      "blur": 190.99061817508496,
+      "quality_fallback": true
+    },
+    {
+      "seq": 73,
+      "segment": 4,
+      "qc_verdict": "blurry",
+      "blur": 68.56858767818191,
+      "quality_fallback": true
+    },
+    {
+      "seq": 104,
+      "segment": 5,
+      "qc_verdict": "blurry",
+      "blur": 129.2338976204755,
+      "quality_fallback": true
+    }
+  ],
+  "review_queue": [
+    {
+      "ref_id": "segment-1",
+      "code": "low_quality_coverage_segment",
+      "evidence": "Segment 1 had no QC-ok frame; selected frame 15 (verdict=blurry, blur=162.47198856824767)."
+    },
+    {
+      "ref_id": "segment-3",
+      "code": "low_quality_coverage_segment",
+      "evidence": "Segment 3 had no QC-ok frame; selected frame 46 (verdict=blurry, blur=153.82289277112648)."
+    },
+    {
+      "ref_id": "segment-4",
+      "code": "low_quality_coverage_segment",
+      "evidence": "Segment 4 had no QC-ok frame; selected frame 57 (verdict=blurry, blur=190.99061817508496)."
+    },
+    {
+      "ref_id": "segment-5",
+      "code": "low_quality_coverage_segment",
+      "evidence": "Segment 5 had no QC-ok frame; selected frame 73 (verdict=blurry, blur=68.56858767818191)."
+    },
+    {
+      "ref_id": "segment-6",
+      "code": "low_quality_coverage_segment",
+      "evidence": "Segment 6 had no QC-ok frame; selected frame 104 (verdict=blurry, blur=129.2338976204755)."
+    }
+  ]
+}

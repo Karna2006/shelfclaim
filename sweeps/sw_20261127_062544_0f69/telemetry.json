@@ -1,0 +1,27 @@
+{
+  "stages": {
+    "s06": {
+      "duration_s": 62.622346,
+      "status": "done"
+    },
+    "s07": {
+      "duration_s": 9.605468,
+      "status": "done"
+    },
+    "s08": {
+      "duration_s": 0.021,
+      "status": "done"
+    },
+    "s09": {
+      "duration_s": 0.009324,
+      "status": "done"
+    },
+    "s10": {
+      "duration_s": 0.155488,
+      "status": "done"
+    }
+  },
+  "costs": [],
+  "total_cost_usd": null,
+  "time_to_packet_s": 72.439305
+}

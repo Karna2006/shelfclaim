@@ -1,0 +1,197 @@
+{
+  "books": {
+    "b_0001": {
+      "height_cm": 115.71,
+      "thickness_cm": 79.61,
+      "method": "marker_plane",
+      "flags": [
+        "height_outlier",
+        "thickness_outlier"
+      ]
+    },
+    "b_0002": {
+      "height_cm": null,
+      "thickness_cm": null,
+      "method": "none",
+      "flags": []
+    },
+    "b_0003": {
+      "height_cm": null,
+      "thickness_cm": null,
+      "method": "none",
+      "flags": []
+    },
+    "b_0004": {
+      "height_cm": null,
+      "thickness_cm": null,
+      "method": "none",
+      "flags": []
+    },
+    "b_0005": {
+      "height_cm": null,
+      "thickness_cm": null,
+      "method": "none",
+      "flags": []
+    },
+    "b_0006": {
+      "height_cm": null,
+      "thickness_cm": null,
+      "method": "none",
+      "flags": []
+    },
+    "b_0007": {
+      "height_cm": null,
+      "thickness_cm": null,
+      "method": "none",
+      "flags": []
+    },
+    "b_0008": {
+      "height_cm": 78.49,
+      "thickness_cm": 53.82,
+      "method": "marker_plane",
+      "flags": [
+        "height_outlier",
+        "thickness_outlier"
+      ]
+    },
+    "b_0009": {
+      "height_cm": null,
+      "thickness_cm": null,
+      "method": "none",
+      "flags": []
+    },
+    "b_0010": {
+      "height_cm": null,
+      "thickness_cm": null,
+      "method": "none",
+      "flags": []
+    },
+    "b_0011": {
+      "height_cm": null,
+      "thickness_cm": null,
+      "method": "none",
+      "flags": []
+    },
+    "b_0012": {
+      "height_cm": null,
+      "thickness_cm": null,
+      "method": "none",
+      "flags": []
+    },
+    "b_0013": {
+      "height_cm": null,
+      "thickness_cm": null,
+      "method": "none",
+      "flags": []
+    },
+    "b_0014": {
+      "height_cm": null,
+      "thickness_cm": null,
+      "method": "none",
+      "flags": []
+    },
+    "b_0015": {
+      "height_cm": null,
+      "thickness_cm": null,
+      "method": "none",
+      "flags": []
+    },
+    "b_0016": {
+      "height_cm": null,
+      "thickness_cm": null,
+      "method": "none",
+      "flags": []
+    },
+    "b_0017": {
+      "height_cm": null,
+      "thickness_cm": null,
+      "method": "none",
+      "flags": []
+    },
+    "b_0018": {
+      "height_cm": null,
+      "thickness_cm": null,
+      "method": "none",
+      "flags": []
+    },
+    "b_0019": {
+      "height_cm": null,
+      "thickness_cm": null,
+      "method": "none",
+      "flags": []
+    }
+  },
+  "rows": {},
+  "shelf_run_m": 18.93743408203125,
+  "sum_thickness_m": null,
+  "review_queue": [
+    {
+      "ref_id": "b_0002",
+      "code": "missing_scale_marker"
+    },
+    {
+      "ref_id": "b_0003",
+      "code": "missing_scale_marker"
+    },
+    {
+      "ref_id": "b_0004",
+      "code": "missing_scale_marker"
+    },
+    {
+      "ref_id": "b_0005",
+      "code": "missing_scale_marker"
+    },
+    {
+      "ref_id": "b_0006",
+      "code": "missing_scale_marker"
+    },
+    {
+      "ref_id": "b_0007",
+      "code": "missing_scale_marker"
+    },
+    {
+      "ref_id": "b_0009",
+      "code": "missing_scale_marker"
+    },
+    {
+      "ref_id": "b_0010",
+      "code": "missing_scale_marker"
+    },
+    {
+      "ref_id": "b_0011",
+      "code": "missing_scale_marker"
+    },
+    {
+      "ref_id": "b_0012",
+      "code": "missing_scale_marker"
+    },
+    {
+      "ref_id": "b_0013",
+      "code": "missing_scale_marker"
+    },
+    {
+      "ref_id": "b_0014",
+      "code": "missing_scale_marker"
+    },
+    {
+      "ref_id": "b_0015",
+      "code": "missing_scale_marker"
+    },
+    {
+      "ref_id": "b_0016",
+      "code": "missing_scale_marker"
+    },
+    {
+      "ref_id": "b_0017",
+      "code": "missing_scale_marker"
+    },
+    {
+      "ref_id": "b_0018",
+      "code": "missing_scale_marker"
+    },
+    {
+      "ref_id": "b_0019",
+      "code": "missing_scale_marker"
+    }
+  ]
+}

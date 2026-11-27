@@ -1,27 +1,46 @@
+# Local credentials and environment
 .env
+.env.*
+!.env.example
+
+# Python/build/test output
 .venv/
 __pycache__/
 *.py[cod]
-.pytest_cache/
-.ruff_cache/
-cache/
-models/
-sweeps/
-*.npz
-*.ply
-markers.pdf
 *.egg-info/
 dist/
 build/
+.pytest_cache/
+.ruff_cache/
 .coverage
 htmlcov/
+.pytest-tmp*/
+*pytest-tmp*/
+.pytest-temp*/
+*pytest-temp*/
 
-# local / not for repo
+# Local caches and downloaded models
+cache/
+models/
+models/*.onnx
+
+# Generated geometry and marker output
+*.npz
+*.ply
+markers.pdf
+
+# Sweeps are private/local by default; commit only the reviewed demo fixtures.
+sweeps/*
+!sweeps/sw_20261126_225839_2007/
+!sweeps/sw_20261126_225839_2007/**
+!sweeps/sw_20261127_062544_0f69/
+!sweeps/sw_20261127_062544_0f69/**
+!sweeps/sw_20261127_044901_65d3/
+!sweeps/sw_20261127_044901_65d3/**
+
+# Local/editor artifacts
 *.docx
 Take-Home*.txt
 library-claim-agent-docs/
 library-claim-agent-docs.zip
 .vscode/
-*pytest-tmp*/
-/.pytest-temp-agent/
-.pytest-tmp/

@@ -1,0 +1,1675 @@
+{
+  "search_metadata": {
+    "id": "6b08bb869b4f1fbb46a13e89",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/dl8NU4p5mjgaI1arE8XcjjXLMl6C5NB372hOSISIya8/6b08bb869b4f1fbb46a13e89.json",
+    "markdown_endpoint": "https://serpapi.com/searches/dl8NU4p5mjgaI1arE8XcjjXLMl6C5NB372hOSISIya8/6b08bb869b4f1fbb46a13e89.md",
+    "created_at": "2026-11-26 23:06:46 UTC",
+    "processed_at": "2026-11-26 23:06:46 UTC",
+    "ebay_url": "https://www.ebay.co.uk/sch/i.html?_nkw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book",
+    "raw_html_file": "https://serpapi.com/searches/dl8NU4p5mjgaI1arE8XcjjXLMl6C5NB372hOSISIya8/6b08bb869b4f1fbb46a13e89.html",
+    "total_time_taken": 1.5
+  },
+  "search_parameters": {
+    "engine": "ebay",
+    "_nkw": "The Almanack of Naval Ravikant Eric Jorgenson book",
+    "ebay_domain": "ebay.co.uk"
+  },
+  "search_information": {
+    "organic_results_state": "Results for exact spelling",
+    "total_results": 146,
+    "query_displayed": "the almanack of naval ravikant eric jorgensen book"
+  },
+  "categories": [
+    {
+      "name": "Books, Comics & Magazines",
+      "link": "https://www.ebay.co.uk/sch/267/i.html?_nkw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book",
+      "id": 267,
+      "serpapi_link": "https://serpapi.com/search.json?_nkw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&category_id=267&ebay_domain=ebay.co.uk&engine=ebay"
+    },
+    {
+      "name": "Fiction & Non-Fiction Books",
+      "link": "https://www.ebay.co.uk/sch/261186/i.html?_nkw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book",
+      "id": 261186,
+      "serpapi_link": "https://serpapi.com/search.json?_nkw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&category_id=261186&ebay_domain=ebay.co.uk&engine=ebay"
+    },
+    {
+      "name": "Adult Learning & University Books",
+      "link": "https://www.ebay.co.uk/sch/1105/i.html?_nkw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book",
+      "id": 1105,
+      "serpapi_link": "https://serpapi.com/search.json?_nkw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&category_id=1105&ebay_domain=ebay.co.uk&engine=ebay"
+    },
+    {
+      "name": "School Textbooks & Study Guides",
+      "link": "https://www.ebay.co.uk/sch/171223/i.html?_nkw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book",
+      "id": 171223,
+      "serpapi_link": "https://serpapi.com/search.json?_nkw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&category_id=171223&ebay_domain=ebay.co.uk&engine=ebay"
+    }
+  ],
+  "organic_results": [
+    {
+      "title": "The Almanack of Naval Ravikant by Eric Jorgenson 📥",
+      "link": "https://www.ebay.co.uk/itm/306787420042?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&itmmeta=01M8D1S1WC34DX5Z4BJ24ARMH2&hash=item476df4878a:g:bcsAAeSwdpxpnRGU&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2F6VuC3vcJFa%2FlcLcHUquRSf53uvdsIfFfF%2BpvCwhu%2BsySvrZg5MJcifBPIzvI%2Bq4W4Wb0IDP7sPe6gwdWSjlJ%2FDHUSmeTvGWN%2FuyLJ7FPrdDbBDyd9GFIHHrh3fekoHNIGrSm659AoGKRcIHexBWGH0T5wkPECHoFx5znjRoRM9OpPf5bx20fyNGdCKOBKP1q2d6LWzSGHWK6bu9XKG2%2FuFWZ%2FAlfG5oVldT%2Fh1aUnQxSIqB7p6f50jr1fJLf119bYH02Fd67KfdIMx4GM0b05rBtMjz8wNB8gW6Z2rKXOSQ%3D%3D%7Ctkp%3ABk9SR76f5KHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=306787420042",
+      "product_id": "306787420042",
+      "condition": "New (other)",
+      "price": {
+        "raw": "£3.49",
+        "extracted": 3.49
+      },
+      "shipping": "Free delivery",
+      "location": "from United States",
+      "quantity_sold": "191 sold",
+      "extracted_quantity_sold": 191,
+      "buying_format": "accepts_offers",
+      "buying_format_text": "or Best Offer",
+      "thumbnail": "https://i.ebayimg.com/images/g/bcsAAeSwdpxpnRGU/s-l500.jpg",
+      "seller": {
+        "username": "reb_2644",
+        "reviews": 85,
+        "positive_feedback_in_percentage": 76.3
+      }
+    },
+    {
+      "sponsored": true,
+      "title": "The Almanack of Naval Ravikant 2nd Edition by Eric Jorgenson HARDBACK",
+      "link": "https://www.ebay.co.uk/itm/800630675250?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&itmmeta=01M8D1S1WCXDRZRCHVEX3C4WX1&hash=itemba694e9732:g:aJMAAeSw~bRqn~OM&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde94fCRmxq2A7rUBtC4RI6u4n%2Bj7YQ1UEFABIS%2BxtTeRcuyoE1tVNUkoM09X0AAFsPseHOGdjsKkPsmENp4%2FP4ZKU1wAowWQgzxMRKCUxQ98hotPc%2BU2%2BeWmqzh6kfbyD2bZvvXzIagDA9EGlVghNqvv%2BrgCcPDKmBLCz3yiWWd8lHqoLsaw3b0tm9y7%2BnnrwhofoPeY4FZ3hIfYaSjhhWzMvFY%2BRC8MZnTpOK2FmXtFQNZMKon0fGNEPdE%2BJo30MKtB9p7ofMFhijhVll9xojToD7z13L8lJcd5YgP0xyaHbcTDP6Iy4zz3Q1U3e2qAjExg7JnMJqKLxPM04z0EyxD8%7Ctkp%3ABFBMvp_kocNo",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=800630675250",
+      "product_id": "800630675250",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£14.82",
+        "extracted": 14.82
+      },
+      "shipping": "Free delivery",
+      "buying_format": "accepts_offers",
+      "buying_format_text": "or Best Offer",
+      "thumbnail": "https://i.ebayimg.com/images/g/aJMAAeSw~bRqn~OM/s-l500.jpg",
+      "seller": {
+        "username": "anseoutlet",
+        "reviews": 72,
+        "positive_feedback_in_percentage": 100
+      }
+    },
+    {
+      "title": "The Almanack Of Naval Ravikant: A Guide to Wealth and Happy by Eric Jorgenson",
+      "link": "https://www.ebay.co.uk/itm/377252039201?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&itmmeta=01M8D1S1WCV56GDC7737161Z3A&hash=item57d5f94a21:g:0~QAAeSw7AxqKgja&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2Fsj%2Fbi7c9Gw9oUOBmbL6kYR4E1iLaBnmSWUwWbVlLo0YGFmC05BTm9wCjXbMLkx%2F6%2BVJ%2FcHMEZeu64xpiwTSxn9OWG0xFAT3AFIxIMc63ojSadnsPbcNB1AUIBMYogMMqQpxM7EtjJ%2FY51aPPW%2FqpYMrRX6oXbTnwZEdpx4roYZ7A9rckIhSg4AjRLAQJmHbiGpEyCqmxaioh7FNL900WLFrUccwF70ZtiGBpfsr8EYsAqucPEdRAC4LQFRM%2BpONF9navTqWbLSzOUgFDOch4Jbt8H18BjaH%2FZc3c5yixDsg%3D%3D%7Ctkp%3ABk9SR8Cf5KHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=377252039201",
+      "product_id": "377252039201",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£6.86",
+        "extracted": 6.86
+      },
+      "shipping": "Free delivery",
+      "stock_status": "Last one",
+      "quantity_sold": "69 sold",
+      "extracted_quantity_sold": 69,
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/0~QAAeSw7AxqKgja/s-l500.jpg",
+      "seller": {
+        "username": "books_zone",
+        "reviews": 1500,
+        "positive_feedback_in_percentage": 99.9
+      }
+    },
+    {
+      "title": "The Almanack of Naval Ravikant: A Guide to Wealth and Happiness | Eric Jorgenson",
+      "link": "https://www.ebay.co.uk/itm/127888316214?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&itmmeta=01M8D1S1WDA2GB0SXAJ3APENE9&hash=item1dc6bcd736:g:49MAAeSwzRxqFvpV&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2BFkxzK6r4Of9tWnFXHTqDBiMzIR3sto%2B7UdAI52Ww5H5Sdh6EK2mCngmxyQKBophTujkcxOw8koft1hWVB30FCiq68q0XgxFjUWIOp99kcT60SiQV5i6I07fBjEDiga2q6GmJ%2BjuWVCnZDI8zkFcjVbbgQDP66AKCu2bWMv9YnNk91NRIJOba%2BaSG%2Fnju2wNMhJ5GIumkkXw941syXl%2BRIN4%2B2Lh%2FSKb539mwdcfN%2FMZAZvDVuDCFj3IqPFC2IzeYem2K2dMHsGkw3%2BEEoAiwxFlHGkLXSyzmOVJAZMJXYTIXLw--w1NzKk8o20m31PGpWSqaN%2BJ%2F9A%2BC3wLlKYwGi%7Ctkp%3ABk9SR8Cf5KHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=127888316214",
+      "product_id": "127888316214",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£8.99",
+        "extracted": 8.99
+      },
+      "shipping": "Free delivery",
+      "promotion": "10% off over £45 with coupon",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/49MAAeSwzRxqFvpV/s-l500.jpg",
+      "seller": {
+        "username": "books4peopleuk",
+        "reviews": 161300,
+        "positive_feedback_in_percentage": 99.9
+      }
+    },
+    {
+      "title": "The Almanack Of Naval Ravikant: A Guide to Wealth and Happy by Eric Jorgenson",
+      "link": "https://www.ebay.co.uk/itm/128067472053?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&itmmeta=01M8D1S1WDF3RHZE1JQ7VZD7J2&hash=item1dd16a8ab5:g:ORcAAeSwks5qnvxt&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde9IO2mVyTzGqCLFjHIKRuyAZ2MemiH9POVaqILHYz641dvv6%2BWq5XxKo4v1FPcXvjqQC5e4cut%2FrBEgTlVUG6ePlEZcG1QNwxCoLcSDyf9hYiHRMmHQnFPkoQ6nndZ4d3fe2AuVi%2BSGA9%2FSgA9QLeCT3e10mRig7Baw5HQlzXstzfFTiOncY%2BMNZxTAN4JoJrVciO600QmGOLi6uiAtF2EVCj8AHLGqRXIZPGaSX%2FHohjIGXMoA6dbpGbsc4f0d5fslTTboymF%2F0BjDFJOzXaltxK3Hixj4cLE7rb%2FLfP3jEg%3D%3D%7Ctkp%3ABk9SR8Cf5KHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=128067472053",
+      "product_id": "128067472053",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£8.15",
+        "extracted": 8.15
+      },
+      "shipping": "Free delivery",
+      "promotion": "Save up to 5% with Multi-buy",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/ORcAAeSwks5qnvxt/s-l500.jpg",
+      "seller": {
+        "username": "naturalwell",
+        "reviews": 456,
+        "positive_feedback_in_percentage": 100
+      }
+    },
+    {
+      "title": "The Almanack of Naval Ravikant A Guide to Wealth Paperback free shipping",
+      "link": "https://www.ebay.co.uk/itm/398228638131?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&itmmeta=01M8D1S1WDAXQ43G57NPHSJ5RY&hash=item5cb846c9b3:g:3FAAAeSwydZqamqW&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8JPqPJh%2B7toPRsBxkPgORHvL3L8oDJOZ9i%2BVdCeRTkPUogHQQ%2BpA6Sha2llH9WbKoo29Ftbla9rMgY7rGFM8KhvwESRcMILf2HAp8clVfh1xcg20r2gVAGLiB0j50g%2FZN%2FXSn484DOiXvpAFXw1HIsk1Z4Ks%2BJooJ6YFQeV7%2Fk94UYPTO9OmskvaIEs33bNpNm%2BBzkz2K3Z9bnzR9gHY24NqMGJHQZcIfucJqVnUPFHAk%2Bikys9JU9l4jWGUdHG875b7pYlAsiL1nXDYRUBW8cMskiV%2Bs8CwCLt2bO8iQBR%2Bzd4XumfTDfGn9cB04akMX2IqiI97x1uFGUMGrtYSH7%7Ctkp%3ABk9SR8Cf5KHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=398228638131",
+      "product_id": "398228638131",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£6.00",
+        "extracted": 6.0
+      },
+      "shipping": "Free delivery",
+      "quantity_sold": "64 sold",
+      "extracted_quantity_sold": 64,
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/3FAAAeSwydZqamqW/s-l500.jpg",
+      "seller": {
+        "username": "reliablerush_3920",
+        "reviews": 1500,
+        "positive_feedback_in_percentage": 99.1
+      }
+    },
+    {
+      "title": "The Almanack of Naval Ravikant, Eric Jorgenson, H",
+      "link": "https://www.ebay.co.uk/itm/377651623953?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&itmmeta=01M8D1S1WD2HSN7BVCJX01R00E&hash=item57edca7811:g:7WYAAeSw0Q5q-2Tx&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2BQoeujzx7h7Pkg5eXWi6X55u8wEpgG4gv06qPAGBZkxo2Am0RxvsUPhmLGznvgQ2BPdHE2%2BkkKdEDrF1SyO%2BevBctIvy0edF5LOGECM14%2FyrxL5sLPAG12wi72ZheTn2lpB8MgGgZy3YyKn7Pslk8mDuVyBJ9pkbVcuUwWFg%2Bt6EFxhIXWQqK0crCBGuiK9lbUA1gkaoKXl0LY3PPxTM%2BIZsOjvUaib2s0CgEK47mFPXNvoznWYqkl5VO2ISk%2BdbwfNPYRIu9ueWEeU6oiK1dGOr9XQppZd4VqkFJt5ntG%2Bg%3D%3D%7Ctkp%3ABk9SR8Cf5KHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=377651623953",
+      "product_id": "377651623953",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£21.70",
+        "extracted": 21.7
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/7WYAAeSw0Q5q-2Tx/s-l500.jpg",
+      "seller": {
+        "username": "pbshop.store",
+        "reviews": 313000,
+        "positive_feedback_in_percentage": 99.3
+      }
+    },
+    {
+      "title": "The Almanack Of Naval Ravikant: A Guide to Wealth and Happy by Eric Jorgenson",
+      "link": "https://www.ebay.co.uk/itm/366812694856?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&itmmeta=01M8D1S1WD5EHPHTNXVM9ZV77V&hash=item5567bd8948:g:uO0AAeSwi1lq-jMt&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9K1pb5cmhms0z89vJmS76ObRcVxNKclz%2BIeCK2HxuoXsesiIx7ADc%2B2nEtj3NWZRyXZg8jLKQFqvaK1kFNrA5rbK0XPgO9YfVsmtqmPGm1%2Bw2fyjL21KJGyRL3ePHAq6eufmSnMBvuDm6t337jR43W1Bcs4HHZf3re2ObZmJpLLXpLsPPG8%2FX%2BTmuyDJVX83A8bITR%2FHxh6V1108do8LhcKPv%2BtwXZeF76fDYk4g806pmLFmxq6RDTQpTjnEmaNQlwSyBq0IVhQGxBQVFtZiCoHsiTXp0RJmZAD35iYWx1XJbfbgwVqnO18UZoXi1YLtx7mW6SvSY0ewwm9pv11L51%7Ctkp%3ABk9SR8Cf5KHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=366812694856",
+      "product_id": "366812694856",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£7.99",
+        "extracted": 7.99
+      },
+      "shipping": "Free delivery",
+      "buying_format": "accepts_offers",
+      "buying_format_text": "or Best Offer",
+      "thumbnail": "https://i.ebayimg.com/images/g/uO0AAeSwi1lq-jMt/s-l500.jpg",
+      "seller": {
+        "username": "busiar0",
+        "reviews": 174,
+        "positive_feedback_in_percentage": 97.3
+      }
+    },
+    {
+      "title": "The Almanack Of Naval Ravikant: A Guide to Wealth and Happy by Eric Jorgenson",
+      "link": "https://www.ebay.co.uk/itm/257489476376?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&itmmeta=01M8D1S1WE1306FD72BSE4DY06&hash=item3bf3919b18:g:AHAAAeSwKE5p93qY&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde9D630Yhl%2BHKdoNANIYa7zSf6q9Fup9kxlTZc0I8wjmImATyscTxauSMSyqgAz3IY%2B4%2FtSVmmYjOQjO6a3b%2FVQRczRvhjXDiboDXU6eXEp6e8%2Bw6bQp3nJr5jnM5PHa8CIgzBvTY7YoFn4AOm7M21IcgxbvfAo7Nqi6x2r8HR1K%2BEGO%2Fseyo%2BDQQUZvVTo4%2BCuD3MP1XFpkX3dIByaU9wEB1lDVnDhmj4QjAFKZDVmPEYK%2BBPG9mvoM5pbyzhlj28E%2BDXRmgPdJw6plTNopOP7pXEsluveHUbN2uwncnBtV0w%3D%3D%7Ctkp%3ABk9SR8Cf5KHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=257489476376",
+      "product_id": "257489476376",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£8.25",
+        "extracted": 8.25
+      },
+      "shipping": "Free delivery",
+      "promotion": "Save up to 5% with Multi-buy",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/AHAAAeSwKE5p93qY/s-l500.jpg",
+      "seller": {
+        "username": "mabsstore-uk",
+        "reviews": 5600,
+        "positive_feedback_in_percentage": 99.4
+      }
+    },
+    {
+      "title": "The Almanack of Naval Ravikant by Eric Jorgenson paperback FREE DELIVERY",
+      "link": "https://www.ebay.co.uk/itm/406908632784?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&itmmeta=01M8D1S1WEM0B0M9NDP3BQNWT0&hash=item5ebda4fed0:g:OKMAAeSwmT1p-M-X&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2BCYgwzYhsbHPeKMg6In8IqG0dg2Dx4aMQCtdj5OsmiB6u%2BF90B9wQgaXZNDZiYwGVn5rcb6liB3W1e%2BwfDjhEWO3DyBItDoZru2WZLU%2FaCasnfqqWmdJA8KQD8kMufR4vpcnA6w9Vip7bEGuCe50yep0w%2FSSO4tA0Xmjw4cG87Fn%2Bc%2BjGEqgLKLbdBwBRJXDG6nOrEA4ifDT0aZ1TXMEPgRhi8FVx%2Ba8lLvgnQiFeskp9SQmrlkVS%2BoJeWnhiMMeFn6%2F1uu1WFiQidrCgKvwfg%2FRvR7MGwp0Smh2sYt%2BiCSA%3D%3D%7Ctkp%3ABk9SR8Cf5KHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=406908632784",
+      "product_id": "406908632784",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£9.99",
+        "extracted": 9.99
+      },
+      "shipping": "Free delivery",
+      "stock_status": "Last one",
+      "watchers": "1 watchers",
+      "extracted_watchers": 1,
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/OKMAAeSwmT1p-M-X/s-l500.jpg",
+      "seller": {
+        "username": "the_trent_mart",
+        "reviews": 270,
+        "positive_feedback_in_percentage": 99.3
+      }
+    },
+    {
+      "title": "The Almanack Of Naval Ravikant: A Guide to Wealth and Happy by Eric Jorgenson",
+      "link": "https://www.ebay.co.uk/itm/117433429773?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&itmmeta=01M8D1S1WEJPKTNY108WXB7VGQ&hash=item1b5793ef0d:g:FSAAAeSwtyZquHsQ&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2FhUp6Qtt4LIAdyuk6pE5AmakOpshrEQyoRjLnisCQF%2Bp%2FqOMk52XG2DAGr8lyH6bIDEnxhkURrRwB10hXfe3KYcYJ3VF%2BOpG70bloLXjrtYOb5%2BXqqijgAGSmQ3DwydZBIiA90nhPhODdC%2BdYOifM3mg58umxweDSkmALYnGcJZ0BOS%2F2a27Ko7WEvbda7qxh8FLP6NO7BSTqiCtkvjo40XDxmUfwUwB9RMpEq0%2BDQFTXKdFoEYkcvetMUFy3Nlf8BhFe%2FmW5FaSDiVq%2BsgNsysREA7pN7gHbSF41eRcDRMg%3D%3D%7Ctkp%3ABk9SR8Cf5KHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=117433429773",
+      "product_id": "117433429773",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£6.22",
+        "extracted": 6.22
+      },
+      "shipping": "Free delivery",
+      "returns": "Free returns",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/FSAAAeSwtyZquHsQ/s-l500.jpg",
+      "seller": {
+        "username": "urs786",
+        "reviews": 1100,
+        "positive_feedback_in_percentage": 99.5
+      }
+    },
+    {
+      "title": "The Almanack of Naval Ravikant A Guide to Wealth Paperback free shipping",
+      "link": "https://www.ebay.co.uk/itm/316325701015?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&itmmeta=01M8D1S1WECAHHZKY0DF8XCDNN&hash=item49a67b2597:g:ZzoAAOSwPx5ntXXw&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2ByyHzKwmVHAvHi3S32TMCfgQPwK1FlIgRIfMfxC5J%2F1Xc4ewzGAK4ySHkGmchJ2lNsK74lWBda%2BxPIJ%2Fr058xeaVt7zqp5W5l8AdjYNIubAAy3ZrS2V1qGbOSyo2WI6XS5JZGaAVxZN6gfGGrSxBlHQgfIc46gxqtxFBK5%2FLdGRBQZaMscFh59sxQsCfvoHAHWoKyRxDvrAlxN6bIBUNCW3ArJQtegfM3Yf1%2B9pW8kKeUf4cxYYF3y1dHBlchdb9pPqD8%2FPFf0Dv7TBF6GDsBjb5Q2ndx8HfWvff0hf3Q76g%3D%3D%7Ctkp%3ABk9SR8Cf5KHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=316325701015",
+      "product_id": "316325701015",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£6.19",
+        "extracted": 6.19
+      },
+      "shipping": "Free delivery",
+      "location": "from India",
+      "stock_status": "Last one",
+      "quantity_sold": "33 sold",
+      "extracted_quantity_sold": 33,
+      "buying_format": "accepts_offers",
+      "buying_format_text": "or Best Offer",
+      "thumbnail": "https://i.ebayimg.com/images/g/ZzoAAOSwPx5ntXXw/s-l500.jpg",
+      "seller": {
+        "username": "trendsetters_hub",
+        "reviews": 103100,
+        "positive_feedback_in_percentage": 99.6
+      }
+    },
+    {
+      "title": "The Almanack of Naval Ravikant: A Guide to Wealth and... - Jorgenson, Eric",
+      "link": "https://www.ebay.co.uk/itm/158250225381?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&epid=26046707633&itmmeta=01M8D1S1WFWEHNS6HDD87C06K2&hash=item24d872cee5:g:C3EAAeSwS9dqmDnq&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2FCxkoXat%2FeR3pltZdCFCiPaeaO5WkZBpWF5J2NhO1SLH1Fguzt72912vK4bXVJZAwDPqTrXOtUkn5wLCGTyFzsfV2RLSpX2ASKdiTqSazjvxuzs7NSb6rw6ut7s1iPAlKQgjEyYaEA6YqWs0f4mDD11OdHymWxZ%2FJ1NstOVxhyFzdDPlO4FwHFrbfrQa9AlFk5th31az3uhAGejBk5ajQyE8Chp1TRLMccHNZBXmCTsraesIGytq4rJ1i2qbai4znZu1i8OH9dJYPlfNzm3oZKq4jOlCK3s32L98oF14nQxA%3D%3D%7Ctkp%3ABk9SR8Cf5KHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=158250225381",
+      "product_id": "158250225381",
+      "epid": "26046707633",
+      "condition": "New (other)",
+      "price": {
+        "raw": "£15.15",
+        "extracted": 15.15
+      },
+      "shipping": "Free delivery in 3 days",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/C3EAAeSwS9dqmDnq/s-l500.jpg",
+      "seller": {
+        "username": "webuybooks",
+        "reviews": 3300000,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "sponsored": true,
+      "title": "The Almanack Of Naval Ravikant: A Guide to Wealth and Happy by Eric Jorgenson",
+      "link": "https://www.ebay.co.uk/itm/227531015290?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&itmmeta=01M8D1S1WFFP779QVA2ETC8JBZ&hash=item34f9e7c47a:g:RtgAAeSw~n5qr~q4&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2FvBFHR85lj5pN27KwSDjPEu9rvy60X3J6gz8bNTDGRoGvvnU%2FryU9OQlCU3svlg1WQitW4zK3Nt0qkPeRmTC8QXwH4uzGlLOZ6WSAhfIQC4camNsBp2r%2Ffy96KoVVkSQWNJvamU9c5jam39i4MWnoqDrHGeBbGVkenCpDVLforT3bjxy6uwJmxI154icZ7w71FviAIjmy4l%2BhblZCubb%2FKzQ7iY8S%2BEdr8vp9JQ3um8xl7ds2NbUxbIKRDuX%2F81IPFITWzXLnOfew0oWYyCDvy0bYUJWjNI0Vl%2FRqj6mY0ww6mYLDPYS0qKf2%2B2BkByto1nJLD3P7xWX95UU4qkKkb%7Ctkp%3ABFBMwJ_kocNo",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=227531015290",
+      "product_id": "227531015290",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£8.32",
+        "extracted": 8.32
+      },
+      "shipping": {
+        "raw": "+£2.94 delivery",
+        "extracted": 2.94
+      },
+      "buying_format": "accepts_offers",
+      "buying_format_text": "or Best Offer",
+      "thumbnail": "https://i.ebayimg.com/images/g/RtgAAeSw~n5qr~q4/s-l500.jpg",
+      "seller": {
+        "username": "olly-porter",
+        "reviews": 181,
+        "positive_feedback_in_percentage": 100
+      }
+    },
+    {
+      "sponsored": true,
+      "title": "The Almanack of Naval Ravikant: A Guide to Wealth and H - Paperback / softback N",
+      "link": "https://www.ebay.co.uk/itm/186637316807?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&itmmeta=01M8D1S1WFSC72PT5M0HMA47HK&hash=item2b747372c7:g:UDcAAOSwpppljZ08&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2F3ftp2euG33U%2BtDF%2FzI0U6TRizqJdxxpHc4iEq5jy46j5h%2Fgcj14ws58sbaNz4zAriqPmZ%2B6jm%2FbxX5RICZdBSsTrMHGU7zNpHmcrzZ5DbfeQ32%2FSk4qV9YRBDZzNNt53PTi8%2F0EnYptTKRYgG6be00OX9NW3cEXWJN1IpvubH3lu8aZewUvLFXAIyl2Ot2zMYQNi8ZODuYqy1kQfmlCOk%2BNXEeEPXZddZnhWdyhbHlZw65qmAv4xzT4j3zVYgvJxQsOfVewe56MuKNJXv5o%2Fx5fsumM7VX8F1qloLlZlbTsth4Tc%2BCi6gqRt01%2B7k77kfW3fMIjc86%2BJVBxojOSX9%7Ctkp%3ABFBMwJ_kocNo",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=186637316807",
+      "product_id": "186637316807",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£9.98",
+        "extracted": 9.98
+      },
+      "old_price": {
+        "raw": "£12.50",
+        "extracted": 12.5,
+        "discount": "£9.98"
+      },
+      "shipping": "Free delivery in 3 days",
+      "quantity_sold": "86 sold",
+      "extracted_quantity_sold": 86,
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/UDcAAOSwpppljZ08/s-l500.jpg",
+      "seller": {
+        "username": "slaynrise",
+        "reviews": 8500,
+        "positive_feedback_in_percentage": 99.6
+      }
+    },
+    {
+      "sponsored": true,
+      "title": "The Almanack of Naval Ravikant Book by Eric Jorgenson Wealth Love 9781544514215",
+      "link": "https://www.ebay.co.uk/itm/336690860984?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&epid=5046364950&itmmeta=01M8D1S1WFZNS23B8G7CA0XC9F&hash=item4e6456d3b8:g:Ou4AAeSwihxqWFX3&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9b4YsonVJv9nfxY8grLjYixkV8hC3SO0g8So0xTglGgWa%2FLcz5%2Fj1YquE2blefibVL60%2FbQl%2Bs3zxW3zYh6Zk2Gc0irnJlHLgWXebqVq3oDV670YJqow7Nt%2Fcf2X19gx4WTz29tcPul%2BBcpL%2FCmTob%2F97EAg1fX5iLEmQEAlC9%2B7VKFtIT7gA8DKTXwaoHB5LL4bV9srhMnlUE70A9Xu2AXALCz2t2PvtbLh2uisgzZBSKs31FlNNAH%2B9ljgxVGWiTdbhpIVe1wV5FLZyXAuyFUO0x8X7ou%2BTTPpfeHj%2FnbUnXrfCh6aZBNEsyD%2BRY8%2Fz0HVbIfhhApIRJtPqenzZQ%7Ctkp%3ABFBMwJ_kocNo",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=336690860984",
+      "product_id": "336690860984",
+      "epid": "5046364950",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£10.10",
+        "extracted": 10.1
+      },
+      "shipping": {
+        "raw": "+£15.66 delivery",
+        "extracted": 15.66
+      },
+      "location": "from Australia",
+      "buying_format": "accepts_offers",
+      "buying_format_text": "or Best Offer",
+      "thumbnail": "https://i.ebayimg.com/images/g/Ou4AAeSwihxqWFX3/s-l500.jpg",
+      "seller": {
+        "username": "family-bookshelf",
+        "reviews": 6000,
+        "positive_feedback_in_percentage": 100
+      }
+    },
+    {
+      "title": "The Almanack of Naval Ravikant by Eric Jorgenson 2023 Hardcover NEW",
+      "link": "https://www.ebay.co.uk/itm/267024332113?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&epid=11087884215&itmmeta=01M8D1S1WG5YRRDPK6V0PDTHJG&hash=item3e2be3f551:g:Te0AAOSwwuVnCUxf&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2FKr9umR2aTntPQh224ETkZTvysEX4xq4cq05wEWpoaqdzQx%2FbxovKNCnKKgUr7SVDyNW6gt%2B%2F43i5YrbImwPAxd%2BvwjOJNj4NJwjiyJRzWHKIF6RQIwOabXfCF2c1rgEkFZoflMlQBZtNfu%2F55dEJLmEERTlgUtijYHAo0eL1zzkI%2FffZ4JbmFN5LUqKk3tu3P6EiSu6voSLEGtTYi9oWgc7lQso4eKZpaFtEUIYqHoV1cO75SMXvwPx8Uyn3p2CiQVKEzV1JrtKRSnucMex3MVRothTt%2FiDemdheGx0YHfA%3D%3D%7Ctkp%3ABk9SR8Cf5KHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=267024332113",
+      "product_id": "267024332113",
+      "epid": "11087884215",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£9.99",
+        "extracted": 9.99
+      },
+      "shipping": {
+        "raw": "+£4.99 delivery",
+        "extracted": 4.99
+      },
+      "location": "from India",
+      "buying_format": "accepts_offers",
+      "buying_format_text": "or Best Offer",
+      "thumbnail": "https://i.ebayimg.com/images/g/Te0AAOSwwuVnCUxf/s-l500.jpg",
+      "seller": {
+        "username": "best_collection_4u",
+        "reviews": 1800,
+        "positive_feedback_in_percentage": 100
+      }
+    },
+    {
+      "title": "The Almanack of Naval Ravikant A Guide to Wealth ENGLISH, paperback",
+      "link": "https://www.ebay.co.uk/itm/315328096377?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&epid=14046555200&itmmeta=01M8D1S1WGMJ3943HV1NSGW1DM&hash=item496b04e879:g:OqEAAOSwTmplnAUc&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2FPK1bIPwqXtZz4gHEVKMkSf7FNNrR%2FUAZJ1Oto3MXnXFcVp2XrH9T7VK%2BeX3r6tCfCUuf%2B8YwLpRjA6jcXQENZ6iA4VLTQHJkdPtb4tU%2FHUamorUaywnRjGu0QhwWIpPH38blZcnUHBwf8AJJWf4aakBcWYtTUkHtepxPjmLa4BFywBEu7HFCD%2BbxRoXbhTdCYe7l6%2B2%2FxXwcUqv4%2F0TxGo8Q9J1ASLPCWgeWKtFB8yMfmxVtnDPzurUqpr4jvh5MkSaSJ%2FmicfnIIkC1Gy9Cut%2FXlyI3nuJlCzsgJStmTmUFQsLYobG6WLYh%2Fm1iGCDec9n%2FcWAHfGTwHbmd%2F25So%7Ctkp%3ABk9SR8Cf5KHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=315328096377",
+      "product_id": "315328096377",
+      "epid": "14046555200",
+      "condition": "Brand new",
+      "rating": 5.0,
+      "reviews": 2,
+      "price": {
+        "raw": "£6.34",
+        "extracted": 6.34
+      },
+      "shipping": "Free delivery",
+      "location": "from India",
+      "buying_format": "accepts_offers",
+      "buying_format_text": "or Best Offer",
+      "thumbnail": "https://i.ebayimg.com/images/g/OqEAAOSwTmplnAUc/s-l500.jpg",
+      "seller": {
+        "username": "easyshopping76_1710",
+        "reviews": 49500,
+        "positive_feedback_in_percentage": 99.2
+      }
+    },
+    {
+      "title": "The Almanack Of Naval Ravikant: A Guide to Wealth and Happy by Eric Jorgenson",
+      "link": "https://www.ebay.co.uk/itm/398416599345?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&itmmeta=01M8D1S1WGVHE4VZ7J1781PBGZ&hash=item5cc37ad931:g:OusAAeSw0BhqsQ-c&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde8eQd83CpE51B6Oqd7ZJBpP4%2BwBXXw1G%2Fgj1md4kSSDQoEdMfGz2CwrrOp4hhVLBrlbQ4uE7NjA0IziQARtPQC8Ch1v49Mt4YThPaNiCHeiJu2PziOnVUqMS63eQ3bPKDkyjB5TvFEQva1t7rhumZ7hEa%2FPInAx%2BZHDdSMuWH1SUq4ph%2Faxn%2BJTKMUcC7lexDEfiesiIMFChhymemN9f1%2B2TrDExP6UONK2UnSN701zWw4v4QBOUtd7HysH5gu23nONb%2BGECQbjZgZ1XaLqCHwtGZwoZt7YGAK3JMR3d5DHYw%3D%3D%7Ctkp%3ABk9SR8Cf5KHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=398416599345",
+      "product_id": "398416599345",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£8.69",
+        "extracted": 8.69
+      },
+      "shipping": "Free delivery",
+      "returns": "Free returns",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/OusAAeSw0BhqsQ-c/s-l500.jpg",
+      "seller": {
+        "username": "warda.eijaz",
+        "reviews": 64,
+        "positive_feedback_in_percentage": 94.4
+      }
+    },
+    {
+      "title": "The Almanack of Naval Ravikant A Guide to Wealth and Happiness by Eric Jorgenso",
+      "link": "https://www.ebay.co.uk/itm/237136070138?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&epid=14046555200&itmmeta=01M8D1S1WG72909CNNKK7MY4ZE&hash=item37366945fa:g:ZbgAAeSw-INq2Nrh&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2Bu8nbsJPBftQc3043qKw9o6Q550PlBJzJ2%2Baw8iGrP6slU9Llaa9G88lrAYRwMO1ewsHsbFbX%2Brknn3d9JW5CttlDG5W1m8OXc7JDBvX92w2D9N2otpoMEizjQ4H352Jy4oLD%2BYZPow27s9v9UgA1duU4RcszSrtavPK0Dh8bOowfAFPxaFjXJZg4mJ%2BZ4f56XUMbdnz15QGv2XVDPnfot%2FZfYUP3AtIrk6L8P39KEnQsMEjuqnJBzL3v2DYKg7g6JfCL6V4tm3wGv9kMtzC6Ul%2F6Ss5Fk44Sa%2BkcMRY6nJiwZm%2F0rPMEqnQdrznohilCVdjostrus1LPHzoneh%2Bqq%7Ctkp%3ABk9SR8Kf5KHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=237136070138",
+      "product_id": "237136070138",
+      "epid": "14046555200",
+      "condition": "Brand new",
+      "rating": 5.0,
+      "reviews": 2,
+      "price": {
+        "raw": "£12.79",
+        "extracted": 12.79
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/ZbgAAeSw-INq2Nrh/s-l500.jpg",
+      "seller": {
+        "username": "powpex",
+        "reviews": 710,
+        "positive_feedback_in_percentage": 100
+      }
+    },
+    {
+      "title": "The Almanack of Naval Ravikant: A Guide to Wealth and Happiness, Jorgenson, Eric",
+      "link": "https://www.ebay.co.uk/itm/237173190060?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&epid=14046555200&itmmeta=01M8D1S1WHXPKPCGKAP9NVBP9B&hash=item37389fadac:g:7qgAAeSwa9trBzwg&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9XGkypX9Ggc1jlz2iJpOdpNDUEpQixNrPbOb9uu527Pq4siBbj7%2F6zEM%2B%2BhZMKE8Jii9FpmO9i2bbf47N%2Bi03LQgtK5uSE0fGqxu%2B8K%2FLRUCimGiino6KZgf%2Bj4%2F%2BsOMd5eIN4MAnBSf4BkdenDuWndQHRnWAKJVKJHhndFYOhRXgXR33Gjq4w9loBApqSIuXrpHtiaaXOFSSB06Z0gh8ZYY3HCDA0zXymFkbFopJLfhquN%2F6l9L7%2B5wYrKs%2BojYmvS7co9viy68yNODtYd1vPquPNkKNoD1nTOhDrGuZomZ0Rc6S9t5dWWJquNrJMovNgPpd23atwuCd2zQVn3eqw%7Ctkp%3ABk9SR8Kf5KHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=237173190060",
+      "product_id": "237173190060",
+      "epid": "14046555200",
+      "condition": "Pre-owned",
+      "rating": 5.0,
+      "reviews": 2,
+      "price": {
+        "raw": "£8.89",
+        "extracted": 8.89
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/7qgAAeSwa9trBzwg/s-l500.jpg",
+      "seller": {
+        "username": "brit_books_xp",
+        "reviews": 944800,
+        "positive_feedback_in_percentage": 99.3
+      }
+    },
+    {
+      "title": "The Almanack of Naval Ravikant A Guide to Wealth and Happiness By Eric Jorgenson",
+      "link": "https://www.ebay.co.uk/itm/397188027857?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&itmmeta=01M8D1S1WHPYXFAFZWY9K55QCJ&hash=item5c7a4055d1:g:UDcAAOSwpppljZ08&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2Fr3JaarFHCT7PHWY65W7U4zRFPYbMZV94CEzMgDW1O2H11SSg%2FkTvbh%2FeDu5pUKuiBcgt1xMgcfvzmkJEWU8LYOlYL%2FiPZq5AcVweNlXy0%2BaR5xGLVn505VblPr1FPBnv9aQQ3uXst%2FFplAjIBxTjA6UBXhOfRlb%2FSRyYkc%2FozNc%2FGz7hwB1b6fsOX9dd7z%2FaKzaIbEMZwEkf0H17yj7hfxc2Mnug2uqitgoWcLhJh3UTekORvwDgBW0AjphqBhfI45Y%2Fnl%2B5BfaNr2%2Bm8WOFP7oSTrCFQDzjrKSO%2FngKFdw%3D%3D%7Ctkp%3ABk9SR8Kf5KHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=397188027857",
+      "product_id": "397188027857",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£12.98",
+        "extracted": 12.98
+      },
+      "old_price": {
+        "raw": "£18.17",
+        "extracted": 18.17,
+        "discount": "£12.98"
+      },
+      "shipping": "Free delivery",
+      "stock_status": "Last one",
+      "quantity_sold": "8 sold",
+      "extracted_quantity_sold": 8,
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/UDcAAOSwpppljZ08/s-l500.jpg",
+      "seller": {
+        "username": "bookwanderers",
+        "reviews": 5500,
+        "positive_feedback_in_percentage": 99.7
+      }
+    },
+    {
+      "title": "The Almanack Of Naval Ravikant: A Guide to Wealth and Happiness, Jorgenson, Eric",
+      "link": "https://www.ebay.co.uk/itm/198680399751?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&epid=13085290400&itmmeta=01M8D1S1WHYH56EAKFRVMCEEFX&hash=item2e42464f87:g:z5IAAeSwXUBqvnfT&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8e8wgfmWg2Gq%2Bov9VD%2B5ybEhoevTU6F0gacb%2FJ2%2B2gr1DnfbOveyGxEUauZJj035csOu%2FoeML2tPjBOz9vro56c%2FStlPcdJadL%2B%2Fv7DKnhcDEesDq954CnFL3Lr57mkCfOnDtNSfQ%2BuSd1LF%2BkIjHPXzXOZNSEuURa8ZXmMYWMH%2F1gUEHu2L1pCLiUh5DyEjJ7RMkl1dWyh2MEqxX1JylqJPFeoHSAQ4%2FECt5qqKfhNDp3PVk4atX4hXKz0%2Bj0rH4PIbqdFL3Vkjfvnndt62YLnVVo2wvMNMMFDw%2BSl6FKgvg17185xu2ckXVLNVhLuWyO6NoD9nSTLk7S45cAvTKz%7Ctkp%3ABk9SR8Kf5KHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=198680399751",
+      "product_id": "198680399751",
+      "epid": "13085290400",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£8.68",
+        "extracted": 8.68
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/z5IAAeSwXUBqvnfT/s-l500.jpg",
+      "seller": {
+        "username": "greener_books_london",
+        "reviews": 829500,
+        "positive_feedback_in_percentage": 99.5
+      }
+    },
+    {
+      "title": "The Almanack of Naval Ravikant: A Guide to Wealth and H - Hardback NEW Jorgenson",
+      "link": "https://www.ebay.co.uk/itm/393148835150?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&epid=26046707633&itmmeta=01M8D1S1WHQ946DBXF53MMA9N8&hash=item5b897f254e:g:KVgAAOSwtXJnittp&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8xdGTzRz8nWjxtT13L8pTYrNGKS2i3jdC9Mkxu3H9di3E4iv3v5I6x09lVmjuV%2BtqibJ4%2BzRJ6IuccaOo1qaAvy7vT7ADlZTCVbWGui63EKpw7lE7y%2BINTH18EP4yAtziy8omS4HP8SQT0H0gljZ3udX7tYLanYhBHoeXCNeCNT5nbu3TRQ1jcBPVfAt0FL5QPVJjptGAEohq7%2Fq%2FQ0DTAKOdELy70YuJ1p2gpdUYkquuNGIqH6Ql%2FQ3VvgEQdTKf0DlPRZYNbgjMgsFKw0b9Sp7RhxdjyHefB4YJ4emA42nI9Hh9OXvj0Y3vyHqcxjpTKrkgEMxrREfH7cq%2B%2BuwvX%7Ctkp%3ABk9SR8Kf5KHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=393148835150",
+      "product_id": "393148835150",
+      "epid": "26046707633",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£21.65",
+        "extracted": 21.65
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/KVgAAOSwtXJnittp/s-l500.jpg",
+      "seller": {
+        "username": "buyitnowbooksoz2010",
+        "reviews": 413400,
+        "positive_feedback_in_percentage": 99.6
+      }
+    },
+    {
+      "title": "The Almanack of Naval Ravikant A Guide to Wealth and Happiness By Eric Jorgenson",
+      "link": "https://www.ebay.co.uk/itm/365184754787?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&itmmeta=01M8D1S1WJ4GFX945CBX6KKE20&hash=item5506b52463:g:v6MAAOSwazdnEjbQ&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2BNJy0ec6fyp48unAvsFfw22K4YXVsM188ISIrqQ%2BlBapc5Mv69NHyqg%2BouA2IqpjzmoeGzYkXkCPTML7ewNWyIEvnR2UKvLScQhE5XoAdvMxXXtKegkimgGUHtU1gEy9bhSyXoDRw6cjFgX%2FGMXp0kiqSNaCynUzJekzbXFZCFsoAPmgt8dLw%2BqD9%2F9XS4mNPfuYHkbW%2BswkONcj1gB6BkF86c0I0nAmlYnpj6Hqw5tLE7fKpZyUsmUDPjfkGiSVhBKk6efZwE8sOq0k5PgEgCrOiFUxn825T1PLHM21%2FZyw%3D%3D%7Ctkp%3ABk9SR8Kf5KHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=365184754787",
+      "product_id": "365184754787",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£6.99",
+        "extracted": 6.99
+      },
+      "shipping": "Free delivery",
+      "location": "from Pakistan",
+      "quantity_sold": "15 sold",
+      "extracted_quantity_sold": 15,
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/v6MAAOSwazdnEjbQ/s-l500.jpg",
+      "seller": {
+        "username": "muhahus_9286",
+        "reviews": 19,
+        "positive_feedback_in_percentage": 100
+      }
+    },
+    {
+      "title": "The Almanack of Naval Ravikant A Guide to Wealth and Ha - Hardcover NEW Eric Jor",
+      "link": "https://www.ebay.co.uk/itm/397995975111?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&itmmeta=01M8D1S1WJJ0A9FN9AH2EARD7Z&hash=item5caa68a1c7:g:23IAAeSwjiVqFwaM&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2BUtu6zoWyOD1VKqOuY2SWVClJ8sUiNEvdBrMjMI5JK94yRae781Did0uHbbBguAyWZCCA70YvqTN4sWzpeWFYEddlhJQQl0tCxRyLvUsQqv74ilk1ANJb1bixedyZO%2FSL6HCMrAxz4vmdA1%2FtBvVOtLJVRdvzTNf2lyXmycBD0IcPlY7js0DxVIRwUktQV0%2FxbQr0VePOklKAxvJ5TvxR9m9T6lkwEWM3%2B5s%2F1S99oXM2b--qjxFcHy4IiWDJS4TFmbovq6%2BFp0AwGOfKSBHH7U4TKaaEhcy4c3upCXT7lmA%3D%3D%7Ctkp%3ABk9SR8Kf5KHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=397995975111",
+      "product_id": "397995975111",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£23.02",
+        "extracted": 23.02
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/23IAAeSwjiVqFwaM/s-l500.jpg",
+      "seller": {
+        "username": "buyitnowbooksoz2010",
+        "reviews": 413400,
+        "positive_feedback_in_percentage": 99.6
+      }
+    },
+    {
+      "title": "The Almanack of Naval Ravikant: A Guide to Wealth and... - Jorgenson, Eric",
+      "link": "https://www.ebay.co.uk/itm/366827750746?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&epid=14046555200&itmmeta=01M8D1S1WJQ7TCAEMQTH8TRTGC&hash=item5568a3455a:g:ftoAAeSwBPhrAa11&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde83VRBp5nzy9Whib8uK4FpujrUNkEP0qcECk64YFotuAUxYJwJz%2F%2BZhNdAIWAje0Kykc7neE7oWchJZeA6CH8JjXhxVWilAsJ8qlhwMq3peeZbiHpknJmyWJipHrHe9qdOorS9HNLpyr%2B4aeOPgWbofWLnE0Hr7Qg%2FxE8vMOtdPfdVEwWKh6uhqrq%2FXt6c719Dl7F8dTX0ViCa1qZ45ypQ8rVuS5%2BIQZD8t3%2B9iTOBPezpdytcs42xkfkpOU8HNg264J3UGiRQDToSPvR1Zu09uL93okA%2BF3KoS37IhJubDwQ%3D%3D%7Ctkp%3ABk9SR8Kf5KHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=366827750746",
+      "product_id": "366827750746",
+      "epid": "14046555200",
+      "condition": "Pre-owned",
+      "rating": 5.0,
+      "reviews": 2,
+      "price": {
+        "raw": "£13.04",
+        "extracted": 13.04
+      },
+      "shipping": "Free delivery in 3 days",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/ftoAAeSwBPhrAa11/s-l500.jpg",
+      "seller": {
+        "username": "webuybooks",
+        "reviews": 3300000,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "title": "The Almanack of Naval Ravikant: A Guide to Wealth and H - Paperback",
+      "link": "https://www.ebay.co.uk/itm/168607940263?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&epid=14046555200&itmmeta=01M8D1S1WJKNTBT074WX9Y6J33&hash=item2741d0fea7:g:pKwAAeSwXRhqfGQE&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8IuoKBhdKmlO9c%2Bf65kUxXUEw33Lxy2xRQGxQjsffa0BML0s%2Fsh3WxwgTvF1CS4J02NLb10cmOBL8gjfOleOi1n%2BwniZ8kaYbS3XVjT4b2T%2F42%2FcKYlDh5ehiDnsnc1M9bDktz3buxDRuaio9DyajAr89gSXb7wKVEvOpbZ2h%2Fr5eNBIoC%2FkYz7slRlkQMqYoyI0egjbyl72rIqOFXU7JIHYrDeT0R2d21ZWJiWtntT4pET8b4F9ajzXV6gxnMS4Arw4EO2eNBBHZ7jOYMG%2BCIDbRTkeOiPl32rZ%2BA8ix6ndl4akyXVAYymDzTB069G2mCJPuStiSxuFP0cA6czYHW%7Ctkp%3ABk9SR8Kf5KHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=168607940263",
+      "product_id": "168607940263",
+      "epid": "14046555200",
+      "condition": "Brand new",
+      "rating": 5.0,
+      "reviews": 2,
+      "price": {
+        "raw": "£10.99",
+        "extracted": 10.99
+      },
+      "shipping": "Free delivery",
+      "promotion": "Save up to 5% with Multi-buy",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/pKwAAeSwXRhqfGQE/s-l500.jpg",
+      "seller": {
+        "username": "rktradingltd",
+        "reviews": 1900,
+        "positive_feedback_in_percentage": 99.2
+      }
+    },
+    {
+      "sponsored": true,
+      "title": "The Almanack Of Naval Ravikant Eric Jorgenson White PB 2021 Wealth Happiness",
+      "link": "https://www.ebay.co.uk/itm/327464287390?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&epid=4085296112&itmmeta=01M8D1S1WKD3C4RKJZHNF332AV&hash=item4c3e647c9e:g:kawAAeSwJwRq~o4Q&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8Oy%2FDbHCWvHeUK5TR%2FM0T54G7uH1nK81aziroRdDhMzrwvc%2FipAicysj5eWhXlSxAWu7jxWnvCfk17iexCE2N5DGVEAtduKu9STErwVFtmp0Z4DYEwBcjYw702WVQziidBXGTu82cNDtY4bmBLvaU47Aocz%2FKP3bgWph%2BoJXMfjdjfD5tPw25mP00RawzEf8TcHswiTiNYs3%2BwjL8TQhR6Hy1sJ9%2BTtTjJy%2FS22kCjJjZWESDbpvy4iso23GZJubxZShiZaewTxzs0G4lWnBe6jsDjinHriBIYg%2FBHqTyzoQ4gJQOSvMkLGIHNbNrgVY38O7kqH%2BpMbj3r9R3%2BCYg9%7Ctkp%3ABFBMwp_kocNo",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=327464287390",
+      "product_id": "327464287390",
+      "epid": "4085296112",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£10.29",
+        "extracted": 10.29
+      },
+      "shipping": {
+        "raw": "+£6.73 delivery",
+        "extracted": 6.73
+      },
+      "location": "from United States",
+      "buying_format": "accepts_offers",
+      "buying_format_text": "or Best Offer",
+      "thumbnail": "https://i.ebayimg.com/images/g/kawAAeSwJwRq~o4Q/s-l500.jpg",
+      "seller": {
+        "username": "benjaminsbookshelf",
+        "reviews": 20200,
+        "positive_feedback_in_percentage": 99.9
+      }
+    },
+    {
+      "sponsored": true,
+      "title": "The Almanack of Naval Ravikant by Eric Jorgenson 2023 Hardcover NEW",
+      "link": "https://www.ebay.co.uk/itm/147469402660?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&itmmeta=01M8D1S1WKBCPWT195ZMX3QDC8&hash=item2255dc8224:g:L68AAOSw3KdkGZBc&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8mPJZANLmoXsxsPmEW4Q4g4%2FeXqhheA0irSRjFzQPD5BQ2u7zNj8uOL3WfojoRo9DW0hJdDYOr8SEDnishQHc9VAGphcfDY0PcC72bn89wjME1lxGgZC2Z30LAqL5p8om0WOddilQSE1vlL6ICIlzeiwvLQgm%2FsaJ2UActulLva25RVFp4DVmIa8urnfQy1GZ%2FCa0NEdy73W%2FWgk8stHWhW0RbjloLnIB4dBAAjT8kjmR09ZdxyOBmDXqifgzUA3VhMsaRhFNdq8Ci99OZ%2BEIyMhw5kU3jk5DohXJl%2FjaiwX3%2BVR%2BlM1Y%2F5qOPc8opyVNKspdwzXIym435yitzyk3y%7Ctkp%3ABFBMwp_kocNo",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=147469402660",
+      "product_id": "147469402660",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£14.99",
+        "extracted": 14.99
+      },
+      "shipping": "Free delivery",
+      "location": "from India",
+      "returns": "Free returns",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/L68AAOSw3KdkGZBc/s-l500.jpg",
+      "seller": {
+        "username": "premiumbooksandpens",
+        "reviews": 5500,
+        "positive_feedback_in_percentage": 96.5
+      }
+    },
+    {
+      "sponsored": true,
+      "title": "The Almanack Of Naval Ravikant: A Guide to Wealth and Happiness, Jorgenson, Eric",
+      "link": "https://www.ebay.co.uk/itm/168225108595?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&epid=13085290400&itmmeta=01M8D1S1WK3299BRA1XQJDESCW&hash=item272aff7273:i:168225108595&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2FiZffo0vJpn6ZzDVZ2gK9io%2BtnTE%2FHOO3x--%2FxQLKPqBWSYHXIntPCFqUYfoMWDV5N0%2F0oY2KzVf1mGn0Sv%2Fb64NS2h8VfYWp9CPdrj7U8MCe%2B6aXnR08%2Fn2MI5LtxmKETTKUDy2uEw1LSaD9YmWhrLFiUzSZrXdRJXeOuzMSdOv5UaR5i%2BN%2Bj4MJTP31YOJkzObKtfY%2FR%2BztueDRTx0VXHv94AGi4LggjK3mHRYKfuA0Hge%2BA3l87kO6fsDa2VWBmCAkuQg27O2kCjYi0IoXAfkLtHK1wU3QarzIb4fxT3rzJXl8gJYRR0R2J9pUl0YHyfTtar8A9JJ%2FaWoktIluf%7Ctkp%3ABFBMwp_kocNo",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=168225108595",
+      "product_id": "168225108595",
+      "epid": "13085290400",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£11.79",
+        "extracted": 11.79
+      },
+      "shipping": "Free delivery in 3 days",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://secureir.ebaystatic.com/pictures/aw/pics/stockimage1.jpg",
+      "seller": {
+        "username": "big_stock_clearance",
+        "reviews": 21500,
+        "positive_feedback_in_percentage": 99.7
+      }
+    },
+    {
+      "sponsored": true,
+      "title": "The Almanack of Naval Ravikant",
+      "link": "https://www.ebay.co.uk/itm/336599954134?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&epid=4085296112&itmmeta=01M8D1S1WKBSJWM4548GB27XJB&hash=item4e5eebb2d6:g:izwAAeSwh61rCHSl&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2FmFZaje9jH9qG30Az5BUPllhA04KqNtuiBg26%2FHVqRDBaGOPyJAhQOTMhp%2BtKnafTm9IOy3PnYEVEEWfCgiunwQa7o5L2pB7wvwDxB4D%2FlHSeTjsUgcV5uyEW5TLPA6bpY4TqwnpUdw9Hz8el%2FquZWLZA1kc5ATPiVmz4THzAEXhiVvR56WnKElm2Iq57OWSuRPQDqB2cWR%2Bb2iDdJ4%2Fi3SXI0gX7U2Whziy7mMFhhm0m8RBZounUK9fmJtCAoZ2HZ2cLz419n4Yzf7sPQttho5cWmePHpyJHworTuVlxNKNsuzPiyC61efKyyg6EjZ91OLQmrtdin6Qrz2%2FQGVT%2BW%7Ctkp%3ABFBMwp_kocNo",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=336599954134",
+      "product_id": "336599954134",
+      "epid": "4085296112",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£21.81",
+        "extracted": 21.81
+      },
+      "shipping": {
+        "raw": "+£6.87 delivery",
+        "extracted": 6.87
+      },
+      "location": "from United States",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/izwAAeSwh61rCHSl/s-l500.jpg",
+      "seller": {
+        "username": "booksandmediastore",
+        "reviews": 58600,
+        "positive_feedback_in_percentage": 99.3
+      }
+    },
+    {
+      "title": "The Almanack of Naval Ravikant 2nd Edition by Eric Jorgenson HARDBACK",
+      "link": "https://www.ebay.co.uk/itm/406349638934?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&itmmeta=01M8D1S1WKB4J3BC3E63R38PBE&hash=item5e9c536d16:g:TI0AAeSwPelpIMuo&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9ewJnXTzkdd6aqG6njwrd2uBoR00ei17xcxVr5AvyFxtMs8NwICxPjrzI6g0Md52Ks0rc%2F74SJA9%2Bb7EBrWVSpIYgR1H0kSa5tWb6%2Bu6NL%2FGfWbUpiEfyldU54xxYQ3KOMFUaSfCGbKlL8qUNUYOlPafIAVyex4oIbb0z8D2wo40hF0CRWCjbSU8DtICOaQtTeJJdEEN71WldeezrtGxWJDoe7gtKpxSiMleejAWgnjAuTY9%2Bd4vGG%2Fu9Hr79NChGqqTvoeW6EbEOa8yBvkGO6V2Y2kzpKXgfgNOSEZqKbBRSvt9THZ1cuVAXRZ7UcKHp2rdiwcI0L9APBLRx73XbU%7Ctkp%3ABk9SR8Kf5KHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=406349638934",
+      "product_id": "406349638934",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£23.42",
+        "extracted": 23.42
+      },
+      "old_price": {
+        "raw": "£25.00",
+        "extracted": 25.0,
+        "discount": "£23.42"
+      },
+      "shipping": "Free delivery",
+      "returns": "Free returns",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/TI0AAeSwPelpIMuo/s-l500.jpg",
+      "seller": {
+        "username": "bookcurl",
+        "reviews": 42600,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "title": "The Almanack Of Naval Ravikant Eric Jorgenson Hardback Wealth Happiness",
+      "link": "https://www.ebay.co.uk/itm/327310296178?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&epid=26046707633&itmmeta=01M8D1S1WM3G9MP2G0R7EYAK87&hash=item4c3536c472:g:YzQAAeSwdUJqf0s6&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2BT04La6O860Gm8GKhL8y9hPJoKuM6XQ8CDw%2F1NxvE2fRu31r1Xl3RR8XCjfHLfieyTo2NgqCeHnYuA9%2F9Xmb306qpXWou%2B2AZnI2x271OhNHflGQKbKWsgziutBaO%2Fdo2ThdEIL%2Bg20MGeq04lMOz9OuMKTh3Bc%2BjeBdyJB6IhOo5xVME2jdpf1TmB8k0yWHKi28I99Hu%2FzgSbLI%2BvBpP4F96kqYo8Grx0EadJvAkKN8ocYL9mO4ShvdhPlctxz4L0innl0UxfheoOjNMvepEgkwJ66Ning98c6ZGeQVs1PX8kHGOEbg%2BeIr%2BTEgAj5U9HeY%2BAY2PEl%2FdyZ%2FYstVEc%7Ctkp%3ABk9SR8Kf5KHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=327310296178",
+      "product_id": "327310296178",
+      "epid": "26046707633",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£27.76",
+        "extracted": 27.76
+      },
+      "shipping": "Free delivery in 3 days",
+      "returns": "Free returns",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/YzQAAeSwdUJqf0s6/s-l500.jpg",
+      "seller": {
+        "username": "nextdoorstoreuk",
+        "reviews": 397700,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "title": "The Almanack of Naval Ravikant: a Guide to Wealth and Happiness",
+      "link": "https://www.ebay.co.uk/itm/168873844132?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&epid=14046555200&itmmeta=01M8D1S1WMY68CG7G41Z6FH59K&hash=item2751aa5da4:g:kFEAAeSwiKpq~16P&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde9EZ7TUcUgsu0Up8VyYuZzNZmV2SZ5sq4OzHoqc4G5LSCpaNgliDq4EPbSyzKURhKyc6v%2FaOdZAXpfDAj5Mf%2Foj4JW6tAjgjspgojamw8lhDmVbAEPYhcat5KcH8LOiZRXLyU5cEdz0LmGQnlVrkFi4tEE0mw3XPCG4iLVbGMlyU2NTFHG1yLuUiqv1R7CgsWmv7Q4IHxoMcHk0IwhA97G5lpQOrpE2c1jSLodJZtGxscA%2Bcm1mgEmfT2kGOw7ESYsJavB6T7RXGVFkUoyhBDQ3xoQ3Lwmxq4oe%2FjuGhwq%2FAA%3D%3D%7Ctkp%3ABk9SR8Kf5KHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=168873844132",
+      "product_id": "168873844132",
+      "epid": "14046555200",
+      "condition": "Brand new",
+      "rating": 5.0,
+      "reviews": 2,
+      "price": {
+        "raw": "£24.37",
+        "extracted": 24.37
+      },
+      "shipping": "Free delivery in 3 days",
+      "returns": "Free returns",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/kFEAAeSwiKpq~16P/s-l500.jpg",
+      "seller": {
+        "username": "jugaar-ltd",
+        "reviews": 12600,
+        "positive_feedback_in_percentage": 99.7
+      }
+    },
+    {
+      "title": "The Almanack Of Naval Ravikant: A Guide to Wealth By Eric Jorgenson NEW Paperbck",
+      "link": "https://www.ebay.co.uk/itm/334497211758?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&epid=17050097685&itmmeta=01M8D1S1WMN5BZD97FVTS3TSCD&hash=item4de196656e:g:OlIAAOSwJZJix8pJ&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2BdnA3wsLLwXUcUQfJlH2KzcT4lITHID4n0GlUfQuyMX67%2BGZpCeVkno%2B3JL3xNAZJNAUw20cbRjYEaNCHmzG7GqQ3HARj8a7V0F2CnpO0vYjOO1w0iLPSZXvH7rP8W4aQawLAn%2FcjF%2B8ZeAVws1Rh1p79BtiuCOo54fYWRYu3WoyEU05eKQ80ca%2FRHBFh80d4pxjn5NT1vAyzeI5CIRLG%2Fa%2FfnMxT4JI7Nsz0yLZ4vgNciQaqYJuxJTw5RZqPBZpMIlNBGLWHFMudYqxkyQ%2FjeGqrk%2FPFdrrqA%2BNFjrHGTxw%3D%3D%7Ctkp%3ABk9SR8Kf5KHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=334497211758",
+      "product_id": "334497211758",
+      "epid": "17050097685",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£11.96",
+        "extracted": 11.96
+      },
+      "shipping": {
+        "raw": "+£8.27 delivery",
+        "extracted": 8.27
+      },
+      "location": "from United States",
+      "quantity_sold": "80 sold",
+      "extracted_quantity_sold": 80,
+      "buying_format": "accepts_offers",
+      "buying_format_text": "or Best Offer",
+      "thumbnail": "https://i.ebayimg.com/images/g/OlIAAOSwJZJix8pJ/s-l500.jpg",
+      "seller": {
+        "username": "dunkin_bookstore",
+        "reviews": 51000,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "title": "The Almanack Of Naval Ravikant by Eric Jorgenson PB",
+      "link": "https://www.ebay.co.uk/itm/316346609872?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&itmmeta=01M8D1S1WMXNV4DEDVCRJVTAFD&hash=item49a7ba30d0:g:BE0AAOSwhypnuCka&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2FlubHHgiP473kHPn89NBoJg199ZbQurIisheq3TiSpDC7lQglfeJ%2FDax%2FD6tvmBM9R9lz%2BELIFXZ3vyis8eI8Kt14LCnl3TOG8F2EPxUL5H9tm%2FKKr7ZxB1jH8RTlOWB1rgjvgoWwxoKvTmFVdNuF%2BWHTdnP6yg45hMravJtC8HgoltN1K%2BuPXckMoWkvzbyOqdc%2B%2FZ9ligpavJSx1Z8WWHOus99qI0HfM9ePTB2laXy1FN32ETr%2BKCSE3YnJPVq5wFG5cPugab3juSp9eYwx%2BpUmbr0F0hFvuaXeJr2GZNg%3D%3D%7Ctkp%3ABk9SR8Kf5KHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=316346609872",
+      "product_id": "316346609872",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£11.88",
+        "extracted": 11.88
+      },
+      "shipping": "Free delivery",
+      "location": "from India",
+      "returns": "Free returns",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/BE0AAOSwhypnuCka/s-l500.jpg",
+      "seller": {
+        "username": "trendsetters_hub",
+        "reviews": 103100,
+        "positive_feedback_in_percentage": 99.6
+      }
+    },
+    {
+      "title": "The Almanack Of Naval Ravikant: A Guide to Wealth and Happiness - Eric Jorgenson",
+      "link": "https://www.ebay.co.uk/itm/147471900991?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&epid=13085290400&itmmeta=01M8D1S1WNHDH46TDD23YC9S7N&hash=item225602a13f:g:9n0AAeSw~oJqa1dR&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde8UgFP6%2Bz2zlYpJtViBef3%2FW6LWU940NosPz8PrKGISeyJKAuf%2FyMEN%2FP0qZhD%2FP57k2UKvygYtC6wxvRr4Oz9obD5AYGBeZhAVAVuXVll6JyUPLPL%2F0XokQVaulvCDvXy3CedpCQylkwv9BpGNl0M2Qf6aUN0eEksLq%2FtfzXyUpSD1Mf0XrSx3M8fd79coLSitJM62HnSljOCA8OyzJA042cUyq57TodjYO4aINP%2ByUg%2FX6lFgXXlQZo8Wi%2BLYbycTqClEMxJunjC5O0OEKTUbRiic7yW4L%2F%2B9UWqc6QAsVQ%3D%3D%7Ctkp%3ABk9SR8Sf5KHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=147471900991",
+      "product_id": "147471900991",
+      "epid": "13085290400",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£14.99",
+        "extracted": 14.99
+      },
+      "shipping": "Free delivery",
+      "location": "from India",
+      "returns": "Free returns",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/9n0AAeSw~oJqa1dR/s-l500.jpg",
+      "seller": {
+        "username": "premiumbooksandpens",
+        "reviews": 5500,
+        "positive_feedback_in_percentage": 96.5
+      }
+    },
+    {
+      "sponsored": true,
+      "title": "The Almanack Of Naval Ravikant – Eric Jorgenson, Paperback, Brand New",
+      "link": "https://www.ebay.co.uk/itm/157886993391?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&epid=12085277874&itmmeta=01M8D1S1WNJYK018G3434TXMPX&hash=item24c2cc53ef:g:PS4AAeSw3Wlp-iw8&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2FQA9FPnxBSnpjgiwcIFvM2%2FEkT90mY8yJAdkRgcuq4bmSvxoeoI2UecCPWLRVDmz1o2zUQ3KriP5QcuClK966kmvq6EG%2Be2SlJV5FqgBNeaWRaPGoGoe2IZSJA9BB3Z9IiVnuoPXGTKKiTZc96744voVcEleKvaJ4OvEpV2qKVczgmXDPQd6t%2BXD8GcC89c24Q3Oz%2BSjAD9%2BOUXKY1X2JU5APGbrC1eXkpaS1huiR0l9Qz5WlAfDSk8ogfQ3QcoSHM1h8JjZcOcaRpAfk%2FUsHPXavwQpLyDLnmo8vsP5Wn1v6FUTkXx3LmmFiuLLw3dIR%2BoQerQS3QZMIbDRoduD9P%7Ctkp%3ABFBMxJ_kocNo",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=157886993391",
+      "product_id": "157886993391",
+      "epid": "12085277874",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£17.68",
+        "extracted": 17.68
+      },
+      "shipping": {
+        "raw": "+£2.53 delivery",
+        "extracted": 2.53
+      },
+      "location": "from Australia",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/PS4AAeSw3Wlp-iw8/s-l500.jpg",
+      "seller": {
+        "username": "music_and_gaming_mania",
+        "reviews": 36600,
+        "positive_feedback_in_percentage": 96
+      }
+    },
+    {
+      "sponsored": true,
+      "title": "The Almanack of Naval Ravikant: A Guid To",
+      "link": "https://www.ebay.co.uk/itm/307202507093?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&itmmeta=01M8D1S1WNJYBQ0GXMNKPCTR2F&hash=item4786b24155:g:b~MAAeSwXGNquaM6&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2Fhu7t6BI3bKbYfKBuiVdh8JDejTmjGFFPCKWVdv8lzmhNRkXCVRao0DWOuijMsAztayDHZxojmoNhqAnevrfGLQZ6La61nokey1rx0F993Tk6pbFTHgovKRb4U0EAYtg9aYlNIDeT2R8hOaNtv2Xv%2B5R86sumUpX8xoQ3%2FCjpZfcO1YKQkQRR6UMR%2FfcsF9RIJWDQyMeEUwyx9%2B8Ak4yjtVOiklYPLHWsgmqQXtXNZ%2FO%2BHV1SsDa%2BqJ%2BJad9IDYv6QW6MIOV1d5ZxP76fxCmhRlaKWmLyVSrRINa9pC91GBFt71pOgLO7v2ud2eknARvb9NW9LzEax3bcSfke00nG1%7Ctkp%3ABFBMxJ_kocNo",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=307202507093",
+      "product_id": "307202507093",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£10.98",
+        "extracted": 10.98
+      },
+      "shipping": {
+        "raw": "+£8.22 delivery",
+        "extracted": 8.22
+      },
+      "location": "from United States",
+      "buying_format": "accepts_offers",
+      "buying_format_text": "or Best Offer",
+      "thumbnail": "https://i.ebayimg.com/images/g/b~MAAeSwXGNquaM6/s-l500.jpg",
+      "seller": {
+        "username": "ays309",
+        "reviews": 621,
+        "positive_feedback_in_percentage": 99.2
+      }
+    },
+    {
+      "title": "The Almanack of Naval Ravikant A Guide to Wealth Paperback",
+      "link": "https://www.ebay.co.uk/itm/227567647811?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&itmmeta=01M8D1S1WNC5P0E0ZJA5F146TX&hash=item34fc16bc43:g:T~8AAeSwB65qz-Hl&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2BObfK1ZO4cRJdUX7fAMUHYObEV8VLsZKVXyXQTNdojBdFzwsJuQZV4hAVPN91dql%2BrwjfVV1FnrRdW%2B6K%2FTOCQPSkxZ2m1MXu%2F9AAwUxy3lDVGyX2I%2FmoEYoZR8fVn11wNmskmiatw2XVdbrTqmcvZ9IQu676yc6lT2hTY2DA3hKlH06H76%2FoAb4fgV8%2B7yesaUiYE5BtaSCZou0xSju3J3cVEQePfweIPOsy%2FZf78CLlB1ls%2FaO%2Bk1Mo4MZSBkIfyOJozWfVgDIs1I4vnGdeolHKcZYyq0cgQtIqmj9exdw%3D%3D%7Ctkp%3ABk9SR8Sf5KHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=227567647811",
+      "product_id": "227567647811",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£6.43",
+        "extracted": 6.43
+      },
+      "shipping": {
+        "raw": "+£2.94 delivery",
+        "extracted": 2.94
+      },
+      "buying_format": "accepts_offers",
+      "buying_format_text": "or Best Offer",
+      "thumbnail": "https://i.ebayimg.com/images/g/T~8AAeSwB65qz-Hl/s-l500.jpg",
+      "seller": {
+        "username": "chawill-1759",
+        "reviews": 146,
+        "positive_feedback_in_percentage": 100
+      }
+    },
+    {
+      "title": "The Almanack of Naval Ravikant: A Guid To",
+      "link": "https://www.ebay.co.uk/itm/257340098271?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&itmmeta=01M8D1S1WPBD9N13PE430P37KH&hash=item3beaaa46df:g:nrEAAeSwfWxpf5E0&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2Bt3Q4r3uhXYaM1Ai2P8H%2BqRuvNqAdcIWoFs5XhI7CSZbf3LwaTwYDGl1dp6gquJPsrRveJ4xww6uGUHsdBoyosQWilG3vl1hmMlqLJG%2B4zyDC2uNVIW%2FqOSEzeFJ7NJXzhm26jYT3VGreCXLWFmRS35%2FVDrgQQO6ADVu0urGBp%2FzyxYyKOi%2BMAvcBxij8DolSyUYjCPfkFjksx2%2F8%2FOi%2F5JHYjHwk0IF2nTkMT0qWI7bedu18NXIn0%2F0IZ%2FInRjHyNWuR4ybPddXpjbhIvr5yjks8uv1EMgH96rMLdWXmh4PMNlKrcCGklIzSmS95SHQOU9K%2BCZ49zNloutxXH0bws%7Ctkp%3ABk9SR8Sf5KHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=257340098271",
+      "product_id": "257340098271",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£6.09",
+        "extracted": 6.09
+      },
+      "shipping": "Free delivery",
+      "location": "from United States",
+      "watchers": "32 watchers",
+      "extracted_watchers": 32,
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/nrEAAeSwfWxpf5E0/s-l500.jpg",
+      "seller": {
+        "username": "prime-aftermarket",
+        "reviews": 6000,
+        "positive_feedback_in_percentage": 98.8
+      }
+    },
+    {
+      "title": "The Almanack of Naval Ravikant: a Guide to Wealth and Happiness",
+      "link": "https://www.ebay.co.uk/itm/336888091262?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&epid=14046555200&itmmeta=01M8D1S1WPFCKVSQJ6SH9X1253&hash=item4e7018527e:g:1YoAAeSwsdVq8ZXx&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde8v5r%2BLc6uGcOtSS%2FPskkeRlenJbEWR6aw7h11f9dH2ICJjRIY%2B201fRVuZzusqyUgZYD7H9l1Y%2F7pIQ3rlHbsMFmbGbMOypEPRo%2FgKDtvitnJ0yycNJbFXMnH%2FRU5LCMdY7xUX2XtiNhoZDvuF7%2FdJgMMzWk6bD6uG%2FQW%2BtPZGOFs9ku3ZpvP46wxeHXrupnInTNz1ULnWHxpbHvmx%2FhYe2847BX8zHXHQtkAx92Pm8YS536oR5dlk%2F8zodbbfDhUNCT8sIXuFdb%2FWZLBV1MFme9GplZ%2FjCVrr5QcD9WHx4A%3D%3D%7Ctkp%3ABk9SR8Sf5KHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=336888091262",
+      "product_id": "336888091262",
+      "epid": "14046555200",
+      "condition": "Brand new",
+      "rating": 5.0,
+      "reviews": 2,
+      "price": {
+        "raw": "£25.40",
+        "extracted": 25.4
+      },
+      "shipping": "Free delivery in 3 days",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/1YoAAeSwsdVq8ZXx/s-l500.jpg",
+      "seller": {
+        "username": "zashmart25",
+        "reviews": 1900,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "title": "Eric Jorgenson The Almanack of Naval Ravikant (Hardback) (US IMPORT)",
+      "subtitle": "Another great item from Rarewaves USA | Free delivery",
+      "link": "https://www.ebay.co.uk/itm/137857822260?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&epid=26046707633&itmmeta=01M8D1S1WPFXQ7AAA96119JY06&hash=item2018f76e34:g:VpwAAeSwUNtq2ZUP&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2BeGfTvMxK8BxMN9nsDWCnGUt5vZsLaSRl0aihMxOpCFYok2E2bl72pdYSNgFPrigcQyz4O%2FUfb%2BtkkQnoWYh70UAnJ4vsgRd3iHudKa%2BBXYQ8Gu%2BNGzQBp%2FGudg%2FBzewDx7X1zlo%2FKexuqJWazsmNXWVtKD1FIuC2Cv86sqaV8CixPN2Iq%2Bza9KjzayKGl3VAN0%2FCSb6%2F6JsUrhfDZXZgufABop8k1AUlZYpV%2Fk78uC7HgwlonrfbtgwgnzRs%2F9mo%2FvcYmPUOeCvKeXs1kOMUSx5zamfxPefA7EV1siH5zIA%3D%3D%7Ctkp%3ABk9SR8Sf5KHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=137857822260",
+      "product_id": "137857822260",
+      "epid": "26046707633",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£24.47",
+        "extracted": 24.47
+      },
+      "shipping": "Free delivery",
+      "location": "from United States",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/VpwAAeSwUNtq2ZUP/s-l500.jpg",
+      "seller": {
+        "username": "rarewaves-united",
+        "reviews": 483600,
+        "positive_feedback_in_percentage": 99.5
+      }
+    },
+    {
+      "title": "The Almanack of Naval Ravikant: A Guide to Wealth and Happiness",
+      "link": "https://www.ebay.co.uk/itm/287272004351?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&epid=26046707633&itmmeta=01M8D1S1WQG8NRVQ0YJ3EX6R7N&hash=item42e2beeaff:g:q8cAAeSwI8pp3j4q&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde8uwGa4bBCFyTrRD6S9tVPh1AtHTst9XZYzfDNycWB1MT8lt%2BkyJJWUbJkmJOJH4FRW7vANC3YqGIG7JIm3XXdvQe6DbWttU9xaegsgfchj8ryAExVW83GFo7igz3D0tHQ%2BqDFHIsCBNRh87px6064pZ%2BrmYBrbS%2F7YsBKsRRYUlQgqL1jMpUKtFoNh0hyHBFXgZbBwqNRSEM4yokHr1%2FHXqkUmedQw7aNETA2z00XCocv%2BT9l2qAuieWEgB%2BGphY%2BuKfhrf9CqGT33l%2FvYEVIfgpKK%2BlH1R5nXz2F2WKp56Q%3D%3D%7Ctkp%3ABk9SR8Sf5KHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=287272004351",
+      "product_id": "287272004351",
+      "epid": "26046707633",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£27.36",
+        "extracted": 27.36
+      },
+      "shipping": "Free delivery in 3 days",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/q8cAAeSwI8pp3j4q/s-l500.jpg",
+      "seller": {
+        "username": "sales_sweet",
+        "reviews": 97100,
+        "positive_feedback_in_percentage": 99.7
+      }
+    },
+    {
+      "title": "Eric Jorgenson The Almanack of Naval Ravikant (Hardback)",
+      "subtitle": "Another great item from Rarewaves | Free delivery",
+      "link": "https://www.ebay.co.uk/itm/287639483337?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&epid=26046707633&itmmeta=01M8D1S1WQYXWE9R0X56JDJHFQ&hash=item42f8a633c9:g:LSUAAeSw~dRqyi~m&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2Fh2AhdH88rfVmFsr2SRl5zsDJWNTH2g%2BwcZpd8C069OX8THZXNtJdc9OL4Jb0RaBFP4Wu3R0sQWQZNgj3o9mxJyVwE6xNmOb4MwqcO2VMrRV5ss3i2Ax1fm%2F51fEC60C6wYjlUXvKT8RBoTxerbDsPyYeDkGfJImLJatmHjPAaNRLjqo%2BQvgvNDl5g3hOjgf%2Bv3dttNlT7QllEZi1kXMikMio5ZnScLSbopwaOCHAiSbQ8OpkujR0DWZ1hR5GuY%2FXzVe2ndLGPCZl%2Bf0Cx%2Fuv1eJH%2BtpaIrClwG5wI4ecAIg%3D%3D%7Ctkp%3ABk9SR8Sf5KHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=287639483337",
+      "product_id": "287639483337",
+      "epid": "26046707633",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£27.29",
+        "extracted": 27.29
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/LSUAAeSw~dRqyi~m/s-l500.jpg",
+      "seller": {
+        "username": "rarewaves-outlet",
+        "reviews": 1700000,
+        "positive_feedback_in_percentage": 98.8
+      }
+    },
+    {
+      "title": "The Almanack of Naval Ravikant: a Guide to Wealth and Happiness",
+      "link": "https://www.ebay.co.uk/itm/237176935690?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&epid=14046555200&itmmeta=01M8D1S1WQ8S50HEPZYX7SMHEB&hash=item3738d8d50a:g:pdYAAeSwJPdq9Ew1&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8ojK2vvqcJcC%2Bqof%2BAeCReS0RbWgIWajqkE3VlS7UA4mPr1iP0wrnyVgwt4jV5dRoVocuxfaMwgQKky8BOroWi9Fys3AXHZ7C%2Ffz4VSfllwjMpm8iXRm8rLRRV9x8GcoJJx9fNjLIL7bjdTtIyhgxlcye5PXzrQwZKx5WijEz4%2FG86oGF%2FPCwU5mdO7f6oDh%2FoYzGQb2bcCexlLkXGI0%2B4PH%2BvhF0772ChnLbbLm6JWXYtouAt--nL4z54q%2B5WRGJyiIZeWkIETrAsIoXf8bxs5rAMPaauXbDZzoQxSF4J9M7c2UwmDL9eV7DoRKKOzoTc5wDNX%2B55Tv4z6qSAHJre%7Ctkp%3ABk9SR8Sf5KHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=237176935690",
+      "product_id": "237176935690",
+      "epid": "14046555200",
+      "condition": "Brand new",
+      "rating": 5.0,
+      "reviews": 2,
+      "price": {
+        "raw": "£26.43",
+        "extracted": 26.43
+      },
+      "shipping": "Free delivery",
+      "returns": "Free returns",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/pdYAAeSwJPdq9Ew1/s-l500.jpg",
+      "seller": {
+        "username": "shaah-7208",
+        "reviews": 2100,
+        "positive_feedback_in_percentage": 99.7
+      }
+    },
+    {
+      "title": "The Almanack of Naval Ravikant: A Guide to Wealth and Happiness",
+      "link": "https://www.ebay.co.uk/itm/920039946865?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&epid=14046555200&itmmeta=01M8D1S1WQS9ACNDWRMZ8SDK9M&hash=itemd636a77a71:g:8g0AAeSwu6Rqz9Ut&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8%2FXAIEnD3yqmaV%2BVF6kQwzZVf7eQiZ%2F2sDbHhekazE%2FpZD%2BQZ3I97GMgpZdHjIRgN5Y92ddgSstc7j1GWoc%2B8r0vjXYYV1U%2FfL5pmCBR0E0iZtWYTOxPs89lUexY7dW2aFUTdzoXtTdC4k5vZOufPcYuGMA%2BWxGUqxVHLg1D%2Fs8YMvUrpGcj0drO%2BXOMtUUbQ8dZsfD4Dt%2FthrMjHDRhM5g%2B2iboIIeloe3R%2F4As6hQdTCwCH98SZFrIsdU1MQQus0rG%2FA%2FvIfq7%2FfXPuBwI3mv38a291YJtqh6EMPTT1gv%2FBTFt%2FiH4s2vjXhCsr1%2Bbz%2BzQIKP9AYn3qO%2Bf%2B%2B0ARU%7Ctkp%3ABk9SR8Sf5KHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=920039946865",
+      "product_id": "920039946865",
+      "epid": "14046555200",
+      "condition": "Pre-owned",
+      "rating": 5.0,
+      "reviews": 2,
+      "price": {
+        "raw": "£11.76",
+        "extracted": 11.76
+      },
+      "shipping": "Free delivery in 3 days",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/8g0AAeSwu6Rqz9Ut/s-l500.jpg",
+      "seller": {
+        "username": "sellbookslimited",
+        "reviews": 25000,
+        "positive_feedback_in_percentage": 99.3
+      }
+    },
+    {
+      "title": "Eric Jorgenson Collection 2 Books Anthology of Balaji,Almanack of Naval Ravikant",
+      "link": "https://www.ebay.co.uk/itm/256542544792?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&itmmeta=01M8D1S1WRZREBRDPBF82QXFSD&hash=item3bbb209398:g:ej8AAOSwu9RmauUa&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2FynXVLl2ztjSFxAk86%2FBEH7b47D4qoeVbokB%2Bc8fXom9RpvtNAUO%2BVdMNGbie430Lz0T%2BCsH4bLBsb%2FjLu%2FGrFO3EBmSWRta%2BdUJ16uLn9gQkjgYs1e%2FvJ7cEVEIxtqJ%2BgaqEBNS%2Fktv0bk%2BwCLWGrWQMq77alXG2%2Bwf2NKarr7Dp4Et8wS71v0yIqhSKXuWxgsB0iMvocXSeIbzlS2wa7unoaCKiuEALNIkObb%2BcNFjrP8q0WkgVhpGcMeXwDcmKzWGf%2Fx6wZwPvG4NjqbDS8wRiHVMNqdV2qTs1VMWgPFrBWKuhzIm%2F8u6H8B1iWWn4HT08d9LrWjCyYenrvBm5P%7Ctkp%3ABk9SR8Sf5KHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=256542544792",
+      "product_id": "256542544792",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£18.03",
+        "extracted": 18.03
+      },
+      "old_price": {
+        "raw": "£18.98",
+        "extracted": 18.98,
+        "discount": "£18.03"
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/ej8AAOSwu9RmauUa/s-l500.jpg",
+      "seller": {
+        "username": "zoblit",
+        "reviews": 64400,
+        "positive_feedback_in_percentage": 99.9
+      }
+    },
+    {
+      "title": "Eric Jorgenson The Almanack of Naval Ravikant (Hardback) (US IMPORT)",
+      "subtitle": "Another great item from Rarewaves USA | Free delivery",
+      "link": "https://www.ebay.co.uk/itm/407296576968?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&itmmeta=01M8D1S1WRPTM7W1MCNK60MCRQ&hash=item5ed4c48dc8:g:kGYAAeSw9tNq3a6W&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2FA1e%2BO12fbczR0jH22L%2FEZ18NtCcyKxQCKM9MFIEp8S3dc7EGK1d0ha%2FpiPJtkT7nNWTDpz1N%2FxFKg%2BjgjUczCzLRFN1OEdYhT0nUvqDEuejiK%2Fm7n6RcRbt7llT1U5XEJFCq2T6qqudGrW2m4LfIqAsW5V2IVYCaGda1TdbBszDRPnxb11VyXRgP%2F1Cymlf67dLiNxl236R7BvfAkLPCtHVjngu5RK8sfkvo9UP2bJZ%2FtmfH%2FNNAGWl7B8PmNxhq1NlH7cf1N01FdIy1H1Iwkglg9u61OCAy7nzG5fhRcmQ%3D%3D%7Ctkp%3ABk9SR8Sf5KHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=407296576968",
+      "product_id": "407296576968",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£24.31",
+        "extracted": 24.31
+      },
+      "shipping": "Free delivery",
+      "location": "from United States",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/kGYAAeSw9tNq3a6W/s-l500.jpg",
+      "seller": {
+        "username": "rarewaves-united",
+        "reviews": 483600,
+        "positive_feedback_in_percentage": 99.5
+      }
+    },
+    {
+      "title": "The Almanack Of Naval Ravikant: A Guide to Wealth By Eric Jorgenson (Paperback)",
+      "link": "https://www.ebay.co.uk/itm/820248800179?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&itmmeta=01M8D1S1WR561QFES0WMBWNFS2&hash=itembefaa36bb3:g:0fQAAeSw7Upq05Zp&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2BCMwLYqTh0TtNQDZM%2Byu5ye4WzGIix%2F6FGZaHndGj6N8V0GY%2FzmGrNpHikg0VifKJJzlIIRZ7znwTbUKiSa9eqY7Pla2%2Fo1ij5l6nPjvOcUWnxHMJ2HgabXHHJILG%2FdD4xoXHjPFB%2FiM7AHm0I4fNtu24qoq1eEfAN6MmZ0l2WKUpnZ1SqlkkHEOQaVqUMzhgNPbPCP5oJqiZaf4nf8gxAPkXdUlkbZl1lggfK9y72XjbCqeNaiPJYk8O9S97%2BsPY2u4WDKWC4DJN6URRAt9UweuVkvAUtsv303CDCTvRdIQ%3D%3D%7Ctkp%3ABk9SR8Sf5KHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=820248800179",
+      "product_id": "820248800179",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£16.09",
+        "extracted": 16.09
+      },
+      "shipping": {
+        "raw": "+£14.08 delivery",
+        "extracted": 14.08
+      },
+      "location": "from Canada",
+      "buying_format": "accepts_offers",
+      "buying_format_text": "or Best Offer",
+      "thumbnail": "https://i.ebayimg.com/images/g/0fQAAeSw7Upq05Zp/s-l500.jpg",
+      "seller": {
+        "username": "apexorholdingsinc",
+        "reviews": 565,
+        "positive_feedback_in_percentage": 99.3
+      }
+    },
+    {
+      "title": "Eric Jorgenson The Almanack of Naval Ravikant (Hardback)",
+      "subtitle": "Another great item from Rarewaves | Free delivery",
+      "link": "https://www.ebay.co.uk/itm/287681279213?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&itmmeta=01M8D1S1WR4H29X18DYHR1NGSP&hash=item42fb23f4ed:g:4UcAAeSwybpq31JV&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2FHoHQo0AV4C%2FYgid%2BjxSGkb%2F%2Bxlkc%2Fuzb0Aa4lgOobj4nnwJujmeoU2y3CFGETpjP6AH%2F4dWaNm39xCmTtHBk33rdVLZBYktRm%2BMdGpQmrkYWWFYVnJXD0jENii3MX42e6oD93EU0pLE%2BQ0%2FW9scpNde3VKlClPdA4AjdkJfaB64KFG%2B%2BytbK6Nd4qzI5ggZOsANEkzhhY2m3zVHiUMrODkBOT%2BeidS0%2Bfx1%2FyN2N5rrqNsPn0M0HBt%2Bjk%2Bd1ilrBWZZ5WJLkDZ9qXsbbLFaICJuDj6s%2FJQsPd2E6Dx76KYg%3D%3D%7Ctkp%3ABk9SR8Sf5KHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=287681279213",
+      "product_id": "287681279213",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£26.75",
+        "extracted": 26.75
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/4UcAAeSwybpq31JV/s-l500.jpg",
+      "seller": {
+        "username": "rarewaves-outlet",
+        "reviews": 1700000,
+        "positive_feedback_in_percentage": 98.8
+      }
+    },
+    {
+      "title": "The Almanack of Naval Ravikant: A Guide to Wealth and Happiness Eric Jorgenson",
+      "link": "https://www.ebay.co.uk/itm/227017737970?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&epid=26046707633&itmmeta=01M8D1S1WRDRN9YEX8Y598KJ0T&hash=item34db4fc6f2:g:5vQAAeSwHdho6Pgl&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9kewQv1KJhWLPa6x1oTkC8fKn2JPxGmyKGl0y3VBCf%2FB%2B%2Fm%2BDX1rbM0gXNryUMboo71HJ3QIuC%2FMhKOSIy8TL%2BQWRvGfT1abjJ18sK39WRHGSPNdwgLvFqrmYtUVvTJmKxCyUaZbrAnEFnGznwqrPNToaFgQi6FiQdCIfjxpwDsJPnNwyNhsP1gugh6yPoULpDSlmXPlckix0rV%2BbPgm%2B%2FXYJken8srOXiaK9C%2F9Hh8Vo3kEQGDWR7GZzi7Csbo1N7pLFfcu%2Bflyj9Q46P8qji37Hya9%2FVqlun0cDrBEYthEpPKhoaBTb9n9OkInhB4UVM71FTCuqbvPVrpdkC2wn6%7Ctkp%3ABk9SR8Sf5KHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=227017737970",
+      "product_id": "227017737970",
+      "epid": "26046707633",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£25.35",
+        "extracted": 25.35
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/5vQAAeSwHdho6Pgl/s-l500.jpg",
+      "seller": {
+        "username": "yukselt",
+        "reviews": 23800,
+        "positive_feedback_in_percentage": 99.6
+      }
+    },
+    {
+      "title": "The Almanack of Naval Ravikant: A Guide to Wealth and Happiness, Jorgenson, Eric",
+      "link": "https://www.ebay.co.uk/itm/227242441538?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&epid=17050097685&itmmeta=01M8D1S1WS6ZGQ1WEH4N2XGE4E&hash=item34e8b47b42:g:JIgAAOSwOg9hXtVV&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde9JV76G5RACbHEX4zvHFUWCqbBbVlIHvHQSPkSjPDHNBZEscYcRN3C7Tj6xCl2kAN%2BgYvHzjrBKFSbb2jy7vVRpTHNuv%2FihSZL8COeIg0%2BUlzRvEOwdF847gxXRTjnIMqFvvmmx%2BI%2B%2B%2FODV4p8U5hWQIQ7TrPw%2B8DdTxbAKQUAdLvmFns8yb6HGt0UiTZ6st%2FIc2xtDhal2BzTFbIGgmiQZOtYdynB83AavKbhlgH%2FJzmVY8gJwVCZqBNpRgHrGF8B5eLS2YdIF0www3EqbiR2vnsndfLdLUK52vN8cmGnPzQ%3D%3D%7Ctkp%3ABk9SR8Sf5KHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=227242441538",
+      "product_id": "227242441538",
+      "epid": "17050097685",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£14.61",
+        "extracted": 14.61
+      },
+      "shipping": {
+        "raw": "+£8.40 delivery",
+        "extracted": 8.4
+      },
+      "location": "from United States",
+      "stock_status": "Last one",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/JIgAAOSwOg9hXtVV/s-l500.jpg",
+      "seller": {
+        "username": "zebrasbooks-2",
+        "reviews": 12600,
+        "positive_feedback_in_percentage": 99.9
+      }
+    },
+    {
+      "title": "The Almanack Of Naval Ravikant: A Gu..., Eric Jorgenson",
+      "link": "https://www.ebay.co.uk/itm/277529913307?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&epid=4085296112&itmmeta=01M8D1S1WSZN0MCF499DPMW9JR&hash=item409e1267db:g:9AMAAeSwbkRqyh6g&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2FybDmM13mG1jefCqc1BiUzqbINm%2BW5UcOpU9ttKz3sNOmiqPZokLHxagyt9Hs6bgizo8HMiCJB2Dowo5WZvHqCF3sqqh%2BSlL5EBvrm%2FtbTuOlq06wZ0%2FR79ZJbrCoWU%2Fmy2NVRWZs%2FVlNYtcArRsl105rjckgQFc0YCISg14bwA0RDIAHDGX0KuKGB2Xz5hlATRQtgxLZG1YjjYsJRC9iZ46QT%2Fp5zpuiApr4XiLJh63exw%2FNF87TPTzbZ6ZSJis5PhpFEHenmXIyvyeErT%2Fz76uQ8kn4Kkv%2FTQ8tak%2FTlxg%3D%3D%7Ctkp%3ABk9SR8Sf5KHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=277529913307",
+      "product_id": "277529913307",
+      "epid": "4085296112",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£9.14",
+        "extracted": 9.14
+      },
+      "shipping": {
+        "raw": "+£8.12 delivery",
+        "extracted": 8.12
+      },
+      "location": "from United States",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/9AMAAeSwbkRqyh6g/s-l500.jpg",
+      "seller": {
+        "username": "worldofbooksinc",
+        "reviews": 383300,
+        "positive_feedback_in_percentage": 99.4
+      }
+    },
+    {
+      "title": "The Almanack of Naval Ravikant: A Guid To",
+      "link": "https://www.ebay.co.uk/itm/237012841465?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&itmmeta=01M8D1S1WSY5VBMS0WJ40KAY9N&hash=item372f10f3f9:g:WUsAAeSwyIRqg6Xg&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde9heQHSRyS8d22U6k%2BaSi2d9jZxxKxvYZWp1W3h9IqXHo%2BlwiMIo6ES3fiRpSnokUZjmA9lrbpLt8NlVDFJlymEjrqr8RoSmn5Arwe7sWZGHk1PbWaVzI77hdtTu0Mu6m0FQSpzJXjovWupQJAiiWotW08%2FZ86SzYBRQWgiMQjWGlW7qb6HkMIh7pYSj9ABRlw%2BjVBwM1LvNxkbTzNsRECLIH9Fmki9wd3nLLXDsNpQzSMpAw72bPTU6C8AuQJUlBxLTgTCemKjEkSqmEVbStHRC79kVwQ3kWtaeInWTbGYWg%3D%3D%7Ctkp%3ABk9SR8Sf5KHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=237012841465",
+      "product_id": "237012841465",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£9.15",
+        "extracted": 9.15
+      },
+      "shipping": {
+        "raw": "+£8.12 delivery",
+        "extracted": 8.12
+      },
+      "location": "from United States",
+      "stock_status": "Almost gone",
+      "quantity_sold": "11 sold",
+      "extracted_quantity_sold": 11,
+      "buying_format": "accepts_offers",
+      "buying_format_text": "or Best Offer",
+      "thumbnail": "https://i.ebayimg.com/images/g/WUsAAeSwyIRqg6Xg/s-l500.jpg",
+      "seller": {
+        "username": "nexusser_90",
+        "reviews": 2300,
+        "positive_feedback_in_percentage": 99.7
+      }
+    },
+    {
+      "title": "The Almanack of Naval Ravikant: A Guide to Wealth and Ha [PREMIUM LEATHER BOUND]",
+      "link": "https://www.ebay.co.uk/itm/286210589496?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&itmmeta=01M8D1S1WSSQ2RXX8TY9W39HWP&hash=item42a37b0338:g:~TMAAOSwUGxnWVdP&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde9iwSNCKw07i9nE6M2pLEQpUVC83iIRj9dz1pwt34fmtPbfZXRZSSbYLOWeop9c4HkLGsc3Omj25XpxivcPDCRaCFGohXe3YGAR9xd1Yh9zmEMGEuMI%2BovjT5%2FyhE5DwfXiJ6MkM%2FjFtxpQPkze%2B67Cbz9IYt%2FuWkyV3rzneyOVezLYn3Tgd%2FTG--JcpPmUQtTuFFpn1FGwpo3b%2Bz1OQAYCxWOsW%2BO65ozg1Q%2FHrR5wBda5JVY5D03iTVTTs7BQtOX%2F2%2BLNtQNKMfOnBKcmnTJCE8yXNjdh0MS4kP6BH79WSg%3D%3D%7Ctkp%3ABk9SR8af5KHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=286210589496",
+      "product_id": "286210589496",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£182.96",
+        "extracted": 182.96
+      },
+      "shipping": "Free delivery",
+      "location": "from India",
+      "returns": "Free returns",
+      "promotion": "£146.37 with coupon",
+      "buying_format": "accepts_offers",
+      "buying_format_text": "or Best Offer",
+      "thumbnail": "https://i.ebayimg.com/images/g/~TMAAOSwUGxnWVdP/s-l500.jpg",
+      "seller": {
+        "username": "gyan_booksuk",
+        "reviews": 1100,
+        "positive_feedback_in_percentage": 99.4
+      }
+    },
+    {
+      "title": "The Almanack of Naval Ravikant: A Guid To Wealth And Happiness PaperBack Book",
+      "link": "https://www.ebay.co.uk/itm/407080525829?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&itmmeta=01M8D1S1WSPYZFGQYA7G2N4KAT&hash=item5ec7e3e005:g:7L8AAeSwraVqWpR1&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2BH26Eq5nx9KoCdlPOBoudT0kUd1UHnaSDx28eheb%2FFngljW6P88MOUf2f%2F9uxa8hTdedWRv3eMipocbCk%2Felb8gfkCr4sbC5a3EMWeQU6yOpvivb7UqJ50cfH1dj5bWxaOYpIsCFRxLdR0Ad1jt3%2F4gpNYGi2BAEg%2FtV6OtctU6MFaIlUAMQplQ8j5JR30ddNoAxNblgLTlYFEa42ZmFfPfhn1vb6uV%2FvzGwGV6MRUxIeVZQkW3q7JkILsSxHWSH49Wk3SYhLFT38DseSDKZ%2BEmo6Nl60JGryq1c4xHEHc4Q%3D%3D%7Ctkp%3ABk9SR8af5KHDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=407080525829",
+      "product_id": "407080525829",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£5.71",
+        "extracted": 5.71
+      },
+      "shipping": {
+        "raw": "+£6.50 delivery",
+        "extracted": 6.5
+      },
+      "location": "from United States",
+      "stock_status": "Last one",
+      "quantity_sold": "8 sold",
+      "extracted_quantity_sold": 8,
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/7L8AAeSwraVqWpR1/s-l500.jpg",
+      "seller": {
+        "username": "themoderntraders",
+        "reviews": 739,
+        "positive_feedback_in_percentage": 99
+      }
+    },
+    {
+      "sponsored": true,
+      "title": "The Almanack of Naval Ravikant by Eric Jorgenson 2023 Hardcover NEW",
+      "link": "https://www.ebay.co.uk/itm/168371659945?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&epid=8087925779&itmmeta=01M8D1S1WTJ96SMYCJDA5WY3TG&hash=item2733bba4a9:g:L68AAOSw3KdkGZBc&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9b31ZSl8cziEo0V4XrmP%2BTDnHbmJzqYAnjnPYxe8D0F6zE0yeS9rxsAUTqlJeYX%2FTid9%2B2ipxrWm08L234bc8Fg9ixyS1YNrOsHmhBc0dR4DUouZ2%2BaNaCDU%2FGsGezISgMAI6e%2FI5Pwq43PrImqL0DhG%2B%2FS6jEHHRHwNTQorgPWjTjMjT%2FI0%2BlXKaGXGWCplwZvpylVKNI429jayisoZR0IVVM3cz4sothL3GYnE6c86A9mBby4BmGhxa0rGSNBVhmalfdK%2Bzux6u9tbaQfcHqmP7yYZ%2FhiwGVLX16X%2BVFKNZ%2Bz4E0z4hup7phpq7IWqIxbaHtBjn2IEAz7LVVCBiP%7Ctkp%3ABFBMxp_kocNo",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=168371659945",
+      "product_id": "168371659945",
+      "epid": "8087925779",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£15.15",
+        "extracted": 15.15
+      },
+      "shipping": {
+        "raw": "+£2.53 delivery",
+        "extracted": 2.53
+      },
+      "location": "from Australia",
+      "watchers": "2 watchers",
+      "extracted_watchers": 2,
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/L68AAOSw3KdkGZBc/s-l500.jpg",
+      "seller": {
+        "username": "music_and_gaming_mania",
+        "reviews": 36600,
+        "positive_feedback_in_percentage": 96
+      }
+    },
+    {
+      "sponsored": true,
+      "title": "The Almanack of Naval Ravikant: A Guid To",
+      "link": "https://www.ebay.co.uk/itm/307071704455?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&itmmeta=01M8D1S1WTGS3S7SHKJC3KBRW8&hash=item477ee65d87:g:YR8AAeSwEMdqW~l3&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9VB7AAvMhRREp2KZqtmTYUhyV8S6GKGOtFqI3YXlbK09XeZnIB6hmf6exvAOscpXYsqWkGZTMKS5qIIOjv8iR%2BHOVweJLn8IuuFr%2FNvZFzDqn9QqITsFMAcwz6g2NGTOgGOS84jMfmNBsR7LRMFZJ4N1ccuFklCWIS5L9DH8MHLr80Ya29QBH0P5i27%2Bw%2FWZ0VPLn6XK0d8VYP4HgSSSh%2BCiQc7Q7Jj2KHfrZF6fDY6rV%2Bq4bz7YVA4eN0YgT4nO8nUspAT%2F6MVk4%2Bg9o0hmHqxt45IbMyyULVsgfSXNuaG3QR%2FK%2Bawydj4HCn%2FDURvPmm3kM3UKj%2BRCxsaeckO3Eh%7Ctkp%3ABFBMxp_kocNo",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=307071704455",
+      "product_id": "307071704455",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£6.02",
+        "extracted": 6.02
+      },
+      "shipping": {
+        "raw": "+£7.97 delivery",
+        "extracted": 7.97
+      },
+      "location": "from United States",
+      "buying_format": "accepts_offers",
+      "buying_format_text": "or Best Offer",
+      "thumbnail": "https://i.ebayimg.com/images/g/YR8AAeSwEMdqW~l3/s-l500.jpg",
+      "seller": {
+        "username": "brands-club09",
+        "reviews": 548,
+        "positive_feedback_in_percentage": 98.9
+      }
+    }
+  ],
+  "inline_results": [
+    {
+      "title": "Picked for you",
+      "subtitle": "Top selling items from trusted sellers | Sponsored",
+      "items": [
+        {
+          "title": "The Almanack of Naval Ravikant: A Guide to Wealth and... - Jorgenson, Eric",
+          "link": "https://www.ebay.co.uk/itm/158250225381?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&epid=26046707633&itmmeta=01M8D1S1Z6Q485KVVAVEY40JYH&hash=item24d872cee5:g:C3EAAeSwS9dqmDnq&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2BHA0VUevFSWNNrUeRCTk2FhL6%2Fe7eAZpFQIBtYrzosoMEvyNmmcHgc%2FhyujT3lXUZSIcXFUj9grdzFrU0ME%2FVty3R72i%2BDyDnVRxBw7obPpPnVMBL3INBS%2FVmWLk4KhDGbza8zire5bErgxXOLPaeZgIceZseizXSGz6HtfU%2BbEJHggWBwTUg8sq3PLvgVg3Qlxu8wuoBIUdzXlQ48YJCFe%2B3Ob9v8xkRzKUcwoG3Y%2BLYOPqslB%2Bo%2B8rGe1oR5gJx0NxLIkEBNerwX2klW74e2BFnvq7MUBGfF4jr1F61ogtBQLUAOp8VlhCglzm2JfRWTc8nXIbYT9xFcCNxMRf6%2B%7Ctkp%3ABFBMrKDkocNo",
+          "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=158250225381",
+          "product_id": "158250225381",
+          "epid": "26046707633",
+          "price": {
+            "raw": "£15.15",
+            "extracted": 15.15
+          },
+          "seller": {
+            "username": "webuybooks",
+            "reviews": 3375114,
+            "positive_feedback_in_percentage": 99.8
+          },
+          "thumbnail": "https://i.ebayimg.com/images/g/C3EAAeSwS9dqmDnq/s-l500.jpg"
+        },
+        {
+          "title": "The Almanack of Naval Ravikant: A Guide to Wealth and Happiness | Eric Jorgenson",
+          "link": "https://www.ebay.co.uk/itm/127888316214?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&itmmeta=01M8D1S1Z6M4GFEBF2Z5MD6CZ7&hash=item1dc6bcd736:g:49MAAeSwzRxqFvpV&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2BPXmbHxP6RWIiro5XaSY4V53wp5Qs0MZqWSyMMChPIroQfVAxt106MFfsQwLZ%2B9qgJmNAbDj4k5cb%2FJA3H0%2BHsV7csqImY%2BAp71pdPgq6vOUtG8wJxTsZebD8%2BToWWaRw%2FQSVNbIkoMzy6EI3cuS2darGuhKQhvywrM8NgSILkONZzW7zmi0dQ7upggdZhvy4LtD1WGkZN2qaaQKv33g4%2BUgGvwyAOJvkNIDPIibOH3aUZYtr9Cf%2FjdH0fzKbwKbK0q%2BPIZwzemVljEFQ8U2KMTFj0i6ujARCzm%2BHyXbABixXEt1SakUqpg6WByyJUJEHPx5VV4opHXEjINJzm45tq%7Ctkp%3ABFBMrKDkocNo",
+          "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=127888316214",
+          "product_id": "127888316214",
+          "price": {
+            "raw": "£8.99",
+            "extracted": 8.99
+          },
+          "promotion": "10% off over £45 with coupon",
+          "seller": {
+            "username": "books4peopleuk",
+            "reviews": 161364,
+            "positive_feedback_in_percentage": 99.9
+          },
+          "thumbnail": "https://i.ebayimg.com/images/g/49MAAeSwzRxqFvpV/s-l500.jpg"
+        },
+        {
+          "title": "The Almanack of Naval Ravikant: A Guide to Wealth and... - Jorgenson, Eric",
+          "link": "https://www.ebay.co.uk/itm/366827750746?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&epid=14046555200&itmmeta=01M8D1S1Z61YVY21QQSS040XFG&hash=item5568a3455a:g:ftoAAeSwBPhrAa11&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8VEhWvQM%2FFx2f6qBQFI%2FOUyhgS%2BHMJYOlHuTNhtu9g5X0%2FGX6fwowe41cJUYuMAyJskYAWmG%2Fxw6po9V15NcvIWKtI9vsqAGQ5jbMO9FSbauUh5r4IHBLlt%2FO2BRkVjZe5qTNDAG27vuBxuhriLqP6S2jdVqfEFh8DWI6jHPVtL5LvYXEZmcg%2FattUfhVPacAfZxqBWngASFjWkQbWgVY%2FXmki%2BbQSTlHq6XUMNWNmqVs3RXBg7hR%2BvpElllAvC5hjsDKAKAKGauCA9I3%2Bh8jx3FhQSKCiV4BUi9iIGa53fgwNz7RQGQJGTZWivMhB39DQOBAAy1r1KuRHS%2Fg%2BiZQW%7Ctkp%3ABFBMrKDkocNo",
+          "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=366827750746",
+          "product_id": "366827750746",
+          "epid": "14046555200",
+          "price": {
+            "raw": "£13.04",
+            "extracted": 13.04
+          },
+          "seller": {
+            "username": "webuybooks",
+            "reviews": 3375114,
+            "positive_feedback_in_percentage": 99.8
+          },
+          "thumbnail": "https://i.ebayimg.com/images/g/ftoAAeSwBPhrAa11/s-l500.jpg"
+        },
+        {
+          "title": "The Almanack Of Naval Ravikant: A Guide to Wealth and Happy by Eric Jorgenson",
+          "link": "https://www.ebay.co.uk/itm/257489476376?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&itmmeta=01M8D1S1Z6YKBJFB00HD5RTBQW&hash=item3bf3919b18:g:AHAAAeSwKE5p93qY&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8KvryKiYhx576nswtGV9x0n46YzT9FbMMrVSdaia6u51HtMnomdnwaGgziSYlXNGc2RB335Oeg%2FwaVAziALM9KwpMSzj%2B1QNGH%2B6sdJLp1CL79NiaJszvpClYodUuUCNqH95jsSvsA990sXH%2BacXRi0TM0WwDQQoLuD3xhpxVLtxGKiSGJhwRTe5Z%2B5lqu6GvS%2FPpp%2B8FyPQFjVdIteWsw9FByu4hiN7vsHi%2F0akVOoR97OEHXH65rxU1bHMvV%2Fw%2Bq4wLCianXtlfbwMPkHxocqRilmUs8lyQA2%2FkoYX5%2F50ftoDbUnwnv%2BHs9j5paaknWDFmTqJx7nX4Zaeu%2FfcN7%7Ctkp%3ABFBMrKDkocNo",
+          "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=257489476376",
+          "product_id": "257489476376",
+          "price": {
+            "raw": "£8.25",
+            "extracted": 8.25
+          },
+          "promotion": "Save up to 5% with Multi-buy",
+          "seller": {
+            "username": "mabsstore-uk",
+            "reviews": 5676,
+            "positive_feedback_in_percentage": 99.4
+          },
+          "thumbnail": "https://i.ebayimg.com/images/g/AHAAAeSwKE5p93qY/s-l500.jpg"
+        }
+      ]
+    },
+    {
+      "title": "Quality pre-owned picks",
+      "subtitle": "Exceptional finds, exceptional savings | Sponsored",
+      "items": [
+        {
+          "title": "The Almanack of Naval Ravikant Book by Eric Jorgenson Wealth Love 9781544514215",
+          "link": "https://www.ebay.co.uk/itm/336690860984?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&epid=5046364950&itmmeta=01M8D1S1Z6GQQJDFGKFFBDGP15&hash=item4e6456d3b8:g:Ou4AAeSwihxqWFX3&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9b4YsonVJv9nfxY8grLjYixkV8hC3SO0g8So0xTglGgWa%2FLcz5%2Fj1YquE2blefibVL60%2FbQl%2Bs3zxW3zYh6Zk2Gc0irnJlHLgWXebqVq3oDV670YJqow7Nt%2Fcf2X19gx6GstT0sw9FHnF8XTfngzLZ5GVgiP7E0KTvSOd2Scb%2Bcpz%2BO8%2FukzSvOjrrzO%2BPivjiZFjcAPs5Btj%2B2SkHZXM4BJWggnVZivODM0LPy%2FYCjGYwlgHEeBaFNK7jIFRTH%2Fk9L3iCPAZ0FdfJIrTaTy6IYzrYxKopDWNarwTHwZ8V%2B9cYDs7%2Ftoj9V01BpaZk6UhWANvI6qmH%2F%2BjDtCk9kpDg%7Ctkp%3ABFBMrqDkocNo",
+          "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=336690860984",
+          "product_id": "336690860984",
+          "epid": "5046364950",
+          "price": {
+            "raw": "£10.10",
+            "extracted": 10.1
+          },
+          "shipping": {
+            "raw": "+£15.66 delivery",
+            "extracted": 15.66
+          },
+          "condition": "Pre-owned",
+          "thumbnail": "https://i.ebayimg.com/images/g/Ou4AAeSwihxqWFX3/s-l500.jpg"
+        },
+        {
+          "title": "The Almanack Of Naval Ravikant Eric Jorgenson White PB 2021 Wealth Happiness",
+          "link": "https://www.ebay.co.uk/itm/327464287390?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&epid=4085296112&itmmeta=01M8D1S1Z6XHW13PTS5K9N3XDJ&hash=item4c3e647c9e:g:kawAAeSwJwRq~o4Q&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8Oy%2FDbHCWvHeUK5TR%2FM0T54G7uH1nK81aziroRdDhMzrwvc%2FipAicysj5eWhXlSxAWu7jxWnvCfk17iexCE2N5DGVEAtduKu9STErwVFtmp0Z4DYEwBcjYw702WVQziieIKdjlWlhXEUhsQeyI0yIV5eDLrh%2BGfwyW%2B1qPIxQRsR5APoT%2FdQZBW8GuY6tx0HQopvinzkzKLniAcyC444r7gs6dzMOR3U%2BCbz4h8FQ5u1yJKmKHHpyxRErK3ji1FVyOrw7YTIIBRoOQ91Ngmri1titwvckz5HYsre5K6qKC1Cqm351SY6RnS23aArrihrptLD%2FhsjoXbFS4Z1UNVPjt%7Ctkp%3ABFBMrqDkocNo",
+          "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=327464287390",
+          "product_id": "327464287390",
+          "epid": "4085296112",
+          "price": {
+            "raw": "£10.29",
+            "extracted": 10.29
+          },
+          "shipping": {
+            "raw": "+£6.73 delivery",
+            "extracted": 6.73
+          },
+          "condition": "Pre-owned",
+          "thumbnail": "https://i.ebayimg.com/images/g/kawAAeSwJwRq~o4Q/s-l500.jpg"
+        },
+        {
+          "title": "The Almanack of Naval Ravikant Eric Jorgenson Trade Paperback (2020) [VG]",
+          "link": "https://www.ebay.co.uk/itm/287590340733?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&epid=4085296112&itmmeta=01M8D1S1Z6C5W4Y2KBAH7PJC6M&hash=item42f5b8587d:g:TcgAAeSwUM1q1uet&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2BLnViyZiMQJzlVzKTSlszFNq%2FLYt5Nyh724yHLaJ4JhIDQA6gldCL87EPYeI%2BTK87DIv4J%2F9P2cqC%2BUoMgDe%2B0hQ7rHEXSX0iwR6Q0M9%2BlfnJZlc61WMaONWXtukS6X3bAbycw9HEbet2eBpvGwRcsfoDIdxu8YkQtndy%2BDUDQOgdOYKmfNeibjn%2FcLxNpf40cZnDsmCwfnBjU9DWg2WnmTu6PsFugC3nU4kHS%2FohiLL7s%2FjZoFBjwc4znYLSPIFjIfeBPD5R%2FFmT0OWKVP%2F0WC3Dsj63xM1dIWG033MfjJNq7lWLe0lCZAElYqGS4B1dbPcU47sxPr7tHCmiT0nut%7Ctkp%3ABFBMrqDkocNo",
+          "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=287590340733",
+          "product_id": "287590340733",
+          "epid": "4085296112",
+          "price": {
+            "raw": "£19.02",
+            "extracted": 19.02
+          },
+          "shipping": {
+            "raw": "+£8.62 delivery",
+            "extracted": 8.62
+          },
+          "condition": "Pre-owned",
+          "thumbnail": "https://i.ebayimg.com/images/g/TcgAAeSwUM1q1uet/s-l500.jpg"
+        },
+        {
+          "title": "The Almanack of Naval Ravikant: A - Hardcover, by Jorgenson Eric - Very Good",
+          "link": "https://www.ebay.co.uk/itm/147598440171?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&epid=17050097685&itmmeta=01M8D1S1Z6VTNMA8W087RHDJHK&hash=item225d8d76eb:g:kNUAAeSwikVrCB9l&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9l1Wx3vmLWUD4c96%2FwJMOktmpGMFXT8gbS25ysn%2Fqpc5XqiNsSsGVv5497B5%2BgnPGFFJYfhnsxbN9ozCB%2FwdBC8NWLf5HZewQmZsUyG3YYOEEGQl9DKmVTwBYi2tlA7xe%2BgCPub%2FWEf48pG2CNuXqNM8ALrPlDI7iff4PlyJQp68F%2FBR1MoQQV8CfVMAk2SEjTrhsmy0yfivAIXIv3AV3Lg9hCJDHVjIiO5dHaxBf%2BhivKhrPkWW7C7xAR536Nkzlddd547sXHDlmJ6ecCR%2Fzez8V%2BfLHIRBnEekdRMthJZduvhTzqCtHy7YJYrZE4lsZlSedDtiWClRo0FcZx2QLj%7Ctkp%3ABFBMsKDkocNo",
+          "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=147598440171",
+          "product_id": "147598440171",
+          "epid": "17050097685",
+          "price": {
+            "raw": "£13.24",
+            "extracted": 13.24
+          },
+          "shipping": {
+            "raw": "+£8.33 delivery",
+            "extracted": 8.33
+          },
+          "returns": "Free returns",
+          "condition": "Pre-owned",
+          "thumbnail": "https://i.ebayimg.com/images/g/kNUAAeSwikVrCB9l/s-l500.jpg"
+        },
+        {
+          "title": "The Almanack of Naval Ravikant (Chinese Edition)",
+          "link": "https://www.ebay.co.uk/itm/225553989674?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&itmmeta=01M8D1S1Z635MGXDFPHS4FRQDD&hash=item348410c02a:g:E2EAAeSweJZqEX6B&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2BAVtJklI6u2XudjHLNnTWuQgYUHbLlf%2FSqLamKaW4ZIXKX2YiH2eA7Mkxgr8sGOqdsBWpnyOu3XXtmHkt87d%2FRM8RVT%2BYOdP06CuD%2FxoEk715umwhck2o9asDDZ4Td7XPpnryCqUjXLH0kbOS1zw4El7YNslz0ng4SmDFWPHHsDr4ZPBaM4pMrkNTNcN8%2BhMli98gMMreFvhuiOgMLHMc1eRCsnrIMV2EAo%2Fy6vwuCQqtBwb4JMA5LowgmbQdJ1Oi5b0%2BM2FfPRYYcADlSuYEOzC4jnTpRyeiVNIw%2FR4Td%2FPVPe4MeYpd0bOaDjNqeb2O5pxRGvzVaJS1GRSqwhxYY%7Ctkp%3ABFBMsKDkocNo",
+          "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=225553989674",
+          "product_id": "225553989674",
+          "price": {
+            "raw": "£29.62",
+            "extracted": 29.62
+          },
+          "shipping": "Free delivery",
+          "condition": "New (other)",
+          "thumbnail": "https://i.ebayimg.com/images/g/E2EAAeSweJZqEX6B/s-l500.jpg"
+        }
+      ]
+    }
+  ],
+  "related_searches": [
+    {
+      "query": "atomic habits",
+      "link": "https://www.ebay.co.uk/sch/i.html?_nkw=atomic+habits&_sop=12"
+    },
+    {
+      "query": "the almanack of naval ravikant hardcover",
+      "link": "https://www.ebay.co.uk/sch/i.html?_nkw=the+almanack+of+naval+ravikant+hardcover&_sop=12"
+    },
+    {
+      "query": "never split the difference",
+      "link": "https://www.ebay.co.uk/sch/i.html?_nkw=never+split+the+difference&_sop=12"
+    },
+    {
+      "query": "the almanack of naval ravikant hard cover",
+      "link": "https://www.ebay.co.uk/sch/i.html?_nkw=the+almanack+of+naval+ravikant+hard+cover&_sop=12"
+    }
+  ],
+  "popular_filters": [
+    {
+      "name": "Hardcover",
+      "parameter": "Format=Hardcover",
+      "link": "https://www.ebay.co.uk/sch/i.html?_nkw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&Format=Hardcover",
+      "serpapi_link": "https://serpapi.com/search.json?_nkw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&ebay_domain=ebay.co.uk&engine=ebay&popular_filters=Format%3DHardcover"
+    },
+    {
+      "name": "Paperback",
+      "parameter": "Format=Paperback",
+      "link": "https://www.ebay.co.uk/sch/i.html?_nkw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&Format=Paperback",
+      "serpapi_link": "https://serpapi.com/search.json?_nkw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&ebay_domain=ebay.co.uk&engine=ebay&popular_filters=Format%3DPaperback"
+    },
+    {
+      "name": "Trade Paperback",
+      "parameter": "Format=Trade%2520Paperback",
+      "link": "https://www.ebay.co.uk/sch/i.html?_nkw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&Format=Trade%2520Paperback",
+      "serpapi_link": "https://serpapi.com/search.json?_nkw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&ebay_domain=ebay.co.uk&engine=ebay&popular_filters=Format%3DTrade%252520Paperback"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.ebay.co.uk/sch/i.html?_nkw=the+almanack+of+naval+ravikant+eric+jorgensen+book&_pgn=2",
+    "other_pages": {
+      "1": "https://www.ebay.co.uk/sch/i.html?_nkw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&_pgn=1",
+      "2": "https://www.ebay.co.uk/sch/i.html?_nkw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&_pgn=2",
+      "3": "https://www.ebay.co.uk/sch/i.html?_nkw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&_pgn=3"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?_nkw=the+almanack+of+naval+ravikant+eric+jorgensen+book&_pgn=2&ebay_domain=ebay.co.uk&engine=ebay",
+    "next": "https://serpapi.com/search.json?_nkw=the+almanack+of+naval+ravikant+eric+jorgensen+book&_pgn=2&ebay_domain=ebay.co.uk&engine=ebay",
+    "other_pages": {
+      "1": "https://serpapi.com/search.json?_nkw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&_pgn=1&ebay_domain=ebay.co.uk&engine=ebay",
+      "2": "https://serpapi.com/search.json?_nkw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&_pgn=2&ebay_domain=ebay.co.uk&engine=ebay",
+      "3": "https://serpapi.com/search.json?_nkw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&_pgn=3&ebay_domain=ebay.co.uk&engine=ebay"
+    }
+  }
+}

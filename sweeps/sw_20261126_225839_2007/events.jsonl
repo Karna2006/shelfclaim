@@ -1,0 +1,298 @@
+{"t_ms":0,"type":"transcript_agent","payload":{"text":"Hi, I'm your claim assistant. I'll guide you through one slow walk past your shelves. Are you in India, with values in rupees?"}}
+{"t_ms":926,"type":"speech_event","payload":{"name":"tts-start","detail":"agent"}}
+{"t_ms":6884,"type":"speech_event","payload":{"name":"forced-final","detail":"interim stable for 1200ms"}}
+{"t_ms":6884,"type":"transcript_cleaned","payload":{"original":"hi I am your claim assistant","cleaned":"hi I","removed_words":["am","your","claim","assistant"]}}
+{"t_ms":6884,"type":"transcript_user","payload":{"text":"hi I"}}
+{"t_ms":6884,"type":"agent_request","payload":{"model":"gemini-3.1-flash-lite","history_messages":2,"history_turns":1,"image_parts":0,"image_bytes":0,"tool_count":7,"estimated_prompt_tokens":1110,"total_prompt_tokens":null}}
+{"t_ms":6909,"type":"speech_event","payload":{"name":"tts-end","detail":"agent"}}
+{"t_ms":6909,"type":"speech_event","payload":{"name":"resume requested","detail":"speech ended"}}
+{"t_ms":6909,"type":"recognition_resumed","payload":{"detail":"speech ended"}}
+{"t_ms":8624,"type":"speech_event","payload":{"name":"late-final-ignored","detail":"hi I am your claim assistant"}}
+{"t_ms":8843,"type":"transcript_agent","payload":{"text":"One moment.","kind":"filler"}}
+{"t_ms":9402,"type":"speech_event","payload":{"name":"tts-start","detail":"agent"}}
+{"t_ms":6884,"type":"agent_attempt","payload":{"model":"gemini-3.1-flash-lite","attempt":1,"latency_ms":2901,"success":true,"error":null,"history_messages":2,"history_turns":1,"image_parts":0,"image_bytes":0,"tool_count":7,"estimated_prompt_tokens":1110,"total_prompt_tokens":1484}}
+{"t_ms":9405,"type":"agent_response_diagnostics","payload":{"finish_reason":"STOP","usage_metadata":{"candidates_token_count":8,"prompt_token_count":1484,"prompt_tokens_details":[{"modality":"TEXT","token_count":1484}],"total_token_count":1492,"thoughts_token_count":null},"prompt_feedback":null,"block_reason":null,"has_text_part":true,"has_function_call_part":false}}
+{"t_ms":9405,"type":"agent_reply","payload":{"latency_ms":2907,"model":"gemini-3.1-flash-lite","text":"Are you in India and using rupees?"}}
+{"t_ms":9405,"type":"transcript_agent","payload":{"text":"Are you in India and using rupees?"}}
+{"t_ms":11221,"type":"speech_event","payload":{"name":"tts-end","detail":"agent"}}
+{"t_ms":11221,"type":"speech_event","payload":{"name":"tts-start","detail":"agent"}}
+{"t_ms":12448,"type":"speech_event","payload":{"name":"forced-final","detail":"interim stable for 1200ms"}}
+{"t_ms":12448,"type":"transcript_cleaned","payload":{"original":"one","cleaned":"one","removed_words":[]}}
+{"t_ms":12448,"type":"transcript_user","payload":{"text":"one"}}
+{"t_ms":12448,"type":"agent_request","payload":{"model":"gemini-3.1-flash-lite","history_messages":5,"history_turns":2,"image_parts":0,"image_bytes":0,"tool_count":7,"estimated_prompt_tokens":1152,"total_prompt_tokens":null}}
+{"t_ms":12509,"type":"speech_event","payload":{"name":"tts-end","detail":"agent"}}
+{"t_ms":12509,"type":"speech_event","payload":{"name":"resume requested","detail":"speech ended"}}
+{"t_ms":12509,"type":"recognition_resumed","payload":{"detail":"speech ended"}}
+{"t_ms":13865,"type":"speech_event","payload":{"name":"forced-final","detail":"interim stable for 1200ms"}}
+{"t_ms":13865,"type":"transcript_cleaned","payload":{"original":"you in","cleaned":"you in","removed_words":[]}}
+{"t_ms":13882,"type":"speech_event","payload":{"name":"resume requested","detail":"speech ended"}}
+{"t_ms":13882,"type":"recognition_resumed","payload":{"detail":"speech ended"}}
+{"t_ms":14629,"type":"transcript_agent","payload":{"text":"One moment.","kind":"filler"}}
+{"t_ms":15024,"type":"speech_event","payload":{"name":"tts-start","detail":"agent"}}
+{"t_ms":16217,"type":"speech_event","payload":{"name":"tts-end","detail":"agent"}}
+{"t_ms":12448,"type":"agent_attempt","payload":{"model":"gemini-3.1-flash-lite","attempt":1,"latency_ms":4118,"success":true,"error":null,"history_messages":5,"history_turns":2,"image_parts":0,"image_bytes":0,"tool_count":7,"estimated_prompt_tokens":1152,"total_prompt_tokens":1505}}
+{"t_ms":16347,"type":"agent_response_diagnostics","payload":{"finish_reason":"STOP","usage_metadata":{"candidates_token_count":13,"prompt_token_count":1505,"prompt_tokens_details":[{"modality":"TEXT","token_count":1505}],"total_token_count":1518,"thoughts_token_count":null},"prompt_feedback":null,"block_reason":null,"has_text_part":true,"has_function_call_part":false}}
+{"t_ms":16347,"type":"agent_reply","payload":{"latency_ms":4141,"model":"gemini-3.1-flash-lite","text":"Please confirm if you are in India and your currency is rupees."}}
+{"t_ms":16347,"type":"transcript_agent","payload":{"text":"Please confirm if you are in India and your currency is rupees."}}
+{"t_ms":16347,"type":"transcript_user","payload":{"text":"you in"}}
+{"t_ms":16347,"type":"agent_request","payload":{"model":"gemini-3.1-flash-lite","history_messages":8,"history_turns":3,"image_parts":1,"image_bytes":33564,"tool_count":7,"estimated_prompt_tokens":1464,"total_prompt_tokens":null}}
+{"t_ms":16645,"type":"speech_event","payload":{"name":"tts-start","detail":"agent"}}
+{"t_ms":18664,"type":"transcript_agent","payload":{"text":"One moment.","kind":"filler"}}
+{"t_ms":16347,"type":"agent_attempt","payload":{"model":"gemini-3.1-flash-lite","attempt":1,"latency_ms":2786,"success":true,"error":null,"history_messages":8,"history_turns":3,"image_parts":1,"image_bytes":33564,"tool_count":7,"estimated_prompt_tokens":1464,"total_prompt_tokens":2644}}
+{"t_ms":19242,"type":"agent_response_diagnostics","payload":{"finish_reason":"STOP","usage_metadata":{"candidates_token_count":32,"prompt_token_count":2644,"prompt_tokens_details":[{"modality":"IMAGE","token_count":1100},{"modality":"TEXT","token_count":1544}],"total_token_count":2676,"thoughts_token_count":null},"prompt_feedback":null,"block_reason":null,"has_text_part":false,"has_function_call_part":true}}
+{"t_ms":19242,"type":"tool_call","payload":{"name":"set_locale","args":{"currency":"INR","country":"IN"}}}
+{"t_ms":19242,"type":"tool_result","payload":{"name":"set_locale","result":{"supported":true,"country":"IN","currency":"INR"}}}
+{"t_ms":19242,"type":"tool_call","payload":{"name":"start_sweep","args":{}}}
+{"t_ms":19242,"type":"stage_started","payload":{"stage":"capture"}}
+{"t_ms":19242,"type":"tool_result","payload":{"name":"start_sweep","result":{"started":true,"sweep_id":"sw_20261126_225839_2007"}}}
+{"t_ms":19242,"type":"agent_reply","payload":{"latency_ms":2812,"model":"gemini-3.1-flash-lite","text":"Great. Start with the shelf on your left, top row, and move slowly."}}
+{"t_ms":19242,"type":"transcript_agent","payload":{"text":"Great. Start with the shelf on your left, top row, and move slowly."}}
+{"t_ms":19242,"type":"tool_call","payload":{"name":"start_sweep","args":{}}}
+{"t_ms":19242,"type":"stage_started","payload":{"stage":"capture"}}
+{"t_ms":19242,"type":"tool_result","payload":{"name":"start_sweep","result":{"started":true,"sweep_id":"sw_20261126_225839_2007"}}}
+{"t_ms":21017,"type":"speech_event","payload":{"name":"tts-end","detail":"agent"}}
+{"t_ms":21018,"type":"speech_event","payload":{"name":"tts-start","detail":"agent"}}
+{"t_ms":21532,"type":"speech_event","payload":{"name":"forced-final","detail":"interim stable for 1200ms"}}
+{"t_ms":21532,"type":"transcript_cleaned","payload":{"original":"if you are in India in your currency is","cleaned":"","removed_words":["if","you","are","in","India","in","your","currency","is"]}}
+{"t_ms":21532,"type":"echo_dropped","payload":{"text":"if you are in India in your currency is","original":"if you are in India in your currency is","cleaned":"","matched_line":"Please confirm if you are in India and your currency is rupees.","similarity":94.87179487179486}}
+{"t_ms":22136,"type":"speech_event","payload":{"name":"tts-end","detail":"agent"}}
+{"t_ms":22136,"type":"speech_event","payload":{"name":"tts-start","detail":"agent"}}
+{"t_ms":27275,"type":"speech_event","payload":{"name":"tts-end","detail":"agent"}}
+{"t_ms":28389,"type":"cue_sent","payload":{"text":"Hold the phone steadier for a moment.","priority":80,"kind":"BLURRY","metrics":{"window_frames":4,"fast_fraction":0.0,"low_light_fraction":0.0,"blurry_fraction":1.0,"glare_fraction":0.0,"median_blur":111.65591870073729,"median_exposure":99.70171465084877,"median_gyro_dps":7.069239402921589}}}
+{"t_ms":28689,"type":"speech_event","payload":{"name":"tts-start","detail":"cue"}}
+{"t_ms":31157,"type":"speech_event","payload":{"name":"tts-end","detail":"cue"}}
+{"t_ms":48924,"type":"cue_sent","payload":{"text":"It's dark, can you turn on a light?","priority":90,"kind":"LOW_LIGHT","metrics":{"window_frames":4,"fast_fraction":0.0,"low_light_fraction":1.0,"blurry_fraction":0.0,"glare_fraction":0.0,"median_blur":62.516065005095925,"median_exposure":81.37678771219137,"median_gyro_dps":2.361018188742449}}}
+{"t_ms":49168,"type":"speech_event","payload":{"name":"tts-start","detail":"cue"}}
+{"t_ms":51639,"type":"speech_event","payload":{"name":"tts-end","detail":"cue"}}
+{"t_ms":61199,"type":"cue_sent","payload":{"text":"Move the phone more slowly.","priority":100,"kind":"TOO_FAST","metrics":{"window_frames":4,"fast_fraction":0.75,"low_light_fraction":0.0,"blurry_fraction":0.75,"glare_fraction":0.0,"median_blur":24.680056113225696,"median_exposure":106.93384403935185,"median_gyro_dps":48.83131183465481}}}
+{"t_ms":61427,"type":"speech_event","payload":{"name":"tts-start","detail":"cue"}}
+{"t_ms":63481,"type":"speech_event","payload":{"name":"tts-end","detail":"cue"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s01","backend":"off"}}
+{"t_ms":53508,"type":"stage_done","payload":{"stage":"s01","keyframes":3,"detections":70}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s02","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s02","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s03","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s03","books":11}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s04","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s04"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s05","backend":"off"}}
+{"t_ms":0,"type":"error","payload":{"stage":"s05","exception_type":"ClientError","message":"429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 11h43m40.003964813s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '42220s'}]}}"}}
+{"t_ms":0,"type":"error","payload":{"stage":"s10","exception_type":"ClientError","message":"429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 11h43m40.003964813s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.8-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '42220s'}]}}"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s02","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s02","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s03","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s03","books":11}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s04","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s04"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s05","backend":"off"}}
+{"t_ms":0,"type":"error","payload":{"stage":"s05","exception_type":"RuntimeError","message":"All transcription models failed: gemini-3.8-flash: ClientError; gemini-3.5-flash-lite: ClientError; gemini-3.1-flash-lite: ClientError"}}
+{"t_ms":0,"type":"error","payload":{"stage":"s10","exception_type":"RuntimeError","message":"All transcription models failed: gemini-3.8-flash: ClientError; gemini-3.5-flash-lite: ClientError; gemini-3.1-flash-lite: ClientError"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s02","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s02","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s03","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s03","books":11}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s04","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s04"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s05","backend":"off"}}
+{"t_ms":0,"type":"transcription_unavailable","payload":{"reason":"All transcription models failed: gemini-3.1-flash-lite: ClientError; gemini-3.5-flash-lite: ClientError; gemini-3.8-flash: ClientError","crop_count":12}}
+{"t_ms":0,"type":"transcription_unavailable","payload":{"reason":"All transcription models failed: gemini-3.1-flash-lite: ServerError; gemini-3.5-flash-lite: ClientError; gemini-3.8-flash: ClientError","crop_count":8}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s06","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s07","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s08","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s08","items":0}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s09","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s09"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s10","backend":"off"}}
+{"t_ms":0,"type":"packet_ready","payload":{"packet":"claim_packet.json","report":"report.html"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s05","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s06","backend":"off"}}
+{"t_ms":0,"type":"error","payload":{"stage":"s06","exception_type":"ConnectError","message":"All connection attempts failed"}}
+{"t_ms":0,"type":"error","payload":{"stage":"s10","exception_type":"ConnectError","message":"All connection attempts failed"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s05","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s06","backend":"off"}}
+{"t_ms":0,"type":"error","payload":{"stage":"s06","exception_type":"HTTPStatusError","message":"Client error '429 Too Many Requests' for url 'https://www.googleapis.com/books/v1/volumes?q=intitle%3AHERO+MANIFESTO+%7C+ARMA+%7C+NSON+%7C+HARPER+%7C+BUSINESS&maxResults=8&key='\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"}}
+{"t_ms":0,"type":"error","payload":{"stage":"s10","exception_type":"HTTPStatusError","message":"Client error '429 Too Many Requests' for url 'https://www.googleapis.com/books/v1/volumes?q=intitle%3AHERO+MANIFESTO+%7C+ARMA+%7C+NSON+%7C+HARPER+%7C+BUSINESS&maxResults=8&key='\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s06","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s07","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s08","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s08","items":0}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s09","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s09"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s10","backend":"off"}}
+{"t_ms":0,"type":"packet_ready","payload":{"packet":"claim_packet.json","report":"report.html"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s05","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s06","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s07","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s08","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s08","items":0}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s09","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s09"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s10","backend":"off"}}
+{"t_ms":0,"type":"packet_ready","payload":{"packet":"claim_packet.json","report":"report.html"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s05","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s06","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s07","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s08","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s08","items":0}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s09","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s09"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s10","backend":"off"}}
+{"t_ms":0,"type":"packet_ready","payload":{"packet":"claim_packet.json","report":"report.html"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s06","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s07","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s08","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s08","items":0}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s09","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s09"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s10","backend":"off"}}
+{"t_ms":0,"type":"packet_ready","payload":{"packet":"claim_packet.json","report":"report.html"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s06","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s06","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s07","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s08","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s08","items":0}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s09","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s09"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s10","backend":"off"}}
+{"t_ms":0,"type":"packet_ready","payload":{"packet":"claim_packet.json","report":"report.html"}}
+{"t_ms":68869,"type":"stage_done","payload":{"stage":"s01","keyframes":6,"detections":152}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s03","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s03","books":145}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s03","output":"s03_books_raw.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s04","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s04"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s04","output":"s04_measurements.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s05","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s05","output":"s05_transcriptions.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s06","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s06","output":"s06_identification.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s07","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s07","output":"s07_book_prices.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s08","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s08","items":0}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s08","output":"s08_items.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s09","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s09"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s09","output":"s09_room.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s10","backend":"off"}}
+{"t_ms":0,"type":"packet_ready","payload":{"packet":"claim_packet.json","report":"report.html"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s10","output":"claim_packet.json","backend":"off"}}
+{"t_ms":68869,"type":"stage_done","payload":{"stage":"s01","keyframes":6,"detections":19}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s03","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s03","books":12}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s03","output":"s03_books_raw.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s04","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s04"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s04","output":"s04_measurements.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s05","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s05","output":"s05_transcriptions.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s06","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s06","output":"s06_identification.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s07","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s07","output":"s07_book_prices.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s08","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s08","items":0}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s08","output":"s08_items.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s09","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s09"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s09","output":"s09_room.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s10","backend":"off"}}
+{"t_ms":0,"type":"packet_ready","payload":{"packet":"claim_packet.json","report":"report.html"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s10","output":"claim_packet.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s03","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s03","books":14}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s03","output":"s03_books_raw.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s04","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s04"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s04","output":"s04_measurements.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s05","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s05","output":"s05_transcriptions.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s06","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s06","output":"s06_identification.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s07","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s07","output":"s07_book_prices.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s08","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s08","items":0}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s08","output":"s08_items.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s09","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s09"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s09","output":"s09_room.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s10","backend":"off"}}
+{"t_ms":0,"type":"packet_ready","payload":{"packet":"claim_packet.json","report":"report.html"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s10","output":"claim_packet.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s03","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s03","books":14}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s03","output":"s03_books_raw.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s04","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s04"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s04","output":"s04_measurements.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s05","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s05","output":"s05_transcriptions.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s06","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s06","output":"s06_identification.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s07","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s07","output":"s07_book_prices.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s08","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s08","items":0}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s08","output":"s08_items.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s09","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s09"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s09","output":"s09_room.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s10","backend":"off"}}
+{"t_ms":0,"type":"packet_ready","payload":{"packet":"claim_packet.json","report":"report.html"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s10","output":"claim_packet.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s03","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s03","books":14}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s03","output":"s03_books_raw.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s04","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s04"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s04","output":"s04_measurements.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s05","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s05","output":"s05_transcriptions.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s06","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s06","output":"s06_identification.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s07","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s07","output":"s07_book_prices.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s08","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s08","items":0}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s08","output":"s08_items.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s09","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s09"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s09","output":"s09_room.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s10","backend":"off"}}
+{"t_ms":0,"type":"packet_ready","payload":{"packet":"claim_packet.json","report":"report.html"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s10","output":"claim_packet.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s03","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s03","books":14}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s03","output":"s03_books_raw.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s04","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s04"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s04","output":"s04_measurements.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s05","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s05","output":"s05_transcriptions.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s06","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s06","output":"s06_identification.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s07","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s07","output":"s07_book_prices.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s08","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s08","items":0}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s08","output":"s08_items.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s09","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s09"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s09","output":"s09_room.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s10","backend":"off"}}
+{"t_ms":0,"type":"packet_ready","payload":{"packet":"claim_packet.json","report":"report.html"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s10","output":"claim_packet.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s06","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s06","output":"s06_identification.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s07","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s07","output":"s07_book_prices.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s08","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s08","items":0}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s08","output":"s08_items.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s09","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s09"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s09","output":"s09_room.json","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s10","backend":"off"}}
+{"t_ms":0,"type":"packet_ready","payload":{"packet":"claim_packet.json","report":"report.html"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s10","output":"claim_packet.json","backend":"off"}}

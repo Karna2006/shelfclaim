@@ -1,0 +1,47 @@
+{
+  "stages": {
+    "s01": {
+      "duration_s": 14.149696,
+      "status": "done"
+    },
+    "s02": {
+      "duration_s": 0.005474,
+      "status": "done"
+    },
+    "s03": {
+      "duration_s": 0.032246,
+      "status": "done"
+    },
+    "s04": {
+      "duration_s": 0.031498,
+      "status": "done"
+    },
+    "s05": {
+      "duration_s": 10.102445,
+      "status": "done"
+    },
+    "s06": {
+      "duration_s": 11.027753,
+      "status": "done"
+    },
+    "s07": {
+      "duration_s": 12.770809,
+      "status": "done"
+    },
+    "s08": {
+      "duration_s": 0.007618,
+      "status": "done"
+    },
+    "s09": {
+      "duration_s": 0.00149,
+      "status": "done"
+    },
+    "s10": {
+      "duration_s": 0.05412,
+      "status": "done"
+    }
+  },
+  "costs": [],
+  "total_cost_usd": null,
+  "time_to_packet_s": 48.198142
+}

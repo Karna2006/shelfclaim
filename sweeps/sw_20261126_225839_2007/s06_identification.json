@@ -1,0 +1,6710 @@
+{
+  "books": {
+    "b_0001": {
+      "status": "identified",
+      "chosen": {
+        "source": "google_books",
+        "key": "bE0W0AEACAAJ",
+        "title": "The Everyday Hero Manifesto",
+        "authors": [
+          "Robin Sharma"
+        ],
+        "year": "2024-05-07",
+        "publishers": [
+          "HarperCollins Publishers"
+        ],
+        "isbns": [
+          "1443472980",
+          "9781443472982"
+        ]
+      },
+      "title": "The Everyday Hero Manifesto",
+      "authors": [
+        "Robin Sharma"
+      ],
+      "edition": "",
+      "isbn": "",
+      "raw_score": 0.9778,
+      "id_confidence": 0.9778,
+      "candidates": [
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "ILbPjwEACAAJ",
+            "title": "Robin Sharma",
+            "authors": [
+              "Sami S. Reed"
+            ],
+            "year": "2016-04-06",
+            "publishers": [
+              "Createspace Independent Publishing Platform"
+            ],
+            "isbns": [
+              "1530923379",
+              "9781530923373"
+            ]
+          },
+          "title_sim": 100.0,
+          "author_sim": 32.0,
+          "publisher_sim": 0.0,
+          "raw_score": 1.0,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "robin sharma",
+          "line_indices": [
+            2
+          ],
+          "line_distance": 20.180436070610565,
+          "features": {
+            "title": 1.0,
+            "author": 0.31999999999999995,
+            "publisher": 0.0
+          },
+          "score": 1.0
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "bE0W0AEACAAJ",
+            "title": "The Everyday Hero Manifesto",
+            "authors": [
+              "Robin Sharma"
+            ],
+            "year": "2024-05-07",
+            "publishers": [
+              "HarperCollins Publishers"
+            ],
+            "isbns": [
+              "1443472980",
+              "9781443472982"
+            ]
+          },
+          "title_sim": 97.78,
+          "author_sim": 100.0,
+          "publisher_sim": 0.0,
+          "raw_score": 0.9778,
+          "id_confidence": 0.9778,
+          "accepted": true,
+          "matched_query": "everyday hero manifest",
+          "line_indices": [
+            1
+          ],
+          "line_distance": 12.539936203984453,
+          "features": {
+            "title": 0.9777777777777777,
+            "author": 1.0,
+            "publisher": 0.0
+          },
+          "score": 0.9778
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "pyJAEAAAQBAJ",
+            "title": "The Everyday Hero Manifesto",
+            "authors": [
+              "Robin Sharma"
+            ],
+            "year": "2021-09-15",
+            "publishers": [
+              "Jaico Publishing House"
+            ],
+            "isbns": [
+              "9789391019754",
+              "9391019757"
+            ]
+          },
+          "title_sim": 97.78,
+          "author_sim": 100.0,
+          "publisher_sim": 0.0,
+          "raw_score": 0.9778,
+          "id_confidence": 0.9778,
+          "accepted": true,
+          "matched_query": "everyday hero manifest",
+          "line_indices": [
+            1
+          ],
+          "line_distance": 12.539936203984453,
+          "features": {
+            "title": 0.9777777777777777,
+            "author": 1.0,
+            "publisher": 0.0
+          },
+          "score": 0.9778
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "whzwEAAAQBAJ",
+            "title": "The Everyday Hero Manifesto",
+            "authors": [
+              "Robin Sharma"
+            ],
+            "year": "2024-01-17",
+            "publishers": [
+              "Bhuana Ilmu Populer"
+            ],
+            "isbns": [
+              "9786230413025",
+              "6230413027"
+            ]
+          },
+          "title_sim": 97.78,
+          "author_sim": 100.0,
+          "publisher_sim": 0.0,
+          "raw_score": 0.9778,
+          "id_confidence": 0.9778,
+          "accepted": true,
+          "matched_query": "everyday hero manifest",
+          "line_indices": [
+            1
+          ],
+          "line_distance": 12.539936203984453,
+          "features": {
+            "title": 0.9777777777777777,
+            "author": 1.0,
+            "publisher": 0.0
+          },
+          "score": 0.9778
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "tAt0EAAAQBAJ",
+            "title": "The Everyday Hero Manifesto (Hindi)",
+            "authors": [
+              "Robin Sharma"
+            ],
+            "year": "2022-05-25",
+            "publishers": [
+              "Jaico Publishing House"
+            ],
+            "isbns": [
+              "9789393559050",
+              "9393559058"
+            ]
+          },
+          "title_sim": 86.96,
+          "author_sim": 100.0,
+          "publisher_sim": 0.0,
+          "raw_score": 0.8696,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "everyday hero manifest",
+          "line_indices": [
+            1
+          ],
+          "line_distance": 12.539936203984453,
+          "features": {
+            "title": 0.8695652173913043,
+            "author": 1.0,
+            "publisher": 0.0
+          },
+          "score": 0.8696
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "VIWp0QEACAAJ",
+            "title": "Everyday Heroes",
+            "authors": [
+              "National Youth Visionaries Association"
+            ],
+            "year": "2025-07-06",
+            "publishers": [
+              ""
+            ],
+            "isbns": [
+              "1964860008",
+              "9781964860008"
+            ]
+          },
+          "title_sim": 84.85,
+          "author_sim": 32.73,
+          "publisher_sim": 0.0,
+          "raw_score": 0.8485,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "everyday hero manifes",
+          "line_indices": [
+            0
+          ],
+          "line_distance": 15.890248582070704,
+          "features": {
+            "title": 0.8484848484848484,
+            "author": 0.32727272727272727,
+            "publisher": 0.0
+          },
+          "score": 0.8485
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "ounUCwAAQBAJ",
+            "title": "The Robin Sharma Pack",
+            "authors": [
+              "Robin Sharma"
+            ],
+            "year": "2016-03-28",
+            "publishers": [
+              "Jaico Publishing House"
+            ],
+            "isbns": [
+              "9788179929827",
+              "8179929825"
+            ]
+          },
+          "title_sim": 84.62,
+          "author_sim": 36.36,
+          "publisher_sim": 0.0,
+          "raw_score": 0.8462,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "robin sharma",
+          "line_indices": [
+            2
+          ],
+          "line_distance": 20.180436070610565,
+          "features": {
+            "title": 0.8461538461538461,
+            "author": 0.36363636363636365,
+            "publisher": 0.0
+          },
+          "score": 0.8462
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "UEbHzgEACAAJ",
+            "title": "The Robin Sharma Pack",
+            "authors": [
+              "Robin Shilp Sharma"
+            ],
+            "year": "2009",
+            "publishers": [
+              ""
+            ],
+            "isbns": [
+              "OCLC:1285758526"
+            ]
+          },
+          "title_sim": 84.62,
+          "author_sim": 30.77,
+          "publisher_sim": 0.0,
+          "raw_score": 0.8462,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "robin sharma",
+          "line_indices": [
+            2
+          ],
+          "line_distance": 20.180436070610565,
+          "features": {
+            "title": 0.8461538461538461,
+            "author": 0.3076923076923077,
+            "publisher": 0.0
+          },
+          "score": 0.8462
+        }
+      ],
+      "spine_text_raw": "THE EVERYDAY HERO MANIFES | THE EVERYDAY HERO MANIFEST | ROBIN SHARMA | ERIC JORGENSON",
+      "unit": "A",
+      "row": 1,
+      "candidate_views": [
+        {
+          "seq": 62,
+          "t_ms": 36460,
+          "frame_ref": "frames/f_000062_0036460.jpg",
+          "bbox": {
+            "x": 0,
+            "y": 644,
+            "w": 209,
+            "h": 523,
+            "angle_deg": 90.0
+          }
+        }
+      ],
+      "queries": [
+        {
+          "query": "everyday hero manifes",
+          "line_indices": [
+            0
+          ]
+        },
+        {
+          "query": "everyday hero manifest",
+          "line_indices": [
+            1
+          ]
+        },
+        {
+          "query": "robin sharma",
+          "line_indices": [
+            2
+          ]
+        },
+        {
+          "query": "eric jorgenson",
+          "line_indices": [
+            3
+          ]
+        },
+        {
+          "query": "everyday hero manifes the everyday hero manifest",
+          "line_indices": [
+            0,
+            1
+          ]
+        },
+        {
+          "query": "everyday hero manifest robin sharma",
+          "line_indices": [
+            1,
+            2
+          ]
+        },
+        {
+          "query": "robin sharma eric jorgenson",
+          "line_indices": [
+            2,
+            3
+          ]
+        }
+      ]
+    },
+    "b_0002": {
+      "status": "identified",
+      "chosen": {
+        "source": "google_books",
+        "key": "T0FgEQAAQBAJ",
+        "title": "The Almanack of Naval Ravikant",
+        "authors": [
+          "Eric Jorgenson"
+        ],
+        "year": "2025-09-23",
+        "publishers": [
+          "Simon and Schuster"
+        ],
+        "isbns": [
+          "9798893310962"
+        ]
+      },
+      "title": "The Almanack of Naval Ravikant",
+      "authors": [
+        "Eric Jorgenson"
+      ],
+      "edition": "",
+      "isbn": "",
+      "raw_score": 1.0,
+      "id_confidence": 1.0,
+      "candidates": [
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "T0FgEQAAQBAJ",
+            "title": "The Almanack of Naval Ravikant",
+            "authors": [
+              "Eric Jorgenson"
+            ],
+            "year": "2025-09-23",
+            "publishers": [
+              "Simon and Schuster"
+            ],
+            "isbns": [
+              "9798893310962"
+            ]
+          },
+          "title_sim": 100.0,
+          "author_sim": 36.36,
+          "publisher_sim": 0.0,
+          "raw_score": 1.0,
+          "id_confidence": 1.0,
+          "accepted": true,
+          "matched_query": "almanack of naval ravikant",
+          "line_indices": [
+            0
+          ],
+          "line_distance": 79.0,
+          "features": {
+            "title": 1.0,
+            "author": 0.36363636363636365,
+            "publisher": 0.0
+          },
+          "score": 1.0
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "MaIC0AEACAAJ",
+            "title": "The Almanack Of Naval Ravikant",
+            "authors": [
+              "ERIC JORGENSON"
+            ],
+            "year": "2022-06-24",
+            "publishers": [
+              ""
+            ],
+            "isbns": [
+              "6026486747",
+              "9786026486745"
+            ]
+          },
+          "title_sim": 100.0,
+          "author_sim": 36.36,
+          "publisher_sim": 0.0,
+          "raw_score": 1.0,
+          "id_confidence": 1.0,
+          "accepted": true,
+          "matched_query": "almanack of naval ravikant",
+          "line_indices": [
+            0
+          ],
+          "line_distance": 79.0,
+          "features": {
+            "title": 1.0,
+            "author": 0.36363636363636365,
+            "publisher": 0.0
+          },
+          "score": 1.0
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "D0qBEQAAQBAJ",
+            "title": "The Almanack of Naval Ravikant",
+            "authors": [
+              "Eric Jorgenson"
+            ],
+            "year": "2025-09-23",
+            "publishers": [
+              "Simon and Schuster"
+            ],
+            "isbns": [
+              "9798893310948"
+            ]
+          },
+          "title_sim": 100.0,
+          "author_sim": 36.36,
+          "publisher_sim": 0.0,
+          "raw_score": 1.0,
+          "id_confidence": 1.0,
+          "accepted": true,
+          "matched_query": "almanack of naval ravikant",
+          "line_indices": [
+            0
+          ],
+          "line_distance": 79.0,
+          "features": {
+            "title": 1.0,
+            "author": 0.36363636363636365,
+            "publisher": 0.0
+          },
+          "score": 1.0
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "xnXJbD_0ilUC",
+            "title": "Sayings of Paramahansa Yogananda",
+            "authors": [
+              "Yogananda (Paramahansa)"
+            ],
+            "year": "1980",
+            "publishers": [
+              "Self-Realization Fellowship Publishers"
+            ],
+            "isbns": [
+              "0876121156",
+              "9780876121153"
+            ]
+          },
+          "title_sim": 81.63,
+          "author_sim": 46.51,
+          "publisher_sim": 0.0,
+          "raw_score": 0.8163,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "paramahansa yogananda",
+          "line_indices": [
+            1,
+            2
+          ],
+          "line_distance": 192.35384061671346,
+          "features": {
+            "title": 0.8163265306122449,
+            "author": 0.4651162790697675,
+            "publisher": 0.0
+          },
+          "score": 0.8163
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "EoiyPAAACAAJ",
+            "title": "Sayings of Paramahansa Yogananda",
+            "authors": [
+              "Paramahansa Yogananda"
+            ],
+            "year": "2003-10-01",
+            "publishers": [
+              ""
+            ],
+            "isbns": [
+              "1553940385",
+              "9781553940388"
+            ]
+          },
+          "title_sim": 81.63,
+          "author_sim": 42.55,
+          "publisher_sim": 0.0,
+          "raw_score": 0.8163,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "paramahansa yogananda",
+          "line_indices": [
+            1,
+            2
+          ],
+          "line_distance": 192.35384061671346,
+          "features": {
+            "title": 0.8163265306122449,
+            "author": 0.42553191489361697,
+            "publisher": 0.0
+          },
+          "score": 0.8163
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "L9tTDwAAQBAJ",
+            "title": "The Life of Yogananda",
+            "authors": [
+              "Philip Goldberg"
+            ],
+            "year": "2018-04-24",
+            "publishers": [
+              "Hay House, Inc"
+            ],
+            "isbns": [
+              "9781401952198",
+              "1401952194"
+            ]
+          },
+          "title_sim": 75.0,
+          "author_sim": 24.39,
+          "publisher_sim": 0.0,
+          "raw_score": 0.75,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "yogananda",
+          "line_indices": [
+            2
+          ],
+          "line_distance": 192.35384061671346,
+          "features": {
+            "title": 0.75,
+            "author": 0.24390243902439024,
+            "publisher": 0.0
+          },
+          "score": 0.75
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "g2H6DwAAQBAJ",
+            "title": "Life of Yogananda",
+            "authors": [
+              "Philip Goldberg"
+            ],
+            "year": "2020-01-07",
+            "publishers": [
+              "Hay House, Inc"
+            ],
+            "isbns": [
+              "9781401952204",
+              "1401952208"
+            ]
+          },
+          "title_sim": 75.0,
+          "author_sim": 24.39,
+          "publisher_sim": 0.0,
+          "raw_score": 0.75,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "yogananda",
+          "line_indices": [
+            2
+          ],
+          "line_distance": 192.35384061671346,
+          "features": {
+            "title": 0.75,
+            "author": 0.24390243902439024,
+            "publisher": 0.0
+          },
+          "score": 0.75
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "8NmzDAEACAAJ",
+            "title": "Sayings of Paramahansa Yogananda (Polish)",
+            "authors": [
+              "Paramahansa Yogananda"
+            ],
+            "year": "2016-04-01",
+            "publishers": [
+              "Self-Realization Fellowship"
+            ],
+            "isbns": [
+              "0876127189",
+              "9780876127186"
+            ]
+          },
+          "title_sim": 72.73,
+          "author_sim": 42.55,
+          "publisher_sim": 0.0,
+          "raw_score": 0.7273,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "paramahansa yogananda",
+          "line_indices": [
+            1,
+            2
+          ],
+          "line_distance": 192.35384061671346,
+          "features": {
+            "title": 0.7272727272727273,
+            "author": 0.42553191489361697,
+            "publisher": 0.0
+          },
+          "score": 0.7273
+        }
+      ],
+      "spine_text_raw": "THE ALMANACK OF NAVAL RAVIKANT | PARAMAHANSA | YOGANANDA",
+      "unit": "A",
+      "row": 1,
+      "candidate_views": [
+        {
+          "seq": 62,
+          "t_ms": 36460,
+          "frame_ref": "frames/f_000062_0036460.jpg",
+          "bbox": {
+            "x": 138,
+            "y": 644,
+            "w": 188,
+            "h": 523,
+            "angle_deg": 90.0
+          }
+        }
+      ],
+      "queries": [
+        {
+          "query": "almanack of naval ravikant",
+          "line_indices": [
+            0
+          ]
+        },
+        {
+          "query": "paramahansa",
+          "line_indices": [
+            1
+          ]
+        },
+        {
+          "query": "yogananda",
+          "line_indices": [
+            2
+          ]
+        },
+        {
+          "query": "almanack of naval ravikant paramahansa",
+          "line_indices": [
+            0,
+            1
+          ]
+        },
+        {
+          "query": "paramahansa yogananda",
+          "line_indices": [
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    "b_0003": {
+      "status": "identified",
+      "chosen": {
+        "source": "google_books",
+        "key": "fCpA5e8N4QIC",
+        "title": "Autobiography of a Yogi",
+        "authors": [
+          "Yogananda (Paramahansa)"
+        ],
+        "year": "1946",
+        "publishers": [
+          ""
+        ],
+        "isbns": [
+          "PURD:32754073480422"
+        ]
+      },
+      "title": "Autobiography of a Yogi",
+      "authors": [
+        "Yogananda (Paramahansa)"
+      ],
+      "edition": "",
+      "isbn": "",
+      "raw_score": 1.0,
+      "id_confidence": 1.0,
+      "candidates": [
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "fCpA5e8N4QIC",
+            "title": "Autobiography of a Yogi",
+            "authors": [
+              "Yogananda (Paramahansa)"
+            ],
+            "year": "1946",
+            "publishers": [
+              ""
+            ],
+            "isbns": [
+              "PURD:32754073480422"
+            ]
+          },
+          "title_sim": 100.0,
+          "author_sim": 37.84,
+          "publisher_sim": 0.0,
+          "raw_score": 1.0,
+          "id_confidence": 1.0,
+          "accepted": true,
+          "matched_query": "autobiography of a yogi",
+          "line_indices": [
+            0
+          ],
+          "line_distance": 103.31021246711285,
+          "features": {
+            "title": 1.0,
+            "author": 0.3783783783783784,
+            "publisher": 0.0
+          },
+          "score": 1.0
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "l9kwDwAAQBAJ",
+            "title": "Autobiography of a Yogi",
+            "authors": [
+              "Paramhansa Yogananda"
+            ],
+            "year": "2017-09-12",
+            "publishers": [
+              "Open Road Media"
+            ],
+            "isbns": [
+              "9781504048170",
+              "1504048172"
+            ]
+          },
+          "title_sim": 100.0,
+          "author_sim": 36.36,
+          "publisher_sim": 0.0,
+          "raw_score": 1.0,
+          "id_confidence": 1.0,
+          "accepted": true,
+          "matched_query": "autobiography of a yogi",
+          "line_indices": [
+            0
+          ],
+          "line_distance": 103.31021246711285,
+          "features": {
+            "title": 1.0,
+            "author": 0.36363636363636365,
+            "publisher": 0.0
+          },
+          "score": 1.0
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "MvrsAgAAQBAJ",
+            "title": "Autobiography of a Yogi",
+            "authors": [
+              "Paramhansa Yogananda"
+            ],
+            "year": "2013-07-01",
+            "publishers": [
+              "Simon and Schuster"
+            ],
+            "isbns": [
+              "9781627931663",
+              "162793166X"
+            ]
+          },
+          "title_sim": 100.0,
+          "author_sim": 36.36,
+          "publisher_sim": 0.0,
+          "raw_score": 1.0,
+          "id_confidence": 1.0,
+          "accepted": true,
+          "matched_query": "autobiography of a yogi",
+          "line_indices": [
+            0
+          ],
+          "line_distance": 103.31021246711285,
+          "features": {
+            "title": 1.0,
+            "author": 0.36363636363636365,
+            "publisher": 0.0
+          },
+          "score": 1.0
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "-HLjzQEACAAJ",
+            "title": "Autobiography of a YOGI",
+            "authors": [
+              "Paramhansa Yogananda"
+            ],
+            "year": "2020-07-04",
+            "publishers": [
+              ""
+            ],
+            "isbns": [
+              "9798663533799"
+            ]
+          },
+          "title_sim": 100.0,
+          "author_sim": 36.36,
+          "publisher_sim": 0.0,
+          "raw_score": 1.0,
+          "id_confidence": 1.0,
+          "accepted": true,
+          "matched_query": "autobiography of a yogi",
+          "line_indices": [
+            0
+          ],
+          "line_distance": 103.31021246711285,
+          "features": {
+            "title": 1.0,
+            "author": 0.36363636363636365,
+            "publisher": 0.0
+          },
+          "score": 1.0
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "Wymi_jlaFI4C",
+            "title": "Autobiography of a Yogi",
+            "authors": [
+              "Paramahansa Yogananda"
+            ],
+            "year": "2009-01-01",
+            "publishers": [
+              "The Floating Press"
+            ],
+            "isbns": [
+              "9781775411451",
+              "1775411451"
+            ]
+          },
+          "title_sim": 100.0,
+          "author_sim": 35.29,
+          "publisher_sim": 0.0,
+          "raw_score": 1.0,
+          "id_confidence": 1.0,
+          "accepted": true,
+          "matched_query": "autobiography of a yogi",
+          "line_indices": [
+            0
+          ],
+          "line_distance": 103.31021246711285,
+          "features": {
+            "title": 1.0,
+            "author": 0.3529411764705882,
+            "publisher": 0.0
+          },
+          "score": 1.0
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "JoAm0gEACAAJ",
+            "title": "Autobiography of a Yogi",
+            "authors": [
+              "Yog\u0101nanda"
+            ],
+            "year": "1946",
+            "publishers": [
+              ""
+            ],
+            "isbns": [
+              "OCLC:1068885908"
+            ]
+          },
+          "title_sim": 100.0,
+          "author_sim": 34.78,
+          "publisher_sim": 0.0,
+          "raw_score": 1.0,
+          "id_confidence": 1.0,
+          "accepted": true,
+          "matched_query": "autobiography of a yogi",
+          "line_indices": [
+            0
+          ],
+          "line_distance": 103.31021246711285,
+          "features": {
+            "title": 1.0,
+            "author": 0.34782608695652173,
+            "publisher": 0.0
+          },
+          "score": 1.0
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "C0rVEQAAQBAJ",
+            "title": "Autobiography of A Yogi (Hindi)",
+            "authors": [
+              "Paramahansa Yogananda"
+            ],
+            "year": "2019-09-01",
+            "publishers": [
+              "Prakash Books India Pvt Ltd"
+            ],
+            "isbns": [
+              "9789362144737",
+              "9362144735"
+            ]
+          },
+          "title_sim": 88.89,
+          "author_sim": 35.29,
+          "publisher_sim": 0.0,
+          "raw_score": 0.8889,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "autobiography of a yogi",
+          "line_indices": [
+            0
+          ],
+          "line_distance": 103.31021246711285,
+          "features": {
+            "title": 0.8888888888888888,
+            "author": 0.3529411764705882,
+            "publisher": 0.0
+          },
+          "score": 0.8889
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "4CsBEgAAQBAJ",
+            "title": "Autobiography of A Yogi (Tamil)",
+            "authors": [
+              "Paramahansa Yogananda"
+            ],
+            "year": "2020-11-01",
+            "publishers": [
+              "Prakash Books India Pvt Ltd"
+            ],
+            "isbns": [
+              "9788194898856",
+              "8194898854"
+            ]
+          },
+          "title_sim": 75.36,
+          "author_sim": 21.43,
+          "publisher_sim": 0.0,
+          "raw_score": 0.7536,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "autobiography of a yogi with jay papasan",
+          "line_indices": [
+            0,
+            1
+          ],
+          "line_distance": 103.31021246711285,
+          "features": {
+            "title": 0.7536231884057972,
+            "author": 0.2142857142857143,
+            "publisher": 0.0
+          },
+          "score": 0.7536
+        }
+      ],
+      "spine_text_raw": "AUTOBIOGRAPHY OF A YOGI | WITH JAY PAPASAN | GARY KELLER | GARY KLER",
+      "unit": "A",
+      "row": 1,
+      "candidate_views": [
+        {
+          "seq": 62,
+          "t_ms": 36460,
+          "frame_ref": "frames/f_000062_0036460.jpg",
+          "bbox": {
+            "x": 259,
+            "y": 644,
+            "w": 146,
+            "h": 523,
+            "angle_deg": 90.0
+          }
+        }
+      ],
+      "queries": [
+        {
+          "query": "autobiography of a yogi",
+          "line_indices": [
+            0
+          ]
+        },
+        {
+          "query": "with jay papasan",
+          "line_indices": [
+            1
+          ]
+        },
+        {
+          "query": "gary keller",
+          "line_indices": [
+            2
+          ]
+        },
+        {
+          "query": "gary kler",
+          "line_indices": [
+            3
+          ]
+        },
+        {
+          "query": "autobiography of a yogi with jay papasan",
+          "line_indices": [
+            0,
+            1
+          ]
+        },
+        {
+          "query": "with jay papasan gary keller",
+          "line_indices": [
+            1,
+            2
+          ]
+        },
+        {
+          "query": "gary keller gary kler",
+          "line_indices": [
+            2,
+            3
+          ]
+        }
+      ]
+    },
+    "b_0004": {
+      "status": "identified",
+      "chosen": {
+        "source": "google_books",
+        "key": "3SliAgAAQBAJ",
+        "title": "Leaders Eat Last",
+        "authors": [
+          "Simon Sinek"
+        ],
+        "year": "2014-01-09",
+        "publishers": [
+          "Penguin UK"
+        ],
+        "isbns": [
+          "9780670923182",
+          "0670923184"
+        ]
+      },
+      "title": "Leaders Eat Last",
+      "authors": [
+        "Simon Sinek"
+      ],
+      "edition": "",
+      "isbn": "",
+      "raw_score": 1.0,
+      "id_confidence": 1.0,
+      "candidates": [
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "3SliAgAAQBAJ",
+            "title": "Leaders Eat Last",
+            "authors": [
+              "Simon Sinek"
+            ],
+            "year": "2014-01-09",
+            "publishers": [
+              "Penguin UK"
+            ],
+            "isbns": [
+              "9780670923182",
+              "0670923184"
+            ]
+          },
+          "title_sim": 100.0,
+          "author_sim": 52.63,
+          "publisher_sim": 0.0,
+          "raw_score": 1.0,
+          "id_confidence": 1.0,
+          "accepted": true,
+          "matched_query": "leaders eat last",
+          "line_indices": [
+            3
+          ],
+          "line_distance": 107.76942980270425,
+          "features": {
+            "title": 1.0,
+            "author": 0.5263157894736843,
+            "publisher": 0.0
+          },
+          "score": 1.0
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "Wyda0QEACAAJ",
+            "title": "Leaders Eat Last",
+            "authors": [
+              "Simon Sinek"
+            ],
+            "year": "2017",
+            "publishers": [
+              "Portfolio/Penguin"
+            ],
+            "isbns": [
+              "1590000005",
+              "9781590000007"
+            ]
+          },
+          "title_sim": 100.0,
+          "author_sim": 52.63,
+          "publisher_sim": 0.0,
+          "raw_score": 1.0,
+          "id_confidence": 1.0,
+          "accepted": true,
+          "matched_query": "leaders eat last",
+          "line_indices": [
+            3
+          ],
+          "line_distance": 107.76942980270425,
+          "features": {
+            "title": 1.0,
+            "author": 0.5263157894736843,
+            "publisher": 0.0
+          },
+          "score": 1.0
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "mPLF0QEACAAJ",
+            "title": "The One Thing",
+            "authors": [
+              "Gary Keller"
+            ],
+            "year": "2025-09-05",
+            "publishers": [
+              "Manjul Publishing House Pvt Limited"
+            ],
+            "isbns": [
+              "9373178962",
+              "9789373178967"
+            ]
+          },
+          "title_sim": 100.0,
+          "author_sim": 37.04,
+          "publisher_sim": 0.0,
+          "raw_score": 1.0,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "one thing",
+          "line_indices": [
+            1
+          ],
+          "line_distance": 23.43608329051593,
+          "features": {
+            "title": 1.0,
+            "author": 0.3703703703703704,
+            "publisher": 0.0
+          },
+          "score": 1.0
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "7BRCAQAACAAJ",
+            "title": "Leaders Eat Last",
+            "authors": [
+              "Better Business Summaries"
+            ],
+            "year": "2016",
+            "publishers": [
+              ""
+            ],
+            "isbns": [
+              "1370904010",
+              "9781370904013"
+            ]
+          },
+          "title_sim": 100.0,
+          "author_sim": 30.0,
+          "publisher_sim": 0.0,
+          "raw_score": 1.0,
+          "id_confidence": 1.0,
+          "accepted": true,
+          "matched_query": "leaders eat last",
+          "line_indices": [
+            3
+          ],
+          "line_distance": 107.76942980270425,
+          "features": {
+            "title": 1.0,
+            "author": 0.30000000000000004,
+            "publisher": 0.0
+          },
+          "score": 1.0
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "YRaSAQAAQBAJ",
+            "title": "Leaders Eat Last Deluxe",
+            "authors": [
+              "Simon Sinek"
+            ],
+            "year": "2014-01-07",
+            "publishers": [
+              "Penguin"
+            ],
+            "isbns": [
+              "9780698166806",
+              "0698166809"
+            ]
+          },
+          "title_sim": 82.35,
+          "author_sim": 52.63,
+          "publisher_sim": 0.0,
+          "raw_score": 0.8235,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "leaders eat last",
+          "line_indices": [
+            3
+          ],
+          "line_distance": 107.76942980270425,
+          "features": {
+            "title": 0.8235294117647058,
+            "author": 0.5263157894736843,
+            "publisher": 0.0
+          },
+          "score": 0.8235
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "dAdJCgAAQBAJ",
+            "title": "Summary: Leaders Eat Last",
+            "authors": [
+              "BusinessNews Publishing,"
+            ],
+            "year": "2015-07-01",
+            "publishers": [
+              "Must Read Summaries"
+            ],
+            "isbns": [
+              "9782511035955",
+              "2511035952"
+            ]
+          },
+          "title_sim": 80.0,
+          "author_sim": 43.75,
+          "publisher_sim": 0.0,
+          "raw_score": 0.8,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "leaders eat last",
+          "line_indices": [
+            3
+          ],
+          "line_distance": 107.76942980270425,
+          "features": {
+            "title": 0.8,
+            "author": 0.4375,
+            "publisher": 0.0
+          },
+          "score": 0.8
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "uueyHAAACAAJ",
+            "title": "One Thin Line",
+            "authors": [
+              "Steven Dalachinsky"
+            ],
+            "year": "1995*",
+            "publishers": [
+              ""
+            ],
+            "isbns": [
+              "OCLC:51642279"
+            ]
+          },
+          "title_sim": 77.78,
+          "author_sim": 41.18,
+          "publisher_sim": 0.0,
+          "raw_score": 0.7778,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "one thin",
+          "line_indices": [
+            0
+          ],
+          "line_distance": 35.58791929854849,
+          "features": {
+            "title": 0.7777777777777779,
+            "author": 0.4117647058823529,
+            "publisher": 0.0
+          },
+          "score": 0.7778
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "qb3ougEACAAJ",
+            "title": "Summary L Leaders Eat Last",
+            "authors": [
+              "Learnify-Me"
+            ],
+            "year": "2018-08-18",
+            "publishers": [
+              "Createspace Independent Publishing Platform"
+            ],
+            "isbns": [
+              "1725887819",
+              "9781725887817"
+            ]
+          },
+          "title_sim": 77.78,
+          "author_sim": 23.53,
+          "publisher_sim": 0.0,
+          "raw_score": 0.7778,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "leaders eat last",
+          "line_indices": [
+            3
+          ],
+          "line_distance": 107.76942980270425,
+          "features": {
+            "title": 0.7777777777777779,
+            "author": 0.23529411764705888,
+            "publisher": 0.0
+          },
+          "score": 0.7778
+        }
+      ],
+      "spine_text_raw": "THE ONE THIN | THE ONE THING | Why Some Teams Pull Together and Others Don't | LEADERS EAT LAST",
+      "unit": "A",
+      "row": 1,
+      "candidate_views": [
+        {
+          "seq": 36,
+          "t_ms": 21533,
+          "frame_ref": "frames/f_000036_0021533.jpg",
+          "bbox": {
+            "x": 434,
+            "y": 307,
+            "w": 62,
+            "h": 192,
+            "angle_deg": 90.0
+          }
+        },
+        {
+          "seq": 62,
+          "t_ms": 36460,
+          "frame_ref": "frames/f_000062_0036460.jpg",
+          "bbox": {
+            "x": 322,
+            "y": 644,
+            "w": 185,
+            "h": 523,
+            "angle_deg": 90.0
+          }
+        },
+        {
+          "seq": 90,
+          "t_ms": 53508,
+          "frame_ref": "frames/f_000090_0053508.jpg",
+          "bbox": {
+            "x": 225,
+            "y": 656,
+            "w": 511,
+            "h": 718,
+            "angle_deg": 90.0
+          }
+        }
+      ],
+      "queries": [
+        {
+          "query": "one thin",
+          "line_indices": [
+            0
+          ]
+        },
+        {
+          "query": "one thing",
+          "line_indices": [
+            1
+          ]
+        },
+        {
+          "query": "why some teams pull together and others don t",
+          "line_indices": [
+            2
+          ]
+        },
+        {
+          "query": "leaders eat last",
+          "line_indices": [
+            3
+          ]
+        },
+        {
+          "query": "one thin the one thing",
+          "line_indices": [
+            0,
+            1
+          ]
+        },
+        {
+          "query": "one thing why some teams pull together and others don t",
+          "line_indices": [
+            1,
+            2
+          ]
+        },
+        {
+          "query": "why some teams pull together and others don t leaders eat last",
+          "line_indices": [
+            2,
+            3
+          ]
+        }
+      ]
+    },
+    "b_0005": {
+      "status": "identified",
+      "chosen": {
+        "source": "google_books",
+        "key": "T0FgEQAAQBAJ",
+        "title": "The Almanack of Naval Ravikant",
+        "authors": [
+          "Eric Jorgenson"
+        ],
+        "year": "2025-09-23",
+        "publishers": [
+          "Simon and Schuster"
+        ],
+        "isbns": [
+          "9798893310962"
+        ]
+      },
+      "title": "The Almanack of Naval Ravikant",
+      "authors": [
+        "Eric Jorgenson"
+      ],
+      "edition": "",
+      "isbn": "",
+      "raw_score": 1.0,
+      "id_confidence": 1.0,
+      "candidates": [
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "T0FgEQAAQBAJ",
+            "title": "The Almanack of Naval Ravikant",
+            "authors": [
+              "Eric Jorgenson"
+            ],
+            "year": "2025-09-23",
+            "publishers": [
+              "Simon and Schuster"
+            ],
+            "isbns": [
+              "9798893310962"
+            ]
+          },
+          "title_sim": 100.0,
+          "author_sim": 100.0,
+          "publisher_sim": 0.0,
+          "raw_score": 1.0,
+          "id_confidence": 1.0,
+          "accepted": true,
+          "matched_query": "almanack of naval ravikant",
+          "line_indices": [
+            0
+          ],
+          "line_distance": 83.28565302619654,
+          "features": {
+            "title": 1.0,
+            "author": 1.0,
+            "publisher": 0.0
+          },
+          "score": 1.0
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "MaIC0AEACAAJ",
+            "title": "The Almanack Of Naval Ravikant",
+            "authors": [
+              "ERIC JORGENSON"
+            ],
+            "year": "2022-06-24",
+            "publishers": [
+              ""
+            ],
+            "isbns": [
+              "6026486747",
+              "9786026486745"
+            ]
+          },
+          "title_sim": 100.0,
+          "author_sim": 100.0,
+          "publisher_sim": 0.0,
+          "raw_score": 1.0,
+          "id_confidence": 1.0,
+          "accepted": true,
+          "matched_query": "almanack of naval ravikant",
+          "line_indices": [
+            0
+          ],
+          "line_distance": 83.28565302619654,
+          "features": {
+            "title": 1.0,
+            "author": 1.0,
+            "publisher": 0.0
+          },
+          "score": 1.0
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "D0qBEQAAQBAJ",
+            "title": "The Almanack of Naval Ravikant",
+            "authors": [
+              "Eric Jorgenson"
+            ],
+            "year": "2025-09-23",
+            "publishers": [
+              "Simon and Schuster"
+            ],
+            "isbns": [
+              "9798893310948"
+            ]
+          },
+          "title_sim": 100.0,
+          "author_sim": 100.0,
+          "publisher_sim": 0.0,
+          "raw_score": 1.0,
+          "id_confidence": 1.0,
+          "accepted": true,
+          "matched_query": "almanack of naval ravikant",
+          "line_indices": [
+            0
+          ],
+          "line_distance": 83.28565302619654,
+          "features": {
+            "title": 1.0,
+            "author": 1.0,
+            "publisher": 0.0
+          },
+          "score": 1.0
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "JoAm0gEACAAJ",
+            "title": "Autobiography of a Yogi",
+            "authors": [
+              "Yog\u0101nanda"
+            ],
+            "year": "1946",
+            "publishers": [
+              ""
+            ],
+            "isbns": [
+              "OCLC:1068885908"
+            ]
+          },
+          "title_sim": 100.0,
+          "author_sim": 100.0,
+          "publisher_sim": 0.0,
+          "raw_score": 1.0,
+          "id_confidence": 1.0,
+          "accepted": true,
+          "matched_query": "autobiography of a yogi",
+          "line_indices": [
+            1
+          ],
+          "line_distance": 161.72971279267148,
+          "features": {
+            "title": 1.0,
+            "author": 1.0,
+            "publisher": 0.0
+          },
+          "score": 1.0
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "pyJAEAAAQBAJ",
+            "title": "The Everyday Hero Manifesto",
+            "authors": [
+              "Robin Sharma"
+            ],
+            "year": "2021-09-15",
+            "publishers": [
+              "Jaico Publishing House"
+            ],
+            "isbns": [
+              "9789391019754",
+              "9391019757"
+            ]
+          },
+          "title_sim": 100.0,
+          "author_sim": 100.0,
+          "publisher_sim": 0.0,
+          "raw_score": 1.0,
+          "id_confidence": 1.0,
+          "accepted": true,
+          "matched_query": "everyday hero manifesto",
+          "line_indices": [
+            2
+          ],
+          "line_distance": 93.01209598756498,
+          "features": {
+            "title": 1.0,
+            "author": 1.0,
+            "publisher": 0.0
+          },
+          "score": 1.0
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "bE0W0AEACAAJ",
+            "title": "The Everyday Hero Manifesto",
+            "authors": [
+              "Robin Sharma"
+            ],
+            "year": "2024-05-07",
+            "publishers": [
+              "HarperCollins Publishers"
+            ],
+            "isbns": [
+              "1443472980",
+              "9781443472982"
+            ]
+          },
+          "title_sim": 100.0,
+          "author_sim": 100.0,
+          "publisher_sim": 0.0,
+          "raw_score": 1.0,
+          "id_confidence": 1.0,
+          "accepted": true,
+          "matched_query": "everyday hero manifesto",
+          "line_indices": [
+            2
+          ],
+          "line_distance": 93.01209598756498,
+          "features": {
+            "title": 1.0,
+            "author": 1.0,
+            "publisher": 0.0
+          },
+          "score": 1.0
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "whzwEAAAQBAJ",
+            "title": "The Everyday Hero Manifesto",
+            "authors": [
+              "Robin Sharma"
+            ],
+            "year": "2024-01-17",
+            "publishers": [
+              "Bhuana Ilmu Populer"
+            ],
+            "isbns": [
+              "9786230413025",
+              "6230413027"
+            ]
+          },
+          "title_sim": 100.0,
+          "author_sim": 100.0,
+          "publisher_sim": 0.0,
+          "raw_score": 1.0,
+          "id_confidence": 1.0,
+          "accepted": true,
+          "matched_query": "everyday hero manifesto",
+          "line_indices": [
+            2
+          ],
+          "line_distance": 93.01209598756498,
+          "features": {
+            "title": 1.0,
+            "author": 1.0,
+            "publisher": 0.0
+          },
+          "score": 1.0
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "Wymi_jlaFI4C",
+            "title": "Autobiography of a Yogi",
+            "authors": [
+              "Paramahansa Yogananda"
+            ],
+            "year": "2009-01-01",
+            "publishers": [
+              "The Floating Press"
+            ],
+            "isbns": [
+              "9781775411451",
+              "1775411451"
+            ]
+          },
+          "title_sim": 100.0,
+          "author_sim": 70.97,
+          "publisher_sim": 0.0,
+          "raw_score": 1.0,
+          "id_confidence": 1.0,
+          "accepted": true,
+          "matched_query": "autobiography of a yogi",
+          "line_indices": [
+            1
+          ],
+          "line_distance": 161.72971279267148,
+          "features": {
+            "title": 1.0,
+            "author": 0.7096774193548387,
+            "publisher": 0.0
+          },
+          "score": 1.0
+        }
+      ],
+      "spine_text_raw": "THE ALMANACK OF NAVAL RAVIKANT | AUTOBIOGRAPHY OF A YOGI | THE EVERYDAY HERO MANIFESTO | ROBIN SHARMA | WARY KEY LEARPASAN | WITH JAY PAPASAN | ERICJORGENSON | GARY KELLER | GAREY KLER | PARAMAHANSA | YOGANANDA",
+      "unit": "A",
+      "row": 1,
+      "candidate_views": [
+        {
+          "seq": 36,
+          "t_ms": 21533,
+          "frame_ref": "frames/f_000036_0021533.jpg",
+          "bbox": {
+            "x": 498,
+            "y": 307,
+            "w": 138,
+            "h": 192,
+            "angle_deg": 90.0
+          }
+        },
+        {
+          "seq": 57,
+          "t_ms": 33620,
+          "frame_ref": "frames/f_000057_0033620.jpg",
+          "bbox": {
+            "x": 352,
+            "y": 651,
+            "w": 372,
+            "h": 499,
+            "angle_deg": 90.0
+          }
+        }
+      ],
+      "queries": [
+        {
+          "query": "almanack of naval ravikant",
+          "line_indices": [
+            0
+          ]
+        },
+        {
+          "query": "autobiography of a yogi",
+          "line_indices": [
+            1
+          ]
+        },
+        {
+          "query": "everyday hero manifesto",
+          "line_indices": [
+            2
+          ]
+        },
+        {
+          "query": "robin sharma",
+          "line_indices": [
+            3
+          ]
+        },
+        {
+          "query": "wary key learpasan",
+          "line_indices": [
+            4
+          ]
+        },
+        {
+          "query": "with jay papasan",
+          "line_indices": [
+            5
+          ]
+        },
+        {
+          "query": "ericjorgenson",
+          "line_indices": [
+            6
+          ]
+        },
+        {
+          "query": "gary keller",
+          "line_indices": [
+            7
+          ]
+        },
+        {
+          "query": "garey kler",
+          "line_indices": [
+            8
+          ]
+        },
+        {
+          "query": "paramahansa",
+          "line_indices": [
+            9
+          ]
+        },
+        {
+          "query": "yogananda",
+          "line_indices": [
+            10
+          ]
+        },
+        {
+          "query": "almanack of naval ravikant autobiography of a yogi",
+          "line_indices": [
+            0,
+            1
+          ]
+        },
+        {
+          "query": "autobiography of a yogi the everyday hero manifesto",
+          "line_indices": [
+            1,
+            2
+          ]
+        },
+        {
+          "query": "everyday hero manifesto robin sharma",
+          "line_indices": [
+            2,
+            3
+          ]
+        },
+        {
+          "query": "robin sharma wary key learpasan",
+          "line_indices": [
+            3,
+            4
+          ]
+        },
+        {
+          "query": "wary key learpasan with jay papasan",
+          "line_indices": [
+            4,
+            5
+          ]
+        },
+        {
+          "query": "with jay papasan ericjorgenson",
+          "line_indices": [
+            5,
+            6
+          ]
+        },
+        {
+          "query": "ericjorgenson gary keller",
+          "line_indices": [
+            6,
+            7
+          ]
+        },
+        {
+          "query": "gary keller garey kler",
+          "line_indices": [
+            7,
+            8
+          ]
+        },
+        {
+          "query": "garey kler paramahansa",
+          "line_indices": [
+            8,
+            9
+          ]
+        },
+        {
+          "query": "paramahansa yogananda",
+          "line_indices": [
+            9,
+            10
+          ]
+        }
+      ]
+    },
+    "b_0006": {
+      "status": "duplicate",
+      "chosen": {
+        "source": "google_books",
+        "key": "3SliAgAAQBAJ",
+        "title": "Leaders Eat Last",
+        "authors": [
+          "Simon Sinek"
+        ],
+        "year": "2014-01-09",
+        "publishers": [
+          "Penguin UK"
+        ],
+        "isbns": [
+          "9780670923182",
+          "0670923184"
+        ]
+      },
+      "title": "Leaders Eat Last",
+      "authors": [
+        "Simon Sinek"
+      ],
+      "edition": "",
+      "isbn": "",
+      "raw_score": 1.0,
+      "id_confidence": 1.0,
+      "candidates": [
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "3SliAgAAQBAJ",
+            "title": "Leaders Eat Last",
+            "authors": [
+              "Simon Sinek"
+            ],
+            "year": "2014-01-09",
+            "publishers": [
+              "Penguin UK"
+            ],
+            "isbns": [
+              "9780670923182",
+              "0670923184"
+            ]
+          },
+          "title_sim": 100.0,
+          "author_sim": 50.0,
+          "publisher_sim": 0.0,
+          "raw_score": 1.0,
+          "id_confidence": 1.0,
+          "accepted": true,
+          "matched_query": "leaders eat last",
+          "line_indices": [
+            4
+          ],
+          "line_distance": 102.34378339694112,
+          "features": {
+            "title": 1.0,
+            "author": 0.5,
+            "publisher": 0.0
+          },
+          "score": 1.0
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "Wyda0QEACAAJ",
+            "title": "Leaders Eat Last",
+            "authors": [
+              "Simon Sinek"
+            ],
+            "year": "2017",
+            "publishers": [
+              "Portfolio/Penguin"
+            ],
+            "isbns": [
+              "1590000005",
+              "9781590000007"
+            ]
+          },
+          "title_sim": 100.0,
+          "author_sim": 50.0,
+          "publisher_sim": 0.0,
+          "raw_score": 1.0,
+          "id_confidence": 1.0,
+          "accepted": true,
+          "matched_query": "leaders eat last",
+          "line_indices": [
+            4
+          ],
+          "line_distance": 102.34378339694112,
+          "features": {
+            "title": 1.0,
+            "author": 0.5,
+            "publisher": 0.0
+          },
+          "score": 1.0
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "mPLF0QEACAAJ",
+            "title": "The One Thing",
+            "authors": [
+              "Gary Keller"
+            ],
+            "year": "2025-09-05",
+            "publishers": [
+              "Manjul Publishing House Pvt Limited"
+            ],
+            "isbns": [
+              "9373178962",
+              "9789373178967"
+            ]
+          },
+          "title_sim": 100.0,
+          "author_sim": 37.04,
+          "publisher_sim": 0.0,
+          "raw_score": 1.0,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "one thing",
+          "line_indices": [
+            0
+          ],
+          "line_distance": 28.469281690973517,
+          "features": {
+            "title": 1.0,
+            "author": 0.3703703703703704,
+            "publisher": 0.0
+          },
+          "score": 1.0
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "7BRCAQAACAAJ",
+            "title": "Leaders Eat Last",
+            "authors": [
+              "Better Business Summaries"
+            ],
+            "year": "2016",
+            "publishers": [
+              ""
+            ],
+            "isbns": [
+              "1370904010",
+              "9781370904013"
+            ]
+          },
+          "title_sim": 100.0,
+          "author_sim": 30.0,
+          "publisher_sim": 0.0,
+          "raw_score": 1.0,
+          "id_confidence": 1.0,
+          "accepted": true,
+          "matched_query": "leaders eat last",
+          "line_indices": [
+            4
+          ],
+          "line_distance": 102.34378339694112,
+          "features": {
+            "title": 1.0,
+            "author": 0.30000000000000004,
+            "publisher": 0.0
+          },
+          "score": 1.0
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "YRaSAQAAQBAJ",
+            "title": "Leaders Eat Last Deluxe",
+            "authors": [
+              "Simon Sinek"
+            ],
+            "year": "2014-01-07",
+            "publishers": [
+              "Penguin"
+            ],
+            "isbns": [
+              "9780698166806",
+              "0698166809"
+            ]
+          },
+          "title_sim": 82.35,
+          "author_sim": 50.0,
+          "publisher_sim": 0.0,
+          "raw_score": 0.8235,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "leaders eat last",
+          "line_indices": [
+            4
+          ],
+          "line_distance": 102.34378339694112,
+          "features": {
+            "title": 0.8235294117647058,
+            "author": 0.5,
+            "publisher": 0.0
+          },
+          "score": 0.8235
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "dAdJCgAAQBAJ",
+            "title": "Summary: Leaders Eat Last",
+            "authors": [
+              "BusinessNews Publishing,"
+            ],
+            "year": "2015-07-01",
+            "publishers": [
+              "Must Read Summaries"
+            ],
+            "isbns": [
+              "9782511035955",
+              "2511035952"
+            ]
+          },
+          "title_sim": 80.0,
+          "author_sim": 43.75,
+          "publisher_sim": 0.0,
+          "raw_score": 0.8,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "leaders eat last",
+          "line_indices": [
+            4
+          ],
+          "line_distance": 102.34378339694112,
+          "features": {
+            "title": 0.8,
+            "author": 0.4375,
+            "publisher": 0.0
+          },
+          "score": 0.8
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "qb3ougEACAAJ",
+            "title": "Summary L Leaders Eat Last",
+            "authors": [
+              "Learnify-Me"
+            ],
+            "year": "2018-08-18",
+            "publishers": [
+              "Createspace Independent Publishing Platform"
+            ],
+            "isbns": [
+              "1725887819",
+              "9781725887817"
+            ]
+          },
+          "title_sim": 77.78,
+          "author_sim": 30.77,
+          "publisher_sim": 0.0,
+          "raw_score": 0.7778,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "leaders eat last",
+          "line_indices": [
+            4
+          ],
+          "line_distance": 102.34378339694112,
+          "features": {
+            "title": 0.7777777777777779,
+            "author": 0.3076923076923077,
+            "publisher": 0.0
+          },
+          "score": 0.7778
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "lnrNDwAAQBAJ",
+            "title": "The One Thing (Hindi)",
+            "authors": [
+              "Gary Keller",
+              "Jay Papasan"
+            ],
+            "year": "2019",
+            "publishers": [
+              "Manjul Publishing"
+            ],
+            "isbns": [
+              "9789389143638",
+              "9389143632"
+            ]
+          },
+          "title_sim": 76.19,
+          "author_sim": 37.04,
+          "publisher_sim": 0.0,
+          "raw_score": 0.7619,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "one thing",
+          "line_indices": [
+            0
+          ],
+          "line_distance": 28.469281690973517,
+          "features": {
+            "title": 0.7619047619047619,
+            "author": 0.3703703703703704,
+            "publisher": 0.0
+          },
+          "score": 0.7619
+        }
+      ],
+      "spine_text_raw": "THE ONE THING | THE ONE | Why Some Teams Pull Together and Others Don't | Why  o     bDont | LEADERS EAT LAST",
+      "unit": "A",
+      "row": 1,
+      "candidate_views": [
+        {
+          "seq": 57,
+          "t_ms": 33620,
+          "frame_ref": "frames/f_000057_0033620.jpg",
+          "bbox": {
+            "x": 633,
+            "y": 651,
+            "w": 189,
+            "h": 499,
+            "angle_deg": 90.0
+          }
+        },
+        {
+          "seq": 62,
+          "t_ms": 36460,
+          "frame_ref": "frames/f_000062_0036460.jpg",
+          "bbox": {
+            "x": 476,
+            "y": 644,
+            "w": 329,
+            "h": 523,
+            "angle_deg": 90.0
+          }
+        }
+      ],
+      "queries": [
+        {
+          "query": "one thing",
+          "line_indices": [
+            0
+          ]
+        },
+        {
+          "query": "one",
+          "line_indices": [
+            1
+          ]
+        },
+        {
+          "query": "why some teams pull together and others don t",
+          "line_indices": [
+            2
+          ]
+        },
+        {
+          "query": "why o bdont",
+          "line_indices": [
+            3
+          ]
+        },
+        {
+          "query": "leaders eat last",
+          "line_indices": [
+            4
+          ]
+        },
+        {
+          "query": "one thing the one",
+          "line_indices": [
+            0,
+            1
+          ]
+        },
+        {
+          "query": "one why some teams pull together and others don t",
+          "line_indices": [
+            1,
+            2
+          ]
+        },
+        {
+          "query": "why some teams pull together and others don t why o bdont",
+          "line_indices": [
+            2,
+            3
+          ]
+        },
+        {
+          "query": "why o bdont leaders eat last",
+          "line_indices": [
+            3,
+            4
+          ]
+        }
+      ],
+      "duplicate_of": "b_0004"
+    },
+    "b_0007": {
+      "status": "identified",
+      "chosen": {
+        "source": "google_books",
+        "key": "zaPoAQAAQBAJ",
+        "title": "The Myth of Sisyphus",
+        "authors": [
+          "Albert Camus"
+        ],
+        "year": "2013-10-31",
+        "publishers": [
+          "Penguin UK"
+        ],
+        "isbns": [
+          "9780141914176",
+          "0141914173"
+        ]
+      },
+      "title": "The Myth of Sisyphus",
+      "authors": [
+        "Albert Camus"
+      ],
+      "edition": "",
+      "isbn": "",
+      "raw_score": 1.0,
+      "id_confidence": 1.0,
+      "candidates": [
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "lZpFCgAAQBAJ",
+            "title": "Deep Work",
+            "authors": [
+              "Cal Newport"
+            ],
+            "year": "2016-01-05",
+            "publishers": [
+              "Hachette UK"
+            ],
+            "isbns": [
+              "9780349411910",
+              "0349411913"
+            ]
+          },
+          "title_sim": 100.0,
+          "author_sim": 100.0,
+          "publisher_sim": 0.0,
+          "raw_score": 1.0,
+          "id_confidence": 1.0,
+          "accepted": true,
+          "matched_query": "deep work",
+          "line_indices": [
+            1
+          ],
+          "line_distance": 79.66335418497015,
+          "features": {
+            "title": 1.0,
+            "author": 1.0,
+            "publisher": 0.0
+          },
+          "score": 1.0
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "WW44zgEACAAJ",
+            "title": "Deep Work",
+            "authors": [
+              "Cal Newport"
+            ],
+            "year": "2019",
+            "publishers": [
+              ""
+            ],
+            "isbns": [
+              "1731357257",
+              "9781731357250"
+            ]
+          },
+          "title_sim": 100.0,
+          "author_sim": 100.0,
+          "publisher_sim": 0.0,
+          "raw_score": 1.0,
+          "id_confidence": 1.0,
+          "accepted": true,
+          "matched_query": "deep work",
+          "line_indices": [
+            1
+          ],
+          "line_distance": 79.66335418497015,
+          "features": {
+            "title": 1.0,
+            "author": 1.0,
+            "publisher": 0.0
+          },
+          "score": 1.0
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "zaPoAQAAQBAJ",
+            "title": "The Myth of Sisyphus",
+            "authors": [
+              "Albert Camus"
+            ],
+            "year": "2013-10-31",
+            "publishers": [
+              "Penguin UK"
+            ],
+            "isbns": [
+              "9780141914176",
+              "0141914173"
+            ]
+          },
+          "title_sim": 100.0,
+          "author_sim": 47.62,
+          "publisher_sim": 0.0,
+          "raw_score": 1.0,
+          "id_confidence": 1.0,
+          "accepted": true,
+          "matched_query": "myth of sisyphus",
+          "line_indices": [
+            5
+          ],
+          "line_distance": 58.83026432033091,
+          "features": {
+            "title": 1.0,
+            "author": 0.4761904761904761,
+            "publisher": 0.0
+          },
+          "score": 1.0
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "6mzJEQAAQBAJ",
+            "title": "Deep Work",
+            "authors": [
+              "Gaurav Modi"
+            ],
+            "year": null,
+            "publishers": [
+              "Gaurav Modi"
+            ],
+            "isbns": []
+          },
+          "title_sim": 100.0,
+          "author_sim": 38.1,
+          "publisher_sim": 0.0,
+          "raw_score": 1.0,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "deep work",
+          "line_indices": [
+            1
+          ],
+          "line_distance": 79.66335418497015,
+          "features": {
+            "title": 1.0,
+            "author": 0.38095238095238093,
+            "publisher": 0.0
+          },
+          "score": 1.0
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "nEAMzgEACAAJ",
+            "title": "Heal Your Mind Heal Your Life",
+            "authors": [
+              "Monica DuBay"
+            ],
+            "year": "2020-11-22",
+            "publishers": [
+              "Monica DuBay Publications"
+            ],
+            "isbns": [
+              "057878873X",
+              "9780578788739"
+            ]
+          },
+          "title_sim": 100.0,
+          "author_sim": 38.1,
+          "publisher_sim": 0.0,
+          "raw_score": 1.0,
+          "id_confidence": 1.0,
+          "accepted": true,
+          "matched_query": "heal your mind heal your life",
+          "line_indices": [
+            3
+          ],
+          "line_distance": 117.39782791857778,
+          "features": {
+            "title": 1.0,
+            "author": 0.38095238095238093,
+            "publisher": 0.0
+          },
+          "score": 1.0
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "ifWj0QEACAAJ",
+            "title": "Dr. Cal Newport",
+            "authors": [
+              "Vanessa Fonseca"
+            ],
+            "year": "2025-10-09",
+            "publishers": [
+              "Independently Published"
+            ],
+            "isbns": [
+              "9798269075075"
+            ]
+          },
+          "title_sim": 90.91,
+          "author_sim": 41.67,
+          "publisher_sim": 0.0,
+          "raw_score": 0.9091,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "cal newport",
+          "line_indices": [
+            6
+          ],
+          "line_distance": 119.19941275023129,
+          "features": {
+            "title": 0.9090909090909091,
+            "author": 0.41666666666666663,
+            "publisher": 0.0
+          },
+          "score": 0.9091
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "GwcLEAAAQBAJ",
+            "title": "Box Simon Sinek",
+            "authors": [
+              "Simon Sinek"
+            ],
+            "year": "2020-11-24",
+            "publishers": [
+              "Sextante"
+            ],
+            "isbns": [
+              "9786555640922",
+              "6555640928"
+            ]
+          },
+          "title_sim": 86.96,
+          "author_sim": 45.45,
+          "publisher_sim": 0.0,
+          "raw_score": 0.8696,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "simon sinek",
+          "line_indices": [
+            0
+          ],
+          "line_distance": 144.7497841103744,
+          "features": {
+            "title": 0.8695652173913043,
+            "author": 0.4545454545454546,
+            "publisher": 0.0
+          },
+          "score": 0.8696
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "Dw2ZwS4Gw70C",
+            "title": "You Can Heal Your Life",
+            "authors": [
+              "Louise L. Hay"
+            ],
+            "year": "2009-12",
+            "publishers": [
+              "ReadHowYouWant.com"
+            ],
+            "isbns": [
+              "9781458748249",
+              "1458748243"
+            ]
+          },
+          "title_sim": 78.43,
+          "author_sim": 43.48,
+          "publisher_sim": 0.0,
+          "raw_score": 0.7843,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "heal your mind heal your life",
+          "line_indices": [
+            3
+          ],
+          "line_distance": 117.39782791857778,
+          "features": {
+            "title": 0.7843137254901962,
+            "author": 0.43478260869565216,
+            "publisher": 0.0
+          },
+          "score": 0.7843
+        }
+      ],
+      "spine_text_raw": "SIMON SINEK | DEEP WORK | DEEP WORK Cal Newport | Heal Your Mind Heal Your Life | HALFMURDERS | The Myth of Sisyphus | Cal Newport | SALIL DESAI | IRFAN ALAM",
+      "unit": "A",
+      "row": 1,
+      "candidate_views": [
+        {
+          "seq": 57,
+          "t_ms": 33620,
+          "frame_ref": "frames/f_000057_0033620.jpg",
+          "bbox": {
+            "x": 786,
+            "y": 651,
+            "w": 293,
+            "h": 499,
+            "angle_deg": 90.0
+          }
+        },
+        {
+          "seq": 62,
+          "t_ms": 36460,
+          "frame_ref": "frames/f_000062_0036460.jpg",
+          "bbox": {
+            "x": 721,
+            "y": 644,
+            "w": 348,
+            "h": 523,
+            "angle_deg": 90.0
+          }
+        },
+        {
+          "seq": 90,
+          "t_ms": 53508,
+          "frame_ref": "frames/f_000090_0053508.jpg",
+          "bbox": {
+            "x": 631,
+            "y": 656,
+            "w": 305,
+            "h": 718,
+            "angle_deg": 90.0
+          }
+        }
+      ],
+      "queries": [
+        {
+          "query": "simon sinek",
+          "line_indices": [
+            0
+          ]
+        },
+        {
+          "query": "deep work",
+          "line_indices": [
+            1
+          ]
+        },
+        {
+          "query": "deep work cal newport",
+          "line_indices": [
+            2
+          ]
+        },
+        {
+          "query": "heal your mind heal your life",
+          "line_indices": [
+            3
+          ]
+        },
+        {
+          "query": "halfmurders",
+          "line_indices": [
+            4
+          ]
+        },
+        {
+          "query": "myth of sisyphus",
+          "line_indices": [
+            5
+          ]
+        },
+        {
+          "query": "cal newport",
+          "line_indices": [
+            6
+          ]
+        },
+        {
+          "query": "salil desai",
+          "line_indices": [
+            7
+          ]
+        },
+        {
+          "query": "irfan alam",
+          "line_indices": [
+            8
+          ]
+        },
+        {
+          "query": "simon sinek deep work",
+          "line_indices": [
+            0,
+            1
+          ]
+        },
+        {
+          "query": "deep work deep work cal newport",
+          "line_indices": [
+            1,
+            2
+          ]
+        },
+        {
+          "query": "deep work cal newport heal your mind heal your life",
+          "line_indices": [
+            2,
+            3
+          ]
+        },
+        {
+          "query": "heal your mind heal your life halfmurders",
+          "line_indices": [
+            3,
+            4
+          ]
+        },
+        {
+          "query": "halfmurders the myth of sisyphus",
+          "line_indices": [
+            4,
+            5
+          ]
+        },
+        {
+          "query": "myth of sisyphus cal newport",
+          "line_indices": [
+            5,
+            6
+          ]
+        },
+        {
+          "query": "cal newport salil desai",
+          "line_indices": [
+            6,
+            7
+          ]
+        },
+        {
+          "query": "salil desai irfan alam",
+          "line_indices": [
+            7,
+            8
+          ]
+        }
+      ]
+    },
+    "b_0008": {
+      "status": "unidentified",
+      "chosen": null,
+      "title": "",
+      "authors": [],
+      "edition": "",
+      "isbn": "",
+      "raw_score": 0,
+      "id_confidence": 0.0,
+      "candidates": [
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "pzOf0QEACAAJ",
+            "title": "SOUND OF SUCCESS",
+            "authors": [
+              "MATT. BLACK"
+            ],
+            "year": "2025",
+            "publishers": [
+              ""
+            ],
+            "isbns": [
+              "8266726655",
+              "9788266726650"
+            ]
+          },
+          "title_sim": 68.75,
+          "author_sim": 13.33,
+          "publisher_sim": 0.0,
+          "raw_score": 0.6875,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "ge your noise success",
+          "line_indices": [
+            2,
+            3
+          ],
+          "line_distance": 71.39502783807848,
+          "features": {
+            "title": 0.6875,
+            "author": 0.1333333333333333,
+            "publisher": 0.0
+          },
+          "score": 0.6875
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "mNFxPQAACAAJ",
+            "title": "Noise",
+            "authors": [
+              "Tony Bradman",
+              "Jan Burchett",
+              "Sara Vogler",
+              "Chloe Rhodes",
+              "Jeanne Willis",
+              "Claire Llewellyn"
+            ],
+            "year": "2009-01-01",
+            "publishers": [
+              "Oxford University Press, USA"
+            ],
+            "isbns": [
+              "0198470886",
+              "9780198470885"
+            ]
+          },
+          "title_sim": 62.5,
+          "author_sim": 40.0,
+          "publisher_sim": 0.0,
+          "raw_score": 0.625,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "ge your noise",
+          "line_indices": [
+            2
+          ],
+          "line_distance": 84.5931439302264,
+          "features": {
+            "title": 0.625,
+            "author": 0.4,
+            "publisher": 0.0
+          },
+          "score": 0.625
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "_lFVAAAAMAAJ",
+            "title": "The Problem of Noise",
+            "authors": [
+              "Sir Frederic Charles Bartlett"
+            ],
+            "year": "1934",
+            "publishers": [
+              "CUP Archive"
+            ],
+            "isbns": [
+              "WISC:89088290531"
+            ]
+          },
+          "title_sim": 62.07,
+          "author_sim": 30.3,
+          "publisher_sim": 0.0,
+          "raw_score": 0.6207,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "ge your noise",
+          "line_indices": [
+            2
+          ],
+          "line_distance": 84.5931439302264,
+          "features": {
+            "title": 0.6206896551724138,
+            "author": 0.303030303030303,
+            "publisher": 0.0
+          },
+          "score": 0.6207
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "SFPbzQEACAAJ",
+            "title": "The Night Noise",
+            "authors": [
+              "Linda Lokhee"
+            ],
+            "year": "2020-09-21",
+            "publishers": [
+              ""
+            ],
+            "isbns": [
+              "0648756688",
+              "9780648756682"
+            ]
+          },
+          "title_sim": 58.33,
+          "author_sim": 28.57,
+          "publisher_sim": 0.0,
+          "raw_score": 0.5833,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "ge your noise",
+          "line_indices": [
+            2
+          ],
+          "line_distance": 84.5931439302264,
+          "features": {
+            "title": 0.5833333333333333,
+            "author": 0.2857142857142857,
+            "publisher": 0.0
+          },
+          "score": 0.5833
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "5cKc0QEACAAJ",
+            "title": "Navigate The Noise To Find True Value",
+            "authors": [
+              "BRUCE. LAIRD"
+            ],
+            "year": "2025-08-29",
+            "publishers": [
+              "Independently Published"
+            ],
+            "isbns": [
+              "9798262824885"
+            ]
+          },
+          "title_sim": 41.38,
+          "author_sim": 34.78,
+          "publisher_sim": 0.0,
+          "raw_score": 0.4138,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "ge your noise success",
+          "line_indices": [
+            2,
+            3
+          ],
+          "line_distance": 71.39502783807848,
+          "features": {
+            "title": 0.41379310344827597,
+            "author": 0.34782608695652173,
+            "publisher": 0.0
+          },
+          "score": 0.4138
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "5DGuGQAACAAJ",
+            "title": "The Seven Spiritual Laws of Success",
+            "authors": [
+              "Deepak Chopra"
+            ],
+            "year": "2007-01",
+            "publishers": [
+              "Amber-Allen Pub"
+            ],
+            "isbns": [
+              "1878424602",
+              "9781878424600"
+            ]
+          },
+          "title_sim": 41.18,
+          "author_sim": 30.77,
+          "publisher_sim": 0.0,
+          "raw_score": 0.4118,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "success",
+          "line_indices": [
+            3
+          ],
+          "line_distance": 71.39502783807848,
+          "features": {
+            "title": 0.4117647058823529,
+            "author": 0.3076923076923077,
+            "publisher": 0.0
+          },
+          "score": 0.4118
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "sdSezgEACAAJ",
+            "title": "Who's Afraid of the Art of Noise",
+            "authors": [
+              "Art of Noise"
+            ],
+            "year": "1986",
+            "publishers": [
+              ""
+            ],
+            "isbns": [
+              "OCLC:1263602343"
+            ]
+          },
+          "title_sim": 40.0,
+          "author_sim": 60.0,
+          "publisher_sim": 0.0,
+          "raw_score": 0.4,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "ge your noise",
+          "line_indices": [
+            2
+          ],
+          "line_distance": 84.5931439302264,
+          "features": {
+            "title": 0.4,
+            "author": 0.6,
+            "publisher": 0.0
+          },
+          "score": 0.4
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "EblsvgEACAAJ",
+            "title": "Outliers",
+            "authors": [
+              "Malcolm Gladwell"
+            ],
+            "year": "2009",
+            "publishers": [
+              "Little, Brown"
+            ],
+            "isbns": [
+              "0316056286",
+              "9780316056281"
+            ]
+          },
+          "title_sim": 40.0,
+          "author_sim": 21.43,
+          "publisher_sim": 0.0,
+          "raw_score": 0.4,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "success",
+          "line_indices": [
+            3
+          ],
+          "line_distance": 71.39502783807848,
+          "features": {
+            "title": 0.4,
+            "author": 0.2142857142857143,
+            "publisher": 0.0
+          },
+          "score": 0.4
+        }
+      ],
+      "spine_text_raw": "SUCCCS | GEOR NUO ISE | GE YOUR NOISE | SUCCESS",
+      "unit": "A",
+      "row": 1,
+      "candidate_views": [
+        {
+          "seq": 62,
+          "t_ms": 36460,
+          "frame_ref": "frames/f_000062_0036460.jpg",
+          "bbox": {
+            "x": 998,
+            "y": 644,
+            "w": 70,
+            "h": 523,
+            "angle_deg": 90.0
+          }
+        },
+        {
+          "seq": 90,
+          "t_ms": 53508,
+          "frame_ref": "frames/f_000090_0053508.jpg",
+          "bbox": {
+            "x": 902,
+            "y": 656,
+            "w": 177,
+            "h": 718,
+            "angle_deg": 90.0
+          }
+        }
+      ],
+      "queries": [
+        {
+          "query": "succcs",
+          "line_indices": [
+            0
+          ]
+        },
+        {
+          "query": "geor nuo ise",
+          "line_indices": [
+            1
+          ]
+        },
+        {
+          "query": "ge your noise",
+          "line_indices": [
+            2
+          ]
+        },
+        {
+          "query": "success",
+          "line_indices": [
+            3
+          ]
+        },
+        {
+          "query": "succcs geor nuo ise",
+          "line_indices": [
+            0,
+            1
+          ]
+        },
+        {
+          "query": "geor nuo ise ge your noise",
+          "line_indices": [
+            1,
+            2
+          ]
+        },
+        {
+          "query": "ge your noise success",
+          "line_indices": [
+            2,
+            3
+          ]
+        }
+      ]
+    },
+    "b_0009": {
+      "status": "unidentified",
+      "chosen": null,
+      "title": "",
+      "authors": [],
+      "edition": "",
+      "isbn": "",
+      "raw_score": 0,
+      "id_confidence": 0.0,
+      "candidates": [
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "fqicNAEACAAJ",
+            "title": "American Psycho",
+            "authors": [
+              "Bret Easton Ellis"
+            ],
+            "year": "1993",
+            "publishers": [
+              ""
+            ],
+            "isbns": [
+              "8440637128",
+              "9788440637123"
+            ]
+          },
+          "title_sim": 100.0,
+          "author_sim": 68.18,
+          "publisher_sim": 0.0,
+          "raw_score": 1.0,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "american psycho",
+          "line_indices": [
+            2
+          ],
+          "line_distance": 108.81176406988355,
+          "features": {
+            "title": 1.0,
+            "author": 0.6818181818181819,
+            "publisher": 0.0
+          },
+          "score": 1.0
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "qgAWBAAAQBAJ",
+            "title": "American Psycho",
+            "authors": [
+              "Bret Easton Ellis"
+            ],
+            "year": "2014-12-15",
+            "publishers": [
+              "Pan Macmillan"
+            ],
+            "isbns": [
+              "9781447277712",
+              "1447277716"
+            ]
+          },
+          "title_sim": 100.0,
+          "author_sim": 68.18,
+          "publisher_sim": 0.0,
+          "raw_score": 1.0,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "american psycho",
+          "line_indices": [
+            2
+          ],
+          "line_distance": 108.81176406988355,
+          "features": {
+            "title": 1.0,
+            "author": 0.6818181818181819,
+            "publisher": 0.0
+          },
+          "score": 1.0
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "Z3eKPwAACAAJ",
+            "title": "American Psycho",
+            "authors": [
+              "Bret Easton Ellis"
+            ],
+            "year": "2002",
+            "publishers": [
+              "Picador"
+            ],
+            "isbns": [
+              "033049189X",
+              "9780330491891"
+            ]
+          },
+          "title_sim": 100.0,
+          "author_sim": 68.18,
+          "publisher_sim": 0.0,
+          "raw_score": 1.0,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "american psycho",
+          "line_indices": [
+            2
+          ],
+          "line_distance": 108.81176406988355,
+          "features": {
+            "title": 1.0,
+            "author": 0.6818181818181819,
+            "publisher": 0.0
+          },
+          "score": 1.0
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "VkSlEQAAQBAJ",
+            "title": "Feel Good Productivity (Malayalam)",
+            "authors": [
+              "Ali Abdaal"
+            ],
+            "year": null,
+            "publishers": [
+              "Manjul Publishing"
+            ],
+            "isbns": [
+              "9789373175256",
+              "9373175254"
+            ]
+          },
+          "title_sim": 86.21,
+          "author_sim": 33.33,
+          "publisher_sim": 0.0,
+          "raw_score": 0.8621,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "feel good productivity ali abdaal",
+          "line_indices": [
+            0
+          ],
+          "line_distance": 14.0,
+          "features": {
+            "title": 0.8620689655172413,
+            "author": 0.33333333333333337,
+            "publisher": 0.0
+          },
+          "score": 0.8621
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "O3ZfEQAAQBAJ",
+            "title": "Feel Good Productivity (Tamil)",
+            "authors": [
+              "Ali Abdaal"
+            ],
+            "year": null,
+            "publishers": [
+              "Manjul Publishing"
+            ],
+            "isbns": [
+              "9789355433749",
+              "9355433743"
+            ]
+          },
+          "title_sim": 85.25,
+          "author_sim": 33.33,
+          "publisher_sim": 0.0,
+          "raw_score": 0.8525,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "feel good productivity ali abdaal",
+          "line_indices": [
+            0
+          ],
+          "line_distance": 14.0,
+          "features": {
+            "title": 0.8524590163934427,
+            "author": 0.33333333333333337,
+            "publisher": 0.0
+          },
+          "score": 0.8525
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "ZnagEAAAQBAJ",
+            "title": "Feel-Good Productivity",
+            "authors": [
+              "Ali Abdaal"
+            ],
+            "year": "2023-12-28",
+            "publishers": [
+              "Random House"
+            ],
+            "isbns": [
+              "9781529159394",
+              "1529159393"
+            ]
+          },
+          "title_sim": 81.63,
+          "author_sim": 33.33,
+          "publisher_sim": 0.0,
+          "raw_score": 0.8163,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "feel good productivity ali abdaal",
+          "line_indices": [
+            0
+          ],
+          "line_distance": 14.0,
+          "features": {
+            "title": 0.8163265306122449,
+            "author": 0.33333333333333337,
+            "publisher": 0.0
+          },
+          "score": 0.8163
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "cpGiEQAAQBAJ",
+            "title": "Feel-Good Productivity | \u095e\u0940\u0932 \u0917\u0941\u0921 \u092a\u094d\u0930\u094b\u0921\u0915\u094d\u091f\u093f\u0935\u093f\u091f\u0940",
+            "authors": [
+              "Ali Abdaal"
+            ],
+            "year": null,
+            "publishers": [
+              "Manjul Publishing"
+            ],
+            "isbns": [
+              "9789373175133",
+              "9373175130"
+            ]
+          },
+          "title_sim": 81.63,
+          "author_sim": 33.33,
+          "publisher_sim": 0.0,
+          "raw_score": 0.8163,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "feel good productivity ali abdaal",
+          "line_indices": [
+            0
+          ],
+          "line_distance": 14.0,
+          "features": {
+            "title": 0.8163265306122449,
+            "author": 0.33333333333333337,
+            "publisher": 0.0
+          },
+          "score": 0.8163
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "zH_xEAAAQBAJ",
+            "title": "Feel-Good Productivity",
+            "authors": [
+              "Ali Abdaal"
+            ],
+            "year": "2024-02-05",
+            "publishers": [
+              "VOGAIS"
+            ],
+            "isbns": [
+              "9789897878190",
+              "989787819X"
+            ]
+          },
+          "title_sim": 81.63,
+          "author_sim": 33.33,
+          "publisher_sim": 0.0,
+          "raw_score": 0.8163,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "feel good productivity ali abdaal",
+          "line_indices": [
+            0
+          ],
+          "line_distance": 14.0,
+          "features": {
+            "title": 0.8163265306122449,
+            "author": 0.33333333333333337,
+            "publisher": 0.0
+          },
+          "score": 0.8163
+        }
+      ],
+      "spine_text_raw": "Feel-Good Productivity Ali Abdaal | Feel-Good Produ | AMERICAN PSYCHO | AMERICAN PSYCHO Bret Easton Ellis | AC | ur Job DALE CARNEGIE",
+      "unit": "A",
+      "row": 2,
+      "candidate_views": [
+        {
+          "seq": 62,
+          "t_ms": 36460,
+          "frame_ref": "frames/f_000062_0036460.jpg",
+          "bbox": {
+            "x": 219,
+            "y": 1487,
+            "w": 274,
+            "h": 332,
+            "angle_deg": 90.0
+          }
+        }
+      ],
+      "queries": [
+        {
+          "query": "feel good productivity ali abdaal",
+          "line_indices": [
+            0
+          ]
+        },
+        {
+          "query": "feel good produ",
+          "line_indices": [
+            1
+          ]
+        },
+        {
+          "query": "american psycho",
+          "line_indices": [
+            2
+          ]
+        },
+        {
+          "query": "american psycho bret easton ellis",
+          "line_indices": [
+            3
+          ]
+        },
+        {
+          "query": "ac",
+          "line_indices": [
+            4
+          ]
+        },
+        {
+          "query": "ur job dale carnegie",
+          "line_indices": [
+            5
+          ]
+        },
+        {
+          "query": "feel good productivity ali abdaal feel good produ",
+          "line_indices": [
+            0,
+            1
+          ]
+        },
+        {
+          "query": "feel good produ american psycho",
+          "line_indices": [
+            1,
+            2
+          ]
+        },
+        {
+          "query": "american psycho american psycho bret easton ellis",
+          "line_indices": [
+            2,
+            3
+          ]
+        },
+        {
+          "query": "american psycho bret easton ellis ac",
+          "line_indices": [
+            3,
+            4
+          ]
+        },
+        {
+          "query": "ac ur job dale carnegie",
+          "line_indices": [
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    "b_0010": {
+      "status": "unidentified",
+      "chosen": null,
+      "title": "",
+      "authors": [],
+      "edition": "",
+      "isbn": "",
+      "raw_score": 0,
+      "id_confidence": 0.0,
+      "candidates": [
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "fqicNAEACAAJ",
+            "title": "American Psycho",
+            "authors": [
+              "Bret Easton Ellis"
+            ],
+            "year": "1993",
+            "publishers": [
+              ""
+            ],
+            "isbns": [
+              "8440637128",
+              "9788440637123"
+            ]
+          },
+          "title_sim": 100.0,
+          "author_sim": 68.18,
+          "publisher_sim": 0.0,
+          "raw_score": 1.0,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "american psycho",
+          "line_indices": [
+            2
+          ],
+          "line_distance": 102.92351529169609,
+          "features": {
+            "title": 1.0,
+            "author": 0.6818181818181819,
+            "publisher": 0.0
+          },
+          "score": 1.0
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "qgAWBAAAQBAJ",
+            "title": "American Psycho",
+            "authors": [
+              "Bret Easton Ellis"
+            ],
+            "year": "2014-12-15",
+            "publishers": [
+              "Pan Macmillan"
+            ],
+            "isbns": [
+              "9781447277712",
+              "1447277716"
+            ]
+          },
+          "title_sim": 100.0,
+          "author_sim": 68.18,
+          "publisher_sim": 0.0,
+          "raw_score": 1.0,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "american psycho",
+          "line_indices": [
+            2
+          ],
+          "line_distance": 102.92351529169609,
+          "features": {
+            "title": 1.0,
+            "author": 0.6818181818181819,
+            "publisher": 0.0
+          },
+          "score": 1.0
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "Z3eKPwAACAAJ",
+            "title": "American Psycho",
+            "authors": [
+              "Bret Easton Ellis"
+            ],
+            "year": "2002",
+            "publishers": [
+              "Picador"
+            ],
+            "isbns": [
+              "033049189X",
+              "9780330491891"
+            ]
+          },
+          "title_sim": 100.0,
+          "author_sim": 68.18,
+          "publisher_sim": 0.0,
+          "raw_score": 1.0,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "american psycho",
+          "line_indices": [
+            2
+          ],
+          "line_distance": 102.92351529169609,
+          "features": {
+            "title": 1.0,
+            "author": 0.6818181818181819,
+            "publisher": 0.0
+          },
+          "score": 1.0
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "lDDiAQAACAAJ",
+            "title": "Dale Carnegie",
+            "authors": [
+              "Michael Stevenson"
+            ],
+            "year": "2017-03-07",
+            "publishers": [
+              "Createspace Independent Publishing Platform"
+            ],
+            "isbns": [
+              "1544096593",
+              "9781544096599"
+            ]
+          },
+          "title_sim": 100.0,
+          "author_sim": 46.67,
+          "publisher_sim": 0.0,
+          "raw_score": 1.0,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "dale carnegie",
+          "line_indices": [
+            4
+          ],
+          "line_distance": 95.34149149242423,
+          "features": {
+            "title": 1.0,
+            "author": 0.4666666666666666,
+            "publisher": 0.0
+          },
+          "score": 1.0
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "VkSlEQAAQBAJ",
+            "title": "Feel Good Productivity (Malayalam)",
+            "authors": [
+              "Ali Abdaal"
+            ],
+            "year": null,
+            "publishers": [
+              "Manjul Publishing"
+            ],
+            "isbns": [
+              "9789373175256",
+              "9373175254"
+            ]
+          },
+          "title_sim": 86.21,
+          "author_sim": 34.78,
+          "publisher_sim": 0.0,
+          "raw_score": 0.8621,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "feel good productivity all abdaal",
+          "line_indices": [
+            1
+          ],
+          "line_distance": 14.508618128546908,
+          "features": {
+            "title": 0.8620689655172413,
+            "author": 0.34782608695652173,
+            "publisher": 0.0
+          },
+          "score": 0.8621
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "O3ZfEQAAQBAJ",
+            "title": "Feel Good Productivity (Tamil)",
+            "authors": [
+              "Ali Abdaal"
+            ],
+            "year": null,
+            "publishers": [
+              "Manjul Publishing"
+            ],
+            "isbns": [
+              "9789355433749",
+              "9355433743"
+            ]
+          },
+          "title_sim": 81.97,
+          "author_sim": 34.78,
+          "publisher_sim": 0.0,
+          "raw_score": 0.8197,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "feel good productivity all abdaal",
+          "line_indices": [
+            1
+          ],
+          "line_distance": 14.508618128546908,
+          "features": {
+            "title": 0.819672131147541,
+            "author": 0.34782608695652173,
+            "publisher": 0.0
+          },
+          "score": 0.8197
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "ZnagEAAAQBAJ",
+            "title": "Feel-Good Productivity",
+            "authors": [
+              "Ali Abdaal"
+            ],
+            "year": "2023-12-28",
+            "publishers": [
+              "Random House"
+            ],
+            "isbns": [
+              "9781529159394",
+              "1529159393"
+            ]
+          },
+          "title_sim": 81.63,
+          "author_sim": 34.78,
+          "publisher_sim": 0.0,
+          "raw_score": 0.8163,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "feel good productivity all abdaal",
+          "line_indices": [
+            1
+          ],
+          "line_distance": 14.508618128546908,
+          "features": {
+            "title": 0.8163265306122449,
+            "author": 0.34782608695652173,
+            "publisher": 0.0
+          },
+          "score": 0.8163
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "cpGiEQAAQBAJ",
+            "title": "Feel-Good Productivity | \u095e\u0940\u0932 \u0917\u0941\u0921 \u092a\u094d\u0930\u094b\u0921\u0915\u094d\u091f\u093f\u0935\u093f\u091f\u0940",
+            "authors": [
+              "Ali Abdaal"
+            ],
+            "year": null,
+            "publishers": [
+              "Manjul Publishing"
+            ],
+            "isbns": [
+              "9789373175133",
+              "9373175130"
+            ]
+          },
+          "title_sim": 81.63,
+          "author_sim": 34.78,
+          "publisher_sim": 0.0,
+          "raw_score": 0.8163,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "feel good productivity all abdaal",
+          "line_indices": [
+            1
+          ],
+          "line_distance": 14.508618128546908,
+          "features": {
+            "title": 0.8163265306122449,
+            "author": 0.34782608695652173,
+            "publisher": 0.0
+          },
+          "score": 0.8163
+        }
+      ],
+      "spine_text_raw": "Feel-Good Produc | Feel-Good Productivity All Abdaal | AMERICAN PSYCHO | AMERICAN PSYCHO Bret Easton Ellis | DALE CARNEGIE",
+      "unit": "A",
+      "row": 2,
+      "candidate_views": [
+        {
+          "seq": 57,
+          "t_ms": 33620,
+          "frame_ref": "frames/f_000057_0033620.jpg",
+          "bbox": {
+            "x": 432,
+            "y": 1458,
+            "w": 256,
+            "h": 320,
+            "angle_deg": 90.0
+          }
+        },
+        {
+          "seq": 62,
+          "t_ms": 36460,
+          "frame_ref": "frames/f_000062_0036460.jpg",
+          "bbox": {
+            "x": 373,
+            "y": 1487,
+            "w": 158,
+            "h": 332,
+            "angle_deg": 90.0
+          }
+        },
+        {
+          "seq": 90,
+          "t_ms": 53508,
+          "frame_ref": "frames/f_000090_0053508.jpg",
+          "bbox": {
+            "x": 406,
+            "y": 1643,
+            "w": 215,
+            "h": 277,
+            "angle_deg": 90.0
+          }
+        }
+      ],
+      "queries": [
+        {
+          "query": "feel good produc",
+          "line_indices": [
+            0
+          ]
+        },
+        {
+          "query": "feel good productivity all abdaal",
+          "line_indices": [
+            1
+          ]
+        },
+        {
+          "query": "american psycho",
+          "line_indices": [
+            2
+          ]
+        },
+        {
+          "query": "american psycho bret easton ellis",
+          "line_indices": [
+            3
+          ]
+        },
+        {
+          "query": "dale carnegie",
+          "line_indices": [
+            4
+          ]
+        },
+        {
+          "query": "feel good produc feel good productivity all abdaal",
+          "line_indices": [
+            0,
+            1
+          ]
+        },
+        {
+          "query": "feel good productivity all abdaal american psycho",
+          "line_indices": [
+            1,
+            2
+          ]
+        },
+        {
+          "query": "american psycho american psycho bret easton ellis",
+          "line_indices": [
+            2,
+            3
+          ]
+        },
+        {
+          "query": "american psycho bret easton ellis dale carnegie",
+          "line_indices": [
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    "b_0011": {
+      "status": "identified",
+      "chosen": {
+        "source": "google_books",
+        "key": "QqY1EAAAQBAJ",
+        "title": "The Lords of Easy Money",
+        "authors": [
+          "Christopher Leonard"
+        ],
+        "year": "2022-01-11",
+        "publishers": [
+          "Simon and Schuster"
+        ],
+        "isbns": [
+          "9781982166687",
+          "1982166681"
+        ]
+      },
+      "title": "The Lords of Easy Money",
+      "authors": [
+        "Christopher Leonard"
+      ],
+      "edition": "",
+      "isbn": "",
+      "raw_score": 1.0,
+      "id_confidence": 1.0,
+      "candidates": [
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "QqY1EAAAQBAJ",
+            "title": "The Lords of Easy Money",
+            "authors": [
+              "Christopher Leonard"
+            ],
+            "year": "2022-01-11",
+            "publishers": [
+              "Simon and Schuster"
+            ],
+            "isbns": [
+              "9781982166687",
+              "1982166681"
+            ]
+          },
+          "title_sim": 100.0,
+          "author_sim": 33.33,
+          "publisher_sim": 0.0,
+          "raw_score": 1.0,
+          "id_confidence": 1.0,
+          "accepted": true,
+          "matched_query": "lords of easy money",
+          "line_indices": [
+            0
+          ],
+          "line_distance": 46.5,
+          "features": {
+            "title": 1.0,
+            "author": 0.33333333333333337,
+            "publisher": 0.0
+          },
+          "score": 1.0
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "EpKhEAAAQBAJ",
+            "title": "The Lords of Easy Money",
+            "authors": [
+              "Christopher Leonard"
+            ],
+            "year": "2023-01-10",
+            "publishers": [
+              "Simon and Schuster"
+            ],
+            "isbns": [
+              "9781982166649",
+              "1982166649"
+            ]
+          },
+          "title_sim": 100.0,
+          "author_sim": 33.33,
+          "publisher_sim": 0.0,
+          "raw_score": 1.0,
+          "id_confidence": 1.0,
+          "accepted": true,
+          "matched_query": "lords of easy money",
+          "line_indices": [
+            0
+          ],
+          "line_distance": 46.5,
+          "features": {
+            "title": 1.0,
+            "author": 0.33333333333333337,
+            "publisher": 0.0
+          },
+          "score": 1.0
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "eXWY0QEACAAJ",
+            "title": "The Lords Of Easy Money Exercises",
+            "authors": [
+              "William Hamilton"
+            ],
+            "year": "2025-08-24",
+            "publishers": [
+              "Independently Published"
+            ],
+            "isbns": [
+              "9798299154436"
+            ]
+          },
+          "title_sim": 79.17,
+          "author_sim": 25.0,
+          "publisher_sim": 0.0,
+          "raw_score": 0.7917,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "lords of easy money",
+          "line_indices": [
+            0
+          ],
+          "line_distance": 46.5,
+          "features": {
+            "title": 0.7916666666666665,
+            "author": 0.25,
+            "publisher": 0.0
+          },
+          "score": 0.7917
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "_itZzwEACAAJ",
+            "title": "The Lords Of Easy Cash",
+            "authors": [
+              "James Felix"
+            ],
+            "year": "2022-08-21",
+            "publishers": [
+              "Independently Published"
+            ],
+            "isbns": [
+              "9798847665827"
+            ]
+          },
+          "title_sim": 75.68,
+          "author_sim": 36.36,
+          "publisher_sim": 0.0,
+          "raw_score": 0.7568,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "lords of easy money",
+          "line_indices": [
+            0
+          ],
+          "line_distance": 46.5,
+          "features": {
+            "title": 0.7567567567567568,
+            "author": 0.36363636363636365,
+            "publisher": 0.0
+          },
+          "score": 0.7568
+        }
+      ],
+      "spine_text_raw": "THE LORDS OF EASY MONEY | THEN S MOEY",
+      "unit": "A",
+      "row": 2,
+      "candidate_views": [
+        {
+          "seq": 57,
+          "t_ms": 33620,
+          "frame_ref": "frames/f_000057_0033620.jpg",
+          "bbox": {
+            "x": 577,
+            "y": 1458,
+            "w": 153,
+            "h": 320,
+            "angle_deg": 90.0
+          }
+        },
+        {
+          "seq": 62,
+          "t_ms": 36460,
+          "frame_ref": "frames/f_000062_0036460.jpg",
+          "bbox": {
+            "x": 495,
+            "y": 1487,
+            "w": 224,
+            "h": 332,
+            "angle_deg": 90.0
+          }
+        }
+      ],
+      "queries": [
+        {
+          "query": "lords of easy money",
+          "line_indices": [
+            0
+          ]
+        },
+        {
+          "query": "then s moey",
+          "line_indices": [
+            1
+          ]
+        },
+        {
+          "query": "lords of easy money then s moey",
+          "line_indices": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    "b_0012": {
+      "status": "unidentified",
+      "chosen": null,
+      "title": "",
+      "authors": [],
+      "edition": "",
+      "isbn": "",
+      "raw_score": 0,
+      "id_confidence": 0.0,
+      "candidates": [
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "Lib2EQAAQBAJ",
+            "title": "Nunchi \u2013 \ub208\uce58",
+            "authors": [
+              "Haon"
+            ],
+            "year": "2026-07-19",
+            "publishers": [
+              "Small Korean, Big Feelings by Haon"
+            ],
+            "isbns": []
+          },
+          "title_sim": 100.0,
+          "author_sim": 0.0,
+          "publisher_sim": 0.0,
+          "raw_score": 1.0,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "nunchi",
+          "line_indices": [
+            0
+          ],
+          "line_distance": 4.5,
+          "features": {
+            "title": 1.0,
+            "author": 0.0,
+            "publisher": 0.0
+          },
+          "score": 1.0
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "hc19DwAAQBAJ",
+            "title": "The Power of Nunchi",
+            "authors": [
+              "Euny Hong"
+            ],
+            "year": "2019-09-05",
+            "publishers": [
+              "Random House"
+            ],
+            "isbns": [
+              "9781473567153",
+              "1473567157"
+            ]
+          },
+          "title_sim": 63.16,
+          "author_sim": 0.0,
+          "publisher_sim": 0.0,
+          "raw_score": 0.6316,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "nunchi",
+          "line_indices": [
+            0
+          ],
+          "line_distance": 4.5,
+          "features": {
+            "title": 0.631578947368421,
+            "author": 0.0,
+            "publisher": 0.0
+          },
+          "score": 0.6316
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "mrGMEAAAQBAJ",
+            "title": "The Power of Nunchi",
+            "authors": [
+              "Euny Hong"
+            ],
+            "year": "2021-06-01",
+            "publishers": [
+              "National Geographic Books"
+            ],
+            "isbns": [
+              "9780143134473",
+              "0143134477"
+            ]
+          },
+          "title_sim": 63.16,
+          "author_sim": 0.0,
+          "publisher_sim": 0.0,
+          "raw_score": 0.6316,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "nunchi",
+          "line_indices": [
+            0
+          ],
+          "line_distance": 4.5,
+          "features": {
+            "title": 0.631578947368421,
+            "author": 0.0,
+            "publisher": 0.0
+          },
+          "score": 0.6316
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "VMWizQEACAAJ",
+            "title": "Le livre du nunchi",
+            "authors": [
+              "Y. Euny Hong"
+            ],
+            "year": "2019",
+            "publishers": [
+              ""
+            ],
+            "isbns": [
+              "2761953533",
+              "9782761953535"
+            ]
+          },
+          "title_sim": 57.14,
+          "author_sim": 0.0,
+          "publisher_sim": 0.0,
+          "raw_score": 0.5714,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "nunchi",
+          "line_indices": [
+            0
+          ],
+          "line_distance": 4.5,
+          "features": {
+            "title": 0.5714285714285714,
+            "author": 0.0,
+            "publisher": 0.0
+          },
+          "score": 0.5714
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "GngpygEACAAJ",
+            "title": "De kracht van nunchi",
+            "authors": [
+              "Y. Euny Hong"
+            ],
+            "year": "2019",
+            "publishers": [
+              ""
+            ],
+            "isbns": [
+              "9400511477",
+              "9789400511477"
+            ]
+          },
+          "title_sim": 52.17,
+          "author_sim": 0.0,
+          "publisher_sim": 0.0,
+          "raw_score": 0.5217,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "nunchi",
+          "line_indices": [
+            0
+          ],
+          "line_distance": 4.5,
+          "features": {
+            "title": 0.5217391304347826,
+            "author": 0.0,
+            "publisher": 0.0
+          },
+          "score": 0.5217
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "SlVXyQEACAAJ",
+            "title": "Le pouvoir du nunchi",
+            "authors": [
+              "Euny Hong"
+            ],
+            "year": "2019-09-05",
+            "publishers": [
+              "Hugo New Life"
+            ],
+            "isbns": [
+              "2755641576",
+              "9782755641578"
+            ]
+          },
+          "title_sim": 52.17,
+          "author_sim": 0.0,
+          "publisher_sim": 0.0,
+          "raw_score": 0.5217,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "nunchi",
+          "line_indices": [
+            0
+          ],
+          "line_distance": 4.5,
+          "features": {
+            "title": 0.5217391304347826,
+            "author": 0.0,
+            "publisher": 0.0
+          },
+          "score": 0.5217
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "sOdzzgEACAAJ",
+            "title": "Le pouvoir du Nunchi",
+            "authors": [
+              "Euny Hong"
+            ],
+            "year": "2021-05-06",
+            "publishers": [
+              "Hugo poche"
+            ],
+            "isbns": [
+              "2755687789",
+              "9782755687781"
+            ]
+          },
+          "title_sim": 52.17,
+          "author_sim": 0.0,
+          "publisher_sim": 0.0,
+          "raw_score": 0.5217,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "nunchi",
+          "line_indices": [
+            0
+          ],
+          "line_distance": 4.5,
+          "features": {
+            "title": 0.5217391304347826,
+            "author": 0.0,
+            "publisher": 0.0
+          },
+          "score": 0.5217
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "Qh6H0gEACAAJ",
+            "title": "Nunchi, connectez-vous aux autres",
+            "authors": [
+              "D\u00e9borah Romain-Delacour",
+              "Jimin Lee"
+            ],
+            "year": "2026-09-10",
+            "publishers": [
+              ""
+            ],
+            "isbns": [
+              "2416026739",
+              "9782416026737"
+            ]
+          },
+          "title_sim": 35.29,
+          "author_sim": 0.0,
+          "publisher_sim": 0.0,
+          "raw_score": 0.3529,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "nunchi",
+          "line_indices": [
+            0
+          ],
+          "line_distance": 4.5,
+          "features": {
+            "title": 0.3529411764705882,
+            "author": 0.0,
+            "publisher": 0.0
+          },
+          "score": 0.3529
+        }
+      ],
+      "spine_text_raw": "NUNCHI",
+      "unit": "A",
+      "row": 2,
+      "candidate_views": [
+        {
+          "seq": 90,
+          "t_ms": 53508,
+          "frame_ref": "frames/f_000090_0053508.jpg",
+          "bbox": {
+            "x": 723,
+            "y": 1643,
+            "w": 115,
+            "h": 277,
+            "angle_deg": 0.0
+          }
+        }
+      ],
+      "queries": [
+        {
+          "query": "nunchi",
+          "line_indices": [
+            0
+          ]
+        }
+      ]
+    },
+    "b_0013": {
+      "status": "unidentified",
+      "chosen": null,
+      "title": "",
+      "authors": [],
+      "edition": "",
+      "isbn": "",
+      "raw_score": 0,
+      "id_confidence": 0.0,
+      "candidates": [
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "Lib2EQAAQBAJ",
+            "title": "Nunchi \u2013 \ub208\uce58",
+            "authors": [
+              "Haon"
+            ],
+            "year": "2026-07-19",
+            "publishers": [
+              "Small Korean, Big Feelings by Haon"
+            ],
+            "isbns": []
+          },
+          "title_sim": 100.0,
+          "author_sim": 30.77,
+          "publisher_sim": 0.0,
+          "raw_score": 1.0,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "nunchi",
+          "line_indices": [
+            3
+          ],
+          "line_distance": 56.64803615307419,
+          "features": {
+            "title": 1.0,
+            "author": 0.3076923076923077,
+            "publisher": 0.0
+          },
+          "score": 1.0
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "hc19DwAAQBAJ",
+            "title": "The Power of Nunchi",
+            "authors": [
+              "Euny Hong"
+            ],
+            "year": "2019-09-05",
+            "publishers": [
+              "Random House"
+            ],
+            "isbns": [
+              "9781473567153",
+              "1473567157"
+            ]
+          },
+          "title_sim": 91.67,
+          "author_sim": 31.58,
+          "publisher_sim": 0.0,
+          "raw_score": 0.9167,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "power nunchi",
+          "line_indices": [
+            2,
+            3
+          ],
+          "line_distance": 33.97793401606401,
+          "features": {
+            "title": 0.9166666666666665,
+            "author": 0.3157894736842105,
+            "publisher": 0.0
+          },
+          "score": 0.9167
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "mrGMEAAAQBAJ",
+            "title": "The Power of Nunchi",
+            "authors": [
+              "Euny Hong"
+            ],
+            "year": "2021-06-01",
+            "publishers": [
+              "National Geographic Books"
+            ],
+            "isbns": [
+              "9780143134473",
+              "0143134477"
+            ]
+          },
+          "title_sim": 91.67,
+          "author_sim": 31.58,
+          "publisher_sim": 0.0,
+          "raw_score": 0.9167,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "power nunchi",
+          "line_indices": [
+            2,
+            3
+          ],
+          "line_distance": 33.97793401606401,
+          "features": {
+            "title": 0.9166666666666665,
+            "author": 0.3157894736842105,
+            "publisher": 0.0
+          },
+          "score": 0.9167
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "OrvNzwEACAAJ",
+            "title": "RESUMEN--The Power of Nunchi",
+            "authors": [
+              "Shortcut Edition"
+            ],
+            "year": "2023",
+            "publishers": [
+              ""
+            ],
+            "isbns": [
+              "OCLC:1374002459"
+            ]
+          },
+          "title_sim": 64.71,
+          "author_sim": 36.36,
+          "publisher_sim": 0.0,
+          "raw_score": 0.6471,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "power nunchi",
+          "line_indices": [
+            2,
+            3
+          ],
+          "line_distance": 33.97793401606401,
+          "features": {
+            "title": 0.6470588235294117,
+            "author": 0.36363636363636365,
+            "publisher": 0.0
+          },
+          "score": 0.6471
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "PU2kw-x8p2EC",
+            "title": "Paulo Coelho: A Warrior's Life",
+            "authors": [
+              "Fernando Morais"
+            ],
+            "year": "2009-10-29",
+            "publishers": [
+              "Harper Collins"
+            ],
+            "isbns": [
+              "9780061959707",
+              "0061959707"
+            ]
+          },
+          "title_sim": 57.14,
+          "author_sim": 40.0,
+          "publisher_sim": 0.0,
+          "raw_score": 0.5714,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "panlo coelhe",
+          "line_indices": [
+            1
+          ],
+          "line_distance": 91.50136611002046,
+          "features": {
+            "title": 0.5714285714285714,
+            "author": 0.4,
+            "publisher": 0.0
+          },
+          "score": 0.5714
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "VMWizQEACAAJ",
+            "title": "Le livre du nunchi",
+            "authors": [
+              "Y. Euny Hong"
+            ],
+            "year": "2019",
+            "publishers": [
+              ""
+            ],
+            "isbns": [
+              "2761953533",
+              "9782761953535"
+            ]
+          },
+          "title_sim": 57.14,
+          "author_sim": 28.57,
+          "publisher_sim": 0.0,
+          "raw_score": 0.5714,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "nunchi",
+          "line_indices": [
+            3
+          ],
+          "line_distance": 56.64803615307419,
+          "features": {
+            "title": 0.5714285714285714,
+            "author": 0.2857142857142857,
+            "publisher": 0.0
+          },
+          "score": 0.5714
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "kL1JPgAACAAJ",
+            "title": "Paulo Coelho The Deluxe Collection",
+            "authors": [
+              "Paulo Coelho"
+            ],
+            "year": "2009-11",
+            "publishers": [
+              ""
+            ],
+            "isbns": [
+              "000783943X",
+              "9780007839438"
+            ]
+          },
+          "title_sim": 56.14,
+          "author_sim": 37.5,
+          "publisher_sim": 0.0,
+          "raw_score": 0.5614,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "pano coehe panlo coelhe",
+          "line_indices": [
+            0,
+            1
+          ],
+          "line_distance": 91.50136611002046,
+          "features": {
+            "title": 0.5614035087719298,
+            "author": 0.375,
+            "publisher": 0.0
+          },
+          "score": 0.5614
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "2I480AEACAAJ",
+            "title": "The Nemesis of Power",
+            "authors": [
+              "John Wheeler Wheeler-Bennett"
+            ],
+            "year": "1961",
+            "publishers": [
+              ""
+            ],
+            "isbns": [
+              "OCLC:251094266"
+            ]
+          },
+          "title_sim": 52.63,
+          "author_sim": 30.0,
+          "publisher_sim": 0.0,
+          "raw_score": 0.5263,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "power",
+          "line_indices": [
+            2
+          ],
+          "line_distance": 33.97793401606401,
+          "features": {
+            "title": 0.5263157894736843,
+            "author": 0.30000000000000004,
+            "publisher": 0.0
+          },
+          "score": 0.5263
+        }
+      ],
+      "spine_text_raw": "Pano Coehe | Panlo Coelhe | POWER | NUNCHI | NOT SYMITIS AT ER | IOOE AS GS",
+      "unit": "A",
+      "row": 2,
+      "candidate_views": [
+        {
+          "seq": 57,
+          "t_ms": 33620,
+          "frame_ref": "frames/f_000057_0033620.jpg",
+          "bbox": {
+            "x": 692,
+            "y": 1458,
+            "w": 239,
+            "h": 320,
+            "angle_deg": 90.0
+          }
+        }
+      ],
+      "queries": [
+        {
+          "query": "pano coehe",
+          "line_indices": [
+            0
+          ]
+        },
+        {
+          "query": "panlo coelhe",
+          "line_indices": [
+            1
+          ]
+        },
+        {
+          "query": "power",
+          "line_indices": [
+            2
+          ]
+        },
+        {
+          "query": "nunchi",
+          "line_indices": [
+            3
+          ]
+        },
+        {
+          "query": "not symitis at er",
+          "line_indices": [
+            4
+          ]
+        },
+        {
+          "query": "iooe as gs",
+          "line_indices": [
+            5
+          ]
+        },
+        {
+          "query": "pano coehe panlo coelhe",
+          "line_indices": [
+            0,
+            1
+          ]
+        },
+        {
+          "query": "panlo coelhe power",
+          "line_indices": [
+            1,
+            2
+          ]
+        },
+        {
+          "query": "power nunchi",
+          "line_indices": [
+            2,
+            3
+          ]
+        },
+        {
+          "query": "nunchi not symitis at er",
+          "line_indices": [
+            3,
+            4
+          ]
+        },
+        {
+          "query": "not symitis at er iooe as gs",
+          "line_indices": [
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    "b_0014": {
+      "status": "unidentified",
+      "chosen": null,
+      "title": "",
+      "authors": [],
+      "edition": "",
+      "isbn": "",
+      "raw_score": 0,
+      "id_confidence": 0.0,
+      "candidates": [
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "FSxDAgMT34kC",
+            "title": "Wer einmal l\u00fcgt",
+            "authors": [
+              "Harlan Coben"
+            ],
+            "year": "2013-03-11",
+            "publishers": [
+              "Page und Turner"
+            ],
+            "isbns": [
+              "9783641097059",
+              "3641097053"
+            ]
+          },
+          "title_sim": 37.5,
+          "author_sim": 0.0,
+          "publisher_sim": 0.0,
+          "raw_score": 0.375,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "wer",
+          "line_indices": [
+            0
+          ],
+          "line_distance": 59.5,
+          "features": {
+            "title": 0.375,
+            "author": 0.0,
+            "publisher": 0.0
+          },
+          "score": 0.375
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "-OcfAQAAMAAJ",
+            "title": "Degeners Wer ist's?",
+            "authors": [
+              "August Ludwig Degener",
+              "Walter Habel"
+            ],
+            "year": "1909",
+            "publishers": [
+              ""
+            ],
+            "isbns": [
+              "UOM:39015039471100"
+            ]
+          },
+          "title_sim": 33.33,
+          "author_sim": 0.0,
+          "publisher_sim": 0.0,
+          "raw_score": 0.3333,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "wer",
+          "line_indices": [
+            0
+          ],
+          "line_distance": 59.5,
+          "features": {
+            "title": 0.33333333333333337,
+            "author": 0.0,
+            "publisher": 0.0
+          },
+          "score": 0.3333
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "-mxiKQAACAAJ",
+            "title": "Wer schrieb die Bibel",
+            "authors": [
+              "Richard Elliott Friedman"
+            ],
+            "year": "1989",
+            "publishers": [
+              ""
+            ],
+            "isbns": [
+              "3552041133",
+              "9783552041134"
+            ]
+          },
+          "title_sim": 28.57,
+          "author_sim": 0.0,
+          "publisher_sim": 0.0,
+          "raw_score": 0.2857,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "wer",
+          "line_indices": [
+            0
+          ],
+          "line_distance": 59.5,
+          "features": {
+            "title": 0.2857142857142857,
+            "author": 0.0,
+            "publisher": 0.0
+          },
+          "score": 0.2857
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "aW5xPQAACAAJ",
+            "title": "Wer lebte wo in Berlin",
+            "authors": [
+              "Christiane Kruse"
+            ],
+            "year": "2008",
+            "publishers": [
+              ""
+            ],
+            "isbns": [
+              "379133915X",
+              "9783791339153"
+            ]
+          },
+          "title_sim": 28.57,
+          "author_sim": 0.0,
+          "publisher_sim": 0.0,
+          "raw_score": 0.2857,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "wer",
+          "line_indices": [
+            0
+          ],
+          "line_distance": 59.5,
+          "features": {
+            "title": 0.2857142857142857,
+            "author": 0.0,
+            "publisher": 0.0
+          },
+          "score": 0.2857
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "xNqFMAEACAAJ",
+            "title": "The German who's who",
+            "authors": [
+              "Walter Habel"
+            ],
+            "year": "2003",
+            "publishers": [
+              ""
+            ],
+            "isbns": [
+              "3795020360",
+              "9783795020361"
+            ]
+          },
+          "title_sim": 25.0,
+          "author_sim": 0.0,
+          "publisher_sim": 0.0,
+          "raw_score": 0.25,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "wer",
+          "line_indices": [
+            0
+          ],
+          "line_distance": 59.5,
+          "features": {
+            "title": 0.25,
+            "author": 0.0,
+            "publisher": 0.0
+          },
+          "score": 0.25
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "EzrPnQEACAAJ",
+            "title": "Wer die Nachtigall st\u00f6rt",
+            "authors": [
+              "Harper Lee",
+              "Claire Malignon"
+            ],
+            "year": "1988",
+            "publishers": [
+              ""
+            ],
+            "isbns": [
+              "OCLC:777601160"
+            ]
+          },
+          "title_sim": 25.0,
+          "author_sim": 0.0,
+          "publisher_sim": 0.0,
+          "raw_score": 0.25,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "wer",
+          "line_indices": [
+            0
+          ],
+          "line_distance": 59.5,
+          "features": {
+            "title": 0.25,
+            "author": 0.0,
+            "publisher": 0.0
+          },
+          "score": 0.25
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "TqYDGkzBCZEC",
+            "title": "Wer lebt gl\u00fccklich in Ru\u00dfland?",
+            "authors": [
+              "Nikolaj A. Nekrasov"
+            ],
+            "year": "1888",
+            "publishers": [
+              ""
+            ],
+            "isbns": [
+              "BSB:BSB11840582"
+            ]
+          },
+          "title_sim": 22.22,
+          "author_sim": 0.0,
+          "publisher_sim": 0.0,
+          "raw_score": 0.2222,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "wer",
+          "line_indices": [
+            0
+          ],
+          "line_distance": 59.5,
+          "features": {
+            "title": 0.2222222222222222,
+            "author": 0.0,
+            "publisher": 0.0
+          },
+          "score": 0.2222
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "lAdkDwAAQBAJ",
+            "title": "Wer einmal aus dem Blechnapf fri\u00dft",
+            "authors": [
+              "Hans Fallada"
+            ],
+            "year": "2018-03-21",
+            "publishers": [
+              "e-artnow"
+            ],
+            "isbns": [
+              "9788027242542",
+              "8027242541"
+            ]
+          },
+          "title_sim": 19.35,
+          "author_sim": 0.0,
+          "publisher_sim": 0.0,
+          "raw_score": 0.1935,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "wer",
+          "line_indices": [
+            0
+          ],
+          "line_distance": 59.5,
+          "features": {
+            "title": 0.19354838709677424,
+            "author": 0.0,
+            "publisher": 0.0
+          },
+          "score": 0.1935
+        }
+      ],
+      "spine_text_raw": "WER",
+      "unit": "A",
+      "row": 2,
+      "candidate_views": [
+        {
+          "seq": 90,
+          "t_ms": 53508,
+          "frame_ref": "frames/f_000090_0053508.jpg",
+          "bbox": {
+            "x": 846,
+            "y": 1643,
+            "w": 131,
+            "h": 277,
+            "angle_deg": 90.0
+          }
+        }
+      ],
+      "queries": [
+        {
+          "query": "wer",
+          "line_indices": [
+            0
+          ]
+        }
+      ]
+    }
+  },
+  "review_queue": [
+    {
+      "ref_id": "b_0005",
+      "code": "multiple_titles_in_box",
+      "other_titles": [
+        "The Everyday Hero Manifesto",
+        "Autobiography of a Yogi"
+      ]
+    },
+    {
+      "ref_id": "b_0007",
+      "code": "multiple_titles_in_box",
+      "other_titles": [
+        "Deep Work",
+        "Heal Your Mind Heal Your Life"
+      ]
+    }
+  ],
+  "catalogue_requests": [
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Aeveryday+hero+manifes&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Aeveryday+hero+manifest&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Aalmanack+of+naval+ravikant&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Aparamahansa&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Arobin+sharma&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Aautobiography+of+a+yogi&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Ayogananda&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Awith+jay+papasan&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Aeric+jorgenson&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Aone+thin&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Aalmanack+of+naval+ravikant&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": true,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Aautobiography+of+a+yogi&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": true,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Agary+keller&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Aalmanack+of+naval+ravikant+paramahansa&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Aeveryday+hero+manifes+the+everyday+hero+manifest&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Aeveryday+hero+manifesto&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Arobin+sharma&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": true,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Aone+thing&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Agary+kler&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Awhy+some+teams+pull+together+and+others+don+t&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Awary+key+learpasan&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Awith+jay+papasan&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": true,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Aeveryday+hero+manifest+robin+sharma&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Aparamahansa+yogananda&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Aautobiography+of+a+yogi+with+jay+papasan&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Aone+thing&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": true,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Aleaders+eat+last&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Aericjorgenson&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Agary+keller&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": true,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Aone&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Awhy+some+teams+pull+together+and+others+don+t&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": true,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Arobin+sharma+eric+jorgenson&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Awith+jay+papasan+gary+keller&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Aone+thin+the+one+thing&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Agarey+kler&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Aparamahansa&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": true,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Ayogananda&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": true,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Agary+keller+gary+kler&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Asimon+sinek&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Awhy+o+bdont&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Aleaders+eat+last&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": true,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Aone+thing+why+some+teams+pull+together+and+others+don+t&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Asucccs&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Awhy+some+teams+pull+together+and+others+don+t+leaders+eat+last&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Aone+thing+the+one&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Aalmanack+of+naval+ravikant+autobiography+of+a+yogi&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Adeep+work&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Ageor+nuo+ise&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Afeel+good+productivity+ali+abdaal&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Aautobiography+of+a+yogi+the+everyday+hero+manifesto&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Adeep+work+cal+newport&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Aone+why+some+teams+pull+together+and+others+don+t&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Aeveryday+hero+manifesto+robin+sharma&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Age+your+noise&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Afeel+good+produ&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Aheal+your+mind+heal+your+life&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Awhy+some+teams+pull+together+and+others+don+t+why+o+bdont&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Arobin+sharma+wary+key+learpasan&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Ahalfmurders&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Asuccess&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Aamerican+psycho&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Awhy+o+bdont+leaders+eat+last&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Awary+key+learpasan+with+jay+papasan&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Asucccs+geor+nuo+ise&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Awith+jay+papasan+ericjorgenson&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Afeel+good+produc&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Amyth+of+sisyphus&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Aamerican+psycho+bret+easton+ellis&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Aericjorgenson+gary+keller&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Aac&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Afeel+good+productivity+all+abdaal&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Aamerican+psycho&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": true,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Aamerican+psycho+bret+easton+ellis&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": true,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Ageor+nuo+ise+ge+your+noise&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Acal+newport&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Adale+carnegie&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Agary+keller+garey+kler&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Asalil+desai&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Age+your+noise+success&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Aur+job+dale+carnegie&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Alords+of+easy+money&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Airfan+alam&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Afeel+good+productivity+ali+abdaal+feel+good+produ&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Agarey+kler+paramahansa&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Aparamahansa+yogananda&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": true,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Afeel+good+produc+feel+good+productivity+all+abdaal&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Athen+s+moey&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Anunchi&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Afeel+good+productivity+all+abdaal+american+psycho&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Afeel+good+produ+american+psycho&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Asimon+sinek+deep+work&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Alords+of+easy+money+then+s+moey&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Adeep+work+deep+work+cal+newport&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Awer&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Apano+coehe&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Adeep+work+cal+newport+heal+your+mind+heal+your+life&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Aamerican+psycho+american+psycho+bret+easton+ellis&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Aamerican+psycho+american+psycho+bret+easton+ellis&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Aheal+your+mind+heal+your+life+halfmurders&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Aamerican+psycho+bret+easton+ellis+dale+carnegie&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Apanlo+coelhe&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Aamerican+psycho+bret+easton+ellis+ac&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Ahalfmurders+the+myth+of+sisyphus&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Aac+ur+job+dale+carnegie&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Apower&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Anunchi&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": true,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Amyth+of+sisyphus+cal+newport&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Anot+symitis+at+er&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Acal+newport+salil+desai&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Aiooe+as+gs&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Asalil+desai+irfan+alam&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Apano+coehe+panlo+coelhe&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Apanlo+coelhe+power&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Apower+nunchi&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Anunchi+not+symitis+at+er&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://www.googleapis.com/books/v1/volumes?q=intitle%3Anot+symitis+at+er+iooe+as+gs&maxResults=8&key=%3Credacted%3E",
+      "status": 200,
+      "cache": false,
+      "error": null
+    }
+  ],
+  "queries_generated": {
+    "b_0001": [
+      {
+        "query": "everyday hero manifes",
+        "line_indices": [
+          0
+        ]
+      },
+      {
+        "query": "everyday hero manifest",
+        "line_indices": [
+          1
+        ]
+      },
+      {
+        "query": "robin sharma",
+        "line_indices": [
+          2
+        ]
+      },
+      {
+        "query": "eric jorgenson",
+        "line_indices": [
+          3
+        ]
+      },
+      {
+        "query": "everyday hero manifes the everyday hero manifest",
+        "line_indices": [
+          0,
+          1
+        ]
+      },
+      {
+        "query": "everyday hero manifest robin sharma",
+        "line_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "query": "robin sharma eric jorgenson",
+        "line_indices": [
+          2,
+          3
+        ]
+      }
+    ],
+    "b_0002": [
+      {
+        "query": "almanack of naval ravikant",
+        "line_indices": [
+          0
+        ]
+      },
+      {
+        "query": "paramahansa",
+        "line_indices": [
+          1
+        ]
+      },
+      {
+        "query": "yogananda",
+        "line_indices": [
+          2
+        ]
+      },
+      {
+        "query": "almanack of naval ravikant paramahansa",
+        "line_indices": [
+          0,
+          1
+        ]
+      },
+      {
+        "query": "paramahansa yogananda",
+        "line_indices": [
+          1,
+          2
+        ]
+      }
+    ],
+    "b_0003": [
+      {
+        "query": "autobiography of a yogi",
+        "line_indices": [
+          0
+        ]
+      },
+      {
+        "query": "with jay papasan",
+        "line_indices": [
+          1
+        ]
+      },
+      {
+        "query": "gary keller",
+        "line_indices": [
+          2
+        ]
+      },
+      {
+        "query": "gary kler",
+        "line_indices": [
+          3
+        ]
+      },
+      {
+        "query": "autobiography of a yogi with jay papasan",
+        "line_indices": [
+          0,
+          1
+        ]
+      },
+      {
+        "query": "with jay papasan gary keller",
+        "line_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "query": "gary keller gary kler",
+        "line_indices": [
+          2,
+          3
+        ]
+      }
+    ],
+    "b_0004": [
+      {
+        "query": "one thin",
+        "line_indices": [
+          0
+        ]
+      },
+      {
+        "query": "one thing",
+        "line_indices": [
+          1
+        ]
+      },
+      {
+        "query": "why some teams pull together and others don t",
+        "line_indices": [
+          2
+        ]
+      },
+      {
+        "query": "leaders eat last",
+        "line_indices": [
+          3
+        ]
+      },
+      {
+        "query": "one thin the one thing",
+        "line_indices": [
+          0,
+          1
+        ]
+      },
+      {
+        "query": "one thing why some teams pull together and others don t",
+        "line_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "query": "why some teams pull together and others don t leaders eat last",
+        "line_indices": [
+          2,
+          3
+        ]
+      }
+    ],
+    "b_0005": [
+      {
+        "query": "almanack of naval ravikant",
+        "line_indices": [
+          0
+        ]
+      },
+      {
+        "query": "autobiography of a yogi",
+        "line_indices": [
+          1
+        ]
+      },
+      {
+        "query": "everyday hero manifesto",
+        "line_indices": [
+          2
+        ]
+      },
+      {
+        "query": "robin sharma",
+        "line_indices": [
+          3
+        ]
+      },
+      {
+        "query": "wary key learpasan",
+        "line_indices": [
+          4
+        ]
+      },
+      {
+        "query": "with jay papasan",
+        "line_indices": [
+          5
+        ]
+      },
+      {
+        "query": "ericjorgenson",
+        "line_indices": [
+          6
+        ]
+      },
+      {
+        "query": "gary keller",
+        "line_indices": [
+          7
+        ]
+      },
+      {
+        "query": "garey kler",
+        "line_indices": [
+          8
+        ]
+      },
+      {
+        "query": "paramahansa",
+        "line_indices": [
+          9
+        ]
+      },
+      {
+        "query": "yogananda",
+        "line_indices": [
+          10
+        ]
+      },
+      {
+        "query": "almanack of naval ravikant autobiography of a yogi",
+        "line_indices": [
+          0,
+          1
+        ]
+      },
+      {
+        "query": "autobiography of a yogi the everyday hero manifesto",
+        "line_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "query": "everyday hero manifesto robin sharma",
+        "line_indices": [
+          2,
+          3
+        ]
+      },
+      {
+        "query": "robin sharma wary key learpasan",
+        "line_indices": [
+          3,
+          4
+        ]
+      },
+      {
+        "query": "wary key learpasan with jay papasan",
+        "line_indices": [
+          4,
+          5
+        ]
+      },
+      {
+        "query": "with jay papasan ericjorgenson",
+        "line_indices": [
+          5,
+          6
+        ]
+      },
+      {
+        "query": "ericjorgenson gary keller",
+        "line_indices": [
+          6,
+          7
+        ]
+      },
+      {
+        "query": "gary keller garey kler",
+        "line_indices": [
+          7,
+          8
+        ]
+      },
+      {
+        "query": "garey kler paramahansa",
+        "line_indices": [
+          8,
+          9
+        ]
+      },
+      {
+        "query": "paramahansa yogananda",
+        "line_indices": [
+          9,
+          10
+        ]
+      }
+    ],
+    "b_0006": [
+      {
+        "query": "one thing",
+        "line_indices": [
+          0
+        ]
+      },
+      {
+        "query": "one",
+        "line_indices": [
+          1
+        ]
+      },
+      {
+        "query": "why some teams pull together and others don t",
+        "line_indices": [
+          2
+        ]
+      },
+      {
+        "query": "why o bdont",
+        "line_indices": [
+          3
+        ]
+      },
+      {
+        "query": "leaders eat last",
+        "line_indices": [
+          4
+        ]
+      },
+      {
+        "query": "one thing the one",
+        "line_indices": [
+          0,
+          1
+        ]
+      },
+      {
+        "query": "one why some teams pull together and others don t",
+        "line_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "query": "why some teams pull together and others don t why o bdont",
+        "line_indices": [
+          2,
+          3
+        ]
+      },
+      {
+        "query": "why o bdont leaders eat last",
+        "line_indices": [
+          3,
+          4
+        ]
+      }
+    ],
+    "b_0007": [
+      {
+        "query": "simon sinek",
+        "line_indices": [
+          0
+        ]
+      },
+      {
+        "query": "deep work",
+        "line_indices": [
+          1
+        ]
+      },
+      {
+        "query": "deep work cal newport",
+        "line_indices": [
+          2
+        ]
+      },
+      {
+        "query": "heal your mind heal your life",
+        "line_indices": [
+          3
+        ]
+      },
+      {
+        "query": "halfmurders",
+        "line_indices": [
+          4
+        ]
+      },
+      {
+        "query": "myth of sisyphus",
+        "line_indices": [
+          5
+        ]
+      },
+      {
+        "query": "cal newport",
+        "line_indices": [
+          6
+        ]
+      },
+      {
+        "query": "salil desai",
+        "line_indices": [
+          7
+        ]
+      },
+      {
+        "query": "irfan alam",
+        "line_indices": [
+          8
+        ]
+      },
+      {
+        "query": "simon sinek deep work",
+        "line_indices": [
+          0,
+          1
+        ]
+      },
+      {
+        "query": "deep work deep work cal newport",
+        "line_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "query": "deep work cal newport heal your mind heal your life",
+        "line_indices": [
+          2,
+          3
+        ]
+      },
+      {
+        "query": "heal your mind heal your life halfmurders",
+        "line_indices": [
+          3,
+          4
+        ]
+      },
+      {
+        "query": "halfmurders the myth of sisyphus",
+        "line_indices": [
+          4,
+          5
+        ]
+      },
+      {
+        "query": "myth of sisyphus cal newport",
+        "line_indices": [
+          5,
+          6
+        ]
+      },
+      {
+        "query": "cal newport salil desai",
+        "line_indices": [
+          6,
+          7
+        ]
+      },
+      {
+        "query": "salil desai irfan alam",
+        "line_indices": [
+          7,
+          8
+        ]
+      }
+    ],
+    "b_0008": [
+      {
+        "query": "succcs",
+        "line_indices": [
+          0
+        ]
+      },
+      {
+        "query": "geor nuo ise",
+        "line_indices": [
+          1
+        ]
+      },
+      {
+        "query": "ge your noise",
+        "line_indices": [
+          2
+        ]
+      },
+      {
+        "query": "success",
+        "line_indices": [
+          3
+        ]
+      },
+      {
+        "query": "succcs geor nuo ise",
+        "line_indices": [
+          0,
+          1
+        ]
+      },
+      {
+        "query": "geor nuo ise ge your noise",
+        "line_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "query": "ge your noise success",
+        "line_indices": [
+          2,
+          3
+        ]
+      }
+    ],
+    "b_0009": [
+      {
+        "query": "feel good productivity ali abdaal",
+        "line_indices": [
+          0
+        ]
+      },
+      {
+        "query": "feel good produ",
+        "line_indices": [
+          1
+        ]
+      },
+      {
+        "query": "american psycho",
+        "line_indices": [
+          2
+        ]
+      },
+      {
+        "query": "american psycho bret easton ellis",
+        "line_indices": [
+          3
+        ]
+      },
+      {
+        "query": "ac",
+        "line_indices": [
+          4
+        ]
+      },
+      {
+        "query": "ur job dale carnegie",
+        "line_indices": [
+          5
+        ]
+      },
+      {
+        "query": "feel good productivity ali abdaal feel good produ",
+        "line_indices": [
+          0,
+          1
+        ]
+      },
+      {
+        "query": "feel good produ american psycho",
+        "line_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "query": "american psycho american psycho bret easton ellis",
+        "line_indices": [
+          2,
+          3
+        ]
+      },
+      {
+        "query": "american psycho bret easton ellis ac",
+        "line_indices": [
+          3,
+          4
+        ]
+      },
+      {
+        "query": "ac ur job dale carnegie",
+        "line_indices": [
+          4,
+          5
+        ]
+      }
+    ],
+    "b_0010": [
+      {
+        "query": "feel good produc",
+        "line_indices": [
+          0
+        ]
+      },
+      {
+        "query": "feel good productivity all abdaal",
+        "line_indices": [
+          1
+        ]
+      },
+      {
+        "query": "american psycho",
+        "line_indices": [
+          2
+        ]
+      },
+      {
+        "query": "american psycho bret easton ellis",
+        "line_indices": [
+          3
+        ]
+      },
+      {
+        "query": "dale carnegie",
+        "line_indices": [
+          4
+        ]
+      },
+      {
+        "query": "feel good produc feel good productivity all abdaal",
+        "line_indices": [
+          0,
+          1
+        ]
+      },
+      {
+        "query": "feel good productivity all abdaal american psycho",
+        "line_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "query": "american psycho american psycho bret easton ellis",
+        "line_indices": [
+          2,
+          3
+        ]
+      },
+      {
+        "query": "american psycho bret easton ellis dale carnegie",
+        "line_indices": [
+          3,
+          4
+        ]
+      }
+    ],
+    "b_0011": [
+      {
+        "query": "lords of easy money",
+        "line_indices": [
+          0
+        ]
+      },
+      {
+        "query": "then s moey",
+        "line_indices": [
+          1
+        ]
+      },
+      {
+        "query": "lords of easy money then s moey",
+        "line_indices": [
+          0,
+          1
+        ]
+      }
+    ],
+    "b_0012": [
+      {
+        "query": "nunchi",
+        "line_indices": [
+          0
+        ]
+      }
+    ],
+    "b_0013": [
+      {
+        "query": "pano coehe",
+        "line_indices": [
+          0
+        ]
+      },
+      {
+        "query": "panlo coelhe",
+        "line_indices": [
+          1
+        ]
+      },
+      {
+        "query": "power",
+        "line_indices": [
+          2
+        ]
+      },
+      {
+        "query": "nunchi",
+        "line_indices": [
+          3
+        ]
+      },
+      {
+        "query": "not symitis at er",
+        "line_indices": [
+          4
+        ]
+      },
+      {
+        "query": "iooe as gs",
+        "line_indices": [
+          5
+        ]
+      },
+      {
+        "query": "pano coehe panlo coelhe",
+        "line_indices": [
+          0,
+          1
+        ]
+      },
+      {
+        "query": "panlo coelhe power",
+        "line_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "query": "power nunchi",
+        "line_indices": [
+          2,
+          3
+        ]
+      },
+      {
+        "query": "nunchi not symitis at er",
+        "line_indices": [
+          3,
+          4
+        ]
+      },
+      {
+        "query": "not symitis at er iooe as gs",
+        "line_indices": [
+          4,
+          5
+        ]
+      }
+    ],
+    "b_0014": [
+      {
+        "query": "wer",
+        "line_indices": [
+          0
+        ]
+      }
+    ]
+  },
+  "thresholds": {
+    "title_sim_min": 90,
+    "author_sim_min_for_short_titles": 85,
+    "minimum_words_without_author": 3
+  },
+  "calibration": {
+    "method": "title similarity with author gate",
+    "fitted_on": null
+  }
+}

@@ -1,0 +1,1771 @@
+{
+  "search_metadata": {
+    "id": "6b090b897b5ec098abf3cb2e",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/vE7K4VdzUpDtSU8SODmeOjzin0y0BVJjOO_icfV7cHs/6b090b897b5ec098abf3cb2e.json",
+    "markdown_endpoint": "https://serpapi.com/searches/vE7K4VdzUpDtSU8SODmeOjzin0y0BVJjOO_icfV7cHs/6b090b897b5ec098abf3cb2e.md",
+    "created_at": "2026-11-27 04:48:09 UTC",
+    "processed_at": "2026-11-27 04:48:09 UTC",
+    "ebay_url": "https://www.ebay.co.uk/sch/i.html?_nkw=The+Lords+of+Easy+Money+Christopher+Leonard+book",
+    "raw_html_file": "https://serpapi.com/searches/vE7K4VdzUpDtSU8SODmeOjzin0y0BVJjOO_icfV7cHs/6b090b897b5ec098abf3cb2e.html",
+    "total_time_taken": 1.18
+  },
+  "search_parameters": {
+    "engine": "ebay",
+    "_nkw": "The Lords of Easy Money Christopher Leonard book",
+    "ebay_domain": "ebay.co.uk"
+  },
+  "search_information": {
+    "organic_results_state": "Results for exact spelling",
+    "total_results": 82,
+    "query_displayed": "The Lords of Easy Money Christopher Leonard book"
+  },
+  "categories": [
+    {
+      "name": "Books, Comics & Magazines",
+      "link": "https://www.ebay.co.uk/sch/267/i.html?_nkw=The+Lords+of+Easy+Money+Christopher+Leonard+book",
+      "id": 267,
+      "serpapi_link": "https://serpapi.com/search.json?_nkw=The+Lords+of+Easy+Money+Christopher+Leonard+book&category_id=267&ebay_domain=ebay.co.uk&engine=ebay"
+    },
+    {
+      "name": "Fiction & Non-Fiction Books",
+      "link": "https://www.ebay.co.uk/sch/261186/i.html?_nkw=The+Lords+of+Easy+Money+Christopher+Leonard+book",
+      "id": 261186,
+      "serpapi_link": "https://serpapi.com/search.json?_nkw=The+Lords+of+Easy+Money+Christopher+Leonard+book&category_id=261186&ebay_domain=ebay.co.uk&engine=ebay"
+    },
+    {
+      "name": "Adult Learning & University Books",
+      "link": "https://www.ebay.co.uk/sch/1105/i.html?_nkw=The+Lords+of+Easy+Money+Christopher+Leonard+book",
+      "id": 1105,
+      "serpapi_link": "https://serpapi.com/search.json?_nkw=The+Lords+of+Easy+Money+Christopher+Leonard+book&category_id=1105&ebay_domain=ebay.co.uk&engine=ebay"
+    }
+  ],
+  "organic_results": [
+    {
+      "sponsored": true,
+      "title": "The Lords of Easy Money How the Federal Reserve Broke the | Christopher Leonard",
+      "link": "https://www.ebay.co.uk/itm/115406902114?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=24083463138&itmmeta=01M8DNA54B2T7VQGF273C40SGH&hash=item1adec99362:g:WQIAAOSwp49il3CK&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde8FGXPBLDMUY0ExkNQKSJiRQVvsBUZqlhO40omuHz7GhgiyUfpm96yboe92qzH0KJFxqZgbXSyB36MG5KReIx4bnrQZkQmhufRt5iipN50LKtBczc403%2FQGWcw%2B3M%2Br17jGlbhdfOwxkK5feqSUqUDxRsaCM86o4ZnSWw3YTNqqTwZY08GqB2HcnFVSKgHvx9O%2Bc9YhEqw9hc5vVeHJuPBx7lcRuKfVFBtnTOGjq%2Fc8%2BswjIs%2BfNL0gl2RSvXV%2F8JjoV2FvYEo7zYMLsRx4W2B7x%2BQT%2FT32p6I4vi7qIoYrVg%3D%3D%7Ctkp%3ABlBMUM7SqLXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=115406902114",
+      "product_id": "115406902114",
+      "epid": "24083463138",
+      "condition": "Brand new",
+      "rating": 5.0,
+      "reviews": 1,
+      "price": {
+        "raw": "£8.98",
+        "extracted": 8.98
+      },
+      "shipping": "Free delivery",
+      "quantity_sold": "338 sold",
+      "extracted_quantity_sold": 338,
+      "promotion": "10% off over £45 with coupon",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/WQIAAOSwp49il3CK/s-l500.jpg",
+      "seller": {
+        "username": "books4peopleuk",
+        "reviews": 161300,
+        "positive_feedback_in_percentage": 99.9
+      }
+    },
+    {
+      "sponsored": true,
+      "title": "The Lords of Easy Money By Christopher Leonard - Non Fiction - Paperback",
+      "link": "https://www.ebay.co.uk/itm/397017399810?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&itmmeta=01M8DNA54BNDCVPDD3AAJ91V1H&hash=item5c7014c202:g:4sMAAeSweKxot~-k&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2BNLmP8TQXhibSazDQQtY0u7pb3PYLBi9g5V3Umj6uk%2FNjsrVTVos4VWIYCmR4JOfwNOdoNNuoWajLwi44JtDlzBwQMtO99uFqNapd5XxQXl39jCBCbHE65ahC6rRJbIEPcF29BLvHIVt%2FmV9bNUWgSV2sai4Xj82id8Y17ArU1keo2bPtLV3m%2FaLwpqpcUan4torE7QPQuLDZOBZWO7S2Pwc%2Bt4R3VbgJzhmMy16RcjXtUQ6pe4Xbnd9tIIZAM8N5Pc74ScSG8ZKGBJQ8cpUwg8TjNd1TUNuqIPq%2Bg3ZOB9pi51%2FGEUp7KakQL%2FaNqbrVpjP1B%2F8Ia5oX7zFssfexC%7Ctkp%3ABFBMztKotcNo",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=397017399810",
+      "product_id": "397017399810",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£6.49",
+        "extracted": 6.49
+      },
+      "old_price": {
+        "raw": "£9.99",
+        "extracted": 9.99,
+        "discount": "£6.49"
+      },
+      "shipping": "Free delivery in 3 days",
+      "promotion": "£5.84 with coupon",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/4sMAAeSweKxot~-k/s-l500.jpg",
+      "seller": {
+        "username": "bangzo_bookstore",
+        "reviews": 210000,
+        "positive_feedback_in_percentage": 100
+      }
+    },
+    {
+      "sponsored": true,
+      "title": "The Lords of Easy Money By Christopher Leonard - Non Fiction - Paperback",
+      "link": "https://www.ebay.co.uk/itm/187537589356?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&itmmeta=01M8DNA54BABY5VA08TM11RGM7&hash=item2baa1c846c:g:ZjQAAOSwHfFlJ902&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde80IcCp4%2BDUVOizRgcwpfaXrpRAzGZ071sa1IpImGITY7RcRNRmscKkU2ArRwMinLMkWB%2FO55YNiaWGZ3H%2BwxUFlGJqtIInKn0LG8%2FLGUORDqtmszfhFpQ2HiJ4JJgtfhKmlbMcw6nH1GwjZgZ6ATxdipmKUMx5LXrKFatDHc69nmME6KEJlc23n4NXjkki2l5Sy54bI24H6SE10a%2B3gx%2FfrTCQcXtWGruv38UhZjFmy2JE%2FKbh5ARGCHqu2ywc0p1l9uxxOF5j0GtwuI4v8dPt9cKHVItXfDH%2F7y9bdVhdhbyy%2B%2FHNYfSPh7jOus7bEemWHVB6oGlO58ruHShBP4mx%7Ctkp%3ABFBMztKotcNo",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=187537589356",
+      "product_id": "187537589356",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£7.29",
+        "extracted": 7.29
+      },
+      "old_price": {
+        "raw": "£9.99",
+        "extracted": 9.99,
+        "discount": "£7.29"
+      },
+      "shipping": "Free delivery in 3 days",
+      "promotion": "£6.56 with coupon",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/ZjQAAOSwHfFlJ902/s-l500.jpg",
+      "seller": {
+        "username": "books2door",
+        "reviews": 301800,
+        "positive_feedback_in_percentage": 100
+      }
+    },
+    {
+      "sponsored": true,
+      "title": "Christopher Leonard The Lords of Easy Money (Paperback)",
+      "subtitle": "Another great item from Rarewaves | Free delivery",
+      "link": "https://www.ebay.co.uk/itm/307281755635?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=8082523588&itmmeta=01M8DNA54B4CH36KVVA1HHS95F&hash=item478b6b7df3:g:EW0AAeSwOdBq99FG&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2BqC1aaBn4XSQ4fB90qPp4%2F9G0u%2BzvDNS434iz7L1w%2FtDHn4THStFMBWxxufNcy5OjyLWxR8sZgfzhe8kMW9zXlAmjdxivwn2qZpLYabURM31WjCiInUpNyszilcoKOhIcuoOG6VqIqvYzat%2BnRYd1xy3xHQgTt7abyY8e%2FAwte1feRiXeYfqUbJ4DIKPeB1ENRklaaCJmSG1fT9Q2vLpnNRi4f%2BgXxbUH5f6fiPyovES3TcrEZAFkCa6jrutKeLNrwYKCJvdY3SlMB7oG5o84yEAivlcTdvVMEdbVYxmX0HLZZBhgFXBAPAPDHwAWtebxyWEiFzMamxSIly%2F%2B1aiff%7Ctkp%3ABFBMztKotcNo",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=307281755635",
+      "product_id": "307281755635",
+      "epid": "8082523588",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£10.27",
+        "extracted": 10.27
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/EW0AAeSwOdBq99FG/s-l500.jpg",
+      "seller": {
+        "username": "rarewaves-outlet",
+        "reviews": 1700000,
+        "positive_feedback_in_percentage": 98.8
+      }
+    },
+    {
+      "title": "The Lords of Easy Money: How the Federal Reserve Broke by Christopher Leonard PB",
+      "link": "https://www.ebay.co.uk/itm/257113784383?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&itmmeta=01M8DNA54CGNZ11DS3ZEAGPPP3&hash=item3bdd2d003f:g:6qgAAeSwQypozPKw&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2B7isYXqYuScBxpIKR%2FFBDj%2FIk6%2Fn0SZnyKbdSjwcM3FJHOxlcx9QnynoQtnDkGkP1b8Ck7DiGw2V5oBp4eKqyTZk6vIfqrUkC%2FLmaWi5MCQkKT1iXhYNZL5J%2FZJNXD4dSf9sJkPljk1o4g8%2BRGFJFok3yyyhL8eXDFtsB9Far7PbA1n4xyXoMO%2FyVzGkqtccFJuJHs6U3lYKbGCzgNQOWnPRcF%2FKePPyL%2F0zd04NvntRkFrxk7W6nmmvYZJtVGShPFq5bjjlKWkijRFFQV7PV1e1CU9rPC2enYGiJSDuf2nA%3D%3D%7Ctkp%3ABk9SR87SqLXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=257113784383",
+      "product_id": "257113784383",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£6.49",
+        "extracted": 6.49
+      },
+      "old_price": {
+        "raw": "£6.84",
+        "extracted": 6.84,
+        "discount": "£6.49"
+      },
+      "shipping": "Free delivery in 3 days",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/6qgAAeSwQypozPKw/s-l500.jpg",
+      "seller": {
+        "username": "zoblit",
+        "reviews": 64400,
+        "positive_feedback_in_percentage": 99.9
+      }
+    },
+    {
+      "title": "The Lords of Easy Money by Christopher Leonard (Paperback Book)",
+      "link": "https://www.ebay.co.uk/itm/287588009101?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=8082523588&itmmeta=01M8DNA54CP81316RZ4W9JQ6JZ&hash=item42f594c48d:g:~68AAeSwOWNrBMVu&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2FPprtWXZcBzBV%2BoIhnCd5qX7OnyWxpWJrSkM22oS%2BSlCai8cVx73y18LyS83KO2qLh3ywJ%2BwPMztwMSTE%2FLVeZ39EJUIRaMcJOvz4zZzXIcmeLtUxhLvp7iy6z5ZQZe%2FLsK%2F%2BWAnBGBSw7iM%2FdC8X3DN4v0PzlWCC1N3R9M3ctTZLqYV%2F6nOyZdHQj6bo7AoWrIntVhi%2BkelBhw9wi1TPgJBLUM17NxhTc6DszwFWssw%2F7zZlPYqvD7iG7bDO5kctFT2Cjx2a2UP1k9vLIuixSp2BeRmHwOdCSbYvgTFg733OM2ya9VWChgIzyJ5Y8fpQIcadwpaFjhipcDV%2Bz9PI8%7Ctkp%3ABk9SR87SqLXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=287588009101",
+      "product_id": "287588009101",
+      "epid": "8082523588",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£10.87",
+        "extracted": 10.87
+      },
+      "old_price": {
+        "raw": "£10.99",
+        "extracted": 10.99,
+        "discount": "£10.87"
+      },
+      "shipping": "Free delivery in 3 days",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/~68AAeSwOWNrBMVu/s-l500.jpg",
+      "seller": {
+        "username": "bookcorneruk",
+        "reviews": 126700,
+        "positive_feedback_in_percentage": 100
+      }
+    },
+    {
+      "title": "The Lords of Easy Money: How the Federal Reserve Broke by Christopher Leonard",
+      "link": "https://www.ebay.co.uk/itm/187706675143?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&itmmeta=01M8DNA54CXA8TDA2K44SJ9DHR&hash=item2bb4308fc7:g:xE8AAeSwvrlpCDy7&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9aYKZF1JduC99I9dlJ7BynIAVVKtigW506Wrbqk0r53FX4J4XR6qDGGkrFCFvEPwP7DD8DjvQ25b1oFR3CaJvu2Sq3s3VSrGC3sqx4uiS6gVBY%2FHvkCpnt%2FEHPj93ocsgC2xwtd%2FtCo%2BBnJC36hvfY4ScoLHAnosE3ub%2BzCrSvHl1uZ40T9gsgvSsbf6lf7OPUJqPP84Xj9a01qSBCxJtlPB%2BtsuXua1i2Fb%2FgaHxRcnedFQNFc7YWaIHjyOdRlE4dXMlNBo4A7m8BPm0pyQ2%2BkwVU99%2FLq4JSJZjaAQIW%2BSgffPLBGXBGp4FV89QftKupKhvPFlAJvb8e1NnEWA3C%7Ctkp%3ABk9SR87SqLXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=187706675143",
+      "product_id": "187706675143",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£7.60",
+        "extracted": 7.6
+      },
+      "shipping": "Free delivery in 3 days",
+      "promotion": "Save up to 6% with Multi-buy",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/xE8AAeSwvrlpCDy7/s-l500.jpg",
+      "seller": {
+        "username": "primebookstore",
+        "reviews": 7400,
+        "positive_feedback_in_percentage": 99.9
+      }
+    },
+    {
+      "title": "The Lords of Easy Money: How the Federal Reserve Broke by Christopher Leonard PB",
+      "link": "https://www.ebay.co.uk/itm/157333151281?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&itmmeta=01M8DNA54C1EMM6D5SNRTEDK1P&hash=item24a1c95e31:g:tmkAAeSwwp1ozURX&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde88%2BRN55jaVHtVD2%2FuNifddrnjbrAZ3ruFNYMqoArUPvoWb8j1DMRnBvcB0BuSLYNfgYf3riU71skeM2asNMvFKQV%2FsbaXU93u09pDDGi4%2FXl%2FDB%2FizTiYZ7svC1QlKuiNJZAAxw3tkCnmZWYadIWoQccoJZ8lzAJ7%2F%2BgpuaMiCMbcXrq93ODoIK44NiOk9%2Fq91oaUB1erll0oeZ8djA4M1fFo6sEC8wOUmgkleQv52tnxkERahLjm6H5OI%2FaYDBuTRSSdw5bPNPnaBonD2%2FYysukjCUvo6ioxSnMU1dOU2rrC8y0%2FdIDNn%2FcTT%2Fr16ZmP6uKWAyhxJ4aN0d6pKKjYW%7Ctkp%3ABk9SR87SqLXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=157333151281",
+      "product_id": "157333151281",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£6.84",
+        "extracted": 6.84
+      },
+      "old_price": {
+        "raw": "£7.60",
+        "extracted": 7.6,
+        "discount": "£6.84"
+      },
+      "shipping": "Free delivery in 3 days",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/tmkAAeSwwp1ozURX/s-l500.jpg",
+      "seller": {
+        "username": "bookwalla2011",
+        "reviews": 238200,
+        "positive_feedback_in_percentage": 100
+      }
+    },
+    {
+      "title": "The Lords of Easy Money How the Federal Reserve Broke the | Leonard Christopher",
+      "link": "https://www.ebay.co.uk/itm/197718160415?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=24083463138&itmmeta=01M8DNA54CMMBY5FT8XVS2T15S&hash=item2e08ebb41f:g:DDcAAeSw3VFo0R1w&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde9Y%2FYrBN8bY01T9vF1jOxI6rPByH7WyLmeCoDItwKBJQXcfAJsn0GN6YsX1lU5cP%2BBSJ1%2F19H5i3w%2BbjQX50OOZ8rZ3Q65QeaKV4oaRPMu%2Furd4tR18yu8%2BwYZ88V%2BvK3Vs%2BhdOpRNht6OaptfvXAWjoyN%2FnfrL5K0zFBgwqHNt61CkXTO4omo88LQOZfowU8xx3EdSUOOwa9Yx51xhErgRSS1kSUd2kcZgEQvX%2B0bpxVie2kTXevNICwBJQR21zKdhHu45%2BajCWcIP3btkLRKxtS%2BwgWn8aR%2Fyr1CYnWJjuA%3D%3D%7Ctkp%3ABk9SR9DSqLXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=197718160415",
+      "product_id": "197718160415",
+      "epid": "24083463138",
+      "condition": "Brand new",
+      "rating": 5.0,
+      "reviews": 1,
+      "price": {
+        "raw": "£7.49",
+        "extracted": 7.49
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/DDcAAeSw3VFo0R1w/s-l500.jpg",
+      "seller": {
+        "username": "miimii4",
+        "reviews": 9900,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "title": "The Lords of Easy Money How the Federal Reserve Broke the | Christopher Leonard",
+      "link": "https://www.ebay.co.uk/itm/940030440160?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=24083463138&itmmeta=01M8DNA54C2E1S6WHC0352MWAW&hash=itemdade2e32e0:g:J8gAAeSwHotq2KXf&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9yyQB%2Bb9Sq4j0JyAxbH230lBHtnUc2jtSpNLz5wQ6Nqh88Mhi81ZTx3TSzSuBs69ZohjE4YyAHk7elwQFvjrhwnvP8ysuIt%2BEnkVsNkP4X2%2FSXYuRJSFak6EEstcRj%2Bls3WGhsjIp3Dby6UjTDPG1SZ6%2BCkrqTI9x6YQ8OgSlK%2FwLTXFhW0r76d0T2iNsWp0q93ekcBHU9ZZEWt0p%2FmnHZOTVcrYcmXSbJuLLxUbNB4kXrYrVHd4OzPF%2BRj3gt60TbgN6u0fcgIkW4P3PMtZb2L553RAo5GPtjx7yDr5oiVhgeRdf4CqfXhOJk9PEDLqEG9MsoNtS9AJjGlvFFi4hx%7Ctkp%3ABk9SR9DSqLXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=940030440160",
+      "product_id": "940030440160",
+      "epid": "24083463138",
+      "condition": "Brand new",
+      "rating": 5.0,
+      "reviews": 1,
+      "price": {
+        "raw": "£7.29",
+        "extracted": 7.29
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/J8gAAeSwHotq2KXf/s-l500.jpg",
+      "seller": {
+        "username": "zizi657",
+        "reviews": 3300,
+        "positive_feedback_in_percentage": 100
+      }
+    },
+    {
+      "title": "The Lords of Easy Money: How the Federal Reserve Broke By Christopher Leonard PB",
+      "link": "https://www.ebay.co.uk/itm/397072162704?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&itmmeta=01M8DNA54DQRM6DGZAS6QQW8YF&hash=item5c73585f90:g:-wcAAeSwjB5ozVY0&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2BQCGikpeUfQRJDQCKXVlA6BCp6GNjUj4xAHgZ4rj2Mpl9Wr9GUNgMju2erJQXodKrUrPJimUzjCBmMVdIFZXGVPstqTC0m5ZVGQ5Ej8OxKFHCIZV0yETJdpHDQ93B8b3MA9USyTSX04SPnMeYhqjx2Y4zc1E5bOUirSFnW0uMCHQIyAnb7NishMgT9BuNIo5rqlJhmGw2vyiIDtYFZA3aQdetDPYz1ixGtIcLaqwTzfw5AHn1laSfTVmsBFeZKXjlUaFeqWHzyWCeqqHRrMSH4MQuzxzwCSjQqBzF7pL4yEIPDdFEM4vkbKU4y1XA77xZ8a4CZBKCauQBCvfNvI9hz%7Ctkp%3ABk9SR9DSqLXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=397072162704",
+      "product_id": "397072162704",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£7.14",
+        "extracted": 7.14
+      },
+      "old_price": {
+        "raw": "£7.60",
+        "extracted": 7.6,
+        "discount": "£7.14"
+      },
+      "shipping": "Free delivery in 3 days",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/-wcAAeSwjB5ozVY0/s-l500.jpg",
+      "seller": {
+        "username": "thebookbundleuk",
+        "reviews": 117500,
+        "positive_feedback_in_percentage": 99.9
+      }
+    },
+    {
+      "title": "The Lords of Easy Money: How the Federal Reserve Broke by Christopher Leonard PB",
+      "link": "https://www.ebay.co.uk/itm/336186471694?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&itmmeta=01M8DNA54D9FSK5112PAC58QD0&hash=item4e4646750e:g:ufAAAeSwOWhozODU&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2B%2Faia6xjpWRHACfem2rWa5urySE1m%2B1jVbmtKS1t8EXqHiuAgJL%2BgbAee1%2Bt0HsaYzucRw5hxmUmuZ5Ks2VeU3iNUKhirCQJjj4O8yHw9IWZRQLPI%2FlB6m%2FC69bl7gA1pYDSVlwfG5nfKGRSHzBsrPdEq%2BedeDT6FYWjcwPAGYM2f9JwjW%2Fz5EGPdjoFz57P0RmsXsMCHTeFU4Tkt7NvPxaLmLLVWsx%2BZ1D5lUangVy2aW203SmOppDz7Xfm6BC8XW9bYM%2BHf1SM34PKG77ModumeWFiprKwP%2FjnrdLCsquH4tWYg8i7dFRcR1gcTLqEotKrSdLUIcb6tSzYNCMJ%2B1%7Ctkp%3ABk9SR9DSqLXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=336186471694",
+      "product_id": "336186471694",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£7.60",
+        "extracted": 7.6
+      },
+      "shipping": "Free delivery in 3 days",
+      "promotion": "7% off over £25 with coupon",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/ufAAAeSwOWhozODU/s-l500.jpg",
+      "seller": {
+        "username": "koblit2018",
+        "reviews": 52200,
+        "positive_feedback_in_percentage": 100
+      }
+    },
+    {
+      "sponsored": true,
+      "title": "The Lords of Easy Money: How the Fe..., Christopher Leo",
+      "subtitle": "Free UK Delivery | 10m Happy Customers | Trusted Seller",
+      "link": "https://www.ebay.co.uk/itm/397157685872?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&itmmeta=01M8DNA54D17538NXZCFKVFYY9&hash=item5c78715a70:g:rj8AAeSw4cVpRxLe&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8IR0hUE3FRXEKcNoDr9cH7SlMO--A9EoOvn9XkkWsupPlTU2q46BaDmEfcyeT6mT6vuJx%2FV6Z2UNsHo792I9C2Wk9XhiqqX5YgTkeyIMk7NpMnXSLdvayPD%2FDiLfd%2BGJebgzPYYwp0ZURaxDgxO3DldQwGRYNPS7z1rmeWggj5XclEWoHbabmXtChIKrFqkrc8pTpg1Fppw9BdVgIyxPAwYi%2FFZ%2BBD0xrER7vxoSbQcSzzACY62w93j4NY%2FLhuEAzEjtf7awYn%2Brn%2FxlBQ6X0krofQlEdpzudBbybDLLY%2F%2Bjy2LZSLpLS2PQ%2F1YmqNKrZd1KPqeAhDlIkLf%2FWgR4PT%7Ctkp%3ABFBM0NKotcNo",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=397157685872",
+      "product_id": "397157685872",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£18.69",
+        "extracted": 18.69
+      },
+      "shipping": "Free delivery in 3 days",
+      "promotion": "Buy 2, get 1 20% off",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "extensions": [
+        "Direct from World of Books"
+      ],
+      "thumbnail": "https://i.ebayimg.com/images/g/rj8AAeSw4cVpRxLe/s-l500.jpg",
+      "seller": {
+        "username": "worldofbooks08",
+        "reviews": 11900000,
+        "positive_feedback_in_percentage": 99.5
+      }
+    },
+    {
+      "sponsored": true,
+      "title": "The Lords of Easy Money: How the Federal Reserve Broke the Amer .9781982166649",
+      "link": "https://www.ebay.co.uk/itm/307286388629?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=8082523588&itmmeta=01M8DNA54D6DNDE3J7KC1CC2K1&hash=item478bb22f95:g:yvsAAeSwuxBq--ii&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2BnoDGb2pk3LyoctjezJyTx4TVWqoC9Bb2ZSN0KYIFmC67OoFPgIuoKNon9jIgr5cd2ZKUTuN97Pj1W9NabOjyRgFSc1t6nOkddOFDezW465H3Uv%2F85y3snW4mqYgR%2Bzx4vo6UQos9ktp6tiRTavAELg24tAdvRivLQJaYZxgM6GnuNe9RQrkKIh%2Fj1hXdit%2BpjeoIzqfdB5OqaFGJYpBFHLIohJtA6ubD3%2B6CiCi%2BQpT9KlIFFLy3xFTQjXHxruURx6NC8KDpVHujcKHUSLi%2FbbxtEet3YaU1H79SLfS5Kn2xZyv8FvUans%2FkL%2FeACoxMNNG4mk3YXlelhhKY65oq4%7Ctkp%3ABFBM0NKotcNo",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=307286388629",
+      "product_id": "307286388629",
+      "epid": "8082523588",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£11.16",
+        "extracted": 11.16
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/yvsAAeSwuxBq--ii/s-l500.jpg",
+      "seller": {
+        "username": "baham_books",
+        "reviews": 3600000,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "sponsored": true,
+      "title": "The Lords of Easy Money: How the Fe..., Leonard, Christ",
+      "subtitle": "Free UK Delivery | 10m Happy Customers | Trusted Seller",
+      "link": "https://www.ebay.co.uk/itm/147685561716?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=24083463138&itmmeta=01M8DNA54D6DW6XKHFXF8RXFEJ&hash=item2262bed574:g:TEgAAeSw9mFq~Oor&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9cimDOS3Nw3rZ70n7%2BUB2HsQLt4lC07s11PL15wXFl3x8FvvZpP2C1br%2FRpxxdcQHftdYKc2az4YIRQjb1ZMT6yPN8%2BmpLfYQhBykXeEQ1B7elLldL5Gau7UMWjaYmWHMUVhaDPUr%2BYWFQvMlmFbTYHHNuXXcfrF9WBmANPdugLFx%2FZbqcllTNVjBPjZW%2Fjegm6HClbiq%2BAKVHY6Id1mLrQPypoA7iAadVQHunEpantDZP2hVNt6IWqstm5%2BNxKf47Vn9WZ0XHDIoOHAkqs7%2B3JxFCgLVPl969hxmsMblEM%2FxJWaIrFS6AfTNaFkroTQqRHtLqGo6SWZGkga9zOa1P%7Ctkp%3ABFBM0NKotcNo",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=147685561716",
+      "product_id": "147685561716",
+      "epid": "24083463138",
+      "condition": "Pre-owned",
+      "rating": 5.0,
+      "reviews": 1,
+      "price": {
+        "raw": "£20.99",
+        "extracted": 20.99
+      },
+      "shipping": "Free delivery in 3 days",
+      "promotion": "Buy 2, get 1 20% off",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "extensions": [
+        "Direct from World of Books"
+      ],
+      "thumbnail": "https://i.ebayimg.com/images/g/TEgAAeSw9mFq~Oor/s-l500.jpg",
+      "seller": {
+        "username": "worldofbooks08",
+        "reviews": 11900000,
+        "positive_feedback_in_percentage": 99.5
+      }
+    },
+    {
+      "sponsored": true,
+      "title": "The Lords of Easy Money: How the Federal Reserve Broke the Ameri",
+      "link": "https://www.ebay.co.uk/itm/920151301071?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=8082523588&itmmeta=01M8DNA54DSAZ9MDK2HY6CYG6P&hash=itemd63d4a9bcf:g:fyEAAeSw5Nlq--yD&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2Fpmcn9p8Z0JNP4zJxeYWYAmtR2Nneyeec44mRkL0df%2Bb5C0dCIPB7yS033yIob%2FXA9z8fHsHjhWe3qacdP0W1jnqKYjg4%2F7vMo8QmMgH9H4ltNFLgITbQ2L5xjyb2LJq33hBtAO3HXRbuh7A5kl%2BFUClJT7UbAJZPH5rPGVV8pjuP1QRGUlOzNpJHnK1cij0oM5WUamC9FXaZYiiVid8dgLtkArMPMT4nnbp6BmPcOlUeSFA7LQCx5zadtg2ZMQNcfsBgeDoUE3ATsAjTS3Y6BaKgqAy1dulZNHTw%2Br7Jl2u663%2BBz%2FsB%2FjP75hgvnb7yFy2OjeHrH1MoeFPYtP7oy%7Ctkp%3ABFBM0NKotcNo",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=920151301071",
+      "product_id": "920151301071",
+      "epid": "8082523588",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£12.84",
+        "extracted": 12.84
+      },
+      "shipping": "Free delivery in 3 days",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "extensions": [
+        "Direct from Awesome Books"
+      ],
+      "thumbnail": "https://i.ebayimg.com/images/g/fyEAAeSw5Nlq--yD/s-l500.jpg",
+      "seller": {
+        "username": "awesomebooksuk",
+        "reviews": 2600000,
+        "positive_feedback_in_percentage": 99.7
+      }
+    },
+    {
+      "title": "The Lords of Easy Money: How the Federal by Christopher Leonard (PB 2023)",
+      "link": "https://www.ebay.co.uk/itm/198484733079?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=8082523588&itmmeta=01M8DNA54E3EFF3G8337ZECNH7&hash=item2e369cac97:g:MtkAAeSwro9qTjzO&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2BZq64DEV%2B3%2FswuSzXX%2BuELcVk2lhSX2ZNig%2BtXzy8Gk8JnOtnhgpZ3IublqVVWscxFY4mvtykzxB1V0ZTij7hP0F2U4JyaXi%2FG3laJSwO123Cx6%2Bv47z176c33YvIsKi31XuEA9Mzt01CEpiH%2BfSt2B73N4G0U%2BlZToxqOpYJCcSD4NHW3ItnZ8wR4IUH2RTx6DFpTx5DdnDE7wiNcafm%2Bp9N1ExeHz3lzb24rJSya%2ByE5%2FnAA6mVxzOSMDfx%2Fk%2F2jLnBsD6335HGGAwmkRZBe6%2Bo%2BNu9YmdIQa9GIg4dR5w%3D%3D%7Ctkp%3ABk9SR9DSqLXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=198484733079",
+      "product_id": "198484733079",
+      "epid": "8082523588",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£11.11",
+        "extracted": 11.11
+      },
+      "shipping": "Free delivery in 3 days",
+      "promotion": "Save up to 5% with Multi-buy",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/MtkAAeSwro9qTjzO/s-l500.jpg",
+      "seller": {
+        "username": "i-got-to-have-that",
+        "reviews": 624100,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "title": "The Lords of Easy Money: How the Fe..., Christopher Leo",
+      "subtitle": "Free UK Delivery | 10m Happy Customers | Trusted Seller",
+      "link": "https://www.ebay.co.uk/itm/307002716462?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&itmmeta=01M8DNA54EP7D49Y2ZFPNXSTJ2&hash=item477ac9b12e:g:YBUAAeSw5oRqLz5D&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde9j%2BsR0EU2fsPslbaO2Z%2F1tFUJlOQdCacvIrtYO%2B1YwPjP2ArMqY1L6tnYSk2G%2Fu3BoxrI3NYILW35J39EatFS1NVKZ%2FWYJUtNBGqSUrPbr%2F25m8EMmS7GboSP2YlrnzWA9h2tzBUPkyX4A0mIDjSt29IpwNx6KLYFMrU3cw6rpE4%2Fca2wVHAGgbGwb9qB7pxfF6sjh1nejt0DZeOcLszY%2BfHGOMyjG3K6OZJdVoUzq8CYjJnvWNhS%2FHi08hQ4251GHQQJdpsdV%2FPM3Dql0zUhuQVVc5JlXmcIGH01Cn6GYXQ%3D%3D%7Ctkp%3ABk9SR9DSqLXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=307002716462",
+      "product_id": "307002716462",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£18.69",
+        "extracted": 18.69
+      },
+      "shipping": "Free delivery in 3 days",
+      "promotion": "Buy 2, get 1 20% off",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "extensions": [
+        "Direct from World of Books"
+      ],
+      "thumbnail": "https://i.ebayimg.com/images/g/YBUAAeSw5oRqLz5D/s-l500.jpg",
+      "seller": {
+        "username": "worldofbooks08",
+        "reviews": 11900000,
+        "positive_feedback_in_percentage": 99.5
+      }
+    },
+    {
+      "title": "The Lords of Easy Money: How the Federal by Christopher Leonard PAPERBACK",
+      "link": "https://www.ebay.co.uk/itm/406181254741?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=8082523588&itmmeta=01M8DNA54ESNJC2F6H64DDJAER&hash=item5e924a1655:g:LDYAAeSwpKVpIMPM&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2F6HoM%2BqDBc1rQPaXmR9SICPUaPqj5KDXmNjl1lZioee4kPCALVZJoURUMGl0SGAmIPOoE4wil1E9Ld1RYopuoafXVq6GLLp%2FJJQxGX1Sq3noCBXSk1%2BWZKtbDQsFt7Zdw6TDhl%2Bd7NHu3qLAuZ1vB2wtvkZ1V4QrpwWEXsuilUywl0gyAuWZJU42QUOxoiW2p6H1KAknDWn40pMhdvYfx1qSlBXLb6apW575oVtt8e0FPg1Yxt5ScT925UnkoF9Z170adQRf8WQnd2AF9XhuPq0JlMiCW1ZN%2Flb8v2xMnRQtupmjn59I1Nv3JY4tY%2BltE%2FCHJiDVIsOT5EoY%2Fmhri0%7Ctkp%3ABk9SR9DSqLXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=406181254741",
+      "product_id": "406181254741",
+      "epid": "8082523588",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£10.84",
+        "extracted": 10.84
+      },
+      "shipping": "Free delivery",
+      "returns": "Free returns",
+      "promotion": "Save up to 5% with Multi-buy",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/LDYAAeSwpKVpIMPM/s-l500.jpg",
+      "seller": {
+        "username": "bookcurl",
+        "reviews": 42600,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "title": "Christopher Leonard - Lords of Easy Money How the Federal Reserve Br - R245z",
+      "link": "https://www.ebay.co.uk/itm/388850672054?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=8082523588&itmmeta=01M8DNA54ER6QTABX3FFXSHC15&hash=item5a894e61b6:g:fJEAAeSwRfxq6Dnj&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2BSE153eIDweC3ImBcc4qogLQM0Z0UTcnWCsSy0nzhgk4vWRM9JTdFA5ZMWF33gUEBUH5J0OrueWrxcukXOG3KVWKSoY8Nw3BmKjBybad%2BClA8s1UVX4v4minylB74A%2BDEoS0pyL0m6heu%2Bj%2B%2BO5ekNDoTZEfO4Wc%2Frt7Wo3%2BtprkIewxiloiQMqzBPaRbka53NEJzlxrNWJiOXeWGPI%2BhdOZJmskB%2BAYYYoELU8jZ43GqiZEyPv2t0aukVUUhX3DYT35D0IOwOPxYh3Bd8LzOsAtozMBOjwetLg2w97lTdipgz2qIhIXVgyHn6yyfrm4hwjJXJ%2Bd8A0Wz0cgApc%2BZo%7Ctkp%3ABk9SR9DSqLXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=388850672054",
+      "product_id": "388850672054",
+      "epid": "8082523588",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£12.07",
+        "extracted": 12.07
+      },
+      "old_price": {
+        "raw": "£14.70",
+        "extracted": 14.7,
+        "discount": "£12.07"
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/fJEAAeSwRfxq6Dnj/s-l500.jpg",
+      "seller": {
+        "username": "ihaveit_music",
+        "reviews": 170500,
+        "positive_feedback_in_percentage": 99.5
+      }
+    },
+    {
+      "title": "Lords of Easy Money : How the Federal Reserve Broke the American Economy",
+      "link": "https://www.ebay.co.uk/itm/960225570211?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=8082523588&itmmeta=01M8DNA54E1P7H010R63QAZ8MJ&hash=itemdf91e76da3:g:wtgAAeSwGYJp2Tl0&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde8HGxkk%2FJBG5vqMupWewdQ0HU9BW7ozb781gps9Rbo1foetV6mlfPUSzvA5oh3VG74cnLyfcVizaqRurmuFt10%2BddSlDBq%2FEudE8WUgDnJqP3aGqRJoTlnoeIO5ylT5l0PEw4s%2FJA8SOgJiGvjauRKOJe%2B81e2%2FVhjeN0QJhgmgfaTTPSnVlRb2saZxzu6ZW3nAwiQq%2F%2BxUErIhCVDkq6yYRKsoIkQ8znY%2FVcEhlh9FvPXepNVBqU%2FKo%2FwV4rT3OIp8nYU%2BDLeiS5tiLNhqKE01VkT5mhNYV5bhgXf80Lzq0g%3D%3D%7Ctkp%3ABk9SR9DSqLXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=960225570211",
+      "product_id": "960225570211",
+      "epid": "8082523588",
+      "condition": "New (other)",
+      "price": {
+        "from": {
+          "raw": "£5.37",
+          "extracted": 5.37
+        },
+        "to": {
+          "raw": "£15.96",
+          "extracted": 15.96
+        }
+      },
+      "shipping": {
+        "raw": "+£2.94 delivery",
+        "extracted": 2.94
+      },
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "bids": {
+        "count": 0,
+        "time_left": "4d 8h left"
+      },
+      "thumbnail": "https://i.ebayimg.com/images/g/wtgAAeSwGYJp2Tl0/s-l500.jpg",
+      "seller": {
+        "username": "the-figure-master",
+        "reviews": 192,
+        "positive_feedback_in_percentage": 100
+      }
+    },
+    {
+      "title": "The Lords of Easy Money: How the Federal Reserve Broke - Paperback NEW Leonard,",
+      "link": "https://www.ebay.co.uk/itm/145317637598?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=8082523588&itmmeta=01M8DNA54FR8P9AZ5ZZ86Q1CX0&hash=item21d59b2dde:g:0awAAOSw~IdnisRH&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9enHosjjpcskBrEnMNjaNgMmx6P80KM0Yku1uvwWpRSjBnYZVXu3o8A7lZrS3z07s9LubexTiz7uXQ2hMA8hFHyB9F6pNd%2BWzPDbOg7x%2FTCqNGaD4qI9aQ4YATsjWG0O4M2%2FHF2IRbKtRRw8id41nao%2F8dX9TrQQIu02OTtBmQvw%2BA3p1CXCe%2FMVgEHjOr9oX4EEP92TCaz9ZHg5KU726TzH8em9QpnkViQW8gn81g4wVF7ICOXJWcY%2BL6Aw5RCYEMs7FBdm0EXPnVoB3SylAbvhPa2tUmUxmof1lnkGZcqb9ai8muaZ77dRD%2Be4ZEa%2BPMXIuTJSO0db6fMN6V2lAt%7Ctkp%3ABk9SR9DSqLXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=145317637598",
+      "product_id": "145317637598",
+      "epid": "8082523588",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£11.31",
+        "extracted": 11.31
+      },
+      "shipping": "Free delivery",
+      "stock_status": "Almost gone",
+      "quantity_sold": "15 sold",
+      "extracted_quantity_sold": 15,
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/0awAAOSw~IdnisRH/s-l500.jpg",
+      "seller": {
+        "username": "buyitnowbooksoz2010",
+        "reviews": 413500,
+        "positive_feedback_in_percentage": 99.6
+      }
+    },
+    {
+      "title": "The Lords of Easy Money ~ Christopher Leonard ~ 9781982166649",
+      "link": "https://www.ebay.co.uk/itm/137933180599?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&itmmeta=01M8DNA54FC566460TVB8HS30N&hash=item201d754eb7:g:UMAAAeSwd8Vq-bR0&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2BS2S%2B1xCLHED8cNWWpp%2F6gQjSPDTTHHXfvkwgTeZ73bIlrTvGwBCmN1STK77rexn7nH6ikzMv61YlP2erwL1ZBcIr%2FOzI%2FbeygeVx2s%2FJ47yFTCJF2TIzbQP6gMIKdM2P6I7Y9RTGy2HxsPwxIVr6Q7RtsVmROl1MvofT3pvQb1Bc5YJJZnu26qjNjXRv5RkR2yTlxjcoLwXpHxFC8uZ3Wkq8YCTHK0SxKgp4fbsnSpwekx9NbS%2BXvy4QOp06wI65FXJrrmEZe4naUGRGNO6ntD%2BgEooKR%2BeBgrqt1XMilfqBnf35RZY187%2BPXZAQ6nKV8BM7hRcoEMgJU%2BWQHs43K%7Ctkp%3ABk9SR9LSqLXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=137933180599",
+      "product_id": "137933180599",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£16.11",
+        "extracted": 16.11
+      },
+      "shipping": {
+        "raw": "+£7.74 delivery",
+        "extracted": 7.74
+      },
+      "location": "from Germany",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/UMAAAeSwd8Vq-bR0/s-l500.jpg",
+      "seller": {
+        "username": "rheinberg-buch-at",
+        "reviews": 98000,
+        "positive_feedback_in_percentage": 99.9
+      }
+    },
+    {
+      "title": "Christopher Leonard The Lords of Easy Money (Paperback) (US IMPORT)",
+      "subtitle": "Another great item from Rarewaves USA | Free delivery",
+      "link": "https://www.ebay.co.uk/itm/117516956745?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=8082523588&itmmeta=01M8DNA54FC1199BTD47N98HMQ&hash=item1b5c8e7449:g:h8QAAeSwvmBq9TB7&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2B3zLEF3QUF1LrWoxwJyk%2BnLRBJZG2hb5ZEoBBRLunbNyRpuazk6gbhKsLk7TwvUYY5BIZb%2FEdy5LejEcmwGeSR9iIidvMYZqL1yOjWXMobGlfgXuvdebESp1ByWYeysMMoZRYQLiNFuatBPgxeqJ1UFY5z8QmUoGzXRxJlP4qIsOUY47SkjR%2Fxc%2FGqla034bOd%2FOdDiR1yFNfczvXsY%2BuYCMOXGwbcFxO9rC%2BzsGxQA4oEsAsmXrgFlkKV%2BAbdrlsplqoYZWQ13kt4jOWqJwnD2%2BrwuSDLr0J0jS3pDsGHup4yv%2F59HCNZG1GOBF9V7Mz40vspH4YMRZllLRRmmfuM%7Ctkp%3ABk9SR9LSqLXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=117516956745",
+      "product_id": "117516956745",
+      "epid": "8082523588",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£15.63",
+        "extracted": 15.63
+      },
+      "shipping": "Free delivery",
+      "location": "from United States",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/h8QAAeSwvmBq9TB7/s-l500.jpg",
+      "seller": {
+        "username": "rarewaves-united",
+        "reviews": 483700,
+        "positive_feedback_in_percentage": 99.5
+      }
+    },
+    {
+      "title": "The Lords of Easy Money: How the Federal Reserve Broke... by Christopher Leonard",
+      "link": "https://www.ebay.co.uk/itm/327399662156?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&itmmeta=01M8DNA54FA76F2EC1XF91FD5W&hash=item4c3a8a624c:g:Pl8AAeSwMP9qy66n&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2F5V5vld6JTOtvR47pk8fS1BWwf8X3hhbx27YN9tIQ0Zr7KRqeSHp4NKAmz6XNOBK%2BzJBivOBD72UVgwrUxAUJJTUsBKqwc0QN4gBUN8itCUWz9aWxQ7%2FQhEoEdGCPKSLB9jQeGpsmrclRLztEYZUiidl88d6behlch%2BOCQBEtY5xzL6uiiH4N8loH0fN%2FquxyVxaqKKfhmrQQ5oxsrlRXX4SdlTsbu2LpsnYtwi3exN4fwP6PbJ2ys5UIsGHBeDB0ozKfjaHKtBjtIOXQwIJxqcEfbpvGt55qr8kZg2nTi%2FQ%3D%3D%7Ctkp%3ABk9SR9LSqLXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=327399662156",
+      "product_id": "327399662156",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£15.24",
+        "extracted": 15.24
+      },
+      "shipping": {
+        "raw": "+£12.34 delivery",
+        "extracted": 12.34
+      },
+      "location": "from United States",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/Pl8AAeSwMP9qy66n/s-l500.jpg",
+      "seller": {
+        "username": "shopwithtatiana",
+        "reviews": 1100,
+        "positive_feedback_in_percentage": 99.7
+      }
+    },
+    {
+      "title": "Christopher Leonard The Lords of Easy Money",
+      "link": "https://www.ebay.co.uk/itm/147630928421?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&itmmeta=01M8DNA54F8SKWSTYPH4HJGZT2&hash=item225f7d3225:g:1RMAAeSw1XRqy5Af&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde8Qp0XLnGObfp65yE9bJaY6vgiEUG4ypfLyf2gG--t5YXNil%2FBkzX2G0wCquVsy4LfC1KrulGPfFNJxlnOYf6d4w2YUhXtVBaIWL4N%2FNBsdXMHzoDOXQjlgHfkKRhbKo3ZTN1jprpk8XPZ43vG%2FwcTJRXovMR8c0UCZxYJFrNCx%2FciOnuAQ3QcUNlhnqxV%2FiQJVcHTfmeso0thqccw1xIDdEvNnekFXHQZHVeoE57XbRLG90qt11%2Fp1LlLibQsXxw1m6Ur3WnVQBN1%2Fpbpbpf4XsvA2z9mEyccx5tW9MwAGbA%3D%3D%7Ctkp%3ABk9SR9LSqLXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=147630928421",
+      "product_id": "147630928421",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£16.18",
+        "extracted": 16.18
+      },
+      "shipping": {
+        "raw": "+£17.98 delivery",
+        "extracted": 17.98
+      },
+      "location": "from Germany",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/1RMAAeSw1XRqy5Af/s-l500.jpg",
+      "seller": {
+        "username": "bochumer-buchshop",
+        "reviews": 137900,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "title": "Lords of Easy Money : How the Federal Reserve Broke the American Economy by ...",
+      "link": "https://www.ebay.co.uk/itm/365747133972?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=8082523588&itmmeta=01M8DNA54G6R3KCKTNV2AJAHSY&hash=item55283a5e14:g:S-EAAOSwuOxjVUd8&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9lQvrMs7tRarAKuq6X6vhDoW0JZ1x2ku1qjgsws7yyUQwwR5KhXC0j6sTThbqPDevg4Q60tdk3vScVlj6KrfyrXqkOSS8bBt0ZdJeF8pCQ1oeVPe0mLCSXaqXi%2FDwwYqEIiQ9agl7m50fiFNKZaKJBpDh9O0yRHKKDiv%2B0SeGVDJqHf1oJrcx2Fv6HQYe5h8R4CrrCaPmqbp9s85C0oOKKMK49p3eNDptOVVqjwrQcYm%2B6Pl0SJI75tVkAqom8zMXlalG8Nevx%2FN6v0KER30nh2bunp5XkFOtvTJ5uU90alIuFMq6GnsumLIDrdv34sjyPmlf0DTjPtxOwEtlUKDZ9%7Ctkp%3ABk9SR9LSqLXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=365747133972",
+      "product_id": "365747133972",
+      "epid": "8082523588",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£10.33",
+        "extracted": 10.33
+      },
+      "shipping": "Free delivery in 3 days",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/S-EAAOSwuOxjVUd8/s-l500.jpg",
+      "seller": {
+        "username": "speedyhenuk",
+        "reviews": 1700000,
+        "positive_feedback_in_percentage": 99.9
+      }
+    },
+    {
+      "title": "Lords of Easy Money Christopher Leonard Hardcover English 2022 w/ Dust Jacket",
+      "link": "https://www.ebay.co.uk/itm/840154375931?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=28050407162&itmmeta=01M8DNA54GTGGSAEHR8NFS9FBX&hash=itemc39d1a66fb:g:rdcAAeSwozdq1HSx&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2FiiBGMUbZ%2ByhlKoGjVBRkz5oHC8uORvua%2Bta77R2q138aVUrb6H10Vlc9ZzCEctGC%2Bb%2FcWu8TeTHD8c86cL95%2BcPlxJr37pl9ao0fSSWzdD3p43U1QOPU%2BfrpzNBBWS8TQ7VwBe1gq7VZHTD23DLvunYZ1yFXCR3lQYZ6l8V9y8BnBP1%2BXb3jiHci2AUFXJ9pnwzM5NqkQf%2Biu2LYUsoN%2FQbpJ6ta9POEAhNuS0dQomyH0mulctJdjb8nolGzBlU91m%2B5RSwunK7FoVfBE8AFvKdDxwA9XGsUMpJbUTPfL6A%3D%3D%7Ctkp%3ABk9SR9LSqLXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=840154375931",
+      "product_id": "840154375931",
+      "epid": "28050407162",
+      "condition": "New (other)",
+      "rating": 5.0,
+      "reviews": 7,
+      "price": {
+        "from": {
+          "raw": "£4.57",
+          "extracted": 4.57
+        },
+        "to": {
+          "raw": "£6.40",
+          "extracted": 6.4
+        }
+      },
+      "shipping": {
+        "raw": "+£11.80 delivery",
+        "extracted": 11.8
+      },
+      "location": "from United States",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "bids": {
+        "count": 0,
+        "time_left": "2d 3h left"
+      },
+      "thumbnail": "https://i.ebayimg.com/images/g/rdcAAeSwozdq1HSx/s-l500.jpg",
+      "seller": {
+        "username": "alank_18",
+        "reviews": 24,
+        "positive_feedback_in_percentage": 100
+      }
+    },
+    {
+      "sponsored": true,
+      "title": "The Lords of Easy Money: How the Federal Reserve Broke the Ameri",
+      "link": "https://www.ebay.co.uk/itm/800928095083?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=8082523588&itmmeta=01M8DNA54GGMN96X7G1JXXDT1P&hash=itemba7b08db6b:g:TqQAAeSwuw9q--bD&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8IlCsoa42bMur%2FV9Cdlz4guNgL2YcLqzgn%2FUsMSRtYRIp47AxOnIpr344Zlc9UEzpgpAr%2FkAExdUEaQrK7G6xLe0cCjt5s1Y53eM3OkPXM%2B2Oo6S3wNJyp0M8SMzKuWdnlcRxIokQL46eGqgWrZ3kaxCjfb0X238yIzn40wtXgy8gjMXrMD7BSlaS2EATMT%2B9rAshD08VY8glmZgVm2fOQ2bdJ2bOayuAuBAY2mY2fiIA3k0oofRbIHXJ8yFFrUqN87h1fWktkp79ko%2FygMrz5Q9uOcEGrHn4ofToGdH%2FC3h%2B4gSc%2BwAFhphjzqP5xKorYjT0iG5yCGUXZ70dfqFI7%7Ctkp%3ABFBM0tKotcNo",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=800928095083",
+      "product_id": "800928095083",
+      "epid": "8082523588",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£12.84",
+        "extracted": 12.84
+      },
+      "shipping": "Free delivery in 3 days",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/TqQAAeSwuw9q--bD/s-l500.jpg",
+      "seller": {
+        "username": "cmedia_group",
+        "reviews": 1600000,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "sponsored": true,
+      "title": "The Lords of Easy Money: How the Federal- 9781982166632, Leonard, hardcover, new",
+      "link": "https://www.ebay.co.uk/itm/920186992181?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=28050407162&itmmeta=01M8DNA54G645DNXSTMFNCXJHP&hash=itemd63f6b3635:g:zncAAOSwq95hXs45&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8xQ9d4rNVEzSja6pZmH2T6mdY0tWtY%2BzDyqjKWLa0CN%2FYl0SZj7ToFIQrhNmm5QmZtBqLtejW9VjCtFiQab--JDTdMrNXdjcLNA31yo0%2Fd%2FOmClwt3hUmYHTbGHGSARLisKG6JKCvXcioYIbJp4u%2B6X%2BRBvEGONooyZeH%2BA0BSsYd%2BWNhn9XUnAk%2BlE%2Filpk10MeEOjGrNNhH27mZLGKK7YVS3eYDDn6SVEeNhZzscoNfl4yGMxoZhnyAD4LFkp4rrkghzyEwJXNccr9J36xJRoFpZoPTggZ4g8WGJ9li63bfl4iZ7PTiLZBGjApBRp2qtGEtjKb07ttoF1%2BusKp%2Be%7Ctkp%3ABFBM0tKotcNo",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=920186992181",
+      "product_id": "920186992181",
+      "epid": "28050407162",
+      "condition": "Brand new",
+      "rating": 5.0,
+      "reviews": 7,
+      "price": {
+        "raw": "£16.99",
+        "extracted": 16.99
+      },
+      "shipping": {
+        "raw": "+£8.52 delivery",
+        "extracted": 8.52
+      },
+      "location": "from United States",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/zncAAOSwq95hXs45/s-l500.jpg",
+      "seller": {
+        "username": "oriontechllc",
+        "reviews": 353200,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "sponsored": true,
+      "title": "The Lords of Easy Money: How - Hardcover, by Leonard Christopher - Very Good b",
+      "link": "https://www.ebay.co.uk/itm/128174001230?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=28050407162&itmmeta=01M8DNA54G6T2J4VYQ3G438KTB&hash=item1dd7c40c4e:g:L9MAAeSw9rJrCP6i&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2FIisXAUfteyjQ2XJFj3NqDQmMJDkMn1zQNEIFw2e4oXp7lWrCP2wiS4jt5Js6fPjxJHWEHH5Eaj40I6isCIDH4vf2AA%2BN51FR6ljNTRdRPv1QUG6WEkD2Rx7HoaB2gGP36vIb0hSBzSG2XWEH2UgC5gA6ve%2BFaipE08is71mMb6Oze7%2BzvT%2Fh3wj1o9VIHE0wYhUr22weFEnAfJBBWm3N%2Bx9GrJYHtgcbbIFkK0s2DlKfJ%2B%2Flk3uV0JSjFAfCat3Xu0QlwI5dE5ucIFMceXZEGIHTPzYss8vwf5%2B66GaokS9IIFDwC7icwjtZSO6bCYgMSXqR6XFGh88qQ0h7jGsFq%7Ctkp%3ABFBM0tKotcNo",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=128174001230",
+      "product_id": "128174001230",
+      "epid": "28050407162",
+      "condition": "Pre-owned",
+      "rating": 5.0,
+      "reviews": 7,
+      "price": {
+        "raw": "£8.30",
+        "extracted": 8.3
+      },
+      "shipping": {
+        "raw": "+£8.08 delivery",
+        "extracted": 8.08
+      },
+      "location": "from United States",
+      "returns": "Free returns",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/L9MAAeSw9rJrCP6i/s-l500.jpg",
+      "seller": {
+        "username": "booksrun",
+        "reviews": 542900,
+        "positive_feedback_in_percentage": 99.7
+      }
+    },
+    {
+      "sponsored": true,
+      "title": "The Lords of Easy Money: How the Federal Reserve Broke the American Economy",
+      "link": "https://www.ebay.co.uk/itm/287652988584?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=8082523588&itmmeta=01M8DNA54H00GVPZY8P9EBCSEG&hash=item42f97446a8:g:wVUAAeSwkJRo88Da&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9Mss5L40c%2BvX0a%2FkWMAF1qcF7fuRPE%2FyDt70t6qGauo0vkpHCUR%2FXMGZdpFBKHE%2B5vmRX9CjaeQYs7HN3okS8NJ7Uz5Z5YeyIl6dY7Y0xpqnYAZpeslb%2B3BrUDaRWaPU%2Fpny9T31u2LAJpKUpeSJuMJR3u72%2BCEnXkgMSu5QYOEfQrtwT6%2BgjyTE3twyITY%2FDPM1g3fSUuNhb44l0MMFUFLAZvnCAjB%2BrsZX%2B9wn0KpooOlOqOTd5ebA1a%2FFcJq95Fr2Ti2KqS7mT3vfDNvSgCRJ6WD7%2BPLzx%2B%2BmGe809N3Ws2ld04WZbeMrBGURHvFwJt4KYg74wMalSUv3o%2Bzcan%7Ctkp%3ABFBM0tKotcNo",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=287652988584",
+      "product_id": "287652988584",
+      "epid": "8082523588",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£14.02",
+        "extracted": 14.02
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/wVUAAeSwkJRo88Da/s-l500.jpg",
+      "seller": {
+        "username": "chalkys_uk",
+        "reviews": 779300,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "title": "The Lords of Easy Money: How the Federal Reserve Broke the American Economy by",
+      "link": "https://www.ebay.co.uk/itm/128121136832?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=8082523588&itmmeta=01M8DNA54HE7HN5P9DHZCDAY3S&hash=item1dd49d66c0:g:hBYAAeSwmylqxmBb&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9fp277tgHCDs5qtMpgm2QfX0vkZIDOvEO%2BMXcFAmMzHWZHVgDWZOBcgRI2BcDcH1KWguSdexb3K2HK%2BCdyFF20aDKIjHVlq2sDYYsyVuQdb%2F2AUENcEl4XMVLDSVUdgrtdlOepSrVsc6IiAzKwY7HMxADd2bQUHq8ltlWdm%2B3BQLp9jn3o6l7AXj8p49R37ftxeMoMxQMQVk5zrFe3Nn1N9dRCD5xJ8XthkcZIehH83W9tpstO4bTnsGMzLcNU3%2F69xUN4s9SnqVdUAUyWFRW%2B2SRqstbAIEF5nEmIwccCHh6U7FPZ1J1zhTNzWzvUDSav6%2FXIXKf0yCp6QF4ENLAd%7Ctkp%3ABk9SR9LSqLXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=128121136832",
+      "product_id": "128121136832",
+      "epid": "8082523588",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£10.43",
+        "extracted": 10.43
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/hBYAAeSwmylqxmBb/s-l500.jpg",
+      "seller": {
+        "username": "bookaxis2015",
+        "reviews": 49600,
+        "positive_feedback_in_percentage": 99.7
+      }
+    },
+    {
+      "title": "Lords of Easy Money, Day Trading Attention (HB), CEO Speaks 3 Books Set",
+      "link": "https://www.ebay.co.uk/itm/357536194719?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&itmmeta=01M8DNA54HA6KQXH4T4Q01SVKX&hash=item533ed1609f:g:8eEAAeSwI-JosVnT&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2BqjQJ15WmzFgOw0CSipV2f7u3ZSF3IqfeXsXzgIfjqymg4%2BIxX4AArHgVPMF2Kmiydu1LU0RNIqvoJ1XWNYdxZsFWTYyWxCWY7AVzenvPK7C0hii8v5gwJ7%2BOY98MLYdHietDSdYND5gqES7se0PJP55r2iBz070QSVdW%2FuOdfq%2BNTlLxNjoclYZ7X6BgQ8TVXWDu%2BCnJlPM9hlDftSvunzvYNfc3Flnyg4gjaj%2ByNmilweTSHCsvvfb5RHpoebDqRnOe5Wc8UYuzcTt7L7PJtkEwjQ7t53qAjbYk7l1q7G5fBY3HCVKPmw8Unv4Ch7CuFHHFu6cX1YGLdsWZ2ch8d%7Ctkp%3ABk9SR9LSqLXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=357536194719",
+      "product_id": "357536194719",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£17.09",
+        "extracted": 17.09
+      },
+      "old_price": {
+        "raw": "£18.99",
+        "extracted": 18.99,
+        "discount": "£17.09"
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/8eEAAeSwI-JosVnT/s-l500.jpg",
+      "seller": {
+        "username": "bookwalla2011",
+        "reviews": 238200,
+        "positive_feedback_in_percentage": 100
+      }
+    },
+    {
+      "title": "Christopher Leonard / The Lords of Easy Money9781982166649",
+      "link": "https://www.ebay.co.uk/itm/820195340268?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&itmmeta=01M8DNA54HN95ZXV9PW5KZ0EWZ&hash=itembef773afec:g:SdYAAeSwpM9qv1dF&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2BKYU4n%2BSqb6%2Byzr9nMnIdxu1OOwfyWN2FJQSs%2FhUrM7HuX6a%2B3wzPOp9kXSrxNJ0u2H8hF1h5cnf2NOosl0VmYS5T5lwpn5Xlz9VkpRKVhXVP6kE49GDu5iUhgSv6D0N57Yr1ycI3s2Jxy0%2BYBWhX2mGEmpiFOpOizRNCkwaUAhPiiZgPe%2BnNfqlwqviRXbetn38U95Uh7UO9V45uVzwA1mNQWBQ9Y9GFuCQJx1%2Be1aK%2FmNslAPt3sC7mXzyD6iyNAdSTiHSdAbxGRIH8Sh1t5GmQv2Ogsb4SL5WnrDSuZqQ%3D%3D%7Ctkp%3ABk9SR9TSqLXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=820195340268",
+      "product_id": "820195340268",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£16.11",
+        "extracted": 16.11
+      },
+      "shipping": {
+        "raw": "+£17.98 delivery",
+        "extracted": 17.98
+      },
+      "location": "from Germany",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/SdYAAeSwpM9qv1dF/s-l500.jpg",
+      "seller": {
+        "username": "buchblitz-versand",
+        "reviews": 75900,
+        "positive_feedback_in_percentage": 99.9
+      }
+    },
+    {
+      "title": "The Lords of Easy Money: Federal Reserve American Economy by Christopher Leonard",
+      "link": "https://www.ebay.co.uk/itm/840047065946?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=6082550902&itmmeta=01M8DNA54H38BK5Z5E3GTZC0PJ&hash=itemc396b4fb5a:g:KkQAAeSwRsxq2Z7r&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2B5EA7uoTZOMfrkmWietvH1l7dLKjGp996C9IaHrpkjQonKNEZ4ikc%2BehR7FdZ%2BIslepH%2BsiKOG%2BD6HzMgFG1eFG3Drdzx77yhjKkJn2Ed1cgwDh08mrIxszDVruLceIFulOFYQ2D553wAsnjTv100YFlOVHLEUhY0SI6UUfdWV%2Fa9FnhTnL0v%2F1lcjBZ3m54a%2FQPStW%2FeWJyJiZDlBbgx2IC5G%2BfGxOhizXdq3Ysum6bJ5aqNDqSjdk67bMIT6t6ugcZyDTOGzOyNFUymF7ZVwhKduaWh8hKHYodGwx3PD5g%3D%3D%7Ctkp%3ABk9SR9TSqLXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=840047065946",
+      "product_id": "840047065946",
+      "epid": "6082550902",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£10.08",
+        "extracted": 10.08
+      },
+      "shipping": {
+        "raw": "+£24.41 delivery",
+        "extracted": 24.41
+      },
+      "location": "from Australia",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/KkQAAeSwRsxq2Z7r/s-l500.jpg",
+      "seller": {
+        "username": "read4serenity",
+        "reviews": 7900,
+        "positive_feedback_in_percentage": 100
+      }
+    },
+    {
+      "title": "1st Ed, The Lords of Easy Money: By Christopher Leonard, Hardcover",
+      "link": "https://www.ebay.co.uk/itm/237176618430?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=28050407162&itmmeta=01M8DNA54JTRKQMF17NWA7S60T&hash=item3738d3fdbe:g:hOsAAeSwYxRq9CE0&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde8tr3ARk9l%2FPJn9qdAzyNrv7OdvQh8FoH65XetJHCnAPrB03ToxARgulDWa4N4eCmrlIefL3TdKMUbsG%2BMcCKEZ4aCJuqi3vZ%2B3R0ylFzE%2Bzrs6lZXWM2eB%2BrwNP86NRgNWlMqGioEUBGFixhS2qSeltxzlf%2FvJW4HBz0vuWyJ866E3dAI2FH9g4xoRh9Q9jCYFYsI51ebCNTobxOB%2BzVEqyd%2FfuwamgG2XvqrULCPWBgAxho6r7uHA3zwTJNQAQp0NZdqn9dMSR3Ck2GVTFIrrdcKTs2EXo6fHai%2BQL9XUyg%3D%3D%7Ctkp%3ABk9SR9TSqLXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=237176618430",
+      "product_id": "237176618430",
+      "epid": "28050407162",
+      "condition": "New (other)",
+      "rating": 5.0,
+      "reviews": 7,
+      "price": {
+        "raw": "£15.25",
+        "extracted": 15.25
+      },
+      "shipping": {
+        "raw": "+£12.34 delivery",
+        "extracted": 12.34
+      },
+      "location": "from United States",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/hOsAAeSwYxRq9CE0/s-l500.jpg",
+      "seller": {
+        "username": "isabar12",
+        "reviews": 118,
+        "positive_feedback_in_percentage": 100
+      }
+    },
+    {
+      "title": "Lords of Easy Money : How the Federal Reserve Broke the American Economy, Pap...",
+      "link": "https://www.ebay.co.uk/itm/407159149250?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=8082523588&itmmeta=01M8DNA54JJESJBFX19NDCSX7E&hash=item5ecc9392c2:g:S-EAAOSwuOxjVUd8&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2BHfM7Cscqn%2FMXFlMmIRdcqaMGqQoVG%2BlK2LnwceUsKWdGkPZ6WcH3JVXKVeFf57D289Q9QSXEnohdjKlbofdeL5zoe4blrVjwn78AEK5Zh%2Bi9knieqWfMjLOKEear0g5TfrKvbEQdQyKMc5hDRmd%2BBdIoC%2BoAQ3v%2FmxhHxJufAJZnuaagYFc7DP8UvYZaaXCVdMA2UuOICJ02cGX6SjN995BGp6uPX3HFNNROsSEZGkPRMwhTqbVzHeFUDNV%2FmX7jLxXNpdOHyzSUSZ5X8hucCf4vgdf1APDeGI12dlDrM0JIaVxT7Uu7m4Oi%2F6A%2FxlKS0b9mBymY%2FeUINjNTD4%2FaB%7Ctkp%3ABk9SR9TSqLXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=407159149250",
+      "product_id": "407159149250",
+      "epid": "8082523588",
+      "condition": "New (other)",
+      "price": {
+        "raw": "£10.39",
+        "extracted": 10.39
+      },
+      "old_price": {
+        "raw": "£11.80",
+        "extracted": 11.8,
+        "discount": "£10.39"
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/S-EAAOSwuOxjVUd8/s-l500.jpg",
+      "seller": {
+        "username": "superbookdeals1",
+        "reviews": 89900,
+        "positive_feedback_in_percentage": 99.1
+      }
+    },
+    {
+      "sponsored": true,
+      "title": "The Lords of Easy Money: How the Federal Reserve Broke the American Economy (Pap",
+      "link": "https://www.ebay.co.uk/itm/387366813412?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=14057263375&itmmeta=01M8DNA54JFNAQMAZX2NDGCV2K&hash=item5a30dc7ee4:g:2dkAAeSwuNFqnnWO&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9m7%2Bsu9t%2BlEnZGyfWmotxA8%2Bs5vf%2BcS8F25rg5ixUDDc7ufrHexvxhba1Z9S2THLOk5Mwy2EdM6iT7xM1oFpNum3uE%2FVGublDuuT0f3IZSeXhSocFue%2FS3pPUiSJH2wOjLsKSaKTDuPqBXdmV42KcHXNLxrkuNjyQEK4PE8z42Qg9k4Pqg4w1NaICVsPx0Y4uI8x3Ye3ffG7by1uSFzJsUbkwqD%2BI6roPt%2Fa1r5mbvwTQIEoD2sn2MyLHLzY7Zy4Dae0557bHddWbZf%2B5tG2zn89hAaY80rcvIvMp0sJ%2Bxi2PQdSVeG7SooQs8Z92RgIAeteQTTQCJ%2FcPNFuzPRScN%7Ctkp%3ABFBM1NKotcNo",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=387366813412",
+      "product_id": "387366813412",
+      "epid": "14057263375",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£14.76",
+        "extracted": 14.76
+      },
+      "old_price": {
+        "raw": "£16.28",
+        "extracted": 16.28,
+        "discount": "£14.76"
+      },
+      "shipping": {
+        "raw": "+£8.01 delivery",
+        "extracted": 8.01
+      },
+      "location": "from United States",
+      "watchers": "13 watchers",
+      "extracted_watchers": 13,
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/2dkAAeSwuNFqnnWO/s-l500.jpg",
+      "seller": {
+        "username": "bargainbookstores",
+        "reviews": 1200000,
+        "positive_feedback_in_percentage": 99.7
+      }
+    },
+    {
+      "title": "The Lords of Easy Money – Christopher Leonard | New Paperback | Federal Reserve",
+      "link": "https://www.ebay.co.uk/itm/158255446230?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&itmmeta=01M8DNA54J42JWQG76EK6V59QJ&hash=item24d8c278d6:g:3XoAAeSwo5FqmiSY&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2BClMy2v3bWO3Iwd3%2FRaQKPeK8KzPokSER5uD8M1J13vDWyxGOnruGfA%2BYocNbIjkafRu%2BgpSlR%2B5u5CIf9yrm3Vc5j2YhzLzYdpaaCMZgSwVBHrcHKCoX78XThWivLyKdGjMIpK7XzKppk6kHUguU49HHpI3%2FjYMYIpJJaVajAmhVJW75iAyYeThVX6E2t2XYn8T9wUyVoc0o1P9D7mT5x7lR%2FLIIzMnz5WPwLq60s5lGBHeymqA05338Ewo%2BuVkuK%2BAsmgc70bxViDUQ1dZYWxoIWAYAy22KhK8ACUaLTrw%3D%3D%7Ctkp%3ABk9SR9TSqLXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=158255446230",
+      "product_id": "158255446230",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£15.15",
+        "extracted": 15.15
+      },
+      "shipping": {
+        "raw": "+£2.53 delivery",
+        "extracted": 2.53
+      },
+      "location": "from Australia",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/3XoAAeSwo5FqmiSY/s-l500.jpg",
+      "seller": {
+        "username": "music_and_gaming_mania",
+        "reviews": 36600,
+        "positive_feedback_in_percentage": 96
+      }
+    },
+    {
+      "title": "Day Trading Attention (HB), Lords of Easy Money, CEO Speaks 3 Books Set",
+      "link": "https://www.ebay.co.uk/itm/257086716779?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&itmmeta=01M8DNA54JB4Y01VBCFX4FHQ0W&hash=item3bdb8ffb6b:g:h2AAAeSw63hosodV&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde9xsMq%2Fy7CQX4R%2BbXg7Q%2FknqMNbprauC0vTpho1%2F14o2JREhgrYZddfRFNekWCD84Ls0fnNgy%2FaMeSozDqxTMIrsE6peBHex5ZxpB3F6imrlK%2FIUpRwXCHcZEEHo4VkhO89bUF40AxrZz9T74wOswc6gMdUnvIVtTJ%2BRKoULn6Oj%2FzIYnQ0VWSxZz%2BukQl9njd7%2BRAPkW0605nIHpFj9nYjq%2BTuuZfqfkynofaBO6PClYIeN5JM54BgLie84c%2BzqisgkXvYM73WORslEJCblSdjdWyw5Xxfc9j90Xxtr%2BULGg%3D%3D%7Ctkp%3ABk9SR9TSqLXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=257086716779",
+      "product_id": "257086716779",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£18.04",
+        "extracted": 18.04
+      },
+      "old_price": {
+        "raw": "£18.99",
+        "extracted": 18.99,
+        "discount": "£18.04"
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/h2AAAeSw63hosodV/s-l500.jpg",
+      "seller": {
+        "username": "zoblit",
+        "reviews": 64400,
+        "positive_feedback_in_percentage": 99.9
+      }
+    },
+    {
+      "title": "The Lords of Easy Money: How the Federal Reserve Broke the American Economy by C",
+      "link": "https://www.ebay.co.uk/itm/366701179287?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=8082523588&itmmeta=01M8DNA54KNTPFB4AHXE506WYT&hash=item556117f197:g:m-cAAeSwSk9qvKZg&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9s8goQw4L%2FmZr6cxLJY7tGK6uNUTwnwMSH9GWmHLDqAjLsrGGiiY28WtP6cyTrv%2FyXwn1j50AvBKwWamwSSiVdsD8WpkKiv6JfWTNw1CE9rHT%2FkDjaeBSJq%2BflwoCqqQFv4MSJXMDKWEAl5kK8YK3XQzJ2Gjpgh6IGO%2B%2BfAXtQctyQblspp6PELsWdTto205VHmqzgVnsUccH2yrfVleqnxrhYyCQxZh7JOYlf4qx9apvBqTnkUm0y0MDleVNxH1IvTwrf66t%2FSP7rb21i4PKLIHwdlqsGNuJutKf5YdyGvTXioZwU4rKJ2qcbHR5NHX8yk5FsuM90Ev9OcZg7NIq3%7Ctkp%3ABk9SR9TSqLXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=366701179287",
+      "product_id": "366701179287",
+      "epid": "8082523588",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£13.87",
+        "extracted": 13.87
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/m-cAAeSwSk9qvKZg/s-l500.jpg",
+      "seller": {
+        "username": "the_nile_uk_store",
+        "reviews": 121700,
+        "positive_feedback_in_percentage": 99.7
+      }
+    },
+    {
+      "title": "Lords of Easy Money : How the Federal Reserve Broke the American Economy, Pap...",
+      "link": "https://www.ebay.co.uk/itm/407189137389?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=8082523588&itmmeta=01M8DNA54KZ4XF16H6382X2NVM&hash=item5ece5d27ed:g:S-EAAOSwuOxjVUd8&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde937xoFebwVyeAZzeQZMrk%2Bc%2FE02Jp8R2QNpSBdUSCsFkVqtb2%2Br7ryyv5N5PoSZrfhnau8hvxmXAeMRVGDBrCGlUSMwgqljYFnm%2FIUxSw7h0hcVKdwvcqqo%2FTX8QDlnLSu7zKB%2BW0AVHBoZfDq4fgAZUfqAAfGRlcrNrAZ4RZFVQhSIXyu7HzSc4eVNgxomd2Oie1DWbjAmxPoP84DDvbDzY0eLIbONGlqmX3Lbl51bnmot7OVN%2F2ytmaioYPiroLWqUzkgpYCVosC0GOmo3epJmNGXzG%2FZfT8TWn7mEVXgiijDnVQV8JgGtntT%2BvmE%2F5cHi4ECILuv4sGiZlUTyg3%7Ctkp%3ABk9SR9TSqLXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=407189137389",
+      "product_id": "407189137389",
+      "epid": "8082523588",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£10.39",
+        "extracted": 10.39
+      },
+      "old_price": {
+        "raw": "£11.80",
+        "extracted": 11.8,
+        "discount": "£10.39"
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/S-EAAOSwuOxjVUd8/s-l500.jpg",
+      "seller": {
+        "username": "superbookdeals1",
+        "reviews": 89900,
+        "positive_feedback_in_percentage": 99.1
+      }
+    },
+    {
+      "title": "The Lords of Easy Money: How the Federal Reserve Broke... by Christopher Leonard",
+      "subtitle": "FREE US DELIVERY | ISBN: 1668059649 | Quality Books",
+      "link": "https://www.ebay.co.uk/itm/398054722994?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&itmmeta=01M8DNA54K1YK80RNP5YH2S66D&hash=item5cade90db2:g:DNQAAeSwX5NqK1u-&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2FzLyHtRH4p0YdbuginfBq0Z%2BAh2qohfTrf7JkVjXgyirVr%2FsBZkllLJ%2FQm1XEGy0A5vM0cTs5yPkm1aA3dZpgf2lN%2FSjMH3cvEzMTp7b9UdCHG%2BAln0KdPxm5%2BpZY86Mh8Lu7GaGxekmmqLsaNwvRcQ%2F44J1YbBvmO1mVF4z0s1dl86KuPNwpAIjkEtcK%2BggE01QaI1II9CEhZld8zzKql3BU0WCI4Q9hFjCSx9Feadsw9KEW3ulonnciXlDu4l7dGbqBSyzUos2j8YkF6mTH8lf1PXtw6rQyaOLg9YtF93ou7vcNJZBAsXIK%2FoPMKaeBzyoS%2BuB1VXSi3BuilJc3j%7Ctkp%3ABk9SR9TSqLXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=398054722994",
+      "product_id": "398054722994",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£17.09",
+        "extracted": 17.09
+      },
+      "shipping": {
+        "raw": "+£8.52 delivery",
+        "extracted": 8.52
+      },
+      "location": "from United States",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/DNQAAeSwX5NqK1u-/s-l500.jpg",
+      "seller": {
+        "username": "worldofbooksusa",
+        "reviews": 1400000,
+        "positive_feedback_in_percentage": 98.9
+      }
+    },
+    {
+      "title": "Lords of Easy Money: How the Federal Reserve Broke the… - Christopher Leonard",
+      "link": "https://www.ebay.co.uk/itm/327101947710?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=14057263375&itmmeta=01M8DNA54KZHDP2CQG646CEAZY&hash=item4c28cb9f3e:g:lp4AAeSwJyRp3d0J&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2FczaSIWLDXnetk36pCTOrgyAHrgOOjtCJYQKcl8ZVFEUZ1QLQxWhome7m1nwYsILMAuHQ40zTArWfo%2FhQI1ZkIotQNRf%2FXi2HMgYmkrjLBVsNMuHl9W%2B26E9qWvoT6Stp36EbF%2BbA6Om6JiAYH0N1p9umU8LiRDvMSa%2FjBHpVzto5xQ615QreP9FLIER8whaDcZ%2FxHHFPajLyEe9%2BBIb6Q9jbQQpf8M1E5Ewi45elw7OJ2s0cOyP0qa4fm88ceDf%2BJ2pPJomFCaj35xJUn%2BgLFctzqI92gM5smERN8dbipLg%3D%3D%7Ctkp%3ABk9SR9bSqLXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=327101947710",
+      "product_id": "327101947710",
+      "epid": "14057263375",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£22.87",
+        "extracted": 22.87
+      },
+      "shipping": {
+        "raw": "+£7.62 delivery",
+        "extracted": 7.62
+      },
+      "location": "from United States",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/lp4AAeSwJyRp3d0J/s-l500.jpg",
+      "seller": {
+        "username": "roundaboutbooks",
+        "reviews": 30800,
+        "positive_feedback_in_percentage": 99.6
+      }
+    },
+    {
+      "title": "The Lords of Easy Money: How the Federal Reserve Broke... by Christopher Leonard",
+      "subtitle": "FREE US DELIVERY | ISBN: 1668059649 | Quality Books",
+      "link": "https://www.ebay.co.uk/itm/397157979601?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&itmmeta=01M8DNA54K83X8J744ASRMYCW7&hash=item5c7875d5d1:g:j5cAAeSwXtlpP9wO&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8ioDf91iFEMWpJy3zN%2FHT66wC2ljLUsEcwuRrWdrSnEL%2F5xsEEwfONudERLPepv5Dtm%2BUiH0O2tGrJXg93RZTMimAVIM%2Bd4hWjI24%2FLitze%2BlU36nUMDDPoIwCTdObmS3%2FHt1T7X6QB6TT%2BXfVYuW%2Fi845hHAlJtuiWyp7TZSaSo45jIWnA4KYT9MRcJLJTLNd1uky%2BcixcPx35OkPure8kzxcNS8t0dpPExydXdz4NewMKPp8dIh7syUGCJzbsLbW8aqQtE153gY3HyVOE6OoOD4eeFHoXTdUu6aDVUMDycMjueGUyrWYGTHHVRKSmneFhiDWDSeVWB7LmZXKhgcl%7Ctkp%3ABk9SR9bSqLXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=397157979601",
+      "product_id": "397157979601",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£17.09",
+        "extracted": 17.09
+      },
+      "shipping": {
+        "raw": "+£8.52 delivery",
+        "extracted": 8.52
+      },
+      "location": "from United States",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/j5cAAeSwXtlpP9wO/s-l500.jpg",
+      "seller": {
+        "username": "worldofbooksusa",
+        "reviews": 1400000,
+        "positive_feedback_in_percentage": 98.9
+      }
+    },
+    {
+      "title": "The Lords of Easy Money: How the Federal Reserve Broke the American Economy",
+      "link": "https://www.ebay.co.uk/itm/147676370160?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=28050407162&itmmeta=01M8DNA54KTBB8WVQ1A12JPH03&hash=item22623294f0:g:Q98AAeSwihprCF4N&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde9K7oQwPFoSENUFRhGgPlKnJcac5DhHssEXC30uM888DSpODZmUTGCosk%2FGFIpjaiuGkTgspIIzhDNz1YShAroB9lM62xmwP7OG%2BMKX2WrWHAwkPQCtVNNC3EGRS2qu2NERkD9Pseg3FBx%2FbA9KLtjwMrc5Sn2Y%2F3rQ4LNXkAsolXtXdiveR6kLl%2FeJu2nN95DDRRYjJfososvLyIpnyehL47zVt5Xw7T3dwpVK8Gu3xn1RTmjbqLn9i4CVsAztYh6r%2BixhLqEAjaJh8qoLUBUsk%2FNV%2FebyiGP4X9TdEXaJuA%3D%3D%7Ctkp%3ABk9SR9bSqLXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=147676370160",
+      "product_id": "147676370160",
+      "epid": "28050407162",
+      "condition": "Pre-owned",
+      "rating": 5.0,
+      "reviews": 7,
+      "price": {
+        "raw": "£8.68",
+        "extracted": 8.68
+      },
+      "shipping": {
+        "raw": "+£6.64 delivery",
+        "extracted": 6.64
+      },
+      "location": "from United States",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/Q98AAeSwihprCF4N/s-l500.jpg",
+      "seller": {
+        "username": "sgwebooks",
+        "reviews": 135000,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "title": "Lords of Easy Money : How the Federal Reserve Broke the American Economy by...",
+      "link": "https://www.ebay.co.uk/itm/286887498391?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=14057263375&itmmeta=01M8DNA54MQ196G6JPF48800FK&hash=item42cbd3d297:g:i54AAeSwYrBo9aYy&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2FB4LXkFHorh%2BHVRBVs5CSosNsrj2nzP4MO4N2JbHvvk%2BNAs94awlbzp3ATHzvuUY6BskTZCtBGizWoRT7%2BlNxDGHF4rWHRcQi%2BPzhsOdRr6305mUz77gpMVMYG6iIXVmjIVUq%2FuPzLTmjj5mlTQBCT%2BGWAAhOGPEX2av7amRjY%2B8lHHxTS79qivuivw1xj%2Bpb0mm7qi5Gocsu11pMKCp7JonrT4DWG1G%2BKPbE3ys3aYqxbM3WOgNXy7E%2FZChBdLDca%2BSwltf1U3fGU3g%2B4zbJSWRM1xr%2B%2BcwdW4JKHiJIkyoi96PdrzQcIOf5WHLRC7xL%2Bc1X8JhNAGT0sgNojqGwR%7Ctkp%3ABk9SR9bSqLXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=286887498391",
+      "product_id": "286887498391",
+      "epid": "14057263375",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£3.55",
+        "extracted": 3.55
+      },
+      "shipping": {
+        "raw": "+£11.76 delivery",
+        "extracted": 11.76
+      },
+      "location": "from United States",
+      "buying_format": "accepts_offers",
+      "buying_format_text": "or Best Offer",
+      "thumbnail": "https://i.ebayimg.com/images/g/i54AAeSwYrBo9aYy/s-l500.jpg",
+      "seller": {
+        "username": "danieuzu0",
+        "reviews": 873,
+        "positive_feedback_in_percentage": 100
+      }
+    },
+    {
+      "title": "The Lords of Easy Money by Christopher Leonard",
+      "link": "https://www.ebay.co.uk/itm/287551154565?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=14057263375&itmmeta=01M8DNA54MYJH3DZ9Z0A4WVGBH&hash=item42f3626985:g:KJMAAeSwBGxqbhDb&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde87SFDmYZAGaj0gTGSdv8xKpVruWiO19lRlphqaBU8wvfJ%2BU7G2PdOYJM%2BZwanO0jAFby3Z8ST5ksbujQsGMwaAyt1%2Fj%2FfOMnwaVwlHjBMwY62F3eaWotjvMctv3Gi0J%2FhPV0kWl9jjJU%2BSbP1BxUfUaAWXDqP0YbMFOW1nYQE9xTsIOHRSfpVEo%2B30rDyBjsPslPFnz5Q2rfW7Z1ifcj0XTLjwHEYJQBtUZn750ybW6i68ZODUL49CiX6hn%2FD%2FYDLodfNsZhbBbwYpMuRBGxL62Y34zopFN9NQT7JZ3oTkHkLVyiXaQY%2F5PYAnGBweHmfmaQljIhcI2al3vgPzGs77%7Ctkp%3ABk9SR9bSqLXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=287551154565",
+      "product_id": "287551154565",
+      "epid": "14057263375",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£5.33",
+        "extracted": 5.33
+      },
+      "shipping": {
+        "raw": "+£14.09 delivery",
+        "extracted": 14.09
+      },
+      "location": "from United States",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/KJMAAeSwBGxqbhDb/s-l500.jpg",
+      "seller": {
+        "username": "seventhshelf",
+        "reviews": 2000,
+        "positive_feedback_in_percentage": 99.1
+      }
+    },
+    {
+      "title": "The Lords of Easy Money: How the Federal Reserve Broke the American Economy",
+      "link": "https://www.ebay.co.uk/itm/366767354756?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=28050407162&itmmeta=01M8DNA54MHVJMSE5BEX772EJ6&hash=item556509b384:g:3UoAAeSwxURrCG8n&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2FuVf4rvlAM3538VY1pOHrreamWqscGD7Ew1ZOZqqhej38qpzSadUdeUh9BQDuWo1GceI666i7HQfMgCrb7q9P5dYfR0hTJp%2FSSEWHYZgefrbqb4Xyg2uZ087JW4X5ZpNeF7wrMhr6XwgLQw0rc9diqxkvingyZbas3M0q7059Cpg6cQPZb7MOkENZwTxJzACjm7t5Zfud0wSmKMPYwlxKHkneNDc%2BIyYoayb02yWFYnXR7YSP1GZpepsQ2u6p1gucGNooGO0hXBNYpXWc9lzU4T6rpODHfx59H40AMeD8xEA%3D%3D%7Ctkp%3ABk9SR9bSqLXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=366767354756",
+      "product_id": "366767354756",
+      "epid": "28050407162",
+      "condition": "Pre-owned",
+      "rating": 5.0,
+      "reviews": 7,
+      "price": {
+        "raw": "£7.82",
+        "extracted": 7.82
+      },
+      "shipping": {
+        "raw": "+£6.60 delivery",
+        "extracted": 6.6
+      },
+      "location": "from United States",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/3UoAAeSwxURrCG8n/s-l500.jpg",
+      "seller": {
+        "username": "goodwillbookworksaustin",
+        "reviews": 287200,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "title": "The Lords of Easy Money: How the Fe..., Christopher Leo",
+      "link": "https://www.ebay.co.uk/itm/314936392405?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=14057263375&itmmeta=01M8DNA54MAQMEAXJ2V6N191DS&hash=item4953abfad5:g:BksAAeSwULNq3Jav&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde88%2B0N1Fh1ql7YU9taTYceK5KAidW17zw03RxZIMNZ6%2FmKdlS0l53%2B9wyio3LsFRvyvbiuU8rujR0%2FPDRItMbGncTlq%2FZh9FQEeScvqW9W3P45rMEMj0Ydyc4LIfqjUSbx7UKboS3jsUYJR3sptYvKUDxbfvjvBty69K%2BzUz9%2FZck56qN1DTekpTbl1MiAPptAutHy7XwgMWn4--XslqGE286QI%2BNOBIxYU%2Fer5A3h8XkcvzTW9zSseuMxMxpJyNDH0Y%2Fi19wlWdSp41I7z63iaZ747dzSKZDMUi4xmA5pxZg%3D%3D%7Ctkp%3ABk9SR9bSqLXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=314936392405",
+      "product_id": "314936392405",
+      "epid": "14057263375",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£9.45",
+        "extracted": 9.45
+      },
+      "shipping": {
+        "raw": "+£6.68 delivery",
+        "extracted": 6.68
+      },
+      "location": "from United States",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/BksAAeSwULNq3Jav/s-l500.jpg",
+      "seller": {
+        "username": "worldofbooksinc",
+        "reviews": 383400,
+        "positive_feedback_in_percentage": 99.4
+      }
+    },
+    {
+      "title": "The Lords of Easy Money by Christopher Leonard",
+      "link": "https://www.ebay.co.uk/itm/168580698837?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=28050407162&itmmeta=01M8DNA54NRP0AT9MYZ76DG4SW&hash=item27403152d5:g:M7AAAeSwRTtqbhC3&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2BUBRRZp0Bb5Rn4l7G6TqAXYOU%2FuoJYdID74Oz2jpZiEdJe10DrGYmAtssK75Lsr2jMAIii9JOB4d24IUB9QPOkDGhQAM6DD%2BdmV4p%2FPCbT3u8jtKJ%2Fll7%2B5wHZvNrkq%2Bv9Q4YWIfEFwDjXZF7ql3VUeCQNXBZwiTltcs8ihzUrZRVDBmw3jnpWRLPHMzBnYG4U4P2H8sBas%2BuermskQNVwZR4B9F%2B5iK8R43aoGYZHz0e%2FDOEHz6oRiMEG76hG33QdNjQB73OjKF3pspIKn2P%2FRbb8YDuXOl%2BhNkBjVDmA3w%3D%3D%7Ctkp%3ABk9SR9bSqLXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=168580698837",
+      "product_id": "168580698837",
+      "epid": "28050407162",
+      "condition": "Pre-owned",
+      "rating": 5.0,
+      "reviews": 7,
+      "price": {
+        "raw": "£10.67",
+        "extracted": 10.67
+      },
+      "shipping": {
+        "raw": "+£14.36 delivery",
+        "extracted": 14.36
+      },
+      "location": "from United States",
+      "stock_status": "Last one",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/M7AAAeSwRTtqbhC3/s-l500.jpg",
+      "seller": {
+        "username": "thesixth",
+        "reviews": 2200,
+        "positive_feedback_in_percentage": 99.3
+      }
+    },
+    {
+      "title": "The Lords of Easy Money: How the Federal Reserve Broke the Ame...",
+      "link": "https://www.ebay.co.uk/itm/336837225887?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=28050407162&itmmeta=01M8DNA54NQ63A4RG0NQTZ36J1&hash=item4e6d102d9f:g:e2UAAeSw0z9qyUwI&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2F6PnQiAqHssGKBRs56BS3ow96sIQpIk9a9Xk3siDrJ664LeICoPoNCvANCHJIHRqKc8F0YWhtiPEcYj4FYNmTq8m2B6TJaa9POr3UC77Av9xgBGlRw1D0KI%2Bz%2FGDNMUMtZL0P3i%2BwoT16B5P1KQl9fnN5SdSO60ehqmYo3LbiV%2BgoEOKUYEbJxqstnxDn7awIHR7WsXtUcEnj9qsIzNdLr%2F9YBFF02N6kem90UZbyGQvW6ZrJ2z%2FqYtfToOSbMB2j%2BwjTUXfSUhDUohZGG3AdulyHDdtB%2Ft5AmGTSjidzHOw%3D%3D%7Ctkp%3ABk9SR9bSqLXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=336837225887",
+      "product_id": "336837225887",
+      "epid": "28050407162",
+      "condition": "Pre-owned",
+      "rating": 5.0,
+      "reviews": 7,
+      "price": {
+        "raw": "£11.23",
+        "extracted": 11.23
+      },
+      "shipping": {
+        "raw": "+£8.23 delivery",
+        "extracted": 8.23
+      },
+      "location": "from United States",
+      "buying_format": "accepts_offers",
+      "buying_format_text": "or Best Offer",
+      "thumbnail": "https://i.ebayimg.com/images/g/e2UAAeSw0z9qyUwI/s-l500.jpg",
+      "seller": {
+        "username": "lonestarbookrescue",
+        "reviews": 1200,
+        "positive_feedback_in_percentage": 100
+      }
+    },
+    {
+      "title": "The Lords of Easy Money: How the Federal Res... by Leonard, Christopher Hardback",
+      "subtitle": "FREE US DELIVERY | ISBN: 1982166630 | Quality Books",
+      "link": "https://www.ebay.co.uk/itm/800940416116?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=28050407162&itmmeta=01M8DNA54N0Y7RKF545Z5AQ2W6&hash=itemba7bc4dc74:g:sPIAAeSwpXtq~52X&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2BMSoBIqA8hRVm74COunBuW07C06agdhByqkhJmdVjvf61rNy4n3y83nnza4mrAJRgQIS%2BsgLBOB44QCjjYS3rDYnbra5XJwIABKEHN8GwGnoCmvDUGOZAzhheKI4KNc97t0u9tq6ErGXCPH5BOYEujdfp4iloUn7GXr9m4uqKCDQ0zjVX9kMKRi%2B3pWTtWb3lwqOnO0jbJtYbqJYm6ZDMySHQn40wTN9hXhTnlzMW%2FBSKcljF0WL5uKLQT%2Bv791EGNK%2BKSJeKD4fFwWV%2F4%2Fr4XDKTE4zPjD7qJyt3eetbw9INQ0AjWOz3aD0uUVRbwPpAUmLYntEKlYAlUZ8sRLpoZ%7Ctkp%3ABk9SR9bSqLXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=800940416116",
+      "product_id": "800940416116",
+      "epid": "28050407162",
+      "condition": "Pre-owned",
+      "rating": 5.0,
+      "reviews": 7,
+      "price": {
+        "raw": "£24.30",
+        "extracted": 24.3
+      },
+      "shipping": {
+        "raw": "+£8.88 delivery",
+        "extracted": 8.88
+      },
+      "location": "from United States",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/sPIAAeSwpXtq~52X/s-l500.jpg",
+      "seller": {
+        "username": "worldofbooksusa",
+        "reviews": 1400000,
+        "positive_feedback_in_percentage": 98.9
+      }
+    },
+    {
+      "title": "The Lords of Easy Money: How the Fe..., Christopher Leo",
+      "link": "https://www.ebay.co.uk/itm/354686588333?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=28050407162&itmmeta=01M8DNA54NBHVJ4KH3R88MX89V&hash=item5294f7d5ad:g:Sk4AAeSwrWpql0Q~&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde90ToVWtQLTLp5wvWNrDS1y3rpbXG2fpurl5v2RNsmKc46IktBw%2FtUIwy%2FTVMwamOUAoLXmLfDFttQ7mY6xje9AmYtEHTzP5voGXmpYFK112Kd48EJmIoBGCSrgigmVXct12i4PbOdlLv7KjYt92gvX7qEVVixHSKtc%2BDupgVLh4kcFCRelbdejjrPv23IJqiih9RFja%2BSB8uKi4P04fJTqa8g%2BJLqvn34nO6vF90GHg8wMTU9kC1NyhMzp39D2jcstXdOA8FmjKfQWveUFVBNAdKdqBJ%2F6Uy2QPHwPAccjkeAB9kLaUwJcWADmUMiGqpOwHoZNBJMu8oVRrnu7HYme%7Ctkp%3ABk9SR9bSqLXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=354686588333",
+      "product_id": "354686588333",
+      "epid": "28050407162",
+      "condition": "Pre-owned",
+      "rating": 5.0,
+      "reviews": 7,
+      "price": {
+        "raw": "£9.34",
+        "extracted": 9.34
+      },
+      "shipping": {
+        "raw": "+£6.68 delivery",
+        "extracted": 6.68
+      },
+      "location": "from United States",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/Sk4AAeSwrWpql0Q~/s-l500.jpg",
+      "seller": {
+        "username": "worldofbooksinc",
+        "reviews": 383400,
+        "positive_feedback_in_percentage": 99.4
+      }
+    },
+    {
+      "title": "The Lords of Easy Money: How the Federal Reserve Broke the American Economy",
+      "subtitle": "by Leonard, Christopher | HC | VeryGood",
+      "link": "https://www.ebay.co.uk/itm/377675810224?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=28050407162&itmmeta=01M8DNA54N2YWS6PH5NM3JPNJT&hash=item57ef3b85b0:g:zncAAOSwq95hXs45&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9RZ6iXSpbjClbcPqTvwTI75lSnYULuns1GOXxtRKJD8egmzDPyvoWbFvp2LuNKFBTDzonO0NfuAGxFIs2bDkYBn7%2Fwi20MKj6gpuDP3OwR266HEv8RSUfxrXLWOurcaYmAS3FKybmeGkxbqVnCOqsxifIb6i6R7PW0ySvisbyJ9KBTi9WAyGv3Vi%2FzbLJg%2B%2BMAjbvvWy4U6T--uFTuVTHZwFUDUVpLzcBMAWi1FaWv5vcCPANwjEYq7JSBdbcJaEfUr7kQJHeTj5aIjhaH2SC%2FfYWUhYuNl6VwPz9WEvLvFObr3zKLHFXwFfXZDnSXJDyTEtcf72NauZCXS%2Fi%2BKNjr%7Ctkp%3ABk9SR9bSqLXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=377675810224",
+      "product_id": "377675810224",
+      "epid": "28050407162",
+      "condition": "Pre-owned",
+      "rating": 5.0,
+      "reviews": 7,
+      "price": {
+        "raw": "£12.95",
+        "extracted": 12.95
+      },
+      "shipping": {
+        "raw": "+£8.92 delivery",
+        "extracted": 8.92
+      },
+      "location": "from United States",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/zncAAOSwq95hXs45/s-l500.jpg",
+      "seller": {
+        "username": "thrift.books",
+        "reviews": 4900000,
+        "positive_feedback_in_percentage": 99.7
+      }
+    },
+    {
+      "title": "The Lords of Easy Money: How the Federal Reserve Broke the American Economy",
+      "subtitle": "by Leonard, Christopher | HC | Good",
+      "link": "https://www.ebay.co.uk/itm/198826415124?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=28050407162&itmmeta=01M8DNA54N11WSZ1J643EGFYAM&hash=item2e4afa5414:g:zncAAOSwq95hXs45&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde8vG1cTYkm7uO5yUlsEf7ZEZM9zprga9ZHfl0vX7HfE81%2FGgzKzHdYKfoLLtYPr2vuO%2FjzGwnb43OOKSnDx8EgIrXKvAin9PlQIdif%2F3M1XDocMVoMJpXx4abtnAVIhQ1GgSBuRzo9IpZJwqvJ63F%2Befmu6eF7pfHIZ1RbpeQ5dVtOrPYlEy7FSYIMJPtaZ33a2dQ8km7lyWjkvv35pNy17FFpf5pS6AdZyoi4moy61KRdtX0F5lpvv3qHI2bYYv8PDqA6rmk4NywHFOnm%2FHG7IAuNh3mMTKEP1qDf%2BdYw6vw%3D%3D%7Ctkp%3ABk9SR9jSqLXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=198826415124",
+      "product_id": "198826415124",
+      "epid": "28050407162",
+      "condition": "Pre-owned",
+      "rating": 5.0,
+      "reviews": 7,
+      "price": {
+        "raw": "£11.51",
+        "extracted": 11.51
+      },
+      "shipping": {
+        "raw": "+£8.92 delivery",
+        "extracted": 8.92
+      },
+      "location": "from United States",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/zncAAOSwq95hXs45/s-l500.jpg",
+      "seller": {
+        "username": "thrift.books",
+        "reviews": 4900000,
+        "positive_feedback_in_percentage": 99.7
+      }
+    },
+    {
+      "title": "The Lords of Easy Money : How the Federal Reserve Broke the Ameri",
+      "subtitle": "Free US Delivery | ISBN:1982166630",
+      "link": "https://www.ebay.co.uk/itm/398128510657?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=28050407162&itmmeta=01M8DNA54P5S824183B30K790M&hash=item5cb24ef6c1:g:0aMAAeSw9wNqRTRl&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8mxsY8W1rB9k019QSo%2BlpLWX3uGBnRUJAddGQ8l7QJGDR4IUJAX5j2MPb2xXlZRqC27XUD%2Fhc7R%2Fh33uhAGdhpSBSS%2FnOa52ZctE3n%2FidKd8Bcor3z%2FxrbgXAPsJWF2uNhhk0iqNzGEZo%2F5tybOAGbfJ5awdhDXoHFGmkMXIYTkCn%2FjDmNryMW2KIloXSeNb%2B8aWsNSlV%2F8FTAtaBsCVMr1REku8Wki%2FR0o%2BRIn5FZk0t6Vsq5SQx82XEW7GM0XYgwU6Iclb2G%2FPvMbGyIB94wMGC0Ou1z2iTcWHGpGFnzF53A2kQ6LCyTiepH%2BRMnk02PagGRKQZPl93e7DnjcRWY%7Ctkp%3ABk9SR9jSqLXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=398128510657",
+      "product_id": "398128510657",
+      "epid": "28050407162",
+      "condition": "Pre-owned",
+      "rating": 5.0,
+      "reviews": 7,
+      "price": {
+        "raw": "£8.13",
+        "extracted": 8.13
+      },
+      "shipping": {
+        "raw": "+£6.87 delivery",
+        "extracted": 6.87
+      },
+      "location": "from United States",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/0aMAAeSw9wNqRTRl/s-l500.jpg",
+      "seller": {
+        "username": "betterworldbookswest",
+        "reviews": 579500,
+        "positive_feedback_in_percentage": 99.7
+      }
+    },
+    {
+      "sponsored": true,
+      "title": "The Lords of Easy Money : How the Federal Reserve Broke the Ameri",
+      "subtitle": "Free US Delivery | ISBN:1982166630",
+      "link": "https://www.ebay.co.uk/itm/227586563428?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=28050407162&itmmeta=01M8DNA54PWDN4MM77T4WQBMHY&hash=item34fd375d64:g:GSsAAeSwYONq4Xs-&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2BgvBEFz2bFUrjNCj3hQ3sbKuWf4MJ%2FLQvTW0Ajecu4n%2B50R40jfXN2Rio3cv2kC5RSuxGNtUhLwFJAahD%2F71PLtzUAiAQHvgwPZgDqb63MbPLinXKkcU1i5M40agmiT%2FX6%2Bq0tdp0%2F4lLE0ToHaHG6ZtClajVHUwtDoP%2FsN0zGRoFiZQau%2F3ih7L3OH%2Fa2qbvWKE%2BjB9x%2F3Wtrt6lVd8f0opiaV%2BxHHYbOPqdgNZ7bGZ0J6qB9JmO0KEc88p1zFDB5%2BA7QZxa%2FinbjNoRQBTOwefo42E1qxV5zdLmolipbEywI6qHF1XEkCZLsuo1ZBqd48N4w1bOt7LpReGs0Ytnz%7Ctkp%3ABFBM2NKotcNo",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=227586563428",
+      "product_id": "227586563428",
+      "epid": "28050407162",
+      "condition": "Pre-owned",
+      "rating": 5.0,
+      "reviews": 7,
+      "price": {
+        "raw": "£8.13",
+        "extracted": 8.13
+      },
+      "shipping": {
+        "raw": "+£6.10 delivery",
+        "extracted": 6.1
+      },
+      "location": "from United States",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/GSsAAeSwYONq4Xs-/s-l500.jpg",
+      "seller": {
+        "username": "betterworldbooks",
+        "reviews": 3300000,
+        "positive_feedback_in_percentage": 99.7
+      }
+    },
+    {
+      "sponsored": true,
+      "title": "The Lords of Easy Money : How the Federal Reserve Broke the Ameri",
+      "subtitle": "Free US Delivery | ISBN:1982166630",
+      "link": "https://www.ebay.co.uk/itm/227612108338?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=28050407162&itmmeta=01M8DNA54P4MXTSBE62DPQVEWH&hash=item34febd2632:g:e4IAAeSw1Y5q9qE6&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8X7i%2BW78NoYYKGSoO%2BgBnaSBqiN2CrXF8OpZ9VSnt%2BXsprkbJrqgOnyGrgGNLg8HAhjTliLODV0G0mvi2cWSUU3Lf4omB5fAnX7m0nX9tJKEEQAXUj7Qq3gIj%2FyOKncijAhvHVoCkuYWiVj0pG5hAh2eroFpBEaa7hJl48FRGZaHJVhvhMQw4l2t9MsSJ9K5mZS2qZQr9TlKVDqCKuLUR7Rla7zBQAtftlnWryHdNeBSBFjPCoWXPhGakUNHWjXqRsU77jzanDjJ6MTbgC4hVEvb%2By9jgCkyChiuBbOqCyDLeYVMVPGXsJZ%2F3XL18mmJGqTLeUgA2tXNkwx8KC86kL%7Ctkp%3ABFBM2NKotcNo",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=227612108338",
+      "product_id": "227612108338",
+      "epid": "28050407162",
+      "condition": "Pre-owned",
+      "rating": 5.0,
+      "reviews": 7,
+      "price": {
+        "raw": "£8.13",
+        "extracted": 8.13
+      },
+      "shipping": {
+        "raw": "+£6.10 delivery",
+        "extracted": 6.1
+      },
+      "location": "from United States",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/e4IAAeSw1Y5q9qE6/s-l500.jpg",
+      "seller": {
+        "username": "betterworldbooks",
+        "reviews": 3300000,
+        "positive_feedback_in_percentage": 99.7
+      }
+    }
+  ],
+  "inline_results": [
+    {
+      "title": "Picked for you",
+      "subtitle": "Top selling items from trusted sellers | Sponsored",
+      "items": [
+        {
+          "title": "The Lords of Easy Money By Christopher Leonard - Non Fiction - Paperback",
+          "link": "https://www.ebay.co.uk/itm/397017399810?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&itmmeta=01M8DNA558X84GVVNSAJ3GR1RP&hash=item5c7014c202:g:4sMAAeSweKxot~-k&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2BNLmP8TQXhibSazDQQtY0u7pb3PYLBi9g5V3Umj6uk%2FNjsrVTVos4VWIYCmR4JOfwNOdoNNuoWajLwi44JtDlzBwQMtO99uFqNapd5XxQXl39jCBCbHE65ahC6rRJbIENpwQY%2BeF9PoeFVZrBOFCBkoR8AwsF64XSinwurip6rbcZBjC%2Frc%2F94nu2s8qIb9eSmqq55RmyNAfVVbiAZp%2B2uRsltfX8DB7dEtCtsJeksAyEOEd4klCzG4xqPFrbz6DEyNe9xZwMp1tCuuX4HU%2BcfWTE--qBlvyjxMDzCCpbkNiDTPZbQ0xvIt3kljwu6EDqcM33pQ4ZFmYs3ujkTw6VH%7Ctkp%3ABFBMtNOotcNo",
+          "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=397017399810",
+          "product_id": "397017399810",
+          "price": {
+            "raw": "£6.49",
+            "extracted": 6.49
+          },
+          "seller": {
+            "username": "bangzo_bookstore",
+            "reviews": 210033,
+            "positive_feedback_in_percentage": 100
+          },
+          "thumbnail": "https://i.ebayimg.com/images/g/4sMAAeSweKxot~-k/s-l500.jpg"
+        },
+        {
+          "title": "The Lords of Easy Money By Christopher Leonard - Non Fiction - Paperback",
+          "link": "https://www.ebay.co.uk/itm/187537589356?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&itmmeta=01M8DNA558FXY56JYDET8MFDAQ&hash=item2baa1c846c:g:ZjQAAOSwHfFlJ902&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde80IcCp4%2BDUVOizRgcwpfaXrpRAzGZ071sa1IpImGITY7RcRNRmscKkU2ArRwMinLMkWB%2FO55YNiaWGZ3H%2BwxUFlGJqtIInKn0LG8%2FLGUORDqtmszfhFpQ2HiJ4JJgtfhJPf9KfIXo56JHU%2F%2B6ycKYMZLV4RRBcpevu78jVyql7qNWpBiDhQfOqXKYHkZYubDklW20zEzw5XxPhey%2B9ecUv4GktHocXNa%2BB7B5ziMjPQHcXQ81nB%2FZw6hQZnp6rO27Wj1bJaTWA%2B3UgW88j1fzIb1WwmtCPyZL%2Bo368nbh0H4zKlJEErcGZKviOfzCLtIpgvOEDSjdMpHm6kVZngQy5%7Ctkp%3ABFBMtNOotcNo",
+          "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=187537589356",
+          "product_id": "187537589356",
+          "price": {
+            "raw": "£7.29",
+            "extracted": 7.29
+          },
+          "seller": {
+            "username": "books2door",
+            "reviews": 301897,
+            "positive_feedback_in_percentage": 100
+          },
+          "thumbnail": "https://i.ebayimg.com/images/g/ZjQAAOSwHfFlJ902/s-l500.jpg"
+        },
+        {
+          "title": "The Lords of Easy Money: How the Fe..., Christopher Leo",
+          "link": "https://www.ebay.co.uk/itm/397157685872?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&itmmeta=01M8DNA558HYZEJ1TNFEF8TSH9&hash=item5c78715a70:g:rj8AAeSw4cVpRxLe&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8IR0hUE3FRXEKcNoDr9cH7SlMO--A9EoOvn9XkkWsupPlTU2q46BaDmEfcyeT6mT6vuJx%2FV6Z2UNsHo792I9C2Wk9XhiqqX5YgTkeyIMk7NpMnXSLdvayPD%2FDiLfd%2BGJcJuBdt5BPIqcrmDtKbdmuJ9HahBGbAIt9abPN2u4Fai6wfINh2OjZkR8iD4cOkdr41bQ2neNz6VAPB279jlixAAqYZS51L9dhbXGwpG4uaSefUWUplo8dq5I3t788ygyJPfK29DQU7qaAv%2B2cjvUw8k%2BeqyQ2trMoheQCyF9KTtaJmna44IJ5NE38MTW7Xl5U6KDtVewQrQU1MeeVhtZR5%7Ctkp%3ABFBMtNOotcNo",
+          "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=397157685872",
+          "product_id": "397157685872",
+          "price": {
+            "raw": "£18.69",
+            "extracted": 18.69
+          },
+          "promotion": "Buy 2, get 1 20% off",
+          "seller": {
+            "username": "worldofbooks08",
+            "reviews": 11993953,
+            "positive_feedback_in_percentage": 99.5
+          },
+          "thumbnail": "https://i.ebayimg.com/images/g/rj8AAeSw4cVpRxLe/s-l500.jpg"
+        },
+        {
+          "title": "The Lords of Easy Money: How the Fe..., Leonard, Christ",
+          "link": "https://www.ebay.co.uk/itm/147685561716?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=24083463138&itmmeta=01M8DNA5580Z2C2EN8D53T0BH7&hash=item2262bed574:g:TEgAAeSw9mFq~Oor&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9cimDOS3Nw3rZ70n7%2BUB2HsQLt4lC07s11PL15wXFl3x8FvvZpP2C1br%2FRpxxdcQHftdYKc2az4YIRQjb1ZMT6yPN8%2BmpLfYQhBykXeEQ1B7elLldL5Gau7UMWjaYmWHNt1%2FgTPyjNra8FvmlFCqad5jfA4mzS4C3ZU9LNThx82Hm6Wdj2zpBaz3BEwol0Hetbe4qkuATCXpNZvlZkZnbvhC2hEmvbclIcvr5nwjgVJ8ULUxcBI4Ox3hCBuktXROpPltOfXWXTVtJljtzHZqkr81Lsm01fcQv3noNancX60gUDcqUW%2F6Y5lAgVHpGYJ1vAEb3g88kkFU44cCiOt%2Fo%2B%7Ctkp%3ABFBMtNOotcNo",
+          "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=147685561716",
+          "product_id": "147685561716",
+          "epid": "24083463138",
+          "price": {
+            "raw": "£20.99",
+            "extracted": 20.99
+          },
+          "promotion": "Buy 2, get 1 20% off",
+          "seller": {
+            "username": "worldofbooks08",
+            "reviews": 11993953,
+            "positive_feedback_in_percentage": 99.5
+          },
+          "thumbnail": "https://i.ebayimg.com/images/g/TEgAAeSw9mFq~Oor/s-l500.jpg"
+        },
+        {
+          "title": "The Lords of Easy Money: How the Federal Reserve Broke the Ameri",
+          "link": "https://www.ebay.co.uk/itm/920151301071?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=8082523588&itmmeta=01M8DNA558EWQ3KFC6Z5N4AMZV&hash=itemd63d4a9bcf:g:fyEAAeSw5Nlq--yD&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2Fpmcn9p8Z0JNP4zJxeYWYAmtR2Nneyeec44mRkL0df%2Bb5C0dCIPB7yS033yIob%2FXA9z8fHsHjhWe3qacdP0W1jnqKYjg4%2F7vMo8QmMgH9H4ltNFLgITbQ2L5xjyb2LJq2gvB7%2F55R1sOQ%2FVF3ZMnguGmxC0HkXdVb3jOtCjtu74HTsPWWRjDCBpcqqQeDewPZrM--7KZ%2Bg6BOgJm04DaFq60O%2FhVvywKwfTbNPbGO9mOmNUQxbHpaBdK6Ig3uCf9yJ9DKb3ZgOLOKgugpgEoWp%2BP5GE4UMW4GX1VmCbWzU4RVCKCVoGu4nLle78qr0%2BNk2FKF8czQsYKDa5XWh6G%2BT%7Ctkp%3ABFBMtNOotcNo",
+          "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=920151301071",
+          "product_id": "920151301071",
+          "epid": "8082523588",
+          "price": {
+            "raw": "£12.84",
+            "extracted": 12.84
+          },
+          "seller": {
+            "username": "awesomebooksuk",
+            "reviews": 2661793,
+            "positive_feedback_in_percentage": 99.7
+          },
+          "thumbnail": "https://i.ebayimg.com/images/g/fyEAAeSw5Nlq--yD/s-l500.jpg"
+        },
+        {
+          "title": "The Lords of Easy Money How the Federal Reserve Broke the | Leonard Christopher",
+          "link": "https://www.ebay.co.uk/itm/197718160415?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=24083463138&itmmeta=01M8DNA558AMXEA6KT8JFPF7SV&hash=item2e08ebb41f:g:DDcAAeSw3VFo0R1w&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2FraBgzlS5Wa1vyhMax8kReDWdyP7gYFEl1ouoBVodHqgr0EtWfv0dl1h1WTayiDROlgJNgcyAVpezY2D%2BVFenHqLpjmhn3U%2BowZ4UJP0szZeO4jaMjDyHYHhfL1vQ6Aqw1uez7oDj3HGmR7XD8dKdMkSBRHHX3BYPjEClf3%2FKoekjDxAEETRi6%2FEWY8L6p%2BGCLyvsVbkCoWezckaU1nK64OsAO0diuVskLeIad%2B6iOCddEdT33iQ40IeGJQbO5WXFzVOr%2BE94UPAmvcxlHl%2BlmKPK8kDFiSxCgTCEg3oqop%2BuM%2FkLQCobX27pwiZKw1rs22WsarstRNfL5reQWmISZ%7Ctkp%3ABFBMtNOotcNo",
+          "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=197718160415",
+          "product_id": "197718160415",
+          "epid": "24083463138",
+          "price": {
+            "raw": "£7.49",
+            "extracted": 7.49
+          },
+          "seller": {
+            "username": "miimii4",
+            "reviews": 9913,
+            "positive_feedback_in_percentage": 99.8
+          },
+          "thumbnail": "https://i.ebayimg.com/images/g/DDcAAeSw3VFo0R1w/s-l500.jpg"
+        },
+        {
+          "title": "The Lords of Easy Money: How the Fe..., Christopher Leo",
+          "link": "https://www.ebay.co.uk/itm/307002716462?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&itmmeta=01M8DNA558VKAZ90V3749HWJ69&hash=item477ac9b12e:g:YBUAAeSw5oRqLz5D&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2ByC6rFdALGddt77h%2FNtO7S3%2FbXp9NyTmxoaSTNpfTVnc%2F5T7wuHEva4moQTlL7Y7caOBkoUdUr1keY6LfWxepUloSobzMGi69cU8QUAD9S%2BL4slJ0kENhsErEnUCSOd61EZMCN6qPlmkrbfhMtnIZ%2BKnYTlvGb7jTaL5lzdmQaquykXOeirrtONkZQh9rC4KBUCyut4SKG0QH96WVvky3%2F5oKgPiV%2Bx6S2jd2IaV9B6J8sgwGI3qba7Jh3uAwkFTpwZDC9plJeHAK7MBGy1XSnAnzl9h8YA1lCj3hWFuvgiFrH45pvp3uGkK6JNI3I9R%2FWQDf8QVDFOXLoR9joMQ%2Fi%7Ctkp%3ABFBMtNOotcNo",
+          "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=307002716462",
+          "product_id": "307002716462",
+          "price": {
+            "raw": "£18.69",
+            "extracted": 18.69
+          },
+          "promotion": "Buy 2, get 1 20% off",
+          "seller": {
+            "username": "worldofbooks08",
+            "reviews": 11993953,
+            "positive_feedback_in_percentage": 99.5
+          },
+          "thumbnail": "https://i.ebayimg.com/images/g/YBUAAeSw5oRqLz5D/s-l500.jpg"
+        },
+        {
+          "title": "The Lords of Easy Money: How the Federal Reserve Broke the Ameri",
+          "link": "https://www.ebay.co.uk/itm/800928095083?_skw=The+Lords+of+Easy+Money+Christopher+Leonard+book&epid=8082523588&itmmeta=01M8DNA558CAADAETBT2XK6DP8&hash=itemba7b08db6b:g:TqQAAeSwuw9q--bD&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8IlCsoa42bMur%2FV9Cdlz4guNgL2YcLqzgn%2FUsMSRtYRIp47AxOnIpr344Zlc9UEzpgpAr%2FkAExdUEaQrK7G6xLe0cCjt5s1Y53eM3OkPXM%2B2Oo6S3wNJyp0M8SMzKuWdkjoPQ7tsNZr3j2yJw43yS7PuEn7mFKLEEYzsApsgjX8BPvizzO%2FqIKmScdS3r9ceF5LbnbMI0tap89%2BQD%2FTBj%2BqYsyK%2BH1CkHTktj%2B9PUoQ7yZxZ4k90kfljoQHOSszEwWwcEHq3cV4ONIKHZUQ%2FCBfBhEgDv5v9yO99m857LIFU1MejVxmn8zqROC4S38zDw%2Fwj1cIjxZ6sLxVHEXqo16%7Ctkp%3ABFBMtNOotcNo",
+          "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=800928095083",
+          "product_id": "800928095083",
+          "epid": "8082523588",
+          "price": {
+            "raw": "£12.84",
+            "extracted": 12.84
+          },
+          "seller": {
+            "username": "cmedia_group",
+            "reviews": 1694426,
+            "positive_feedback_in_percentage": 99.8
+          },
+          "thumbnail": "https://i.ebayimg.com/images/g/TqQAAeSwuw9q--bD/s-l500.jpg"
+        }
+      ]
+    }
+  ],
+  "related_searches": [
+    {
+      "query": "the millionaire master plan",
+      "link": "https://www.ebay.co.uk/sch/i.html?_nkw=the+millionaire+master+plan&_sop=12"
+    },
+    {
+      "query": "millionaire master plan",
+      "link": "https://www.ebay.co.uk/sch/i.html?_nkw=millionaire+master+plan&_sop=12"
+    }
+  ],
+  "popular_filters": [
+    {
+      "name": "Hardcover",
+      "parameter": "Format=Hardcover",
+      "link": "https://www.ebay.co.uk/sch/i.html?_nkw=The+Lords+of+Easy+Money+Christopher+Leonard+book&Format=Hardcover",
+      "serpapi_link": "https://serpapi.com/search.json?_nkw=The+Lords+of+Easy+Money+Christopher+Leonard+book&ebay_domain=ebay.co.uk&engine=ebay&popular_filters=Format%3DHardcover"
+    },
+    {
+      "name": "Paperback",
+      "parameter": "Format=Paperback",
+      "link": "https://www.ebay.co.uk/sch/i.html?_nkw=The+Lords+of+Easy+Money+Christopher+Leonard+book&Format=Paperback",
+      "serpapi_link": "https://serpapi.com/search.json?_nkw=The+Lords+of+Easy+Money+Christopher+Leonard+book&ebay_domain=ebay.co.uk&engine=ebay&popular_filters=Format%3DPaperback"
+    },
+    {
+      "name": "Trade Paperback",
+      "parameter": "Format=Trade%2520Paperback",
+      "link": "https://www.ebay.co.uk/sch/i.html?_nkw=The+Lords+of+Easy+Money+Christopher+Leonard+book&Format=Trade%2520Paperback",
+      "serpapi_link": "https://serpapi.com/search.json?_nkw=The+Lords+of+Easy+Money+Christopher+Leonard+book&ebay_domain=ebay.co.uk&engine=ebay&popular_filters=Format%3DTrade%252520Paperback"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.ebay.co.uk/sch/i.html?_nkw=The+Lords+of+Easy+Money+Christopher+Leonard+book&_pgn=2",
+    "other_pages": {
+      "1": "https://www.ebay.co.uk/sch/i.html?_nkw=The+Lords+of+Easy+Money+Christopher+Leonard+book&_pgn=1",
+      "2": "https://www.ebay.co.uk/sch/i.html?_nkw=The+Lords+of+Easy+Money+Christopher+Leonard+book&_pgn=2"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?_nkw=The+Lords+of+Easy+Money+Christopher+Leonard+book&_pgn=2&ebay_domain=ebay.co.uk&engine=ebay",
+    "next": "https://serpapi.com/search.json?_nkw=The+Lords+of+Easy+Money+Christopher+Leonard+book&_pgn=2&ebay_domain=ebay.co.uk&engine=ebay",
+    "other_pages": {
+      "1": "https://serpapi.com/search.json?_nkw=The+Lords+of+Easy+Money+Christopher+Leonard+book&_pgn=1&ebay_domain=ebay.co.uk&engine=ebay",
+      "2": "https://serpapi.com/search.json?_nkw=The+Lords+of+Easy+Money+Christopher+Leonard+book&_pgn=2&ebay_domain=ebay.co.uk&engine=ebay"
+    }
+  }
+}

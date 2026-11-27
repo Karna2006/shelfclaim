@@ -1,0 +1,119 @@
+{
+  "books": {
+    "b_0001": {
+      "height_cm": null,
+      "thickness_cm": null,
+      "method": "none",
+      "flags": []
+    },
+    "b_0002": {
+      "height_cm": null,
+      "thickness_cm": null,
+      "method": "none",
+      "flags": []
+    },
+    "b_0003": {
+      "height_cm": null,
+      "thickness_cm": null,
+      "method": "none",
+      "flags": []
+    },
+    "b_0004": {
+      "height_cm": null,
+      "thickness_cm": null,
+      "method": "none",
+      "flags": []
+    },
+    "b_0005": {
+      "height_cm": null,
+      "thickness_cm": null,
+      "method": "none",
+      "flags": []
+    },
+    "b_0006": {
+      "height_cm": null,
+      "thickness_cm": null,
+      "method": "none",
+      "flags": []
+    },
+    "b_0007": {
+      "height_cm": null,
+      "thickness_cm": null,
+      "method": "none",
+      "flags": []
+    },
+    "b_0008": {
+      "height_cm": null,
+      "thickness_cm": null,
+      "method": "none",
+      "flags": []
+    },
+    "b_0009": {
+      "height_cm": null,
+      "thickness_cm": null,
+      "method": "none",
+      "flags": []
+    },
+    "b_0010": {
+      "height_cm": null,
+      "thickness_cm": null,
+      "method": "none",
+      "flags": []
+    },
+    "b_0011": {
+      "height_cm": null,
+      "thickness_cm": null,
+      "method": "none",
+      "flags": []
+    }
+  },
+  "rows": {},
+  "shelf_run_m": null,
+  "sum_thickness_m": null,
+  "review_queue": [
+    {
+      "ref_id": "b_0001",
+      "code": "missing_scale_marker"
+    },
+    {
+      "ref_id": "b_0002",
+      "code": "missing_scale_marker"
+    },
+    {
+      "ref_id": "b_0003",
+      "code": "missing_scale_marker"
+    },
+    {
+      "ref_id": "b_0004",
+      "code": "missing_scale_marker"
+    },
+    {
+      "ref_id": "b_0005",
+      "code": "missing_scale_marker"
+    },
+    {
+      "ref_id": "b_0006",
+      "code": "missing_scale_marker"
+    },
+    {
+      "ref_id": "b_0007",
+      "code": "missing_scale_marker"
+    },
+    {
+      "ref_id": "b_0008",
+      "code": "missing_scale_marker"
+    },
+    {
+      "ref_id": "b_0009",
+      "code": "missing_scale_marker"
+    },
+    {
+      "ref_id": "b_0010",
+      "code": "missing_scale_marker"
+    },
+    {
+      "ref_id": "b_0011",
+      "code": "missing_scale_marker"
+    }
+  ]
+}

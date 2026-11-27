@@ -1,0 +1,210 @@
+{"t_ms":0,"type":"transcript_agent","payload":{"text":"Hi, I'm your claim assistant. I'll guide you through one slow walk past your shelves. Are you in India, with values in rupees?"}}
+{"t_ms":1684,"type":"speech_event","payload":{"name":"tts-start","detail":"agent"}}
+{"t_ms":8693,"type":"speech_event","payload":{"name":"forced-final","detail":"interim stable for 1200ms"}}
+{"t_ms":8693,"type":"transcript_cleaned","payload":{"original":"hi I am your claim assistant","cleaned":"hi I am your claim assistant","removed_words":[]}}
+{"t_ms":8693,"type":"transcript_user","payload":{"text":"hi I am your claim assistant"}}
+{"t_ms":8693,"type":"agent_request","payload":{"model":"gemini-3.1-flash-lite","history_messages":2,"history_turns":1,"image_parts":0,"image_bytes":0,"tool_count":7,"estimated_prompt_tokens":1116,"total_prompt_tokens":null}}
+{"t_ms":8789,"type":"speech_event","payload":{"name":"tts-end","detail":"agent"}}
+{"t_ms":8790,"type":"speech_event","payload":{"name":"resume requested","detail":"speech ended"}}
+{"t_ms":8790,"type":"recognition_resumed","payload":{"detail":"speech ended"}}
+{"t_ms":10153,"type":"speech_event","payload":{"name":"late-final-ignored","detail":"hi I am your claim assistant"}}
+{"t_ms":8693,"type":"agent_attempt","payload":{"model":"gemini-3.1-flash-lite","attempt":1,"latency_ms":2387,"success":true,"error":null,"history_messages":2,"history_turns":1,"image_parts":0,"image_bytes":0,"tool_count":7,"estimated_prompt_tokens":1116,"total_prompt_tokens":1488}}
+{"t_ms":10609,"type":"agent_response_diagnostics","payload":{"finish_reason":"STOP","usage_metadata":{"candidates_token_count":18,"prompt_token_count":1488,"prompt_tokens_details":[{"modality":"TEXT","token_count":1488}],"total_token_count":1506,"thoughts_token_count":null},"prompt_feedback":null,"block_reason":null,"has_text_part":true,"has_function_call_part":false}}
+{"t_ms":10609,"type":"agent_reply","payload":{"latency_ms":2407,"model":"gemini-3.1-flash-lite","text":"I'm your claim assistant. To get started, please confirm your country and currency."}}
+{"t_ms":10609,"type":"transcript_agent","payload":{"text":"I'm your claim assistant. To get started, please confirm your country and currency."}}
+{"t_ms":11206,"type":"speech_event","payload":{"name":"tts-start","detail":"agent"}}
+{"t_ms":14373,"type":"speech_event","payload":{"name":"forced-final","detail":"interim stable for 1200ms"}}
+{"t_ms":14374,"type":"transcript_cleaned","payload":{"original":"you","cleaned":"you","removed_words":[]}}
+{"t_ms":14374,"type":"transcript_user","payload":{"text":"you"}}
+{"t_ms":14374,"type":"agent_request","payload":{"model":"gemini-3.1-flash-lite","history_messages":4,"history_turns":2,"image_parts":0,"image_bytes":0,"tool_count":7,"estimated_prompt_tokens":1152,"total_prompt_tokens":null}}
+{"t_ms":14456,"type":"speech_event","payload":{"name":"tts-end","detail":"agent"}}
+{"t_ms":14456,"type":"speech_event","payload":{"name":"resume requested","detail":"speech ended"}}
+{"t_ms":14456,"type":"recognition_resumed","payload":{"detail":"speech ended"}}
+{"t_ms":16217,"type":"transcript_cleaned","payload":{"original":"to get started","cleaned":"to get started","removed_words":["to","get","started"]}}
+{"t_ms":14374,"type":"agent_attempt","payload":{"model":"gemini-3.1-flash-lite","attempt":1,"latency_ms":1949,"success":true,"error":null,"history_messages":4,"history_turns":2,"image_parts":0,"image_bytes":0,"tool_count":7,"estimated_prompt_tokens":1152,"total_prompt_tokens":1509}}
+{"t_ms":16217,"type":"agent_response_diagnostics","payload":{"finish_reason":"STOP","usage_metadata":{"candidates_token_count":31,"prompt_token_count":1509,"prompt_tokens_details":[{"modality":"TEXT","token_count":1509}],"total_token_count":1540,"thoughts_token_count":null},"prompt_feedback":null,"block_reason":null,"has_text_part":true,"has_function_call_part":false}}
+{"t_ms":16217,"type":"agent_reply","payload":{"latency_ms":1969,"model":"gemini-3.1-flash-lite","text":"I am your AI claim assistant here to help record your library for your insurance claim. Please confirm if you are in India and if your currency is rupees."}}
+{"t_ms":16217,"type":"transcript_agent","payload":{"text":"I am your AI claim assistant here to help record your library for your insurance claim. Please confirm if you are in India and if your currency is rupees."}}
+{"t_ms":16413,"type":"speech_event","payload":{"name":"resume requested","detail":"speech ended"}}
+{"t_ms":16413,"type":"recognition_resumed","payload":{"detail":"speech ended"}}
+{"t_ms":16440,"type":"speech_event","payload":{"name":"tts-start","detail":"agent"}}
+{"t_ms":16527,"type":"transcript_user","payload":{"text":"to get started"}}
+{"t_ms":16527,"type":"agent_request","payload":{"model":"gemini-3.1-flash-lite","history_messages":6,"history_turns":3,"image_parts":1,"image_bytes":26831,"tool_count":7,"estimated_prompt_tokens":1472,"total_prompt_tokens":null}}
+{"t_ms":19104,"type":"transcript_agent","payload":{"text":"One moment.","kind":"filler"}}
+{"t_ms":16527,"type":"agent_attempt","payload":{"model":"gemini-3.1-flash-lite","attempt":1,"latency_ms":3923,"success":true,"error":null,"history_messages":6,"history_turns":3,"image_parts":1,"image_bytes":26831,"tool_count":7,"estimated_prompt_tokens":1472,"total_prompt_tokens":2657}}
+{"t_ms":20412,"type":"agent_response_diagnostics","payload":{"finish_reason":"STOP","usage_metadata":{"candidates_token_count":22,"prompt_token_count":2657,"prompt_tokens_details":[{"modality":"TEXT","token_count":1557},{"modality":"IMAGE","token_count":1100}],"total_token_count":2679,"thoughts_token_count":null},"prompt_feedback":null,"block_reason":null,"has_text_part":false,"has_function_call_part":true}}
+{"t_ms":20412,"type":"tool_call","payload":{"name":"set_locale","args":{"currency":"INR","country":"IN"}}}
+{"t_ms":20412,"type":"tool_result","payload":{"name":"set_locale","result":{"supported":true,"country":"IN","currency":"INR"}}}
+{"t_ms":20412,"type":"agent_reply","payload":{"latency_ms":3969,"model":"gemini-3.1-flash-lite","text":"Great. Start with the shelf on your left, top row, and move slowly."}}
+{"t_ms":20412,"type":"transcript_agent","payload":{"text":"Great. Start with the shelf on your left, top row, and move slowly."}}
+{"t_ms":20412,"type":"tool_call","payload":{"name":"start_sweep","args":{}}}
+{"t_ms":20412,"type":"stage_started","payload":{"stage":"capture"}}
+{"t_ms":20412,"type":"tool_result","payload":{"name":"start_sweep","result":{"started":true,"sweep_id":"sw_20261127_044901_65d3"}}}
+{"t_ms":23001,"type":"speech_event","payload":{"name":"forced-final","detail":"interim stable for 1200ms"}}
+{"t_ms":23002,"type":"transcript_cleaned","payload":{"original":"I am your I Climb assistant","cleaned":"I am your I Climb assistant","removed_words":[]}}
+{"t_ms":23002,"type":"transcript_user","payload":{"text":"I am your I Climb assistant"}}
+{"t_ms":23002,"type":"agent_request","payload":{"model":"gemini-3.1-flash-lite","history_messages":11,"history_turns":4,"image_parts":0,"image_bytes":0,"tool_count":7,"estimated_prompt_tokens":1346,"total_prompt_tokens":null}}
+{"t_ms":23098,"type":"speech_event","payload":{"name":"tts-end","detail":"agent"}}
+{"t_ms":23099,"type":"speech_event","payload":{"name":"resume requested","detail":"speech ended"}}
+{"t_ms":23099,"type":"recognition_resumed","payload":{"detail":"speech ended"}}
+{"t_ms":24365,"type":"speech_event","payload":{"name":"forced-final","detail":"interim stable for 1200ms"}}
+{"t_ms":24365,"type":"transcript_cleaned","payload":{"original":"I am a system please","cleaned":"I am a system please","removed_words":[]}}
+{"t_ms":24455,"type":"speech_event","payload":{"name":"resume requested","detail":"speech ended"}}
+{"t_ms":24455,"type":"recognition_resumed","payload":{"detail":"speech ended"}}
+{"t_ms":24861,"type":"transcript_cleaned","payload":{"original":"I am your I Climb assistant","cleaned":"I am your I Climb assistant","removed_words":[]}}
+{"t_ms":24936,"type":"speech_event","payload":{"name":"resume requested","detail":"speech ended"}}
+{"t_ms":24936,"type":"recognition_resumed","payload":{"detail":"speech ended"}}
+{"t_ms":23002,"type":"agent_attempt","payload":{"model":"gemini-3.1-flash-lite","attempt":1,"latency_ms":2043,"success":true,"error":null,"history_messages":11,"history_turns":4,"image_parts":0,"image_bytes":0,"tool_count":7,"estimated_prompt_tokens":1346,"total_prompt_tokens":1638}}
+{"t_ms":24921,"type":"agent_response_diagnostics","payload":{"finish_reason":"STOP","usage_metadata":{"candidates_token_count":15,"prompt_token_count":1638,"prompt_tokens_details":[{"modality":"TEXT","token_count":1638}],"total_token_count":1653,"thoughts_token_count":null},"prompt_feedback":null,"block_reason":null,"has_text_part":true,"has_function_call_part":false}}
+{"t_ms":24921,"type":"agent_reply","payload":{"latency_ms":2062,"model":"gemini-3.1-flash-lite","text":"Please keep moving steadily along the shelves. I am recording the video now."}}
+{"t_ms":24921,"type":"transcript_agent","payload":{"text":"Please keep moving steadily along the shelves. I am recording the video now."}}
+{"t_ms":24921,"type":"transcript_user","payload":{"text":"I am a system please"}}
+{"t_ms":24921,"type":"agent_request","payload":{"model":"gemini-3.1-flash-lite","history_messages":13,"history_turns":5,"image_parts":0,"image_bytes":0,"tool_count":7,"estimated_prompt_tokens":1385,"total_prompt_tokens":null}}
+{"t_ms":25165,"type":"speech_event","payload":{"name":"tts-start","detail":"agent"}}
+{"t_ms":24921,"type":"agent_attempt","payload":{"model":"gemini-3.1-flash-lite","attempt":1,"latency_ms":1154,"success":true,"error":null,"history_messages":13,"history_turns":5,"image_parts":0,"image_bytes":0,"tool_count":7,"estimated_prompt_tokens":1385,"total_prompt_tokens":1660}}
+{"t_ms":25580,"type":"agent_response_diagnostics","payload":{"finish_reason":"STOP","usage_metadata":{"candidates_token_count":21,"prompt_token_count":1660,"prompt_tokens_details":[{"modality":"TEXT","token_count":1660}],"total_token_count":1681,"thoughts_token_count":null},"prompt_feedback":null,"block_reason":null,"has_text_part":true,"has_function_call_part":false}}
+{"t_ms":25580,"type":"agent_reply","payload":{"latency_ms":1172,"model":"gemini-3.1-flash-lite","text":"I am your insurance claim assistant. Let's continue the sweep; please pan slowly across the shelves."}}
+{"t_ms":25580,"type":"transcript_agent","payload":{"text":"I am your insurance claim assistant. Let's continue the sweep; please pan slowly across the shelves."}}
+{"t_ms":25580,"type":"transcript_user","payload":{"text":"I am your I Climb assistant"}}
+{"t_ms":25580,"type":"agent_request","payload":{"model":"gemini-3.1-flash-lite","history_messages":15,"history_turns":6,"image_parts":1,"image_bytes":26408,"tool_count":7,"estimated_prompt_tokens":1694,"total_prompt_tokens":null}}
+{"t_ms":28113,"type":"transcript_agent","payload":{"text":"One moment.","kind":"filler"}}
+{"t_ms":29142,"type":"speech_event","payload":{"name":"forced-final","detail":"interim stable for 1200ms"}}
+{"t_ms":29142,"type":"transcript_cleaned","payload":{"original":"a long","cleaned":"a long","removed_words":[]}}
+{"t_ms":29279,"type":"speech_event","payload":{"name":"tts-end","detail":"agent"}}
+{"t_ms":29279,"type":"speech_event","payload":{"name":"resume requested","detail":"speech ended"}}
+{"t_ms":29279,"type":"recognition_resumed","payload":{"detail":"speech ended"}}
+{"t_ms":25580,"type":"agent_attempt","payload":{"model":"gemini-3.1-flash-lite","attempt":1,"latency_ms":4958,"success":true,"error":null,"history_messages":15,"history_turns":6,"image_parts":1,"image_bytes":26408,"tool_count":7,"estimated_prompt_tokens":1694,"total_prompt_tokens":2801}}
+{"t_ms":30647,"type":"agent_response_diagnostics","payload":{"finish_reason":"STOP","usage_metadata":{"candidates_token_count":13,"prompt_token_count":2801,"prompt_tokens_details":[{"modality":"TEXT","token_count":1701},{"modality":"IMAGE","token_count":1100}],"total_token_count":2814,"thoughts_token_count":null},"prompt_feedback":null,"block_reason":null,"has_text_part":true,"has_function_call_part":false}}
+{"t_ms":30647,"type":"agent_reply","payload":{"latency_ms":4969,"model":"gemini-3.1-flash-lite","text":"Got that shelf. Please continue moving slowly to the next section."}}
+{"t_ms":30647,"type":"transcript_agent","payload":{"text":"Got that shelf. Please continue moving slowly to the next section."}}
+{"t_ms":30647,"type":"transcript_user","payload":{"text":"a long"}}
+{"t_ms":30647,"type":"agent_request","payload":{"model":"gemini-3.1-flash-lite","history_messages":18,"history_turns":7,"image_parts":0,"image_bytes":0,"tool_count":7,"estimated_prompt_tokens":1487,"total_prompt_tokens":null}}
+{"t_ms":31262,"type":"speech_event","payload":{"name":"forced-final","detail":"interim stable for 1200ms"}}
+{"t_ms":31262,"type":"transcript_cleaned","payload":{"original":"I am recording the","cleaned":"I am recording the","removed_words":[]}}
+{"t_ms":31321,"type":"speech_event","payload":{"name":"tts-start","detail":"agent"}}
+{"t_ms":31337,"type":"speech_event","payload":{"name":"tts-end","detail":"agent"}}
+{"t_ms":31337,"type":"speech_event","payload":{"name":"resume requested","detail":"speech ended"}}
+{"t_ms":31337,"type":"recognition_resumed","payload":{"detail":"speech ended"}}
+{"t_ms":30647,"type":"agent_attempt","payload":{"model":"gemini-3.1-flash-lite","attempt":1,"latency_ms":1348,"success":true,"error":null,"history_messages":18,"history_turns":7,"image_parts":0,"image_bytes":0,"tool_count":7,"estimated_prompt_tokens":1487,"total_prompt_tokens":1728}}
+{"t_ms":31900,"type":"agent_response_diagnostics","payload":{"finish_reason":"STOP","usage_metadata":{"candidates_token_count":8,"prompt_token_count":1728,"prompt_tokens_details":[{"modality":"TEXT","token_count":1728}],"total_token_count":1736,"thoughts_token_count":null},"prompt_feedback":null,"block_reason":null,"has_text_part":true,"has_function_call_part":false}}
+{"t_ms":31900,"type":"agent_reply","payload":{"latency_ms":1359,"model":"gemini-3.1-flash-lite","text":"Please continue moving slowly along the shelves."}}
+{"t_ms":31900,"type":"transcript_agent","payload":{"text":"Please continue moving slowly along the shelves."}}
+{"t_ms":31900,"type":"transcript_user","payload":{"text":"I am recording the"}}
+{"t_ms":31900,"type":"agent_request","payload":{"model":"gemini-3.1-flash-lite","history_messages":20,"history_turns":8,"image_parts":0,"image_bytes":0,"tool_count":7,"estimated_prompt_tokens":1518,"total_prompt_tokens":null}}
+{"t_ms":32678,"type":"speech_event","payload":{"name":"tts-start","detail":"agent"}}
+{"t_ms":31900,"type":"agent_attempt","payload":{"model":"gemini-3.1-flash-lite","attempt":1,"latency_ms":1843,"success":true,"error":null,"history_messages":20,"history_turns":8,"image_parts":0,"image_bytes":0,"tool_count":7,"estimated_prompt_tokens":1518,"total_prompt_tokens":1742}}
+{"t_ms":33845,"type":"agent_response_diagnostics","payload":{"finish_reason":"STOP","usage_metadata":{"candidates_token_count":9,"prompt_token_count":1742,"prompt_tokens_details":[{"modality":"TEXT","token_count":1742}],"total_token_count":1751,"thoughts_token_count":null},"prompt_feedback":null,"block_reason":null,"has_text_part":true,"has_function_call_part":false}}
+{"t_ms":33845,"type":"agent_reply","payload":{"latency_ms":1859,"model":"gemini-3.1-flash-lite","text":"Please keep moving slowly past the remaining shelves."}}
+{"t_ms":33845,"type":"transcript_agent","payload":{"text":"Please keep moving slowly past the remaining shelves."}}
+{"t_ms":35839,"type":"speech_event","payload":{"name":"forced-final","detail":"interim stable for 1200ms"}}
+{"t_ms":35839,"type":"transcript_cleaned","payload":{"original":"you","cleaned":"you","removed_words":[]}}
+{"t_ms":35839,"type":"transcript_user","payload":{"text":"you"}}
+{"t_ms":35839,"type":"agent_request","payload":{"model":"gemini-3.1-flash-lite","history_messages":19,"history_turns":8,"image_parts":1,"image_bytes":33050,"tool_count":7,"estimated_prompt_tokens":1728,"total_prompt_tokens":null}}
+{"t_ms":36030,"type":"speech_event","payload":{"name":"tts-end","detail":"agent"}}
+{"t_ms":36031,"type":"speech_event","payload":{"name":"resume requested","detail":"speech ended"}}
+{"t_ms":36031,"type":"recognition_resumed","payload":{"detail":"speech ended"}}
+{"t_ms":35839,"type":"agent_attempt","payload":{"model":"gemini-3.1-flash-lite","attempt":1,"latency_ms":1577,"success":true,"error":null,"history_messages":19,"history_turns":8,"image_parts":1,"image_bytes":33050,"tool_count":7,"estimated_prompt_tokens":1728,"total_prompt_tokens":2807}}
+{"t_ms":36486,"type":"agent_response_diagnostics","payload":{"finish_reason":"STOP","usage_metadata":{"candidates_token_count":11,"prompt_token_count":2807,"prompt_tokens_details":[{"modality":"IMAGE","token_count":1100},{"modality":"TEXT","token_count":1707}],"total_token_count":2818,"thoughts_token_count":null},"prompt_feedback":null,"block_reason":null,"has_text_part":true,"has_function_call_part":false}}
+{"t_ms":36486,"type":"agent_reply","payload":{"latency_ms":1578,"model":"gemini-3.1-flash-lite","text":"Got that section. Please continue slowly to the right."}}
+{"t_ms":36486,"type":"transcript_agent","payload":{"text":"Got that section. Please continue slowly to the right."}}
+{"t_ms":37633,"type":"speech_event","payload":{"name":"tts-start","detail":"agent"}}
+{"t_ms":41497,"type":"speech_event","payload":{"name":"tts-end","detail":"agent"}}
+{"t_ms":42051,"type":"speech_event","payload":{"name":"forced-final","detail":"interim stable for 1200ms"}}
+{"t_ms":42051,"type":"transcript_cleaned","payload":{"original":"please continue","cleaned":"please continue","removed_words":[]}}
+{"t_ms":42051,"type":"transcript_user","payload":{"text":"please continue"}}
+{"t_ms":42051,"type":"agent_request","payload":{"model":"gemini-3.1-flash-lite","history_messages":19,"history_turns":8,"image_parts":0,"image_bytes":0,"tool_count":7,"estimated_prompt_tokens":1448,"total_prompt_tokens":null}}
+{"t_ms":42327,"type":"speech_event","payload":{"name":"resume requested","detail":"speech ended"}}
+{"t_ms":42327,"type":"recognition_resumed","payload":{"detail":"speech ended"}}
+{"t_ms":42051,"type":"agent_attempt","payload":{"model":"gemini-3.1-flash-lite","attempt":1,"latency_ms":2159,"success":true,"error":null,"history_messages":19,"history_turns":8,"image_parts":0,"image_bytes":0,"tool_count":7,"estimated_prompt_tokens":1448,"total_prompt_tokens":1688}}
+{"t_ms":43707,"type":"agent_response_diagnostics","payload":{"finish_reason":"STOP","usage_metadata":{"candidates_token_count":7,"prompt_token_count":1688,"prompt_tokens_details":[{"modality":"TEXT","token_count":1688}],"total_token_count":1695,"thoughts_token_count":null},"prompt_feedback":null,"block_reason":null,"has_text_part":true,"has_function_call_part":false}}
+{"t_ms":43707,"type":"agent_reply","payload":{"latency_ms":2171,"model":"gemini-3.1-flash-lite","text":"Keep moving slowly along the shelves."}}
+{"t_ms":43707,"type":"transcript_agent","payload":{"text":"Keep moving slowly along the shelves."}}
+{"t_ms":44501,"type":"speech_event","payload":{"name":"tts-start","detail":"agent"}}
+{"t_ms":47268,"type":"speech_event","payload":{"name":"tts-end","detail":"agent"}}
+{"t_ms":51946,"type":"cue_sent","payload":{"text":"Move the phone more slowly.","priority":100,"kind":"TOO_FAST","metrics":{"window_frames":4,"fast_fraction":0.5,"low_light_fraction":0.5,"blurry_fraction":0.5,"glare_fraction":0.0,"median_blur":40.40429296780094,"median_exposure":90.55109519675926,"median_gyro_dps":24.66434755999391}}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s01","backend":"off"}}
+{"t_ms":0,"type":"error","payload":{"stage":"s01","exception_type":"RuntimeError","message":"All vision models failed: gemini-3.5-flash-lite: ValidationError (None)"}}
+{"t_ms":0,"type":"error","payload":{"stage":"s10","exception_type":"RuntimeError","message":"All vision models failed: gemini-3.5-flash-lite: ValidationError (None)"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s01","backend":"off"}}
+{"t_ms":0,"type":"error","payload":{"stage":"s01","exception_type":"RuntimeError","message":"All vision models failed: gemini-3.5-flash-lite: ValidationError (None)"}}
+{"t_ms":0,"type":"error","payload":{"stage":"s10","exception_type":"RuntimeError","message":"All vision models failed: gemini-3.5-flash-lite: ValidationError (None)"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s01","backend":"off"}}
+{"t_ms":45608,"type":"stage_done","payload":{"stage":"s01","keyframes":8,"detections":117}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s02","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s02","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s03","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s03","books":0}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s04","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s04"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s05","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s06","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s07","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s08","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s08","items":12}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s09","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s09"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s10","backend":"off"}}
+{"t_ms":0,"type":"packet_ready","payload":{"packet":"claim_packet.json","report":"report.html"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s02","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s02","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s03","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s03","books":0}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s04","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s04"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s05","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s06","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s07","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s08","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s08","items":12}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s09","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s09"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s10","backend":"off"}}
+{"t_ms":0,"type":"packet_ready","payload":{"packet":"claim_packet.json","report":"report.html"}}
+{"t_ms":0,"type":"error","payload":{"stage":"s10","exception_type":"ValueError","message":"Unsupported starting stage: s00"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s02","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s02","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s03","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s03","books":0}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s04","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s04"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s05","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s06","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s07","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s08","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s08","items":12}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s09","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s09"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s10","backend":"off"}}
+{"t_ms":0,"type":"packet_ready","payload":{"packet":"claim_packet.json","report":"report.html"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s02","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s02","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s03","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s03","books":0}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s04","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s04"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s05","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s06","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s07","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s08","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s08","items":12}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s09","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s09"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s10","backend":"off"}}
+{"t_ms":0,"type":"packet_ready","payload":{"packet":"claim_packet.json","report":"report.html"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s01","backend":"off"}}
+{"t_ms":43707,"type":"stage_done","payload":{"stage":"s01","keyframes":6,"detections":91}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s02","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s02","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s03","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s03","books":11}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s04","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s04"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s05","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s06","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s07","backend":"off"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s08","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s08","items":2}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s09","backend":"off"}}
+{"t_ms":0,"type":"stage_done","payload":{"stage":"s09"}}
+{"t_ms":0,"type":"stage_started","payload":{"stage":"s10","backend":"off"}}
+{"t_ms":0,"type":"packet_ready","payload":{"packet":"claim_packet.json","report":"report.html"}}

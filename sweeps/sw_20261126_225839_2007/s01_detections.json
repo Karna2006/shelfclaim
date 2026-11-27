@@ -1,0 +1,1847 @@
+{
+  "backend": "ocr_spines",
+  "frames": {
+    "8": [],
+    "36": [
+      {
+        "det_id": "f000036_ocr0000",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 434,
+          "y": 307,
+          "w": 62,
+          "h": 192,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": 0.95094,
+        "merged_from": [],
+        "flags": [],
+        "row_index": 1,
+        "ocr_lines": [
+          {
+            "text": "RODIN SHARMA",
+            "confidence": 0.95094,
+            "bbox": {
+              "x": 434.0,
+              "y": 339.0,
+              "w": 62.0,
+              "h": 108.0
+            },
+            "rotation": 90
+          }
+        ]
+      },
+      {
+        "det_id": "f000036_ocr0001",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 498,
+          "y": 307,
+          "w": 138,
+          "h": 192,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": 0.7584299999999999,
+        "merged_from": [],
+        "flags": [],
+        "row_index": 1,
+        "ocr_lines": [
+          {
+            "text": "SIA S SAMIK NNS",
+            "confidence": 0.5335,
+            "bbox": {
+              "x": 530.0,
+              "y": 307.0,
+              "w": 106.0,
+              "h": 175.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "THE ONE THING",
+            "confidence": 0.98336,
+            "bbox": {
+              "x": 498.0,
+              "y": 318.0,
+              "w": 113.0,
+              "h": 181.0
+            },
+            "rotation": 0
+          }
+        ]
+      }
+    ],
+    "57": [
+      {
+        "det_id": "f000057_ocr0000",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 352,
+          "y": 651,
+          "w": 372,
+          "h": 499,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": 0.9420181818181818,
+        "merged_from": [],
+        "flags": [],
+        "row_index": 1,
+        "ocr_lines": [
+          {
+            "text": "AUTOBIOGRAPHY OF A YOGI",
+            "confidence": 0.99541,
+            "bbox": {
+              "x": 607.0,
+              "y": 686.0,
+              "w": 117.0,
+              "h": 230.0
+            },
+            "rotation": 0
+          },
+          {
+            "text": "THE ALMANACK OF NAVAL RAVIKANT",
+            "confidence": 0.99754,
+            "bbox": {
+              "x": 486.0,
+              "y": 651.0,
+              "w": 165.0,
+              "h": 344.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "THE EVERYDAY HERO MANIFESTO",
+            "confidence": 0.99765,
+            "bbox": {
+              "x": 352.0,
+              "y": 700.0,
+              "w": 186.0,
+              "h": 398.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "ROBIN SHARMA",
+            "confidence": 0.99445,
+            "bbox": {
+              "x": 403.0,
+              "y": 760.0,
+              "w": 150.0,
+              "h": 298.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "GARY KELLER",
+            "confidence": 0.9954,
+            "bbox": {
+              "x": 616.0,
+              "y": 1000.0,
+              "w": 63.0,
+              "h": 103.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "GAREY KLER",
+            "confidence": 0.69059,
+            "bbox": {
+              "x": 615.0,
+              "y": 1002.0,
+              "w": 62.0,
+              "h": 102.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "WARY KEY LEARPASAN",
+            "confidence": 0.69399,
+            "bbox": {
+              "x": 574.0,
+              "y": 979.0,
+              "w": 113.0,
+              "h": 171.0
+            },
+            "rotation": 0
+          },
+          {
+            "text": "WITH JAY PAPASAN",
+            "confidence": 0.99756,
+            "bbox": {
+              "x": 584.0,
+              "y": 994.0,
+              "w": 80.0,
+              "h": 143.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "ERICJORGENSON",
+            "confidence": 0.99983,
+            "bbox": {
+              "x": 431.0,
+              "y": 998.0,
+              "w": 73.0,
+              "h": 137.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "YOGANANDA",
+            "confidence": 0.99994,
+            "bbox": {
+              "x": 515.0,
+              "y": 1022.0,
+              "w": 61.0,
+              "h": 111.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "PARAMAHANSA",
+            "confidence": 0.99984,
+            "bbox": {
+              "x": 529.0,
+              "y": 1021.0,
+              "w": 65.0,
+              "h": 122.0
+            },
+            "rotation": 270
+          }
+        ]
+      },
+      {
+        "det_id": "f000057_ocr0001",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 633,
+          "y": 651,
+          "w": 189,
+          "h": 499,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": 0.902744,
+        "merged_from": [],
+        "flags": [],
+        "row_index": 1,
+        "ocr_lines": [
+          {
+            "text": "THE ONE",
+            "confidence": 0.99164,
+            "bbox": {
+              "x": 674.0,
+              "y": 740.0,
+              "w": 116.0,
+              "h": 172.0
+            },
+            "rotation": 0
+          },
+          {
+            "text": "THE ONE THING",
+            "confidence": 0.99988,
+            "bbox": {
+              "x": 633.0,
+              "y": 738.0,
+              "w": 160.0,
+              "h": 276.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "Why Some Teams Pull Together and Others Don't",
+            "confidence": 0.99867,
+            "bbox": {
+              "x": 680.0,
+              "y": 873.0,
+              "w": 121.0,
+              "h": 236.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "Why  o     bDont",
+            "confidence": 0.52596,
+            "bbox": {
+              "x": 678.0,
+              "y": 875.0,
+              "w": 120.0,
+              "h": 235.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "LEADERS EAT LAST",
+            "confidence": 0.99757,
+            "bbox": {
+              "x": 692.0,
+              "y": 876.0,
+              "w": 130.0,
+              "h": 245.0
+            },
+            "rotation": 270
+          }
+        ]
+      },
+      {
+        "det_id": "f000057_ocr0002",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 786,
+          "y": 651,
+          "w": 293,
+          "h": 499,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": 0.9947211111111112,
+        "merged_from": [],
+        "flags": [],
+        "row_index": 1,
+        "ocr_lines": [
+          {
+            "text": "SIMON SINEK",
+            "confidence": 0.99949,
+            "bbox": {
+              "x": 786.0,
+              "y": 700.0,
+              "w": 106.0,
+              "h": 180.0
+            },
+            "rotation": 0
+          },
+          {
+            "text": "DEEP WORK",
+            "confidence": 0.99882,
+            "bbox": {
+              "x": 901.0,
+              "y": 716.0,
+              "w": 122.0,
+              "h": 221.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "Heal Your Mind Heal Your Life",
+            "confidence": 0.99269,
+            "bbox": {
+              "x": 986.0,
+              "y": 739.0,
+              "w": 93.0,
+              "h": 200.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "HALFMURDERS",
+            "confidence": 0.99526,
+            "bbox": {
+              "x": 849.0,
+              "y": 748.0,
+              "w": 109.0,
+              "h": 201.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "The Myth of Sisyphus",
+            "confidence": 0.97601,
+            "bbox": {
+              "x": 956.0,
+              "y": 823.0,
+              "w": 53.0,
+              "h": 93.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "DEEP WORK Cal Newport",
+            "confidence": 0.99865,
+            "bbox": {
+              "x": 831.0,
+              "y": 716.0,
+              "w": 190.0,
+              "h": 375.0
+            },
+            "rotation": 0
+          },
+          {
+            "text": "Cal Newport",
+            "confidence": 0.99957,
+            "bbox": {
+              "x": 831.0,
+              "y": 926.0,
+              "w": 100.0,
+              "h": 164.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "SALIL DESAI",
+            "confidence": 0.99764,
+            "bbox": {
+              "x": 802.0,
+              "y": 956.0,
+              "w": 64.0,
+              "h": 113.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "IRFAN ALAM",
+            "confidence": 0.99436,
+            "bbox": {
+              "x": 937.0,
+              "y": 965.0,
+              "w": 54.0,
+              "h": 97.0
+            },
+            "rotation": 270
+          }
+        ]
+      },
+      {
+        "det_id": "f000057_ocr0003",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 432,
+          "y": 1458,
+          "w": 256,
+          "h": 320,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": 0.98247,
+        "merged_from": [],
+        "flags": [],
+        "row_index": 2,
+        "ocr_lines": [
+          {
+            "text": "Feel-Good Produc",
+            "confidence": 0.92839,
+            "bbox": {
+              "x": 462.0,
+              "y": 1458.0,
+              "w": 122.0,
+              "h": 161.0
+            },
+            "rotation": 0
+          },
+          {
+            "text": "AMERICAN PSYCHO",
+            "confidence": 0.99976,
+            "bbox": {
+              "x": 434.0,
+              "y": 1493.0,
+              "w": 90.0,
+              "h": 123.0
+            },
+            "rotation": 0
+          },
+          {
+            "text": "AMERICAN PSYCHO Bret Easton Ellis",
+            "confidence": 0.99565,
+            "bbox": {
+              "x": 432.0,
+              "y": 1495.0,
+              "w": 153.0,
+              "h": 215.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "Feel-Good Productivity All Abdaal",
+            "confidence": 0.99369,
+            "bbox": {
+              "x": 461.0,
+              "y": 1459.0,
+              "w": 227.0,
+              "h": 319.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "DALE CARNEGIE",
+            "confidence": 0.99486,
+            "bbox": {
+              "x": 504.0,
+              "y": 1665.0,
+              "w": 70.0,
+              "h": 92.0
+            },
+            "rotation": 270
+          }
+        ]
+      },
+      {
+        "det_id": "f000057_ocr0004",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 577,
+          "y": 1458,
+          "w": 153,
+          "h": 320,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": 0.7859050000000001,
+        "merged_from": [],
+        "flags": [],
+        "row_index": 2,
+        "ocr_lines": [
+          {
+            "text": "THE LORDS OF EASY MONEY",
+            "confidence": 0.98329,
+            "bbox": {
+              "x": 577.0,
+              "y": 1564.0,
+              "w": 153.0,
+              "h": 201.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "THEN S MOEY",
+            "confidence": 0.58852,
+            "bbox": {
+              "x": 580.0,
+              "y": 1569.0,
+              "w": 148.0,
+              "h": 196.0
+            },
+            "rotation": 90
+          }
+        ]
+      },
+      {
+        "det_id": "f000057_ocr0005",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 692,
+          "y": 1458,
+          "w": 239,
+          "h": 320,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": 0.7942516666666667,
+        "merged_from": [],
+        "flags": [],
+        "row_index": 2,
+        "ocr_lines": [
+          {
+            "text": "Pano Coehe",
+            "confidence": 0.77887,
+            "bbox": {
+              "x": 781.0,
+              "y": 1473.0,
+              "w": 90.0,
+              "h": 102.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "Panlo Coelhe",
+            "confidence": 0.77286,
+            "bbox": {
+              "x": 781.0,
+              "y": 1478.0,
+              "w": 88.0,
+              "h": 99.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "NUNCHI",
+            "confidence": 0.993,
+            "bbox": {
+              "x": 692.0,
+              "y": 1521.0,
+              "w": 133.0,
+              "h": 154.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "POWER",
+            "confidence": 0.99913,
+            "bbox": {
+              "x": 749.0,
+              "y": 1496.0,
+              "w": 182.0,
+              "h": 207.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "NOT SYMITIS AT ER",
+            "confidence": 0.60351,
+            "bbox": {
+              "x": 749.0,
+              "y": 1540.0,
+              "w": 109.0,
+              "h": 125.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "IOOE AS GS",
+            "confidence": 0.61814,
+            "bbox": {
+              "x": 713.0,
+              "y": 1602.0,
+              "w": 96.0,
+              "h": 123.0
+            },
+            "rotation": 90
+          }
+        ]
+      }
+    ],
+    "62": [
+      {
+        "det_id": "f000062_ocr0000",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 0,
+          "y": 644,
+          "w": 209,
+          "h": 523,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": 0.9827400000000001,
+        "merged_from": [],
+        "flags": [],
+        "row_index": 1,
+        "ocr_lines": [
+          {
+            "text": "THE EVERYDAY HERO MANIFES",
+            "confidence": 0.98672,
+            "bbox": {
+              "x": 0.0,
+              "y": 692.0,
+              "w": 196.0,
+              "h": 398.0
+            },
+            "rotation": 0
+          },
+          {
+            "text": "THE EVERYDAY HERO MANIFEST",
+            "confidence": 0.95415,
+            "bbox": {
+              "x": 1.0,
+              "y": 693.0,
+              "w": 197.0,
+              "h": 402.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "ROBIN SHARMA",
+            "confidence": 0.9998,
+            "bbox": {
+              "x": 30.0,
+              "y": 757.0,
+              "w": 179.0,
+              "h": 324.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "ERIC JORGENSON",
+            "confidence": 0.99029,
+            "bbox": {
+              "x": 68.0,
+              "y": 1012.0,
+              "w": 86.0,
+              "h": 150.0
+            },
+            "rotation": 90
+          }
+        ]
+      },
+      {
+        "det_id": "f000062_ocr0001",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 138,
+          "y": 644,
+          "w": 188,
+          "h": 523,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": 0.9996666666666667,
+        "merged_from": [],
+        "flags": [],
+        "row_index": 1,
+        "ocr_lines": [
+          {
+            "text": "THE ALMANACK OF NAVAL RAVIKANT",
+            "confidence": 0.99915,
+            "bbox": {
+              "x": 138.0,
+              "y": 644.0,
+              "w": 188.0,
+              "h": 365.0
+            },
+            "rotation": 0
+          },
+          {
+            "text": "YOGANANDA",
+            "confidence": 0.99995,
+            "bbox": {
+              "x": 167.0,
+              "y": 1035.0,
+              "w": 70.0,
+              "h": 121.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "PARAMAHANSA",
+            "confidence": 0.9999,
+            "bbox": {
+              "x": 182.0,
+              "y": 1033.0,
+              "w": 76.0,
+              "h": 134.0
+            },
+            "rotation": 270
+          }
+        ]
+      },
+      {
+        "det_id": "f000062_ocr0002",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 259,
+          "y": 644,
+          "w": 146,
+          "h": 523,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": 0.90134,
+        "merged_from": [],
+        "flags": [],
+        "row_index": 1,
+        "ocr_lines": [
+          {
+            "text": "AUTOBIOGRAPHY OF A YOGI",
+            "confidence": 0.98814,
+            "bbox": {
+              "x": 275.0,
+              "y": 681.0,
+              "w": 130.0,
+              "h": 243.0
+            },
+            "rotation": 0
+          },
+          {
+            "text": "GARY KELLER",
+            "confidence": 0.96925,
+            "bbox": {
+              "x": 300.0,
+              "y": 1013.0,
+              "w": 69.0,
+              "h": 109.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "GARY KLER",
+            "confidence": 0.64929,
+            "bbox": {
+              "x": 298.0,
+              "y": 1013.0,
+              "w": 70.0,
+              "h": 109.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "WITH JAY PAPASAN",
+            "confidence": 0.99868,
+            "bbox": {
+              "x": 259.0,
+              "y": 1005.0,
+              "w": 93.0,
+              "h": 157.0
+            },
+            "rotation": 90
+          }
+        ]
+      },
+      {
+        "det_id": "f000062_ocr0003",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 322,
+          "y": 644,
+          "w": 185,
+          "h": 523,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": 0.9935175,
+        "merged_from": [],
+        "flags": [],
+        "row_index": 1,
+        "ocr_lines": [
+          {
+            "text": "THE ONE THIN",
+            "confidence": 0.9996,
+            "bbox": {
+              "x": 330.0,
+              "y": 738.0,
+              "w": 164.0,
+              "h": 264.0
+            },
+            "rotation": 0
+          },
+          {
+            "text": "THE ONE THING",
+            "confidence": 0.99561,
+            "bbox": {
+              "x": 322.0,
+              "y": 738.0,
+              "w": 176.0,
+              "h": 289.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "Why Some Teams Pull Together and Others Don't",
+            "confidence": 0.98234,
+            "bbox": {
+              "x": 353.0,
+              "y": 879.0,
+              "w": 131.0,
+              "h": 248.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "LEADERS EAT LAST",
+            "confidence": 0.99652,
+            "bbox": {
+              "x": 366.0,
+              "y": 882.0,
+              "w": 141.0,
+              "h": 258.0
+            },
+            "rotation": 90
+          }
+        ]
+      },
+      {
+        "det_id": "f000062_ocr0004",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 476,
+          "y": 644,
+          "w": 329,
+          "h": 523,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": 0.9955930000000001,
+        "merged_from": [],
+        "flags": [],
+        "row_index": 1,
+        "ocr_lines": [
+          {
+            "text": "SIMON SINEK",
+            "confidence": 0.99969,
+            "bbox": {
+              "x": 476.0,
+              "y": 700.0,
+              "w": 109.0,
+              "h": 180.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "DEEP WORK",
+            "confidence": 0.99872,
+            "bbox": {
+              "x": 607.0,
+              "y": 721.0,
+              "w": 124.0,
+              "h": 222.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "Heal Your Mind Heal Your Life",
+            "confidence": 0.99511,
+            "bbox": {
+              "x": 697.0,
+              "y": 740.0,
+              "w": 108.0,
+              "h": 206.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "HALFMURDERS",
+            "confidence": 0.99441,
+            "bbox": {
+              "x": 546.0,
+              "y": 746.0,
+              "w": 112.0,
+              "h": 212.0
+            },
+            "rotation": 0
+          },
+          {
+            "text": "The Myth of Sisyphus",
+            "confidence": 0.98805,
+            "bbox": {
+              "x": 665.0,
+              "y": 828.0,
+              "w": 57.0,
+              "h": 95.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "DEEP WORK Cal Newport",
+            "confidence": 0.99954,
+            "bbox": {
+              "x": 534.0,
+              "y": 718.0,
+              "w": 201.0,
+              "h": 385.0
+            },
+            "rotation": 0
+          },
+          {
+            "text": "Cal Newport",
+            "confidence": 0.9999,
+            "bbox": {
+              "x": 536.0,
+              "y": 928.0,
+              "w": 107.0,
+              "h": 175.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "IRFAN ALAM",
+            "confidence": 0.99479,
+            "bbox": {
+              "x": 643.0,
+              "y": 971.0,
+              "w": 59.0,
+              "h": 103.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "SALIL DESAI",
+            "confidence": 0.99677,
+            "bbox": {
+              "x": 497.0,
+              "y": 964.0,
+              "w": 69.0,
+              "h": 117.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "Burkeman",
+            "confidence": 0.98895,
+            "bbox": {
+              "x": 644.0,
+              "y": 997.0,
+              "w": 72.0,
+              "h": 119.0
+            },
+            "rotation": 270
+          }
+        ]
+      },
+      {
+        "det_id": "f000062_ocr0005",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 721,
+          "y": 644,
+          "w": 348,
+          "h": 523,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": 0.9450711111111111,
+        "merged_from": [],
+        "flags": [],
+        "row_index": 1,
+        "ocr_lines": [
+          {
+            "text": "Four Thousand Weeks",
+            "confidence": 0.97388,
+            "bbox": {
+              "x": 721.0,
+              "y": 723.0,
+              "w": 110.0,
+              "h": 207.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "Atomic Habits",
+            "confidence": 0.99603,
+            "bbox": {
+              "x": 924.0,
+              "y": 677.0,
+              "w": 145.0,
+              "h": 311.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "THE MOUNTAIN IS YOU",
+            "confidence": 0.99856,
+            "bbox": {
+              "x": 918.0,
+              "y": 735.0,
+              "w": 92.0,
+              "h": 197.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "WHAT COLOR SYOUR PARACHUTE? 2017",
+            "confidence": 0.97237,
+            "bbox": {
+              "x": 727.0,
+              "y": 738.0,
+              "w": 170.0,
+              "h": 372.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "WH P P 07",
+            "confidence": 0.59878,
+            "bbox": {
+              "x": 725.0,
+              "y": 739.0,
+              "w": 169.0,
+              "h": 372.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "THE MILLIONAIRE MASTER PLAN",
+            "confidence": 0.99986,
+            "bbox": {
+              "x": 781.0,
+              "y": 726.0,
+              "w": 192.0,
+              "h": 428.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "COLOR SYOUR PARACHUTE?2017",
+            "confidence": 0.96671,
+            "bbox": {
+              "x": 723.0,
+              "y": 791.0,
+              "w": 152.0,
+              "h": 318.0
+            },
+            "rotation": 0
+          },
+          {
+            "text": "BRIANNA WIEST",
+            "confidence": 0.99956,
+            "bbox": {
+              "x": 862.0,
+              "y": 951.0,
+              "w": 67.0,
+              "h": 133.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "James",
+            "confidence": 0.99989,
+            "bbox": {
+              "x": 896.0,
+              "y": 1003.0,
+              "w": 59.0,
+              "h": 94.0
+            },
+            "rotation": 270
+          }
+        ]
+      },
+      {
+        "det_id": "f000062_ocr0006",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 998,
+          "y": 644,
+          "w": 70,
+          "h": 523,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": 0.8408675,
+        "merged_from": [],
+        "flags": [],
+        "row_index": 1,
+        "ocr_lines": [
+          {
+            "text": "GEOR NUO ISE",
+            "confidence": 0.67711,
+            "bbox": {
+              "x": 1022.0,
+              "y": 761.0,
+              "w": 46.0,
+              "h": 117.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "GE YOUR NOISE",
+            "confidence": 0.97195,
+            "bbox": {
+              "x": 1020.0,
+              "y": 763.0,
+              "w": 46.0,
+              "h": 117.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "SUCCCS",
+            "confidence": 0.71741,
+            "bbox": {
+              "x": 1001.0,
+              "y": 760.0,
+              "w": 55.0,
+              "h": 136.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "SUCCESS",
+            "confidence": 0.997,
+            "bbox": {
+              "x": 998.0,
+              "y": 770.0,
+              "w": 55.0,
+              "h": 129.0
+            },
+            "rotation": 90
+          }
+        ]
+      },
+      {
+        "det_id": "f000062_ocr0007",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 219,
+          "y": 1487,
+          "w": 274,
+          "h": 332,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": 0.9037116666666667,
+        "merged_from": [],
+        "flags": [],
+        "row_index": 2,
+        "ocr_lines": [
+          {
+            "text": "Feel-Good Produ",
+            "confidence": 0.9998,
+            "bbox": {
+              "x": 251.0,
+              "y": 1493.0,
+              "w": 123.0,
+              "h": 155.0
+            },
+            "rotation": 0
+          },
+          {
+            "text": "AMERICAN PSYCHO",
+            "confidence": 0.99955,
+            "bbox": {
+              "x": 221.0,
+              "y": 1528.0,
+              "w": 94.0,
+              "h": 122.0
+            },
+            "rotation": 0
+          },
+          {
+            "text": "AMERICAN PSYCHO Bret Easton Ellis",
+            "confidence": 0.99883,
+            "bbox": {
+              "x": 219.0,
+              "y": 1529.0,
+              "w": 160.0,
+              "h": 220.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "Feel-Good Productivity Ali Abdaal",
+            "confidence": 0.98645,
+            "bbox": {
+              "x": 247.0,
+              "y": 1487.0,
+              "w": 246.0,
+              "h": 332.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "AC",
+            "confidence": 0.51532,
+            "bbox": {
+              "x": 265.0,
+              "y": 1661.0,
+              "w": 115.0,
+              "h": 153.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "ur Job DALE CARNEGIE",
+            "confidence": 0.92232,
+            "bbox": {
+              "x": 277.0,
+              "y": 1674.0,
+              "w": 106.0,
+              "h": 139.0
+            },
+            "rotation": 270
+          }
+        ]
+      },
+      {
+        "det_id": "f000062_ocr0008",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 373,
+          "y": 1487,
+          "w": 158,
+          "h": 332,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": 0.846265,
+        "merged_from": [],
+        "flags": [],
+        "row_index": 2,
+        "ocr_lines": [
+          {
+            "text": "THE LORDS OF EASY MONEY",
+            "confidence": 0.99895,
+            "bbox": {
+              "x": 373.0,
+              "y": 1597.0,
+              "w": 158.0,
+              "h": 206.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "THES A MOS  ONEY",
+            "confidence": 0.69358,
+            "bbox": {
+              "x": 373.0,
+              "y": 1601.0,
+              "w": 157.0,
+              "h": 201.0
+            },
+            "rotation": 90
+          }
+        ]
+      },
+      {
+        "det_id": "f000062_ocr0009",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 495,
+          "y": 1487,
+          "w": 224,
+          "h": 332,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": 0.8546357142857143,
+        "merged_from": [],
+        "flags": [],
+        "row_index": 2,
+        "ocr_lines": [
+          {
+            "text": "PanloCoelho",
+            "confidence": 0.87479,
+            "bbox": {
+              "x": 590.0,
+              "y": 1501.0,
+              "w": 86.0,
+              "h": 99.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "OWER",
+            "confidence": 0.99982,
+            "bbox": {
+              "x": 578.0,
+              "y": 1551.0,
+              "w": 140.0,
+              "h": 158.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "TIOT SMTLE ATT ER",
+            "confidence": 0.5921,
+            "bbox": {
+              "x": 554.0,
+              "y": 1567.0,
+              "w": 113.0,
+              "h": 128.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "NUNCHI",
+            "confidence": 0.99145,
+            "bbox": {
+              "x": 495.0,
+              "y": 1545.0,
+              "w": 166.0,
+              "h": 192.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "WER",
+            "confidence": 0.99974,
+            "bbox": {
+              "x": 602.0,
+              "y": 1578.0,
+              "w": 117.0,
+              "h": 128.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "FOOLED BY RANDOMNESS",
+            "confidence": 0.97441,
+            "bbox": {
+              "x": 512.0,
+              "y": 1627.0,
+              "w": 105.0,
+              "h": 129.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "SOE AE NS",
+            "confidence": 0.55014,
+            "bbox": {
+              "x": 511.0,
+              "y": 1629.0,
+              "w": 105.0,
+              "h": 130.0
+            },
+            "rotation": 90
+          }
+        ]
+      }
+    ],
+    "90": [
+      {
+        "det_id": "f000090_ocr0000",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 225,
+          "y": 656,
+          "w": 511,
+          "h": 718,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": 0.9445455555555555,
+        "merged_from": [],
+        "flags": [],
+        "row_index": 1,
+        "ocr_lines": [
+          {
+            "text": "THE ALMANACK OF NAVAL RAVIKANT",
+            "confidence": 0.9984,
+            "bbox": {
+              "x": 446.0,
+              "y": 656.0,
+              "w": 257.0,
+              "h": 491.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "THE EVERYDAY HERO MANIFESTO",
+            "confidence": 0.99348,
+            "bbox": {
+              "x": 225.0,
+              "y": 723.0,
+              "w": 307.0,
+              "h": 583.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "ROBIN SHARMA",
+            "confidence": 0.99957,
+            "bbox": {
+              "x": 304.0,
+              "y": 809.0,
+              "w": 247.0,
+              "h": 439.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "GARY KELLER",
+            "confidence": 0.99959,
+            "bbox": {
+              "x": 632.0,
+              "y": 1158.0,
+              "w": 89.0,
+              "h": 141.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "WITH JAY PAPASAN",
+            "confidence": 0.96566,
+            "bbox": {
+              "x": 584.0,
+              "y": 1144.0,
+              "w": 119.0,
+              "h": 205.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "WUHAHAN",
+            "confidence": 0.55189,
+            "bbox": {
+              "x": 566.0,
+              "y": 1130.0,
+              "w": 170.0,
+              "h": 243.0
+            },
+            "rotation": 0
+          },
+          {
+            "text": "ERIC JORGENSON",
+            "confidence": 0.99244,
+            "bbox": {
+              "x": 349.0,
+              "y": 1156.0,
+              "w": 113.0,
+              "h": 202.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "YOGANANDA",
+            "confidence": 0.99996,
+            "bbox": {
+              "x": 476.0,
+              "y": 1194.0,
+              "w": 94.0,
+              "h": 163.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "PARAMAHANSA",
+            "confidence": 0.99992,
+            "bbox": {
+              "x": 495.0,
+              "y": 1194.0,
+              "w": 100.0,
+              "h": 180.0
+            },
+            "rotation": 270
+          }
+        ]
+      },
+      {
+        "det_id": "f000090_ocr0001",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 631,
+          "y": 656,
+          "w": 305,
+          "h": 718,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": 0.9974299999999999,
+        "merged_from": [],
+        "flags": [],
+        "row_index": 1,
+        "ocr_lines": [
+          {
+            "text": "AUTOBIOGRAPHY OF A YOGI",
+            "confidence": 0.99689,
+            "bbox": {
+              "x": 631.0,
+              "y": 710.0,
+              "w": 178.0,
+              "h": 331.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "THE ONE THIN",
+            "confidence": 0.99968,
+            "bbox": {
+              "x": 683.0,
+              "y": 785.0,
+              "w": 218.0,
+              "h": 333.0
+            },
+            "rotation": 0
+          },
+          {
+            "text": "THE ONE THING",
+            "confidence": 0.99963,
+            "bbox": {
+              "x": 662.0,
+              "y": 784.0,
+              "w": 238.0,
+              "h": 391.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "Why Some Teams Pull Together and Others Don't",
+            "confidence": 0.99871,
+            "bbox": {
+              "x": 719.0,
+              "y": 983.0,
+              "w": 190.0,
+              "h": 343.0
+            },
+            "rotation": 0
+          },
+          {
+            "text": "LEADERS EAT LAST",
+            "confidence": 0.99224,
+            "bbox": {
+              "x": 738.0,
+              "y": 992.0,
+              "w": 198.0,
+              "h": 353.0
+            },
+            "rotation": 90
+          }
+        ]
+      },
+      {
+        "det_id": "f000090_ocr0002",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 902,
+          "y": 656,
+          "w": 177,
+          "h": 718,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": 0.9888250000000001,
+        "merged_from": [],
+        "flags": [],
+        "row_index": 1,
+        "ocr_lines": [
+          {
+            "text": "SIMON SINEK",
+            "confidence": 0.9997,
+            "bbox": {
+              "x": 902.0,
+              "y": 737.0,
+              "w": 152.0,
+              "h": 246.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "AIFMURDERS",
+            "confidence": 0.95653,
+            "bbox": {
+              "x": 976.0,
+              "y": 892.0,
+              "w": 103.0,
+              "h": 198.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "Cal Newport",
+            "confidence": 0.9997,
+            "bbox": {
+              "x": 944.0,
+              "y": 1059.0,
+              "w": 135.0,
+              "h": 233.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "SALIL DESAI",
+            "confidence": 0.99937,
+            "bbox": {
+              "x": 903.0,
+              "y": 1104.0,
+              "w": 94.0,
+              "h": 158.0
+            },
+            "rotation": 270
+          }
+        ]
+      },
+      {
+        "det_id": "f000090_ocr0003",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 406,
+          "y": 1643,
+          "w": 215,
+          "h": 277,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": 0.9579575,
+        "merged_from": [],
+        "flags": [],
+        "row_index": 2,
+        "ocr_lines": [
+          {
+            "text": "eel-Good Productivily",
+            "confidence": 0.97466,
+            "bbox": {
+              "x": 453.0,
+              "y": 1643.0,
+              "w": 164.0,
+              "h": 247.0
+            },
+            "rotation": 90
+          },
+          {
+            "text": "eel-Good Productivity",
+            "confidence": 0.98693,
+            "bbox": {
+              "x": 456.0,
+              "y": 1643.0,
+              "w": 165.0,
+              "h": 247.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "AMERICAN PSYCHO Bret Easton E",
+            "confidence": 0.97857,
+            "bbox": {
+              "x": 406.0,
+              "y": 1667.0,
+              "w": 170.0,
+              "h": 252.0
+            },
+            "rotation": 270
+          },
+          {
+            "text": "AMERICAN PSYCHO Bret Easton EIl",
+            "confidence": 0.89167,
+            "bbox": {
+              "x": 408.0,
+              "y": 1671.0,
+              "w": 167.0,
+              "h": 249.0
+            },
+            "rotation": 90
+          }
+        ]
+      },
+      {
+        "det_id": "f000090_ocr0004",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 723,
+          "y": 1643,
+          "w": 115,
+          "h": 277,
+          "angle_deg": 0.0
+        },
+        "item_category": null,
+        "score": 0.99985,
+        "merged_from": [],
+        "flags": [],
+        "row_index": 2,
+        "ocr_lines": [
+          {
+            "text": "NUNCHI",
+            "confidence": 0.99985,
+            "bbox": {
+              "x": 723.0,
+              "y": 1718.0,
+              "w": 115.0,
+              "h": 136.0
+            },
+            "rotation": 0
+          }
+        ]
+      },
+      {
+        "det_id": "f000090_ocr0005",
+        "cls": "book_spine",
+        "box_px": {
+          "x": 846,
+          "y": 1643,
+          "w": 131,
+          "h": 277,
+          "angle_deg": 90.0
+        },
+        "item_category": null,
+        "score": 0.99985,
+        "merged_from": [],
+        "flags": [],
+        "row_index": 2,
+        "ocr_lines": [
+          {
+            "text": "WER",
+            "confidence": 0.99985,
+            "bbox": {
+              "x": 846.0,
+              "y": 1765.0,
+              "w": 131.0,
+              "h": 152.0
+            },
+            "rotation": 270
+          }
+        ]
+      }
+    ],
+    "114": []
+  },
+  "row_count_checks": [],
+  "keyframe_stats": [
+    {
+      "seq": 8,
+      "model": "rapidocr-onnxruntime",
+      "latency_ms": 61447,
+      "spine_count": 0,
+      "shelf_board_count": 0,
+      "item_count": 0,
+      "errors": []
+    },
+    {
+      "seq": 36,
+      "model": "rapidocr-onnxruntime",
+      "latency_ms": 93928,
+      "spine_count": 2,
+      "shelf_board_count": 0,
+      "item_count": 0,
+      "errors": []
+    },
+    {
+      "seq": 57,
+      "model": "rapidocr-onnxruntime",
+      "latency_ms": 137991,
+      "spine_count": 6,
+      "shelf_board_count": 0,
+      "item_count": 0,
+      "errors": []
+    },
+    {
+      "seq": 62,
+      "model": "rapidocr-onnxruntime",
+      "latency_ms": 186070,
+      "spine_count": 10,
+      "shelf_board_count": 0,
+      "item_count": 0,
+      "errors": []
+    },
+    {
+      "seq": 90,
+      "model": "rapidocr-onnxruntime",
+      "latency_ms": 229463,
+      "spine_count": 6,
+      "shelf_board_count": 0,
+      "item_count": 0,
+      "errors": []
+    },
+    {
+      "seq": 114,
+      "model": "rapidocr-onnxruntime",
+      "latency_ms": 267904,
+      "spine_count": 0,
+      "shelf_board_count": 0,
+      "item_count": 0,
+      "errors": []
+    }
+  ],
+  "selected_keyframes": [
+    {
+      "seq": 8,
+      "segment": 0,
+      "qc_verdict": "ok",
+      "blur": 572.4539110736328,
+      "quality_fallback": false
+    },
+    {
+      "seq": 36,
+      "segment": 1,
+      "qc_verdict": "ok",
+      "blur": 316.5619866602616,
+      "quality_fallback": false
+    },
+    {
+      "seq": 57,
+      "segment": 2,
+      "qc_verdict": "ok",
+      "blur": 429.1391897192906,
+      "quality_fallback": false
+    },
+    {
+      "seq": 62,
+      "segment": 3,
+      "qc_verdict": "ok",
+      "blur": 405.02516551608846,
+      "quality_fallback": false
+    },
+    {
+      "seq": 90,
+      "segment": 4,
+      "qc_verdict": "ok",
+      "blur": 386.6272230406643,
+      "quality_fallback": false
+    },
+    {
+      "seq": 114,
+      "segment": 5,
+      "qc_verdict": "ok",
+      "blur": 543.1426268475763,
+      "quality_fallback": false
+    }
+  ],
+  "review_queue": []
+}

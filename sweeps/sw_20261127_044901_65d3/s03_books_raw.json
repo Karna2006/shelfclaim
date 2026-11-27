@@ -1,0 +1,342 @@
+{
+  "units": [
+    {
+      "unit": "A",
+      "rows": [
+        {
+          "row": 1,
+          "z_min": 0.18697916666666667,
+          "z_max": 0.80625,
+          "candidate_counts": [
+            {
+              "seq": 32,
+              "count": 9
+            },
+            {
+              "seq": 60,
+              "count": 11
+            }
+          ],
+          "count": 11,
+          "best_frame_seq": 60
+        }
+      ]
+    }
+  ],
+  "books": [
+    {
+      "book_id": "b_0001",
+      "unit": "A",
+      "row": 1,
+      "position": 1,
+      "member_dets": [
+        "f000060_d0003"
+      ],
+      "best_view": {
+        "seq": 60,
+        "frame_ref": "frames/f_000060_0039028.jpg",
+        "bbox": {
+          "x": 0,
+          "y": 503,
+          "w": 109,
+          "h": 252,
+          "angle_deg": 45.0
+        },
+        "unit_bbox": {
+          "x": 0,
+          "y": 0,
+          "w": 1080,
+          "h": 1194,
+          "angle_deg": 90.0
+        }
+      },
+      "count_method": "best_frame"
+    },
+    {
+      "book_id": "b_0002",
+      "unit": "A",
+      "row": 1,
+      "position": 2,
+      "member_dets": [
+        "f000060_d0004"
+      ],
+      "best_view": {
+        "seq": 60,
+        "frame_ref": "frames/f_000060_0039028.jpg",
+        "bbox": {
+          "x": 0,
+          "y": 578,
+          "w": 194,
+          "h": 386,
+          "angle_deg": 45.0
+        },
+        "unit_bbox": {
+          "x": 0,
+          "y": 0,
+          "w": 1080,
+          "h": 1194,
+          "angle_deg": 90.0
+        }
+      },
+      "count_method": "best_frame"
+    },
+    {
+      "book_id": "b_0003",
+      "unit": "A",
+      "row": 1,
+      "position": 3,
+      "member_dets": [
+        "f000060_d0005"
+      ],
+      "best_view": {
+        "seq": 60,
+        "frame_ref": "frames/f_000060_0039028.jpg",
+        "bbox": {
+          "x": 0,
+          "y": 591,
+          "w": 397,
+          "h": 726,
+          "angle_deg": 45.0
+        },
+        "unit_bbox": {
+          "x": 0,
+          "y": 0,
+          "w": 1080,
+          "h": 1194,
+          "angle_deg": 90.0
+        }
+      },
+      "count_method": "best_frame"
+    },
+    {
+      "book_id": "b_0004",
+      "unit": "A",
+      "row": 1,
+      "position": 4,
+      "member_dets": [
+        "f000060_d0006"
+      ],
+      "best_view": {
+        "seq": 60,
+        "frame_ref": "frames/f_000060_0039028.jpg",
+        "bbox": {
+          "x": 27,
+          "y": 737,
+          "w": 468,
+          "h": 912,
+          "angle_deg": 45.0
+        },
+        "unit_bbox": {
+          "x": 0,
+          "y": 0,
+          "w": 1080,
+          "h": 1194,
+          "angle_deg": 90.0
+        }
+      },
+      "count_method": "best_frame"
+    },
+    {
+      "book_id": "b_0005",
+      "unit": "A",
+      "row": 1,
+      "position": 5,
+      "member_dets": [
+        "f000060_d0007"
+      ],
+      "best_view": {
+        "seq": 60,
+        "frame_ref": "frames/f_000060_0039028.jpg",
+        "bbox": {
+          "x": 228,
+          "y": 733,
+          "w": 451,
+          "h": 891,
+          "angle_deg": 45.0
+        },
+        "unit_bbox": {
+          "x": 0,
+          "y": 0,
+          "w": 1080,
+          "h": 1194,
+          "angle_deg": 90.0
+        }
+      },
+      "count_method": "best_frame"
+    },
+    {
+      "book_id": "b_0006",
+      "unit": "A",
+      "row": 1,
+      "position": 6,
+      "member_dets": [
+        "f000060_d0008"
+      ],
+      "best_view": {
+        "seq": 60,
+        "frame_ref": "frames/f_000060_0039028.jpg",
+        "bbox": {
+          "x": 355,
+          "y": 703,
+          "w": 471,
+          "h": 914,
+          "angle_deg": 45.0
+        },
+        "unit_bbox": {
+          "x": 0,
+          "y": 0,
+          "w": 1080,
+          "h": 1194,
+          "angle_deg": 90.0
+        }
+      },
+      "count_method": "best_frame"
+    },
+    {
+      "book_id": "b_0007",
+      "unit": "A",
+      "row": 1,
+      "position": 7,
+      "member_dets": [
+        "f000060_d0009"
+      ],
+      "best_view": {
+        "seq": 60,
+        "frame_ref": "frames/f_000060_0039028.jpg",
+        "bbox": {
+          "x": 494,
+          "y": 720,
+          "w": 464,
+          "h": 851,
+          "angle_deg": 45.0
+        },
+        "unit_bbox": {
+          "x": 0,
+          "y": 0,
+          "w": 1080,
+          "h": 1194,
+          "angle_deg": 90.0
+        }
+      },
+      "count_method": "best_frame"
+    },
+    {
+      "book_id": "b_0008",
+      "unit": "A",
+      "row": 1,
+      "position": 8,
+      "member_dets": [
+        "f000060_d0011"
+      ],
+      "best_view": {
+        "seq": 60,
+        "frame_ref": "frames/f_000060_0039028.jpg",
+        "bbox": {
+          "x": 620,
+          "y": 687,
+          "w": 460,
+          "h": 897,
+          "angle_deg": 45.0
+        },
+        "unit_bbox": {
+          "x": 0,
+          "y": 0,
+          "w": 1080,
+          "h": 1194,
+          "angle_deg": 90.0
+        }
+      },
+      "count_method": "best_frame"
+    },
+    {
+      "book_id": "b_0009",
+      "unit": "A",
+      "row": 1,
+      "position": 9,
+      "member_dets": [
+        "f000060_d0012"
+      ],
+      "best_view": {
+        "seq": 60,
+        "frame_ref": "frames/f_000060_0039028.jpg",
+        "bbox": {
+          "x": 789,
+          "y": 958,
+          "w": 291,
+          "h": 591,
+          "angle_deg": 45.0
+        },
+        "unit_bbox": {
+          "x": 0,
+          "y": 0,
+          "w": 1080,
+          "h": 1194,
+          "angle_deg": 90.0
+        }
+      },
+      "count_method": "best_frame"
+    },
+    {
+      "book_id": "b_0010",
+      "unit": "A",
+      "row": 1,
+      "position": 10,
+      "member_dets": [
+        "f000060_d0013"
+      ],
+      "best_view": {
+        "seq": 60,
+        "frame_ref": "frames/f_000060_0039028.jpg",
+        "bbox": {
+          "x": 890,
+          "y": 1173,
+          "w": 190,
+          "h": 378,
+          "angle_deg": 45.0
+        },
+        "unit_bbox": {
+          "x": 0,
+          "y": 0,
+          "w": 1080,
+          "h": 1194,
+          "angle_deg": 90.0
+        }
+      },
+      "count_method": "best_frame"
+    },
+    {
+      "book_id": "b_0011",
+      "unit": "A",
+      "row": 1,
+      "position": 11,
+      "member_dets": [
+        "f000060_d0014"
+      ],
+      "best_view": {
+        "seq": 60,
+        "frame_ref": "frames/f_000060_0039028.jpg",
+        "bbox": {
+          "x": 988,
+          "y": 1386,
+          "w": 92,
+          "h": 158,
+          "angle_deg": 45.0
+        },
+        "unit_bbox": {
+          "x": 0,
+          "y": 0,
+          "w": 1080,
+          "h": 1194,
+          "angle_deg": 90.0
+        }
+      },
+      "count_method": "best_frame"
+    }
+  ],
+  "review_queue": [
+    {
+      "ref_id": "A-1",
+      "code": "count_disagreement_row"
+    }
+  ]
+}

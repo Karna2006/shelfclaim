@@ -1,0 +1,721 @@
+{
+  "books": {
+    "b_0001": {
+      "status": "unidentified",
+      "chosen": null,
+      "title": "",
+      "authors": [],
+      "edition": "",
+      "isbn": "",
+      "raw_score": 0,
+      "id_confidence": 0.0,
+      "candidates": [],
+      "spine_text_raw": "THE ALMANA"
+    },
+    "b_0002": {
+      "status": "unidentified",
+      "chosen": null,
+      "title": "",
+      "authors": [],
+      "edition": "",
+      "isbn": "",
+      "raw_score": 0,
+      "id_confidence": 0.0,
+      "candidates": [],
+      "spine_text_raw": ""
+    },
+    "b_0003": {
+      "status": "unidentified",
+      "chosen": null,
+      "title": "",
+      "authors": [],
+      "edition": "",
+      "isbn": "",
+      "raw_score": 0,
+      "id_confidence": 0.0,
+      "candidates": [],
+      "spine_text_raw": "RUTOBIOGRAPHY OF A YOGI"
+    },
+    "b_0004": {
+      "status": "identified",
+      "chosen": {
+        "source": "google_books",
+        "key": "mPLF0QEACAAJ",
+        "title": "The One Thing",
+        "authors": [
+          "Gary Keller"
+        ],
+        "year": "2025-09-05",
+        "publishers": [
+          "Manjul Publishing House Pvt Limited"
+        ],
+        "isbns": [
+          "9373178962",
+          "9789373178967"
+        ]
+      },
+      "title": "The One Thing",
+      "authors": [
+        "Gary Keller"
+      ],
+      "edition": "",
+      "isbn": "",
+      "raw_score": 1.0,
+      "id_confidence": 1.0,
+      "candidates": [
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "mPLF0QEACAAJ",
+            "title": "The One Thing",
+            "authors": [
+              "Gary Keller"
+            ],
+            "year": "2025-09-05",
+            "publishers": [
+              "Manjul Publishing House Pvt Limited"
+            ],
+            "isbns": [
+              "9373178962",
+              "9789373178967"
+            ]
+          },
+          "title_sim": 100.0,
+          "author_sim": 100.0,
+          "publisher_sim": 0.0,
+          "raw_score": 1.0,
+          "id_confidence": 1.0,
+          "accepted": true,
+          "matched_query": "one thing",
+          "line_indices": [
+            0
+          ],
+          "line_distance": 165.25208016845053,
+          "features": {
+            "title": 1.0,
+            "author": 1.0,
+            "publisher": 0.0
+          },
+          "score": 1.0
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "lnrNDwAAQBAJ",
+            "title": "The One Thing (Hindi)",
+            "authors": [
+              "Gary Keller",
+              "Jay Papasan"
+            ],
+            "year": "2019",
+            "publishers": [
+              "Manjul Publishing"
+            ],
+            "isbns": [
+              "9789389143638",
+              "9389143632"
+            ]
+          },
+          "title_sim": 76.19,
+          "author_sim": 100.0,
+          "publisher_sim": 0.0,
+          "raw_score": 0.7619,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "one thing",
+          "line_indices": [
+            0
+          ],
+          "line_distance": 165.25208016845053,
+          "features": {
+            "title": 0.7619047619047619,
+            "author": 1.0,
+            "publisher": 0.0
+          },
+          "score": 0.7619
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "8wRKDwAAQBAJ",
+            "title": "The One Thing (Tamil)",
+            "authors": [
+              "Gary Keller",
+              "Jay Papasan"
+            ],
+            "year": "2018-02-01",
+            "publishers": [
+              "Manjul Publishing"
+            ],
+            "isbns": [
+              "9788183226486",
+              "8183226485"
+            ]
+          },
+          "title_sim": 76.19,
+          "author_sim": 100.0,
+          "publisher_sim": 0.0,
+          "raw_score": 0.7619,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "one thing",
+          "line_indices": [
+            0
+          ],
+          "line_distance": 165.25208016845053,
+          "features": {
+            "title": 0.7619047619047619,
+            "author": 1.0,
+            "publisher": 0.0
+          },
+          "score": 0.7619
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "A2ynEAAAQBAJ",
+            "title": "The One Thing (Telugu)",
+            "authors": [
+              "Gary Keller",
+              "Jay Papasan"
+            ],
+            "year": "2022-08-21",
+            "publishers": [
+              "Manjul Publishing"
+            ],
+            "isbns": [
+              "9789355430274",
+              "9355430272"
+            ]
+          },
+          "title_sim": 72.73,
+          "author_sim": 100.0,
+          "publisher_sim": 0.0,
+          "raw_score": 0.7273,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "one thing",
+          "line_indices": [
+            0
+          ],
+          "line_distance": 165.25208016845053,
+          "features": {
+            "title": 0.7272727272727273,
+            "author": 1.0,
+            "publisher": 0.0
+          },
+          "score": 0.7273
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "06gpzAEACAAJ",
+            "title": "Leaders Eat Last: Why Some Teams Pull Together and Others Don't (Blinkist Summary).",
+            "authors": [
+              "Blinkist Blinkist"
+            ],
+            "year": "2019",
+            "publishers": [
+              ""
+            ],
+            "isbns": [
+              "OCLC:1125896853"
+            ]
+          },
+          "title_sim": 72.58,
+          "author_sim": 42.42,
+          "publisher_sim": 0.0,
+          "raw_score": 0.7258,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "why some teams pull together and others don t",
+          "line_indices": [
+            1
+          ],
+          "line_distance": 48.05205510693585,
+          "features": {
+            "title": 0.7258064516129032,
+            "author": 0.4242424242424242,
+            "publisher": 0.0
+          },
+          "score": 0.7258
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "ggiWzgEACAAJ",
+            "title": "Leaders Eat Last: Why Some Teams Pull Together and Others Don't (Blinkist Summary)",
+            "authors": [],
+            "year": "2019",
+            "publishers": [
+              ""
+            ],
+            "isbns": [
+              "OCLC:1259010653"
+            ]
+          },
+          "title_sim": 72.58,
+          "author_sim": 0.0,
+          "publisher_sim": 0.0,
+          "raw_score": 0.7258,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "why some teams pull together and others don t",
+          "line_indices": [
+            1
+          ],
+          "line_distance": 48.05205510693585,
+          "features": {
+            "title": 0.7258064516129032,
+            "author": 0.0,
+            "publisher": 0.0
+          },
+          "score": 0.7258
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "3ZYQEAAAQBAJ",
+            "title": "The One Thing (Marathi)",
+            "authors": [
+              "Gary Keller",
+              "Jay Papasan"
+            ],
+            "year": "2020-10-25",
+            "publishers": [
+              "Manjul Publishing"
+            ],
+            "isbns": [
+              "9789390085378",
+              "9390085373"
+            ]
+          },
+          "title_sim": 69.57,
+          "author_sim": 100.0,
+          "publisher_sim": 0.0,
+          "raw_score": 0.6957,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "one thing",
+          "line_indices": [
+            0
+          ],
+          "line_distance": 165.25208016845053,
+          "features": {
+            "title": 0.6956521739130435,
+            "author": 1.0,
+            "publisher": 0.0
+          },
+          "score": 0.6957
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "RChNzQEACAAJ",
+            "title": "The One Thing (summary)",
+            "authors": [
+              "Gary Keller"
+            ],
+            "year": "2017",
+            "publishers": [
+              ""
+            ],
+            "isbns": [
+              "OCLC:1026346371"
+            ]
+          },
+          "title_sim": 69.57,
+          "author_sim": 100.0,
+          "publisher_sim": 0.0,
+          "raw_score": 0.6957,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "one thing",
+          "line_indices": [
+            0
+          ],
+          "line_distance": 165.25208016845053,
+          "features": {
+            "title": 0.6956521739130435,
+            "author": 1.0,
+            "publisher": 0.0
+          },
+          "score": 0.6957
+        }
+      ],
+      "spine_text_raw": "THE ONE THING | Why Some Teams Pull Together and Others Don't | Whyf   e    bDont | LEADERS EAT LAST | GARY KELLER | WITH JAY PAPAS | 5 | NCER"
+    },
+    "b_0005": {
+      "status": "unidentified",
+      "chosen": null,
+      "title": "",
+      "authors": [],
+      "edition": "",
+      "isbn": "",
+      "raw_score": 0,
+      "id_confidence": 0.0,
+      "candidates": [
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "GwcLEAAAQBAJ",
+            "title": "Box Simon Sinek",
+            "authors": [
+              "Simon Sinek"
+            ],
+            "year": "2020-11-24",
+            "publishers": [
+              "Sextante"
+            ],
+            "isbns": [
+              "9786555640922",
+              "6555640928"
+            ]
+          },
+          "title_sim": 86.96,
+          "author_sim": 45.45,
+          "publisher_sim": 0.0,
+          "raw_score": 0.8696,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "simon sinek",
+          "line_indices": [
+            0
+          ],
+          "line_distance": 295.2951912916971,
+          "features": {
+            "title": 0.8695652173913043,
+            "author": 0.4545454545454546,
+            "publisher": 0.0
+          },
+          "score": 0.8696
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "tAidzAEACAAJ",
+            "title": "Simon Sinek Notebook",
+            "authors": [
+              "Sinek Notebooks"
+            ],
+            "year": "2019-12-10",
+            "publishers": [
+              ""
+            ],
+            "isbns": [
+              "1673747965",
+              "9781673747966"
+            ]
+          },
+          "title_sim": 71.43,
+          "author_sim": 38.46,
+          "publisher_sim": 0.0,
+          "raw_score": 0.7143,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "simon sinek",
+          "line_indices": [
+            0
+          ],
+          "line_distance": 295.2951912916971,
+          "features": {
+            "title": 0.7142857142857143,
+            "author": 0.3846153846153846,
+            "publisher": 0.0
+          },
+          "score": 0.7143
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "oMT7AAAACAAJ",
+            "title": "Folders (Piatkus)",
+            "authors": [
+              "Little, Brown Book Group Limited"
+            ],
+            "year": "2003-07-30",
+            "publishers": [
+              "Piatkus Books"
+            ],
+            "isbns": [
+              "0749934778",
+              "9780749934774"
+            ]
+          },
+          "title_sim": 66.67,
+          "author_sim": 28.57,
+          "publisher_sim": 0.0,
+          "raw_score": 0.6667,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "piatkus",
+          "line_indices": [
+            2
+          ],
+          "line_distance": 383.5101041693687,
+          "features": {
+            "title": 0.6666666666666667,
+            "author": 0.2857142857142857,
+            "publisher": 0.0
+          },
+          "score": 0.6667
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "e9XIAAAACAAJ",
+            "title": "Piatkus White Showcard",
+            "authors": [
+              "Harpercollins"
+            ],
+            "year": "1998-01-29",
+            "publishers": [
+              "Piatkus Books"
+            ],
+            "isbns": [
+              "0999910310",
+              "9780999910313"
+            ]
+          },
+          "title_sim": 51.85,
+          "author_sim": 34.78,
+          "publisher_sim": 0.0,
+          "raw_score": 0.5185,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "piatkus",
+          "line_indices": [
+            2
+          ],
+          "line_distance": 383.5101041693687,
+          "features": {
+            "title": 0.5185185185185186,
+            "author": 0.34782608695652173,
+            "publisher": 0.0
+          },
+          "score": 0.5185
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "LusFEAAAQBAJ",
+            "title": "Top Inspiring Thoughts of Simon Sinek",
+            "authors": [
+              "M.D. Sharma"
+            ],
+            "year": "2021-01-01",
+            "publishers": [
+              "Prabhat Prakashan"
+            ],
+            "isbns": []
+          },
+          "title_sim": 47.62,
+          "author_sim": 38.1,
+          "publisher_sim": 0.0,
+          "raw_score": 0.4762,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "simon sinek",
+          "line_indices": [
+            0
+          ],
+          "line_distance": 295.2951912916971,
+          "features": {
+            "title": 0.4761904761904761,
+            "author": 0.38095238095238093,
+            "publisher": 0.0
+          },
+          "score": 0.4762
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "B-8UPQAACAAJ",
+            "title": "Piatkus Archive Books Ref PC",
+            "authors": [
+              "Philip Coterell"
+            ],
+            "year": "1999-01",
+            "publishers": [
+              "Piatkus Books"
+            ],
+            "isbns": [
+              "0999919377",
+              "9780999919378"
+            ]
+          },
+          "title_sim": 45.16,
+          "author_sim": 30.77,
+          "publisher_sim": 0.0,
+          "raw_score": 0.4516,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "piatkus",
+          "line_indices": [
+            2
+          ],
+          "line_distance": 383.5101041693687,
+          "features": {
+            "title": 0.4516129032258065,
+            "author": 0.3076923076923077,
+            "publisher": 0.0
+          },
+          "score": 0.4516
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "_6zNBAAACAAJ",
+            "title": "Piatkus Catalogue Aug03-Jan04",
+            "authors": [
+              "Little, Brown Book Group Limited"
+            ],
+            "year": "2003-06-03",
+            "publishers": [
+              "Piatkus Books"
+            ],
+            "isbns": [
+              "0749924780",
+              "9780749924782"
+            ]
+          },
+          "title_sim": 42.42,
+          "author_sim": 28.57,
+          "publisher_sim": 0.0,
+          "raw_score": 0.4242,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "piatkus",
+          "line_indices": [
+            2
+          ],
+          "line_distance": 383.5101041693687,
+          "features": {
+            "title": 0.4242424242424242,
+            "author": 0.2857142857142857,
+            "publisher": 0.0
+          },
+          "score": 0.4242
+        },
+        {
+          "candidate": {
+            "source": "google_books",
+            "key": "ps7LPAAACAAJ",
+            "title": "Piatkus Local Author Showcard",
+            "authors": [
+              "Little, Brown Book Group Limited"
+            ],
+            "year": "1998-01-29",
+            "publishers": [
+              "Piatkus Books"
+            ],
+            "isbns": [
+              "0999910302",
+              "9780999910306"
+            ]
+          },
+          "title_sim": 42.42,
+          "author_sim": 28.57,
+          "publisher_sim": 0.0,
+          "raw_score": 0.4242,
+          "id_confidence": 0.0,
+          "accepted": false,
+          "matched_query": "piatkus",
+          "line_indices": [
+            2
+          ],
+          "line_distance": 383.5101041693687,
+          "features": {
+            "title": 0.4242424242424242,
+            "author": 0.2857142857142857,
+            "publisher": 0.0
+          },
+          "score": 0.4242
+        }
+      ],
+      "spine_text_raw": "SIMON SINEK | SALIL DESAI | PIATKUS"
+    },
+    "b_0006": {
+      "status": "unidentified",
+      "chosen": null,
+      "title": "",
+      "authors": [],
+      "edition": "",
+      "isbn": "",
+      "raw_score": 0,
+      "id_confidence": 0.0,
+      "candidates": [],
+      "spine_text_raw": "FMURDERS | Cal Newport | GREAT IDEAS"
+    },
+    "b_0007": {
+      "status": "unidentified",
+      "chosen": null,
+      "title": "",
+      "authors": [],
+      "edition": "",
+      "isbn": "",
+      "raw_score": 0,
+      "id_confidence": 0.0,
+      "candidates": [],
+      "spine_text_raw": "DEEP WORK | IRFAN ALAM | VINTAGE"
+    },
+    "b_0008": {
+      "status": "unidentified",
+      "chosen": null,
+      "title": "",
+      "authors": [],
+      "edition": "",
+      "isbn": "",
+      "raw_score": 0,
+      "id_confidence": 0.0,
+      "candidates": [],
+      "spine_text_raw": "u ek | ur:Thousand Weeks | Heal Your Mind Heal Your Life | The Myth of Sisyphus | Oliver Burkeman"
+    },
+    "b_0009": {
+      "status": "unidentified",
+      "chosen": null,
+      "title": "",
+      "authors": [],
+      "edition": "",
+      "isbn": "",
+      "raw_score": 0,
+      "id_confidence": 0.0,
+      "candidates": [],
+      "spine_text_raw": ""
+    },
+    "b_0010": {
+      "status": "unidentified",
+      "chosen": null,
+      "title": "",
+      "authors": [],
+      "edition": "",
+      "isbn": "",
+      "raw_score": 0,
+      "id_confidence": 0.0,
+      "candidates": [],
+      "spine_text_raw": "YOUR PARACHUTE? 2017 | ER PLAN"
+    },
+    "b_0011": {
+      "status": "unidentified",
+      "chosen": null,
+      "title": "",
+      "authors": [],
+      "edition": "",
+      "isbn": "",
+      "raw_score": 0,
+      "id_confidence": 0.0,
+      "candidates": [],
+      "spine_text_raw": ""
+    }
+  },
+  "review_queue": [],
+  "thresholds": {
+    "title_sim_min": 90,
+    "author_sim_min_for_short_titles": 85,
+    "minimum_words_without_author": 3
+  },
+  "calibration": {
+    "method": "title similarity with author gate",
+    "fitted_on": null
+  }
+}

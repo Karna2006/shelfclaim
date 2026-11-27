@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ShelfClaim system design</title>
+  <style>
+    :root { color-scheme: dark; font-family: Inter, ui-sans-serif, system-ui, sans-serif; }
+    body { margin: 0; background: #0b1020; color: #e8edf7; }
+    main { max-width: 1100px; margin: 0 auto; padding: 3rem 1.5rem; }
+    h1 { margin: 0 0 .5rem; font-size: clamp(2rem, 5vw, 3.5rem); letter-spacing: -.04em; }
+    p { color: #aab6cc; line-height: 1.65; max-width: 75ch; }
+    a { color: #73e0c1; }
+    .diagram { overflow-x: auto; margin: 2rem 0; padding: 1rem; border: 1px solid #26314b; border-radius: 1rem; background: #111a2d; }
+    svg { display: block; min-width: 880px; width: 100%; height: auto; }
+    .box { fill: #17243c; stroke: #536987; stroke-width: 2; }
+    .accent { fill: #123b3b; stroke: #47c8a9; }
+    .node-title { fill: #f1f5fb; font: 600 19px system-ui, sans-serif; }
+    .node-copy { fill: #b3c2d7; font: 14px system-ui, sans-serif; }
+    .arrow { stroke: #65d6b6; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+    .tag { fill: #91a3bd; font: 12px system-ui, sans-serif; }
+    .principle { margin-top: 2rem; padding: 1.25rem 1.5rem; border-left: 3px solid #47c8a9; background: #111a2d; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>ShelfClaim system design</h1>
+  <p>A phone sweep streams high-resolution frames and recognized speech to a local server. Deterministic code scores capture quality, clusters OCR text into book spines, matches catalogue candidates, filters real provider offers, and assembles an evidence-linked report.</p>
+  <div class="diagram" role="img" aria-label="Phone capture and browser speech feed a local server. The server runs OCR, catalogue matching and pricing, then validates a claim packet and report.">
+    <svg viewBox="0 0 1200 560" xmlns="http://www.w3.org/2000/svg">
+      <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#65d6b6"/></marker></defs>
+      <text x="48" y="42" class="tag">PHONE</text>
+      <rect x="42" y="65" width="250" height="145" rx="18" class="box accent"/>
+      <text x="66" y="108" class="node-title">Camera + voice</text>
+      <text x="66" y="141" class="node-copy">Video frames · Web Speech text</text>
+      <text x="66" y="166" class="node-copy">Browser TTS · live cues</text>
+      <path d="M300 136 H380" class="arrow"/>
+      <text x="310" y="119" class="tag">WebSockets</text>
+      <text x="402" y="42" class="tag">LOCAL SERVER</text>
+      <rect x="390" y="65" width="315" height="145" rx="18" class="box"/>
+      <text x="416" y="108" class="node-title">Capture + live agent</text>
+      <text x="416" y="141" class="node-copy">QC metrics · deterministic intents</text>
+      <text x="416" y="166" class="node-copy">Gemini Flash-Lite for other turns</text>
+      <path d="M712 136 H792" class="arrow"/>
+      <text x="720" y="119" class="tag">saved sweep</text>
+      <rect x="800" y="65" width="350" height="145" rx="18" class="box accent"/>
+      <text x="826" y="108" class="node-title">OCR-first pipeline</text>
+      <text x="826" y="141" class="node-copy">Coverage frames · RapidOCR · row tracks</text>
+      <text x="826" y="166" class="node-copy">Markers · catalogue · provider offers</text>
+      <path d="M975 212 V300" class="arrow"/>
+      <text x="989" y="267" class="tag">S10</text>
+      <rect x="800" y="310" width="350" height="145" rx="18" class="box"/>
+      <text x="826" y="353" class="node-title">Validated claim packet</text>
+      <text x="826" y="386" class="node-copy">Evidence references · deterministic totals</text>
+      <text x="826" y="411" class="node-copy">Review queue · HTML report</text>
+      <path d="M798 382 H710" class="arrow"/>
+      <text x="713" y="364" class="tag">viewer / report</text>
+      <rect x="390" y="310" width="315" height="145" rx="18" class="box"/>
+      <text x="416" y="353" class="node-title">Laptop viewer</text>
+      <text x="416" y="386" class="node-copy">Frame · QC · captions · inventory</text>
+      <text x="416" y="411" class="node-copy">Pipeline progress · report link</text>
+      <text x="44" y="520" class="tag">External APIs: Gemini · Google Books · SerpApi · Frankfurter</text>
+      <text x="744" y="520" class="tag">Metric scale: same-plane ArUco marker homography</text>
+    </svg>
+  </div>
+  <div class="principle"><strong>Core principle:</strong> models perceive; code decides. Unsupported identity, dimensions, and prices stay blank for review.</div>
+  <p>For stage details and current configuration, read the <a href="architecture.md">architecture overview</a> and <a href="ARCHITECTURE_SPEC.md">implemented specification</a>.</p>
+</main>
+</body>
+</html>

@@ -1,0 +1,1064 @@
+{
+  "books": {
+    "b_0001": {
+      "views": [
+        {
+          "crop_id": "b_0001_frame",
+          "readable": true,
+          "orientation": "frame_ocr",
+          "lines": [
+            {
+              "text": "\"TTTT!",
+              "kind_guess": "other",
+              "confidence": 0.74839,
+              "bbox": {
+                "x": 0.0,
+                "y": 334.0,
+                "w": 197.0,
+                "h": 391.0
+              }
+            }
+          ],
+          "legibility": 0.74839,
+          "seq": 104,
+          "frame_ref": "frames/f_000104_0062662.jpg"
+        }
+      ],
+      "consensus_text": "\"TTTT!",
+      "legibility": 0.74839,
+      "spine_text_raw": "\"TTTT!"
+    },
+    "b_0002": {
+      "views": [
+        {
+          "crop_id": "b_0002_frame",
+          "readable": true,
+          "orientation": "frame_ocr",
+          "lines": [
+            {
+              "text": "James",
+              "kind_guess": "other",
+              "confidence": 0.99984,
+              "bbox": {
+                "x": 85.0,
+                "y": 298.0,
+                "w": 73.0,
+                "h": 92.0
+              }
+            }
+          ],
+          "legibility": 0.99984,
+          "seq": 27,
+          "frame_ref": "frames/f_000027_0016756.jpg"
+        }
+      ],
+      "consensus_text": "James",
+      "legibility": 0.99984,
+      "spine_text_raw": "James"
+    },
+    "b_0003": {
+      "views": [
+        {
+          "crop_id": "b_0003_frame",
+          "readable": true,
+          "orientation": "frame_ocr",
+          "lines": [
+            {
+              "text": "Atomic",
+              "kind_guess": "other",
+              "confidence": 0.99972,
+              "bbox": {
+                "x": 198.0,
+                "y": 0.0,
+                "w": 132.0,
+                "h": 151.0
+              }
+            },
+            {
+              "text": "Atomic Ha",
+              "kind_guess": "other",
+              "confidence": 0.97644,
+              "bbox": {
+                "x": 158.0,
+                "y": 0.0,
+                "w": 180.0,
+                "h": 225.0
+              }
+            },
+            {
+              "text": "THEBN EA EAN  E SON",
+              "kind_guess": "other",
+              "confidence": 0.65491,
+              "bbox": {
+                "x": 317.0,
+                "y": 0.0,
+                "w": 242.0,
+                "h": 381.0
+              }
+            },
+            {
+              "text": "ROBIM SHARMA",
+              "kind_guess": "other",
+              "confidence": 0.95404,
+              "bbox": {
+                "x": 298.0,
+                "y": 88.0,
+                "w": 151.0,
+                "h": 237.0
+              }
+            },
+            {
+              "text": "ROBIN SHARMA",
+              "kind_guess": "other",
+              "confidence": 0.99189,
+              "bbox": {
+                "x": 302.0,
+                "y": 88.0,
+                "w": 150.0,
+                "h": 236.0
+              }
+            },
+            {
+              "text": "HERO MANIFESTO",
+              "kind_guess": "other",
+              "confidence": 0.99846,
+              "bbox": {
+                "x": 257.0,
+                "y": 172.0,
+                "w": 113.0,
+                "h": 174.0
+              }
+            },
+            {
+              "text": "EIOSON",
+              "kind_guess": "other",
+              "confidence": 0.75619,
+              "bbox": {
+                "x": 322.0,
+                "y": 270.0,
+                "w": 74.0,
+                "h": 109.0
+              }
+            },
+            {
+              "text": "ERIC JORGENSON",
+              "kind_guess": "other",
+              "confidence": 0.96686,
+              "bbox": {
+                "x": 324.0,
+                "y": 270.0,
+                "w": 74.0,
+                "h": 108.0
+              }
+            },
+            {
+              "text": "PARAMAHANSA",
+              "kind_guess": "other",
+              "confidence": 0.99927,
+              "bbox": {
+                "x": 408.0,
+                "y": 282.0,
+                "w": 69.0,
+                "h": 98.0
+              }
+            },
+            {
+              "text": "PAYHWAASA",
+              "kind_guess": "other",
+              "confidence": 0.6602,
+              "bbox": {
+                "x": 407.0,
+                "y": 284.0,
+                "w": 67.0,
+                "h": 96.0
+              }
+            }
+          ],
+          "legibility": 0.8957980000000001,
+          "seq": 27,
+          "frame_ref": "frames/f_000027_0016756.jpg"
+        }
+      ],
+      "consensus_text": "Atomic | Atomic Ha | THEBN EA EAN  E SON | ROBIM SHARMA | ROBIN SHARMA | HERO MANIFESTO | EIOSON | ERIC JORGENSON | PARAMAHANSA | PAYHWAASA",
+      "legibility": 0.8957980000000001,
+      "spine_text_raw": "Atomic | Atomic Ha | THEBN EA EAN  E SON | ROBIM SHARMA | ROBIN SHARMA | HERO MANIFESTO | EIOSON | ERIC JORGENSON | PARAMAHANSA | PAYHWAASA"
+    },
+    "b_0004": {
+      "views": [
+        {
+          "crop_id": "b_0004_frame",
+          "readable": true,
+          "orientation": "frame_ocr",
+          "lines": [
+            {
+              "text": "THE ALMANACK OF NAVAL RAVIKANT",
+              "kind_guess": "other",
+              "confidence": 0.99545,
+              "bbox": {
+                "x": 383.0,
+                "y": 0.0,
+                "w": 175.0,
+                "h": 275.0
+              }
+            },
+            {
+              "text": "AUTOBIOGAS",
+              "kind_guess": "other",
+              "confidence": 0.94099,
+              "bbox": {
+                "x": 546.0,
+                "y": 15.0,
+                "w": 79.0,
+                "h": 107.0
+              }
+            },
+            {
+              "text": "THE ON THING AR KYRPAASAN",
+              "kind_guess": "other",
+              "confidence": 0.75078,
+              "bbox": {
+                "x": 433.0,
+                "y": 74.0,
+                "w": 264.0,
+                "h": 374.0
+              }
+            },
+            {
+              "text": "THE ONE THING",
+              "kind_guess": "other",
+              "confidence": 0.99987,
+              "bbox": {
+                "x": 522.0,
+                "y": 83.0,
+                "w": 170.0,
+                "h": 231.0
+              }
+            },
+            {
+              "text": "YOGI",
+              "kind_guess": "other",
+              "confidence": 0.99658,
+              "bbox": {
+                "x": 496.0,
+                "y": 116.0,
+                "w": 73.0,
+                "h": 96.0
+              }
+            },
+            {
+              "text": "LEADERS EAT LAST",
+              "kind_guess": "other",
+              "confidence": 0.9952,
+              "bbox": {
+                "x": 543.0,
+                "y": 210.0,
+                "w": 134.0,
+                "h": 189.0
+              }
+            },
+            {
+              "text": "WIAA AASAN",
+              "kind_guess": "other",
+              "confidence": 0.60687,
+              "bbox": {
+                "x": 461.0,
+                "y": 286.0,
+                "w": 90.0,
+                "h": 121.0
+              }
+            },
+            {
+              "text": "WITH JAY PAPASAN",
+              "kind_guess": "other",
+              "confidence": 0.99758,
+              "bbox": {
+                "x": 464.0,
+                "y": 288.0,
+                "w": 86.0,
+                "h": 117.0
+              }
+            },
+            {
+              "text": "GARY KELLER",
+              "kind_guess": "other",
+              "confidence": 0.99824,
+              "bbox": {
+                "x": 496.0,
+                "y": 295.0,
+                "w": 66.0,
+                "h": 87.0
+              }
+            }
+          ],
+          "legibility": 0.9201733333333334,
+          "seq": 27,
+          "frame_ref": "frames/f_000027_0016756.jpg"
+        }
+      ],
+      "consensus_text": "THE ALMANACK OF NAVAL RAVIKANT | AUTOBIOGAS | THE ON THING AR KYRPAASAN | THE ONE THING | YOGI | LEADERS EAT LAST | WIAA AASAN | WITH JAY PAPASAN | GARY KELLER",
+      "legibility": 0.9201733333333334,
+      "spine_text_raw": "THE ALMANACK OF NAVAL RAVIKANT | AUTOBIOGAS | THE ON THING AR KYRPAASAN | THE ONE THING | YOGI | LEADERS EAT LAST | WIAA AASAN | WITH JAY PAPASAN | GARY KELLER"
+    },
+    "b_0005": {
+      "views": [
+        {
+          "crop_id": "b_0005_frame",
+          "readable": true,
+          "orientation": "frame_ocr",
+          "lines": [
+            {
+              "text": "SIMON SINEK",
+              "kind_guess": "other",
+              "confidence": 0.99929,
+              "bbox": {
+                "x": 651.0,
+                "y": 70.0,
+                "w": 108.0,
+                "h": 146.0
+              }
+            },
+            {
+              "text": "DEEP WORK Cal Newport",
+              "kind_guess": "other",
+              "confidence": 0.99793,
+              "bbox": {
+                "x": 681.0,
+                "y": 87.0,
+                "w": 227.0,
+                "h": 312.0
+              }
+            },
+            {
+              "text": "Four Thousand Weeks Olid Burken an",
+              "kind_guess": "other",
+              "confidence": 0.93217,
+              "bbox": {
+                "x": 765.0,
+                "y": 96.0,
+                "w": 247.0,
+                "h": 335.0
+              }
+            },
+            {
+              "text": "Heal Your Mind Heal Your Life",
+              "kind_guess": "other",
+              "confidence": 0.96903,
+              "bbox": {
+                "x": 839.0,
+                "y": 113.0,
+                "w": 123.0,
+                "h": 165.0
+              }
+            },
+            {
+              "text": "Heal  yrtie",
+              "kind_guess": "other",
+              "confidence": 0.54296,
+              "bbox": {
+                "x": 842.0,
+                "y": 115.0,
+                "w": 121.0,
+                "h": 162.0
+              }
+            },
+            {
+              "text": "HALFMURDERS",
+              "kind_guess": "other",
+              "confidence": 0.99456,
+              "bbox": {
+                "x": 701.0,
+                "y": 116.0,
+                "w": 121.0,
+                "h": 169.0
+              }
+            },
+            {
+              "text": "Ollu rBurken an",
+              "kind_guess": "other",
+              "confidence": 0.8093,
+              "bbox": {
+                "x": 770.0,
+                "y": 277.0,
+                "w": 123.0,
+                "h": 150.0
+              }
+            },
+            {
+              "text": "Ollv rBurkenan",
+              "kind_guess": "other",
+              "confidence": 0.86285,
+              "bbox": {
+                "x": 767.0,
+                "y": 278.0,
+                "w": 121.0,
+                "h": 149.0
+              }
+            }
+          ],
+          "legibility": 0.88851125,
+          "seq": 27,
+          "frame_ref": "frames/f_000027_0016756.jpg"
+        }
+      ],
+      "consensus_text": "SIMON SINEK | DEEP WORK Cal Newport | Four Thousand Weeks Olid Burken an | Heal Your Mind Heal Your Life | Heal  yrtie | HALFMURDERS | Ollu rBurken an | Ollv rBurkenan",
+      "legibility": 0.88851125,
+      "spine_text_raw": "SIMON SINEK | DEEP WORK Cal Newport | Four Thousand Weeks Olid Burken an | Heal Your Mind Heal Your Life | Heal  yrtie | HALFMURDERS | Ollu rBurken an | Ollv rBurkenan"
+    },
+    "b_0006": {
+      "views": [
+        {
+          "crop_id": "b_0006_frame",
+          "readable": true,
+          "orientation": "frame_ocr",
+          "lines": [
+            {
+              "text": "Four Thousand Weeks",
+              "kind_guess": "other",
+              "confidence": 0.99818,
+              "bbox": {
+                "x": 869.0,
+                "y": 105.0,
+                "w": 134.0,
+                "h": 179.0
+              }
+            },
+            {
+              "text": "WHAT COLOR IS YOUR PARACHUTE 2017",
+              "kind_guess": "other",
+              "confidence": 0.95248,
+              "bbox": {
+                "x": 847.0,
+                "y": 130.0,
+                "w": 218.0,
+                "h": 301.0
+              }
+            },
+            {
+              "text": "WH    0",
+              "kind_guess": "other",
+              "confidence": 0.73091,
+              "bbox": {
+                "x": 845.0,
+                "y": 131.0,
+                "w": 218.0,
+                "h": 304.0
+              }
+            },
+            {
+              "text": "ILLIONAIRE MASTER PLAN",
+              "kind_guess": "other",
+              "confidence": 0.9989,
+              "bbox": {
+                "x": 881.0,
+                "y": 192.0,
+                "w": 199.0,
+                "h": 279.0
+              }
+            },
+            {
+              "text": "LLIONAIRE MASTER PLAN",
+              "kind_guess": "other",
+              "confidence": 0.99928,
+              "bbox": {
+                "x": 876.0,
+                "y": 196.0,
+                "w": 203.0,
+                "h": 277.0
+              }
+            },
+            {
+              "text": "BRIANANAANEST",
+              "kind_guess": "other",
+              "confidence": 0.7555,
+              "bbox": {
+                "x": 966.0,
+                "y": 313.0,
+                "w": 81.0,
+                "h": 109.0
+              }
+            },
+            {
+              "text": "BRIANNA WIEST",
+              "kind_guess": "other",
+              "confidence": 0.99817,
+              "bbox": {
+                "x": 969.0,
+                "y": 313.0,
+                "w": 82.0,
+                "h": 108.0
+              }
+            }
+          ],
+          "legibility": 0.91906,
+          "seq": 27,
+          "frame_ref": "frames/f_000027_0016756.jpg"
+        }
+      ],
+      "consensus_text": "Four Thousand Weeks | WHAT COLOR IS YOUR PARACHUTE 2017 | WH    0 | ILLIONAIRE MASTER PLAN | LLIONAIRE MASTER PLAN | BRIANANAANEST | BRIANNA WIEST",
+      "legibility": 0.91906,
+      "spine_text_raw": "Four Thousand Weeks | WHAT COLOR IS YOUR PARACHUTE 2017 | WH    0 | ILLIONAIRE MASTER PLAN | LLIONAIRE MASTER PLAN | BRIANANAANEST | BRIANNA WIEST"
+    },
+    "b_0007": {
+      "views": [
+        {
+          "crop_id": "b_0007_frame",
+          "readable": true,
+          "orientation": "frame_ocr",
+          "lines": [
+            {
+              "text": "OWER",
+              "kind_guess": "other",
+              "confidence": 0.99838,
+              "bbox": {
+                "x": 1.0,
+                "y": 382.0,
+                "w": 41.0,
+                "h": 102.0
+              }
+            }
+          ],
+          "legibility": 0.99838,
+          "seq": 15,
+          "frame_ref": "frames/f_000015_0009530.jpg"
+        }
+      ],
+      "consensus_text": "OWER",
+      "legibility": 0.99838,
+      "spine_text_raw": "OWER"
+    },
+    "b_0008": {
+      "views": [
+        {
+          "crop_id": "b_0008_frame",
+          "readable": true,
+          "orientation": "frame_ocr",
+          "lines": [
+            {
+              "text": "\u5c71\u5c71",
+              "kind_guess": "other",
+              "confidence": 0.89999,
+              "bbox": {
+                "x": 37.0,
+                "y": 627.0,
+                "w": 168.0,
+                "h": 319.0
+              }
+            }
+          ],
+          "legibility": 0.89999,
+          "seq": 104,
+          "frame_ref": "frames/f_000104_0062662.jpg"
+        }
+      ],
+      "consensus_text": "\u5c71\u5c71",
+      "legibility": 0.89999,
+      "spine_text_raw": "\u5c71\u5c71"
+    },
+    "b_0009": {
+      "views": [
+        {
+          "crop_id": "b_0009_frame",
+          "readable": true,
+          "orientation": "frame_ocr",
+          "lines": [
+            {
+              "text": "VINTAGE",
+              "kind_guess": "other",
+              "confidence": 0.99996,
+              "bbox": {
+                "x": 111.0,
+                "y": 1376.0,
+                "w": 82.0,
+                "h": 105.0
+              }
+            }
+          ],
+          "legibility": 0.99996,
+          "seq": 57,
+          "frame_ref": "frames/f_000057_0034678.jpg"
+        }
+      ],
+      "consensus_text": "VINTAGE",
+      "legibility": 0.99996,
+      "spine_text_raw": "VINTAGE"
+    },
+    "b_0010": {
+      "views": [
+        {
+          "crop_id": "b_0010_frame",
+          "readable": true,
+          "orientation": "frame_ocr",
+          "lines": [
+            {
+              "text": "George Orwell Nineteen Eighty-Four",
+              "kind_guess": "other",
+              "confidence": 0.99606,
+              "bbox": {
+                "x": 350.0,
+                "y": 341.0,
+                "w": 171.0,
+                "h": 681.0
+              }
+            },
+            {
+              "text": "THE LORDS OF EASY MONEY",
+              "kind_guess": "other",
+              "confidence": 0.9857,
+              "bbox": {
+                "x": 226.0,
+                "y": 699.0,
+                "w": 221.0,
+                "h": 885.0
+              }
+            }
+          ],
+          "legibility": 0.99088,
+          "seq": 73,
+          "frame_ref": "frames/f_000073_0044232.jpg"
+        }
+      ],
+      "consensus_text": "George Orwell Nineteen Eighty-Four | THE LORDS OF EASY MONEY",
+      "legibility": 0.99088,
+      "spine_text_raw": "George Orwell Nineteen Eighty-Four | THE LORDS OF EASY MONEY"
+    },
+    "b_0011": {
+      "views": [
+        {
+          "crop_id": "b_0011_frame",
+          "readable": true,
+          "orientation": "frame_ocr",
+          "lines": [
+            {
+              "text": "SELF-HELP",
+              "kind_guess": "other",
+              "confidence": 0.99973,
+              "bbox": {
+                "x": 485.0,
+                "y": 689.0,
+                "w": 194.0,
+                "h": 71.0
+              }
+            }
+          ],
+          "legibility": 0.99973,
+          "seq": 27,
+          "frame_ref": "frames/f_000027_0016756.jpg"
+        }
+      ],
+      "consensus_text": "SELF-HELP",
+      "legibility": 0.99973,
+      "spine_text_raw": "SELF-HELP"
+    },
+    "b_0012": {
+      "views": [
+        {
+          "crop_id": "b_0012_frame",
+          "readable": true,
+          "orientation": "frame_ocr",
+          "lines": [
+            {
+              "text": "THE EVERYDAY HERO MANIFESTO",
+              "kind_guess": "other",
+              "confidence": 0.99748,
+              "bbox": {
+                "x": 634.0,
+                "y": 605.0,
+                "w": 388.0,
+                "h": 660.0
+              }
+            },
+            {
+              "text": "ROBIN SHARMA",
+              "kind_guess": "other",
+              "confidence": 0.99594,
+              "bbox": {
+                "x": 725.0,
+                "y": 710.0,
+                "w": 312.0,
+                "h": 501.0
+              }
+            },
+            {
+              "text": "NAVAL RAVIKANT",
+              "kind_guess": "other",
+              "confidence": 0.98623,
+              "bbox": {
+                "x": 901.0,
+                "y": 790.0,
+                "w": 178.0,
+                "h": 300.0
+              }
+            }
+          ],
+          "legibility": 0.9932166666666667,
+          "seq": 46,
+          "frame_ref": "frames/f_000046_0028101.jpg"
+        }
+      ],
+      "consensus_text": "THE EVERYDAY HERO MANIFESTO | ROBIN SHARMA | NAVAL RAVIKANT",
+      "legibility": 0.9932166666666667,
+      "spine_text_raw": "THE EVERYDAY HERO MANIFESTO | ROBIN SHARMA | NAVAL RAVIKANT"
+    },
+    "b_0013": {
+      "views": [
+        {
+          "crop_id": "b_0013_frame",
+          "readable": true,
+          "orientation": "frame_ocr",
+          "lines": [
+            {
+              "text": "Clear",
+              "kind_guess": "other",
+              "confidence": 0.99998,
+              "bbox": {
+                "x": 218.0,
+                "y": 1135.0,
+                "w": 131.0,
+                "h": 164.0
+              }
+            },
+            {
+              "text": "James",
+              "kind_guess": "other",
+              "confidence": 0.99991,
+              "bbox": {
+                "x": 253.0,
+                "y": 1143.0,
+                "w": 146.0,
+                "h": 190.0
+              }
+            }
+          ],
+          "legibility": 0.999945,
+          "seq": 46,
+          "frame_ref": "frames/f_000046_0028101.jpg"
+        }
+      ],
+      "consensus_text": "Clear | James",
+      "legibility": 0.999945,
+      "spine_text_raw": "Clear | James"
+    },
+    "b_0014": {
+      "views": [
+        {
+          "crop_id": "b_0014_frame",
+          "readable": true,
+          "orientation": "frame_ocr",
+          "lines": [
+            {
+              "text": "Feel-Good Productivity Ali Abdaal",
+              "kind_guess": "other",
+              "confidence": 0.99635,
+              "bbox": {
+                "x": 402.0,
+                "y": 823.0,
+                "w": 130.0,
+                "h": 457.0
+              }
+            },
+            {
+              "text": "AMERICAN PSYCHO Bret Easton Ellis",
+              "kind_guess": "other",
+              "confidence": 0.97846,
+              "bbox": {
+                "x": 355.0,
+                "y": 869.0,
+                "w": 91.0,
+                "h": 308.0
+              }
+            },
+            {
+              "text": "AMERICAN PSYCHO",
+              "kind_guess": "other",
+              "confidence": 0.99991,
+              "bbox": {
+                "x": 355.0,
+                "y": 870.0,
+                "w": 60.0,
+                "h": 173.0
+              }
+            },
+            {
+              "text": "How to Enjoy Your Life and Your Job DALE CARNEGIE",
+              "kind_guess": "other",
+              "confidence": 0.99262,
+              "bbox": {
+                "x": 321.0,
+                "y": 920.0,
+                "w": 91.0,
+                "h": 322.0
+              }
+            },
+            {
+              "text": "Bret Easton Ellis",
+              "kind_guess": "other",
+              "confidence": 0.99985,
+              "bbox": {
+                "x": 392.0,
+                "y": 1040.0,
+                "w": 51.0,
+                "h": 138.0
+              }
+            }
+          ],
+          "legibility": 0.9934379999999999,
+          "seq": 27,
+          "frame_ref": "frames/f_000027_0016756.jpg"
+        }
+      ],
+      "consensus_text": "Feel-Good Productivity Ali Abdaal | AMERICAN PSYCHO Bret Easton Ellis | AMERICAN PSYCHO | How to Enjoy Your Life and Your Job DALE CARNEGIE | Bret Easton Ellis",
+      "legibility": 0.9934379999999999,
+      "spine_text_raw": "Feel-Good Productivity Ali Abdaal | AMERICAN PSYCHO Bret Easton Ellis | AMERICAN PSYCHO | How to Enjoy Your Life and Your Job DALE CARNEGIE | Bret Easton Ellis"
+    },
+    "b_0015": {
+      "views": [
+        {
+          "crop_id": "b_0015_frame",
+          "readable": true,
+          "orientation": "frame_ocr",
+          "lines": [
+            {
+              "text": "George Orwell Nineteen Eghty-Four",
+              "kind_guess": "other",
+              "confidence": 0.98233,
+              "bbox": {
+                "x": 523.0,
+                "y": 871.0,
+                "w": 66.0,
+                "h": 214.0
+              }
+            },
+            {
+              "text": "THE LORDS OF EASY MONEY",
+              "kind_guess": "other",
+              "confidence": 0.98883,
+              "bbox": {
+                "x": 486.0,
+                "y": 983.0,
+                "w": 91.0,
+                "h": 280.0
+              }
+            }
+          ],
+          "legibility": 0.98558,
+          "seq": 27,
+          "frame_ref": "frames/f_000027_0016756.jpg"
+        }
+      ],
+      "consensus_text": "George Orwell Nineteen Eghty-Four | THE LORDS OF EASY MONEY",
+      "legibility": 0.98558,
+      "spine_text_raw": "George Orwell Nineteen Eghty-Four | THE LORDS OF EASY MONEY"
+    },
+    "b_0016": {
+      "views": [
+        {
+          "crop_id": "b_0016_frame",
+          "readable": true,
+          "orientation": "frame_ocr",
+          "lines": [
+            {
+              "text": "MARKON",
+              "kind_guess": "other",
+              "confidence": 0.91088,
+              "bbox": {
+                "x": 657.0,
+                "y": 849.0,
+                "w": 40.0,
+                "h": 88.0
+              }
+            },
+            {
+              "text": "NASSIM NICHOLAS TALEB FOOLED BY RANDOMNESS",
+              "kind_guess": "other",
+              "confidence": 0.99782,
+              "bbox": {
+                "x": 577.0,
+                "y": 883.0,
+                "w": 99.0,
+                "h": 343.0
+              }
+            },
+            {
+              "text": "PanloCoelho",
+              "kind_guess": "other",
+              "confidence": 0.97185,
+              "bbox": {
+                "x": 752.0,
+                "y": 885.0,
+                "w": 59.0,
+                "h": 132.0
+              }
+            },
+            {
+              "text": "NASO G EG AO G ES",
+              "kind_guess": "other",
+              "confidence": 0.63947,
+              "bbox": {
+                "x": 574.0,
+                "y": 886.0,
+                "w": 100.0,
+                "h": 341.0
+              }
+            },
+            {
+              "text": "\u4e8cNUNCHI",
+              "kind_guess": "other",
+              "confidence": 0.96954,
+              "bbox": {
+                "x": 611.0,
+                "y": 903.0,
+                "w": 97.0,
+                "h": 232.0
+              }
+            },
+            {
+              "text": "POWER",
+              "kind_guess": "other",
+              "confidence": 0.99969,
+              "bbox": {
+                "x": 715.0,
+                "y": 926.0,
+                "w": 100.0,
+                "h": 247.0
+              }
+            },
+            {
+              "text": "NHH",
+              "kind_guess": "other",
+              "confidence": 0.55814,
+              "bbox": {
+                "x": 684.0,
+                "y": 968.0,
+                "w": 74.0,
+                "h": 181.0
+              }
+            },
+            {
+              "text": "NHH A ANR",
+              "kind_guess": "other",
+              "confidence": 0.50754,
+              "bbox": {
+                "x": 682.0,
+                "y": 971.0,
+                "w": 73.0,
+                "h": 179.0
+              }
+            }
+          ],
+          "legibility": 0.81936625,
+          "seq": 27,
+          "frame_ref": "frames/f_000027_0016756.jpg"
+        }
+      ],
+      "consensus_text": "MARKON | NASSIM NICHOLAS TALEB FOOLED BY RANDOMNESS | PanloCoelho | NASO G EG AO G ES | \u4e8cNUNCHI | POWER | NHH | NHH A ANR",
+      "legibility": 0.81936625,
+      "spine_text_raw": "MARKON | NASSIM NICHOLAS TALEB FOOLED BY RANDOMNESS | PanloCoelho | NASO G EG AO G ES | \u4e8cNUNCHI | POWER | NHH | NHH A ANR"
+    },
+    "b_0017": {
+      "views": [
+        {
+          "crop_id": "b_0017_frame",
+          "readable": true,
+          "orientation": "frame_ocr",
+          "lines": [
+            {
+              "text": "THE ALCHEMIST",
+              "kind_guess": "other",
+              "confidence": 0.99865,
+              "bbox": {
+                "x": 799.0,
+                "y": 1062.0,
+                "w": 62.0,
+                "h": 144.0
+              }
+            }
+          ],
+          "legibility": 0.99865,
+          "seq": 27,
+          "frame_ref": "frames/f_000027_0016756.jpg"
+        }
+      ],
+      "consensus_text": "THE ALCHEMIST",
+      "legibility": 0.99865,
+      "spine_text_raw": "THE ALCHEMIST"
+    },
+    "b_0018": {
+      "views": [
+        {
+          "crop_id": "b_0018_frame",
+          "readable": true,
+          "orientation": "frame_ocr",
+          "lines": [
+            {
+              "text": "YOGANANDA",
+              "kind_guess": "other",
+              "confidence": 0.99997,
+              "bbox": {
+                "x": 940.0,
+                "y": 1111.0,
+                "w": 120.0,
+                "h": 178.0
+              }
+            },
+            {
+              "text": "PARAAANSA",
+              "kind_guess": "other",
+              "confidence": 0.73855,
+              "bbox": {
+                "x": 954.0,
+                "y": 1112.0,
+                "w": 125.0,
+                "h": 200.0
+              }
+            },
+            {
+              "text": "PARAMAHANSA",
+              "kind_guess": "other",
+              "confidence": 0.99996,
+              "bbox": {
+                "x": 959.0,
+                "y": 1114.0,
+                "w": 121.0,
+                "h": 197.0
+              }
+            }
+          ],
+          "legibility": 0.9128266666666667,
+          "seq": 46,
+          "frame_ref": "frames/f_000046_0028101.jpg"
+        }
+      ],
+      "consensus_text": "YOGANANDA | PARAAANSA | PARAMAHANSA",
+      "legibility": 0.9128266666666667,
+      "spine_text_raw": "YOGANANDA | PARAAANSA | PARAMAHANSA"
+    },
+    "b_0019": {
+      "views": [
+        {
+          "crop_id": "b_0019_frame",
+          "readable": true,
+          "orientation": "frame_ocr",
+          "lines": [
+            {
+              "text": "rh",
+              "kind_guess": "other",
+              "confidence": 0.89593,
+              "bbox": {
+                "x": 161.0,
+                "y": 1314.0,
+                "w": 118.0,
+                "h": 125.0
+              }
+            }
+          ],
+          "legibility": 0.89593,
+          "seq": 46,
+          "frame_ref": "frames/f_000046_0028101.jpg"
+        }
+      ],
+      "consensus_text": "rh",
+      "legibility": 0.89593,
+      "spine_text_raw": "rh"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "backend": "off",
+  "model": null,
+  "frames": [],
+  "gravity": {},
+  "scale": {},
+  "status": "skipped",
+  "error": "3D reconstruction is out of scope; room and depth dimensions remain unknown."
+}

@@ -1,0 +1,1125 @@
+{
+  "books": {
+    "b_0001": {
+      "new": {
+        "amount": null,
+        "currency": "INR",
+        "source": "SerpAPI",
+        "url": "https://serpapi.com/search.json?engine=google_shopping&q=The+Everyday+Hero+Manifesto+Robin+Sharma+book&gl=in&hl=en&google_domain=google.co.in&api_key=REDACTED",
+        "retrieved_at": "2026-11-27T04:46:48.382658+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "evidence/prices/b_0001_new.json",
+        "price_status": "not_found",
+        "condition_assumed": null,
+        "offers_used": []
+      },
+      "used": {
+        "amount": 732.897,
+        "currency": "INR",
+        "source": "{'username': 'mizpacman', 'reviews': 21600, 'positive_feedback_in_percentage': 99.4} via SerpAPI",
+        "url": "https://www.ebay.co.uk/itm/298735946906?_skw=The+Everyday+Hero+Manifesto+Robin+Sharma+book&itmmeta=01M8D1RQVRBCDWS96SX075GEQW&hash=item458e0ccc9a:g:65gAAeSwUPVqxDVQ&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde9Bht0JcHCGVPq3soUnM6I8ONp3go%2Fz3qei%2FqBpRIYR7OI2YDtdPWH81HAC1BPVorwgXc8gjCoYG%2FQ6bzK2jbRzAl93bI1S%2BoLPBRCamzn9tBwouO9s%2BmSqiccPjaq5A%2FhC5us0JFueRx3BkIg%2BInT6i40RJV32sDOqPJpjoY7WdIkKF%2F6WQXroGvdsHaOoJ%2F4Gar36JWyUrHQKLrxwl%2F%2BoKs8XuIPuhZBVpD0tKrz3LqPU5kn9d3yadfLoAGltYhaO1ZYQ9jvrpm09g69A7%2Blzm5q6HmS%2B6R391bhpq7p2Cw%3D%3D%7Ctkp%3ABk9SR5r-4qHDaA",
+        "retrieved_at": "2026-11-27T04:46:48.382658+00:00",
+        "converted": true,
+        "original_amount": 6.05,
+        "original_currency": "GBP",
+        "fx": {
+          "from_currency": "GBP",
+          "to_currency": "INR",
+          "rate": 121.14,
+          "rate_date": "2026-11-26",
+          "source": "Frankfurter",
+          "url": "https://api.frankfurter.dev/v1/latest?base=GBP&symbols=INR"
+        },
+        "n_offers": 6,
+        "snapshot_path": "evidence/prices/b_0001_used.json",
+        "price_status": "priced",
+        "condition_assumed": "Used \u2013 Good",
+        "offers_used": [
+          {
+            "title": "The Everyday Hero Manifesto : Activate Your Positivity, Maximize",
+            "price": 5.03,
+            "merchant": "{'username': 'better_world_books_uk', 'reviews': 754400, 'positive_feedback_in_percentage': 99.6}",
+            "url": "https://www.ebay.co.uk/itm/117146044343?_skw=The+Everyday+Hero+Manifesto+Robin+Sharma+book&epid=4063276715&itmmeta=01M8D1RQVSX6R0FJMKX74NYX8D&hash=item1b4672c7b7:g:mcwAAeSwibJp4Ls2&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde8CO4uRgUmiBcMt5vCzdqrjkXciVbunkdmuIR4M1IN9OuUV3fnBotAo58W5LPAGroKygckr9JtCZ%2BTXewBeLqbtaRSCJh%2ByeFuLHgKzTE68%2F2gauwlyW6Mx%2FmfbSKSJIoNqvRXy5hF9UkqFN9hG1S4SCnuYPiSKZx2C5fVqO03u3Ko79rZl6g%2BFaNPcJCCQibq8XZoCwspNTpDwQXyaKwo9xYkNXXgwMDUCXvVpPfla3chipKz3ptgU3kkVijYYuhmolPac9LAgSnu34Tbvmkgx%2FCb35%2FUI6uFkux6gvAP4zw%3D%3D%7Ctkp%3ABk9SR5r-4qHDaA"
+          },
+          {
+            "title": "The Everyday Hero Manifesto : Activate Positivity. Maximise Produ",
+            "price": 5.03,
+            "merchant": "{'username': 'better_world_books_uk', 'reviews': 754400, 'positive_feedback_in_percentage': 99.6}",
+            "url": "https://www.ebay.co.uk/itm/306984904886?_skw=The+Everyday+Hero+Manifesto+Robin+Sharma+book&epid=4063276715&itmmeta=01M8D1RQVSMYA00TDMVVY781DV&hash=item4779b9e8b6:g:r9wAAeSwEBxqIwYh&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2FECbwU94sCOvb6pT3If5CmZp8vhbb2jD4o%2BAQd1Z0AQ9hTEfWcrRPT%2FROO3Gqp66NESqJTw4kQjPLXAL%2B5cK2u%2F14kXr%2FuWO95Sd2C1Mrsm%2BsEt0mCabCdVjftWbLNwZ9UM6VgBwDduCoiIGeew4gr6s%2BFW64N705bT--DaxjIzznXfZLRVtgbHeIk%2B0upczqeDbyKfwp8kmyvozeP5D6Ynhlt%2FX4izWlbwFl9jYzVFSyvWWuHrTktp4UXXByAww1Ib%2FNevwSdMyzC08Djlkc9L0WrwvBRT7X%2B423wdeOLPQ%3D%3D%7Ctkp%3ABk9SR5r-4qHDaA"
+          },
+          {
+            "title": "Book Robin Sharma The Everyday Hero Manifesto",
+            "price": 6.04,
+            "merchant": "{'username': 'mizpacman', 'reviews': 21600, 'positive_feedback_in_percentage': 99.4}",
+            "url": "https://www.ebay.co.uk/itm/298735946906?_skw=The+Everyday+Hero+Manifesto+Robin+Sharma+book&itmmeta=01M8D1RQVRBCDWS96SX075GEQW&hash=item458e0ccc9a:g:65gAAeSwUPVqxDVQ&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde9Bht0JcHCGVPq3soUnM6I8ONp3go%2Fz3qei%2FqBpRIYR7OI2YDtdPWH81HAC1BPVorwgXc8gjCoYG%2FQ6bzK2jbRzAl93bI1S%2BoLPBRCamzn9tBwouO9s%2BmSqiccPjaq5A%2FhC5us0JFueRx3BkIg%2BInT6i40RJV32sDOqPJpjoY7WdIkKF%2F6WQXroGvdsHaOoJ%2F4Gar36JWyUrHQKLrxwl%2F%2BoKs8XuIPuhZBVpD0tKrz3LqPU5kn9d3yadfLoAGltYhaO1ZYQ9jvrpm09g69A7%2Blzm5q6HmS%2B6R391bhpq7p2Cw%3D%3D%7Ctkp%3ABk9SR5r-4qHDaA"
+          },
+          {
+            "title": "The Everyday Hero Manifesto : Activate Your Positivity.. By Robin Sharma.",
+            "price": 6.06,
+            "merchant": "{'username': 'chudedak', 'reviews': 552, 'positive_feedback_in_percentage': 100}",
+            "url": "https://www.ebay.co.uk/itm/276560651318?_skw=The+Everyday+Hero+Manifesto+Robin+Sharma+book&epid=11060613231&itmmeta=01M8D1RQVSX8J2TXN1ECS7533J&hash=item40644ca436:g:l7UAAOSwTxVmnKdF&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde9cPZ5Utl3x2Xv%2BaFxXunhmFIzO9U065Ozd%2F6yN9mUHTrLbP8CddfxHSLKi3oOlmYCV%2F4Ds%2BVj9x%2FSLHrNvHYRgnxBnVmYKk6Npi%2B7pwBv%2FR8tCf%2BevPst4HTTIGPQuNVwj1EWhfPBQ2j5TZYPBOqmoFHfGq4jPpr%2Fq1q1%2FmJYdOHEggS32BKE5bwzDGXrVWhgAucyj6xYHKtL4xAMd7peNcZmoSJRzmN9MPSvBIN3OujSJZqNJ6nzsBQ0m4TYUbsTWORme2mDutafSQCcpHVbLlrpdRBHa5faix3pA4dYK7Q%3D%3D%7Ctkp%3ABk9SR5r-4qHDaA"
+          },
+          {
+            "title": "The Everyday Hero Manifesto By Robin Sharma Over 20 Million Books Sold",
+            "price": 9.1,
+            "merchant": "{'username': 'regalheights', 'reviews': 1400, 'positive_feedback_in_percentage': 99.7}",
+            "url": "https://www.ebay.co.uk/itm/397826832683?_skw=The+Everyday+Hero+Manifesto+Robin+Sharma+book&itmmeta=01M8D1RQVS2SBRWH545VBDBT1A&hash=item5ca053b92b:g:eaUAAeSw5D5p2b7l&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8C1Hmz4T47poba6iA2lAfY%2F4bMVqSwylbEk3Io%2BV7nDPH6vVvBY0cRsoyl5DIXPv7P3PcU%2Bvl3C7alXCGSotOGzTXGWav%2B9yaj%2By4XlkDddLLOZXiZ4kykuks2seq0JhdAg0DHfWyjXSAa4ORbhXrIUaJqz6b%2FLTACh5rJ0bBtrdOIrRO5H5tSz9a5p3yausZO4AsbdunE8ZPtb0Jt18xlC9MkHIRyzHwOagWyGQEm1vRFdtafeKcL26R7grBHhNUZ80slNCtTe4UxuxADgEyNRdcoJA6jYbhcHwR5Ce5588kmMnchdYy%2FVWIazInnLB2YR%2FFZxuAbL%2BHw4fhpAcve%7Ctkp%3ABk9SR5r-4qHDaA"
+          },
+          {
+            "title": "The Everyday Hero Manifesto by Robin Sharma (Paperback Book)",
+            "price": 10.0,
+            "merchant": "{'username': 'forestup', 'reviews': 3200, 'positive_feedback_in_percentage': 100}",
+            "url": "https://www.ebay.co.uk/itm/267568189703?_skw=The+Everyday+Hero+Manifesto+Robin+Sharma+book&epid=4063276715&itmmeta=01M8D1RQVN5W2438R2EEF8VFW1&hash=item3e4c4e9107:g:f4oAAeSwiONphLY9&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde8H%2Bx%2BB7lHRQS2DvYqXq47GLue1cUOyQhpjLkgSdXlVBiheNmZ%2FerCcQpLwn61vKOdPnJ5JrWjhKSzhxBEXTULHMGM6EcvJZNSPI%2FQv8SmEahYj8KNRwJw%2F0tS0Q4QxQqn0kSliZ32grZwiU%2BjD7cHIlWM1Bi9nQZdqJFAfRi4kd3xpySlgxqZtW%2FW5xY9zvduv4TKO1cCoBVP0wCyt1tjXkGWAKTKeR3TdWDXuzf1AxBYlDlHTgQBBg0tVSJWjn7luwNGxbpHBDppxi9BIdbVV%2FvDAAkbHsVH2HcY5CFPC8Q%3D%3D%7Ctkp%3ABk9SR5b-4qHDaA"
+          }
+        ]
+      },
+      "appraisal": {
+        "flag": false,
+        "reasons": []
+      },
+      "query": "The Everyday Hero Manifesto Robin Sharma book"
+    },
+    "b_0002": {
+      "new": {
+        "amount": null,
+        "currency": "INR",
+        "source": "SerpAPI",
+        "url": "https://serpapi.com/search.json?engine=google_shopping&q=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&gl=in&hl=en&google_domain=google.co.in&api_key=REDACTED",
+        "retrieved_at": "2026-11-27T04:46:48.382658+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "evidence/prices/b_0002_new.json",
+        "price_status": "not_found",
+        "condition_assumed": null,
+        "offers_used": []
+      },
+      "used": {
+        "amount": 1165.3668,
+        "currency": "INR",
+        "source": "{'username': 'worldofbooksinc', 'reviews': 383300, 'positive_feedback_in_percentage': 99.4} via SerpAPI",
+        "url": "https://www.ebay.co.uk/itm/277529913307?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&epid=4085296112&itmmeta=01M8D1S1WSZN0MCF499DPMW9JR&hash=item409e1267db:g:9AMAAeSwbkRqyh6g&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2FybDmM13mG1jefCqc1BiUzqbINm%2BW5UcOpU9ttKz3sNOmiqPZokLHxagyt9Hs6bgizo8HMiCJB2Dowo5WZvHqCF3sqqh%2BSlL5EBvrm%2FtbTuOlq06wZ0%2FR79ZJbrCoWU%2Fmy2NVRWZs%2FVlNYtcArRsl105rjckgQFc0YCISg14bwA0RDIAHDGX0KuKGB2Xz5hlATRQtgxLZG1YjjYsJRC9iZ46QT%2Fp5zpuiApr4XiLJh63exw%2FNF87TPTzbZ6ZSJis5PhpFEHenmXIyvyeErT%2Fz76uQ8kn4Kkv%2FTQ8tak%2FTlxg%3D%3D%7Ctkp%3ABk9SR8Sf5KHDaA",
+        "retrieved_at": "2026-11-27T04:46:48.382658+00:00",
+        "converted": true,
+        "original_amount": 9.62,
+        "original_currency": "GBP",
+        "fx": {
+          "from_currency": "GBP",
+          "to_currency": "INR",
+          "rate": 121.14,
+          "rate_date": "2026-11-26",
+          "source": "Frankfurter",
+          "url": "https://api.frankfurter.dev/v1/latest?base=GBP&symbols=INR"
+        },
+        "n_offers": 10,
+        "snapshot_path": "evidence/prices/b_0002_used.json",
+        "price_status": "priced",
+        "condition_assumed": "Used \u2013 Good",
+        "offers_used": [
+          {
+            "title": "The Almanack of Naval Ravikant A Guide to Wealth Paperback",
+            "price": 6.43,
+            "merchant": "{'username': 'chawill-1759', 'reviews': 146, 'positive_feedback_in_percentage': 100}",
+            "url": "https://www.ebay.co.uk/itm/227567647811?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&itmmeta=01M8D1S1WNC5P0E0ZJA5F146TX&hash=item34fc16bc43:g:T~8AAeSwB65qz-Hl&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2BObfK1ZO4cRJdUX7fAMUHYObEV8VLsZKVXyXQTNdojBdFzwsJuQZV4hAVPN91dql%2BrwjfVV1FnrRdW%2B6K%2FTOCQPSkxZ2m1MXu%2F9AAwUxy3lDVGyX2I%2FmoEYoZR8fVn11wNmskmiatw2XVdbrTqmcvZ9IQu676yc6lT2hTY2DA3hKlH06H76%2FoAb4fgV8%2B7yesaUiYE5BtaSCZou0xSju3J3cVEQePfweIPOsy%2FZf78CLlB1ls%2FaO%2Bk1Mo4MZSBkIfyOJozWfVgDIs1I4vnGdeolHKcZYyq0cgQtIqmj9exdw%3D%3D%7Ctkp%3ABk9SR8Sf5KHDaA"
+          },
+          {
+            "title": "The Almanack Of Naval Ravikant: A Guide to Wealth and Happy by Eric Jorgenson",
+            "price": 8.32,
+            "merchant": "{'username': 'olly-porter', 'reviews': 181, 'positive_feedback_in_percentage': 100}",
+            "url": "https://www.ebay.co.uk/itm/227531015290?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&itmmeta=01M8D1S1WFFP779QVA2ETC8JBZ&hash=item34f9e7c47a:g:RtgAAeSw~n5qr~q4&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2FvBFHR85lj5pN27KwSDjPEu9rvy60X3J6gz8bNTDGRoGvvnU%2FryU9OQlCU3svlg1WQitW4zK3Nt0qkPeRmTC8QXwH4uzGlLOZ6WSAhfIQC4camNsBp2r%2Ffy96KoVVkSQWNJvamU9c5jam39i4MWnoqDrHGeBbGVkenCpDVLforT3bjxy6uwJmxI154icZ7w71FviAIjmy4l%2BhblZCubb%2FKzQ7iY8S%2BEdr8vp9JQ3um8xl7ds2NbUxbIKRDuX%2F81IPFITWzXLnOfew0oWYyCDvy0bYUJWjNI0Vl%2FRqj6mY0ww6mYLDPYS0qKf2%2B2BkByto1nJLD3P7xWX95UU4qkKkb%7Ctkp%3ABFBMwJ_kocNo"
+          },
+          {
+            "title": "The Almanack Of Naval Ravikant: A Guide to Wealth and Happiness, Jorgenson, Eric",
+            "price": 8.68,
+            "merchant": "{'username': 'greener_books_london', 'reviews': 829500, 'positive_feedback_in_percentage': 99.5}",
+            "url": "https://www.ebay.co.uk/itm/198680399751?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&epid=13085290400&itmmeta=01M8D1S1WHYH56EAKFRVMCEEFX&hash=item2e42464f87:g:z5IAAeSwXUBqvnfT&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8e8wgfmWg2Gq%2Bov9VD%2B5ybEhoevTU6F0gacb%2FJ2%2B2gr1DnfbOveyGxEUauZJj035csOu%2FoeML2tPjBOz9vro56c%2FStlPcdJadL%2B%2Fv7DKnhcDEesDq954CnFL3Lr57mkCfOnDtNSfQ%2BuSd1LF%2BkIjHPXzXOZNSEuURa8ZXmMYWMH%2F1gUEHu2L1pCLiUh5DyEjJ7RMkl1dWyh2MEqxX1JylqJPFeoHSAQ4%2FECt5qqKfhNDp3PVk4atX4hXKz0%2Bj0rH4PIbqdFL3Vkjfvnndt62YLnVVo2wvMNMMFDw%2BSl6FKgvg17185xu2ckXVLNVhLuWyO6NoD9nSTLk7S45cAvTKz%7Ctkp%3ABk9SR8Kf5KHDaA"
+          },
+          {
+            "title": "The Almanack of Naval Ravikant: A Guide to Wealth and Happiness, Jorgenson, Eric",
+            "price": 8.89,
+            "merchant": "{'username': 'brit_books_xp', 'reviews': 944800, 'positive_feedback_in_percentage': 99.3}",
+            "url": "https://www.ebay.co.uk/itm/237173190060?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&epid=14046555200&itmmeta=01M8D1S1WHXPKPCGKAP9NVBP9B&hash=item37389fadac:g:7qgAAeSwa9trBzwg&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9XGkypX9Ggc1jlz2iJpOdpNDUEpQixNrPbOb9uu527Pq4siBbj7%2F6zEM%2B%2BhZMKE8Jii9FpmO9i2bbf47N%2Bi03LQgtK5uSE0fGqxu%2B8K%2FLRUCimGiino6KZgf%2Bj4%2F%2BsOMd5eIN4MAnBSf4BkdenDuWndQHRnWAKJVKJHhndFYOhRXgXR33Gjq4w9loBApqSIuXrpHtiaaXOFSSB06Z0gh8ZYY3HCDA0zXymFkbFopJLfhquN%2F6l9L7%2B5wYrKs%2BojYmvS7co9viy68yNODtYd1vPquPNkKNoD1nTOhDrGuZomZ0Rc6S9t5dWWJquNrJMovNgPpd23atwuCd2zQVn3eqw%7Ctkp%3ABk9SR8Kf5KHDaA"
+          },
+          {
+            "title": "The Almanack Of Naval Ravikant: A Gu..., Eric Jorgenson",
+            "price": 9.14,
+            "merchant": "{'username': 'worldofbooksinc', 'reviews': 383300, 'positive_feedback_in_percentage': 99.4}",
+            "url": "https://www.ebay.co.uk/itm/277529913307?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&epid=4085296112&itmmeta=01M8D1S1WSZN0MCF499DPMW9JR&hash=item409e1267db:g:9AMAAeSwbkRqyh6g&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2FybDmM13mG1jefCqc1BiUzqbINm%2BW5UcOpU9ttKz3sNOmiqPZokLHxagyt9Hs6bgizo8HMiCJB2Dowo5WZvHqCF3sqqh%2BSlL5EBvrm%2FtbTuOlq06wZ0%2FR79ZJbrCoWU%2Fmy2NVRWZs%2FVlNYtcArRsl105rjckgQFc0YCISg14bwA0RDIAHDGX0KuKGB2Xz5hlATRQtgxLZG1YjjYsJRC9iZ46QT%2Fp5zpuiApr4XiLJh63exw%2FNF87TPTzbZ6ZSJis5PhpFEHenmXIyvyeErT%2Fz76uQ8kn4Kkv%2FTQ8tak%2FTlxg%3D%3D%7Ctkp%3ABk9SR8Sf5KHDaA"
+          },
+          {
+            "title": "The Almanack of Naval Ravikant Book by Eric Jorgenson Wealth Love 9781544514215",
+            "price": 10.1,
+            "merchant": "{'username': 'family-bookshelf', 'reviews': 6000, 'positive_feedback_in_percentage': 100}",
+            "url": "https://www.ebay.co.uk/itm/336690860984?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&epid=5046364950&itmmeta=01M8D1S1WFZNS23B8G7CA0XC9F&hash=item4e6456d3b8:g:Ou4AAeSwihxqWFX3&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9b4YsonVJv9nfxY8grLjYixkV8hC3SO0g8So0xTglGgWa%2FLcz5%2Fj1YquE2blefibVL60%2FbQl%2Bs3zxW3zYh6Zk2Gc0irnJlHLgWXebqVq3oDV670YJqow7Nt%2Fcf2X19gx4WTz29tcPul%2BBcpL%2FCmTob%2F97EAg1fX5iLEmQEAlC9%2B7VKFtIT7gA8DKTXwaoHB5LL4bV9srhMnlUE70A9Xu2AXALCz2t2PvtbLh2uisgzZBSKs31FlNNAH%2B9ljgxVGWiTdbhpIVe1wV5FLZyXAuyFUO0x8X7ou%2BTTPpfeHj%2FnbUnXrfCh6aZBNEsyD%2BRY8%2Fz0HVbIfhhApIRJtPqenzZQ%7Ctkp%3ABFBMwJ_kocNo"
+          },
+          {
+            "title": "The Almanack Of Naval Ravikant Eric Jorgenson White PB 2021 Wealth Happiness",
+            "price": 10.29,
+            "merchant": "{'username': 'benjaminsbookshelf', 'reviews': 20200, 'positive_feedback_in_percentage': 99.9}",
+            "url": "https://www.ebay.co.uk/itm/327464287390?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&epid=4085296112&itmmeta=01M8D1S1WKD3C4RKJZHNF332AV&hash=item4c3e647c9e:g:kawAAeSwJwRq~o4Q&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8Oy%2FDbHCWvHeUK5TR%2FM0T54G7uH1nK81aziroRdDhMzrwvc%2FipAicysj5eWhXlSxAWu7jxWnvCfk17iexCE2N5DGVEAtduKu9STErwVFtmp0Z4DYEwBcjYw702WVQziidBXGTu82cNDtY4bmBLvaU47Aocz%2FKP3bgWph%2BoJXMfjdjfD5tPw25mP00RawzEf8TcHswiTiNYs3%2BwjL8TQhR6Hy1sJ9%2BTtTjJy%2FS22kCjJjZWESDbpvy4iso23GZJubxZShiZaewTxzs0G4lWnBe6jsDjinHriBIYg%2FBHqTyzoQ4gJQOSvMkLGIHNbNrgVY38O7kqH%2BpMbj3r9R3%2BCYg9%7Ctkp%3ABFBMwp_kocNo"
+          },
+          {
+            "title": "The Almanack of Naval Ravikant: A Guide to Wealth and Happiness",
+            "price": 11.76,
+            "merchant": "{'username': 'sellbookslimited', 'reviews': 25000, 'positive_feedback_in_percentage': 99.3}",
+            "url": "https://www.ebay.co.uk/itm/920039946865?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&epid=14046555200&itmmeta=01M8D1S1WQS9ACNDWRMZ8SDK9M&hash=itemd636a77a71:g:8g0AAeSwu6Rqz9Ut&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8%2FXAIEnD3yqmaV%2BVF6kQwzZVf7eQiZ%2F2sDbHhekazE%2FpZD%2BQZ3I97GMgpZdHjIRgN5Y92ddgSstc7j1GWoc%2B8r0vjXYYV1U%2FfL5pmCBR0E0iZtWYTOxPs89lUexY7dW2aFUTdzoXtTdC4k5vZOufPcYuGMA%2BWxGUqxVHLg1D%2Fs8YMvUrpGcj0drO%2BXOMtUUbQ8dZsfD4Dt%2FthrMjHDRhM5g%2B2iboIIeloe3R%2F4As6hQdTCwCH98SZFrIsdU1MQQus0rG%2FA%2FvIfq7%2FfXPuBwI3mv38a291YJtqh6EMPTT1gv%2FBTFt%2FiH4s2vjXhCsr1%2Bbz%2BzQIKP9AYn3qO%2Bf%2B%2B0ARU%7Ctkp%3ABk9SR8Sf5KHDaA"
+          },
+          {
+            "title": "The Almanack Of Naval Ravikant: A Guide to Wealth and Happiness, Jorgenson, Eric",
+            "price": 11.79,
+            "merchant": "{'username': 'big_stock_clearance', 'reviews': 21500, 'positive_feedback_in_percentage': 99.7}",
+            "url": "https://www.ebay.co.uk/itm/168225108595?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&epid=13085290400&itmmeta=01M8D1S1WK3299BRA1XQJDESCW&hash=item272aff7273:i:168225108595&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2FiZffo0vJpn6ZzDVZ2gK9io%2BtnTE%2FHOO3x--%2FxQLKPqBWSYHXIntPCFqUYfoMWDV5N0%2F0oY2KzVf1mGn0Sv%2Fb64NS2h8VfYWp9CPdrj7U8MCe%2B6aXnR08%2Fn2MI5LtxmKETTKUDy2uEw1LSaD9YmWhrLFiUzSZrXdRJXeOuzMSdOv5UaR5i%2BN%2Bj4MJTP31YOJkzObKtfY%2FR%2BztueDRTx0VXHv94AGi4LggjK3mHRYKfuA0Hge%2BA3l87kO6fsDa2VWBmCAkuQg27O2kCjYi0IoXAfkLtHK1wU3QarzIb4fxT3rzJXl8gJYRR0R2J9pUl0YHyfTtar8A9JJ%2FaWoktIluf%7Ctkp%3ABFBMwp_kocNo"
+          },
+          {
+            "title": "The Almanack of Naval Ravikant: A Guide to Wealth and... - Jorgenson, Eric",
+            "price": 13.04,
+            "merchant": "{'username': 'webuybooks', 'reviews': 3300000, 'positive_feedback_in_percentage': 99.8}",
+            "url": "https://www.ebay.co.uk/itm/366827750746?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&epid=14046555200&itmmeta=01M8D1S1WJQ7TCAEMQTH8TRTGC&hash=item5568a3455a:g:ftoAAeSwBPhrAa11&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde83VRBp5nzy9Whib8uK4FpujrUNkEP0qcECk64YFotuAUxYJwJz%2F%2BZhNdAIWAje0Kykc7neE7oWchJZeA6CH8JjXhxVWilAsJ8qlhwMq3peeZbiHpknJmyWJipHrHe9qdOorS9HNLpyr%2B4aeOPgWbofWLnE0Hr7Qg%2FxE8vMOtdPfdVEwWKh6uhqrq%2FXt6c719Dl7F8dTX0ViCa1qZ45ypQ8rVuS5%2BIQZD8t3%2B9iTOBPezpdytcs42xkfkpOU8HNg264J3UGiRQDToSPvR1Zu09uL93okA%2BF3KoS37IhJubDwQ%3D%3D%7Ctkp%3ABk9SR8Kf5KHDaA"
+          }
+        ]
+      },
+      "appraisal": {
+        "flag": false,
+        "reasons": []
+      },
+      "query": "The Almanack of Naval Ravikant Eric Jorgenson book"
+    },
+    "b_0003": {
+      "new": {
+        "amount": null,
+        "currency": "INR",
+        "source": "SerpAPI",
+        "url": "https://serpapi.com/search.json?engine=google_shopping&q=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&gl=in&hl=en&google_domain=google.co.in&api_key=REDACTED",
+        "retrieved_at": "2026-11-27T04:46:48.382658+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "evidence/prices/b_0003_new.json",
+        "price_status": "not_found",
+        "condition_assumed": null,
+        "offers_used": []
+      },
+      "used": {
+        "amount": 1161.1269,
+        "currency": "INR",
+        "source": "{'username': 'worldofbooks08', 'reviews': 11900000, 'positive_feedback_in_percentage': 99.5} via SerpAPI",
+        "url": "https://www.ebay.co.uk/itm/398254557325?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&itmmeta=01M8DN7QZ9MZMA47206DYB1PEX&hash=item5cb9d2488d:g:D1oAAeSw371qc8z8&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2FupHOy76cp6vGPnzAeNW8nW6%2Fdzpn3LS4vyI%2BrFdqS8VzEd1KYroRfzjyrOLtoyGHxN1uglrQM2aN4nr40PO%2FkiY4bXK0ZNB0OfDswEoXH%2F0bGUE7pExNpkQ9nqMtprKsvG%2B%2FP%2FDliqr5Yg4POZAX6wH%2BQJqQXSeUXp%2FNP3y1fPvSZYce1ouaRHq1W2m%2BOyJB8t2EUmkIeaOqJDxSyIIBRKoNQ%2Fe%2FTJyIftAJZa35lwbR4OlDECsnAAvvBdomx%2BTPnpvuM5kxBWzziSfui2LFIRw7k6IgSVzw45MFJ0%2BcFNw%3D%3D%7Ctkp%3ABk9SR_z_nrXDaA",
+        "retrieved_at": "2026-11-27T04:46:48.382658+00:00",
+        "converted": true,
+        "original_amount": 9.585,
+        "original_currency": "GBP",
+        "fx": {
+          "from_currency": "GBP",
+          "to_currency": "INR",
+          "rate": 121.14,
+          "rate_date": "2026-11-26",
+          "source": "Frankfurter",
+          "url": "https://api.frankfurter.dev/v1/latest?base=GBP&symbols=INR"
+        },
+        "n_offers": 26,
+        "snapshot_path": "evidence/prices/b_0003_used.json",
+        "price_status": "priced",
+        "condition_assumed": "Used \u2013 Good",
+        "offers_used": [
+          {
+            "title": "Paramahansa Yogananda : Autobiography of a Yogi: Mass Market Pap Amazing Value",
+            "price": 4.16,
+            "merchant": "{'username': 'musicmagpie', 'reviews': 14100000, 'positive_feedback_in_percentage': 99}",
+            "url": "https://www.ebay.co.uk/itm/303271324484?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=91920944&itmmeta=01M8DN7QZ8E9AJGZ2V1MN8HH19&hash=item469c612b44:g:e2YAAOSwtGlZK4F3&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8vd5Q%2B5lLgBp8DrVdwe%2FIShxH2aw4FeByDlauI5fDsj19Sxa%2BMIuclqLlG4I7SPDi81L3oJCEGY1bTK0M0aY1IL8KpsFSFn1r8DJa%2BXr%2B7CuBlvYM5MZ6fc66GV7iVYB5rtoj45G1xfS47UKufHQKWIuYEIg4R6QT30G8hYPq0Us30YbHGEaMvkUuGbsFs0MxOFGb%2B8SQinZAcqdVuTDkgmESsYm1pFv7TiMMKaPCbPqLR0%2F3FhTaFTKD5fq9kRDBtke0AGPr08Ls20EJMk7zQihGmo21opHbOzdsfnHLXrpEwafmCFuNSK8X55yZC2xO2qFfGJTD1LTt4V2aZHmwU%7Ctkp%3ABk9SR_r_nrXDaA"
+          },
+          {
+            "title": "Autobiography of a Yogi By Paramahansa Yogananda. 9780876120798",
+            "price": 4.86,
+            "merchant": "{'username': 'baham_books', 'reviews': 3600000, 'positive_feedback_in_percentage': 99.8}",
+            "url": "https://www.ebay.co.uk/itm/302345759853?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=91920944&itmmeta=01M8DN7QZ682PJZW6XCAMC94BG&hash=item4665362c6d:g:vXsAAOSwwzhZO-CO&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde8KInjw2Gy%2BwCIGIegR1M%2Fg4PC%2BSoFK3iRQTbyGmvC8LpASBNyDx4EdhYSm1KHlNt%2BRbe0WfYNXvdlvRgl0IMtQSNuAecsh3AG%2Bm8A3Mvbud222np26POks0RP5UQAlUg1DFTIBiRZz7KmDjbLYxLtJBr1t8TGC12Ww94T1uOcYpH1JA14LDAtIIOl3MOtoc%2Fzo3YX3dKyDXUBZ%2BOkXNF1Fv2mYEu38S4aU8dy38ZTnU49ggq9l%2F6lsPjHyurkFNiNnDFMl4T%2BskCFHYcPcsAp5ZJG6fQLfXJwm9gqFsWjL0w%3D%3D%7Ctkp%3ABk9SR_j_nrXDaA"
+          },
+          {
+            "title": "Paramahansa Yogananda: Autobiography of a Yogi 1991 Very Good Hindu Kriya Yoga P",
+            "price": 6.0,
+            "merchant": "{'username': 'dreadnought_books', 'reviews': 10600, 'positive_feedback_in_percentage': 100}",
+            "url": "https://www.ebay.co.uk/itm/327476496481?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&itmmeta=01M8DN7QZBJMTJGDMS0BDFPGZM&hash=item4c3f1ec861:g:9FgAAeSwLSdrBwei&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2BlTMbbI%2BT9bJmigoaaSKN7QENlFZcWlhqoVXpF1%2BxGPLGTl3VTTX2NI4XeeYvZaC5kjZ5xLKP%2Fsn4261wRHDtk0j2OcY%2FfALTRAtWyWtFj%2FiuOS2krDyj1QCiArjxN31c1e2LGY1%2BBaJgCqePOXv%2BfSDV4TWYKavgn3zZiyO6GaJmfypzee8Hem8L%2FuEfCVuCwMr75v6%2FCCH0xobCov26qVt4npTTefqOLRLABkDJ7ZoDoLCTwJsW0avQo%2FUMEW5ui7OW%2BdV3rGXnBTmb3fBu1I9Uu4Rr%2FubTBA%2BfOPVhW8qiyqjriBqLQOgWwlXbhWw0xfyX3bxm5f7WTvqz1gGc8%7Ctkp%3ABk9SR_z_nrXDaA"
+          },
+          {
+            "title": "Autobiography of a Yogi - Yogananda, Paramahansa",
+            "price": 7.12,
+            "merchant": "{'username': 'webuybooks', 'reviews': 3300000, 'positive_feedback_in_percentage': 99.8}",
+            "url": "https://www.ebay.co.uk/itm/366526851247?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&itmmeta=01M8DN7QZCYZ3P0FK8EE6A8JX6&hash=item5556b3e8af:g:I8oAAeSwzMlqTF2u&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde9Cf0pddtSSGer%2FrPuUNaP0OMox1C7GItVWjalsa73S%2Fi--a92N0y9T34PN5HYMJEOEzSaZS%2BzV7K7SW7YPfUd10KM%2BWVh582hFhEUnpL0aQfBVHPXwKY5S%2FuNDxJch8QJl3jrPHQZ6beimQlwCXaqXihB%2BsRMJqNItqrapzhyh44Y740Dar6DWgghgjajq2Bigqh6fbvFCFrj8%2FR8h69B3csg1ledwzVh7odCO4DI65OtGreZ7EAfN9JBeHFpioRnRIS031Jr%2F1i0yowa51DjuA4HXjXc6h%2B3b68Nh097o6Q%3D%3D%7Ctkp%3ABk9SR_7_nrXDaA"
+          },
+          {
+            "title": "Autobiography of a Yogi,Paramhansa Yogananda- 9789380676371",
+            "price": 7.21,
+            "merchant": "{'username': 'cmedia_group', 'reviews': 1600000, 'positive_feedback_in_percentage': 99.8}",
+            "url": "https://www.ebay.co.uk/itm/800867232628?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=12085470045&itmmeta=01M8DN7QZDXXDD7MYCWHWFMCM4&hash=itemba77682b74:g:CPQAAeSwokdq6Jbi&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2F4EY3ovgBkSL%2FUFC0umolwaQy%2BDTykyduOXGz2d7MbUqnMW1TqleO%2FeYylB%2F2Yx3XW9YD1oDVi01qIT1gQlMYNZ82kSEzJQxEEQMH8i9Wup6H10QAQfsmnBeMNlY7SbpHdY%2BENEaCfrJts08pNeTXLC5w7RyeMHMjT5JVji6cNoF3tW1pmMpcbfmRlp6lT3D%2BroCmx1MCJWR2x2Uoxfdg7LaXwBzN2vT5hnoE1Atvf07irclAPK4RXzRfXgMKVpgA2WrSBsTqs1L7ps%2BXgFxKrTHTySjPL3jTZdT%2FybJG0tw%3D%3D%7Ctkp%3ABk9SR_7_nrXDaA"
+          },
+          {
+            "title": "Autobiography of a Yogi, Yogananda, Paramahansa",
+            "price": 7.55,
+            "merchant": "{'username': 'worldofbooks08', 'reviews': 11900000, 'positive_feedback_in_percentage': 99.5}",
+            "url": "https://www.ebay.co.uk/itm/146420873638?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&itmmeta=01M8DN7QZ6G1WKQ27JMZKPAE4G&hash=item22175d39a6:g:YH4AAeSwMjFpNle-&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2BnMtjsR1u8dREKqZxESWYXFXyC6QBllhQ2KfyKgcpJEGgDC7ACwFqssLuXBa4VOnm6%2BhR%2BfGBXMVchTXvbBW3Oh84HBRF1RRFt%2FQ7787Zm1tl5IJXTo%2BSFLYXVBhmAkU7MBe5CZjmZyBcqYpNiXhA51i4oAOm5PsxJtAYOo3M5IMELfxiL9Moc3BMwcVjRSPK%2F8ZSVBSKh0MJVGUnfuJOyF%2BxVsBV%2FJ07V8i7g%2F5INIAamE%2Fc8gZe%2F65a6z42SRrw92nqJHGioifnuHwVnFNGsTWZS1H1BU%2FdJ9aZVRI4uzNU4mHLfQ56vAQCb8nrYQJi6JT6jPPpu9Jlw%2BfmrIYkW%7Ctkp%3ABk9SR_j_nrXDaA"
+          },
+          {
+            "title": "Autobiography of a Yogi, Paramahansa Yogananda, Used; Good Book",
+            "price": 7.61,
+            "merchant": "{'username': 'greener_books_london', 'reviews': 829500, 'positive_feedback_in_percentage': 99.5}",
+            "url": "https://www.ebay.co.uk/itm/307296318939?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&itmmeta=01M8DN7QZ8FQJXTBQE7RZH9W1K&hash=item478c49b5db:g:X3kAAeSwCmVrCPGj&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9WRml%2FQRtfsLG%2Fk%2B0SIXcRR3TfbXCzO2z0Kvn23Tg7MnU2%2Fm7M9kgW%2BUpOEnQQAkcljKWrcjfy0GVOY4zlHMrmzbV1BPGTN7Z55klnuI4ZWivA19cfTNo7Xl5nvkFoJZ5gpPOD%2FWqIK2xRmIelJOKstmXSpkIy9aVc6SLhcNWvrSC301mBumxNVad7WBUEu65CWyiaRJPYLfdTm0KyYLxlQEvLXpco19X7ZQK0GUrM93I1ttTJPODgYpwRVzBbQWNxyaxs2GnX3%2BoQjcX9sllFXAXgtYY5FDpR96UZxcAbFG%2BNL%2FE4pjJIs29SZLqfzDYlHYf%2F3FbzX1TDmd9KCKIJ%7Ctkp%3ABk9SR_r_nrXDaA"
+          },
+          {
+            "title": "Autobiography of a Yogi by Paramahansa Yogananda, VERY GOOD",
+            "price": 8.02,
+            "merchant": "{'username': 'kugue111', 'reviews': 51, 'positive_feedback_in_percentage': 100}",
+            "url": "https://www.ebay.co.uk/itm/377666047640?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&itmmeta=01M8DN7QZ7QX68GCT30ZETKEG8&hash=item57eea68e98:g:g8AAAeSwdVdrAiQv&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9xPLLwhqneJaGFQTJ%2BlM4sUR%2F%2BIWZWC2ueyJFaSYP3uGwuJOTeG%2B4hbntDMXhlbtmDShq3wVDVu9Dk59ZQTJ6yKkHr5B6Tk3NjuprB9Q6UyudTyjlNnDmA%2FIO%2BX3uM9iE85M1wRT2p2gumuh1fhQCLFx4FMECHuwM6Hdm%2FcR4qmtXHFmEa9K5Q73z4IjMsQFSQrcBw2l1%2Bq2dvGh6IwIH6lpVGr%2B9BQ9BvfztIha1iMDLdE5a9kwBSTw48MU%2FwDTI3dy%2BrL6%2FLgNQM3PY0S8mneKPxHomlNg0nd4nnOgtsZw1AOzxDdXaFfze1ixHZR%2FMT9nTmDy%2FaLvyh%2BulUlXbN%7Ctkp%3ABk9SR_r_nrXDaA"
+          },
+          {
+            "title": "Autobiography of a Yogi: Mass Market Paperb... by Paramahansa Yoganand Paperback",
+            "price": 8.4,
+            "merchant": "{'username': 'worldofbooks08', 'reviews': 11900000, 'positive_feedback_in_percentage': 99.5}",
+            "url": "https://www.ebay.co.uk/itm/142045105509?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=91920944&itmmeta=01M8DN7QZ7PG8SXWAD6X99G7SS&hash=item21128c4d65:g:pSgAAeSwOZBpMt3j&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2Ful%2B1ZRUpFizUYuJyr6pvcub8OAu%2BfXvKBEqwYvjHgyuUh589x3auPBgaB8XG30yf7i9yo9NywPsLTyhU0apgOrMeoWlKIB8YMaS9rwRaUnd4eK2irpMseXe7%2Fw%2FbxydP7VmO2XSxiMnyRNtLERb9DN8rlHU1wL3X0HTJYKe5CYf6a3haEzdcKdlY7n5Hv%2Byvy7f5EOvTNWpJi06QQdBTHQXAww3%2FMdC4e5lCpLpNps%2BX9nyzPVUg0A7bwuvcZMIiQ%2FQD3SQwW4SOz4aLaj66y6e63Ei1ZfdNgALsfC5cDQA%3D%3D%7Ctkp%3ABk9SR_r_nrXDaA"
+          },
+          {
+            "title": "Paramahansa Yogananda Autobiography Of A Yogi 2014 Eng Prakash Book Depot",
+            "price": 8.54,
+            "merchant": "{'username': 'sahfasil_0', 'reviews': 8, 'positive_feedback_in_percentage': 100}",
+            "url": "https://www.ebay.co.uk/itm/820353741513?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&itmmeta=01M8DN7QZCF6MEM0TW0VPM9RQD&hash=itembf00e4b2c9:g:MhEAAeSwOmhq-Ds7&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde8YB4Tjh0hhaFQyvNKTwmf4NmloopL%2BI%2F7o09kkuM0c%2FlZiL7x%2FTh8ex%2Ba88sbxy%2Fj1rM74pl9evBA4QA%2BoKNeTW59nQYhyOEVLaI0LN%2BFmF%2BgsQWAbcPBTyZVZIXod%2Fa0gky%2FjYZzc6m%2BgoIlox%2BnGlXgxdGN8sY1Cga97VGg9gNLxLSLAZofXxOJ%2Fmz3tRvoysVSpnKjp%2BWM%2BGi92pH7BSIR2mfqzvW9GHh2KHcTJd6VhMkbt48vcUxEX3i%2BM1J31f8ZejmhLZrXXAqkQZDXeBZN4vw2Yan8ljPuIbeQKKA%3D%3D%7Ctkp%3ABk9SR_7_nrXDaA"
+          },
+          {
+            "title": "Autobiography of a Yogi by Paramahansa Yogananda - Good",
+            "price": 9.11,
+            "merchant": "{'username': 'sellbookslimited', 'reviews': 25100, 'positive_feedback_in_percentage': 99.3}",
+            "url": "https://www.ebay.co.uk/itm/287737094103?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&itmmeta=01M8DN7QZB6JDVPVTQYXHNSGW6&hash=item42fe779fd7:i:287737094103&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2BAQ77J7rqQGfvfbAs8%2Frp%2Bv4i%2B79wL2fU%2BXyLBFiTetTym7D5uXSVTYVoLyjNQe9ssTDKKTpsv9WHWCAf6%2BTIfEiOi%2FIv0eLORU4uXir%2FUgYCXJhK3x%2B3OJig4gxt%2B9JQsg02oyqm5LOfwhc%2BeqJ6gKGTj4v4NK695IS81%2FB42O4D43XYlNduALYpF3VZd4LLBt%2FIjVTwfUNXiHvYbEhHOX5yq1GQf48LfkIrhFKHdLmyIvJGrsfzcI03YHYqD%2FDVMbZz5F1soANn5BEIgMX80Sr6SjJY2NKokow%2FH2iC47TYWRMP9%2Fbt%2BIPgjc966Jh26ZT01hpSVK5cPLofHCz87%7Ctkp%3ABk9SR_z_nrXDaA"
+          },
+          {
+            "title": "Autobiography of a Yogi, Yogananda, Paramahansa",
+            "price": 9.14,
+            "merchant": "{'username': 'worldofbooks08', 'reviews': 11900000, 'positive_feedback_in_percentage': 99.5}",
+            "url": "https://www.ebay.co.uk/itm/398254557325?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&itmmeta=01M8DN7QZ9MZMA47206DYB1PEX&hash=item5cb9d2488d:g:D1oAAeSw371qc8z8&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2FupHOy76cp6vGPnzAeNW8nW6%2Fdzpn3LS4vyI%2BrFdqS8VzEd1KYroRfzjyrOLtoyGHxN1uglrQM2aN4nr40PO%2FkiY4bXK0ZNB0OfDswEoXH%2F0bGUE7pExNpkQ9nqMtprKsvG%2B%2FP%2FDliqr5Yg4POZAX6wH%2BQJqQXSeUXp%2FNP3y1fPvSZYce1ouaRHq1W2m%2BOyJB8t2EUmkIeaOqJDxSyIIBRKoNQ%2Fe%2FTJyIftAJZa35lwbR4OlDECsnAAvvBdomx%2BTPnpvuM5kxBWzziSfui2LFIRw7k6IgSVzw45MFJ0%2BcFNw%3D%3D%7Ctkp%3ABk9SR_z_nrXDaA"
+          },
+          {
+            "title": "Autobiography Of A Yogi by Yogananda Paperback Book The Cheap Fast Free Post",
+            "price": 9.14,
+            "merchant": "{'username': 'worldofbooks08', 'reviews': 11900000, 'positive_feedback_in_percentage': 99.5}",
+            "url": "https://www.ebay.co.uk/itm/142047899588?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&itmmeta=01M8DN7QZ9FK0FRJBXN7P3QBCW&hash=item2112b6efc4:g:ylcAAeSwBYJpMt-O&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2FBE5nLfP3853P88lAsZ9HxxAaIik2Whxv959IA5vaWlQ7BuJ5WyiOlOqi%2BdKCGKqY0Pl77zmOds467Tfd2tiLIcpDe897Q%2BVuQC23l2CTbb7%2FsgkT%2FGFhJ%2FNAtfxHWqcF6X3JLh5I66yQVGYMS%2FbWlLG12QlMxFQYxVeUzy7X6EFCvnFbhwMEuviOU3CkAiIv2ZOcHCl7eCVaP%2FGqoX1UVyTLDB%2BpUiklAuMMwSo0Z1AQwtDghotcOVFB6T8m9vzIwBhARZhkvuFvQvNd3zHk4Tm%2BhBmdnuDo96islc0NTtQ%3D%3D%7Ctkp%3ABk9SR_z_nrXDaA"
+          },
+          {
+            "title": "Autobiography of a Yogi by Paramahansa Yogananda (\"Vintage\" paperback, 1969)",
+            "price": 10.03,
+            "merchant": "{'username': 'ok_deals_2rl', 'reviews': 639, 'positive_feedback_in_percentage': 100}",
+            "url": "https://www.ebay.co.uk/itm/880082824118?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=87368205&itmmeta=01M8DN7QZ9VJQ440Z2CXB4YGSB&hash=itemcce9062bb6:g:9gcAAeSwjetq610l&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2BoXcj1M8fMGPhNQkCPSGy6pQIvHaj7%2B%2Fog3y6%2B6P3UMUS81PtwgASZvM3x79JHgcLuI6svXO3Y0Mqmxa%2BFR%2B6H56W35t%2F6QkAuWxd6QucL4zpJWGfI%2F2Wm1RQLHgjpfe75lra5Z0JdMMrY683UR%2BUpDWAwA4SNHLWWPS74dOuKLJmNTXsZ%2FCuQhcTbWCCz1DDBiCQex5CpiZfl2Bxubp%2BdA60gtU6zX1Xgme11292dZHuLxPOehAgVZNpi8WP62IHNPbPTQ9bMQqhEyVJn0P6clbccsosaIDt225lxKekihA%3D%3D%7Ctkp%3ABk9SR_z_nrXDaA"
+          },
+          {
+            "title": "Paramahansa Yogananda Autobiography Of A Yogi 2014 Eng Prakash Book Depot",
+            "price": 10.75,
+            "merchant": "{'username': 'old.books.library', 'reviews': 1500, 'positive_feedback_in_percentage': 100}",
+            "url": "https://www.ebay.co.uk/itm/267818553815?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&itmmeta=01M8DN7QZ9C2MP15ZKH8DZV48K&hash=item3e5b3ad1d7:g:SswAAeSwwhJq1wmf&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2FPB5KnYFzVvu7FebV3WJkgl60DO9As2W9FHMIIkuM1%2F41HYr3aw8%2FIU8AdQrT1iQ0toSa6XsYxxQeWbWU3aPyB5NC9FhcdXv79%2FBFiALEaRjjtx3wYcsCUltzXBfeZtY5ZX36YTjvb4C5K0t03C1%2BO0387Om979vZh17TqM07u9Abm5oLBkSdwmIfl8FYKQrEKw5sxm8BwCNnlEqOva1rGa9GzOieuiE3N9ZDb0UV3fxRZ75TXETNKWOZitsj%2B5UcLQkKLCwWqae%2BSJmEYLDKGYz0A3%2FmEEgz5Sg--sJQJ0fDZHRT64yecXmTDeOO3pHWR4bopcCKga3mBArY35OW0%7Ctkp%3ABFBM-v-etcNo"
+          },
+          {
+            "title": "Autobiography of a Yogi by Paramahansa Yogananda (2019, Trade Paperback)",
+            "price": 10.75,
+            "merchant": "{'username': 'speedyhenuk', 'reviews': 1700000, 'positive_feedback_in_percentage': 99.9}",
+            "url": "https://www.ebay.co.uk/itm/358346573123?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=3082138670&itmmeta=01M8DN7QZA85YKNE93NDT5QDR0&hash=item536f1ec543:i:358346573123&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2BNiCAsK%2FDhaGpdVETDq9FiV3UVNmn1Lhlzdmy4IRPrvqtjKUmCdt9buYU0%2FrlCgkXauVwvvlN3ATpx60C3Wnyff9suVXI2epPuZbhByXO3dmIDuBC1U5WW013WvDIENGBL4bU9gSz4IO5Yww3q8VFPA%2BaSVUEUDZCaAas4PapDZx9jKrfpar9l2QF5wlCf7cEehZ0wKAmanZHAOctzc4%2F6bkWSWo3gU1o%2Fg1CXT%2FD2RY5vVgUifu3jWdveswefJFWST8uIlDSsNs6aGJtb9vVWZi6UuFcAcwQtWZFmQIYGfQ%3D%3D%7Ctkp%3ABk9SR_z_nrXDaA"
+          },
+          {
+            "title": "Autobiography of a Yogi by Paramahansa Yogananda Book The Cheap Fast Free Post",
+            "price": 10.8,
+            "merchant": "{'username': 'worldofbooks08', 'reviews': 11900000, 'positive_feedback_in_percentage': 99.5}",
+            "url": "https://www.ebay.co.uk/itm/393359567977?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=237036532&itmmeta=01M8DN7QZ66GVP6F3JX83W845W&hash=item5b960eac69:g:Ru4AAeSwa5ppQaNR&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde98yO4FA9I0u5VwNzyz0JKsn7dC1PRTqqW3VoQWBYmDEdmrSgCupJyuMK%2FRpExixiKlo8k%2F84HcJah5b2f%2FwGtGSnbFslt3V2NsxxvMzNkUys1g6Niq%2F810E62Q36mxLN1w3EJ06O0umP%2FGOqOgZXpcQ6U8KZKrr0CMHzGR8JZgJScmEYNO8Krne5s7odkA768kH1kJvhp7Hl8LnSgWAcl3Qpsf89GoXO8W%2FLbjgRcB7x8aSk%2BXTr2VWj3NzXw7mSdNqreers12aGMHJO7Bs%2ByJ7YpNJMjTp7fsImQXLxw%2BuPu%2Bg03h8DGhKlpKGJZTUjUFJCunPlE4%2BZqwv1bcTjNk%7Ctkp%3ABk9SR_r_nrXDaA"
+          },
+          {
+            "title": "Autobiography of a Yogi,Paramahansa Yogananda- 9788120818941",
+            "price": 14.87,
+            "merchant": "{'username': 'cmedia_group', 'reviews': 1600000, 'positive_feedback_in_percentage': 99.8}",
+            "url": "https://www.ebay.co.uk/itm/137152708877?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=19084540534&itmmeta=01M8DN7QZBRN2RPN02K5FWN87E&hash=item1feef0410d:g:3zIAAeSw9gJpvgp~&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9lkwE0cso8G9VjoW4pG01TS1LFYx1y7YgsjxxfHuetR6ZqBLIrI1itbVf611ruN07jHC3cyikGYGiCHsibK5tu1bI0hmKE386bymX2%2B5FiiOiGU490bIpJx%2FtZ2jBBGwQHZZYKZ0QJipZgCf6mtMkfulmtnT5DlAToNhIVPCEEELK1s4L8WdYcmds2wJKw8Bbx8mXDXV1nlR%2B1ivYYZK%2BhBs0zecv3%2BVZKZ7TW0e6UKg%2BqT%2BuiCGZgS0pPFg71u7L2BxS1zfj4hFBfh%2BOY4se6sfwo9b3G2EcFY2lvxiXOab%2BLjN%2FDdsV7wNw62ZwYLi--rufInbiQQlvjEmb1qQjc%7Ctkp%3ABFBM_P-etcNo"
+          },
+          {
+            "title": "Autobiography of a Yogi, Paramahansa Yogananda",
+            "price": 15.07,
+            "merchant": "{'username': 'worldofbooks08', 'reviews': 11900000, 'positive_feedback_in_percentage': 99.5}",
+            "url": "https://www.ebay.co.uk/itm/397546899036?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=19084540534&itmmeta=01M8DN7QZD1D29GPYXNXZNAFQG&hash=item5c8fa4465c:g:QccAAeSw~1Bpeqh3&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2F6qNinZhwtR7qwvNMIEig5mqiYfBLCnxd3rhjoYGNT5Kit33UhtHkWyBG0lefPXEKDpUA5WFuY%2FCCeZvQvUKQKMaaG9lz9jqw9iXXg6A%2BbaJjGVta7UiK3P6tMaRJrr6pEChIyYOd%2FqKRhUSVWNlVS3AbGwxeC%2Fuq8%2BErP8SQ3YClLAtI9v3g0N7j77uB7vYH17LcGL4%2Fu%2FGkajTwjuXahTg8sKDjv%2Fq%2FhSkY3cqqhvXA9%2Fia%2B1LSppj3G%2Faz4MW4RNQxVNeIG2Rd9y10e%2F9DDOR41eVafY2h3vLqdW1Fh2L6BSwZT6iaDhqcvtT0tSwUoEHqPV8Jy5rMm8mQ0Vp%2BP%7Ctkp%3ABk9SR_7_nrXDaA"
+          },
+          {
+            "title": "Autobiography of a Yogi 1987 Paramahansa Yogananda Hardcover",
+            "price": 15.25,
+            "merchant": "{'username': 'mlbooksnthings', 'reviews': 2700, 'positive_feedback_in_percentage': 100}",
+            "url": "https://www.ebay.co.uk/itm/366837833276?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&itmmeta=01M8DN7QZCSS1VB4G9MGASMQ0Y&hash=item55693d1e3c:g:BzUAAeSwlYdrBgL-&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8Af%2BGlN%2BupxdQGGfXc9cSB%2BENwhLiHxjJLHdPtuO3VhpM11g--ZgPKAXo09gmZSsXtWC0XrtjR5vtu2z0Xpo5AD1%2BtpbJIxffswrasiBhg13bUk00BAgNwN9eAsKZplwxIaUGVl%2B0HIF42cFv67y%2BHLmeEK4kaUhKPO8ctZEm17h%2BDH%2F9NMsoapRNwmx9ZWSY2F1AWIL7%2B0qd9phOgmqVzfJyFA6%2BjVJ5rvMFDTdydy4ltfGLdcO%2FTYzaASFE0fYtVzGHIn6T0HcxLtYrZGmKEvM6tYCQM9wkkdOBVn2w%2F7DnUFGHEAnlXHCTMSpGmxPtL%2FPSnOH1%2FMogFdQSe9maq%7Ctkp%3ABFBM_v-etcNo"
+          },
+          {
+            "title": "Autobiography of a Yogi: 1946-2006: Complete Edition, Paramahansa Yogananda, Use",
+            "price": 16.12,
+            "merchant": "{'username': 'greener_books_london', 'reviews': 829500, 'positive_feedback_in_percentage': 99.5}",
+            "url": "https://www.ebay.co.uk/itm/198817588581?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=89450481&itmmeta=01M8DN7QZC8020AP75TCNXQ0DA&hash=item2e4a73a565:g:DrMAAOSwR29ZK3vq&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2FYYU5qaE5KiJDGKVzIuTCuxjMRlIMUsblQ7T3eCbWr7%2B%2BGJq5qz2ccxzMjGgaSai1ewKpu3SG%2Bsu0WRH5ajPciL%2BoEao%2Fn9wWS2inb%2FVrY%2Bergx3yOQ2Qbo0x%2BLvqdWk6dWYmnhidKLbBDrAL%2Biq5UPYSulka30VPHS9EG0WxVv2DOP%2FwT2n%2BEySSvfTudoemj8FA8XwwEygoicdqXY0fY1ZD9gtDXRpFk5%2Bdgq%2BuOI40rCuSYTusY1nPTMzQOkn6NGU8FaSWhW41rN8KpBf55FgGr5icyj%2FkYpOL%2Bj33A2%2BGlXfprTbDtNKMooUbqj0707LwU8cGta%2FnmEBA%2Bcs%2FG%7Ctkp%3ABk9SR_7_nrXDaA"
+          },
+          {
+            "title": "Autobiography of a Yogi By Paramahansa Yogananda. 9788120818941",
+            "price": 16.33,
+            "merchant": "{'username': 'baham_books', 'reviews': 3600000, 'positive_feedback_in_percentage': 99.8}",
+            "url": "https://www.ebay.co.uk/itm/127668378849?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=19084540534&itmmeta=01M8DN7QZFEDMS34N65BT3ZQ6R&hash=item1db9a0dce1:g:xVwAAeSwhf5phV4L&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2FHe7TDICl15qEoigoZW5TPBFAEHadVhDOJJw8EJBvJB1eI2syo46%2F6%2BamFZm5E4Du6rSMT31EDmgztDcZmI1izylNYtZ35T7%2BSd%2BBXj8qARXhK6v%2BNZIluBnzQWmdhx4mylUvTRm0MO%2F%2B3znr3flNnv%2F34vWjK6XJh%2BxH%2FpCEvGS6LxFxkWiNtGUa6cVO50UEYvLjXc4rman0Im6NI4yP2F1aOzLbFYDdOFyuyDKxpqAoPw8x5DYxTQsLnpvQkkQ3RlMU8UMZnl40O%2FyeYt6vWtEofJ1zURcBErGAtn8knN3MSkHqG42zFLquCsCIXotdxMOWR4X3pqMQ3%2Bdn34flu%7Ctkp%3ABFBMgICftcNo"
+          },
+          {
+            "title": "Autobiography of a Yogi by Yogananda, Paramahansa Paperback Book The Cheap Fast",
+            "price": 17.31,
+            "merchant": "{'username': 'worldofbooks08', 'reviews': 11900000, 'positive_feedback_in_percentage': 99.5}",
+            "url": "https://www.ebay.co.uk/itm/393423312097?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=91943954&itmmeta=01M8DN7QZ9KTRNMESY78ZTP623&hash=item5b99db54e1:g:37gAAeSwSVVpQauJ&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9g1Mwhurg6Yie7QFbOK2TrzrNJieADJYwS3zAqUCQ0C3veB4gVdIhdcIRJNpOTsR9lBncywOi4kidqzKluMHSq%2Ffb3PDVmGcc2Hzqq21IJgdgbTA4F1fs0dkSA%2Bwf5UdW3sNk%2FKA51H96ldPEEtpJ%2BA4Um1sK1w8IrrG3t4CwSDrJZIxb3pU21vxsat0a6Vg7efyVG0tMuEEFCeZF%2FEPX%2Ff0dnCDnAZr%2BdyqzZBGu0hjEHTiughZ6BOYAPcdSo23G2BECJVWvRbApNBCg5HeGu2ZGxFvcsRgJY68ChUeCeHfxmzMJ3i7jPNOOUQ3hAdM8HTkTC0iyvrTrE7XzFp%2FIY%7Ctkp%3ABk9SR_z_nrXDaA"
+          },
+          {
+            "title": "Autobiography of a Yogi: Reprint of the Phi... by Yogananda, Paramahan Paperback",
+            "price": 17.99,
+            "merchant": "{'username': 'worldofbooks08', 'reviews': 11900000, 'positive_feedback_in_percentage': 99.5}",
+            "url": "https://www.ebay.co.uk/itm/303968162725?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=88350431&itmmeta=01M8DN7QZA9KFMVT4BNYT8AHT3&hash=item46c5ea13a5:g:sQkAAeSw~GdpOlHR&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2FoN85E4Jrgm1PWexByTQWkLHwF5HSNV4VvQ3pKGYQFBtDV0SKVcv5Dpj%2Fc99K0pReWcdoDKBsG3IxKx0KSHltQnow%2B460MZKt0nRSiP8IpHk3N0M8CPqRaDSpLWKYg7I00pt9HiqloUC5YbK25cIZQmXx8QP1bz%2Fkr33130oKi9cZs%2BPiEmOlVNBv%2FCQdpugGHoMGnU45P8zE0yeenF8lm8N9PgVuXKzY%2FOH5KnoXAnSs5g9CrNcF2hHPK%2Fgjwn7UgNqEDyhuPLwat8HSECYQXcSgnOMmtytBLkWtRJTSqlSeGNxrTcCF7IibQyXJ2nijaT%2BBagX8hwVXItv%2FndUXq%7Ctkp%3ABFBM_P-etcNo"
+          },
+          {
+            "title": "Autobiography of a Yogi, Yogananda, Paramahansa",
+            "price": 19.99,
+            "merchant": "{'username': 'worldofbooks08', 'reviews': 11900000, 'positive_feedback_in_percentage': 99.5}",
+            "url": "https://www.ebay.co.uk/itm/307086299411?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=13083359669&itmmeta=01M8DN7QZECK6Q9MXV1P5CK17V&hash=item477fc51113:g:dGoAAeSwv99qZVLX&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9SHDTgvdHI5QHClYiXFcj%2BBmiFcVR6oyDo8BPp4A9zfzsNogS2vtrJGor6cKSRQbdrVwxiwgUvPabWLU29NErSP9Qp9R%2FHccVkpEdP%2BE%2BA7D2t24Eqp%2BCY8x0gPj3RPyFMvCDiaRXTL3hFyRX0ikEYeZa6fwXNg4nVHg5S%2FiMKfO3emeBmCDGQudbS%2FqsZJ649SOpeJmepEdBDd%2FiL0Qza%2FZUfOO8tDcqVmQcLdCqF1oJICrQzlsNpsfT2zdW1n0rKggbeLGM9YlxdjJWNI45dSxgXhcTGpLrcMJ3brtAvDK6aU2Wro0XLq0ntJajX336c7toUIDdE2DPZFowyPwVm%7Ctkp%3ABk9SR_7_nrXDaA"
+          },
+          {
+            "title": "Autobiography of a Yogi - Yogananda, Paramahansa",
+            "price": 25.81,
+            "merchant": "{'username': 'webuybooks', 'reviews': 3300000, 'positive_feedback_in_percentage': 99.8}",
+            "url": "https://www.ebay.co.uk/itm/366822056959?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&itmmeta=01M8DN7QZ6RX95E69H305JJ38M&hash=item55684c63ff:g:q00AAeSwpZtq~uKe&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2BNbLlfTOf%2BoTp%2BSFvrRiuZVbUgDaup4lDwdAhgHGlmaz5QoiTAW3AEkCyagBskv5ugDkuLQnL42ZCcTsG%2F1GaK%2Fc%2BelJdESwtFYKxP2xlfwHaVWt676bNWKP1XsLeTxG9zTjx0I0IIwrahZq22bkkfBn%2BzfRwQbEteQflfp94ow6ZkWvPZW6lkhyXf3EuyCb3Gzg8p%2BH4JJYwTHBDuBx56kSNkO8YXY8WEeAbY07C4ZQcRNaSboEuCzyJBUW%2BNhioo8MZfBm7u8SRdJBYS%2BmT7cfsi61XAeuONf8bFY539x67riPW0Tqcogeck5IEUHACuy7%2BopHNEj7GxxNWN1xbt%7Ctkp%3ABk9SR_j_nrXDaA"
+          }
+        ]
+      },
+      "appraisal": {
+        "flag": false,
+        "reasons": []
+      },
+      "query": "Autobiography of a Yogi Yogananda (Paramahansa) book"
+    },
+    "b_0004": {
+      "new": {
+        "amount": null,
+        "currency": "INR",
+        "source": "SerpAPI",
+        "url": "https://serpapi.com/search.json?engine=google_shopping&q=Leaders+Eat+Last+Simon+Sinek+book&gl=in&hl=en&google_domain=google.co.in&api_key=REDACTED",
+        "retrieved_at": "2026-11-27T04:46:48.382658+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "evidence/prices/b_0004_new.json",
+        "price_status": "not_found",
+        "condition_assumed": null,
+        "offers_used": []
+      },
+      "used": {
+        "amount": 725.6286,
+        "currency": "INR",
+        "source": "{'username': 'worldofbooks08', 'reviews': 11900000, 'positive_feedback_in_percentage': 99.5} via SerpAPI",
+        "url": "https://www.ebay.co.uk/itm/142087741059?_skw=Leaders+Eat+Last+Simon+Sinek+book&itmmeta=01M8D1S7TFX1DNDK4687YCBQVE&hash=item211516de83:g:Wg0AAeSw7UNpMvAz&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde9nDEK0rzlkKObOJpDs38odaeZ0EbUCMUkT1NHPjbYKjt7X6hK4A4sDCUBw3p0K0BPgDLFYDFbFfAe40ErFSf7bmfFqztreC9MNjQTWPHXuecGNCc1sRqBtGJ5ZDWnhF72glsrrCv204VBK%2F6MfgqZct5Lh4Vo1AiVoq22PLPTVgxPgJK9RSoGTial%2B%2F3u4ij7M11yfgqE%2Fhh7GCJzbyfQTNLj9OPROsxltu99%2FDLPXgbUylho0L9lY1sCu4UIEwxj%2BhHCrCvpY722LzGNY1rPr4Tz%2BX%2BSNTYFZcenukPSEy3ABv5dZPeT39oe7S8miDyE%3D%7Ctkp%3ABFBMyv3kocNo",
+        "retrieved_at": "2026-11-27T04:46:48.382658+00:00",
+        "converted": true,
+        "original_amount": 5.99,
+        "original_currency": "GBP",
+        "fx": {
+          "from_currency": "GBP",
+          "to_currency": "INR",
+          "rate": 121.14,
+          "rate_date": "2026-11-26",
+          "source": "Frankfurter",
+          "url": "https://api.frankfurter.dev/v1/latest?base=GBP&symbols=INR"
+        },
+        "n_offers": 19,
+        "snapshot_path": "evidence/prices/b_0004_used.json",
+        "price_status": "priced",
+        "condition_assumed": "Used \u2013 Good",
+        "offers_used": [
+          {
+            "title": "Simon Sinek Leaders Eat Last Paperback English Non-Fiction Leadership",
+            "price": 3.26,
+            "merchant": "{'username': 'booth4705', 'reviews': 326, 'positive_feedback_in_percentage': 100}",
+            "url": "https://www.ebay.co.uk/itm/287689483761?_skw=Leaders+Eat+Last+Simon+Sinek+book&itmmeta=01M8D1S7THXQM9010JF7G9F42Y&hash=item42fba125f1:g:kV0AAeSwLHlq4zoo&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde9Xx7dFgwl1iJoOcT4Gbihek7T60aLAR9CHxtxwW0pXAfvzWcS4P0BJQ2oU%2Bdj7kvFZal20cDxuZ7300U4eesDSmoS6MQq4G3Vd31rasBJ0todJwGXCRWrxD%2BWlQiWwhK7PC7Uc%2BFTn74KSZ7hEWT%2Fb9%2BKXoPe6rt0SKWakH4zgrE7%2FNXEJGNYPM1Uv5KNjJPS1i8oASXqX3GG23GqxFNLTuywK6SVV2hsNi4bhInIUu71PwN9jG2GAggnZJQzCtHsoNOu9lWBv6nVtmcBl6kqHiVV0C1XniVTq7NFwJjhmwnqhESvVRZh8ROO8ijY3oS8%3D%7Ctkp%3ABk9SR8z95KHDaA"
+          },
+          {
+            "title": "Leaders Eat Last: Why Some Teams Pull Together by Simon Sinek Paperback",
+            "price": 4.31,
+            "merchant": "{'username': 'joshcoat', 'reviews': 14, 'positive_feedback_in_percentage': 100}",
+            "url": "https://www.ebay.co.uk/itm/318068269991?_skw=Leaders+Eat+Last+Simon+Sinek+book&itmmeta=01M8D1S7TNEN3KQBZWBMXD70W2&hash=item4a0e58a3a7:g:ELcAAeSw-g1pxrGp&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde%2FGLHnUXL2EArMjDOTjCGVXMNOZIdsH%2FeY6LCvnX6r7AfsH8NX85JdcUCkQnNjo1DA9U%2FxvctZHKJq0%2FPmIrB3kKOj%2BBvETQZZ2It33f3rzAUrHLPIpVhrzHi%2BweGJDiWV0jnTnO6DO2URhQitetkKX1O%2B5wwdVCde8Gcrqj243I3IVl23I3R6z2vaem8rx7tdamavzMlTbCoZOG1LExdfdRDg8oAZdZbD506E5sQmdkOtswcTFAdbqdzBwbYDdQu4VgTKnldVorRlTY1TllMUEzeszrD1%2Bo7ONFehIKhFoxNSUGpPiA2zK9b78yOIiSXg%3D%7Ctkp%3ABk9SR8795KHDaA"
+          },
+          {
+            "title": "Leaders Eat Last by Simon Sinek (Paperback, Penguin) Leadership Business Book",
+            "price": 4.32,
+            "merchant": "{'username': 'louisachatterley8', 'reviews': 181, 'positive_feedback_in_percentage': 100}",
+            "url": "https://www.ebay.co.uk/itm/940124538013?_skw=Leaders+Eat+Last+Simon+Sinek+book&itmmeta=01M8D1S7TFN5RCKNEWFQTV0RH7&hash=itemdae3ca049d:g:QP0AAeSwJYxrCDW~&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde8wmL2Gqq58uu5bv%2FAKLUPH9%2FKBv%2BD3d5V0hkDkyYNMjC2z7PWY7rbBNtSIUoxQkYBOfzxtBN%2F2iu%2Bzos9zHvyEpDz4zymK5HLbGzvs1bhvYHy12ytNsoHSkn%2BBlCsCdGkpJ2hyT4RbsOGVxW5QwlUQC9csJAshMI77csH1JNWSFBCR4JLipmQS6IGaHrEkKK8Ukwg1vTVooLJ%2BgzkX0Zr4fXC5HcShQJ%2FGtRODDCDAIoztvWoQmn%2FIpb56zd%2ByMIsqO948Vzn2CPkVnf1pU2atc7VeeqHXK7wjaRoZ7xBArGy9cXadXgAEnrfrPRcDaKs%3D%7Ctkp%3ABk9SR8r95KHDaA"
+          },
+          {
+            "title": "Leaders Eat Last by Simon Sinek Paperback Book",
+            "price": 4.32,
+            "merchant": "{'username': 'second_time_around_45', 'reviews': 273, 'positive_feedback_in_percentage': 100}",
+            "url": "https://www.ebay.co.uk/itm/227500504608?_skw=Leaders+Eat+Last+Simon+Sinek+book&itmmeta=01M8D1S7THCBFZ4MEJQC4FP6Q7&hash=item34f8163620:g:vrAAAeSwFh9qiG~K&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde8ZR58Ikqvtf5j4ZmmzPaG5QV%2B2AgxlGBRdtsOcFqsdS8pvYhLfmVNOiots1UM8tqYnr%2Fh5r26VSlk9BYwA%2BF566L9pC2CtJ8tWK15zAyLEtG3fBhcKIOokk6VIaong4afhT9Pz%2BJiGFmJjlAG%2F0J1D%2FY7XrUZ9mNU2n5A%2F16GLQJJkc8iiHTuiHuEXPlEYV16akQCV90ISugS5VgYPu3hv19WEkNk9Au8hWIEyIUoxCguxqCkkEXvLuJ9sTJWbubLfIhr9fSuav%2FPr8bZUgm%2ByJATTCXY5TkrROS94Fw8b%2FcI0woQO1JPPrzWRWNqgOq0%3D%7Ctkp%3ABk9SR8z95KHDaA"
+          },
+          {
+            "title": "Leaders Eat Last : Why Some Teams Pull Together and Others Don't by Simon Sinek",
+            "price": 4.32,
+            "merchant": "{'username': 'ke-1637', 'reviews': 118, 'positive_feedback_in_percentage': 100}",
+            "url": "https://www.ebay.co.uk/itm/168401698550?_skw=Leaders+Eat+Last+Simon+Sinek+book&epid=235445348&itmmeta=01M8D1S7TJM3PNRW0KX5M6YSBB&hash=item273585fef6:g:9D0AAeSwur5qFDOx&itmprp=enc%3AAQALAAAA4CHNgUiiE%2FjQhlDTaMiAde%2Bx%2Fqp1ISpDWlio7%2Bi7lV1p%2FTC%2FpszQdh9ftuiXBs8wLvC1AlTsYFj6F7EBOV878P4A4L%2FH7luV8WTK7Px5nMbGngG2F8bSiVQhw1A8UeiTRYNkmyCP05JqytToiDYfOXshSSCP4WCf7w2AlRRBkvTeWugi%2BpKLtKcRDmNeVYRJxzvQo%2F5bVq4J5XU2JCnJFoC%2Fvm9622rEmNU2JuSF%2B4m84dAFBUAzU5Wbpc79zqzeWd7TOusSRRk%2F3CDj4GwGxOzlacblY5V%2BCLAgCjfFpzDE%7Ctkp%3ABk9SR8z95KHDaA"
+          },
+          {
+            "title": "Leaders Eat Last: Why Some Teams Pull Together and Others Don' .",
+            "price": 4.55,
+            "merchant": "{'username': 'cmedia_group', 'reviews': 1600000, 'positive_feedback_in_percentage': 99.8}",
+            "url": "https://www.ebay.co.uk/itm/800477275243?_skw=Leaders+Eat+Last+Simon+Sinek+book&itmmeta=01M8D1S7TG8BE4FAZSB4FAPX1T&hash=itemba6029e46b:g:eYIAAeSwv8xqdqKp&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde%2BrJV5RqBHcfshnJiIyFtC50aZXbiZw0mX6dsKoJDNQHRbbzoIdDuDC3WsU6XeRZrsNSn2d8tJMAtRFvA0YzWfFmDvLc7juI0Sq3dfOMpiFAQZfYuxKZQX4cfLcDS6%2FdG6%2FCTqbLxPMQQWSpBsQEZZORfgvXnr2AWeez%2BwIuotPoVH8FCps%2B%2BAI0w5oC8pkwOLzPRrrSNVo0m04vHEmKwZBU9BCzKQxub7RB%2BVR7rWiba8OeauPtnYYsvuw2nBCxTPkVvqRGhV%2FWd273SRCCZ1si04OVhmDPKSPlRczrXQOuvKAK7yumY7E40Gyn9zTsEo%3D%7Ctkp%3ABFBMzP3kocNo"
+          },
+          {
+            "title": "Leaders Eat Last: The leadership book that e- paperback, Simon Sinek, 0670923176",
+            "price": 4.59,
+            "merchant": "{'username': 'londonbridgebooks', 'reviews': 242900, 'positive_feedback_in_percentage': 99.8}",
+            "url": "https://www.ebay.co.uk/itm/920186348683?_skw=Leaders+Eat+Last+Simon+Sinek+book&itmmeta=01M8D1S7TGBGE3MREENST5780A&hash=itemd63f61648b:g:I5kAAeSwlYdrB-Ys&itmprp=enc%3AAQALAAAA4CHNgUiiE%2FjQhlDTaMiAde9DwXG1r46aJHRcOP03kL%2BpW%2BTJVSirNw6L%2BpHTpCtQngLJZYEUvtsu9aXQcF0UNI8agUbg0Nm5DMdnmWxy4ByH4WgENkPqlIckdqMZRtE753MkuunFrcNvYaCeBYV33jndQwSh8Ms1NkX%2BTVdnuwrJ7dKSAidP7PlYXozMTPUmMcYzAgqPozXHZwuvfukOrN0U%2BUj%2BTyePEqKESuE%2BINR5dq%2FzpD9NEpZtG5dP0A1ubxwzZmPzzxSsSVEM89r19hhqu7bazpZi%2BZFASkCv0sgR%7Ctkp%3ABk9SR8z95KHDaA"
+          },
+          {
+            "title": "Leaders Eat Last: Why Some Teams Pull Together and Others Don't by Sinek, Simon",
+            "price": 4.84,
+            "merchant": "{'username': 'thrift.books', 'reviews': 4900000, 'positive_feedback_in_percentage': 99.7}",
+            "url": "https://www.ebay.co.uk/itm/147370358786?_skw=Leaders+Eat+Last+Simon+Sinek+book&epid=150664327&itmmeta=01M8D1S7TPE8GY50MHVTWMP62F&hash=item224ff53802:g:QNcAAMXQVERS1rlw&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde9lkcB3jzvl%2BGpjF%2BJs9Cv2RGrF6HUcKCbIy7Z6KYIMuqbuU%2FvmlcrHkgTqkozyVGoAZHTjzocW4Xe78FHQbVN1Ytyn5yRhEbzJvKqzHzPmEsY5RnvazUJ4Q%2FgJhJDEajzjzr7be49dX4bRKcPAjyhLQXycGzNjYfV9iJH0GUVoDqZX647unommT4L1ujLOYEf8RVmq6%2BQxuFA2Re1CXuBz6HPewJpltRLadIaZBA2DLKqc%2BIVbrILoAvYTbMdAQjI1FvVSMmjdhBIXKH5pml6xhgypAwnFipTnWhsx8IO30OYctRxDvgMP1xLwcdCZYDs%3D%7Ctkp%3ABFBM0P3kocNo"
+          },
+          {
+            "title": "Leaders Eat Last: Why Some Teams Pull Together and Others Don't by Simon Sinek",
+            "price": 5.99,
+            "merchant": "{'username': 'worldofbooks08', 'reviews': 11900000, 'positive_feedback_in_percentage': 99.5}",
+            "url": "https://www.ebay.co.uk/itm/142087741059?_skw=Leaders+Eat+Last+Simon+Sinek+book&itmmeta=01M8D1S7TFX1DNDK4687YCBQVE&hash=item211516de83:g:Wg0AAeSw7UNpMvAz&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde9nDEK0rzlkKObOJpDs38odaeZ0EbUCMUkT1NHPjbYKjt7X6hK4A4sDCUBw3p0K0BPgDLFYDFbFfAe40ErFSf7bmfFqztreC9MNjQTWPHXuecGNCc1sRqBtGJ5ZDWnhF72glsrrCv204VBK%2F6MfgqZct5Lh4Vo1AiVoq22PLPTVgxPgJK9RSoGTial%2B%2F3u4ij7M11yfgqE%2Fhh7GCJzbyfQTNLj9OPROsxltu99%2FDLPXgbUylho0L9lY1sCu4UIEwxj%2BhHCrCvpY722LzGNY1rPr4Tz%2BX%2BSNTYFZcenukPSEy3ABv5dZPeT39oe7S8miDyE%3D%7Ctkp%3ABFBMyv3kocNo"
+          },
+          {
+            "title": "Leaders Eat Last: Why Some Teams Pull ..., Sinek, Simon",
+            "price": 5.99,
+            "merchant": "{'username': 'worldofbooks08', 'reviews': 11900000, 'positive_feedback_in_percentage': 99.5}",
+            "url": "https://www.ebay.co.uk/itm/147672404849?_skw=Leaders+Eat+Last+Simon+Sinek+book&itmmeta=01M8D1S7TH42HT2M23R47SN7B3&hash=item2261f61371:g:yasAAeSwwDFq8Qyj&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde9KM8XDZO7tWP4w%2FlO%2F62YjFNRY%2BFURs6VI2uWtivd2EJAVVyzWKHX69rCgst7hd03eUA07Mwp%2FkKs9HiLvfL8pDexlzkhXrjHLdIkoUDkOQkS0e3EudKrcffffKzpmyawLXbPW94HNDc9I9YR4C9HhNN4U80h4PcKPihqXfEcWvl0GGkKLFV68OSVbrUyOLgLtZwnG2acP5AjPihWAbYTNwJMPa17XlFUO52OJ6vrVMQxWvfOS0Z6jMZRnZ0r8TBOAdZh1gbd6YMjawIlThcnhNG%2FEO5ZIn5xjK1ucbzGB9xvGENKS7pa6DBieHB4y3MM%3D%7Ctkp%3ABk9SR8z95KHDaA"
+          },
+          {
+            "title": "Leaders Eat Last: Why Some Teams Pull Together and Others Don't by Sinek, Simon",
+            "price": 6.39,
+            "merchant": "{'username': 'agimogi12', 'reviews': 196, 'positive_feedback_in_percentage': 100}",
+            "url": "https://www.ebay.co.uk/itm/147331752796?_skw=Leaders+Eat+Last+Simon+Sinek+book&itmmeta=01M8D1S7TGVWEZDT87NJRQMR96&hash=item224da8235c:g:rzAAAeSwHNFqFSrZ&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde8l9du94EX%2FeDSPPzn42ydRkGJH0kMFClGusPRKRaNMmzaqYuK%2Bd4%2B1MY2IwkhQVfut1Fvu5YXzEro9fiW76070qrhyaDVOVSqZlLB2A4e%2Bz5UMDzKqzKmk14uaYpumd2xMREWw7iwGJN%2BiN1%2BDqHpVlPU%2BezK7h9nUKtUHpxQE3YQlkeBPfH9ANbyMcchyYxJXloFcc4Mrli6hu1KfxqtFn1svPA%2BsNLW4gTTKp6%2Fgnt75J5XADbvQYpe5epkqn7GCO7yM2WUsJxyM4y351VaKCCzjIuEIAH2co9cCUQkrJy9THZ%2Bwp5DzbTjm13eEZWg%3D%7Ctkp%3ABFBMzP3kocNo"
+          },
+          {
+            "title": "Leaders Eat Last by Simon Sinek Paperback (2017) New York Times Bestseller",
+            "price": 6.43,
+            "merchant": "{'username': 'clothesandthings2', 'reviews': 133, 'positive_feedback_in_percentage': 100}",
+            "url": "https://www.ebay.co.uk/itm/117474491327?_skw=Leaders+Eat+Last+Simon+Sinek+book&itmmeta=01M8D1S7TKN782RAAA4F7V50TA&hash=item1b5a067bbf:g:6aEAAeSwHVZq1e-U&itmprp=enc%3AAQALAAAA4CHNgUiiE%2FjQhlDTaMiAde%2B1xTcpiI7k224R102mpdp%2BZ7VU4%2B9lgXlDRMDvOhnZEShEdVhnC8UiIaJ%2FVXIxdb%2BF5UY890lgord7iKp720W3Xto%2BAYVvNeZ8OEYR%2BFHt93GhbsDTRKuTzhRJ5Et2mNl1yl4bI6yLTa6Z077PSLmhQaNRG4Puf99Jd59uysqCetf4soG8z5RQGkvccKXMqIW7S9LfJgjJSXT3kw7unpJ4F0%2BfKnYkfDrCUl1BtBnLGpgZjXyL4ywzE9Bwc9HakrLK9sAAJ040CxWIwBbrYz%2F0%7Ctkp%3ABk9SR8795KHDaA"
+          },
+          {
+            "title": "Leaders Eat Last: Why Some Teams Pull Together and Others Don't by Simon Sinek",
+            "price": 6.9,
+            "merchant": "{'username': 'pakito99alex', 'reviews': 942, 'positive_feedback_in_percentage': 100}",
+            "url": "https://www.ebay.co.uk/itm/327299642293?_skw=Leaders+Eat+Last+Simon+Sinek+book&itmmeta=01M8D1S7TH5ECDZNE3BR0CWAXG&hash=item4c349433b5:g:Ap0AAeSwawdqdhLs&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde9uRzYQm7R%2BYgsnFPY%2FolZFSSZA%2FhiP6GDVpmSDBT4Rm0%2BG%2BvI50nuSAJuVRBWU208roGUWvUZvlJg1Lhofs8GdaoasrnvK9CjeYxtlJFa510HqNTCpQKM2CEoGf6VWcaLYAmFsjnFbfdX%2F0RAtoGm5xzyKssl23P6v5LHEnIMPdRaQpKqSxQuQsV3P1Vv%2BoOh9UnyD5RVvoizR8exwcVVFbrWondK5fPlUDgwX0AUD8eiN4Msm7rsc%2B4I2hou6Cxodsy1KmAg%2BCw%2F%2BVaqfsd5onvk7xxu7CspntV%2B7O8Q5n2C0TBBdgwaa%2FfqFIHkh240%3D%7Ctkp%3ABk9SR8z95KHDaA"
+          },
+          {
+            "title": "Leaders Eat Last: Why Some Teams Pull Togeth- Simon Sinek, 1591848016, paperback",
+            "price": 7.16,
+            "merchant": "{'username': 'londonbridgebooks', 'reviews': 242900, 'positive_feedback_in_percentage': 99.8}",
+            "url": "https://www.ebay.co.uk/itm/398076805159?_skw=Leaders+Eat+Last+Simon+Sinek+book&epid=235445348&itmmeta=01M8D1S7TG603T4MZGP73TK6P3&hash=item5caf3a0027:g:zsYAAOSwaeRZHP8T&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde9s2Z82yVPSPCs6xFIi%2FsP0T%2Fonddxv%2F7i%2BFosZnFd%2BoXoJoZkqRU%2BIH7W12MxFFgNotxnaCKWnNcd7faOtBUvDoFPdsrjWJOkp39HFZ0HzOOskLkaLxT5r3vDXwbWtr1rs3QQ%2BxUHOKXjvfgpZ4vlnpFijr5HIob1m%2BV4MWLAhOPuWWmN19kjpfj1VxvlsnsRuHSWhhFpMgbQcwnJQfPkaWb6GpkeMR9stn9XX%2BkE7WE25cHH5hFAyGQwqntFBIFDGtCVMAwHCGt0zTAIzP7QdnohJyrf9yN%2FEvko3radlFPuSKIT6bvkWwwJxgXDe5CU%3D%7Ctkp%3ABk9SR8z95KHDaA"
+          },
+          {
+            "title": "Leaders Eat Last: Why Some Teams Pull Togeth- Simon Sinek, 1591848016, paperback",
+            "price": 7.16,
+            "merchant": "{'username': 'londonbridgebooks', 'reviews': 242900, 'positive_feedback_in_percentage': 99.8}",
+            "url": "https://www.ebay.co.uk/itm/168692596986?_skw=Leaders+Eat+Last+Simon+Sinek+book&epid=235445348&itmmeta=01M8D1S7TGN5V2JRM86MQM8QX6&hash=item2746dcc0fa:g:zsYAAOSwaeRZHP8T&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde%2F5cfRBWcXodfjTiSCoAZeKOXd5PN2nl8Fb1ewoOEfraN3DFCm0hZPjmRb8iFUZDo6nAXBKq6vzk5vwxJNgJqV5A9YWGw8z3PSMR%2BbmywCrtqb5zhZIn%2FW12sq6ZmY7c6fp57HvxKBchQsNKT2E%2BQbT5%2F0uoP3DaaoDo%2BGZOmZVWcWq81g9C7l7GolcX87vTrJ3d2fM4ZL5uZFgimuzT3lZ5O1uvWsaA1tXIFkAyRu9%2B1NEvyzDsSzxaicPgouaSyDMJGzjKFbR5DB6n%2FkKk4nPaZEit0J%2BaEgl2%2Bgk9JK0dnN7fbLIOsCMTzKM1unMjWY%3D%7Ctkp%3ABFBMzP3kocNo"
+          },
+          {
+            "title": "Leaders Eat Last: Why Some Teams Pull ..., Sinek, Simon",
+            "price": 7.49,
+            "merchant": "{'username': 'worldofbooks08', 'reviews': 11900000, 'positive_feedback_in_percentage': 99.5}",
+            "url": "https://www.ebay.co.uk/itm/395568991811?_skw=Leaders+Eat+Last+Simon+Sinek+book&epid=235445348&itmmeta=01M8D1S7TGPH2BJB51BDRDS7AV&hash=item5c19bfce43:g:8vEAAeSwlfxpQ0ga&itmprp=enc%3AAQALAAAA4CHNgUiiE%2FjQhlDTaMiAde9lZZPx528NkxOERUtCX7j40u8GKfbXErRrgxIbZh%2BN%2FR3VQro5q7DgHra1Xs1tdO36f79tFR2fG8Pd2xsvRznUnvTv7leK0kpH1rZfEY8lMTQiw6%2BmidH8yp9Ss1d%2BZFhE8JOOZ2V5G1W7WFJAjVuJZ294A1KnAzgqt8K7GvqLTY7zFYCvSys04IdrUcYlRt8Wvs37SgzPDziLu%2B8jXqU8JTN%2BWMqrYZVBJpVUW6gujeaXghwgZsactcbsd3XiOkRWQmy02K8ElkfoSY%2F2gFP7%7Ctkp%3ABk9SR8z95KHDaA"
+          },
+          {
+            "title": "Leaders Eat Last: The leadership book that every good manager needs",
+            "price": 7.5,
+            "merchant": "{'username': 'payyourselffirst', 'reviews': 2200, 'positive_feedback_in_percentage': 100}",
+            "url": "https://www.ebay.co.uk/itm/168157461583?_skw=Leaders+Eat+Last+Simon+Sinek+book&itmmeta=01M8D1S7TJS0PGEFR1S7S9K32Q&hash=item2726f73c4f:g:3JsAAeSw8Kppj1ns&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde8918fVWH4%2BIQi02d0BQ8OLb5WfF%2FCTHYnGt5ptPLuHSNr%2FP%2BpYpe47COVBNMOZBK5OT5o86ZIIDF2oMUAHzuJoS18JZRSlbWQgKnjiV2HcJcUWRUKb1w2mtHeSgUR%2BPzzk9O%2FvU6DV6gMcU31Bq0NcUrz9zCwK1Peh3ST8PDQedJLqDRyqRCn3rNz7jqAOQqh3tCYoMtUYXEZdzZqMuPoF90ro2a8RqHpfcwBzO9AKZNk6N5SVYRmPp12OndLJ8EVM%2B8lwzJYGZc%2FNvLBAOaiasD7Zyi%2B6lwy1RW46h7oo5RpjimGLNdLghshggr%2Bqemo%3D%7Ctkp%3ABFBMzv3kocNo"
+          },
+          {
+            "title": "Leaders Eat Last: Why Some Teams Pull Together and Others Don't by Sinek, Simon",
+            "price": 8.0,
+            "merchant": "{'username': 'worldofbooks08', 'reviews': 11900000, 'positive_feedback_in_percentage': 99.5}",
+            "url": "https://www.ebay.co.uk/itm/142748542837?_skw=Leaders+Eat+Last+Simon+Sinek+book&itmmeta=01M8D1S7TFZZRE1R0M4AVRGSTE&hash=item213c79e775:g:xYkAAeSwsU5pM0YP&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde%2FPcz8pgto98kiGcz5PtFqY9QcpQP639%2BTyLKITBTQpz1FAXaVeYjxfpEVp1qz43Rqim6JLfR7yEbAFKYKsgEqp83P6kDGRJbS9lxjkAyi56puQHt04EWgZnrLzeUtXkSoXv9niFYQqA0wQmYzLfGTL8wYyK%2FgrpVtzIbYJRrfaaTrwmETra8eKDxfeComxMMRd1XkBiKxBWC%2Fnsiw2ZtBxE%2Fks7WzSQEzKEmnc3pUyD%2B56L71XQVYoDO7U1%2FA%2FchI01U0vmKs536n%2FousZ%2Bluxo6B9UEKxrYQPksv3mfFyKUXrmAALFhzdOqymM8CwNhU%3D%7Ctkp%3ABFBMyv3kocNo"
+          },
+          {
+            "title": "Leaders Eat Last: The leadership book ..., Sinek, Simon",
+            "price": 8.0,
+            "merchant": "{'username': 'worldofbooks08', 'reviews': 11900000, 'positive_feedback_in_percentage': 99.5}",
+            "url": "https://www.ebay.co.uk/itm/306675292211?_skw=Leaders+Eat+Last+Simon+Sinek+book&itmmeta=01M8D1S7TKCKF16NN6YW1EKBKA&hash=item4767459833:g:iTYAAeSwbVVpTIS5&itmprp=enc%3AAQALAAAA4CHNgUiiE%2FjQhlDTaMiAde97yiDHpBy0Pi9g1FeT6fKmaS5waT2ivI5F5R0NCl5y2BH6nYLFXMAaSlFamQK%2B9GfHooe8c8Swop0em56WHcKxywtY0c4se%2BkLfS%2B9nIOg2a5kBdKt5D0kOxefNesDrGjNuyUfm43DorfDprU8AuwTlzuk5EH8ArrPq09PjQjFTIeeWdTZ07Zk%2B4vxvLvGUA57Rqe8aQ%2BUu5dvRxJzbhsKKeYjrXBsxCyUt6MpvlhsId3o%2FGp3gLfv2srgfXBfcCZvVdbLjPXR3q%2B4yd1dLOuh%7Ctkp%3ABk9SR8795KHDaA"
+          }
+        ]
+      },
+      "appraisal": {
+        "flag": false,
+        "reasons": []
+      },
+      "query": "Leaders Eat Last Simon Sinek book"
+    },
+    "b_0005": {
+      "new": {
+        "amount": null,
+        "currency": "INR",
+        "source": "SerpAPI",
+        "url": "https://serpapi.com/search.json?engine=google_shopping&q=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&gl=in&hl=en&google_domain=google.co.in&api_key=REDACTED",
+        "retrieved_at": "2026-11-27T04:46:48.382658+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "evidence/prices/b_0005_new.json",
+        "price_status": "not_found",
+        "condition_assumed": null,
+        "offers_used": []
+      },
+      "used": {
+        "amount": 1165.3668,
+        "currency": "INR",
+        "source": "{'username': 'worldofbooksinc', 'reviews': 383300, 'positive_feedback_in_percentage': 99.4} via SerpAPI",
+        "url": "https://www.ebay.co.uk/itm/277529913307?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&epid=4085296112&itmmeta=01M8D1S1WSZN0MCF499DPMW9JR&hash=item409e1267db:g:9AMAAeSwbkRqyh6g&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2FybDmM13mG1jefCqc1BiUzqbINm%2BW5UcOpU9ttKz3sNOmiqPZokLHxagyt9Hs6bgizo8HMiCJB2Dowo5WZvHqCF3sqqh%2BSlL5EBvrm%2FtbTuOlq06wZ0%2FR79ZJbrCoWU%2Fmy2NVRWZs%2FVlNYtcArRsl105rjckgQFc0YCISg14bwA0RDIAHDGX0KuKGB2Xz5hlATRQtgxLZG1YjjYsJRC9iZ46QT%2Fp5zpuiApr4XiLJh63exw%2FNF87TPTzbZ6ZSJis5PhpFEHenmXIyvyeErT%2Fz76uQ8kn4Kkv%2FTQ8tak%2FTlxg%3D%3D%7Ctkp%3ABk9SR8Sf5KHDaA",
+        "retrieved_at": "2026-11-27T04:46:48.382658+00:00",
+        "converted": true,
+        "original_amount": 9.62,
+        "original_currency": "GBP",
+        "fx": {
+          "from_currency": "GBP",
+          "to_currency": "INR",
+          "rate": 121.14,
+          "rate_date": "2026-11-26",
+          "source": "Frankfurter",
+          "url": "https://api.frankfurter.dev/v1/latest?base=GBP&symbols=INR"
+        },
+        "n_offers": 10,
+        "snapshot_path": "evidence/prices/b_0005_used.json",
+        "price_status": "priced",
+        "condition_assumed": "Used \u2013 Good",
+        "offers_used": [
+          {
+            "title": "The Almanack of Naval Ravikant A Guide to Wealth Paperback",
+            "price": 6.43,
+            "merchant": "{'username': 'chawill-1759', 'reviews': 146, 'positive_feedback_in_percentage': 100}",
+            "url": "https://www.ebay.co.uk/itm/227567647811?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&itmmeta=01M8D1S1WNC5P0E0ZJA5F146TX&hash=item34fc16bc43:g:T~8AAeSwB65qz-Hl&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2BObfK1ZO4cRJdUX7fAMUHYObEV8VLsZKVXyXQTNdojBdFzwsJuQZV4hAVPN91dql%2BrwjfVV1FnrRdW%2B6K%2FTOCQPSkxZ2m1MXu%2F9AAwUxy3lDVGyX2I%2FmoEYoZR8fVn11wNmskmiatw2XVdbrTqmcvZ9IQu676yc6lT2hTY2DA3hKlH06H76%2FoAb4fgV8%2B7yesaUiYE5BtaSCZou0xSju3J3cVEQePfweIPOsy%2FZf78CLlB1ls%2FaO%2Bk1Mo4MZSBkIfyOJozWfVgDIs1I4vnGdeolHKcZYyq0cgQtIqmj9exdw%3D%3D%7Ctkp%3ABk9SR8Sf5KHDaA"
+          },
+          {
+            "title": "The Almanack Of Naval Ravikant: A Guide to Wealth and Happy by Eric Jorgenson",
+            "price": 8.32,
+            "merchant": "{'username': 'olly-porter', 'reviews': 181, 'positive_feedback_in_percentage': 100}",
+            "url": "https://www.ebay.co.uk/itm/227531015290?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&itmmeta=01M8D1S1WFFP779QVA2ETC8JBZ&hash=item34f9e7c47a:g:RtgAAeSw~n5qr~q4&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2FvBFHR85lj5pN27KwSDjPEu9rvy60X3J6gz8bNTDGRoGvvnU%2FryU9OQlCU3svlg1WQitW4zK3Nt0qkPeRmTC8QXwH4uzGlLOZ6WSAhfIQC4camNsBp2r%2Ffy96KoVVkSQWNJvamU9c5jam39i4MWnoqDrHGeBbGVkenCpDVLforT3bjxy6uwJmxI154icZ7w71FviAIjmy4l%2BhblZCubb%2FKzQ7iY8S%2BEdr8vp9JQ3um8xl7ds2NbUxbIKRDuX%2F81IPFITWzXLnOfew0oWYyCDvy0bYUJWjNI0Vl%2FRqj6mY0ww6mYLDPYS0qKf2%2B2BkByto1nJLD3P7xWX95UU4qkKkb%7Ctkp%3ABFBMwJ_kocNo"
+          },
+          {
+            "title": "The Almanack Of Naval Ravikant: A Guide to Wealth and Happiness, Jorgenson, Eric",
+            "price": 8.68,
+            "merchant": "{'username': 'greener_books_london', 'reviews': 829500, 'positive_feedback_in_percentage': 99.5}",
+            "url": "https://www.ebay.co.uk/itm/198680399751?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&epid=13085290400&itmmeta=01M8D1S1WHYH56EAKFRVMCEEFX&hash=item2e42464f87:g:z5IAAeSwXUBqvnfT&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8e8wgfmWg2Gq%2Bov9VD%2B5ybEhoevTU6F0gacb%2FJ2%2B2gr1DnfbOveyGxEUauZJj035csOu%2FoeML2tPjBOz9vro56c%2FStlPcdJadL%2B%2Fv7DKnhcDEesDq954CnFL3Lr57mkCfOnDtNSfQ%2BuSd1LF%2BkIjHPXzXOZNSEuURa8ZXmMYWMH%2F1gUEHu2L1pCLiUh5DyEjJ7RMkl1dWyh2MEqxX1JylqJPFeoHSAQ4%2FECt5qqKfhNDp3PVk4atX4hXKz0%2Bj0rH4PIbqdFL3Vkjfvnndt62YLnVVo2wvMNMMFDw%2BSl6FKgvg17185xu2ckXVLNVhLuWyO6NoD9nSTLk7S45cAvTKz%7Ctkp%3ABk9SR8Kf5KHDaA"
+          },
+          {
+            "title": "The Almanack of Naval Ravikant: A Guide to Wealth and Happiness, Jorgenson, Eric",
+            "price": 8.89,
+            "merchant": "{'username': 'brit_books_xp', 'reviews': 944800, 'positive_feedback_in_percentage': 99.3}",
+            "url": "https://www.ebay.co.uk/itm/237173190060?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&epid=14046555200&itmmeta=01M8D1S1WHXPKPCGKAP9NVBP9B&hash=item37389fadac:g:7qgAAeSwa9trBzwg&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9XGkypX9Ggc1jlz2iJpOdpNDUEpQixNrPbOb9uu527Pq4siBbj7%2F6zEM%2B%2BhZMKE8Jii9FpmO9i2bbf47N%2Bi03LQgtK5uSE0fGqxu%2B8K%2FLRUCimGiino6KZgf%2Bj4%2F%2BsOMd5eIN4MAnBSf4BkdenDuWndQHRnWAKJVKJHhndFYOhRXgXR33Gjq4w9loBApqSIuXrpHtiaaXOFSSB06Z0gh8ZYY3HCDA0zXymFkbFopJLfhquN%2F6l9L7%2B5wYrKs%2BojYmvS7co9viy68yNODtYd1vPquPNkKNoD1nTOhDrGuZomZ0Rc6S9t5dWWJquNrJMovNgPpd23atwuCd2zQVn3eqw%7Ctkp%3ABk9SR8Kf5KHDaA"
+          },
+          {
+            "title": "The Almanack Of Naval Ravikant: A Gu..., Eric Jorgenson",
+            "price": 9.14,
+            "merchant": "{'username': 'worldofbooksinc', 'reviews': 383300, 'positive_feedback_in_percentage': 99.4}",
+            "url": "https://www.ebay.co.uk/itm/277529913307?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&epid=4085296112&itmmeta=01M8D1S1WSZN0MCF499DPMW9JR&hash=item409e1267db:g:9AMAAeSwbkRqyh6g&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2FybDmM13mG1jefCqc1BiUzqbINm%2BW5UcOpU9ttKz3sNOmiqPZokLHxagyt9Hs6bgizo8HMiCJB2Dowo5WZvHqCF3sqqh%2BSlL5EBvrm%2FtbTuOlq06wZ0%2FR79ZJbrCoWU%2Fmy2NVRWZs%2FVlNYtcArRsl105rjckgQFc0YCISg14bwA0RDIAHDGX0KuKGB2Xz5hlATRQtgxLZG1YjjYsJRC9iZ46QT%2Fp5zpuiApr4XiLJh63exw%2FNF87TPTzbZ6ZSJis5PhpFEHenmXIyvyeErT%2Fz76uQ8kn4Kkv%2FTQ8tak%2FTlxg%3D%3D%7Ctkp%3ABk9SR8Sf5KHDaA"
+          },
+          {
+            "title": "The Almanack of Naval Ravikant Book by Eric Jorgenson Wealth Love 9781544514215",
+            "price": 10.1,
+            "merchant": "{'username': 'family-bookshelf', 'reviews': 6000, 'positive_feedback_in_percentage': 100}",
+            "url": "https://www.ebay.co.uk/itm/336690860984?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&epid=5046364950&itmmeta=01M8D1S1WFZNS23B8G7CA0XC9F&hash=item4e6456d3b8:g:Ou4AAeSwihxqWFX3&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9b4YsonVJv9nfxY8grLjYixkV8hC3SO0g8So0xTglGgWa%2FLcz5%2Fj1YquE2blefibVL60%2FbQl%2Bs3zxW3zYh6Zk2Gc0irnJlHLgWXebqVq3oDV670YJqow7Nt%2Fcf2X19gx4WTz29tcPul%2BBcpL%2FCmTob%2F97EAg1fX5iLEmQEAlC9%2B7VKFtIT7gA8DKTXwaoHB5LL4bV9srhMnlUE70A9Xu2AXALCz2t2PvtbLh2uisgzZBSKs31FlNNAH%2B9ljgxVGWiTdbhpIVe1wV5FLZyXAuyFUO0x8X7ou%2BTTPpfeHj%2FnbUnXrfCh6aZBNEsyD%2BRY8%2Fz0HVbIfhhApIRJtPqenzZQ%7Ctkp%3ABFBMwJ_kocNo"
+          },
+          {
+            "title": "The Almanack Of Naval Ravikant Eric Jorgenson White PB 2021 Wealth Happiness",
+            "price": 10.29,
+            "merchant": "{'username': 'benjaminsbookshelf', 'reviews': 20200, 'positive_feedback_in_percentage': 99.9}",
+            "url": "https://www.ebay.co.uk/itm/327464287390?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&epid=4085296112&itmmeta=01M8D1S1WKD3C4RKJZHNF332AV&hash=item4c3e647c9e:g:kawAAeSwJwRq~o4Q&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8Oy%2FDbHCWvHeUK5TR%2FM0T54G7uH1nK81aziroRdDhMzrwvc%2FipAicysj5eWhXlSxAWu7jxWnvCfk17iexCE2N5DGVEAtduKu9STErwVFtmp0Z4DYEwBcjYw702WVQziidBXGTu82cNDtY4bmBLvaU47Aocz%2FKP3bgWph%2BoJXMfjdjfD5tPw25mP00RawzEf8TcHswiTiNYs3%2BwjL8TQhR6Hy1sJ9%2BTtTjJy%2FS22kCjJjZWESDbpvy4iso23GZJubxZShiZaewTxzs0G4lWnBe6jsDjinHriBIYg%2FBHqTyzoQ4gJQOSvMkLGIHNbNrgVY38O7kqH%2BpMbj3r9R3%2BCYg9%7Ctkp%3ABFBMwp_kocNo"
+          },
+          {
+            "title": "The Almanack of Naval Ravikant: A Guide to Wealth and Happiness",
+            "price": 11.76,
+            "merchant": "{'username': 'sellbookslimited', 'reviews': 25000, 'positive_feedback_in_percentage': 99.3}",
+            "url": "https://www.ebay.co.uk/itm/920039946865?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&epid=14046555200&itmmeta=01M8D1S1WQS9ACNDWRMZ8SDK9M&hash=itemd636a77a71:g:8g0AAeSwu6Rqz9Ut&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8%2FXAIEnD3yqmaV%2BVF6kQwzZVf7eQiZ%2F2sDbHhekazE%2FpZD%2BQZ3I97GMgpZdHjIRgN5Y92ddgSstc7j1GWoc%2B8r0vjXYYV1U%2FfL5pmCBR0E0iZtWYTOxPs89lUexY7dW2aFUTdzoXtTdC4k5vZOufPcYuGMA%2BWxGUqxVHLg1D%2Fs8YMvUrpGcj0drO%2BXOMtUUbQ8dZsfD4Dt%2FthrMjHDRhM5g%2B2iboIIeloe3R%2F4As6hQdTCwCH98SZFrIsdU1MQQus0rG%2FA%2FvIfq7%2FfXPuBwI3mv38a291YJtqh6EMPTT1gv%2FBTFt%2FiH4s2vjXhCsr1%2Bbz%2BzQIKP9AYn3qO%2Bf%2B%2B0ARU%7Ctkp%3ABk9SR8Sf5KHDaA"
+          },
+          {
+            "title": "The Almanack Of Naval Ravikant: A Guide to Wealth and Happiness, Jorgenson, Eric",
+            "price": 11.79,
+            "merchant": "{'username': 'big_stock_clearance', 'reviews': 21500, 'positive_feedback_in_percentage': 99.7}",
+            "url": "https://www.ebay.co.uk/itm/168225108595?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&epid=13085290400&itmmeta=01M8D1S1WK3299BRA1XQJDESCW&hash=item272aff7273:i:168225108595&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2FiZffo0vJpn6ZzDVZ2gK9io%2BtnTE%2FHOO3x--%2FxQLKPqBWSYHXIntPCFqUYfoMWDV5N0%2F0oY2KzVf1mGn0Sv%2Fb64NS2h8VfYWp9CPdrj7U8MCe%2B6aXnR08%2Fn2MI5LtxmKETTKUDy2uEw1LSaD9YmWhrLFiUzSZrXdRJXeOuzMSdOv5UaR5i%2BN%2Bj4MJTP31YOJkzObKtfY%2FR%2BztueDRTx0VXHv94AGi4LggjK3mHRYKfuA0Hge%2BA3l87kO6fsDa2VWBmCAkuQg27O2kCjYi0IoXAfkLtHK1wU3QarzIb4fxT3rzJXl8gJYRR0R2J9pUl0YHyfTtar8A9JJ%2FaWoktIluf%7Ctkp%3ABFBMwp_kocNo"
+          },
+          {
+            "title": "The Almanack of Naval Ravikant: A Guide to Wealth and... - Jorgenson, Eric",
+            "price": 13.04,
+            "merchant": "{'username': 'webuybooks', 'reviews': 3300000, 'positive_feedback_in_percentage': 99.8}",
+            "url": "https://www.ebay.co.uk/itm/366827750746?_skw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&epid=14046555200&itmmeta=01M8D1S1WJQ7TCAEMQTH8TRTGC&hash=item5568a3455a:g:ftoAAeSwBPhrAa11&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde83VRBp5nzy9Whib8uK4FpujrUNkEP0qcECk64YFotuAUxYJwJz%2F%2BZhNdAIWAje0Kykc7neE7oWchJZeA6CH8JjXhxVWilAsJ8qlhwMq3peeZbiHpknJmyWJipHrHe9qdOorS9HNLpyr%2B4aeOPgWbofWLnE0Hr7Qg%2FxE8vMOtdPfdVEwWKh6uhqrq%2FXt6c719Dl7F8dTX0ViCa1qZ45ypQ8rVuS5%2BIQZD8t3%2B9iTOBPezpdytcs42xkfkpOU8HNg264J3UGiRQDToSPvR1Zu09uL93okA%2BF3KoS37IhJubDwQ%3D%3D%7Ctkp%3ABk9SR8Kf5KHDaA"
+          }
+        ]
+      },
+      "appraisal": {
+        "flag": false,
+        "reasons": []
+      },
+      "query": "The Almanack of Naval Ravikant Eric Jorgenson book"
+    },
+    "b_0006": {
+      "duplicate_of": "b_0004"
+    },
+    "b_0007": {
+      "new": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T04:46:48.382658+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": null
+      },
+      "used": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T04:46:48.382658+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": "Used \u2013 Good"
+      },
+      "appraisal": {
+        "flag": false,
+        "reasons": []
+      },
+      "query": "The Myth of Sisyphus Albert Camus book"
+    },
+    "b_0008": {
+      "new": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T04:46:48.382658+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": null
+      },
+      "used": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T04:46:48.382658+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": "Used \u2013 Good"
+      },
+      "appraisal": {
+        "flag": false,
+        "reasons": []
+      }
+    },
+    "b_0009": {
+      "new": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T04:46:48.382658+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": null
+      },
+      "used": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T04:46:48.382658+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": "Used \u2013 Good"
+      },
+      "appraisal": {
+        "flag": false,
+        "reasons": []
+      }
+    },
+    "b_0010": {
+      "new": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T04:46:48.382658+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": null
+      },
+      "used": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T04:46:48.382658+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": "Used \u2013 Good"
+      },
+      "appraisal": {
+        "flag": false,
+        "reasons": []
+      }
+    },
+    "b_0011": {
+      "new": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T04:46:48.382658+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": null
+      },
+      "used": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T04:46:48.382658+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": "Used \u2013 Good"
+      },
+      "appraisal": {
+        "flag": false,
+        "reasons": []
+      },
+      "query": "The Lords of Easy Money Christopher Leonard book"
+    },
+    "b_0012": {
+      "new": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T04:46:48.382658+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": null
+      },
+      "used": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T04:46:48.382658+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": "Used \u2013 Good"
+      },
+      "appraisal": {
+        "flag": false,
+        "reasons": []
+      }
+    },
+    "b_0013": {
+      "new": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T04:46:48.382658+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": null
+      },
+      "used": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T04:46:48.382658+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": "Used \u2013 Good"
+      },
+      "appraisal": {
+        "flag": false,
+        "reasons": []
+      }
+    },
+    "b_0014": {
+      "new": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T04:46:48.382658+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": null
+      },
+      "used": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T04:46:48.382658+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": "Used \u2013 Good"
+      },
+      "appraisal": {
+        "flag": false,
+        "reasons": []
+      }
+    }
+  },
+  "review_queue": [
+    {
+      "ref_id": "b_0001",
+      "code": "price_converted"
+    },
+    {
+      "ref_id": "b_0001",
+      "code": "price_not_found"
+    },
+    {
+      "ref_id": "b_0002",
+      "code": "price_converted"
+    },
+    {
+      "ref_id": "b_0002",
+      "code": "price_not_found"
+    },
+    {
+      "ref_id": "b_0003",
+      "code": "price_converted"
+    },
+    {
+      "ref_id": "b_0003",
+      "code": "price_not_found"
+    },
+    {
+      "ref_id": "b_0004",
+      "code": "price_converted"
+    },
+    {
+      "ref_id": "b_0004",
+      "code": "price_not_found"
+    },
+    {
+      "ref_id": "b_0005",
+      "code": "price_converted"
+    },
+    {
+      "ref_id": "b_0005",
+      "code": "price_not_found"
+    },
+    {
+      "ref_id": "b_0007",
+      "code": "price_not_found"
+    },
+    {
+      "ref_id": "b_0008",
+      "code": "unidentified_spine"
+    },
+    {
+      "ref_id": "b_0009",
+      "code": "unidentified_spine"
+    },
+    {
+      "ref_id": "b_0010",
+      "code": "unidentified_spine"
+    },
+    {
+      "ref_id": "b_0011",
+      "code": "price_not_found"
+    },
+    {
+      "ref_id": "b_0012",
+      "code": "unidentified_spine"
+    },
+    {
+      "ref_id": "b_0013",
+      "code": "unidentified_spine"
+    },
+    {
+      "ref_id": "b_0014",
+      "code": "unidentified_spine"
+    }
+  ],
+  "searches_used": 10,
+  "provider_requests": [
+    {
+      "url": "https://serpapi.com/search.json?engine=google_shopping&q=The+Everyday+Hero+Manifesto+Robin+Sharma+book&gl=in&hl=en&google_domain=google.co.in&api_key=REDACTED",
+      "status": 200,
+      "cache": true,
+      "error": null
+    },
+    {
+      "url": "https://serpapi.com/search.json?engine=ebay&_nkw=The+Everyday+Hero+Manifesto+Robin+Sharma+book&ebay_domain=ebay.co.uk&api_key=REDACTED",
+      "status": 200,
+      "cache": true,
+      "error": null
+    },
+    {
+      "url": "https://api.frankfurter.dev/v1/latest?base=GBP&symbols=INR",
+      "status": 200,
+      "cache": true,
+      "error": null
+    },
+    {
+      "url": "https://serpapi.com/search.json?engine=google_shopping&q=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&gl=in&hl=en&google_domain=google.co.in&api_key=REDACTED",
+      "status": 200,
+      "cache": true,
+      "error": null
+    },
+    {
+      "url": "https://serpapi.com/search.json?engine=ebay&_nkw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&ebay_domain=ebay.co.uk&api_key=REDACTED",
+      "status": 200,
+      "cache": true,
+      "error": null
+    },
+    {
+      "url": "https://api.frankfurter.dev/v1/latest?base=GBP&symbols=INR",
+      "status": 200,
+      "cache": true,
+      "error": null
+    },
+    {
+      "url": "https://serpapi.com/search.json?engine=google_shopping&q=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&gl=in&hl=en&google_domain=google.co.in&api_key=REDACTED",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://serpapi.com/search.json?engine=ebay&_nkw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&ebay_domain=ebay.co.uk&api_key=REDACTED",
+      "status": 200,
+      "cache": false,
+      "error": null
+    },
+    {
+      "url": "https://api.frankfurter.dev/v1/latest?base=GBP&symbols=INR",
+      "status": 200,
+      "cache": true,
+      "error": null
+    },
+    {
+      "url": "https://serpapi.com/search.json?engine=google_shopping&q=Leaders+Eat+Last+Simon+Sinek+book&gl=in&hl=en&google_domain=google.co.in&api_key=REDACTED",
+      "status": 200,
+      "cache": true,
+      "error": null
+    },
+    {
+      "url": "https://serpapi.com/search.json?engine=ebay&_nkw=Leaders+Eat+Last+Simon+Sinek+book&ebay_domain=ebay.co.uk&api_key=REDACTED",
+      "status": 200,
+      "cache": true,
+      "error": null
+    },
+    {
+      "url": "https://api.frankfurter.dev/v1/latest?base=GBP&symbols=INR",
+      "status": 200,
+      "cache": true,
+      "error": null
+    },
+    {
+      "url": "https://serpapi.com/search.json?engine=google_shopping&q=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&gl=in&hl=en&google_domain=google.co.in&api_key=REDACTED",
+      "status": 200,
+      "cache": true,
+      "error": null
+    },
+    {
+      "url": "https://serpapi.com/search.json?engine=ebay&_nkw=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson+book&ebay_domain=ebay.co.uk&api_key=REDACTED",
+      "status": 200,
+      "cache": true,
+      "error": null
+    },
+    {
+      "url": "https://api.frankfurter.dev/v1/latest?base=GBP&symbols=INR",
+      "status": 200,
+      "cache": true,
+      "error": null
+    }
+  ]
+}

@@ -1,0 +1,492 @@
+{
+  "books": {
+    "b_0001": {
+      "new": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T00:06:41.920392+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": null
+      },
+      "used": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T00:06:41.920392+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": "Used \u2013 Good"
+      },
+      "appraisal": {
+        "flag": false,
+        "reasons": []
+      }
+    },
+    "b_0002": {
+      "new": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T00:06:41.920392+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": null
+      },
+      "used": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T00:06:41.920392+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": "Used \u2013 Good"
+      },
+      "appraisal": {
+        "flag": false,
+        "reasons": []
+      }
+    },
+    "b_0003": {
+      "new": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T00:06:41.920392+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": null
+      },
+      "used": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T00:06:41.920392+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": "Used \u2013 Good"
+      },
+      "appraisal": {
+        "flag": false,
+        "reasons": []
+      }
+    },
+    "b_0004": {
+      "new": {
+        "amount": null,
+        "currency": "INR",
+        "source": "SerpAPI",
+        "url": "https://serpapi.com/search.json?engine=google_shopping&q=The+One+Thing+Gary+Keller+book&gl=in&hl=en&google_domain=google.co.in&api_key=REDACTED",
+        "retrieved_at": "2026-11-27T00:06:41.920392+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "evidence/prices/b_0004_new.json",
+        "price_status": "not_found",
+        "condition_assumed": null,
+        "offers_used": []
+      },
+      "used": {
+        "amount": 493.0398,
+        "currency": "INR",
+        "source": "{'username': 'atsr-93', 'reviews': 25, 'positive_feedback_in_percentage': 100} via SerpAPI",
+        "url": "https://www.ebay.co.uk/itm/137808293130?_skw=The+One+Thing+Gary+Keller+book&itmmeta=01M8D574HFDZXPR04W7Z4MXRC5&hash=item201603ad0a:g:sEIAAeSwGNdqwO-w&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde%2Fr%2Bxzr4DgLZd6lho%2FGKnpXbD0NGEyndQuL%2B%2BXZ%2FR%2Fnms1zMvu1B%2FyQqdknMy6Y7rL8%2BIpLD95GXWt9L38HQNR5s%2FpRU%2Bo9QLAAGnzst3Wsy%2FyHy6OzjDBU0%2BxwaMyuSuAhINs87%2FXYwMBAhNGgAz60hi4KWuApc3mdBQM2rtiVy76rQjWd3bi1%2BDMU662lYYRDc6kVhEJ8m1PRlgwt9lwkp2%2F6D15gCtLYk9jIpkU1dV6I5qj0VWvwq1JN7IWHs9yGivS6xuayxJWAjXU5wteBrmSPEvzUMYhXy%2Fudm2iSb7vqorrjMqO%2F53oW2A2IaWc%3D%7Ctkp%3ABFBMjsmcpcNo",
+        "retrieved_at": "2026-11-27T00:06:41.920392+00:00",
+        "converted": true,
+        "original_amount": 4.07,
+        "original_currency": "GBP",
+        "fx": {
+          "from_currency": "GBP",
+          "to_currency": "INR",
+          "rate": 121.14,
+          "rate_date": "2026-11-26",
+          "source": "Frankfurter",
+          "url": "https://api.frankfurter.dev/v1/latest?base=GBP&symbols=INR"
+        },
+        "n_offers": 5,
+        "snapshot_path": "evidence/prices/b_0004_used.json",
+        "price_status": "priced",
+        "condition_assumed": "Used \u2013 Good",
+        "offers_used": [
+          {
+            "title": "The One Thing by Gary Keller Paperback",
+            "price": 3.47,
+            "merchant": "{'username': 'rareperl', 'reviews': 93, 'positive_feedback_in_percentage': 100}",
+            "url": "https://www.ebay.co.uk/itm/227202805891?_skw=The+One+Thing+Gary+Keller+book&itmmeta=01M8D574HJ7C7B0J73WHJ5GVAK&hash=item34e657b083:g:4ucAAeSw0bNpg2~w&itmprp=enc%3AAQALAAAA4CHNgUiiE%2FjQhlDTaMiAde8HpQ1wbtq2MBQfkOiUNn3U4rQgWXHhSDHDxow%2F78HSYhkbtCPh3E0y7MwwjLhNIYBXJPGZZsIRxHiAfbtrVlk3JVdJYUqCkIWp03UNZlB%2BmleuIRGFwU8a65mNwCp6AXqTF3VQhTrX0Ev9LpR4dPBfZv5RoPBQ6DTZTt82adJEzH0xxdB9bTmpgIHTW%2B8h%2FcTu7sw1cS1fJ%2FRBLCoS9TNIEpd8hu6d0ZBxqZkRANvd0OgTnQvW4Jyonkf5kBojaf6zxilqTCpI7WohQYl8klbi%7Ctkp%3ABk9SR5DJnKXDaA"
+          },
+          {
+            "title": "The One Thing Gary Keller Jay Papasan Paperback Productivity Business",
+            "price": 3.94,
+            "merchant": "{'username': 'neliiv', 'reviews': 272, 'positive_feedback_in_percentage': 100}",
+            "url": "https://www.ebay.co.uk/itm/940036163422?_skw=The+One+Thing+Gary+Keller+book&itmmeta=01M8D574HGYZ15TQW7FA43N1T9&hash=itemdade85875e:g:dA4AAeSwwnNq25g8&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde%2FQfAW0fBAxjnA%2BHrwkMmwIlL7gqoMSwVE6GIeAVLiSVEcl6cVyGs%2F2HRmVEEN73OCRr%2BAAdV3ZybOOqGCZCWEBK%2F1a0W8jdTtll8qm%2BU2duk8kC8PiWIY8bsY7bOPHIUEsCiJSRIfbjWjpqi88KCkIZDok8ogMV4FRMmk4gvfOiLXZMOUr6J5X2EkfYfUSj--LPlkx3%2FawrKtgEqdZukuW%2FwDmTjM935eoxRZTB36tBsp7TVhW5W9hZkQ9BvwqhLa0%2BKuYEaJ8obE%2B%2FpkxObi81KaVjQbm910oI%2Bz4GCT5ZpJqfzfh4GwoZqvXfmx%2FOUg%3D%7Ctkp%3ABk9SR47JnKXDaA"
+          },
+          {
+            "title": "The ONE Thing Gary Keller & Jay Papasan Paperback Productivity",
+            "price": 4.07,
+            "merchant": "{'username': 'atsr-93', 'reviews': 25, 'positive_feedback_in_percentage': 100}",
+            "url": "https://www.ebay.co.uk/itm/137808293130?_skw=The+One+Thing+Gary+Keller+book&itmmeta=01M8D574HFDZXPR04W7Z4MXRC5&hash=item201603ad0a:g:sEIAAeSwGNdqwO-w&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde%2Fr%2Bxzr4DgLZd6lho%2FGKnpXbD0NGEyndQuL%2B%2BXZ%2FR%2Fnms1zMvu1B%2FyQqdknMy6Y7rL8%2BIpLD95GXWt9L38HQNR5s%2FpRU%2Bo9QLAAGnzst3Wsy%2FyHy6OzjDBU0%2BxwaMyuSuAhINs87%2FXYwMBAhNGgAz60hi4KWuApc3mdBQM2rtiVy76rQjWd3bi1%2BDMU662lYYRDc6kVhEJ8m1PRlgwt9lwkp2%2F6D15gCtLYk9jIpkU1dV6I5qj0VWvwq1JN7IWHs9yGivS6xuayxJWAjXU5wteBrmSPEvzUMYhXy%2Fudm2iSb7vqorrjMqO%2F53oW2A2IaWc%3D%7Ctkp%3ABFBMjsmcpcNo"
+          },
+          {
+            "title": "The ONE Thing by Gary Keller & Jay Papasan Paperback Self Help Business Book VG",
+            "price": 4.31,
+            "merchant": "{'username': 'dannmar43', 'reviews': 20, 'positive_feedback_in_percentage': 100}",
+            "url": "https://www.ebay.co.uk/itm/188655501137?_skw=The+One+Thing+Gary+Keller+book&itmmeta=01M8D574HGZFNMD936RWP6NCNQ&hash=item2becbe7f51:g:l50AAeSw3QtqWk2r&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde8owTWmI49Fk0GM7WpGwdSiIrfIrAHpNaVdozNLZkJrhaTVk8L2yFjUqvQE7lKrMgpdusEKpIIhfUa%2Fnbn%2BMZ6oMguqBf21UZ5UKww%2BMPpWA%2BfcWRkS%2FjD7ll4dZgG9unEj9ajzj278%2FzJp9BmfM3aOImzPg8GHPpTEh7UZ5a3sfcJGk6HLmWUP9W9pu4tQt%2F5LpTQ9w2hXJjwbOtrz476K%2FYrTPtVdE47IVgMKoJx--FJPpAjpzEZONkhHqjRSqznCBQvEAJjH2vu%2FFB8Z2Jww8z4%2B5Mi%2BBuuGSr5LBDvddddAiFw7vnKgAzpXgEDUKKg%3D%7Ctkp%3ABk9SR47JnKXDaA"
+          },
+          {
+            "title": "The One Thing by Gary Keller Jay Papasan Paperback 2019 Edition",
+            "price": 4.32,
+            "merchant": "{'username': 'jamieharris1971', 'reviews': 108, 'positive_feedback_in_percentage': 100}",
+            "url": "https://www.ebay.co.uk/itm/158252776083?_skw=The+One+Thing+Gary+Keller+book&itmmeta=01M8D574HHR79SCEAQ5Y9HF8TG&hash=item24d899ba93:g:SHAAAeSwWOBqmS9g&itmprp=enc%3AAQALAAABACHNgUiiE%2FjQhlDTaMiAde9dHAw6tPEJVjoj9eHny9aJyrbU9NkfWfmvqyL6gfD79Rsx1YP%2FMXD4LJGG3drTOH39QXr4bQAYPLxo2anXpN6RGJlSwJglEJaYn%2FOUxD0Wxv4d2KwZjjriS1C44opMD80qre5wr3jpn0CaJrfQt5%2BL3VuWpMz3ehB2xgzjqXfRBoD6q0BQX2LucbsRS1V59F4ApN%2B8q%2BFQS2jzOWOzD9opErn3exANq6xQAp1oDeoW0zaJueUQy1LLzmn1Caiyds02eXJGGJeMMnBDH%2FAI9xTRnojp7eOqxisqAYZdW3bNhg1PxdHIa8hrQwIKcHJ9Wck%3D%7Ctkp%3ABk9SR5DJnKXDaA"
+          }
+        ]
+      },
+      "appraisal": {
+        "flag": false,
+        "reasons": []
+      },
+      "query": "The One Thing Gary Keller book"
+    },
+    "b_0005": {
+      "new": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T00:06:41.920392+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": null
+      },
+      "used": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T00:06:41.920392+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": "Used \u2013 Good"
+      },
+      "appraisal": {
+        "flag": false,
+        "reasons": []
+      }
+    },
+    "b_0006": {
+      "new": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T00:06:41.920392+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": null
+      },
+      "used": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T00:06:41.920392+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": "Used \u2013 Good"
+      },
+      "appraisal": {
+        "flag": false,
+        "reasons": []
+      }
+    },
+    "b_0007": {
+      "new": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T00:06:41.920392+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": null
+      },
+      "used": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T00:06:41.920392+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": "Used \u2013 Good"
+      },
+      "appraisal": {
+        "flag": false,
+        "reasons": []
+      }
+    },
+    "b_0008": {
+      "new": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T00:06:41.920392+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": null
+      },
+      "used": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T00:06:41.920392+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": "Used \u2013 Good"
+      },
+      "appraisal": {
+        "flag": false,
+        "reasons": []
+      }
+    },
+    "b_0009": {
+      "new": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T00:06:41.920392+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": null
+      },
+      "used": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T00:06:41.920392+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": "Used \u2013 Good"
+      },
+      "appraisal": {
+        "flag": false,
+        "reasons": []
+      }
+    },
+    "b_0010": {
+      "new": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T00:06:41.920392+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": null
+      },
+      "used": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T00:06:41.920392+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": "Used \u2013 Good"
+      },
+      "appraisal": {
+        "flag": false,
+        "reasons": []
+      }
+    },
+    "b_0011": {
+      "new": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T00:06:41.920392+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": null
+      },
+      "used": {
+        "amount": null,
+        "currency": "INR",
+        "source": "",
+        "url": "",
+        "retrieved_at": "2026-11-27T00:06:41.920392+00:00",
+        "converted": false,
+        "original_amount": null,
+        "original_currency": null,
+        "fx": null,
+        "n_offers": 0,
+        "snapshot_path": "",
+        "price_status": "not_found",
+        "condition_assumed": "Used \u2013 Good"
+      },
+      "appraisal": {
+        "flag": false,
+        "reasons": []
+      }
+    }
+  },
+  "review_queue": [
+    {
+      "ref_id": "b_0001",
+      "code": "unidentified_spine"
+    },
+    {
+      "ref_id": "b_0002",
+      "code": "unidentified_spine"
+    },
+    {
+      "ref_id": "b_0003",
+      "code": "unidentified_spine"
+    },
+    {
+      "ref_id": "b_0004",
+      "code": "price_converted"
+    },
+    {
+      "ref_id": "b_0004",
+      "code": "price_not_found"
+    },
+    {
+      "ref_id": "b_0005",
+      "code": "unidentified_spine"
+    },
+    {
+      "ref_id": "b_0006",
+      "code": "unidentified_spine"
+    },
+    {
+      "ref_id": "b_0007",
+      "code": "unidentified_spine"
+    },
+    {
+      "ref_id": "b_0008",
+      "code": "unidentified_spine"
+    },
+    {
+      "ref_id": "b_0009",
+      "code": "unidentified_spine"
+    },
+    {
+      "ref_id": "b_0010",
+      "code": "unidentified_spine"
+    },
+    {
+      "ref_id": "b_0011",
+      "code": "unidentified_spine"
+    }
+  ],
+  "searches_used": 2
+}

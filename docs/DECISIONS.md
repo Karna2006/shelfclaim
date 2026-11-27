@@ -12,7 +12,7 @@
 - During earlier pipeline verification, the per-run live vision budget was exhausted by the failed S1 replay; later catalogue and price checks were bounded separately.
 - At the earlier pricing check, S6 was missing, so repricing stopped before provider construction and used zero SerpApi searches. The later S06–S10 replay and its search count are recorded below.
 - Stages S9 and S10 keep room measurements null and add a room-not-measured review entry while geometry is disabled.
-- Deliverable reference notes use the non-binding product direction in docs/notes/PRODUCT_DIRECTION.md and the kept/changed/threw-away outline in docs/12_DELIVERABLES_AND_REVIEW.md; user-supplied replacement notes were not present.
+- Deliverable reference notes use the non-binding product direction in docs/planning/notes/PRODUCT_DIRECTION.md and the kept/changed/threw-away outline in docs/planning/12_DELIVERABLES_AND_REVIEW.md; user-supplied replacement notes were not present.
 - README and failure-log cost/latency fields remain explicitly unmeasured because pricing rates are TODO and no successful full pipeline telemetry exists.
 - Local S5 transcription uses maintained RapidOCR plus ONNX Runtime; its redundant `opencv-python-headless` dependency is excluded so the app retains OpenCV contrib features, and Gemini fallback defaults off while free quota is exhausted.
 - Sweep `sw_20261126_225839_2007` replayed from the saved local S5 artifact through S10; merged OCR text was conservatively left unidentified, Google Books returned HTTP 429, and packet validation passed with 11 unidentified books and no prices.

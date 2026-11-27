@@ -1,0 +1,14 @@
+{"t_ms":0,"speaker":"agent","text":"Hi, I'm your claim assistant. I'll guide you through one slow walk past your shelves. Are you in India, with values in rupees?","final":true,"recorded_at":"2026-11-27T00:55:46.009559+00:00"}
+{"t_ms":3090,"speaker":"cue","text":"Move the phone more slowly.","final":true,"recorded_at":"2026-11-27T00:55:48.377679+00:00"}
+{"t_ms":8961,"speaker":"user","text":"hi I am your claim assistant","final":true,"recorded_at":"2026-11-27T00:55:53.388888+00:00"}
+{"t_ms":10710,"speaker":"agent","text":"I am your claim assistant. To begin, are you in India and using rupees for your inventory?","final":true,"recorded_at":"2026-11-27T00:55:55.645985+00:00"}
+{"t_ms":16725,"speaker":"user","text":"to begin","final":true,"recorded_at":"2026-11-27T00:56:01.345063+00:00"}
+{"t_ms":16725,"speaker":"agent","text":"Please confirm your country and currency so we can start.","final":true,"recorded_at":"2026-11-27T00:56:02.663368+00:00"}
+{"t_ms":21039,"speaker":"user","text":"to begin in India and using rupees for your inventory yes I am in India","final":true,"recorded_at":"2026-11-27T00:56:05.620372+00:00"}
+{"t_ms":21039,"speaker":"agent","text":"Great. Start with the shelf on your left, top row, and move slowly.","final":true,"recorded_at":"2026-11-27T00:56:05.662043+00:00"}
+{"t_ms":29347,"speaker":"user","text":"to begin in India and using rupees for your inventory yes I am in India","final":true,"recorded_at":"2026-11-27T00:56:14.104966+00:00"}
+{"t_ms":31739,"speaker":"agent","text":"Please start by capturing the top shelf on the left. Move the camera slowly.","final":true,"recorded_at":"2026-11-27T00:56:16.227158+00:00"}
+{"t_ms":37081,"speaker":"cue","text":"Hold the phone steadier for a moment.","final":true,"recorded_at":"2026-11-27T00:56:21.692958+00:00"}
+{"t_ms":41292,"speaker":"user","text":"for","final":true,"recorded_at":"2026-11-27T00:56:25.814834+00:00"}
+{"t_ms":42456,"speaker":"agent","text":"Keep moving along the shelf at a steady, slow pace.","final":true,"recorded_at":"2026-11-27T00:56:27.014137+00:00"}
+{"t_ms":56741,"speaker":"cue","text":"Move the phone more slowly.","final":true,"recorded_at":"2026-11-27T00:56:41.394823+00:00"}

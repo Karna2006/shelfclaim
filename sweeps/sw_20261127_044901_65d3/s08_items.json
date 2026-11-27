@@ -1,0 +1,64 @@
+{
+  "items": [
+    {
+      "item_id": "i_0001",
+      "category": "cabinet",
+      "member_dets": [
+        "f000003_d0004"
+      ],
+      "best_view": {
+        "seq": 3,
+        "frame_ref": "frames/f_000003_0002423.jpg",
+        "bbox": {
+          "x": 0,
+          "y": 793,
+          "w": 281,
+          "h": 294,
+          "angle_deg": 90.0
+        }
+      },
+      "dimensions_cm": {
+        "w": null,
+        "h": null,
+        "d": null
+      },
+      "dims_method": "none",
+      "description": "cabinet",
+      "brand_model": "",
+      "material": null,
+      "is_artwork": false,
+      "status": "needs_appraisal",
+      "confidence": null
+    },
+    {
+      "item_id": "i_0002",
+      "category": "decor_other",
+      "member_dets": [
+        "f000024_d0021"
+      ],
+      "best_view": {
+        "seq": 24,
+        "frame_ref": "frames/f_000024_0015807.jpg",
+        "bbox": {
+          "x": 635,
+          "y": 601,
+          "w": 408,
+          "h": 296,
+          "angle_deg": 0.0
+        }
+      },
+      "dimensions_cm": {
+        "w": null,
+        "h": null,
+        "d": null
+      },
+      "dims_method": "none",
+      "description": "decor other",
+      "brand_model": "",
+      "material": null,
+      "is_artwork": false,
+      "status": "needs_appraisal",
+      "confidence": null
+    }
+  ]
+}

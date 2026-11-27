@@ -1,0 +1,13 @@
+{
+  "books": {},
+  "review_queue": [],
+  "thresholds": {
+    "title_sim_min": 90,
+    "author_sim_min_for_short_titles": 85,
+    "minimum_words_without_author": 3
+  },
+  "calibration": {
+    "method": "title similarity with author gate",
+    "fitted_on": null
+  }
+}

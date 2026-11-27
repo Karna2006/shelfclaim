@@ -1,0 +1,1741 @@
+{
+  "search_metadata": {
+    "id": "6b090b3a8ffee171cd5104bc",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/xZTJj6LtY63PWp-IhR84SZT8sPZulbKSVBP1vjyQZMo/6b090b3a8ffee171cd5104bc.json",
+    "markdown_endpoint": "https://serpapi.com/searches/xZTJj6LtY63PWp-IhR84SZT8sPZulbKSVBP1vjyQZMo/6b090b3a8ffee171cd5104bc.md",
+    "created_at": "2026-11-27 04:46:50 UTC",
+    "processed_at": "2026-11-27 04:46:50 UTC",
+    "ebay_url": "https://www.ebay.co.uk/sch/i.html?_nkw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book",
+    "raw_html_file": "https://serpapi.com/searches/xZTJj6LtY63PWp-IhR84SZT8sPZulbKSVBP1vjyQZMo/6b090b3a8ffee171cd5104bc.html",
+    "total_time_taken": 1.06
+  },
+  "search_parameters": {
+    "engine": "ebay",
+    "_nkw": "Autobiography of a Yogi Yogananda (Paramahansa) book",
+    "ebay_domain": "ebay.co.uk"
+  },
+  "search_information": {
+    "organic_results_state": "Results for exact spelling",
+    "total_results": 933,
+    "query_displayed": "Autobiography of a Yogi Yogananda (Paramahansa) book"
+  },
+  "categories": [
+    {
+      "name": "Books, Comics & Magazines",
+      "link": "https://www.ebay.co.uk/sch/267/i.html?_nkw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book",
+      "id": 267,
+      "serpapi_link": "https://serpapi.com/search.json?_nkw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&category_id=267&ebay_domain=ebay.co.uk&engine=ebay"
+    },
+    {
+      "name": "Fiction & Non-Fiction Books",
+      "link": "https://www.ebay.co.uk/sch/261186/i.html?_nkw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book",
+      "id": 261186,
+      "serpapi_link": "https://serpapi.com/search.json?_nkw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&category_id=261186&ebay_domain=ebay.co.uk&engine=ebay"
+    },
+    {
+      "name": "Antiquarian & Collectable Books",
+      "link": "https://www.ebay.co.uk/sch/29223/i.html?_nkw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book",
+      "id": 29223,
+      "serpapi_link": "https://serpapi.com/search.json?_nkw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&category_id=29223&ebay_domain=ebay.co.uk&engine=ebay"
+    },
+    {
+      "name": "Collectables",
+      "link": "https://www.ebay.co.uk/sch/1/i.html?_nkw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book",
+      "id": 1,
+      "serpapi_link": "https://serpapi.com/search.json?_nkw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&category_id=1&ebay_domain=ebay.co.uk&engine=ebay"
+    }
+  ],
+  "organic_results": [
+    {
+      "title": "Autobiography of a Yogi By Paramahansa Yogananda. 9780876120798",
+      "link": "https://www.ebay.co.uk/itm/302345759853?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=91920944&itmmeta=01M8DN7QZ682PJZW6XCAMC94BG&hash=item4665362c6d:g:vXsAAOSwwzhZO-CO&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde8KInjw2Gy%2BwCIGIegR1M%2Fg4PC%2BSoFK3iRQTbyGmvC8LpASBNyDx4EdhYSm1KHlNt%2BRbe0WfYNXvdlvRgl0IMtQSNuAecsh3AG%2Bm8A3Mvbud222np26POks0RP5UQAlUg1DFTIBiRZz7KmDjbLYxLtJBr1t8TGC12Ww94T1uOcYpH1JA14LDAtIIOl3MOtoc%2Fzo3YX3dKyDXUBZ%2BOkXNF1Fv2mYEu38S4aU8dy38ZTnU49ggq9l%2F6lsPjHyurkFNiNnDFMl4T%2BskCFHYcPcsAp5ZJG6fQLfXJwm9gqFsWjL0w%3D%3D%7Ctkp%3ABk9SR_j_nrXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=302345759853",
+      "product_id": "302345759853",
+      "epid": "91920944",
+      "condition": "Pre-owned",
+      "rating": 5.0,
+      "reviews": 12,
+      "price": {
+        "raw": "£4.86",
+        "extracted": 4.86
+      },
+      "shipping": "Free delivery",
+      "stock_status": "Last one",
+      "quantity_sold": "216 sold",
+      "extracted_quantity_sold": 216,
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/vXsAAOSwwzhZO-CO/s-l500.jpg",
+      "seller": {
+        "username": "baham_books",
+        "reviews": 3600000,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "title": "Autobiography of a Yogi, Yogananda, Paramahansa",
+      "subtitle": "Free UK Delivery | 10m Happy Customers | Trusted Seller",
+      "link": "https://www.ebay.co.uk/itm/146420873638?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&itmmeta=01M8DN7QZ6G1WKQ27JMZKPAE4G&hash=item22175d39a6:g:YH4AAeSwMjFpNle-&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2BnMtjsR1u8dREKqZxESWYXFXyC6QBllhQ2KfyKgcpJEGgDC7ACwFqssLuXBa4VOnm6%2BhR%2BfGBXMVchTXvbBW3Oh84HBRF1RRFt%2FQ7787Zm1tl5IJXTo%2BSFLYXVBhmAkU7MBe5CZjmZyBcqYpNiXhA51i4oAOm5PsxJtAYOo3M5IMELfxiL9Moc3BMwcVjRSPK%2F8ZSVBSKh0MJVGUnfuJOyF%2BxVsBV%2FJ07V8i7g%2F5INIAamE%2Fc8gZe%2F65a6z42SRrw92nqJHGioifnuHwVnFNGsTWZS1H1BU%2FdJ9aZVRI4uzNU4mHLfQ56vAQCb8nrYQJi6JT6jPPpu9Jlw%2BfmrIYkW%7Ctkp%3ABk9SR_j_nrXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=146420873638",
+      "product_id": "146420873638",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£7.55",
+        "extracted": 7.55
+      },
+      "shipping": "Free delivery in 3 days",
+      "quantity_sold": "9 sold",
+      "extracted_quantity_sold": 9,
+      "promotion": "Buy 2, get 1 20% off",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "extensions": [
+        "Direct from World of Books"
+      ],
+      "thumbnail": "https://i.ebayimg.com/images/g/YH4AAeSwMjFpNle-/s-l500.jpg",
+      "seller": {
+        "username": "worldofbooks08",
+        "reviews": 11900000,
+        "positive_feedback_in_percentage": 99.5
+      }
+    },
+    {
+      "title": "Autobiography of a Yogi - Yogananda, Paramahansa",
+      "link": "https://www.ebay.co.uk/itm/366822056959?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&itmmeta=01M8DN7QZ6RX95E69H305JJ38M&hash=item55684c63ff:g:q00AAeSwpZtq~uKe&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2BNbLlfTOf%2BoTp%2BSFvrRiuZVbUgDaup4lDwdAhgHGlmaz5QoiTAW3AEkCyagBskv5ugDkuLQnL42ZCcTsG%2F1GaK%2Fc%2BelJdESwtFYKxP2xlfwHaVWt676bNWKP1XsLeTxG9zTjx0I0IIwrahZq22bkkfBn%2BzfRwQbEteQflfp94ow6ZkWvPZW6lkhyXf3EuyCb3Gzg8p%2BH4JJYwTHBDuBx56kSNkO8YXY8WEeAbY07C4ZQcRNaSboEuCzyJBUW%2BNhioo8MZfBm7u8SRdJBYS%2BmT7cfsi61XAeuONf8bFY539x67riPW0Tqcogeck5IEUHACuy7%2BopHNEj7GxxNWN1xbt%7Ctkp%3ABk9SR_j_nrXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=366822056959",
+      "product_id": "366822056959",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£25.81",
+        "extracted": 25.81
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/q00AAeSwpZtq~uKe/s-l500.jpg",
+      "seller": {
+        "username": "webuybooks",
+        "reviews": 3300000,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "title": "Autobiography of a Yogi by Paramahansa Yogananda Book The Cheap Fast Free Post",
+      "subtitle": "Free UK Delivery | 10m Happy Customers | Trusted Seller",
+      "link": "https://www.ebay.co.uk/itm/393359567977?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=237036532&itmmeta=01M8DN7QZ66GVP6F3JX83W845W&hash=item5b960eac69:g:Ru4AAeSwa5ppQaNR&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde98yO4FA9I0u5VwNzyz0JKsn7dC1PRTqqW3VoQWBYmDEdmrSgCupJyuMK%2FRpExixiKlo8k%2F84HcJah5b2f%2FwGtGSnbFslt3V2NsxxvMzNkUys1g6Niq%2F810E62Q36mxLN1w3EJ06O0umP%2FGOqOgZXpcQ6U8KZKrr0CMHzGR8JZgJScmEYNO8Krne5s7odkA768kH1kJvhp7Hl8LnSgWAcl3Qpsf89GoXO8W%2FLbjgRcB7x8aSk%2BXTr2VWj3NzXw7mSdNqreers12aGMHJO7Bs%2ByJ7YpNJMjTp7fsImQXLxw%2BuPu%2Bg03h8DGhKlpKGJZTUjUFJCunPlE4%2BZqwv1bcTjNk%7Ctkp%3ABk9SR_r_nrXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=393359567977",
+      "product_id": "393359567977",
+      "epid": "237036532",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£10.80",
+        "extracted": 10.8
+      },
+      "old_price": {
+        "raw": "£13.99",
+        "extracted": 13.99,
+        "discount": "£10.80"
+      },
+      "shipping": "Free delivery in 3 days",
+      "watchers": "5 watchers",
+      "extracted_watchers": 5,
+      "promotion": "Buy 2, get 1 20% off",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "extensions": [
+        "Direct from World of Books"
+      ],
+      "thumbnail": "https://i.ebayimg.com/images/g/Ru4AAeSwa5ppQaNR/s-l500.jpg",
+      "seller": {
+        "username": "worldofbooks08",
+        "reviews": 11900000,
+        "positive_feedback_in_percentage": 99.5
+      }
+    },
+    {
+      "title": "Autobiography of a Yogi: Mass Market Paperb... by Paramahansa Yoganand Paperback",
+      "subtitle": "Free UK Delivery | 10m Happy Customers | Trusted Seller",
+      "link": "https://www.ebay.co.uk/itm/142045105509?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=91920944&itmmeta=01M8DN7QZ7PG8SXWAD6X99G7SS&hash=item21128c4d65:g:pSgAAeSwOZBpMt3j&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2Ful%2B1ZRUpFizUYuJyr6pvcub8OAu%2BfXvKBEqwYvjHgyuUh589x3auPBgaB8XG30yf7i9yo9NywPsLTyhU0apgOrMeoWlKIB8YMaS9rwRaUnd4eK2irpMseXe7%2Fw%2FbxydP7VmO2XSxiMnyRNtLERb9DN8rlHU1wL3X0HTJYKe5CYf6a3haEzdcKdlY7n5Hv%2Byvy7f5EOvTNWpJi06QQdBTHQXAww3%2FMdC4e5lCpLpNps%2BX9nyzPVUg0A7bwuvcZMIiQ%2FQD3SQwW4SOz4aLaj66y6e63Ei1ZfdNgALsfC5cDQA%3D%3D%7Ctkp%3ABk9SR_r_nrXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=142045105509",
+      "product_id": "142045105509",
+      "epid": "91920944",
+      "condition": "Pre-owned",
+      "rating": 5.0,
+      "reviews": 12,
+      "price": {
+        "raw": "£8.40",
+        "extracted": 8.4
+      },
+      "shipping": "Free delivery in 3 days",
+      "quantity_sold": "430 sold",
+      "extracted_quantity_sold": 430,
+      "promotion": "Buy 2, get 1 20% off",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "extensions": [
+        "Direct from World of Books"
+      ],
+      "thumbnail": "https://i.ebayimg.com/images/g/pSgAAeSwOZBpMt3j/s-l500.jpg",
+      "seller": {
+        "username": "worldofbooks08",
+        "reviews": 11900000,
+        "positive_feedback_in_percentage": 99.5
+      }
+    },
+    {
+      "title": "AUTOBIOGRAPHY OF A YOGI by Paramahansa Yogananda PAPERBACK 9780876120798",
+      "link": "https://www.ebay.co.uk/itm/297666359723?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=91920944&itmmeta=01M8DN7QZ71CFD664YJ0XY57GT&hash=item454e4c31ab:g:eKUAAeSwiwdpIKfj&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8tPPLmxRMbdrLPPTfoA%2FCnkjzsm4Z4yqVxVgpkGCM9Hg6oZKCAtQ%2Fg3hnkKqxXWZYcP9E4vUbgDBl40t14Lhu2ntehXge1Eh6fWr0Vs3C8UllDp%2Bu0UY2Jo1z7kmeOcg9I7iZ4OWTctohJFwIbeasUWnYMZAUYjw5EVJLqIQftuSr4Q1HcujWyexeK2RhusWhDcCVKF8UBnDoNVNtqrpb2pT7EVWtFVSCZ5nGnDk%2FW8Kg0xk%2FbYXqAcpB%2BkKni0ONVuF7fIyWsWcdR6hvFIOdKYUfWVbbcuNjMkAtLzXNGJMEqCkfTLvq%2Bm5MOYJ51kvZOvoIBkyADlE8AvOQayLaR%7Ctkp%3ABk9SR_r_nrXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=297666359723",
+      "product_id": "297666359723",
+      "epid": "91920944",
+      "condition": "Brand new",
+      "rating": 5.0,
+      "reviews": 12,
+      "price": {
+        "raw": "£9.47",
+        "extracted": 9.47
+      },
+      "old_price": {
+        "raw": "£9.99",
+        "extracted": 9.99,
+        "discount": "£9.47"
+      },
+      "shipping": "Free delivery",
+      "returns": "Free returns",
+      "promotion": "Save up to 5% with Multi-buy",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/eKUAAeSwiwdpIKfj/s-l500.jpg",
+      "seller": {
+        "username": "bookcurl",
+        "reviews": 42600,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "title": "Autobiography of a Yogi by Paramahansa Yogananda (Paperback Book)",
+      "link": "https://www.ebay.co.uk/itm/900080051783?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=12085470045&itmmeta=01M8DN7QZ7BR7H1QHMQCFNXYKM&hash=itemd190f3a647:g:~pwAAeSwxFtrBOoB&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2B8wmHb%2BayliLhrKi5tYXS6Qe4WpCiMs9jV9GjCIgbrtZicoFvN0dtoedjHdJFKHFJH646cywHVS29oU7lsq%2FuCAsK3vKik8kk8%2Fo02xDBssiodtsv1VNxxjx4iOyZbAmJt3E6ReZZEULF3lNPEgSgfvO4PeggFELpzrpkZSCoziqx0MbZWfQVgabcDik%2BI2%2B%2FQCDIaC69xEk5F7ZJRADMoThBlLOf4RTv%2FjPYbBnCXQDWv95k%2F5Xpy9x%2FUH%2BCiGlcpARiuuo3x57NBzPNOw%2BfLJaXziPhMshuz7BtIeTfXmw%3D%3D%7Ctkp%3ABk9SR_r_nrXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=900080051783",
+      "product_id": "900080051783",
+      "epid": "12085470045",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£9.69",
+        "extracted": 9.69
+      },
+      "shipping": "Free delivery in 3 days",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/~pwAAeSwxFtrBOoB/s-l500.jpg",
+      "seller": {
+        "username": "bookcorneruk",
+        "reviews": 126700,
+        "positive_feedback_in_percentage": 100
+      }
+    },
+    {
+      "title": "Autobiography of a Yogi by Paramahansa Yogananda, VERY GOOD",
+      "link": "https://www.ebay.co.uk/itm/377666047640?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&itmmeta=01M8DN7QZ7QX68GCT30ZETKEG8&hash=item57eea68e98:g:g8AAAeSwdVdrAiQv&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9xPLLwhqneJaGFQTJ%2BlM4sUR%2F%2BIWZWC2ueyJFaSYP3uGwuJOTeG%2B4hbntDMXhlbtmDShq3wVDVu9Dk59ZQTJ6yKkHr5B6Tk3NjuprB9Q6UyudTyjlNnDmA%2FIO%2BX3uM9iE85M1wRT2p2gumuh1fhQCLFx4FMECHuwM6Hdm%2FcR4qmtXHFmEa9K5Q73z4IjMsQFSQrcBw2l1%2Bq2dvGh6IwIH6lpVGr%2B9BQ9BvfztIha1iMDLdE5a9kwBSTw48MU%2FwDTI3dy%2BrL6%2FLgNQM3PY0S8mneKPxHomlNg0nd4nnOgtsZw1AOzxDdXaFfze1ixHZR%2FMT9nTmDy%2FaLvyh%2BulUlXbN%7Ctkp%3ABk9SR_r_nrXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=377666047640",
+      "product_id": "377666047640",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£8.02",
+        "extracted": 8.02
+      },
+      "shipping": "Free delivery",
+      "buying_format": "accepts_offers",
+      "buying_format_text": "or Best Offer",
+      "thumbnail": "https://i.ebayimg.com/images/g/g8AAAeSwdVdrAiQv/s-l500.jpg",
+      "seller": {
+        "username": "kugue111",
+        "reviews": 51,
+        "positive_feedback_in_percentage": 100
+      }
+    },
+    {
+      "title": "Paramahansa Yogananda Autobiography of A Yogi (Paperback)",
+      "subtitle": "Another great item from Rarewaves | Free delivery",
+      "link": "https://www.ebay.co.uk/itm/287267066503?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=212756015&itmmeta=01M8DN7QZ76550K3WAAV22GWGT&hash=item42e2739287:g:rsMAAeSwu2Nq2Uv4&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8scPWZFdSBjbCmcHcL%2Fa6IROcppoEtOTjnX2hGzAZmSA2F0RirftQ1B%2B7xIwqhonPMZMTyKYCOjzi08Ttf0QuHonLCKLei2PFn5yZd87jpmTxSlmV%2BfyvFx3ZffRMcFvPoHQQ%2FP6adWGDagFRLYskwRhRBjCPpVroShkVBCGHIp8fmo0n9YAa%2FEBRhUORuLDxzvEK6j%2BipkbTGae3tePQlwzY6vUK%2Bjtlfqb3mU4ZGnkUGSyJ0rVuRr91%2FS4T%2Be7HjV6NW2gpDXCxlb%2BvOZmUq05pNSgZfdukd4QTIpHh8PB0AeTa4xOfdTn3i4y0yoXWE0HiEWotPzFc1r8wbNBPA%7Ctkp%3ABk9SR_r_nrXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=287267066503",
+      "product_id": "287267066503",
+      "epid": "212756015",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£10.86",
+        "extracted": 10.86
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/rsMAAeSwu2Nq2Uv4/s-l500.jpg",
+      "seller": {
+        "username": "rarewaves-outlet",
+        "reviews": 1700000,
+        "positive_feedback_in_percentage": 98.8
+      }
+    },
+    {
+      "title": "Autobiography of A Yogi by Paramahansa Yogananda (Paperback Book)",
+      "link": "https://www.ebay.co.uk/itm/920160113833?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=28082693677&itmmeta=01M8DN7QZ77YBR4W4C96030WNT&hash=itemd63dd114a9:g:Q~oAAeSw~gBq~t~T&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2Ba7dlxQXEQ6tUgSbboRXFQwTq1r%2BdFrLnjxHkhglB5ErhsBxoCCB9ux6caxjxHgqLNjw3VDq%2FKWBa4%2FT%2F%2BCQ6Cd3DYal%2Bhk6gfL5kitF5MY86AzCgvr8PaW1xHascZEIINf5uA9WtYHvdALSZvTSsrAvaTPGVef%2BSEJqBYqhiCSASZrzrayntvFPQK8N1mffaZZGU7A9w4TmXThJ%2BSC64xBD%2B8UhecruBya0ijqEnuwVmbFZf22r4%2BntuQSLyfzErH073GxR72qJjlEw7FT%2B%2BvAPKu5wb27LKEnGFg2XTP2LaAAw8KXy%2FUeuDFizTaMFIbHCm4ExC2ospxdBzOpXLg%7Ctkp%3ABk9SR_r_nrXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=920160113833",
+      "product_id": "920160113833",
+      "epid": "28082693677",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£9.97",
+        "extracted": 9.97
+      },
+      "shipping": "Free delivery in 3 days",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/Q~oAAeSw~gBq~t~T/s-l500.jpg",
+      "seller": {
+        "username": "bookcorneruk",
+        "reviews": 126700,
+        "positive_feedback_in_percentage": 100
+      }
+    },
+    {
+      "title": "Autobiography of A Yogi (Hindi) by Paramahansa Yogananda (Paperback Book)",
+      "link": "https://www.ebay.co.uk/itm/920068834777?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=3082138670&itmmeta=01M8DN7QZ8HJVW98F410RJ9VX2&hash=itemd6386045d9:g:Ml8AAeSwN4xq6sV3&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2FMIk4apJ%2FGdq8TteuKFzlJBd9Y%2FpLwqkg3CBN%2FRr%2FPNlEUKoCB5K9YaO5jyEI3sXnuxyylkPwlO4hQE11NiGHRXXeBjGLmw9ktHjnZJUGJMnhnoyNAXNzFWsRQxC15YarX5HQeLjBBtgJlb2uokmCL9FZFEzAcE6FgQTQmrAM8Dajo6JQBhnqLPPX1f9kLvyCMSC3jrLpaVHITelkYdbAR500fxjSeDthVeTCBDsMn%2BPiNQgHbScjw8gc5gxFhySxiH0nUsdWiiM5jDLRzriki2v6IV81AOdFk%2F9bad1qsk2ktE5F%2F88lfmAX1qkprgKktz5BrLUgwhlMX0oRZ%2FWVm%7Ctkp%3ABk9SR_r_nrXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=920068834777",
+      "product_id": "920068834777",
+      "epid": "3082138670",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£9.27",
+        "extracted": 9.27
+      },
+      "shipping": "Free delivery in 3 days",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/Ml8AAeSwN4xq6sV3/s-l500.jpg",
+      "seller": {
+        "username": "bookcorneruk",
+        "reviews": 126700,
+        "positive_feedback_in_percentage": 100
+      }
+    },
+    {
+      "title": "Paramahansa Yogananda : Autobiography of a Yogi: Mass Market Pap Amazing Value",
+      "subtitle": "Great Prices & Quality from musicMagpie. 10m+ Feedbacks",
+      "link": "https://www.ebay.co.uk/itm/303271324484?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=91920944&itmmeta=01M8DN7QZ8E9AJGZ2V1MN8HH19&hash=item469c612b44:g:e2YAAOSwtGlZK4F3&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8vd5Q%2B5lLgBp8DrVdwe%2FIShxH2aw4FeByDlauI5fDsj19Sxa%2BMIuclqLlG4I7SPDi81L3oJCEGY1bTK0M0aY1IL8KpsFSFn1r8DJa%2BXr%2B7CuBlvYM5MZ6fc66GV7iVYB5rtoj45G1xfS47UKufHQKWIuYEIg4R6QT30G8hYPq0Us30YbHGEaMvkUuGbsFs0MxOFGb%2B8SQinZAcqdVuTDkgmESsYm1pFv7TiMMKaPCbPqLR0%2F3FhTaFTKD5fq9kRDBtke0AGPr08Ls20EJMk7zQihGmo21opHbOzdsfnHLXrpEwafmCFuNSK8X55yZC2xO2qFfGJTD1LTt4V2aZHmwU%7Ctkp%3ABk9SR_r_nrXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=303271324484",
+      "product_id": "303271324484",
+      "epid": "91920944",
+      "condition": "Pre-owned",
+      "rating": 5.0,
+      "reviews": 12,
+      "price": {
+        "raw": "£4.16",
+        "extracted": 4.16
+      },
+      "old_price": {
+        "raw": "£8.99",
+        "extracted": 8.99,
+        "discount": "£4.16"
+      },
+      "shipping": "Free delivery in 3 days",
+      "quantity_sold": "36 sold",
+      "extracted_quantity_sold": 36,
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "extensions": [
+        "Direct from musicMagpie"
+      ],
+      "thumbnail": "https://i.ebayimg.com/images/g/e2YAAOSwtGlZK4F3/s-l500.jpg",
+      "seller": {
+        "username": "musicmagpie",
+        "reviews": 14100000,
+        "positive_feedback_in_percentage": 99
+      }
+    },
+    {
+      "title": "Autobiography of a Yogi, Paramahansa Yogananda, Used; Good Book",
+      "link": "https://www.ebay.co.uk/itm/307296318939?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&itmmeta=01M8DN7QZ8FQJXTBQE7RZH9W1K&hash=item478c49b5db:g:X3kAAeSwCmVrCPGj&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9WRml%2FQRtfsLG%2Fk%2B0SIXcRR3TfbXCzO2z0Kvn23Tg7MnU2%2Fm7M9kgW%2BUpOEnQQAkcljKWrcjfy0GVOY4zlHMrmzbV1BPGTN7Z55klnuI4ZWivA19cfTNo7Xl5nvkFoJZ5gpPOD%2FWqIK2xRmIelJOKstmXSpkIy9aVc6SLhcNWvrSC301mBumxNVad7WBUEu65CWyiaRJPYLfdTm0KyYLxlQEvLXpco19X7ZQK0GUrM93I1ttTJPODgYpwRVzBbQWNxyaxs2GnX3%2BoQjcX9sllFXAXgtYY5FDpR96UZxcAbFG%2BNL%2FE4pjJIs29SZLqfzDYlHYf%2F3FbzX1TDmd9KCKIJ%7Ctkp%3ABk9SR_r_nrXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=307296318939",
+      "product_id": "307296318939",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£7.61",
+        "extracted": 7.61
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/X3kAAeSwCmVrCPGj/s-l500.jpg",
+      "seller": {
+        "username": "greener_books_london",
+        "reviews": 829500,
+        "positive_feedback_in_percentage": 99.5
+      }
+    },
+    {
+      "sponsored": true,
+      "title": "Autobiography of a Yogi Paramahansa Yogananda Deluxe 75th Anniversary Slipcase",
+      "link": "https://www.ebay.co.uk/itm/206728656645?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&itmmeta=01M8DN7QZ85JMCXQ34C2CCV18F&hash=item3021fcf705:g:L9YAAeSwVnNp55YE&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9TAH6%2F3zM8kpBnbLlISllqaJI%2BbIPfw8elNndF3aXvzOIdPE5tTDUa7ToC0rQ37UyC7ACthlF2hu%2BV1ATehYPacTGU2%2F7qoq5ob04vjRyw8M7beCVg3BXLO%2BDhEQc3Z5gcgLjU7n%2BRdktNlWybSAB7skbYTuWc8SfPDScGrZK2swqbCx7N9zbvU3TOGd33bJUwCOS5AW973XzHbJnofsXXF3o6tqc%2BaIVXCGYGyGvnK5nm2iXMc3DQBhSl%2FwQr5y3I7BF5OYWbcCrMqt3UZIhycianpgojITExFe4UBT7UGDzyWGUbaWrfxEGwYlxzWREM%2F1I8Mda%2BsIz2Hx%2BINT0P%7Ctkp%3ABFBM-v-etcNo",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=206728656645",
+      "product_id": "206728656645",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£29.00",
+        "extracted": 29.0
+      },
+      "shipping": {
+        "raw": "+£4.40 delivery",
+        "extracted": 4.4
+      },
+      "buying_format": "accepts_offers",
+      "buying_format_text": "or Best Offer",
+      "thumbnail": "https://i.ebayimg.com/images/g/L9YAAeSwVnNp55YE/s-l500.jpg",
+      "seller": {
+        "username": "pandora_jolies",
+        "reviews": 1300,
+        "positive_feedback_in_percentage": 99.7
+      }
+    },
+    {
+      "sponsored": true,
+      "title": "⭐️Autobiography of a Yogi⭐️By Paramahansa Yogananda⭐️ Paperback 1981",
+      "link": "https://www.ebay.co.uk/itm/137072344612?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&itmmeta=01M8DN7QZ80090ABWXZY4JKVK8&hash=item1fea25fe24:g:SJoAAeSwQ1tpn3yG&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8rGW6GMxS%2FMwerevwAUb9js9uxXpIWmo%2BqGJWTKWQPRnKwPrQWj6375Ji0BJOGyoZUjGRcJNkEasHLdGRBRlKwn1QswBlH2j3rJ87LsXyW3XaEKErFWzxWhDj%2FZ1BOWZHzYq1lB1NG8B1%2BaQDmtRp6vmUvbwVC8C25zjnlW9zaVWfQtLKw6kKNtY8ELhDCoSe3V8h68WOz8lkU1NR2wAXcBcNk0OrpG4fHFesPu%2BEOAr0odBtqUilGq3BBD293NnWB89QJbvYm%2B06otP3btr26shlG8s5xifFCd04rooQAiqZEr%2FIGl1z%2Bk2KcsivlQ7erD%2BE7r%2BlK3yj9URilammB%7Ctkp%3ABFBM-v-etcNo",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=137072344612",
+      "product_id": "137072344612",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£15.80",
+        "extracted": 15.8
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/SJoAAeSwQ1tpn3yG/s-l500.jpg",
+      "seller": {
+        "username": "alca_8047",
+        "reviews": 2900,
+        "positive_feedback_in_percentage": 100
+      }
+    },
+    {
+      "sponsored": true,
+      "title": "Paramahansa Yogananda Autobiography Of A Yogi 2014 Eng Prakash Book Depot",
+      "link": "https://www.ebay.co.uk/itm/267818553815?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&itmmeta=01M8DN7QZ9C2MP15ZKH8DZV48K&hash=item3e5b3ad1d7:g:SswAAeSwwhJq1wmf&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2FPB5KnYFzVvu7FebV3WJkgl60DO9As2W9FHMIIkuM1%2F41HYr3aw8%2FIU8AdQrT1iQ0toSa6XsYxxQeWbWU3aPyB5NC9FhcdXv79%2FBFiALEaRjjtx3wYcsCUltzXBfeZtY5ZX36YTjvb4C5K0t03C1%2BO0387Om979vZh17TqM07u9Abm5oLBkSdwmIfl8FYKQrEKw5sxm8BwCNnlEqOva1rGa9GzOieuiE3N9ZDb0UV3fxRZ75TXETNKWOZitsj%2B5UcLQkKLCwWqae%2BSJmEYLDKGYz0A3%2FmEEgz5Sg--sJQJ0fDZHRT64yecXmTDeOO3pHWR4bopcCKga3mBArY35OW0%7Ctkp%3ABFBM-v-etcNo",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=267818553815",
+      "product_id": "267818553815",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£10.75",
+        "extracted": 10.75
+      },
+      "shipping": "Free delivery",
+      "promotion": "£9.14 with coupon",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/SswAAeSwwhJq1wmf/s-l500.jpg",
+      "seller": {
+        "username": "old.books.library",
+        "reviews": 1500,
+        "positive_feedback_in_percentage": 100
+      }
+    },
+    {
+      "title": "Autobiography of a Yogi by Yogananda Paramahansa (Paperback Book)",
+      "link": "https://www.ebay.co.uk/itm/900122620825?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=8085917697&itmmeta=01M8DN7QZ9RCW02BCSR5EAKPY6&hash=itemd1937d3399:g:f3UAAeSwXuJrB8dC&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2BwZQ4yih7jk8ZBXyU%2FqSlqTcQE384bgD1ROHEzsj%2Bb%2FBCbiAwgfzNh3HBBb1kHNlXA0mtrrEE23QcDpzE1ZG1dbc1GRTwrUaZaadnbZmnDDcUJujkTBgV9QpxnA5eS%2Fym5RdAwMQv9y1gIDhPA3wsGaH2TysHfYnbVYOpo7jrnkl2cT7WY%2FJmEeBohxJmu%2BkAWaqHThncAX%2FtnxFjFO4kbmfHduzKbeRPLmVCPT6sx%2Fu2ynjmEmMRg%2FzjEdH6SaqSOM%2BmXKNRfjUowYi2uXzCHMShnc5s%2F6mO%2BYp3cr9mT1waz83Y%2B1%2FkeFkQyB3Tz%2F8ONzTpQqQJZ%2BKLnZCC6xgOM%7Ctkp%3ABk9SR_r_nrXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=900122620825",
+      "product_id": "900122620825",
+      "epid": "8085917697",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£13.03",
+        "extracted": 13.03
+      },
+      "shipping": "Free delivery in 3 days",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/f3UAAeSwXuJrB8dC/s-l500.jpg",
+      "seller": {
+        "username": "bookcorneruk",
+        "reviews": 126700,
+        "positive_feedback_in_percentage": 100
+      }
+    },
+    {
+      "title": "Autobiography of a Yogi, Paramahansa Yogananda, H",
+      "link": "https://www.ebay.co.uk/itm/376745594000?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=19084540534&itmmeta=01M8DN7QZ96AY08MZ4C8RCZGS3&hash=item57b7c98c90:g:fsEAAeSwGk9qo0mW&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9P0kNpVlNx0h1%2FvkKzSGbof23SxpQGwgYO5xjGQmKrs6nVjxlgCei%2FsGjmo1GOKqu3SDDOLa6LkG0vfecIjQ0Bc5YejonPrQUdrQUPugk2xeNA8Mx4FZPX%2FPlksmhF%2Feg09fj0%2FFqYJWnz%2FCOV8I9aCQUd972CVIwNyLUbW%2F2lUJcUS5QVpoyLM63r06K0T61iTV%2BQsIH93tG0ejDj8VtjkjSGfnAI301HXo1yyR0UAjwkOHynL22sEcu%2BpFiZ%2BZkI0d1juKosPRSSezS7Ua5q3Z9mfNHisrsGG4uw7VIUZEwUYfWnL4EivEHJrFoYpo0nVNjQfZoluQHLxQNe0845%7Ctkp%3ABk9SR_r_nrXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=376745594000",
+      "product_id": "376745594000",
+      "epid": "19084540534",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£14.92",
+        "extracted": 14.92
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/fsEAAeSwGk9qo0mW/s-l500.jpg",
+      "seller": {
+        "username": "pbshop.store",
+        "reviews": 313100,
+        "positive_feedback_in_percentage": 99.3
+      }
+    },
+    {
+      "title": "Autobiography of a Yogi, Yogananda, Paramahansa",
+      "subtitle": "Free UK Delivery | 10m Happy Customers | Trusted Seller",
+      "link": "https://www.ebay.co.uk/itm/398254557325?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&itmmeta=01M8DN7QZ9MZMA47206DYB1PEX&hash=item5cb9d2488d:g:D1oAAeSw371qc8z8&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2FupHOy76cp6vGPnzAeNW8nW6%2Fdzpn3LS4vyI%2BrFdqS8VzEd1KYroRfzjyrOLtoyGHxN1uglrQM2aN4nr40PO%2FkiY4bXK0ZNB0OfDswEoXH%2F0bGUE7pExNpkQ9nqMtprKsvG%2B%2FP%2FDliqr5Yg4POZAX6wH%2BQJqQXSeUXp%2FNP3y1fPvSZYce1ouaRHq1W2m%2BOyJB8t2EUmkIeaOqJDxSyIIBRKoNQ%2Fe%2FTJyIftAJZa35lwbR4OlDECsnAAvvBdomx%2BTPnpvuM5kxBWzziSfui2LFIRw7k6IgSVzw45MFJ0%2BcFNw%3D%3D%7Ctkp%3ABk9SR_z_nrXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=398254557325",
+      "product_id": "398254557325",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£9.14",
+        "extracted": 9.14
+      },
+      "shipping": "Free delivery in 3 days",
+      "promotion": "Buy 2, get 1 20% off",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "extensions": [
+        "Direct from World of Books"
+      ],
+      "thumbnail": "https://i.ebayimg.com/images/g/D1oAAeSw371qc8z8/s-l500.jpg",
+      "seller": {
+        "username": "worldofbooks08",
+        "reviews": 11900000,
+        "positive_feedback_in_percentage": 99.5
+      }
+    },
+    {
+      "title": "Autobiography Of A Yogi by Yogananda Paperback Book The Cheap Fast Free Post",
+      "subtitle": "Free UK Delivery | 10m Happy Customers | Trusted Seller",
+      "link": "https://www.ebay.co.uk/itm/142047899588?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&itmmeta=01M8DN7QZ9FK0FRJBXN7P3QBCW&hash=item2112b6efc4:g:ylcAAeSwBYJpMt-O&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2FBE5nLfP3853P88lAsZ9HxxAaIik2Whxv959IA5vaWlQ7BuJ5WyiOlOqi%2BdKCGKqY0Pl77zmOds467Tfd2tiLIcpDe897Q%2BVuQC23l2CTbb7%2FsgkT%2FGFhJ%2FNAtfxHWqcF6X3JLh5I66yQVGYMS%2FbWlLG12QlMxFQYxVeUzy7X6EFCvnFbhwMEuviOU3CkAiIv2ZOcHCl7eCVaP%2FGqoX1UVyTLDB%2BpUiklAuMMwSo0Z1AQwtDghotcOVFB6T8m9vzIwBhARZhkvuFvQvNd3zHk4Tm%2BhBmdnuDo96islc0NTtQ%3D%3D%7Ctkp%3ABk9SR_z_nrXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=142047899588",
+      "product_id": "142047899588",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£9.14",
+        "extracted": 9.14
+      },
+      "old_price": {
+        "raw": "£12.99",
+        "extracted": 12.99,
+        "discount": "£9.14"
+      },
+      "shipping": "Free delivery in 3 days",
+      "quantity_sold": "113 sold",
+      "extracted_quantity_sold": 113,
+      "promotion": "Buy 2, get 1 20% off",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "extensions": [
+        "Direct from World of Books"
+      ],
+      "thumbnail": "https://i.ebayimg.com/images/g/ylcAAeSwBYJpMt-O/s-l500.jpg",
+      "seller": {
+        "username": "worldofbooks08",
+        "reviews": 11900000,
+        "positive_feedback_in_percentage": 99.5
+      }
+    },
+    {
+      "title": "Autobiography of a Yogi by Yogananda, Paramahansa Paperback Book The Cheap Fast",
+      "subtitle": "Free UK Delivery | 10m Happy Customers | Trusted Seller",
+      "link": "https://www.ebay.co.uk/itm/393423312097?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=91943954&itmmeta=01M8DN7QZ9KTRNMESY78ZTP623&hash=item5b99db54e1:g:37gAAeSwSVVpQauJ&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9g1Mwhurg6Yie7QFbOK2TrzrNJieADJYwS3zAqUCQ0C3veB4gVdIhdcIRJNpOTsR9lBncywOi4kidqzKluMHSq%2Ffb3PDVmGcc2Hzqq21IJgdgbTA4F1fs0dkSA%2Bwf5UdW3sNk%2FKA51H96ldPEEtpJ%2BA4Um1sK1w8IrrG3t4CwSDrJZIxb3pU21vxsat0a6Vg7efyVG0tMuEEFCeZF%2FEPX%2Ff0dnCDnAZr%2BdyqzZBGu0hjEHTiughZ6BOYAPcdSo23G2BECJVWvRbApNBCg5HeGu2ZGxFvcsRgJY68ChUeCeHfxmzMJ3i7jPNOOUQ3hAdM8HTkTC0iyvrTrE7XzFp%2FIY%7Ctkp%3ABk9SR_z_nrXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=393423312097",
+      "product_id": "393423312097",
+      "epid": "91943954",
+      "condition": "Pre-owned",
+      "rating": 3.5,
+      "reviews": 3,
+      "price": {
+        "raw": "£17.31",
+        "extracted": 17.31
+      },
+      "shipping": "Free delivery in 3 days",
+      "quantity_sold": "26 sold",
+      "extracted_quantity_sold": 26,
+      "promotion": "Buy 2, get 1 20% off",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "extensions": [
+        "Direct from World of Books"
+      ],
+      "thumbnail": "https://i.ebayimg.com/images/g/37gAAeSwSVVpQauJ/s-l500.jpg",
+      "seller": {
+        "username": "worldofbooks08",
+        "reviews": 11900000,
+        "positive_feedback_in_percentage": 99.5
+      }
+    },
+    {
+      "title": "Autobiography of a Yogi by Paramahansa Yogananda (\"Vintage\" paperback, 1969)",
+      "link": "https://www.ebay.co.uk/itm/880082824118?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=87368205&itmmeta=01M8DN7QZ9VJQ440Z2CXB4YGSB&hash=itemcce9062bb6:g:9gcAAeSwjetq610l&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2BoXcj1M8fMGPhNQkCPSGy6pQIvHaj7%2B%2Fog3y6%2B6P3UMUS81PtwgASZvM3x79JHgcLuI6svXO3Y0Mqmxa%2BFR%2B6H56W35t%2F6QkAuWxd6QucL4zpJWGfI%2F2Wm1RQLHgjpfe75lra5Z0JdMMrY683UR%2BUpDWAwA4SNHLWWPS74dOuKLJmNTXsZ%2FCuQhcTbWCCz1DDBiCQex5CpiZfl2Bxubp%2BdA60gtU6zX1Xgme11292dZHuLxPOehAgVZNpi8WP62IHNPbPTQ9bMQqhEyVJn0P6clbccsosaIDt225lxKekihA%3D%3D%7Ctkp%3ABk9SR_z_nrXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=880082824118",
+      "product_id": "880082824118",
+      "epid": "87368205",
+      "condition": "Pre-owned",
+      "rating": 4.0,
+      "reviews": 1,
+      "price": {
+        "raw": "£10.03",
+        "extracted": 10.03
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/9gcAAeSwjetq610l/s-l500.jpg",
+      "seller": {
+        "username": "ok_deals_2rl",
+        "reviews": 639,
+        "positive_feedback_in_percentage": 100
+      }
+    },
+    {
+      "title": "Autobiography of a Yogi by Paramahansa Yogananda (Tamil) PAPERBACK 9788194898856",
+      "link": "https://www.ebay.co.uk/itm/406295402704?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=23093681076&itmmeta=01M8DN7QZA211T2HZ8HQWAY4WN&hash=item5e9917d8d0:g:lFMAAeSweRNpIMfT&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9yJi6BRZNbn%2B4tk0%2BpkPOtX17j6at4JUIu%2BjRpmm00XO4SzSJ3ElI3NGjFCLitPZRamZ%2BOdMMYOPgiIPFd%2BMjtILmv1bFH1q2CEbyEcTQFdpxt3MyS6NhtntHpiulEYr3KbaZtpLRSPoPQlcXp8hZ5DnlCtnMkhZdEUO6OmcHM4cz5k1b%2F77qOGwR3QN0s4HeFHOgpV3e3ECw7Gx04ufrmfk23xlBa%2Fi4oZzNUF7e27Z6S0Be%2BGkkzaUzWboe9wwOHOa9rggfEZBGHgIWh%2BrnLzTEdLqOuUFJ3K8aYJELZPTm%2FVPKgj9pqspTMfa8wkO88Vj%2BNBmlbXC2hMbZiAXjV%7Ctkp%3ABk9SR_z_nrXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=406295402704",
+      "product_id": "406295402704",
+      "epid": "23093681076",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£10.34",
+        "extracted": 10.34
+      },
+      "shipping": "Free delivery in 3 days",
+      "returns": "Free returns",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/lFMAAeSweRNpIMfT/s-l500.jpg",
+      "seller": {
+        "username": "bookcurl",
+        "reviews": 42600,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "title": "Autobiography of A Yogi (Tamil) by Paramahansa Yogananda (Paperback Book)",
+      "link": "https://www.ebay.co.uk/itm/920053898533?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=23093681076&itmmeta=01M8DN7QZAN4E0TBCBX11G9RDX&hash=itemd6377c5d25:g:G7MAAeSwN1trBO3T&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8%2FksIJn9dl1DXy3iAvTTLHC7%2FLaFO7F4qs7QmKYKO2ta%2BJRbO0IEIwFvY1hjNBmGan3KX3WAWb5ZvVADV2jLX8B3JsfuOjvcQg9knP2VUE8YasKvGJ7STiPszsahv96tz5%2BIJaJtqpmfX7TdlHNhyqNtElVsK4TPH6DGFiI4JPnsTfqmoO5ELxWVf%2FNhKxrWzbnv4xnPhNN56Qu15HgWwVcoQYlusJZNaOMxIsHlZTRp4dc4Tk4s3ogwRX7Lp1GL2sWTRi4xVxmOuruN3cvmjhuiBC8HNUwO4OEouSfq9H7BMGJGOkMSp5bYHOAMwJ18NdU17Sbya%2BYJuhIUG%2BBlrN%7Ctkp%3ABk9SR_z_nrXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=920053898533",
+      "product_id": "920053898533",
+      "epid": "23093681076",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£9.97",
+        "extracted": 9.97
+      },
+      "shipping": "Free delivery in 3 days",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/G7MAAeSwN1trBO3T/s-l500.jpg",
+      "seller": {
+        "username": "bookcorneruk",
+        "reviews": 126700,
+        "positive_feedback_in_percentage": 100
+      }
+    },
+    {
+      "title": "Autobiography of A Yogi by Paramahansa Yogananda Paperback Book",
+      "link": "https://www.ebay.co.uk/itm/800918319003?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=212756015&itmmeta=01M8DN7QZARETZEAZ3ZRF0P4TT&hash=itemba7a73af9b:g:nkAAAeSwKHFrBpzv&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2BzsqNxBQ8jhPpC7wQQuwGEZA0kAiqlq6BS9vQ%2FddiOys7Q6pfjKpBr%2FAVfjD%2BjDjmJhX0we771FSMfAH6Qf7lb1Jx0X70JseumL1CKBGBLryhovzI4O%2BWdkq5P0kW4UkG1nGTLZVRhqr19IorcxRpCcqnTFCibWWzzMAKrBfo298MfPiAlIdcvg0LTVwoCk5PLtOiY5PtFFqlR0rvKM%2FfavYUyND8Rc6Yk%2FOMPkDEXz%2Fq5UIB6OpPRDQBG%2F7rbjwjgmlUnYMh7z8ALpHvWkJx5Q7rjOveVeNg6wDYzfL2bizxaZPRax%2FPKozZOKINwVa0uy6ggISaMVHOV7QG%2BOPEK%7Ctkp%3ABk9SR_z_nrXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=800918319003",
+      "product_id": "800918319003",
+      "epid": "212756015",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£9.62",
+        "extracted": 9.62
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/nkAAAeSwKHFrBpzv/s-l500.jpg",
+      "seller": {
+        "username": "the_nile_uk_store",
+        "reviews": 121700,
+        "positive_feedback_in_percentage": 99.7
+      }
+    },
+    {
+      "title": "Paramahansa Yogananda Autobiography of a Yogi (Hardback) New",
+      "link": "https://www.ebay.co.uk/itm/198797314316?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=202194467&itmmeta=01M8DN7QZA3XCZC7QHY4WNP0DD&hash=item2e493e490c:g:0RIAAOSw-z9Zx6aZ&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2FLR9b6BSgV9Ha0FYH6qsWxc52pIt3xpbynGIrs7kThVoxg5dyC7YBj7Ae%2B9P0livKkhKwV4sm0q%2FT%2FygiklEuNtfW0Ibyof751o7Ll9Xr9fKnW8YrLxqIkKkSmfrmqpbD9GOQHKEXOayaR5sQPrIyFxH16%2FrKJbdRVCp6Cvbfi9TaMGB3RSFz5feNQydMA5nWKOhKe7LcK4RLAfYx5iD3hb0mB5BkZ2H2wv1Vn7waBXhpIEblY5GOwQcRXqk2AeOh5xoH9jCnpw%2FKo0t1rAMzLLD%2FKFUb5vpfVnwJIpW8FaSjvpEiaVdHmmRXhVuykk6jU9my%2BjIlIvoyGhmBLJ1rs%7Ctkp%3ABk9SR_z_nrXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=198797314316",
+      "product_id": "198797314316",
+      "epid": "202194467",
+      "condition": "New (other)",
+      "price": {
+        "raw": "£36.75",
+        "extracted": 36.75
+      },
+      "shipping": "Free delivery",
+      "buying_format": "accepts_offers",
+      "buying_format_text": "or Best Offer",
+      "thumbnail": "https://i.ebayimg.com/images/g/0RIAAOSw-z9Zx6aZ/s-l500.jpg",
+      "seller": {
+        "username": "jaytrader369",
+        "reviews": 1600,
+        "positive_feedback_in_percentage": 100
+      }
+    },
+    {
+      "title": "Autobiography of a Yogi - Paperback NEW Yogananda, Para 2006-05-01",
+      "link": "https://www.ebay.co.uk/itm/144314101527?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=91920944&itmmeta=01M8DN7QZAPPMDFWD44BWSC5AQ&hash=item2199ca6f17:g:67wAAOSwRnRniXmw&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2FcpPVAnr8UKQ300MK7XPYJ1HvB4%2FQIP%2Bm%2Fi2igTR1GuLuXql12wUonr%2Bz0%2F6XR0qKftAiBRoSuyoms4BAt26jN9mF0hcTUi3RS4%2Fm%2Fe7mk1AvtB5Vwx5%2BAoBGrLQBH2AoVqKlASy54u0vC343cJnQGMBeK7m3WhM1YSdWhXn5%2Fyl0yU1g9yo0h662jvyHZQDNl%2FZrJ0RLDKyVd0kjWtXoVpMtxTrTi0O8Kvb0ihI6vvvzWSlZXLqcYqlIuLkJZtqCcRGrPjl0kknFh4%2FVf3bsLKZVLA1XhRa2LdNpDvtn86FcyhkX0nrXpe0FHld0%2Bjo7jweT2pnaNR%2FrAQbNmRCFG%7Ctkp%3ABk9SR_z_nrXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=144314101527",
+      "product_id": "144314101527",
+      "epid": "91920944",
+      "condition": "Brand new",
+      "rating": 5.0,
+      "reviews": 12,
+      "price": {
+        "raw": "£9.99",
+        "extracted": 9.99
+      },
+      "shipping": "Free delivery",
+      "quantity_sold": "25 sold",
+      "extracted_quantity_sold": 25,
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/67wAAOSwRnRniXmw/s-l500.jpg",
+      "seller": {
+        "username": "buyitnowbooksoz2010",
+        "reviews": 413500,
+        "positive_feedback_in_percentage": 99.6
+      }
+    },
+    {
+      "title": "Autobiography of a Yogi by Paramahansa Yogananda (2019, Trade Paperback)",
+      "link": "https://www.ebay.co.uk/itm/358346573123?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=3082138670&itmmeta=01M8DN7QZA85YKNE93NDT5QDR0&hash=item536f1ec543:i:358346573123&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2BNiCAsK%2FDhaGpdVETDq9FiV3UVNmn1Lhlzdmy4IRPrvqtjKUmCdt9buYU0%2FrlCgkXauVwvvlN3ATpx60C3Wnyff9suVXI2epPuZbhByXO3dmIDuBC1U5WW013WvDIENGBL4bU9gSz4IO5Yww3q8VFPA%2BaSVUEUDZCaAas4PapDZx9jKrfpar9l2QF5wlCf7cEehZ0wKAmanZHAOctzc4%2F6bkWSWo3gU1o%2Fg1CXT%2FD2RY5vVgUifu3jWdveswefJFWST8uIlDSsNs6aGJtb9vVWZi6UuFcAcwQtWZFmQIYGfQ%3D%3D%7Ctkp%3ABk9SR_z_nrXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=358346573123",
+      "product_id": "358346573123",
+      "epid": "3082138670",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£10.75",
+        "extracted": 10.75
+      },
+      "shipping": "Free delivery in 3 days",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://secureir.ebaystatic.com/pictures/aw/pics/stockimage1.jpg",
+      "seller": {
+        "username": "speedyhenuk",
+        "reviews": 1700000,
+        "positive_feedback_in_percentage": 99.9
+      }
+    },
+    {
+      "sponsored": true,
+      "title": "Jogo autobiografija (Autobiography of a Yogi) L, Yogananda, Paramahansa<-",
+      "link": "https://www.ebay.co.uk/itm/306315000631?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=223160964&itmmeta=01M8DN7QZAG236SPNNH5DBAAXA&hash=item4751cbfb37:g:aRYAAeSwmIdoLvv5&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8F7EVnSOLNZszC%2FQS0vTsqek9au%2BU7aVWzEaeFc143Pw73dreyXXev6rmdovTrpLZuR44q%2FFFN%2FHhmfDlNo%2BGoHeqevOsyeJ%2FcdkmcKU%2Fjs%2FosUN%2FliOLeUUkODW6J7FbYhYR4WSCSBKXbZ8YArxnr%2F9TT%2BXVQgwdAilg8zX5IF1GlQlBHehbvXyHByrByQmEaBwO586t8vtGb4G%2BqIeSPhH8shWXTSGvx4cEtFxE5WZ3E1zqDNnbRFiiAOaqE%2FzdilxgKeI5InMVLvb%2BhyE7Fq6MV3yMApnsclWvdBuDBSafAh3I9AijONHXW9Rcp9zEX1WIWUtqc6i9icMtT%2BZya%7Ctkp%3ABFBM_P-etcNo",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=306315000631",
+      "product_id": "306315000631",
+      "epid": "223160964",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£18.86",
+        "extracted": 18.86
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/aRYAAeSwmIdoLvv5/s-l500.jpg",
+      "seller": {
+        "username": "baham_books",
+        "reviews": 3600000,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "sponsored": true,
+      "title": "Autobiography of a Yogi: Reprint of the Phi... by Yogananda, Paramahan Paperback",
+      "subtitle": "Free UK Delivery | 10m Happy Customers | Trusted Seller",
+      "link": "https://www.ebay.co.uk/itm/303968162725?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=88350431&itmmeta=01M8DN7QZA9KFMVT4BNYT8AHT3&hash=item46c5ea13a5:g:sQkAAeSw~GdpOlHR&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2FoN85E4Jrgm1PWexByTQWkLHwF5HSNV4VvQ3pKGYQFBtDV0SKVcv5Dpj%2Fc99K0pReWcdoDKBsG3IxKx0KSHltQnow%2B460MZKt0nRSiP8IpHk3N0M8CPqRaDSpLWKYg7I00pt9HiqloUC5YbK25cIZQmXx8QP1bz%2Fkr33130oKi9cZs%2BPiEmOlVNBv%2FCQdpugGHoMGnU45P8zE0yeenF8lm8N9PgVuXKzY%2FOH5KnoXAnSs5g9CrNcF2hHPK%2Fgjwn7UgNqEDyhuPLwat8HSECYQXcSgnOMmtytBLkWtRJTSqlSeGNxrTcCF7IibQyXJ2nijaT%2BBagX8hwVXItv%2FndUXq%7Ctkp%3ABFBM_P-etcNo",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=303968162725",
+      "product_id": "303968162725",
+      "epid": "88350431",
+      "condition": "Pre-owned",
+      "rating": 5.0,
+      "reviews": 1,
+      "price": {
+        "raw": "£17.99",
+        "extracted": 17.99
+      },
+      "shipping": "Free delivery in 3 days",
+      "watchers": "3 watchers",
+      "extracted_watchers": 3,
+      "promotion": "Buy 2, get 1 20% off",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "extensions": [
+        "Direct from World of Books"
+      ],
+      "thumbnail": "https://i.ebayimg.com/images/g/sQkAAeSw~GdpOlHR/s-l500.jpg",
+      "seller": {
+        "username": "worldofbooks08",
+        "reviews": 11900000,
+        "positive_feedback_in_percentage": 99.5
+      }
+    },
+    {
+      "sponsored": true,
+      "title": "Autobiography of a Yogi,Paramahansa Yogananda- 9788120818941",
+      "link": "https://www.ebay.co.uk/itm/137152708877?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=19084540534&itmmeta=01M8DN7QZBRN2RPN02K5FWN87E&hash=item1feef0410d:g:3zIAAeSw9gJpvgp~&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9lkwE0cso8G9VjoW4pG01TS1LFYx1y7YgsjxxfHuetR6ZqBLIrI1itbVf611ruN07jHC3cyikGYGiCHsibK5tu1bI0hmKE386bymX2%2B5FiiOiGU490bIpJx%2FtZ2jBBGwQHZZYKZ0QJipZgCf6mtMkfulmtnT5DlAToNhIVPCEEELK1s4L8WdYcmds2wJKw8Bbx8mXDXV1nlR%2B1ivYYZK%2BhBs0zecv3%2BVZKZ7TW0e6UKg%2BqT%2BuiCGZgS0pPFg71u7L2BxS1zfj4hFBfh%2BOY4se6sfwo9b3G2EcFY2lvxiXOab%2BLjN%2FDdsV7wNw62ZwYLi--rufInbiQQlvjEmb1qQjc%7Ctkp%3ABFBM_P-etcNo",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=137152708877",
+      "product_id": "137152708877",
+      "epid": "19084540534",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£14.87",
+        "extracted": 14.87
+      },
+      "shipping": "Free delivery in 3 days",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/3zIAAeSw9gJpvgp~/s-l500.jpg",
+      "seller": {
+        "username": "cmedia_group",
+        "reviews": 1600000,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "sponsored": true,
+      "title": "Autobiography of a Yogi - PB - (Swedish) by Yogananda, Paramahansa New<-",
+      "link": "https://www.ebay.co.uk/itm/306314968943?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=179741008&itmmeta=01M8DN7QZBX2G1AQ3T3HF1P2NH&hash=item4751cb7f6f:g:WjgAAeSwtLRoLvp6&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8NUIdDSCLeprewzCcSDum2GTTTPJPk7IONtgOpdsfyciFXCcUkVjsdlpRUkTpp4U6cQnNFvKPKNxv%2BSKOGaBqsq8x0%2FSsXDcJAc%2FOQv0DTlimwYjHBjBbLPBoNJR3gHZL%2F5RiKrutWAQ%2BCdaknD4zB316snx6hyeXNo9gmUhpBQilkCDnaNWgCW9bKLGYACWXcgzsU4Oj3X0TSVcVg42nlbcy0QNfOAOEtWU%2FH1l1WwUsOqIbdtvZXRQRStXU7cFUE2OXwsw4Gm8Htys9xtTUaWiA9BPqpDs1I485ueBNHPRRfmTHycqwIIdHrD%2Bk2uE3Wy5UPZiOBJV6FpsYTgOeK%7Ctkp%3ABFBM_P-etcNo",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=306314968943",
+      "product_id": "306314968943",
+      "epid": "179741008",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£19.06",
+        "extracted": 19.06
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/WjgAAeSwtLRoLvp6/s-l500.jpg",
+      "seller": {
+        "username": "baham_books",
+        "reviews": 3600000,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "title": "Paramahansa Yogananda: Autobiography of a Yogi 1991 Very Good Hindu Kriya Yoga P",
+      "link": "https://www.ebay.co.uk/itm/327476496481?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&itmmeta=01M8DN7QZBJMTJGDMS0BDFPGZM&hash=item4c3f1ec861:g:9FgAAeSwLSdrBwei&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2BlTMbbI%2BT9bJmigoaaSKN7QENlFZcWlhqoVXpF1%2BxGPLGTl3VTTX2NI4XeeYvZaC5kjZ5xLKP%2Fsn4261wRHDtk0j2OcY%2FfALTRAtWyWtFj%2FiuOS2krDyj1QCiArjxN31c1e2LGY1%2BBaJgCqePOXv%2BfSDV4TWYKavgn3zZiyO6GaJmfypzee8Hem8L%2FuEfCVuCwMr75v6%2FCCH0xobCov26qVt4npTTefqOLRLABkDJ7ZoDoLCTwJsW0avQo%2FUMEW5ui7OW%2BdV3rGXnBTmb3fBu1I9Uu4Rr%2FubTBA%2BfOPVhW8qiyqjriBqLQOgWwlXbhWw0xfyX3bxm5f7WTvqz1gGc8%7Ctkp%3ABk9SR_z_nrXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=327476496481",
+      "product_id": "327476496481",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£6.00",
+        "extracted": 6.0
+      },
+      "shipping": {
+        "raw": "+£3.00 delivery",
+        "extracted": 3.0
+      },
+      "buying_format": "accepts_offers",
+      "buying_format_text": "or Best Offer",
+      "thumbnail": "https://i.ebayimg.com/images/g/9FgAAeSwLSdrBwei/s-l500.jpg",
+      "seller": {
+        "username": "dreadnought_books",
+        "reviews": 10600,
+        "positive_feedback_in_percentage": 100
+      }
+    },
+    {
+      "title": "Autobiography of a Yogi by Paramahansa Yogananda PB Complete Ed Preface",
+      "link": "https://www.ebay.co.uk/itm/366827454469?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&itmmeta=01M8DN7QZBF60AXNSA21HVPC73&hash=item55689ec005:g:3ZUAAeSwhT9rAYPs&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2FgAiO4l6tWGbZSK6Dt5WOnLwmoMNwQEFR%2FpkWkLvR09DmMxI3fxbVphsK%2FCJRavl3XCNMjdzjFAZZJij7jlI5TfZ12ALrltxceb2COy%2F2F2BK0kQNneYIg7AjrZE9YuhetCFncO5LuEPw8Hdtk9hwAdcuSij0AfIedWu1VLWbAG7gj0eCppk%2F6Pz4VTJSkXLAnFf5n60j5Q6LEbZat%2Ba8nJyKhb3gGwvw82BTcvmdgDwPZ9Fvr7PTx63UVKcoV9KXE7JMIDQAUvsHqwEVzVQW%2BKB7X7ilTtKNYg2hujkD12A%3D%3D%7Ctkp%3ABk9SR_z_nrXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=366827454469",
+      "product_id": "366827454469",
+      "condition": "New (other)",
+      "price": {
+        "raw": "£15.96",
+        "extracted": 15.96
+      },
+      "shipping": {
+        "raw": "+£2.94 delivery",
+        "extracted": 2.94
+      },
+      "buying_format": "accepts_offers",
+      "buying_format_text": "or Best Offer",
+      "thumbnail": "https://i.ebayimg.com/images/g/3ZUAAeSwhT9rAYPs/s-l500.jpg",
+      "seller": {
+        "username": "nichir_35",
+        "reviews": 85,
+        "positive_feedback_in_percentage": 100
+      }
+    },
+    {
+      "title": "Autobiography of a Yogi by Paramahansa Yogananda - Good",
+      "link": "https://www.ebay.co.uk/itm/287737094103?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&itmmeta=01M8DN7QZB6JDVPVTQYXHNSGW6&hash=item42fe779fd7:i:287737094103&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2BAQ77J7rqQGfvfbAs8%2Frp%2Bv4i%2B79wL2fU%2BXyLBFiTetTym7D5uXSVTYVoLyjNQe9ssTDKKTpsv9WHWCAf6%2BTIfEiOi%2FIv0eLORU4uXir%2FUgYCXJhK3x%2B3OJig4gxt%2B9JQsg02oyqm5LOfwhc%2BeqJ6gKGTj4v4NK695IS81%2FB42O4D43XYlNduALYpF3VZd4LLBt%2FIjVTwfUNXiHvYbEhHOX5yq1GQf48LfkIrhFKHdLmyIvJGrsfzcI03YHYqD%2FDVMbZz5F1soANn5BEIgMX80Sr6SjJY2NKokow%2FH2iC47TYWRMP9%2Fbt%2BIPgjc966Jh26ZT01hpSVK5cPLofHCz87%7Ctkp%3ABk9SR_z_nrXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=287737094103",
+      "product_id": "287737094103",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£9.11",
+        "extracted": 9.11
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://secureir.ebaystatic.com/pictures/aw/pics/stockimage1.jpg",
+      "seller": {
+        "username": "sellbookslimited",
+        "reviews": 25100,
+        "positive_feedback_in_percentage": 99.3
+      }
+    },
+    {
+      "title": "Autobiography of a Yogi - Deluxe 75th Anniversary Editi - Hardback NEW Yogananda",
+      "link": "https://www.ebay.co.uk/itm/354649885408?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&itmmeta=01M8DN7QZBCQT3NKHZXA38E6CY&hash=item5292c7cae0:g:K0IAAOSw1N5njnsk&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2BhH%2BeRJQxqIFMHb6J4PTKPKuzuy1SquycFVfa%2BCGHyNCydPaTFikp0tJ3O5tYlblYINoxytpUNHf%2F3H0%2FXXWb%2BLH4A5xOKena2ojbXF%2BIoL8c8gSA23M%2FnTaIMcMvkEVA3XjNeF11n0QwuUbUkrYvPSrditNnrAqa%2BlavYomkEBb2%2F4VQbQs5IKmqzL2gXxUn9w2H1WPIQf%2BEMeEqtg6DEYzdQQXrTFjujbJiZpzOpHmLeGzpQzhnqMnD09KsQ6tTDNfEARO9c%2B6hnRysT%2BnKoyyMa8mpBoh0i4zP07HE8WA%3D%3D%7Ctkp%3ABk9SR_z_nrXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=354649885408",
+      "product_id": "354649885408",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£32.09",
+        "extracted": 32.09
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/K0IAAOSw1N5njnsk/s-l500.jpg",
+      "seller": {
+        "username": "buyitnowbooksoz2010",
+        "reviews": 413500,
+        "positive_feedback_in_percentage": 99.6
+      }
+    },
+    {
+      "title": "Paramahansa Yogananda Autobiography Of A Yogi 2014 Eng Prakash Book Depot",
+      "link": "https://www.ebay.co.uk/itm/820353741513?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&itmmeta=01M8DN7QZCF6MEM0TW0VPM9RQD&hash=itembf00e4b2c9:g:MhEAAeSwOmhq-Ds7&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde8YB4Tjh0hhaFQyvNKTwmf4NmloopL%2BI%2F7o09kkuM0c%2FlZiL7x%2FTh8ex%2Ba88sbxy%2Fj1rM74pl9evBA4QA%2BoKNeTW59nQYhyOEVLaI0LN%2BFmF%2BgsQWAbcPBTyZVZIXod%2Fa0gky%2FjYZzc6m%2BgoIlox%2BnGlXgxdGN8sY1Cga97VGg9gNLxLSLAZofXxOJ%2Fmz3tRvoysVSpnKjp%2BWM%2BGi92pH7BSIR2mfqzvW9GHh2KHcTJd6VhMkbt48vcUxEX3i%2BM1J31f8ZejmhLZrXXAqkQZDXeBZN4vw2Yan8ljPuIbeQKKA%3D%3D%7Ctkp%3ABk9SR_7_nrXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=820353741513",
+      "product_id": "820353741513",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£8.54",
+        "extracted": 8.54
+      },
+      "shipping": {
+        "raw": "+£2.94 delivery",
+        "extracted": 2.94
+      },
+      "buying_format": "accepts_offers",
+      "buying_format_text": "or Best Offer",
+      "thumbnail": "https://i.ebayimg.com/images/g/MhEAAeSwOmhq-Ds7/s-l500.jpg",
+      "seller": {
+        "username": "sahfasil_0",
+        "reviews": 8,
+        "positive_feedback_in_percentage": 100
+      }
+    },
+    {
+      "title": "The Autobiography of a Yogi: The classic by Paramahansa Yogananda (HB 2023)",
+      "link": "https://www.ebay.co.uk/itm/198488763403?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&itmmeta=01M8DN7QZC4Q3VY9ZN5GJJ32F9&hash=item2e36da2c0b:g:lDsAAeSwsqdqUGF0&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde8gsCwiQ%2F9UCC3Ushmv5c8NwL7YWoRrPhQWQnhI3v9mwHSHfovcfjgFXNeTq%2ByTb1%2FzYt5MD2Hm5TdIaJ8fJq4%2F8GtFK6QOuJEyad6auTHPO3uNKqKOg5jk9xI6spw79wYN2R36HeUY%2FB3r2ZdYibEH1LMNO84--U63%2FcOTa5Ef7C8K0zJsOz7kISYD3trXbXz4wvnxqYYeSHUvS9Rv4347F7cM7pAjdmRpvI3YN4DVY%2BlxnNq13cDZRT8qqv01E%2Fzi5RWQndDKq8PbJsPuRRjfV60erqBalCoMQtxkCKJ%2FBQ%3D%3D%7Ctkp%3ABk9SR_7_nrXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=198488763403",
+      "product_id": "198488763403",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£20.70",
+        "extracted": 20.7
+      },
+      "shipping": "Free delivery in 3 days",
+      "stock_status": "Last one",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/lDsAAeSwsqdqUGF0/s-l500.jpg",
+      "seller": {
+        "username": "i-got-to-have-that",
+        "reviews": 624100,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "sponsored": true,
+      "title": "Autobiography of a Yogi 1987 Paramahansa Yogananda Hardcover",
+      "link": "https://www.ebay.co.uk/itm/366837833276?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&itmmeta=01M8DN7QZCSS1VB4G9MGASMQ0Y&hash=item55693d1e3c:g:BzUAAeSwlYdrBgL-&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8Af%2BGlN%2BupxdQGGfXc9cSB%2BENwhLiHxjJLHdPtuO3VhpM11g--ZgPKAXo09gmZSsXtWC0XrtjR5vtu2z0Xpo5AD1%2BtpbJIxffswrasiBhg13bUk00BAgNwN9eAsKZplwxIaUGVl%2B0HIF42cFv67y%2BHLmeEK4kaUhKPO8ctZEm17h%2BDH%2F9NMsoapRNwmx9ZWSY2F1AWIL7%2B0qd9phOgmqVzfJyFA6%2BjVJ5rvMFDTdydy4ltfGLdcO%2FTYzaASFE0fYtVzGHIn6T0HcxLtYrZGmKEvM6tYCQM9wkkdOBVn2w%2F7DnUFGHEAnlXHCTMSpGmxPtL%2FPSnOH1%2FMogFdQSe9maq%7Ctkp%3ABFBM_v-etcNo",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=366837833276",
+      "product_id": "366837833276",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£15.25",
+        "extracted": 15.25
+      },
+      "shipping": {
+        "raw": "+£12.90 delivery",
+        "extracted": 12.9
+      },
+      "location": "from United States",
+      "buying_format": "accepts_offers",
+      "buying_format_text": "or Best Offer",
+      "thumbnail": "https://i.ebayimg.com/images/g/BzUAAeSwlYdrBgL-/s-l500.jpg",
+      "seller": {
+        "username": "mlbooksnthings",
+        "reviews": 2700,
+        "positive_feedback_in_percentage": 100
+      }
+    },
+    {
+      "sponsored": true,
+      "title": "Autobiography of a Yogi Paperback Paramahansa Yogananda",
+      "link": "https://www.ebay.co.uk/itm/147550084923?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&itmmeta=01M8DN7QZCP95DRXGP14WB1Q3V&hash=item225aab9f3b:g:P4kAAeSwjPFqmwO5&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8RkPyGtUNznLatfjCwosxJBpOiH8swC%2BCtlSzQe%2F4Nro9KK4kAvj5wRCQ94cOt5%2B9g0PtbGZ4wdQsf0FBbGOu4WHTYDCZQALkAu6rGjANam56Dbwa%2BV%2BVGDzKC0PGhjCpHEeAjLnmBOCB80sWLpL3kVNi6Y4s5Gx%2Fq2bj8FmJ%2Bdj3VbHD%2BzqpjfqAoY%2BtsUIGkoalW%2FtNdXLkBjDESKa07U%2FWqQqVSINGAfoWheF8c0t8rEgeb929IPKKO8s9zlrcK%2BBgyuNcF1M5tAKegaGHRg2H%2Bj4Yzvjb4uWwn5G5%2F0gYcx%2FTI2kHzfB7YrOYjhLvlkjbx10zvYutlbdmRAt4q%7Ctkp%3ABFBM_v-etcNo",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=147550084923",
+      "product_id": "147550084923",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£18.99",
+        "extracted": 18.99
+      },
+      "shipping": "Free delivery",
+      "location": "from India",
+      "returns": "Free returns",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/P4kAAeSwjPFqmwO5/s-l500.jpg",
+      "seller": {
+        "username": "premiumbooksandpens",
+        "reviews": 5500,
+        "positive_feedback_in_percentage": 96.5
+      }
+    },
+    {
+      "title": "Autobiography of a Yogi: 1946-2006: Complete Edition, Paramahansa Yogananda, Use",
+      "link": "https://www.ebay.co.uk/itm/198817588581?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=89450481&itmmeta=01M8DN7QZC8020AP75TCNXQ0DA&hash=item2e4a73a565:g:DrMAAOSwR29ZK3vq&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2FYYU5qaE5KiJDGKVzIuTCuxjMRlIMUsblQ7T3eCbWr7%2B%2BGJq5qz2ccxzMjGgaSai1ewKpu3SG%2Bsu0WRH5ajPciL%2BoEao%2Fn9wWS2inb%2FVrY%2Bergx3yOQ2Qbo0x%2BLvqdWk6dWYmnhidKLbBDrAL%2Biq5UPYSulka30VPHS9EG0WxVv2DOP%2FwT2n%2BEySSvfTudoemj8FA8XwwEygoicdqXY0fY1ZD9gtDXRpFk5%2Bdgq%2BuOI40rCuSYTusY1nPTMzQOkn6NGU8FaSWhW41rN8KpBf55FgGr5icyj%2FkYpOL%2Bj33A2%2BGlXfprTbDtNKMooUbqj0707LwU8cGta%2FnmEBA%2Bcs%2FG%7Ctkp%3ABk9SR_7_nrXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=198817588581",
+      "product_id": "198817588581",
+      "epid": "89450481",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£16.12",
+        "extracted": 16.12
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/DrMAAOSwR29ZK3vq/s-l500.jpg",
+      "seller": {
+        "username": "greener_books_london",
+        "reviews": 829500,
+        "positive_feedback_in_percentage": 99.5
+      }
+    },
+    {
+      "title": "Autobiography of a Yogi - Yogananda, Paramahansa",
+      "link": "https://www.ebay.co.uk/itm/366526851247?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&itmmeta=01M8DN7QZCYZ3P0FK8EE6A8JX6&hash=item5556b3e8af:g:I8oAAeSwzMlqTF2u&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde9Cf0pddtSSGer%2FrPuUNaP0OMox1C7GItVWjalsa73S%2Fi--a92N0y9T34PN5HYMJEOEzSaZS%2BzV7K7SW7YPfUd10KM%2BWVh582hFhEUnpL0aQfBVHPXwKY5S%2FuNDxJch8QJl3jrPHQZ6beimQlwCXaqXihB%2BsRMJqNItqrapzhyh44Y740Dar6DWgghgjajq2Bigqh6fbvFCFrj8%2FR8h69B3csg1ledwzVh7odCO4DI65OtGreZ7EAfN9JBeHFpioRnRIS031Jr%2F1i0yowa51DjuA4HXjXc6h%2B3b68Nh097o6Q%3D%3D%7Ctkp%3ABk9SR_7_nrXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=366526851247",
+      "product_id": "366526851247",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£7.12",
+        "extracted": 7.12
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/I8oAAeSwzMlqTF2u/s-l500.jpg",
+      "seller": {
+        "username": "webuybooks",
+        "reviews": 3300000,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "title": "Autobiography of A Yogi by Paramahansa Yogananda - 9788172345365",
+      "link": "https://www.ebay.co.uk/itm/820393197250?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=212756015&itmmeta=01M8DN7QZCCAP5JEQE9993J1VB&hash=itembf033ebec2:g:4xsAAeSw9ZFrCASd&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8fGVJ%2BIhl8xNfOt1zI0fpwNX3bbVr9Q%2BQThynY0AI3MKmkNSyR%2FnNZHaF3Ttckcl6S%2FiCj0E71mU5d2uTPq44nIIb4OXhnJujOjQOPZ4AQsYodKektqG9PKRB5KP059vw4dA3N3qZf502DbbzwT3mdgKXryvboaPIL8rr8H81z8NcvbNZ6nIjqHQrObuGfnnMXXQtEzul6H0RpSR3RcNDgh4IdCbj3b0i6wN77rn7JPvlidyH1jt0%2F7oXbBGYvgtE5yhnwvEWBD0VsAZx0cc8oL3lG5VW4LtGC2tzT7LhZrMXSVGJ3fGi2Xp8qsSPD%2BUnLd2Oy3Vnz6Khe%2FZQdCmnr%7Ctkp%3ABk9SR_7_nrXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=820393197250",
+      "product_id": "820393197250",
+      "epid": "212756015",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£11.58",
+        "extracted": 11.58
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/4xsAAeSw9ZFrCASd/s-l500.jpg",
+      "seller": {
+        "username": "books--etc",
+        "reviews": 761400,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "title": "Autobiography of a Yogi by Paramahansa Yogananda PAPERBACK 9788172345365",
+      "link": "https://www.ebay.co.uk/itm/397995771397?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=212756015&itmmeta=01M8DN7QZDTM7XXBS8G96BGSWP&hash=item5caa658605:g:NQ4AAeSw9fpqFvKl&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9WwuaB72HzS%2BqP2FDxf8QYEWewAenhJcsnIrwI6uxFQMFPUrN5WvqzI0PDlEkvn0OCSmpa3DyNLQJt%2FozlUAD3exWAlu6KI1jqSRHl7Ts808MHGQTMVPBDBkaEr2NKU5SRUF--hZlJG7uQobuNmq5DSHoz45h4pLQHNxCYFr8%2BSxLMbbSwdW8WaA9z94Wb6Lt80l14hMVxqxKB%2BrZpb%2FxO8CC%2FhIwcBjdyGnjCZh8iq1Lm7%2FMzEGn7noUqZuNrPZlAO4v7qruFgaKsTCzJeiYZTmpe47i4tOYJCqRr3HcfHmZrw5HFQHvrhApjEqCsrwWeGPUPcOFopamWRZI6uIDo%7Ctkp%3ABk9SR_7_nrXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=397995771397",
+      "product_id": "397995771397",
+      "epid": "212756015",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£9.63",
+        "extracted": 9.63
+      },
+      "old_price": {
+        "raw": "£9.99",
+        "extracted": 9.99,
+        "discount": "£9.63"
+      },
+      "shipping": "Free delivery in 3 days",
+      "returns": "Free returns",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/NQ4AAeSw9fpqFvKl/s-l500.jpg",
+      "seller": {
+        "username": "bookcurl",
+        "reviews": 42600,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "title": "Autobiography of a Yogi by Paramahansa Yogananda (Hindi) PAPERBACK 9789380676371",
+      "link": "https://www.ebay.co.uk/itm/406269884403?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=12085470045&itmmeta=01M8DN7QZDX1GH3V8ZX173BQ8H&hash=item5e979277f3:g:m8wAAeSwt3lpIMna&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9o5F2kLvMMAzdeGpPXdJi9eNfk0I%2FvgZlDBO8d0DjPTh5F5csQP6ap%2FV16iRZ6EuOV6ki3AKN0TYjCRBvsM1g6kNhsDGrbFtLB0W4MHOfFlvGLSbUcM2tzesRmxXA3pRo4JLVF47MW0C%2FXXWrmHfkcl4HXQTvX3E7qCR2WZrOomUzGSbBxKTudfoj3pKhy7tr4rf5lCZhcn1FnYryE7y7L7Jg2p8mW9UKRRpnT9L71bFk1IDeEXybYrS2stiRklzwIJSDVQW173QTOf4t05BFeER%2FLxPtm5iivz8HQetbKc3YiaFlmuXNhvYssT9VnIc42005Ep2HezZgcMd99J6Da%7Ctkp%3ABk9SR_7_nrXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=406269884403",
+      "product_id": "406269884403",
+      "epid": "12085470045",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£9.81",
+        "extracted": 9.81
+      },
+      "shipping": "Free delivery in 3 days",
+      "returns": "Free returns",
+      "promotion": "Save up to 5% with Multi-buy",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/m8wAAeSwt3lpIMna/s-l500.jpg",
+      "seller": {
+        "username": "bookcurl",
+        "reviews": 42600,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "title": "Autobiography of a Yogi, Paramahansa Yogananda",
+      "subtitle": "Free UK Delivery | 10m Happy Customers | Trusted Seller",
+      "link": "https://www.ebay.co.uk/itm/397546899036?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=19084540534&itmmeta=01M8DN7QZD1D29GPYXNXZNAFQG&hash=item5c8fa4465c:g:QccAAeSw~1Bpeqh3&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2F6qNinZhwtR7qwvNMIEig5mqiYfBLCnxd3rhjoYGNT5Kit33UhtHkWyBG0lefPXEKDpUA5WFuY%2FCCeZvQvUKQKMaaG9lz9jqw9iXXg6A%2BbaJjGVta7UiK3P6tMaRJrr6pEChIyYOd%2FqKRhUSVWNlVS3AbGwxeC%2Fuq8%2BErP8SQ3YClLAtI9v3g0N7j77uB7vYH17LcGL4%2Fu%2FGkajTwjuXahTg8sKDjv%2Fq%2FhSkY3cqqhvXA9%2Fia%2B1LSppj3G%2Faz4MW4RNQxVNeIG2Rd9y10e%2F9DDOR41eVafY2h3vLqdW1Fh2L6BSwZT6iaDhqcvtT0tSwUoEHqPV8Jy5rMm8mQ0Vp%2BP%7Ctkp%3ABk9SR_7_nrXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=397546899036",
+      "product_id": "397546899036",
+      "epid": "19084540534",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£15.07",
+        "extracted": 15.07
+      },
+      "shipping": "Free delivery in 3 days",
+      "promotion": "Buy 2, get 1 20% off",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "extensions": [
+        "Direct from World of Books"
+      ],
+      "thumbnail": "https://i.ebayimg.com/images/g/QccAAeSw~1Bpeqh3/s-l500.jpg",
+      "seller": {
+        "username": "worldofbooks08",
+        "reviews": 11900000,
+        "positive_feedback_in_percentage": 99.5
+      }
+    },
+    {
+      "title": "Autobiography of a Yogi - Pb - Swe by Paramahansa Yogananda (2011, Trade ...",
+      "link": "https://www.ebay.co.uk/itm/357841228764?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=179741008&itmmeta=01M8DN7QZDG1XPR0BW3MTMW8V9&hash=item5350ffd3dc:g:kngAAOSwJa1Zq5Be&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2F12%2BfI565kXyyviwI5EsQOUy6HbIFqovb1iL75uAAvXv37m54Fxd1uk6wgNH2v5KPalEoHcEYI7hDvuFcHojAikBL01280GLmTylKa7bmerIGAKtaADF%2FiISysZ3ZWDmohex3sCQEbWeVlFgAODmrXmEDar%2FurhPa6YGpQU8w%2BINRlYvfcFHapzocnyOCopZRxUXevs1jVu3oOoioyxYDq4BP4%2Bef65myYbykRDBr0h8uj58jE%2BXxBUeofX%2BEVkH%2F9nSyv02HCq9XKVmv9hvM%2Fo%2BmH5wXPCrgzhYBWeff8nQ%3D%3D%7Ctkp%3ABk9SR_7_nrXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=357841228764",
+      "product_id": "357841228764",
+      "epid": "179741008",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£19.64",
+        "extracted": 19.64
+      },
+      "shipping": "Free delivery in 3 days",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/kngAAOSwJa1Zq5Be/s-l500.jpg",
+      "seller": {
+        "username": "speedyhenuk",
+        "reviews": 1700000,
+        "positive_feedback_in_percentage": 99.9
+      }
+    },
+    {
+      "title": "Autobiography of a Yogi by Yogananda Paramahansa - 9789389981001",
+      "link": "https://www.ebay.co.uk/itm/358295342298?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=8085917697&itmmeta=01M8DN7QZD3S27K6Q5SGZHKHXA&hash=item536c110cda:i:358295342298&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8wb43teF%2FIzPezstmBZc%2BL2ACv4bsrlbvwrg5lZ%2FXeksNKO4WbjF5SESmlmNZxNyZ%2FCNjuWQqa6zRaAVLP7rfgqAtLMiiQnZCECVtFr1cM69vykZ4X%2B5DbaP4Gz1OryGnnUOBBJ0E77P5KZFVLaNtJLZNy82tTKbqdlrvaIJ2sGN7kne16x3yv82PxCbVJgKyRm26kFaidJmgrotpMvcbHr7tm4tdDldkZH3E8pghRv5VMNpMBBlBnWV4xz9qEyrgN6nGVOqckJvcUsGUjEbG%2B3BBvdCFj%2BL3qYlIKPIt74F9ESk%2FyAmP2jwCU9Nzkv6oa%2BtZEPhjZZWDfMOZ%2F4InI%7Ctkp%3ABk9SR_7_nrXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=358295342298",
+      "product_id": "358295342298",
+      "epid": "8085917697",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£13.10",
+        "extracted": 13.1
+      },
+      "shipping": "Free delivery",
+      "promotion": "Save up to 8% with Multi-buy",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://secureir.ebaystatic.com/pictures/aw/pics/stockimage1.jpg",
+      "seller": {
+        "username": "books--etc",
+        "reviews": 761400,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "title": "Autobiography of a Yogi,Paramhansa Yogananda- 9789380676371",
+      "link": "https://www.ebay.co.uk/itm/800867232628?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=12085470045&itmmeta=01M8DN7QZDXXDD7MYCWHWFMCM4&hash=itemba77682b74:g:CPQAAeSwokdq6Jbi&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2F4EY3ovgBkSL%2FUFC0umolwaQy%2BDTykyduOXGz2d7MbUqnMW1TqleO%2FeYylB%2F2Yx3XW9YD1oDVi01qIT1gQlMYNZ82kSEzJQxEEQMH8i9Wup6H10QAQfsmnBeMNlY7SbpHdY%2BENEaCfrJts08pNeTXLC5w7RyeMHMjT5JVji6cNoF3tW1pmMpcbfmRlp6lT3D%2BroCmx1MCJWR2x2Uoxfdg7LaXwBzN2vT5hnoE1Atvf07irclAPK4RXzRfXgMKVpgA2WrSBsTqs1L7ps%2BXgFxKrTHTySjPL3jTZdT%2FybJG0tw%3D%3D%7Ctkp%3ABk9SR_7_nrXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=800867232628",
+      "product_id": "800867232628",
+      "epid": "12085470045",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£7.21",
+        "extracted": 7.21
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/CPQAAeSwokdq6Jbi/s-l500.jpg",
+      "seller": {
+        "username": "cmedia_group",
+        "reviews": 1600000,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "title": "Autobiography of a Yogi (Farsi), Paperback by Yogananda, Paramahansa, Brand N...",
+      "link": "https://www.ebay.co.uk/itm/800525087320?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=237081656&itmmeta=01M8DN7QZDHKXBEHGMK5J0GPNR&hash=itemba63037258:g:~-kAAeSw2HNqg2F0&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2FZMXuByD61cPj%2FptX5yzv3DmipgPjyQBIgJXoVlYGKOak9PPm%2BkEzhw%2BQhKN7zAcCDkV%2FnFziiXq6tvm3FJ6GnKyXG0cBi2t9Z2Ofsv%2BuicCxDH0684P7Ly5XPN1a4%2Foa9bBL8SUMtmJPxUhLhQaCjII9gcMj3nZslGx1JLZ%2BXXx7nj2s%2BsTOBdr%2BIyw2OjkCf9CmLSfA%2FgZ7uWGlfeRHys98i7qImEh4yRI3gkK3MTZo2KQKx4Jjqeg1Lmku%2Bs2%2FZpsnEgTHMC74Becs7XeoBPjbb6cKv%2BqeTP1bGlA72VA%3D%3D%7Ctkp%3ABk9SR_7_nrXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=800525087320",
+      "product_id": "800525087320",
+      "epid": "237081656",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£19.63",
+        "extracted": 19.63
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/~-kAAeSw2HNqg2F0/s-l500.jpg",
+      "seller": {
+        "username": "superbookdeals1",
+        "reviews": 89900,
+        "positive_feedback_in_percentage": 99.1
+      }
+    },
+    {
+      "title": "Autobiography of a Yogi by Paramahansa Yogananda HARDBACK 9788120818941",
+      "link": "https://www.ebay.co.uk/itm/405777418549?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=19084540534&itmmeta=01M8DN7QZEVYXRKCQCEAZYM2B4&hash=item5e7a380935:g:jjgAAeSwdLRpIMfY&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2B4Fn%2FXf0GZxxzFae6nIz1Q3vmxRYmGaPDTvMoeaRJNRLr9hHu%2F9mZTM%2BwTyn5PwPPfHJiQ57w5bWbNUKWj13XCpjVWCWPCbmfPkeOCrJelcSKGoDvWJJXQw3F8hAkvpEe8B2RRTkB9%2FmsUnGs7ajJiVecpC4yW%2FU6Tj1IDuhQoCyyoNcjbHaUWc8YfJTeuS2AiOwdkL5XZG6w3kp7pPMR%2FbxUFtX9uGTP0cwNSZnAgSWDTCJq3eJ83IaXTPbT%2FSLaKS9%2BqH2VVbFRFrdvF9DkBTGsJzJNkCta%2BQOLrB6lMhg%3D%3D%7Ctkp%3ABk9SR_7_nrXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=405777418549",
+      "product_id": "405777418549",
+      "epid": "19084540534",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£16.40",
+        "extracted": 16.4
+      },
+      "shipping": "Free delivery",
+      "returns": "Free returns",
+      "promotion": "Save up to 5% with Multi-buy",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/jjgAAeSwdLRpIMfY/s-l500.jpg",
+      "seller": {
+        "username": "bookcurl",
+        "reviews": 42600,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "title": "Autobiography of a Yogi by Paramahansa Yogananda, W. Y. Evans... - 9788120818941",
+      "link": "https://www.ebay.co.uk/itm/358295340572?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=19084540534&itmmeta=01M8DN7QZEVBK5QKV8AVHY02H6&hash=item536c11061c:g:33wAAeSwT5hrBMYu&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2FMFIMEKCS5IEER8s6kvdljkS7oPhKmpepEzxWvNHq0OGTDIhWBcSHySIvdZ5MIS%2BtxgWE%2FtZ5MguNKdkbrcoBCl6K1XGV3kRCoQPoc6%2F7pVOzKDZXrCfVmRktRBlfudPI6VrUZJNy0AxuYyEJklOkBXIDI32hUv5TRc88feZQJmjMdkKZd6s%2FLq0HGA2JALl8%2FBrfLNMXpv8LJYhGUPFg32xgM0QeEpoqXDmjeBWUkkRrkzsaZMHs%2BUfydiDcllBvEiBSqbCJMrwOZG%2BOiAWtyRtPnk2nquukapTymCqgt0Hkuf4%2FIOQqX3Ofp%2F2vO3PrtMkabgi5%2FVcGZD4C%2Bva2T%7Ctkp%3ABk9SR_7_nrXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=358295340572",
+      "product_id": "358295340572",
+      "epid": "19084540534",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£15.87",
+        "extracted": 15.87
+      },
+      "old_price": {
+        "raw": "£15.99",
+        "extracted": 15.99,
+        "discount": "£15.87"
+      },
+      "shipping": "Free delivery",
+      "promotion": "Save up to 8% with Multi-buy",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/33wAAeSwT5hrBMYu/s-l500.jpg",
+      "seller": {
+        "username": "books--etc",
+        "reviews": 761400,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "title": "Autobiography of a Yogi, Yogananda, Paramahansa",
+      "subtitle": "Free UK Delivery | 10m Happy Customers | Trusted Seller",
+      "link": "https://www.ebay.co.uk/itm/307086299411?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=13083359669&itmmeta=01M8DN7QZECK6Q9MXV1P5CK17V&hash=item477fc51113:g:dGoAAeSwv99qZVLX&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9SHDTgvdHI5QHClYiXFcj%2BBmiFcVR6oyDo8BPp4A9zfzsNogS2vtrJGor6cKSRQbdrVwxiwgUvPabWLU29NErSP9Qp9R%2FHccVkpEdP%2BE%2BA7D2t24Eqp%2BCY8x0gPj3RPyFMvCDiaRXTL3hFyRX0ikEYeZa6fwXNg4nVHg5S%2FiMKfO3emeBmCDGQudbS%2FqsZJ649SOpeJmepEdBDd%2FiL0Qza%2FZUfOO8tDcqVmQcLdCqF1oJICrQzlsNpsfT2zdW1n0rKggbeLGM9YlxdjJWNI45dSxgXhcTGpLrcMJ3brtAvDK6aU2Wro0XLq0ntJajX336c7toUIDdE2DPZFowyPwVm%7Ctkp%3ABk9SR_7_nrXDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=307086299411",
+      "product_id": "307086299411",
+      "epid": "13083359669",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£19.99",
+        "extracted": 19.99
+      },
+      "shipping": "Free delivery in 3 days",
+      "promotion": "Buy 2, get 1 20% off",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "extensions": [
+        "Direct from World of Books"
+      ],
+      "thumbnail": "https://i.ebayimg.com/images/g/dGoAAeSwv99qZVLX/s-l500.jpg",
+      "seller": {
+        "username": "worldofbooks08",
+        "reviews": 11900000,
+        "positive_feedback_in_percentage": 99.5
+      }
+    },
+    {
+      "title": "Autobiography of a Yogi, Paramahansa, Yogananda,",
+      "link": "https://www.ebay.co.uk/itm/388058431135?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=8085917697&itmmeta=01M8DN7QZEH3Z8HSAX70GYA66T&hash=item5a5a15be9f:g:0lQAAeSwGcxqvgHQ&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2BgmDRArc%2BcPT2QbNJ2YMJw9QsYGyUNxpXRtTfcekWsprqvhyIxodk%2BELJlGPKgGeIRzXdevQpgOK4VY7RkcoXkIo10MiFLGJRHQ4Eep9UWGwxFsg032%2B8vG0ptpX0XK5qzzzfpn%2B76Y02I7bKUNgpgzlVjWMwcihhXASHlkwFxlcdcjvQVYrrRA2WeAYGbYsKlXtcY9xSaUnOZB6%2Bcqn54f6bBFYbf2q4PnSxSXCmUlkOzJ%2FzNVLUEZJekPKxxoNcuPjYgKuLx4EoBxSdScJOPE%2BYpsRVtw9e9Y5PVH7JuHA%3D%3D%7Ctkp%3ABk9SR4CAn7XDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=388058431135",
+      "product_id": "388058431135",
+      "epid": "8085917697",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£13.11",
+        "extracted": 13.11
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/0lQAAeSwGcxqvgHQ/s-l500.jpg",
+      "seller": {
+        "username": "pbshop.store",
+        "reviews": 313100,
+        "positive_feedback_in_percentage": 99.3
+      }
+    },
+    {
+      "title": "Autobiography of a Yogi by Yogananda Paramahansa PAPERBACK 9789389981001",
+      "link": "https://www.ebay.co.uk/itm/405777382354?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=8085917697&itmmeta=01M8DN7QZEGWB80D7TPKHP71RX&hash=item5e7a377bd2:g:jwgAAeSw3JZpIMn6&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde%2BNClst4EcgmcgHDw255PoXcrK7WnTEt%2FjJZxV%2BQ8P1fVcvCHrbAwjr9wTCPfSOhTGSSmn%2FeWlbJV1EssMrYzN%2FCv8zi7lwPsMBhT7bh2vnWBaoHEnKSEelvtzhealjnEcMQPowwB2meIFsq5bNYMsT7gS2EWtKpJjqkVxugZTm02MfCNI5FNPJDo3M7YVcjhr9RSKpSXYf9LrYaUAy5HbOtkpYSjeYvY6xJZBGnjzaqIv8c6gDP%2FhKzsZu5ID6UBXje7%2Bu1cyVCz9i1L6Jz660LY9JDhF6Z7qexjWhL7b1Uw%3D%3D%7Ctkp%3ABk9SR4CAn7XDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=405777382354",
+      "product_id": "405777382354",
+      "epid": "8085917697",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£13.43",
+        "extracted": 13.43
+      },
+      "shipping": "Free delivery in 3 days",
+      "returns": "Free returns",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/jwgAAeSw3JZpIMn6/s-l500.jpg",
+      "seller": {
+        "username": "bookcurl",
+        "reviews": 42600,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "title": "Autobiography of a Yogi by Paramahansa Yogananda (Hindi) PAPERBACK 9789389432473",
+      "link": "https://www.ebay.co.uk/itm/406295402872?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=3082138670&itmmeta=01M8DN7QZEQ10ZBPNVVM1NW82F&hash=item5e9917d978:g:UBEAAeSw8r5pIMny&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde8xbD%2FTTmP7QUjh%2FhdV5qkZC6ccQVSIYzZV%2Bv0fFoV3hr9xnqXaeM%2FWOZHSbXQwUyMjN3VzVNx7DsIywK4fB%2BfR0Dfjf19wTSPaMau4s16oTeYKZmvHed%2F02YIadQX%2FGoKcFS3j9bubryh7%2F3BFmRNjz7qtYF3XLkdT05EFnGIcsth%2FORGOH4C4%2FyTGJgvU%2B4idyMmw4IuGmp8nkb2WJ27ZOS6FIO%2BLxrGNNToNJ%2Bx%2BL3H9xXJnTwJKSM%2Fj6WAlzCzVrT6dzGAi6ppgjAmi%2FBkj7xLjqwGyqHrPPywYVXJDAw%3D%3D%7Ctkp%3ABk9SR4CAn7XDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=406295402872",
+      "product_id": "406295402872",
+      "epid": "3082138670",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£9.63",
+        "extracted": 9.63
+      },
+      "shipping": "Free delivery in 3 days",
+      "returns": "Free returns",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/UBEAAeSw8r5pIMny/s-l500.jpg",
+      "seller": {
+        "username": "bookcurl",
+        "reviews": 42600,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "title": "Autobiography of a Yogi - 75th Anniversary - Paramahansa Yogananda",
+      "link": "https://www.ebay.co.uk/itm/267285759668?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=15085484827&itmmeta=01M8DN7QZEW0RXZWD53Z02P3J1&hash=item3e3b7906b4:g:ldMAAOSwYD1oSF-Y&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2BVyHFt4rwb7goMwk7mCW8IAiuQ26X0hk916TSudKg5akBlqPiSBCmJ%2F9XWGJiMBn4TrwzwaAWSSltzupdO%2FhF%2BM%2FnpdLyX8pG6uihVFWom2%2B6IEBnP3iiuWorJwcVRY%2FkPnZikY7dVMnmigueT9t2Sucmz3fAkkxUXVziqW2xjmzTsawO14SviQVSGRCRC%2FAP7yLIaNsddOE2wyLvf7WEDuWYUsY7w%2FcgUNAxPAFpKozRpFJYfyZhSg6nM4Hv0cK%2BGz0%2BBY85suZzsuLglCrsYZbNsAEThpU1rPHS34n5R7tK4OGm5p8D%2BWdVwaF9tHCjXcqxSmFOr9mKLKHAOE4ur%7Ctkp%3ABk9SR4CAn7XDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=267285759668",
+      "product_id": "267285759668",
+      "epid": "15085484827",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£7.99",
+        "extracted": 7.99
+      },
+      "shipping": {
+        "raw": "+£4.99 delivery",
+        "extracted": 4.99
+      },
+      "location": "from India",
+      "buying_format": "accepts_offers",
+      "buying_format_text": "or Best Offer",
+      "thumbnail": "https://i.ebayimg.com/images/g/ldMAAOSwYD1oSF-Y/s-l500.jpg",
+      "seller": {
+        "username": "best_collection_4u",
+        "reviews": 1800,
+        "positive_feedback_in_percentage": 100
+      }
+    },
+    {
+      "title": "AUTOBIOG OF A YOGI by Paramahansa Yogananda HARDBACK 9780876129388",
+      "link": "https://www.ebay.co.uk/itm/397132945942?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&itmmeta=01M8DN7QZFJ4XVG4H9G61NKNFX&hash=item5c76f7da16:g:5kkAAeSwdLRpIKco&itmprp=enc%3AAQALAAAA8CHNgUiiE%2FjQhlDTaMiAde8AjvZgHN%2B6VNo9IHoMxuCRF4xF63sNIHjPwR1zkUrmFO8xHLgu6aqwWWSnXs1WEDY3moD9JtieRlmB29uPEoWHG7LpAbc3rplDqAoBxREnw3X2mdEeiRERIo0WY9wu7lDSo%2BYAx1uA03099cy38qwfWtO%2FlL0QGzqQ%2B2WPMSBkCRIxMUCGMoOif2%2Blg%2BbyO3MQkMJ1FGSHnYrTo%2F870eu6l%2BIMaZYFX4AXTxrKjg6qA1C%2BOKw%2FRK0x5lwz8ZY9xFpmaZIk1slD0kDIde5F39wNPukmM77vvAHwFdTfxJRgFg%3D%3D%7Ctkp%3ABk9SR4CAn7XDaA",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=397132945942",
+      "product_id": "397132945942",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£28.58",
+        "extracted": 28.58
+      },
+      "old_price": {
+        "raw": "£53.00",
+        "extracted": 53.0,
+        "discount": "£28.58"
+      },
+      "shipping": "Free delivery",
+      "returns": "Free returns",
+      "promotion": "Save up to 5% with Multi-buy",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/5kkAAeSwdLRpIKco/s-l500.jpg",
+      "seller": {
+        "username": "bookcurl",
+        "reviews": 42600,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "sponsored": true,
+      "title": "Autobiography of a Yogi By Paramahansa Yogananda. 9788120818941",
+      "link": "https://www.ebay.co.uk/itm/127668378849?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=19084540534&itmmeta=01M8DN7QZFEDMS34N65BT3ZQ6R&hash=item1db9a0dce1:g:xVwAAeSwhf5phV4L&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2FHe7TDICl15qEoigoZW5TPBFAEHadVhDOJJw8EJBvJB1eI2syo46%2F6%2BamFZm5E4Du6rSMT31EDmgztDcZmI1izylNYtZ35T7%2BSd%2BBXj8qARXhK6v%2BNZIluBnzQWmdhx4mylUvTRm0MO%2F%2B3znr3flNnv%2F34vWjK6XJh%2BxH%2FpCEvGS6LxFxkWiNtGUa6cVO50UEYvLjXc4rman0Im6NI4yP2F1aOzLbFYDdOFyuyDKxpqAoPw8x5DYxTQsLnpvQkkQ3RlMU8UMZnl40O%2FyeYt6vWtEofJ1zURcBErGAtn8knN3MSkHqG42zFLquCsCIXotdxMOWR4X3pqMQ3%2Bdn34flu%7Ctkp%3ABFBMgICftcNo",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=127668378849",
+      "product_id": "127668378849",
+      "epid": "19084540534",
+      "condition": "Pre-owned",
+      "price": {
+        "raw": "£16.33",
+        "extracted": 16.33
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/xVwAAeSwhf5phV4L/s-l500.jpg",
+      "seller": {
+        "username": "baham_books",
+        "reviews": 3600000,
+        "positive_feedback_in_percentage": 99.8
+      }
+    },
+    {
+      "sponsored": true,
+      "title": "Autobiography of a Yogi.by Yogananda New 9789389981001 Fast Free Shipping**",
+      "link": "https://www.ebay.co.uk/itm/127704076653?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=8085917697&itmmeta=01M8DN7QZF68C01QN5KHF4SKND&hash=item1dbbc1916d:g:rTcAAeSwrWhpnsWr&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2FoRLQ6dQrSlgeRtIh4tEpx5gh1u%2B5ELogM6vFLbebqWptg31GfDBmQNHLSoww9XTk%2BZh%2BU4KwXPcq4suUoDo0Lc2GUh3Eyl%2B0KVDIp76fNv0y2hpjtgTsVhIuMlqIKyJnd2vNBc5ekUDkOlL7J1ZY5vejQ5%2FxF%2Fd0E0q8j%2B1xOYq76GCyz8K9qcFee%2FGJnT2YVRmudsyVs26tDuhUOmditFlrpEiMCOmIAvtXL2SWQPQriVyZ0PgTMZLLnRj03rXYEY5iJtZcoLuQ1udChzjJJHI88ail3kr8%2FFy5opcMU0VrsnZLQ%2BWBgi279xakMXfDaKu%2B8l%2BrilU3oC%2Fd4NTGc%7Ctkp%3ABFBMgICftcNo",
+      "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=127704076653",
+      "product_id": "127704076653",
+      "epid": "8085917697",
+      "condition": "Brand new",
+      "price": {
+        "raw": "£13.75",
+        "extracted": 13.75
+      },
+      "shipping": "Free delivery",
+      "buying_format": "buy_it_now",
+      "buying_format_text": "Buy It Now",
+      "thumbnail": "https://i.ebayimg.com/images/g/rTcAAeSwrWhpnsWr/s-l500.jpg",
+      "seller": {
+        "username": "baham_books",
+        "reviews": 3600000,
+        "positive_feedback_in_percentage": 99.8
+      }
+    }
+  ],
+  "inline_results": [
+    {
+      "title": "Picked for you",
+      "subtitle": "Top selling items from trusted sellers | Sponsored",
+      "items": [
+        {
+          "title": "Autobiography of a Yogi By Paramahansa Yogananda. 9780876120798",
+          "link": "https://www.ebay.co.uk/itm/302345759853?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=91920944&itmmeta=01M8DN7R0EVCSZ690E468ACWTQ&hash=item4665362c6d:g:vXsAAOSwwzhZO-CO&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2BkMtQUkvCDJLHYWLXJrBqPlFyn6hpgaNrYhkAdfK0rU7EK2QhJsAwguzuI5s6572PqY%2FCYBCNDnrDeDTfhtEIvRkYRtH7GpYuDhxpPfTGI%2BECo%2BgJugcZgmJW5YrRR%2FZUnpq3BT2AQO7%2B%2F64Kx%2BtdSIY18SJFml3Cibl6NTmVORitayl3Z1nIA0kmkVBiV6Q%2FbrTx5%2FtaoCIA1bBMaSwznjbfJm9JV49TI%2BKkiQbyTeHwvVcCH%2BbQ%2BLFZOpv%2F0SInl%2BY%2FMKvvhqr%2BBW2j0xysj0dkR9f0j3zBNRwM5TNGI8sl%2BHBEcDOLO0bQe%2FZ2SVQTi5yf1Yfl7hG2s13DAKldc%7Ctkp%3ABFBM8ICftcNo",
+          "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=302345759853",
+          "product_id": "302345759853",
+          "epid": "91920944",
+          "price": {
+            "raw": "£4.86",
+            "extracted": 4.86
+          },
+          "stock_status": "Last one",
+          "seller": {
+            "username": "baham_books",
+            "reviews": 3653075,
+            "positive_feedback_in_percentage": 99.8
+          },
+          "thumbnail": "https://i.ebayimg.com/images/g/vXsAAOSwwzhZO-CO/s-l500.jpg"
+        },
+        {
+          "title": "Autobiography of a Yogi by Paramahansa Yogananda Book The Cheap Fast Free Post",
+          "link": "https://www.ebay.co.uk/itm/393359567977?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=237036532&itmmeta=01M8DN7R0ERD33QVRRMDVF2RRY&hash=item5b960eac69:g:Ru4AAeSwa5ppQaNR&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9b2sx7bBeHRjOraAKKhrJyiHlKgXMP%2B3NuShF%2FvUtraTp6FypX8ZIPOkUwezOmnoNeC3prRNudiJ4E4KoWwDeF51Ogrb4zI8Bc01vF%2BQSbhvWCBzWzlcHdy8wDJUR96MAoSdR1TLTnDKkOhJsK4z3aoqJC6Qn4ah8LU%2FWYZv0HMrcxnrzMgh4xq0RR9csET36PVxXlsD27wiuO7hX7L6iY%2FNAaRgsxJnNFjv8hgkVNGcO%2FuAP9HxYWY2JahGruIJ4GX9s7HAwBXSieXwy0hKJYPygp0uFzUMw%2FpCksdy%2FyApY64dFTbkpgyFU3c5ZLU5JZjGxmjvKprSmkHCPU9czw%7Ctkp%3ABFBM8ICftcNo",
+          "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=393359567977",
+          "product_id": "393359567977",
+          "epid": "237036532",
+          "price": {
+            "raw": "£10.80",
+            "extracted": 10.8
+          },
+          "promotion": "Buy 2, get 1 20% off",
+          "seller": {
+            "username": "worldofbooks08",
+            "reviews": 11993953,
+            "positive_feedback_in_percentage": 99.5
+          },
+          "thumbnail": "https://i.ebayimg.com/images/g/Ru4AAeSwa5ppQaNR/s-l500.jpg"
+        },
+        {
+          "title": "Autobiography of a Yogi By Paramahansa Yogananda. 9788120818941",
+          "link": "https://www.ebay.co.uk/itm/127668378849?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=19084540534&itmmeta=01M8DN7R0EDYBKPAVDW1DB7BN3&hash=item1db9a0dce1:g:xVwAAeSwhf5phV4L&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2FHe7TDICl15qEoigoZW5TPBFAEHadVhDOJJw8EJBvJB1eI2syo46%2F6%2BamFZm5E4Du6rSMT31EDmgztDcZmI1izylNYtZ35T7%2BSd%2BBXj8qARXhK6v%2BNZIluBnzQWmdhx4nl0Dwk%2BDc%2B1IQ8be%2FTlxPQ5poLoP1l99ko6BZxnlQls%2F0mEJpbByoDASy6D%2FN9QaZoxUB7MASDXM3lZpEI2sNcVrUtVRKyULCDR4PrrxA5HkCf0CzzwKZFC9ciXopoOwplfW8aOivu6oabu0hch2CyLW6PQyEK9UoeSFcO4iyLnExM7n9QrF80vDzjCzT7hMyAguMt4QzHntJVV1%2BuDJjg%7Ctkp%3ABFBM8ICftcNo",
+          "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=127668378849",
+          "product_id": "127668378849",
+          "epid": "19084540534",
+          "price": {
+            "raw": "£16.33",
+            "extracted": 16.33
+          },
+          "seller": {
+            "username": "baham_books",
+            "reviews": 3653075,
+            "positive_feedback_in_percentage": 99.8
+          },
+          "thumbnail": "https://i.ebayimg.com/images/g/xVwAAeSwhf5phV4L/s-l500.jpg"
+        },
+        {
+          "title": "Autobiography of a Yogi.by Yogananda New 9789389981001 Fast Free Shipping**",
+          "link": "https://www.ebay.co.uk/itm/127704076653?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=8085917697&itmmeta=01M8DN7R0EP0Z52F422J6MMY2D&hash=item1dbbc1916d:g:rTcAAeSwrWhpnsWr&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2FoRLQ6dQrSlgeRtIh4tEpx5gh1u%2B5ELogM6vFLbebqWptg31GfDBmQNHLSoww9XTk%2BZh%2BU4KwXPcq4suUoDo0Lc2GUh3Eyl%2B0KVDIp76fNv0y2hpjtgTsVhIuMlqIKyJk14%2FVsHFX%2BMssO4Dzr8jvsj%2BZVF%2FXVS6RHbNm%2B8KMvO44amUEOjrKfwsqa%2Bz0YDFtC6Br2rLiU5ESzEFXWFczTdxumogYmCqTigZkh9WHV%2B8%2Bkq1pq%2FcXcUK7SDpAOx0CWA3iQdke%2FqC4%2BWirXww8L5mWrWB0FNErsG9k6We2DoTfu%2Fk1Fs3EdWuqPrXk8T3DrLIKNd8PrBjHvorj%2BrBZr%7Ctkp%3ABFBM8ICftcNo",
+          "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=127704076653",
+          "product_id": "127704076653",
+          "epid": "8085917697",
+          "price": {
+            "raw": "£13.75",
+            "extracted": 13.75
+          },
+          "seller": {
+            "username": "baham_books",
+            "reviews": 3653075,
+            "positive_feedback_in_percentage": 99.8
+          },
+          "thumbnail": "https://i.ebayimg.com/images/g/rTcAAeSwrWhpnsWr/s-l500.jpg"
+        },
+        {
+          "title": "Autobiography of a Yogi,Paramahansa Yogananda- 9788120818941",
+          "link": "https://www.ebay.co.uk/itm/137152708877?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=19084540534&itmmeta=01M8DN7R0EQM5M4C26FSAFQT37&hash=item1feef0410d:g:3zIAAeSw9gJpvgp~&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9lkwE0cso8G9VjoW4pG01TS1LFYx1y7YgsjxxfHuetR6ZqBLIrI1itbVf611ruN07jHC3cyikGYGiCHsibK5tu1bI0hmKE386bymX2%2B5FiiOiGU490bIpJx%2FtZ2jBBGwSu3P8s3tIMGMu9VrMrn%2FBPq58twABKNYJURIL590fgmV9wCa1FJvD%2FLJyxVaG3DuXSrGNp%2F6TwZLOketX0VuYmq0VJ78eS33H7h7mWzw74W4r6Si89NS7YOxMLQV1Azq8m%2BBrtpgwHVFSs7oqMgq%2FfkA6XWaBL66BRXMN8%2BT116e6HWTiBAAv1FpNhGJg3ahoMm6bFstZp3haHJXgocEvB%7Ctkp%3ABFBM8ICftcNo",
+          "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=137152708877",
+          "product_id": "137152708877",
+          "epid": "19084540534",
+          "price": {
+            "raw": "£14.87",
+            "extracted": 14.87
+          },
+          "seller": {
+            "username": "cmedia_group",
+            "reviews": 1694426,
+            "positive_feedback_in_percentage": 99.8
+          },
+          "thumbnail": "https://i.ebayimg.com/images/g/3zIAAeSw9gJpvgp~/s-l500.jpg"
+        },
+        {
+          "title": "Autobiography Of A Yogi (Complete H..., Yogananda, Para",
+          "link": "https://www.ebay.co.uk/itm/307139957162?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=8082825298&itmmeta=01M8DN7R0EGEA7WJM0Q54QKD4W&hash=item4782f7d1aa:g:vjwAAeSwzVlqiOj7&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2BI8s8hAhoYuRqYDjQU%2BAPwaIc6Zt0U%2BF3awIQFpHtqNvDSMcnBa3%2Fj95oUlqjX0h9UaEN30dZ0cTXV0A%2BZ4o2QALKiK3UfG9VZDhvZmdPQBvq4RolgLyE5i6gXCklonnpwoqUOCF4D%2BVzQmrSoepFd%2BmT%2BOzjgEd%2Fh--UngLqXGF6HV88Tqc0yD48jAcCbS%2FJJcSBPvglA3ppc41kEI%2Bw6LJhyvchDagJWSWyE1Ge0wP81zG%2BL5sNetA6iurqxbl3gLks6bLiLEr%2BmPVpuCetEHgBRa5tsIUyQCQ4P%2BD9Q39zStVmuYlu0PgsS9kbodJI25jgM7cWJ8jYvFYwNThSc%7Ctkp%3ABFBM8ICftcNo",
+          "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=307139957162",
+          "product_id": "307139957162",
+          "epid": "8082825298",
+          "price": {
+            "raw": "£19.99",
+            "extracted": 19.99
+          },
+          "promotion": "Buy 2, get 1 20% off",
+          "seller": {
+            "username": "worldofbooks08",
+            "reviews": 11993953,
+            "positive_feedback_in_percentage": 99.5
+          },
+          "thumbnail": "https://i.ebayimg.com/images/g/vjwAAeSwzVlqiOj7/s-l500.jpg"
+        },
+        {
+          "title": "Paramahansa Yogananda Autobiography of a Yogi (Cram Edition) (Paperback)",
+          "link": "https://www.ebay.co.uk/itm/307296820666?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&itmmeta=01M8DN7R0EPE88K2VMX4N5JA60&hash=item478c515dba:g:tj0AAeSwkddrCLgO&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9LqhxGZ3qZUDOWI4LxPb8p0EVXXic6Gq3gyq5v%2BffpYrS7pHtxQ54rLh%2FxYlbTWv%2BNEkqd55vfmRrRzz9DtzrOAAT6fTJYjlZN7DYmy9kbgc2vbxbwOF49naYoCiYziWnxCRfob0tTz9ZpXRz5UmXn8wKnbn%2Bj6UydIVXd1R9nxSnzUxprxpPfacPg1F%2BibkmxoMai7fkuWr4xPJSmcWR%2FsoSwwTjk6Qb5unDqN9uXfQc9KUmKRfY66V4ABb62egwjhsfEbZw6Mt2Nmy1NiMjqJ9pJ1nFF5ZuaGoTslYsuBvkzK0RRfJ0ho1NDr720lRJzQV1ydDUb1sWfj91WTU1o%7Ctkp%3ABFBM8ICftcNo",
+          "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=307296820666",
+          "product_id": "307296820666",
+          "price": {
+            "raw": "£41.25",
+            "extracted": 41.25
+          },
+          "seller": {
+            "username": "rarewaves-outlet",
+            "reviews": 1757693,
+            "positive_feedback_in_percentage": 98.8
+          },
+          "thumbnail": "https://i.ebayimg.com/images/g/tj0AAeSwkddrCLgO/s-l500.jpg"
+        },
+        {
+          "title": "Autobiography of a Yogi, Paramahansa Yogananda",
+          "link": "https://www.ebay.co.uk/itm/397546899036?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=19084540534&itmmeta=01M8DN7R0E3M1TB89BT25NAEDK&hash=item5c8fa4465c:g:QccAAeSw~1Bpeqh3&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9%2BwjLgN4aiF1iet5LxiVSplmwrOyj0KQcHwf4rHmfVaeytjRXecXCsjiaVWWJ4uyyKPAcRneCX3tdIgCSz32fzKvzYzytnPpJGn6pxkBXRtmZDt%2FVzRjz7teiopzfL%2Bglgq%2BRh6ctf7N2WfDPLbUxNCWLbruoY1kfRIKGzAc1GjkdPVnAiuwZNVeki3mzCwlcGCY5qxxtEpnFdeGE%2FzyD1BpwfCrCHipBm1x5XdpIyoj1JIIEHM9GTfuqNN5JvNYYbpWUJFwWwKgVyTRzHrc9WbRUHhbp4Cytf56zBJCnY8jUed6XSrkuoQ%2BJwPopdPrIbSonQy%2FF9fhYghUp5BTvS%7Ctkp%3ABFBM8ICftcNo",
+          "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=397546899036",
+          "product_id": "397546899036",
+          "epid": "19084540534",
+          "price": {
+            "raw": "£15.07",
+            "extracted": 15.07
+          },
+          "promotion": "Buy 2, get 1 20% off",
+          "seller": {
+            "username": "worldofbooks08",
+            "reviews": 11993953,
+            "positive_feedback_in_percentage": 99.5
+          },
+          "thumbnail": "https://i.ebayimg.com/images/g/QccAAeSw~1Bpeqh3/s-l500.jpg"
+        }
+      ]
+    },
+    {
+      "title": "Deals you’ll love",
+      "subtitle": "Save big with these great offers | Spon؜sored",
+      "items": [
+        {
+          "title": "Autobiography of a Yogi",
+          "link": "https://www.ebay.co.uk/itm/357541580511?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=237036532&itmmeta=01M8DN7R0EDKD15PV9QKR2XD17&hash=item533f238edf:g:K60AAeSwj~lossu9&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2BlhNq5qD6hX1ZwoEDIh7ZWPaSi9fHbn4v%2B%2Fdz0fVMcotGBHVyGizJhz1KqKQGC9dXdPacp4C6GtmAAdRUhxRva30bDouhDh2lSBYyFx83DCPxIisIhMINS5WoizKYzeF97FfHwH2BSvRBMuzDN3B7KppetyJ0rUXv4MXRnRwWIPuMSB5BHL7Ae6IbPkx9G%2BWhYFXPudM%2BSNZY0IjtNk7Aa0b2a2jNIAX5n6iFLiXkGRXN9chpJuwJNxyM93DiC6UdmyCCL9RBCpXWsRUE1TQw4O4J2U07sti35l24O0Ae2SZJxHWplqfuRpdpqCzDLqdQbPlJHA9lZAS8NuICbC4L9%7Ctkp%3ABFBM9ICftcNo",
+          "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=357541580511",
+          "product_id": "357541580511",
+          "epid": "237036532",
+          "price": {
+            "raw": "£14.05",
+            "extracted": 14.05
+          },
+          "shipping": "Free delivery",
+          "promotion": "Save up to 6% with Multi-buy",
+          "condition": "Brand new",
+          "thumbnail": "https://i.ebayimg.com/images/g/K60AAeSwj~lossu9/s-l500.jpg"
+        },
+        {
+          "title": "AUTOBIOGRAPHY OF A YOGI by Paramahansa Yogananda PAPERBACK 9780876120798",
+          "link": "https://www.ebay.co.uk/itm/297666359723?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=91920944&itmmeta=01M8DN7R0EHQW6CEXP4Y8WEZBA&hash=item454e4c31ab:g:eKUAAeSwiwdpIKfj&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2BykpnDtqr22CCIXQCXPSXrvntcRbWlMXqhBwHBG1NIppGV6ZziIzxxHZxTbl6Gor5teFAk38QJBrW5BcikDn0jKz6dTPAIoJBK2WIkiw406dGCqOxrD4VrDJQ2yiFl8iP3%2FTu5lcBUoCy1Mm69OJKQlFCrqaIKo23Q6dV7fW6yInemf9z8qoMdH0W7mqAIfj%2BpFB08EAeCxSDPV3lT9vwpMegTJYyHmhtEmb9TTdRs19AW48g%2FfZSHu6%2BQKX0Mvzmfo0B6NlmLggxCrWTwZGo%2FDn%2FYIMMXdYkVextcZZAKhodb1080xwcYP2s3O%2FpRY%2BTzCrmtutfwNaGATgX3qTWy%7Ctkp%3ABFBM9ICftcNo",
+          "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=297666359723",
+          "product_id": "297666359723",
+          "epid": "91920944",
+          "price": {
+            "raw": "£9.47",
+            "extracted": 9.47
+          },
+          "old_price": {
+            "raw": "£9.99",
+            "extracted": 9.99
+          },
+          "shipping": "Free delivery",
+          "promotion": "Save up to 5% with Multi-buy",
+          "condition": "Brand new",
+          "thumbnail": "https://i.ebayimg.com/images/g/eKUAAeSwiwdpIKfj/s-l500.jpg"
+        },
+        {
+          "title": "Autobiography of a Yogi by Yogananda Paramahansa - 9789389981001",
+          "link": "https://www.ebay.co.uk/itm/358295342298?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=8085917697&itmmeta=01M8DN7R0EZJQ1XK8KHFSV9B8M&hash=item536c110cda:i:358295342298&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde9XYdu%2FHvMr%2FlRF4i2gm8Xh7FNWF8TPElVZEam4SgE5Ld%2BoYuVWL1cOFA8pw4IS6BW6CI5phm00BSB6mEMO%2B%2FtvbujPr2YluOzVgMfbssjcaxdDIwxCTIqEvsnVsrqM2NcxKtAp5OTbEWraKpU1pykt0am2JFNpkDeWXQ9OJjgk23qBItcOnwRZGEDm43oM%2BvJ2rMwPm%2FPFVlT3x0N4RMtzYDYXLCZrw00SzCBJ7M99IvMxt4r9xuK2GniEgxrOuT3EaSE34VXQSAn3OQT0p70iHZOMOwkQuyx1V36QzMavXUCSkL3wQXMVlGHKc6cv1bhtje75mUBjzsKMsgqE0gCz%7Ctkp%3ABFBM9ICftcNo",
+          "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=358295342298",
+          "product_id": "358295342298",
+          "epid": "8085917697",
+          "price": {
+            "raw": "£13.10",
+            "extracted": 13.1
+          },
+          "shipping": "Free delivery",
+          "promotion": "Save up to 8% with Multi-buy",
+          "condition": "Brand new",
+          "thumbnail": "https://secureir.ebaystatic.com/pictures/aw/pics/stockimage1.jpg"
+        },
+        {
+          "title": "Autobiography Of A Yogi (Hindi Mass Market by Paramahan Yogananda (PB 2006)",
+          "link": "https://www.ebay.co.uk/itm/198504536603?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=12085470045&itmmeta=01M8DN7R0EXP00ZMGTSC7C99JP&hash=item2e37cada1b:g:PWAAAeSw~CZqp0BT&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde95I6u%2Fmct5JwAMmN3No3AS2FwEuC14wzZQIgnNcjMtGAMgnL7rQvBM2jmziZ3%2BCKUXl%2F4Tfj%2BE3BV8T97RcWI2FqZOQP4IcAGBYuZgwOh535CSwzNlsJlMO9ZCHXYIrbD7Ya1p7CyV2SaZ6DhmC0s3iKvOa1r9uRyQV%2B47%2B7%2FB0ElYPDqpHixThei9u1AVySxDo%2BPGelIvlCKDVNwpRRT63zPXDx6RyNlgrm6hrLkLyJZSprEBht8WPiR9AdixqAYm%2Fo70n2hMEh%2B%2FUnchLlzifHXnnDU6cjTzD23si0AMal5E%2F9ODO72maZ5rMKPr9MW2e31zYFpeDs8ByYPXjGbw%7Ctkp%3ABFBM9ICftcNo",
+          "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=198504536603",
+          "product_id": "198504536603",
+          "epid": "12085470045",
+          "price": {
+            "raw": "£10.40",
+            "extracted": 10.4
+          },
+          "shipping": "Free delivery",
+          "promotion": "Save up to 5% with Multi-buy",
+          "condition": "Brand new",
+          "thumbnail": "https://i.ebayimg.com/images/g/PWAAAeSw~CZqp0BT/s-l500.jpg"
+        },
+        {
+          "title": "Autobiography of A Yogi (Hindi) by Paramahan Yogananda (PB 2019)",
+          "link": "https://www.ebay.co.uk/itm/147443950576?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=3082138670&itmmeta=01M8DN7R0EBPQBB2PWYJ6RE09S&hash=item22545823f0:g:XnQAAeSwms5qWurg&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde%2Byug3fUv137jzCModkTAeuRJP5wXHuIawVqlmWdbUKguR98sjHQY%2BDGfoIvK9S6yeILwMEVkXS59DA2VzWGx1Mnv6mJN2MdNBvnVSqfnVHNFDuVGwINI3gdkO9SiETmUJiDIkY0O%2FRILCbJvgzSBIAKNlfd8%2BSPYUQjw5NiE2z3bB8N52QxL%2BlMCyUV%2F1NLDd%2BOx4b72bkO%2Fm5yoMMaDwSjyWWcNky6OohjJAcsgkZZEmjk3%2F489j3GzfeP7qEfaKqpwVus8gL%2BfSA%2FN3gpUyvWhn0hG%2BBpp6tVdX3tgOgt9JGZzEhLZLQwCKfX5An61%2BSJwK1OHFSwoGEsWVo%2Fmyy%7Ctkp%3ABFBM9ICftcNo",
+          "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=147443950576",
+          "product_id": "147443950576",
+          "epid": "3082138670",
+          "price": {
+            "raw": "£10.21",
+            "extracted": 10.21
+          },
+          "shipping": "Free delivery",
+          "promotion": "Save up to 5% with Multi-buy",
+          "condition": "Brand new",
+          "thumbnail": "https://i.ebayimg.com/images/g/XnQAAeSwms5qWurg/s-l500.jpg"
+        },
+        {
+          "title": "Autobiography of a Yogi by Paramahansa Yogananda (Hindi) PAPERBACK 9789380676371",
+          "link": "https://www.ebay.co.uk/itm/406269884403?_skw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&epid=12085470045&itmmeta=01M8DN7R0E8MCXZ138TG3X1BFS&hash=item5e979277f3:g:m8wAAeSwt3lpIMna&itmprp=enc%3AAQALAAABECHNgUiiE%2FjQhlDTaMiAde8S1t%2BPtGe79z%2FTlKvAcdoDkmV15SgktfAYJ1CwiGjAS7jE7WxzZAXaqL2BABhKK2MyT3eHROn1PsH8bVusEQ%2FmcnH%2FIou4VLjFMIDeHEAKJQIsVjvM5utFtY%2Bqxr9KI5goBPP2mXFs32WHe0l8eee19BFT6WjoHhQiLkLvTAeUNKTu05RcFMADEEuXWuBTA4YIGr5rX3qtB1J%2FxSxmapKAfg5E%2FfgJzO6jBW6uhgrqgrrOX28JWj%2FKVcoEUypTtdYS1qBKbyjx2Vm%2FTmuvGTkqDbRiiu1XPrNqA6NAXWlflToMe%2FX4fGkP%2B%2B4mjbvkAbQ9gg6GIKsi6ZmhI%2Bo1r7mX%7Ctkp%3ABFBM9ICftcNo",
+          "serpapi_link": "https://serpapi.com/search.json?ebay_domain=ebay.co.uk&engine=ebay_product&product_id=406269884403",
+          "product_id": "406269884403",
+          "epid": "12085470045",
+          "price": {
+            "raw": "£9.81",
+            "extracted": 9.81
+          },
+          "shipping": "Free delivery",
+          "promotion": "Save up to 5% with Multi-buy",
+          "condition": "Brand new",
+          "thumbnail": "https://i.ebayimg.com/images/g/m8wAAeSwt3lpIMna/s-l500.jpg"
+        }
+      ]
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.ebay.co.uk/sch/i.html?_nkw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&_pgn=2",
+    "other_pages": {
+      "1": "https://www.ebay.co.uk/sch/i.html?_nkw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&_pgn=1",
+      "2": "https://www.ebay.co.uk/sch/i.html?_nkw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&_pgn=2",
+      "3": "https://www.ebay.co.uk/sch/i.html?_nkw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&_pgn=3",
+      "4": "https://www.ebay.co.uk/sch/i.html?_nkw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&_pgn=4",
+      "5": "https://www.ebay.co.uk/sch/i.html?_nkw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&_pgn=5&rt=nc",
+      "6": "https://www.ebay.co.uk/sch/i.html?_nkw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&_pgn=6&rt=nc",
+      "7": "https://www.ebay.co.uk/sch/i.html?_nkw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&_pgn=7&rt=nc",
+      "8": "https://www.ebay.co.uk/sch/i.html?_nkw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&_pgn=8&rt=nc",
+      "9": "https://www.ebay.co.uk/sch/i.html?_nkw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&_pgn=9&rt=nc",
+      "10": "https://www.ebay.co.uk/sch/i.html?_nkw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&_pgn=10&rt=nc"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?_nkw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&_pgn=2&ebay_domain=ebay.co.uk&engine=ebay",
+    "next": "https://serpapi.com/search.json?_nkw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&_pgn=2&ebay_domain=ebay.co.uk&engine=ebay",
+    "other_pages": {
+      "1": "https://serpapi.com/search.json?_nkw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&_pgn=1&ebay_domain=ebay.co.uk&engine=ebay",
+      "2": "https://serpapi.com/search.json?_nkw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&_pgn=2&ebay_domain=ebay.co.uk&engine=ebay",
+      "3": "https://serpapi.com/search.json?_nkw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&_pgn=3&ebay_domain=ebay.co.uk&engine=ebay",
+      "4": "https://serpapi.com/search.json?_nkw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&_pgn=4&ebay_domain=ebay.co.uk&engine=ebay",
+      "5": "https://serpapi.com/search.json?_nkw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&_pgn=5&ebay_domain=ebay.co.uk&engine=ebay",
+      "6": "https://serpapi.com/search.json?_nkw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&_pgn=6&ebay_domain=ebay.co.uk&engine=ebay",
+      "7": "https://serpapi.com/search.json?_nkw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&_pgn=7&ebay_domain=ebay.co.uk&engine=ebay",
+      "8": "https://serpapi.com/search.json?_nkw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&_pgn=8&ebay_domain=ebay.co.uk&engine=ebay",
+      "9": "https://serpapi.com/search.json?_nkw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&_pgn=9&ebay_domain=ebay.co.uk&engine=ebay",
+      "10": "https://serpapi.com/search.json?_nkw=Autobiography+of+a+Yogi+Yogananda+%28Paramahansa%29+book&_pgn=10&ebay_domain=ebay.co.uk&engine=ebay"
+    }
+  }
+}
